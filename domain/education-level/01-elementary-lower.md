@@ -1,11 +1,12 @@
 ---
-id: audience.elementary-lower
-layer: audience
+id: domain.education-level.elementary-lower
+layer: domain
+sublayer: education-level
 kind: ladder
-version: 1.0.0
+version: 1.1.0
 status: active
-budget: 972
-tokens: 972
+budget: 1028
+tokens: 1028
 grades: K-3
 wida_clusters: [K, 1, 2-3]
 evidence_rung: 0
@@ -14,9 +15,11 @@ evidence:
   - sources/ap-stylebook.md
 ---
 
-# Audience: Lower Elementary
+# Education: Lower Elementary
 
 Reader is in kindergarten through grade 3. Sentences are mostly simple or compound. Meaning rides on concrete nouns and action verbs, not on packed noun groups. K to 3 is a long climb: a kindergartner labels and recounts, a third grader can write a short organized text with headings, sequence, cause, comparison, and a reason attached to a claim.
+
+WIDA splits that climb into three clusters — K, 1, and 2-3 — and one tier covers all three, so nothing here separates a kindergartner from a third grader. Where the difference matters, write to the younger end unless you know the grade.
 
 ## Detect
 
@@ -62,13 +65,13 @@ What a writer should reliably control by the end of this band:
 - Capitalized day and month names, spelled out.
 - Add `'s` to make a single owner possessive.
 
-This module lists the highest-signal conventions, not the full grade-level scope. Where a state has adopted the Common Core Language standards or a close derivative, commas in a series are expected by grade 1 (L.1.2c) and quotation marks in dialogue by grade 3 (L.3.2c), so do not treat their absence as on-band for an upper-K-3 writer. Codings differ by state and get revised — New Jersey renumbered its Language standards in the 2023 NJSLS-ELA — so check the framework in force rather than the CCSS code. Finer numeral thresholds belong to later bands. Whether a series takes a comma before the conjunction is a house-style question and belongs to the domain in force, not to a reader tier.
+These are the highest-signal conventions, not the full grade-level scope. Where a state has adopted the Common Core Language standards or a close derivative, those standards put commas in a series at grade 1 (L.1.2c) and quotation marks in dialogue at grade 3 (L.3.2c), so do not treat their absence as on-band for an upper-K-3 writer. Codings differ by state and get revised — New Jersey renumbered its Language standards in the 2023 NJSLS-ELA — so check the framework in force rather than the CCSS code. Finer numeral thresholds belong to later bands. Whether a series takes a comma before the conjunction is a house-style question and belongs to the domain in force, not to a reader tier.
 
 ## Evidence
 
-Below rung 1 of the evidence ladder. The move being learned is that an opinion takes a reason at all, and that the reason has to be a different sentence from the opinion. The reason may be anything the writer can point to — a thing seen, a thing done, a preference honestly held. Where the reason came from is not yet in question.
+Below rung 1 of the evidence ladder. A writer learns here that an opinion takes a reason at all, and that the reason belongs in a sentence of its own. The reason may be anything the writer can point to — a thing seen, a thing done, a preference honestly held. Where the reason came from is not yet in question.
 
-Where this tier and a `domain/` evidence floor disagree, the higher of the two governs. The tier sets register; it never lowers the standard of proof a domain requires.
+Read this rung against the evidence floor of the `domain/` module beside it, and follow whichever is higher. A tier changes register. It never lowers the standard of proof a domain requires.
 
 ## Boundaries
 
@@ -82,7 +85,7 @@ After: Buses help people get places. A child can ride a bus to school. A family 
 
 Before: Plants survive because roots, stems, and leaves perform different functions within a connected system.
 
-After: A plant has parts. Roots take in water. The stem holds the plant up. Leaves help the plant make food.
+After: A plant has parts. Roots take in water. The stem holds the plant up. Leaves help the plant make food. The parts work together to keep the plant alive.
 
 Before: I think recess is beneficial for student wellbeing.
 

@@ -1,7 +1,7 @@
 ---
 id: citation.chicago18
 layer: citation
-version: 1.0.0
+version: 1.0.1
 status: draft
 budget: 1102
 tokens: 1102
@@ -90,7 +90,7 @@ For self-published books, use `published by the author` in bibliography form and
 
 > *A Season with the Cartographers* and *Notes About the Winslow Archive*
 
-**Generative AI.** Chicago credits the tool itself in the author position — unlike APA, which credits the company, and MLA, which makes the tool a container. Prefer a note. A bibliography entry is permitted only where a publicly shareable link to the exchange exists; without one the output is personal communication and stays in the note. The company follows the prompt and precedes the date. The wrong form below credits the company as author, which is APA's move, and so loses the company from its own slot before the date.
+**Generative AI.** Chicago credits the tool itself in the author position — unlike APA, which credits the company, and MLA, which makes the tool a container. Prefer a note. Chicago permits a bibliography entry only where a publicly shareable link to the exchange exists; without one the output is personal communication and stays in the note. The company follows the prompt and precedes the date. Crediting the company as author is APA's move, and in Chicago it costs the company its own slot before the date.
 
 > 1. OpenAI, response to "Describe the provenance of the Winslow archive," August 14, 2025, https://chatgpt.com/share/abcd-1234.
 

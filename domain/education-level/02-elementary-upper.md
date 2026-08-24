@@ -1,11 +1,12 @@
 ---
-id: audience.elementary-upper
-layer: audience
+id: domain.education-level.elementary-upper
+layer: domain
+sublayer: education-level
 kind: ladder
-version: 1.0.0
+version: 1.1.0
 status: active
-budget: 826
-tokens: 826
+budget: 840
+tokens: 840
 grades: 4-5
 wida_clusters: [4-5]
 evidence_rung: 1
@@ -14,9 +15,9 @@ evidence:
   - sources/ap-stylebook.md
 ---
 
-# Audience: Upper Elementary
+# Education: Upper Elementary
 
-Reader is in grades 4 and 5. Relative clauses and a wider tense range arrive here, and so does the first real handling of evidence. Abstraction is earned by example rather than assumed: name the concrete thing, then name what it is an instance of.
+Reader is in grades 4 and 5. Relative clauses and a wider tense range arrive here, and so does the first real handling of evidence. Earn an abstraction with an example rather than assuming it: name the concrete thing, then name what it is an instance of.
 
 ## Detect
 
@@ -30,7 +31,7 @@ Reader is in grades 4 and 5. Relative clauses and a wider tense range arrive her
 
 ### Over-reach
 
-- Heavy abstract nominalized subjects carrying the sentence: `the significance of the relationship`, `the implementation of the policy`. Light nominalization that condenses a prior clause — `Leatherbacks are declining` becoming `this decline` — is the on-band move here. The over-reach is when the abstraction becomes the subject and the doer disappears.
+- Heavy abstract nominalized subjects carrying the sentence: `the significance of the relationship`, `the implementation of the policy`. Light nominalization that condenses a prior clause — `The creek floods every spring` becoming `that flooding` in the sentence after it — is the on-band move here. The over-reach is when the abstraction becomes the subject and the doer disappears.
 - More than one embedded clause per sentence.
 - A term used before it is defined because it sounds academic.
 - Abstract nouns standing alone with nothing under them: significance, perspective, relationship, impact.
@@ -56,7 +57,7 @@ Reader is in grades 4 and 5. Relative clauses and a wider tense range arrive her
 
 ## Mechanics
 
-Reliable control expected by the end of this band:
+What a writer should reliably control by the end of this band:
 
 - Terminal punctuation chosen by what the sentence is doing.
 - Capital letters on proper nouns.
@@ -68,9 +69,9 @@ Not yet: semicolons, dashes, quotation-mark nesting. The serial comma is not a b
 
 ## Evidence
 
-Rung 1. A claim carries at least one concrete reason, and the reason has to come from outside the writer: something observed, counted, measured, or read, not something preferred. The source of that reason is still unnamed — naming it, and weighing it, begins in the next band.
+Rung 1. A claim carries at least one concrete reason, and the reason has to come from outside the writer: something observed, counted, measured, or read, not something preferred. The writer does not yet name that source. Naming comes in the next band, and weighing it later than that.
 
-Where this tier and a `domain/` evidence floor disagree, the higher of the two governs. The tier sets register; it never lowers the standard of proof a domain requires.
+Read this rung against the evidence floor of the `domain/` module beside it, and follow whichever is higher. A tier changes register. It never lowers the standard of proof a domain requires.
 
 ## Boundaries
 

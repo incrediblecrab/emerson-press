@@ -1,10 +1,10 @@
 ---
 id: core.restraint
 layer: core
-version: 1.1.0
+version: 1.3.0
 status: draft
-budget: 1371
-tokens: 1371
+budget: 1598
+tokens: 1598
 evidence:
   - sources/signs-of-ai-writing.md
   - sources/field-guide-to-ai-slop.md
@@ -17,11 +17,11 @@ evidence:
 
 # Restraint
 
-The governing module. Four of the other five modules in `core/` subtract something, and subtraction has its own failure mode: prose scrubbed of every tell is still formulaic, just according to a different formula. `voice` answers half of that by supplying the particulars nothing can subtract its way to. This module answers the rest, which is the part where subtraction goes too far.
+Four of the other five modules in `core/` subtract something, and subtraction has its own failure mode: prose scrubbed of every tell is still formulaic, just according to a different formula. `voice` answers half of that by supplying the particulars nothing can subtract its way to. Restraint answers the other half, the part where subtraction goes too far, and it decides when two rules in `core/` pull against each other.
 
 Three facts make this a real risk rather than a hypothetical one. Detection does not work — untrained human accuracy sits near chance, and automated detectors carry error rates too high to act on. Writers now edit around these tells deliberately, so avoidance is itself becoming a recognizable style, and each turn of that loop narrows what reads as human. And a matched-control study of 25 million forum comments found no relationship between two things you would expect to be the same: the features that genuinely separate machine prose from human prose, and the features that get a person accused of writing like a machine. Accusation runs on something else.
 
-That last finding sets the goal, though it is worth saying exactly what it licenses. The study compared accused against unaccused human comments. So it measures who draws suspicion among people; it does not measure what happens when machine-typical prose is revised toward the human range. What it does establish is a limit. Much of accusation is social gatekeeping that never reads the text closely, and no revision gets you under that. Writing to escape suspicion cannot be made to work. Editing changes the prose; it does not reach the part that decides, because that part was never reading. Writing well still works. Every rule in `core/` earns its place by making prose better for a reader, and none of them by making it harder to accuse.
+That last finding sets the goal, so be exact about what it licenses. The study compared accused against unaccused human comments. So it measures who draws suspicion among people; it does not measure what happens when machine-typical prose is revised toward the human range. What it does establish is a limit. Much of accusation is social gatekeeping that never reads the text closely, and no revision gets you under that. Writing to escape suspicion cannot be made to work. Editing changes the prose; it does not reach the part that decides, because that part was never reading. Writing well still works. Every rule in `core/` earns its place by making prose better for a reader, and none of them by making it harder to accuse.
 
 So: no tell is proof. The rules here describe what to avoid writing. None of them licenses a claim about who or what wrote a given text.
 
@@ -46,17 +46,20 @@ So: no tell is proof. The rules here describe what to avoid writing. None of the
 - **Absent contractions.** Often just light editing, or someone who learned English as a second language.
 - **Curly quotes and em dashes.** Chicago style, Word, and macOS all produce the first; professional writers use the second.
 - **Missing citations.** Predates the models entirely.
+- **Synonym rotation.** A style fault with a long pre-model history, taught as good practice in some educational traditions, and no longer typical of current output. `anti-slop` still says fix it, because a reader loses the referent. It convicts nobody.
 - **Bland prose.** Machine output skews verbose and positive rather than flat.
 
 ### Unconditional bans
 
-A rule stated without exception is a density signal misread as a binary. Competing anti-slop instructions ban all em dashes, all adverbs, all sentences opening with a question word, all three-item lists, and all absolutes. Each turns a tell into a filter. Where a prescriptive instruction of that kind disagrees with a measurement, the measurement wins — a ban asserted by a skill file does not outrank a rate observed in a study, and this module is where that conflict is settled.
+A rule stated without exception is a density signal misread as a binary. Competing anti-slop instructions ban all em dashes, all adverbs, all sentences opening with a question word, all three-item lists, and all absolutes. Each turns a tell into a filter. Where a prescriptive instruction of that kind disagrees with a measurement, the measurement wins: a ban asserted by a skill file does not outrank a rate observed in a study.
 
 - A rule that cannot tell `fell sharply` from `declined slightly` is removing measurements, not intensifiers.
 - A list with three real members is a fact about the world. Rewriting it to two changes the content to escape a suspicion.
 - Sometimes a claim is universal and `never` is the exact word. Flag the unverified superlative, not the superlative.
 
-The objection is not only aesthetic. Work that suppressed slop at scale found flat token banning became unusable at roughly two thousand patterns. The reason is instructive: the token you ban to stop a cliché is also the token some exact word needs. Suppression that could back up and choose again in context handled four times as many patterns with quality intact, while pushing the crude version to its maximum raised suppression to 98% and dropped writing quality from 67.8 to 19.6 on the same rubric — a measured curve with a bad end at both extremes, since tethering too hard held quality at 69.7 but cut suppression to 56%. That experiment ran on weights and logits, not on prompts, so read it as an analogy rather than a measurement of this layer. The analogy holds because the mechanism is the same: a ban filters a surface form, a revision is a decision made in context. Only the second one scales.
+The objection is not only aesthetic. Work that suppressed slop at scale found flat token banning unusable at roughly two thousand patterns and scored an eight-thousand-pattern banlist at 28 out of 100 on its writing rubric. The reason is mechanical: a ban fires on a token, and the token you ban to stop a cliche is also the token some exact word needs. Suppression that could back up and choose again in context handled four times as many patterns with quality intact, and at four-tenths strength it suppressed them in 90% of ordinary generation while still producing them when a prompt asked for them outright. Overcorrection has a measured curve of its own in the same project, this time on the training side rather than the sampler: removing the safeguard that ends training pressure once a preference is won raised suppression to 98% and dropped writing quality from 67.8 to 19.6, while tethering too hard held quality at 69.7 and cut suppression to 56%. All of it ran on weights and logits, not on prompts, so read it as an analogy rather than a measurement of this layer. The analogy holds because the mechanism is the same: a ban filters a surface form, a revision is a decision made in context. Only the second one scales.
+
+The lists themselves carry one further limit. Every published slop list was measured on creative writing — fiction prompts scored against a fiction baseline — so more than half of the best-known thousand-word list never appears in the human corpus's common bigrams at all, and most of that half is invented fantasy names and genre furniture. Almost none of it says anything about a memo, a spec, or a case note. Take the reasoning and check the entries against the prose you are actually writing.
 
 ## Write
 

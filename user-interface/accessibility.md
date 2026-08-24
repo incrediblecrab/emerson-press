@@ -1,10 +1,10 @@
 ---
 id: user-interface.accessibility
 layer: user-interface
-version: 1.0.0
+version: 1.0.1
 status: draft
-budget: 1239
-tokens: 1239
+budget: 1218
+tokens: 1218
 kind: overlay
 medium: assistive
 mechanics: house
@@ -71,7 +71,7 @@ Write about people first and the disability second, and only where it is relevan
 
 ## Boundaries
 
-The text assistive technology reads, on any surface in any medium. This module loads alongside a medium module and never instead of one. Where both cover a surface, this one decides what must be announced and the medium module decides the wording.
+The text assistive technology reads, on any surface in any medium. This module loads alongside a medium module and never instead of one.
 
 Non-text accessibility — contrast, target size, focus order, motion — is outside it. Those are real requirements and this module does not cover them.
 

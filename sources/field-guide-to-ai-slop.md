@@ -1,7 +1,7 @@
 ---
 id: sources.field-guide-to-ai-slop
 layer: sources
-version: 1.0.0
+version: 1.1.0
 status: active
 budget: none
 source:
@@ -13,18 +13,19 @@ source:
   extent: "~2,600 words"
 consumers:
   - core/anti-slop.md
+  - core/formatting.md
+  - core/restraint.md
   - core/rhythm.md
   - core/voice.md
-  - core/restraint.md
+  - domain/non-fiction.md
   - user-interface/website.md
-  - core/formatting.md
 ---
 
 # Source: The Field Guide to AI Slop
 
 Companion evidence to `sources/signs-of-ai-writing.md`. Unbudgeted by design. Where the Wikipedia page is a committee's adversarial checklist, this is one practicing long-form writer's account of what slop feels like from the inside — including what it is doing to his own prose. It supplies three things the Wikipedia page does not: a causal story for why models overproduce lists, the best available treatment of monotony, and the positive prescription that `core/voice.md` is built on.
 
-Restated in original wording throughout. Short flagged phrases are reproduced as flagged phrases.
+This dossier restates the piece in original wording throughout. Short flagged phrases appear as flagged phrases, because the phrase is the finding.
 
 ## Why This Source
 
@@ -74,7 +75,7 @@ Bold that does not mark emphasis — words are heavy for no recoverable reason. 
 
 ### Lists and emoji
 
-The causal claim here is this source's most valuable contribution, and it does not appear in the Wikipedia page. Models overproduce bulleted lists because of how they were tuned: human raters reward answers that look organized, bullets look organized, so bullet-heavy answers were scored higher and the behavior was reinforced. The list habit is not a quirk of style. It is a trained preference for the appearance of structure.
+The causal claim here is this source's most valuable contribution, and it does not appear in the Wikipedia page. Models overproduce bulleted lists because of how their tuning ran: human raters reward answers that look organized, bullets look organized, so raters scored bullet-heavy answers higher and training drove the habit in. The list habit is not a quirk of style. It is a trained preference for the appearance of structure.
 
 That matters for `core/formatting.md`, because it means the pull toward bullets will be strongest exactly when the material is thin — when there is an appearance of organization to manufacture.
 
@@ -84,7 +85,7 @@ Layered on top: emoji-led bullets in professional contexts, which almost no one 
 
 The best treatment of rhythm in either source, and the backbone of `core/rhythm.md`.
 
-Machine prose is metrically flat. Sentences run to similar lengths. Paragraphs repeat a shape. The cadence never varies, so there is no emphasis — when every sentence is weighted equally, nothing is weighted. The piece invokes the well-known Gary Provost passage on sentence variety to make the point; the passage itself is quoted material and is not reproduced here, but the underlying principle is sound and independently arrived at: vary length deliberately, because contrast is what creates stress.
+Machine prose is metrically flat. Sentences run to similar lengths. Paragraphs repeat a shape. The cadence never varies, so there is no emphasis — when every sentence is weighted equally, nothing is weighted. The piece invokes the well-known Gary Provost passage on sentence variety to make the point. That passage is quoted material, so this dossier leaves it where it is; the underlying principle stands on its own and several traditions reach it separately: vary length deliberately, because contrast is what creates stress.
 
 A second observation, rarer and worth keeping: machines hold tense and person fixed with unnatural consistency. Human writers drift between second and third person, slip into first for an aside, shift tense to mark a change in footing. Models settle into one and hold it. This is a rhythm tell that operates above the sentence, and no word list will catch it.
 
@@ -94,13 +95,13 @@ A second observation, rarer and worth keeping: machines hold tense and person fi
 
 Machine metaphors land in the right conceptual neighborhood without being thought through. His generated examples for a ukulele post — fingers taught to dance again, chords as puzzle pieces clicking into place, first strums as a toddler's babble, an instrument as a mirror for learning — are all serviceable and all inert.
 
-The diagnosis is precise and worth carrying verbatim into `core/voice.md` as a rule: human figures of speech are either **highly specific**, drawn from something the writer actually experienced, or **culturally resonant**, drawn from a shared reference. Machine figures are merely *plausible*. They gesture at meaning without arriving.
+The diagnosis is precise and worth carrying into `core/voice.md` intact as a rule: human figures of speech are either **highly specific**, drawn from something the writer actually experienced, or **culturally resonant**, drawn from a shared reference. Machine figures are merely *plausible*. They gesture at meaning without arriving.
 
 This gives an actionable test. For any comparison, ask which of the two sources it draws on. If neither, cut it.
 
 ### Filler
 
-Named as the worst of the tells, and the one least open to measurement. Two experiences:
+He names filler the worst of the tells, and the one least open to measurement. Two experiences:
 
 - Reaching the middle of a piece and being unable to say what the author is claiming. Individual sentences parse; there is no throughline.
 - Noticing that four sentences delivered what one sentence held. The other three did not merely add nothing — they diluted the one that mattered.
@@ -115,7 +116,7 @@ Good human writers use every device listed above. Prestige long-form journalism 
 
 The stated difference is intention and rate. A good writer deploys an em dash when that particular pause is wanted. A model scatters them. The device is not the problem; indiscriminate use is.
 
-On detectors, he is blunter than the Wikipedia page: they do not work, they misfire far too often in the false-positive direction, students have had original work flagged, writers have been wrongly accused, and the tools cause more harm than they prevent. He adds that a few minutes of deliberate prompting defeats any of them.
+On detectors, he is blunter than the Wikipedia page: they do not work, they misfire far too often in the false-positive direction, they have flagged students' original work, they have put writers under accusations they did not earn, and on his reckoning they cause more harm than they prevent. He adds that a few minutes of deliberate prompting defeats any of them.
 
 And he notes the recursive problem: documenting these tells feeds them back into the next generation of training, which trains the tells away.
 

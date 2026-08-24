@@ -1,7 +1,7 @@
 ---
 id: sources.stop-slop
 layer: sources
-version: 1.0.0
+version: 1.2.0
 status: active
 budget: none
 source:
@@ -16,18 +16,18 @@ source:
   retrieved: 2026-08-09
 consumers:
   - core/anti-slop.md
-  - core/rhythm.md
   - core/restraint.md
-  - user-interface/website.md
-  - user-interface/applications.md
+  - core/rhythm.md
   - core/voice.md
+  - user-interface/applications.md
+  - user-interface/website.md
 ---
 
 # Source: stop-slop
 
-A prompt, not a study. Unbudgeted by design, and read differently from the other sources in this directory: `signs-of-ai-writing.md` and `field-guide-to-ai-slop.md` are evidence, and this is a competitor. It is the most widely installed artifact of its kind — roughly fifteen thousand stars inside eight months — which makes it, in practice, the default anti-slop instruction running inside a large number of other people's drafts.
+A prompt, not a study. Unbudgeted by design, and read differently from the other sources in this directory: `signs-of-ai-writing.md` and `field-guide-to-ai-slop.md` are evidence, and this is a competitor. It is the most widely installed artifact of its kind — more than sixteen thousand stars since its release in January 2026 — which makes it, in practice, the default anti-slop instruction running inside a large number of other people's drafts.
 
-Rules restated in original wording. Flagged phrases are reproduced as flagged phrases, because a list of banned phrases is a finding rather than prose.
+This dossier restates every rule in original wording. Flagged phrases appear as flagged phrases, because a list of banned phrases is a finding rather than prose.
 
 ## Why This Source
 
@@ -84,11 +84,11 @@ Five dimensions rated 1-10 — directness, rhythm, trust, authenticity, density 
 
 This section is why the file sits in `sources/` instead of being adopted.
 
-**The em-dash ban.** Stated as `No em dashes at all.` This is the position `sources/field-guide-to-ai-slop.md` argues against with data — frequency is the signal, presence is not — and the position `core/restraint.md` exists to refuse. It is also unheld: the file's own fourth worked example offers `Speed, quality, cost—pick two` as the improved version. A rule the author cannot follow inside his own example is not a rule.
+**The em-dash ban.** Stated as `No em dashes at all.` This is the position `sources/field-guide-to-ai-slop.md` argues against with data — frequency is the signal, presence is not — and the position `core/restraint.md` exists to refuse. The author does not hold it either: his own fourth worked example offers `Speed, quality, cost—pick two` as the improved version. A rule the author cannot follow inside his own example is not a rule.
 
 **Kill all adverbs.** No qualification, no exception. `Fell sharply` and `declined slightly` are different facts. A rule that cannot tell an intensifier from a measurement is a word filter, not a style.
 
-**Ban Wh- sentence openers.** `What`, `When`, `Where`, `Which`, `Who`, `Why`, `How` — restructure any sentence starting with one. That removes every direct question and most fronted subordinate clauses from the language, which is uniformity imposed in order to escape uniformity. `core/rhythm.md` asks for the opposite: vary the opening.
+**Ban Wh- sentence openers.** `What`, `When`, `Where`, `Which`, `Who`, `Why`, `How` — restructure any sentence starting with one. That removes every direct question and most fronted subordinate clauses from the language, which imposes uniformity in order to escape uniformity. `core/rhythm.md` asks for the opposite: vary the opening.
 
 **Two items beat three.** A triad deployed reflexively is a tell. A list with three members in it is a fact about the world. Rewriting to two changes the content to avoid a suspicion.
 

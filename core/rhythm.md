@@ -1,21 +1,22 @@
 ---
 id: core.rhythm
 layer: core
-version: 1.1.0
+version: 1.2.0
 status: draft
-budget: 557
-tokens: 557
+budget: 560
+tokens: 560
 evidence:
   - sources/field-guide-to-ai-slop.md
   - sources/ap-stylebook.md
   - sources/signs-of-ai-writing.md
   - sources/stop-slop.md
   - sources/wida-curriculum.md
+  - sources/ai-slop-research.md
 ---
 
 # Rhythm
 
-The quietest tell and the hardest to fake. Machine prose is metrically flat: when every sentence weighs the same, nothing is emphasized, and a reader loses the thread without being able to say why.
+The quietest tell and the hardest to fake. Machine prose drafted at length is metrically flat: when every sentence weighs the same, nothing is emphasized, and a reader loses the thread without being able to say why.
 
 ## Detect
 

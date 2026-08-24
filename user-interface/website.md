@@ -1,10 +1,10 @@
 ---
 id: user-interface.website
 layer: user-interface
-version: 1.0.0
+version: 1.0.1
 status: draft
-budget: 1395
-tokens: 1395
+budget: 1378
+tokens: 1378
 kind: medium
 medium: web
 mechanics: house
@@ -46,9 +46,9 @@ Everything here assumes a reader who has not signed in. Product surfaces behind 
 
 Say what the thing is in the first sentence, in the words the reader would search for. A stranger should be able to answer *what is this and is it for me* without scrolling.
 
-Replace every unfalsifiable claim with a number, a noun, or a consequence. If you cannot measure it, describe the mechanism instead. Whether the number is substantiated is `domain/marketing.md`; what this module asks is that the page have somewhere for one to go.
+Replace every unfalsifiable claim with a number, a noun, or a consequence. If you cannot measure it, describe the mechanism instead. The page has to leave somewhere for a number to go; whether that number is substantiated, and how long the substantiation lasts, is `domain/marketing.md` and its rule governs.
 
-Label every figure on the page with what it counts and as of when, so a stat row cannot show a bare number. Whether the figure is substantiated, and how long that substantiation lasts, is `domain/marketing.md` and its rule governs.
+Label every figure on the page with what it counts and as of when, so a stat row cannot show a bare number.
 
 Let hierarchy come from what matters, not from size. If a kicker restates its heading, one of them is empty; delete that one.
 
@@ -56,7 +56,7 @@ Number only genuinely ordered things — install steps, a changelog, a migration
 
 Write link text that stands alone, because assistive technology and search engines both read it out of context.
 
-Name the person in a testimonial, with role and company, or cut it. Attribution and material-connection disclosure themselves are `domain/marketing.md` and its rule governs; on this page, give a quote the same visual weight as the claim it supports rather than setting it as decoration.
+Name the person in a testimonial, with role and company, or cut it. Attribution and material-connection disclosure themselves are `domain/marketing.md`'s call; on this page, give a quote the same visual weight as the claim it supports rather than setting it as decoration.
 
 Keep the page in one voice. Marketing register stops at the product boundary: the pricing page may sell, the billing settings screen may not.
 

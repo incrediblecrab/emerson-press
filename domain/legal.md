@@ -2,10 +2,10 @@
 id: domain.legal
 layer: domain
 kind: regulated
-version: 2.0.0
+version: 2.1.0
 status: draft
-budget: 2470
-tokens: 2470
+budget: 2621
+tokens: 2621
 mechanics: bluebook
 evidence_floor: 5
 ---
@@ -18,7 +18,7 @@ Hedging here is the product. That single fact separates this domain from every o
 
 So the rule this module applies is not *hedge less*. It is *hedge with content*. A useless hedge names no fact and no threshold: *it is possible that issues may arise*. A useful one is a conditional with the condition supplied: *probably unenforceable, unless the lease was recorded before March, in which case the priority rule reverses*. The first is evasion. The second is the work.
 
-The second thing worth stating plainly is that legal citation is not a bibliography. It is an argument about authority. A case is binding or persuasive depending on which court and which jurisdiction; a proposition is holding or dictum; a source is good law or was overruled last year. Bluebook signals encode the writer's own confidence in the inferential distance between the cited authority and the sentence it supports. That system is the hardest thing in this domain for a model to fake, because choosing the right signal requires having read the case rather than having seen it cited.
+Legal citation is not a bibliography. It is an argument about authority. A case is binding or persuasive depending on which court and which jurisdiction; a proposition is holding or dictum; a source is good law or was overruled last year. Bluebook signals encode the writer's own confidence in the inferential distance between the cited authority and the sentence it supports. That system is the hardest thing in this domain for a model to fake, because choosing the right signal requires having read the case rather than having seen it cited.
 
 ## Detect
 
@@ -76,7 +76,7 @@ Bluebook, restated. `citation/bluebook22.md` carries the full form.
 
 - Full citation on first reference, short form after, `id.` only for the source immediately preceding with no intervening authority.
 - Pincites on anything specific. A case citation without a pincite asserts that the whole opinion supports the sentence.
-- Case names italicized in text; the reporter, court and year in the parenthetical: `N.Y. Times Co. v. Sullivan, 376 U.S. 254, 279-80 (1964)`.
+- Case names italicized in text; the reporter, the court and the year in the parenthetical, with the court dropped where the reporter alone identifies it: `N.Y. Times Co. v. Sullivan, 376 U.S. 254, 279-80 (1964)` names no court because `U.S.` can only be the Supreme Court, while a circuit or state decision must say which one.
 - Signals ordered and punctuated as the system requires, with a parenthetical explaining any citation whose relevance is not obvious from the proposition.
 - Subsequent history appended where it affects validity.
 - Quotations of fifty words or more set as blocks without quotation marks; alterations bracketed and omissions marked, because a misquoted authority is a misrepresentation to the court rather than a typo.
@@ -101,11 +101,11 @@ Persuasive, and adversarial in a system that expects it. Lead with the strongest
 
 Frame the facts truthfully and favorably — those are compatible, and the skill of the genre lies in the gap between them. Answer the other side's best argument in its own terms rather than a weakened restatement.
 
-Rule 3.3 governs. Directly adverse controlling authority you know of gets disclosed unless the other side already did. So does a correction, when you learn that a material statement of fact or law you made to the court was false.
+Rule 3.3 governs. You disclose directly adverse controlling authority you know of, unless the other side already has. You also correct yourself, once you learn that a material statement of fact or law you made to the court was false.
 
 ### Client letter
 
-Plain language for a reader who is not a lawyer and is probably worried. No Latin, no citations in the body, every necessary term defined once in ordinary words.
+Plain language for a reader who is not a lawyer and is probably worried. No Latin, no citations in the body, every necessary term defined once in ordinary words. ISO 24495-2:2025 sets guidelines for legal communication across the legal, governmental, non-governmental and health sectors, and states the purpose plainly: the reader has to understand the document well enough to exercise a right or meet an obligation. That is the standard the client letter is held to, not the writer's comfort.
 
 Say what the situation is, what it means for them, what you recommend, what it will cost, and what happens next. End with the action, the owner, and the date. The jargon shield is the failure mode here: technical language deployed to avoid delivering bad news plainly.
 
@@ -121,19 +121,21 @@ Rung 5 — uncertainty stated to the precision the evidence allows, which in law
 
 The signal system is the second addition. Where other citation styles record only that a source was consulted, Bluebook signals record the writer's assessment of how far the source is from the claim. That makes legal citation the only system in `citation/` where the form itself carries an epistemic judgment, and the only one where getting the form right requires having read the source.
 
-This is a floor, not a setting. Where the audience tier sits at a higher rung, the tier governs; where this floor is higher, it governs. Plain writing for a non-specialist is a change of register and never a lower standard of proof.
+Plainer words for a client with no legal training, and the same estimate underneath them. The pincite, the subsequent-history check and the calibration of the hedge are not register, so no tier on the ladder reaches them.
 
 ## Boundaries
 
 Against `core/voice.md`. Direct conflict, resolved in this module's favor by precedence. `voice` says commit; legal writing commits to a probability, and stripping the qualifiers changes the meaning of the advice rather than tightening it. `core/restraint.md` states the general principle: a flagged construction that is doing work stays.
 
-Against `academia`. Both cite densely, and the citations do different jobs. An academic citation locates a claim in a conversation among equals. A legal citation asserts that an institution with power over the reader has already decided something, and its form encodes how much power.
+Against `non-fiction`. Both cite densely, and the citations do different jobs. A note in a history tells the reader where a fact came from so they can go and check it. A legal citation asserts that an institution with power over the reader has already decided something, and its form encodes how much power. Legal history and biography of the bench are `non-fiction`; anything a client or a court will act on is this.
 
 Against `medical`. The nearest neighbor in this directory. Both are regulated, both treat overstatement as a professional failure rather than a stylistic one, and both write simultaneously for a specialist and a lay reader. The difference is that medical writing's lay reader may act on it alone, while a client letter sits inside a continuing relationship in which questions can be asked.
 
-With `audience/`. A brief is written for peers, a client letter for a non-specialist, and both are `professional`. The same matter written at two registers is the routine case in this domain, and the obligation of accuracy does not move between them. Plain language changes the vocabulary, not the estimate.
+With `domain/education-level/`. Load none of it and the reader is an adult: a judge for the brief, the client for the letter, and the formats above already set the distance between them. Reach for a tier only when the reader is genuinely at a schooling level — teaching material for a legal-studies class, a clinic letter to a client still in high school. Plain language changes the words. The estimate stays where the authority put it.
 
 ## Examples
+
+*Raimonde v. Van Vlerah* is a real Ohio decision, cited accurately. *Ruiz v. Marchetti Software* and *Alvarez v. Sentinel Mut.* are invented, reporter cites and all, because an example of a case pushed past its holding needs a holding the reader cannot go and check. Nothing invented here may leave this page.
 
 **Certainty a lawyer cannot sell**
 

@@ -1,7 +1,7 @@
 ---
 id: sources.apple-hig
 layer: sources
-version: 1.0.0
+version: 1.3.0
 status: active
 budget: none
 source:
@@ -9,21 +9,21 @@ source:
   publisher: "Apple Inc."
   year: 2026
   extent: "Foundations, patterns, components, inputs; ~150 pages read for text guidance"
-  baseline: "OS 27 generation; reviewed 2026-08-09"
+  baseline: "The June 2026 revision, written to the OS 27 generation then in beta; reviewed 2026-08-09"
   license: "Copyrighted. Rules restated in original wording; no guideline text reproduced."
 consumers:
-  - user-interface/applications.md
-  - user-interface/apple-hig.md
-  - user-interface/website.md
-  - user-interface/charts.md
   - user-interface/accessibility.md
+  - user-interface/apple-hig.md
+  - user-interface/applications.md
+  - user-interface/charts.md
+  - user-interface/website.md
 ---
 
 # Source: Apple Human Interface Guidelines
 
 Primary evidence base for the `user-interface/` layer. Unbudgeted by design: nothing here is loaded alongside a draft. This is what you read when you author or revise an interface module.
 
-Every rule is restated in original wording. Apple's HIG is copyrighted and none of it is reproduced. Where a specific string is quoted — `Cancel`, `Add to Cart`, `Notification` — it is quoted as an identifier, because the literal string is the finding.
+This dossier restates every rule in original wording. Apple's HIG is copyrighted, and this file reproduces none of it. Where a specific string appears — `Cancel`, `Add to Cart`, `Notification` — it appears as an identifier, because the literal string is the finding.
 
 ## Why This Source
 
@@ -31,7 +31,7 @@ Nothing else covers this ground with this much specificity.
 
 The interface-writing literature is mostly conference talks and agency blog posts, and it repeats itself: be clear, be concise, be human. The HIG is the only widely available document that goes down to the level that actually decides copy — whether an alert title takes a period, when an ellipsis is required, what a button in an informational alert may be called, what the placeholder does when the field is not empty. Those are the decisions a writer gets wrong, and they are decisions a general style guide cannot reach because they depend on the component.
 
-It is also enforced. Apple ships tens of thousands of strings under it and reviews third-party apps against parts of it, which means the rules have been run against real products at scale rather than argued in a post. That is a different kind of evidence from a taxonomy of tells, and it is the kind `user-interface/` needs: not *this reads as machine-made*, but *this fails*.
+Apple also enforces it, shipping tens of thousands of strings under it and reviewing third-party apps against parts of it. The rules have therefore met real products at scale rather than only an argument in a post. That is a different kind of evidence from a taxonomy of tells, and it is the kind `user-interface/` needs: not *this reads as machine-made*, but *this fails*.
 
 And it carries the one thing the anti-slop sources have no theory of at all — what interface text is *for*. Its framing is that the words are part of the experience, read by someone in the middle of doing something else, on a device whose size and setting change what can be said. Prose sources assume a reader who chose to read.
 
@@ -39,13 +39,13 @@ And it carries the one thing the anti-slop sources have no theory of at all — 
 
 The HIG is a platform specification for Apple operating systems. It exists so that third-party apps feel like the system they run on. `emerson-press` uses it for something wider: writing interface text anywhere. Four consequences follow, and the third is the one that causes real errors.
 
-- **Platform guidance is not text guidance.** Most of the document is layout, color, symbols, and API surface. Only the writing rules transfer, and the mining that produced this file discarded roughly nine-tenths of what it read.
+- **Platform guidance is not text guidance.** Most of the document is layout, color, symbols, and API surface. Only the writing rules transfer, and whoever built this file threw out roughly nine-tenths of what they read.
 
 - **Some rules are conventions, not truths.** Apple capitalizes button and menu labels in title case. Material Design uses sentence case. Neither is correct; each is a house convention held consistently, which is the part that matters. `user-interface/applications.md` therefore states the rule as *hold one convention per element type*, and `user-interface/apple-hig.md` carries Apple's answer as the worked example. Anywhere the HIG's answer is arbitrary-but-consistent, the module must say so rather than export Apple's answer as law.
 
 - **Some rules are load-bearing and look arbitrary.** The ellipsis on a menu item means more input is required before anything happens. `Cancel` always names the control that abandons the action. These are not typography preferences; they are a vocabulary the reader has already learned, and breaking them costs comprehension rather than polish. Distinguishing this category from the previous one is most of the work of reading this source.
 
-- **Its register is Apple's.** Neutral, direct, low-humor, low-apology. That is a defensible default for interface text and it is the default `user-interface/applications.md` takes, but it is a choice. A game, a children's app, or a product with a real editorial voice will diverge, and the `audience/` layer is what governs that, not this source.
+- **Its register is Apple's.** Neutral, direct, low-humor, low-apology. That is a defensible default for interface text and it is the default `user-interface/applications.md` takes, but it is a choice. A game, a children's app, or a product with a real editorial voice will diverge, and the `domain/` module governs that, not this source.
 
 ## What It Says About Voice
 
@@ -102,6 +102,7 @@ Named so the modules do not pretend to a citation they do not have.
 - **Empty states get one sentence.** The zero-result screen, the filtered-to-nothing screen, and the you-finished-everything screen are not distinguished anywhere. The four-way split under `## Surfaces` in `user-interface/applications.md` is built from the loading and alert guidance plus practice, and it is the weakest-sourced passage in the axis.
 - **No VoiceOver label formula.** The document repeats that elements must be labeled and defers the *how* to a separate page outside the mined set. Alt-text construction, hint phrasing, and announcement etiquette are not specified.
 - **Little on error-message construction.** There is a strong rule about what an alert title must not be, and much less about what the body should contain. The what-happened / what-it-means / what-now shape in the errors passage of `user-interface/applications.md` is inferred from the alert-title rule and the password example, not stated.
+- **Nothing on the ampersand.** The mined set has no line on `&` against *and*, in body text or anywhere else. The rule in `user-interface/apple-hig.md` — spell *and* in body text, allow `&` only where space is tight and the element already uses it — is an inference. Its second half stands on the mined *hold one convention per element type* principle recorded under `### The repurposing caveat`, which is real. Its first half, the *and*-by-default, does not: nothing here establishes which of the two Apple treats as unmarked. Read the whole rule as sound interface practice rather than as Apple's word, and do not cite this file for it.
 - **Nothing about string concatenation or plural rules**, despite an otherwise careful localization thread. The length and format warnings are there; the assembly problem is not.
 - **Nothing explicit on default button position.** The trailing-default convention in `user-interface/apple-hig.md` is read off shipped system alerts and off the `Cancel`-is-never-the-default rule, not stated in the mined set.
 - **No account of tone under failure at scale** — outages, data loss, billing. The register guidance assumes recoverable situations.

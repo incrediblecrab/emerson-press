@@ -1,7 +1,7 @@
 ---
 id: sources.wida-curriculum
 layer: sources
-version: 1.0.0
+version: 1.3.0
 status: active
 budget: none
 source:
@@ -11,69 +11,71 @@ source:
   year: 2020
   extent: "393 pp."
 consumers:
-  - audience/elementary-lower.md
-  - audience/elementary-upper.md
-  - audience/middle-school.md
-  - audience/high-school.md
-  - core/rhythm.md
   - core/formatting.md
+  - core/rhythm.md
+  - domain/education-level/01-elementary-lower.md
+  - domain/education-level/02-elementary-upper.md
+  - domain/education-level/03-middle-school.md
+  - domain/education-level/04-high-school.md
 ---
 
 # Source: WIDA ELD Standards Framework, 2020
 
-Evidence base for the `audience/` layer. Unbudgeted by design: nothing here is loaded into a prompt alongside a draft. This file is what you read when you author or revise an audience module, so the module itself can stay under 250 tokens and still be defensible.
+Evidence base for the `domain/education-level/` ladder. Unbudgeted by design: nothing here is loaded into a prompt alongside a draft. This file is what you read when you author or revise an education module, so the module itself can stay short and still be defensible.
 
-Rules stated in original wording. Reference codes (`ELD-LA.4-5.Argue.Expressive`) and linguistic terms (`nominalization`, `given/new`) are cited as-is because they are identifiers, not prose.
+This dossier states every rule in original wording. Reference codes (`ELD-LA.4-5.Argue.Expressive`) and linguistic terms (`nominalization`, `given/new`) appear as-is because they are identifiers rather than prose. Illustrative phrases and sentences throughout are supplied here rather than taken from the framework; single-word vocabulary examples are WIDA's, and ordinary words carry no expression to protect. Page numbers refer to the printed 2020 framework.
 
 ## Why This Source
 
 Most readability tools measure the wrong thing. Flesch-Kincaid counts syllables and sentence length, so it rates `The cat sat on the mat because of the sun` as harder than `Aggregate demand fell`. Lexile does the same with word frequency. Neither can tell you what a twelve-year-old can actually track across a paragraph.
 
-WIDA does. It describes what changes in language as students move through school, at three levels — how a whole text is organized, how sentences combine clauses, how words carry precision — and it does so per grade band, with worked examples. That is a calibration spine for the `audience/` layer, and there is no comparable public document.
+WIDA does. It describes what changes in language as students move through school, at three levels — how a whole text is organized, how sentences combine clauses, how words carry precision — and it does so per grade band, with worked examples. That is a calibration spine for the `domain/education-level/` ladder, and there is no comparable public document.
 
 ### The repurposing caveat
 
-WIDA describes the language development of multilingual learners in K-12 classrooms. It is a standards framework for teachers, and its own front matter says it is not a curriculum, not a reading-level formula, and not a way to categorize a person.
+WIDA describes the language development of multilingual learners in K-12 classrooms. It is a standards framework for teachers, and Section 2 sets out what it is not: not a stand-in for a curriculum, not ready-made lessons, not a step-by-step recipe, not a grading tool [[p. 37-38]], not an exhaustive inventory of what a student can do, and not grounds for lowering expectations or restricting access to complex material [[p. 36]]. The proficiency descriptors carry their own warning: a level is a snapshot of one performance, not a label for a person. [[p. 33-34]]
 
 `emerson-press` uses it for something adjacent but different: calibrating prose written *to* a reader at a given level. Two consequences follow.
 
 - WIDA's progressions are evidence about what language does as complexity rises. Treat them as that. Do not treat a grade band as a score to hit.
-- The proficiency levels (PL1-PL6) describe a *learner's* development, not a *text's* difficulty. They are useful to audience modules as a map of how complexity is built up, not as a target. An audience module writes to a grade-band profile, never to a proficiency level.
+- The proficiency levels (PL1-PL6) describe a *learner's* development, not a *text's* difficulty. They are useful to an education module as a map of how complexity gets built up, not as a target. An education module writes to a grade-band profile, never to a proficiency level.
 
-Beyond grade 12 WIDA has nothing to say. `audience/undergraduate.md`, `audience/graduate.md`, and `audience/professional.md` are sourced elsewhere.
+Beyond grade 12 WIDA has nothing to say. The three tiers above it — `05-undergraduate.md`, `06-graduate.md`, `07-post-graduate.md` — are sourced elsewhere. So is the working-adult register, which is now the unmarked default rather than a module: load a `domain/` genre module with nothing from `domain/education-level/` beside it and you are writing for an adult at work.
 
 ## The Framework in Four Components
 
-Four nested components, broad to narrow.
+Four nested components, broad to narrow. [[p. 25]]
 
-1. **ELD Standards Statements** — five statements framing content and language as one thing rather than two. `ELD-SI` (social and instructional), `ELD-LA` (language arts), `ELD-MA` (mathematics), `ELD-SC` (science), `ELD-SS` (social studies). Identical from kindergarten through grade 12; only the expectations under them change.
-2. **Key Language Uses** — four genre families that recur across every discipline: Narrate, Inform, Explain, Argue.
+1. **ELD Standards Statements** — five statements framing content and language as one thing rather than two. `ELD-SI` (social and instructional), `ELD-LA` (language arts), `ELD-MA` (mathematics), `ELD-SC` (science), `ELD-SS` (social studies). Identical from kindergarten through grade 12; only the expectations under them change. [[p. 26]]
+2. **Key Language Uses** — four genre families that recur across every discipline: Narrate, Inform, Explain, Argue. [[p. 28-30]]
 3. **Language Expectations** — goals for what a student does with language, split by grade band, Key Language Use, and mode.
-4. **Proficiency Level Descriptors** — a six-level continuum describing how language grows toward those expectations.
+4. **Proficiency Level Descriptors** — a six-level continuum describing how language grows toward those expectations. [[p. 33-34]]
+
+`ELD-SI` is different in kind from the other four. It covers how people talk to each other while working — agreeing on norms, checking what somebody meant, working a question through with peers, saying where one personally stands — and it applies at every proficiency level, every grade, and inside every subject rather than sitting beside them. [[p. 26-27]]
 
 ### Modes
 
-The four domains collapse into two modes. **Interpretive** covers listening, reading, and viewing. **Expressive** covers speaking, writing, and representing. Viewing and representing are in there deliberately: diagrams, labels, and layout count as language.
+The four domains collapse into two modes. **Interpretive** covers listening, reading, and viewing. **Expressive** covers speaking, writing, and representing. Viewing and representing are in there deliberately: diagrams, labels, and layout count as language. [[p. 30-31]]
 
-For `emerson-press`, the expressive expectations matter most — they describe constructing a text. The interpretive ones tell you what a reader at that band can extract, which is what an audience module is really calibrating against.
+For `emerson-press`, the expressive expectations matter most — they describe constructing a text. The interpretive ones tell you what a reader at that band can extract, which is what an education module is really calibrating against. Interpretive descriptors sit consistently one step ahead of expressive descriptors at the same level, so comprehension outpaces production at every band.
 
 ### Reference codes
 
-`ELD-LA.2-3.Narrate.Expressive` reads as: language arts, grades 2-3, the Narrate family, expressive mode. Codes are stable and worth citing in a module's `sources:` block, because they resolve to one specific set of statements.
+`ELD-LA.2-3.Narrate.Expressive` reads as: language arts, grades 2-3, the Narrate family, expressive mode. [[p. 30-31]] Codes are stable and worth citing in a module's `sources:` block, because they resolve to one specific set of statements.
 
 ## The Calibration Spine: Three Dimensions, Five Criteria
 
-This is the part the `audience/` layer is actually built on. Language is described along three dimensions, with five criteria between them. Every proficiency descriptor is written against these five.
+This is the part the `domain/education-level/` ladder is actually built on. WIDA describes language along three dimensions, with five criteria between them, and writes every proficiency descriptor against those five. [[p. 34-35]]
 
 ### Discourse — meaning across a whole text
 
-- **Organization.** How ideas are arranged to serve a purpose, using patterns characteristic of the genre. Introduction/body/conclusion is a generic pattern; claim/evidence/reasoning is a genre-specific one.
+- **Organization.** How a writer arranges ideas to serve a purpose, using patterns characteristic of the genre. Introduction/body/conclusion is a generic pattern; claim/evidence/reasoning is a genre-specific one.
 - **Cohesion.** How ideas connect within and across sentences: repeated words, synonyms, pronoun substitution, connectors, omission, the given/new pattern.
-- **Density.** How much information is packed into noun groups — whether meaning is expanded across clauses or compressed into modifiers and nominalizations.
+- **Density.** How much information a noun group carries — whether the writer spreads meaning across clauses or compresses it into modifiers and nominalizations.
 
 ### Sentence — grammatical complexity
 
-How relationships between ideas are expressed through clauses: simple, compound, and complex sentences; coordinating and subordinating conjunctions; dependent and independent clauses.
+How clauses express relationships between ideas: simple, compound, and complex sentences; coordinating and subordinating conjunctions; dependent and independent clauses.
 
 ### Word/Phrase — precision
 
@@ -85,11 +87,11 @@ Choosing among everyday, cross-disciplinary, and technical registers, and using 
 
 ### Why five criteria beats one number
 
-Density and grammatical complexity move independently, and they trade off. Science writing is lexically dense but grammatically simple. Literary writing is grammatically complex but lexically sparse. Speech is more grammatically intricate than writing. A single readability score cannot represent that; five criteria can, and it is why `audience/` modules flag over-reach and under-reach separately.
+Density and grammatical complexity move independently, and they trade off. Science writing runs lexically dense and grammatically simple. Literary writing runs grammatically complex and lexically sparse. Spoken language is more grammatically intricate than written language. [[p. 256]] A single readability score cannot represent that; five criteria can, and it is why `domain/education-level/` modules flag over-reach and under-reach separately.
 
 ## Key Language Uses
 
-Four genre families. All four are present at every grade and in every discipline; what changes is which are prominent and what they demand.
+Four genre families. All four are present at every grade and in every discipline; what changes is which are prominent and what they demand. The tables and progressions in this section restate Section 2. [[p. 28-30]]
 
 | Use | Job | Genres |
 | --- | --- | --- |
@@ -143,26 +145,28 @@ These recur regardless of genre, and each is a lever `core/` can pull.
 
 ### Noun groups
 
-A noun group is a noun plus what modifies it. Academic prose is hard largely because information gets packed into noun groups joined by one weak verb (`is`, `has`, `are`). Expansion happens before the noun (pre-modifiers: determiners, adjectives, quantifiers, classifiers) and after it (post-modifiers: prepositional phrases, relative clauses).
+A noun group is a noun plus what modifies it. Academic prose is hard largely because information gets packed into noun groups joined by one weak verb (`is`, `has`, `are`). Expansion happens before the noun (pre-modifiers: determiners, adjectives, quantifiers, classifiers) and after it (post-modifiers: prepositional phrases, relative clauses). [[p. 257]]
 
-The progression is legible: `kite` → `the kite` → `the torn kite` → `the torn, bright kite` → `the torn, bright, hand-stitched paper kite that snagged on the fence`.
+The progression is legible, and this instance is built for this dossier rather than taken from the framework: `kite` → `the kite` → `the torn kite` → `the torn, bright kite` → `the torn, bright, hand-stitched paper kite that snagged on the fence`.
 
-Density rises with the count of content words inside the group. This is the single most reliable knob for audience calibration, and the one LLM prose over-turns by default.
+Lexical density rises with the count of content words inside the group. [[p. 257]] This is the single most reliable knob for calibration, and the one LLM prose over-turns by default.
 
 ### Nominalization
 
-Turning an event or quality into a thing: `evaporate` → `evaporation`, `persecuting` → `persecution`, `the river kept overflowing` → `recurrent flooding`.
+Turning an event or quality into a thing: `evaporate` → `evaporation`, `persecuting` → `persecution`, `the river kept overflowing` → `recurrent flooding`. [[p. 258]]
 
 Two effects, and they pull opposite ways.
 
-- It condenses. `Leatherbacks are declining` becomes `this decline`, and the next sentence can build on it.
+- It condenses. `The glacier is retreating` becomes `this retreat`, and the next sentence can build on it. (Invented here; WIDA's own worked case is not reproduced.)
 - It deletes the actor. `Mistakes were made` has a cousin in every nominalization: emphasis lands on the result and whoever caused it disappears.
 
-Useful to `core/voice.md` and `core/accuracy.md`: nominalization is not a defect, it is a trade. Flag it when the actor matters and has vanished.
+WIDA describes the passive voice in exactly the same terms and for the same reasons — it makes the recipient the subject, which keeps attention on a result, avoids pinning blame, or leaves the actor unnamed. [[p. 258]] The two devices are one habit with two grammatical forms, and a module that flags agentless passives without flagging actor-deleting nominalizations has caught half the failure.
+
+Useful to `core/voice.md` and `core/accuracy.md`: neither device is a defect, and each is a trade. Flag it when the actor matters and has vanished.
 
 ### Given/new
 
-English written prose builds by putting known information at the front of a sentence and new information at the end. The next sentence picks up that new information as its given — often via nominalization — and adds more.
+English written prose builds by putting known information at the front of a sentence and new information at the end. The next sentence picks up that new information as its given — often via nominalization — and adds more. [[p. 256]]
 
 > Waves along this coast **erode** the cliff face every winter. That **erosion** is what pushed the lighthouse inland twice.
 
@@ -172,9 +176,9 @@ This is the mechanism behind prose that flows, and its absence is why list-shape
 
 Each profile gives the developmental snapshot, which Key Language Uses carry the load, and the language features WIDA actually names at that band. Features are cumulative — each band assumes everything below it.
 
-### Kindergarten
+### Kindergarten [[p. 43-62]]
 
-**Snapshot.** Physical, hands-on, social. Meaning is carried as much by drawing, gesture, and speech as by print.
+**Snapshot.** Physical, hands-on, social. Drawing, gesture, and speech carry as much meaning as print does.
 
 **Prominent uses.** Language arts: Narrate, Inform. Mathematics: Inform. Science: Inform, Explain. Social studies: Inform. No Argue expectations outside the social-and-instructional standard.
 
@@ -188,7 +192,7 @@ Each profile gives the developmental snapshot, which Key Language Uses carry the
 
 **Calibration.** One idea per sentence. Name the topic and keep naming it. Anchor every abstraction to something observable.
 
-### Grade 1
+### Grade 1 [[p. 63-84]]
 
 **Snapshot.** A jump from kindergarten. A sense of story structure appears, and so does the opinion with a reason attached.
 
@@ -209,9 +213,9 @@ Each profile gives the developmental snapshot, which Key Language Uses carry the
 - Declarative statements that present a conclusion.
 - A summary statement that restates the position.
 
-**Calibration.** Two clauses maximum, joined by one connector. A claim can now carry one reason. Technical vocabulary is allowed if it is defined on the spot.
+**Calibration.** Two clauses maximum, joined by one connector. A claim can now carry one reason. Technical vocabulary works when the sentence defines it on the spot.
 
-### Grades 2-3
+### Grades 2-3 [[p. 85-106]]
 
 **Snapshot.** Narrative structure becomes deliberate. The difference between a story and an informational text is visible to the reader, and so is the difference between a claim with support and one without.
 
@@ -222,7 +226,7 @@ Each profile gives the developmental snapshot, which Key Language Uses carry the
 **New at this band.**
 
 - Headings to organize (`Habitat`, `Diet`).
-- Expanded noun groups (`the old man on the block`).
+- Expanded noun groups introducing a character (`the tall woman next door`; invented here).
 - Adverbials and prepositional phrases for time and place (`a hundred years ago`).
 - Saying verbs for dialogue: `yelled`, `whispered`.
 - Synonyms and renaming for cohesion, beyond pronouns.
@@ -230,13 +234,13 @@ Each profile gives the developmental snapshot, which Key Language Uses carry the
 - Clauses expressing time (`before the thaw`, `once the pressure drops`).
 - A wider range of clause connectors: `because`, `but`, `when`, `like`, `so`, `so that`.
 - Sensory and literary language, onomatopoeia.
-- Factual statements held free of evaluative language — an explicit contrast between `brown caribou` and `really cool caribou`.
+- Factual statements held free of evaluative language. WIDA draws the contrast explicitly with a paired animal description; the pair here is invented to the same shape: `gray wolf` against `super scary wolf`.
 - Statements that disagree or counter a claim.
 - Evaluative language to judge behavior or summarize an event.
 
-**Calibration.** Coherence across a multi-paragraph text is now the goal, not just within a sentence. Abstraction is allowed if it has been built from concrete instances first. Neutral register becomes a distinct choice.
+**Calibration.** Coherence across a multi-paragraph text is now the goal, not just within a sentence. Abstraction works when concrete instances have built it first. Neutral register becomes a distinct choice.
 
-### Grades 4-5
+### Grades 4-5 [[p. 107-140]]
 
 **Snapshot.** Argument moves outside personal experience. Objective stance becomes something a writer selects rather than falls into.
 
@@ -249,7 +253,7 @@ Each profile gives the developmental snapshot, which Key Language Uses carry the
 - Dependent and relative clauses adding detail (`the ferry, which ran only on weekends`).
 - A range of tenses, used to place events relative to one another in time.
 - Passive voice used deliberately to keep focus on the topic.
-- Nominalization to condense (`Leatherbacks are declining` → `this decline`).
+- Nominalization to condense (`The glacier is retreating` → `this retreat`; invented here).
 - Modality for obligation and certainty: `might`, `could`, `must`, `need to`.
 - First person versus third person as a stance choice.
 - Ellipsis to cut repetition.
@@ -257,12 +261,12 @@ Each profile gives the developmental snapshot, which Key Language Uses carry the
 - Topic nouns opening sentences and paragraphs.
 - Connectors that elaborate: `so`, `this means`, `therefore`, `as a result`.
 - That-clauses linking claim to evidence (`This shows that…`).
-- Connectors signalling an alternative view: `one way`, `another way`, `on the other hand`.
+- Connectors signaling an alternative view: `one way`, `another way`, `on the other hand`.
 - Summary statements that reiterate or call for a response.
 
-**Calibration.** One embedded clause per sentence, not two. Stance is now explicit — objective, evaluative, or personal — and should be consistent within a piece. Evidence must be linked to the claim by an actual sentence.
+**Calibration.** One embedded clause per sentence, not two. Stance is now explicit — objective, evaluative, or personal — and should be consistent within a piece. An actual sentence must link the evidence to the claim.
 
-### Grades 6-8
+### Grades 6-8 [[p. 141-178]]
 
 **Snapshot.** Counterclaims arrive. So does the ability to adjust the strength of a statement rather than only its content.
 
@@ -288,7 +292,7 @@ Each profile gives the developmental snapshot, which Key Language Uses carry the
 
 **Calibration.** Two layers of clause nesting is the ceiling. A claim without a counterclaim reads as under-reach at this band. Technical terms are fine when cued. Stacked nominalization is the characteristic over-reach.
 
-### Grades 9-12
+### Grades 9-12 [[p. 179-216]]
 
 **Snapshot.** Strategic choice across the board. Not just what is said, but which genre, which register, which degree of certainty, and what the audience will need convinced of.
 
@@ -308,36 +312,38 @@ Each profile gives the developmental snapshot, which Key Language Uses carry the
 - Objective and evaluative language used together to adjust precision, soften tone, and acknowledge others.
 - Corroborating across primary and secondary sources.
 - Anticipating what evidence a given audience will require.
-- Less polarized language so a claim reads as considered rather than partisan.
+- Wording pitched away from either pole, so a claim reads as considered rather than partisan.
 
-**Calibration.** This band's characteristic failure is dissertation cosplay — field jargon without context, stacked nominalizations, borrowed authority. Its other failure is hedging everything into mush. WIDA's own framing is useful here: the goal is an objective stance achieved through less polarized wording, not through refusing to claim anything.
+**Calibration.** This band's characteristic failure is dissertation cosplay — field jargon without context, stacked nominalizations, borrowed authority. Its other failure is hedging everything into mush. WIDA's framing is useful here, restated: the goal is a neutral stance reached by keeping the wording off both poles, not by refusing to claim anything.
 
 ## The Six-Level Continuum
 
-Six proficiency levels, each cumulative — level 4 contains 1 through 3. Level 6 is open-ended, on the grounds that language development does not stop. WIDA notes that a person's levels differ across modes: someone can speak at one level and write at another.
+Six proficiency levels, each cumulative — level 4 contains everything through level 4, not only its own descriptor. Level 6 is open-ended, on the grounds that language development does not stop. A person's levels differ across modes: someone can speak at one level and write at another. [[p. 33-34]]
 
-Read the following as the shape of how complexity is built, not as targets. This is the expressive continuum for grades 9-12, which is what writing calibration cares about most.
+One caution belongs beside that and gets dropped constantly: **this is not a strict ladder.** How a learner actually moves depends on how familiar the topic, the audience, and the situation are, so a path through the levels can wander rather than climb evenly. [[p. 33-34]] A writer reaching for a rung is describing a text, not a trajectory.
+
+Read the following as the shape of how complexity gets built, not as targets. This is the expressive continuum for grades 9-12, which is what writing calibration cares about most. [[p. 351-352]]
 
 | Criterion | L1 | L2 | L3 | L4 | L5 | L6 |
 | --- | --- | --- | --- | --- | --- | --- |
-| **Organization** | Short text, predictable order, formulaic openers | Generic order: introduction, body, conclusion | Genre-specific patterns (position, argument, call to action) | Genre patterns plus deliberate signalling between paragraphs | Genre patterns with a wide range of relationship signals | Genres combined flexibly for a chosen effect |
-| **Cohesion** | A growing set of devices: demonstratives, repetition | Expanding set: given/new, whole/part, class/subclass | Flexible set: ellipsis, substitution, omission | Devices chosen to suit the genre and the field | Wide variety, discipline-specific | Strategic, and used creatively |
-| **Density** | Some elaboration (`these five rules`) | More types (classifiers: `Roman empire`) | Embedded clauses after the noun | Embedded clauses plus condensing by nominalization | Flexible elaboration, growing ways to condense | Elaboration and condensation chosen for effect |
-| **Grammatical complexity** | Simple sentences, clauses emerging | Simple or compound, familiar coordination | Compound, broader range of joining techniques | Compound and complex, varied, matched to genre | Wide variety showing condition, cause, concession, contrast | Strategic; aware that sentence shape itself creates effect |
+| **Organization** | Short text, predictable order, some paragraph openers | Generic order: opening, middle, closing | Genre-specific patterns (a stated position, arguments, a call to action) with varied openers | Genre patterns pairing claims with counterclaims or rebuttals, plus deliberate signaling between paragraphs | Genre patterns with a wide range of relationship signals across the text | Genres combined flexibly for a chosen audience and effect |
+| **Cohesion** | A growing set of devices: demonstratives, repetition | Expanding set: given/new, whole/part, class/subclass | Flexible set: ellipsis, substitution, omission | Devices chosen to suit the genre and the field | Wide variety, discipline-specific | Devices used flexibly and strategically |
+| **Density** | Elaboration by demonstrative (`those three warnings`) | Elaboration by added classifier (`desert climate`) | Embedded clauses after the noun | Embedded clauses plus condensing by nominalization | Flexible elaboration, growing ways to condense | Elaboration and condensation chosen strategically |
+| **Grammatical complexity** | Simple sentences, clauses emerging | Simple or compound, familiar coordination | Compound, broader range of joining techniques | Compound and complex, varied, matched to genre, plus ways to lengthen or shorten a sentence | Wide variety showing condition, cause, concession, contrast | Multiple techniques for building complex clause relationships, matched to genre, audience, and discipline |
 | **Precision** | Growing repertoire, growing precision | Idioms and collocations | Adverbials of time, manner, place; verb types; abstract nouns | Evaluation and obligation, used precisely | Wide variety, precise, matched to genre and discipline | Flexible and strategic across contexts |
 
 Four things worth carrying into `core/`:
 
-- **Genre-specific organization arrives before complex sentences do.** Knowing the shape of the thing precedes being able to build long sentences. Prose that has sentence machinery but no genre shape is inverted, and that is exactly the failure mode of generated text.
+- **Genre-specific organization arrives before complex sentences do.** Genre shape is settled at level 3; compound-and-complex sentences arrive at level 4. Knowing the shape of the thing precedes being able to build long sentences. Prose that has sentence machinery but no genre shape is inverted, and that is exactly the failure mode of generated text.
 - **Nominalization is a level-4 move** in this table. It is not sophistication by default. It is a specific tool for condensing given information so a sentence can carry new information.
 - **Level 6 is defined by flexibility, not by maximum complexity.** The top of the scale is choosing the simple sentence when the simple sentence is right. This is the single most useful thing WIDA contributes to `core/restraint.md`.
-- **The levels are re-scaled per band and per mode, not absolute.** WIDA prints a separate table for every grade band in each of the two modes, and a feature moves between columns across them. Given/new is the sharpest case: level 4 for grades 4-5 expressive, level 6 for grades 4-5 interpretive, and level 2 for grades 9-12 expressive. The same construction spans nearly the whole scale depending on which table you are reading. So a level number means nothing without its band and mode, and the ordering of features within one table matters more than the number attached to any of them.
+- **The levels are re-scaled per band and per mode, not absolute.** WIDA prints a separate table for every grade band in each of the two modes, and a feature moves between columns across them. Given/new is the sharpest case, and it descends one step per band inside the expressive tables: level 5 at grades 2-3 [[p. 341]], level 4 at grades 4-5 [[p. 343-344]], level 3 at grades 6-8 [[p. 347-348]], level 2 at grades 9-12 [[p. 351-352]]. In the interpretive tables it sits at level 5 for grades 6-8 [[p. 345-346]] and level 4 for grades 9-12 [[p. 349-350]], and it does not appear in the grades 4-5 interpretive cohesion row at all [[p. 342]]. So a level number means nothing without its band and its mode, and the ordering of features within one table matters more than the number attached to any of them.
 
 ## Social and Instructional Language
 
-`ELD-SI` runs alongside the four content standards and splits at only one point, between K-3 and 4-12. It covers how people talk to each other while working: agreeing on norms, checking what was meant, working through a question with peers, saying where one personally stands.
+`ELD-SI` runs alongside the four content standards and splits at only one point, between K-3 and 4-12. It covers how people talk to each other while working: agreeing on norms, checking what someone meant, working through a question with peers, saying where one personally stands. [[p. 26-27, 293-318]]
 
-Useful for audience modules because it names the interpersonal moves that belong at each band, and the 4-12 column is noticeably more demanding.
+Useful to an education module because it names the interpersonal moves that belong at each band, and the 4-12 column is noticeably more demanding.
 
 | | K-3 | 4-12 |
 | --- | --- | --- |
@@ -350,17 +356,17 @@ The K-3 → 4-12 jump worth noting: what others said becomes what nobody said; o
 
 ## Linguistic Vocabulary
 
-Terms WIDA uses precisely, worth using the same way in module prose.
+Terms WIDA uses precisely, worth using the same way in module prose. All of these come from the glossary. [[p. 253-262]]
 
-**Clause types.**
+**Clause types.** [[p. 253]]
 - *Independent* — stands alone, has subject and predicate.
 - *Dependent* (subordinate) — cannot stand alone (`as the caterpillars grow`).
 - *Relative* — a dependent clause opening with `that`, `who`, or `which`, adding detail to a noun.
 - *Conditional* — poses a hypothesis or imposes a condition, usually with `if` or `unless`.
 
-**Sentence types.** *Simple* is one independent clause, and is not necessarily short. *Compound* is two or more independent clauses. *Complex* has one independent and one or more dependent clauses, and is how intricate relationships get expressed.
+**Sentence types.** [[p. 259]] *Simple* is one independent clause, and is not necessarily short. *Compound* is two or more independent clauses. *Complex* has one independent and one or more dependent clauses, and is how intricate relationships get expressed.
 
-**Connectors,** grouped by the relationship they signal:
+**Connectors,** grouped by the relationship they signal: [[p. 254]]
 - Addition: `and`, `and then`, `furthermore`, `in addition`, `besides`
 - Cause and consequence: `because`, `so`, `therefore`, `consequently`, `due to`, `as a result`
 - Comparison and contrast: `but`, `instead`, `in other words`, `however`, `while`, `on the other hand`, `despite`
@@ -370,33 +376,33 @@ Terms WIDA uses precisely, worth using the same way in module prose.
 - Sequence: `first`, `second`, `finally`, `to start with`, `in short`
 - Time: `when`, `then`, `next`, `afterward`, `at the same time`, `meanwhile`, `previously`
 
-**Verb types,** a distinction that does real work in `core/voice.md`:
+**Verb types,** a distinction that does real work in `core/voice.md`: [[p. 261]]
 - *Doing* — action: `pull`, `attract`, `pollinate`
 - *Relating* — relationship: `is`, `belongs to`, `consists of`, `has`
 - *Thinking* — thought: `consider`, `imagine`, `wonder`
 - *Feeling* — feeling: `admire`, `detest`, `respect`
 - *Saying* — speech: `confirm`, `ask`, `whisper`, `challenge`, `contradict`
 
-**Cohesive devices.**
+**Cohesive devices.** [[p. 253, 257, 259, 260]]
 - *Lexical cohesion* — repetition, synonyms, antonyms, hyponyms, class and subclass, whole and part.
 - *Reference devices* — personal pronouns, articles, demonstratives, qualifiers, comparatives, and text reference (`That is what makes a tide chart worth keeping`).
 - *Substitution and omission* — `We had two ladders, and I took the shorter one`; `Some hinges rust quickly, but others do not`.
 
 **Other terms.**
-- *Coherence* — whether the text makes sense as a whole. *Cohesion* — whether its parts are tied together. Coherence can fail while cohesion holds, which is exactly what fluent nonsense is.
-- *Lexical density* — how much information a noun group carries.
-- *Evaluative language* — nouns, verbs, and adjectives expressing attitude, judgment, or feeling.
-- *Connotation and denotation* — dictionary meaning versus associated meaning. WIDA's example: `cheap` as inexpensive, versus `cheap` as stingy.
-- *Passive voice* — foregrounds the result, and may be chosen to hide who is responsible or to avoid naming an actor. WIDA states that use case plainly, which is a good precedent for `core/accuracy.md`.
+- *Coherence* — whether the text makes sense as a whole. *Cohesion* — whether its parts are tied together. Coherence can fail while cohesion holds, which is exactly what fluent nonsense is. [[p. 253]]
+- *Lexical density* — how much information a noun group carries. [[p. 257]]
+- *Evaluative language* — nouns, verbs, and adjectives expressing attitude, judgment, or feeling. [[p. 255]]
+- *Connotation and denotation* — dictionary meaning versus associated meaning. WIDA supplies a pair; this one is built for the dossier: `frugal` and `stingy` denote the same spending habit and pass opposite judgments on it. [[p. 254]]
+- *Passive voice* — makes the recipient of an action the subject, keeping attention on a result, avoiding blame, or leaving the actor unnamed. WIDA states that third use plainly, which is a good precedent for `core/accuracy.md`. [[p. 258]]
 
 ## Mapping to `emerson-press`
 
 | Module | WIDA bands | What it draws |
 | --- | --- | --- |
-| `audience/elementary-lower.md` | K, 1, 2-3 | One-idea sentences; concrete anchors; sequence and cause words; opinion with one reason |
-| `audience/elementary-upper.md` | 4-5 | One embedded clause; explicit stance; evidence linked to claim by a sentence; hedging arrives |
-| `audience/middle-school.md` | 6-8 | Counterclaims; graduation of intensity; two-layer nesting ceiling; nominalization as condensing |
-| `audience/high-school.md` | 9-12 | Warrants; refutation; pace control; objective stance via less polarized wording |
+| `domain/education-level/01-elementary-lower.md` | K, 1, 2-3 | One-idea sentences; concrete anchors; sequence and cause words; opinion with one reason |
+| `domain/education-level/02-elementary-upper.md` | 4-5 | One embedded clause; explicit stance; evidence linked to claim by a sentence; hedging arrives |
+| `domain/education-level/03-middle-school.md` | 6-8 | Counterclaims; graduation of intensity; two-layer nesting ceiling; nominalization as condensing |
+| `domain/education-level/04-high-school.md` | 9-12 | Warrants; refutation; pace control; neutral stance via wording kept off both poles |
 | `core/rhythm.md` | continuum | Sentence-type variety as a deliberate effect, not a metric |
 | `core/formatting.md` | discourse organization | Headings and visuals as language; genre-specific organizational patterns |
 | `core/voice.md` | word/phrase, verb types | Doing verbs over relating verbs; nominalization deleting the actor |
@@ -405,16 +411,18 @@ Terms WIDA uses precisely, worth using the same way in module prose.
 
 The last three rows are available rather than drawn. `voice`, `restraint` and `accuracy` reach the same conclusions from the anti-slop evidence and cite that instead, so this dossier does not claim them in `consumers:` and they do not carry it in `evidence:`. They are listed because a future revision of any of the three should read these bands before restating the rule from scratch.
 
-Modules beyond grade 12 — `undergraduate`, `graduate`, `professional` — are outside this source. They cite AAC&U, WPA, ISO 24495-1, and plain-language guidance instead.
+The three tiers above grade 12 — `05-undergraduate.md`, `06-graduate.md`, `07-post-graduate.md` — are outside this source. `05-undergraduate.md` cites the AAC&U VALUE rubric for written communication and the CWPA Outcomes Statement instead; `06-graduate.md` and `07-post-graduate.md` rest on the AP dossier and, for 07, on the slop research. No tier in the ladder cites ISO 24495-1 or plain-language guidance, and none should: that anchor served the working-adult register, which is no longer a module at all. An adult at work is what a `domain/` genre module assumes when nothing from `domain/education-level/` loads beside it. The anchor moved down a layer with the register rather than lapsing with the module: `domain/legal.md` now cites ISO 24495-2:2025 on legal communication and `domain/medical.md` cites ISO 24495-3:2026 on science writing for non-specialists. Both sit in the module bodies as bare number, title and date. Neither is backed by a dossier here and neither should be, because nobody has read the standards' text.
 
 ## What This Source Does Not License
 
 WIDA states its own limits, and they transfer cleanly.
 
-- Not a curriculum, not a lesson plan, not a step-by-step process.
-- Not a complete inventory of the language of school. It does not try to be.
-- Not a way to categorize a person. `a student at PL1` is a snapshot of one performance, not a label.
-- Not grounds for lowering expectations or restricting access to complex material.
-- Not a reason to cite a proficiency level for a grade-band rule. If a feature appears at both a grade band and a PL, cite the grade band. The PL is a different axis and not a target.
+- Not a curriculum, not ready-made lessons, not a step-by-step recipe, not a grading tool. [[p. 37-38]]
+- Not a complete inventory of the language of school. It does not try to be. [[p. 36]]
+- Not a way to categorize a person. `a student at PL1` is a snapshot of one performance, not a label. [[p. 33-34]]
+- Not grounds for lowering expectations or restricting access to complex material. [[p. 36]]
+- Not a strict ladder. Movement through the levels depends on how familiar a topic, an audience, and a situation are, so the path varies. [[p. 33-34]]
 
-The `emerson-press` translation: a grade band describes what a reader can track, not a ceiling on what they may be told. An audience module adjusts the machinery of the prose — clause depth, noun-group density, connector explicitness — and never the ambition of the content.
+One further limit is this repo's rather than WIDA's: do not cite a proficiency level for a grade-band rule. If a feature appears at both a grade band and a PL, cite the grade band. The PL is a different axis and not a target.
+
+The `emerson-press` translation: a grade band describes what a reader can track, not a ceiling on what they may be told. An education module adjusts the machinery of the prose — clause depth, noun-group density, connector explicitness — and never the ambition of the content.

@@ -1,10 +1,10 @@
 ---
 id: citation.ieee
 layer: citation
-version: 1.0.0
+version: 1.0.2
 status: draft
-budget: 1182
-tokens: 1182
+budget: 1261
+tokens: 1261
 edition: IEEE Reference Guide, V 3.28.2025 (live Author Center Google Doc checked Aug. 9, 2026); IEEE Editorial Style Manual for Authors
 ---
 
@@ -36,7 +36,7 @@ IEEE serves the Reference Guide as a living Author Center Google Doc. As checked
 
 Put the bracket where the support lands, inside the sentence punctuation: `... under drift [1].` Both bare and anchored forms work — the Reference Guide treats brackets as nouns, so `[1] shows` is not an error, and a preposition may anchor them, `in [1]`, `according to [1]`. An author's name may not: the Editorial Style Manual directs `In Smith [1]` to be changed to `in [1]` unless the name is integral to the sentence. Avoid `reference [1]` outright; the Style Manual rules it out rather than merely omitting it.
 
-Cite several sources as separate brackets in a comma series: `[1], [2], [3]`. Do not compress and do not combine. A comma *inside* a bracket introduces a locator: `[3, pp. 5–10]`, `[3, Fig. 1]`, `[3, eq. (2)]`, `[3, Sect. 4.5]`, `[3, Ch. 2, pp. 5–10]`, `[3, Thm. 1]`, `[3, Algorithm 5]`, `[3, Appendix I]`. Page spans inside a locator take an en dash.
+Cite several sources as separate brackets in a comma series: `[1], [2], [3]`. Do not compress and do not combine. A comma *inside* a bracket introduces a locator: `[3, pp. 5–10]`, `[3, Fig. 1]`, `[3, eq. (2)]`, `[3, Sect. 4.5]`, `[3, Ch. 2, pp. 5–10]`, `[3, Thm. 1]`, `[3, Lemma 2]`, `[3, Algorithm 5]`, `[3, Appendix I]`. Those nine are the guide's whole list, and its capitalization is uneven on purpose — `pp.` and `eq.` lowercase, the rest capitalized, `Algorithm` never shortened. Leave all of it as the guide has it; the `Sec.`, `Th.` and `Alg.` that circulate in secondary guides are not IEEE's forms. Page spans inside a locator take an en dash.
 
 In the list: initials before surname; article title in quotation marks and sentence case; journal or conference title abbreviated and italic in title case; then volume, number, pages, abbreviated month, year. Name up to six authors; at seven or more, give the first author and `et al.` In running text use `et al.` from three names.
 
@@ -49,7 +49,7 @@ Where a journal numbers articles instead of paginating, replace the page range w
 
 Do not force non-journal sources into the journal pattern. Conference proceedings use the paper title, `in` the abbreviated conference name, year, pages, and DOI if supplied. Presented-only conference papers use `presented at`. Standards start with the standard title and number. Patents lead with the inventor and the patent title in quotation marks, then the patent number and the date; only the online form inverts this, leading with the invention name, then `by` and the inventor. Technical reports use `Rep. no.` when there is one. Datasets give author, date, dataset title, source, and DOI or URL. Software/code should identify authors, software name, repository or location, version, release date, and persistent identifier when available. arXiv preprints use the year and arXiv number.
 
-Close online sources with `Accessed: Apr. 19, 2021. [Online]. Available:` and the URL. Nothing follows the URL — no period. A DOI, when it ends the reference, does take one.
+Close online sources with `Accessed: Mar. 2, 2026. [Online]. Available:` and the URL. Nothing follows the URL — no period. A DOI, when it ends the reference, does take one.
 
 ## Examples
 
@@ -67,9 +67,9 @@ Close online sources with `Accessed: Apr. 19, 2021. [Online]. Available:` and th
 
 **Renumbering a source already cited**
 
-> ... confirmed in [2]. A later trial [5] used the same rig.
+> ... confirmed in [2]. The same report gives the drift figure in [5].
 
-> ... confirmed in [2]. A later trial [2] used the same rig.
+> ... confirmed in [2]. The same report gives the drift figure in [2].
 
 **Author order, journal abbreviation, DOI form**
 

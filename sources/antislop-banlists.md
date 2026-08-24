@@ -1,7 +1,7 @@
 ---
 id: sources.antislop-banlists
 layer: sources
-version: 1.0.0
+version: 1.1.0
 status: active
 budget: none
 source:
@@ -29,15 +29,15 @@ consumers:
 
 Companion to `ai-slop-research.md`. That note records what the papers *claim*. This one records what their released data actually contains, because the two are not the same thing, and the gap between them changes how much of this material `core/` can honestly use.
 
-The Antislop project ships the artifact everyone cites second-hand: a list of patterns that language models over-produce. It also ships, in the same repository, the human corpus the list was measured against. Almost nobody checks the second file against the first. Doing so is the whole point of this note. Every figure below was computed here, from the JSON, and none of it appears in the paper.
+The Antislop project ships the artifact everyone cites second-hand: a list of patterns that language models over-produce. It also ships, in the same repository, the human corpus the list was measured against. Almost nobody checks the second file against the first. Doing so is the whole point of this note. This dossier computed every figure below from the JSON, and none of it appears in the paper.
 
-Nothing is reproduced wholesale. Entries appear only as illustration, and are regrouped by what they reveal rather than reproduced in source order. The data is MIT-licensed; the arrangement below is original.
+This dossier reproduces nothing wholesale. Entries appear only as illustration, and this note regroups them by what they reveal rather than keeping source order. The data carries an MIT license; the arrangement below is original.
 
 ## The Artifacts Are Not the Ones the Paper Describes
 
 The paper's Appendix M specifies a per-run banlist of 2,000 patterns — 1,000 words, 500 bigrams, 500 trigrams, split into entries that do and do not occur in the human corpus. The repository's *published static lists* are a different object: **1,000 words, 200 bigrams, 200 trigrams.** 1,400 patterns, not 2,000.
 
-Both are real. The 2,000 figure is a pipeline quota, generated fresh per model per run. The 1,400 figure is what was frozen and released. Anyone quoting "2,000 patterns" and then linking the repository is describing one thing and pointing at another. `core/` cites the released lists, because those are the ones that can be inspected.
+Both are real. The 2,000 figure is a pipeline quota, generated fresh per model per run. The 1,400 figure is what the project froze and released. Anyone quoting "2,000 patterns" and then linking the repository is describing one thing and pointing at another. `core/` cites the released lists, because those are the ones that can be inspected.
 
 The human baseline is substantial and worth naming precisely: **6.11 billion characters** of Reddit writing-prompt responses, reduced to the top 500,000 bigrams (201.5 M occurrences) and top 500,000 trigrams (29.7 M). That is the denominator for everything that follows.
 
@@ -77,7 +77,7 @@ Sixty patterns out of four hundred — **15%** — are genuine model artifacts r
 
 ## Half the Word List Is Genre Contamination
 
-Of the 1,000 released words, **541 (54.1%) never occur in any of the human corpus's 500,000 most common bigrams.** That sounds like a strong signal until the entries are read. Excluding verb forms, 457 remain, and the overwhelming majority are invented proper nouns:
+Of the 1,000 released words, **541 (54.1%) never occur in any of the human corpus's 500,000 most common bigrams.** That sounds like a strong signal until you read the entries. Excluding verb forms, 457 remain, and the overwhelming majority are invented proper nouns:
 
 - **Fantasy and sci-fi character, place, and species names** — the dominant family by a wide margin. Names like `elara`, `kael`, `aelara`, `thalor`, `zephyrion`, `xylos`, `vorath`.
 - **Genre furniture** — `archmage`, `grimoire`, `spellbook`, `commlink`, `datapad`, `plasteel`, `medbay`, `chestplate`, `sellsword`, `greatsword`.
@@ -130,7 +130,7 @@ Five sizes spanning 400× in parameters, declining without exception. "AI writin
 | 96% of slop bigrams are common human English | `anti-slop` | density framing over word bans, restated with a number |
 | Only 15% of n-grams have no human rate | `anti-slop` | the sharp, flatly-bannable minority is small and nameable |
 | The absent set is resolve-narration and participle scenery | `anti-slop` | confirms the existing targets, does not extend them |
-| 54% of the word list never occurs in human bigrams, most of it invented proper nouns | `restraint` | the limit on transferring fiction lists to functional prose |
+| 54.1% of the word list (541 of 1,000) never occurs in human bigrams, most of it invented proper nouns | `restraint` | the limit on transferring fiction lists to functional prose |
 | `writingprompts` is on the list | `restraint` | a list can absorb its own collection method |
 | 74% of trigrams extend a listed bigram | `anti-slop` | list length overstates coverage |
 | One stem consumes 12 slots | `restraint` | more entries is not more thorough |
@@ -144,7 +144,7 @@ Five sizes spanning 400× in parameters, declining without exception. "AI writin
 
 **The lists themselves.** No module imports these entries as prohibitions. The released word list is majority fiction vocabulary, and the n-gram lists are majority ordinary English. Importing either would make the system worse at the prose it actually writes.
 
-**The slop score.** It is defined over creative-writing generations against a Reddit fiction baseline. It does not measure whether a release note or a methods section is any good, and no module should imply it does.
+**The slop score.** The project defines it over creative-writing generations against a Reddit fiction baseline. It does not measure whether a release note or a methods section is any good, and no module should imply it does.
 
 **Any claim that a low score means good writing.** The metric is one-directional. It detects a specific failure. Its absence is not a virtue.
 

@@ -1,10 +1,10 @@
 ---
 id: user-interface.apple-hig
 layer: user-interface
-version: 1.0.0
+version: 1.0.1
 status: draft
-budget: 1228
-tokens: 1228
+budget: 1268
+tokens: 1268
 kind: overlay
 medium: apple
 mechanics: hig
@@ -23,7 +23,7 @@ Overrides `user-interface/applications.md` on mechanics — casing, terminal pun
 
 **Capitalization.** Title case: buttons, menu items and menu titles, view and window titles, labels, segmented controls, pop-up menu items, tab and toolbar item labels. Sentence case: alert body text, help text, field hints, notification bodies, settings footers, and everything longer than a label. Title case capitalizes the first and last word, and every word between except articles, coordinating conjunctions, and prepositions of four letters or fewer.
 
-An alert title takes whichever case its shape calls for. A fragment or a short question is title case with no period — `Delete Draft?`. A title written as a complete sentence is sentence case and takes terminal punctuation — `Your subscription expired on 3 August.`
+An alert title takes whichever case its shape calls for. A fragment or a short question is title case with no period — `Delete Draft?`. A title written as a complete sentence is sentence case and takes terminal punctuation — `Your subscription expired on August 3.`
 
 **Terminal punctuation.** No period on a button, menu item, label, or fragment title. Periods go in body text, and in anything written as a complete sentence, including a title.
 
@@ -58,7 +58,7 @@ Write for translation. Short sentences, no idiom, no puns, no words that carry t
 
 ## Surfaces
 
-**Alerts.** Case the title by its shape, body in sentence case. Buttons are one or two words, title case, no period, carrying the verb from the title. Put the default in the trailing position — the right in a left-to-right language, the left where the layout mirrors — and never on the destructive action. `Cancel` always accompanies a destructive action. What an alert may interrupt for is `applications`.
+**Alerts.** Case the title by its shape, body in sentence case. Buttons are one or two words, title case, no period, carrying the verb from the title. Put the default in the trailing position — the right in a left-to-right language, the left where the layout mirrors — and never on the destructive action. Apple's own alerts hold that position, and the rule that `Cancel` is never the default implies it, but the guidelines never state it outright — read it off shipped software rather than off Apple's word. `Cancel` always accompanies a destructive action. What an alert may interrupt for is `applications`.
 
 **Purpose strings.** Apple shows your sentence inside the system's own prompt, so write one sentence in sentence case naming the feature and the data it uses. When to ask is `applications`.
 
@@ -106,9 +106,9 @@ This module changes how Apple's standard elements are written, never what they a
 
 **Alert title cased by element instead of by shape**
 
-> your subscription expired on 3 august. &nbsp; [ OK ]
+> your subscription expired on august 3. &nbsp; [ OK ]
 
-> Your subscription expired on 3 August. &nbsp; [ Not Now ] [ **Renew** ]
+> Your subscription expired on August 3. &nbsp; [ Not Now ] [ **Renew** ]
 
 **A platform verb and a word that carries the layout**
 

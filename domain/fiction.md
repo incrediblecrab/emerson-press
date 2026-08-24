@@ -2,10 +2,10 @@
 id: domain.fiction
 layer: domain
 kind: editorial
-version: 2.0.0
+version: 2.1.0
 status: draft
-budget: 2299
-tokens: 2299
+budget: 2396
+tokens: 2396
 mechanics: chicago
 evidence_floor: none
 evidence:
@@ -17,15 +17,15 @@ evidence:
 
 Narrative. No thesis, no takeaway, no summary. The only module in this directory with no evidence rung, because fiction makes no truth claims — and the only one whose central discipline is refusing to state what the writing has already accomplished.
 
-This is the hardest anti-slop test in the repository, and it is worth being precise about why. Slop cannot resist explaining its own subtext. That is not a quirk of phrasing; it follows from what the system is doing. A model producing narrative is producing a legible signal that meaning is present. Subtext is by definition the part of the meaning that was not stated. A process optimized to demonstrate that it has meant something will state the thing whose whole value lay in going unstated — and it will do so in the last line, where the damage is greatest, because that is where a summary belongs in every other genre it has learned.
+This is the hardest anti-slop test in the repository. Slop cannot resist explaining its own subtext. That is not a quirk of phrasing; it follows from what the system is doing. A model producing narrative is producing a legible signal that meaning is present. Subtext is by definition the part of the meaning that was not stated. A process optimized to demonstrate that it has meant something will state the thing whose whole value lay in going unstated — and it will do so in the last line, where the damage is greatest, because that is where a summary belongs in every other genre it has learned.
 
-Everything below follows from that. The characteristic machine failure in fiction is not clumsiness. It is a scene that works, followed by a sentence explaining that it worked.
+So the characteristic machine failure in fiction is a scene that works, followed by a sentence explaining that it worked. Clumsiness would be easier to fix.
 
 ## On show and tell
 
 The received advice is a bad binary and it produces bad correction. Fiction needs summary. A novel that dramatized every meal would be unreadable, and Burroway's actual distinction is between scene and summary as tools with different jobs, not between a virtue and a vice.
 
-The variable that matters is Gardner's psychic distance: how far the narration stands from the character's consciousness. It runs from the long view — *It was the winter of 1853, and a large man stepped out of a doorway* — through the named and characterized — *Henry had never much cared for snowstorms* — to the interior, where the character's idiom takes over the syntax entirely and the narrator disappears.
+The variable that matters is Gardner's psychic distance: how far the narration stands from the character's consciousness. It runs from the long view — *In the spring of 1911 a woman in a gray coat crossed the yard* — through the named and characterized — *Ada had never trusted the river in March* — to the interior, where the character's idiom takes over the syntax entirely and the narrator disappears.
 
 Any position on that scale is legitimate. Two things are faults. Moving without intending to, so a paragraph drifts from the far view to the interior and back inside four sentences, which reads as unsteadiness rather than range. And sitting at one distance for a whole piece, which is why uniformly "vivid" writing exhausts a reader as quickly as uniformly distant writing bores one.
 
@@ -130,17 +130,19 @@ The obligation that replaces it is to the reader's inference. Fiction asks a rea
 
 Where fiction touches real people, real events, or a living culture, the obligation returns as accuracy and care, and `core/accuracy.md` applies to the research even though nothing on the page is a claim.
 
-Fiction has no floor, so where a tier carries a rung it governs the research behind the page — never what appears on it. A change of register is never a lower standard of proof.
+Fiction has no floor of its own. Where a `domain/education-level/` tier is loaded beside this module, its rung reaches the research behind the page and never what appears on it, because nothing on the page is a claim.
 
 ## Boundaries
 
-Against everything else in this directory. Every other domain here rewards stating the point; this one punishes it. A writer moving from `technical` or `professional` prose into fiction carries the summary reflex across, and it lands as the explained ending.
+Against `non-fiction`. The pair that shares the most and agrees on the least. Every technique here is available there — scene, psychic distance, the withheld detail, free indirect discourse. What changes is that a non-fiction writer is answerable for the assertion, so an invented detail stops being a craft choice. The endings invert too: this module is ruined by stating its point, and `non-fiction` is unfinished without one. A writer working in both has to switch that reflex on purpose.
 
-Against `core/formatting.md`. That module's defaults assume expository prose. Fiction legitimately uses the one-line paragraph, the fragment, the section break as transition, and white space as timing. `core/restraint.md` governs here: a flagged construction that is doing work stays.
+Against everything else in this directory. Every other domain here rewards stating the point; this one punishes it. A writer coming from `technical` or `general` prose carries the summary reflex across, and it lands as the explained ending.
+
+Against `core/formatting.md`. That module's defaults assume expository prose. Fiction legitimately uses the one-line paragraph, the fragment, the section break as transition, and white space as timing. `core/restraint.md` governs here: the fragment that is doing timing work stays.
 
 Against `core/rhythm.md`. Compatible, and fiction pushes further. Sentence length is characterization and pacing, not only variety.
 
-With `audience/`. Fiction pairs with a tier for its *reader*, not its writer. Middle-grade fiction is written at `middle-school` and is not simpler to write. The tier governs vocabulary and syntactic load; it does not license explaining the subtext, and children's writers know this better than most adult ones.
+With `domain/education-level/`. Fiction takes a tier for its *reader*, never its writer. Middle-grade fiction is written at `03-middle-school` and is not easier to write for it. The tier governs vocabulary and syntactic load; it does not license explaining the subtext, and children's writers know this better than most adult ones.
 
 ## Examples
 

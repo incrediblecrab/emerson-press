@@ -2,25 +2,25 @@
 id: domain.general
 layer: domain
 kind: functional
-version: 2.0.0
+version: 2.1.0
 status: draft
-budget: 1958
-tokens: 1958
+budget: 2054
+tokens: 2054
 mechanics: house
 evidence_floor: 3
 ---
 
 # Domain: General
 
-The default. Blog posts, essays, internal documents, email — everything with no professional register of its own.
+The default. Blog posts, short essays, internal documents, email — everything with no professional register of its own.
 
 Every other module in this directory writes for a captive reader. The judge has to read the brief. The reviewer has to read the paper. The clinician has to read the note, and the person locked out of their account has to read the troubleshooting page. Those genres can afford a slow opening because the reader cannot leave.
 
-General prose has no captive reader. Nothing bad happens to anyone who stops. That single fact generates most of what follows: the front-loading, the scanning research, the one-ask rule, the ban on throat-clearing. It also explains why this is the hardest domain to write well and the easiest to write adequately, and why the beige machine register — smooth, competent, about nothing in particular — collects here first. When no genre supplies the constraints, the writer has to.
+General prose has no captive reader. Nothing bad happens to anyone who stops. A reader free to leave is why the claim goes in the first line, why the page has to survive being scanned rather than read, why an email carries one ask, and why the throat-clearing opener has to go. It also explains why this is the hardest domain to write well and the easiest to write adequately, and why the beige machine register — smooth, competent, about nothing in particular — collects here first. When no genre supplies the constraints, the writer has to.
 
-The failure mode is specific and worth naming: general becomes generic. A module invoked as a fallback tends to produce prose with the texture of a fallback — the transitional phrases, the balanced both-sides paragraph, the conclusion that restates the introduction. `core/` catches those constructions sentence by sentence. This module supplies the thing that prevents them upstream, which is a piece that is about something in particular.
+General becomes generic. A module invoked as a fallback tends to produce prose with the texture of a fallback — the transitional phrases, the balanced both-sides paragraph, the conclusion that restates the introduction. `core/` catches those constructions sentence by sentence. This module supplies the thing that prevents them upstream, which is a piece that is about something in particular.
 
-The rule is that specificity has to come from the subject, because the genre supplies none. `academia` gets rigor from its apparatus, `legal` from its authority, `medical` from its numbers. General prose gets it from names, dates, figures, and the particular case — or it does not get it at all.
+The rule is that specificity has to come from the subject, because the genre supplies none. `non-fiction` gets rigor from its apparatus, `legal` from its authority, `medical` from its numbers. General prose gets it from names, dates, figures, and the particular case — or it does not get it at all.
 
 ## Detect
 
@@ -79,7 +79,7 @@ House mechanics — no external manual and no citation system. That is the point
 
 ## Formats
 
-### Blog
+### Blog post and short essay
 
 Public, optional, competing with everything else on the device. It exists because there is something to say, and the writer's obligation is to make the first two sentences worth the click without lying about what follows.
 
@@ -119,15 +119,17 @@ Rung 3. A named, checkable source in the sentence. General writing does not need
 
 The floor is lower than the regulated domains and it is not zero, because the failure this repository exists to prevent shows up here as confidently delivered specifics that are not true. The move that makes general prose good — reach for the concrete number — is the same move that produces a fabricated statistic when the number is not to hand. The discipline is that the concrete detail must be real. Where it is not available, write the sentence without it.
 
-This is a floor, not a setting. Where the audience tier sits at a higher rung, the tier governs; where this floor is higher, it governs. Plain writing for a non-specialist is a change of register and never a lower standard of proof.
+Rung 3 is the lowest floor in this directory and it is still a floor. Loading a `domain/education-level/` tier beside this module changes who the sentence is pitched at, never whether the number in it is real.
 
 ## Boundaries
 
 Against the specialized domains. This module applies when no other does. If the piece is a health explainer, `medical` governs the numbers; if it documents software, `technical` governs; if it reports the news, `press` governs attribution and structure; if it sells something, `marketing` and its substantiation rules apply. General is the residue, not an override, and a writer who invokes it to escape a stricter domain's obligations has chosen the wrong module.
 
-Against `core/`. The closest relationship in the repository, and the reason the boundary needs stating. `core/` bans constructions; this module supplies positive shape — front-loading, the one-ask rule, the demand for a point. On a piece with no other domain, they are nearly the whole instruction set, and `core/restraint.md` still governs: a flagged construction that is doing work stays.
+Against `non-fiction`. The nearest boundary and the easiest to get wrong, because both cover prose with no institution behind it. Length and expectation separate them. A short piece a reader skims for what they need is this module. An essay someone chose, will finish, and might reread is `non-fiction`, and it takes Chicago and a rung-4 floor with it.
 
-With `audience/`. This domain is the one most often paired with `professional` at non-specialist register, and the pairing is where the beige register is most likely to appear, because neither layer is supplying much friction. The correction is the same in both places: specificity from the subject.
+Against `core/`. The closest relationship in the repository, and the reason the boundary needs stating. `core/` bans constructions; this module supplies positive shape — front-loading, the one-ask rule, the demand for a point. On a piece with no other domain, they are nearly the whole instruction set, and `core/restraint.md` still governs: neither module bans a construction that is earning its place.
+
+With `domain/education-level/`. This module and no tier is the pairing most at risk of the beige register, because an adult reader at work and a genre defined as the residue supply almost no friction between them. Loading a tier adds constraints and helps a little. The real correction is the one this module already asks for: specificity from the subject.
 
 ## Examples
 

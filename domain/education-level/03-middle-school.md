@@ -1,11 +1,12 @@
 ---
-id: audience.middle-school
-layer: audience
+id: domain.education-level.middle-school
+layer: domain
+sublayer: education-level
 kind: ladder
-version: 1.0.0
+version: 1.1.0
 status: active
-budget: 1005
-tokens: 1005
+budget: 1011
+tokens: 1011
 grades: 6-8
 wida_clusters: [6-8]
 evidence_rung: 2
@@ -14,9 +15,9 @@ evidence:
   - sources/ap-stylebook.md
 ---
 
-# Audience: Middle School
+# Education: Middle School
 
-Reader is in grades 6 through 8. Two moves define the band. A counterclaim now belongs in the draft rather than being optional, and sources start being named and told apart rather than blurred into `studies show`. WIDA expects writers here to put a claim forward for others to contest, answer the objections that come back, and tell a primary source from a secondary one.
+Reader is in grades 6 through 8. Two moves define the band. A counterclaim now belongs in the draft rather than being optional, and the writer names sources and tells them apart rather than blurring them into `studies show`. WIDA expects writers here to put a claim forward for others to contest, answer the objections that come back, and tell a primary source from a secondary one.
 
 ## Detect
 
@@ -60,7 +61,7 @@ Reader is in grades 6 through 8. Two moves define the band. A counterclaim now b
 
 ## Mechanics
 
-Reliable control expected by the end of this band:
+What a writer should reliably control by the end of this band:
 
 - Repairing comma splices and run-ons — join with a conjunction and comma, a semicolon, or a full stop.
 - Commas separating items in a simple series, in whichever form the domain in force takes.
@@ -80,11 +81,11 @@ Reliable control expected by the end of this band:
 
 Rung 2. Any claim beyond the writer's own direct observation carries a named voice. `said` becomes the reflexive attribution verb, crowding out livelier synonyms that smuggle in a verdict. Interrogating a source — who funded it, what its sample leaves out — belongs to later bands.
 
-Where this tier and a `domain/` evidence floor disagree, the higher of the two governs. The tier sets register; it never lowers the standard of proof a domain requires.
+Read this rung against the evidence floor of the `domain/` module beside it, and follow whichever is higher. A tier changes register. It never lowers the standard of proof a domain requires.
 
 ## Boundaries
 
-Below, upper elementary attaches a reason to a claim but does not yet name who said what. Here the source acquires a name and the argument acquires an opponent. Above, high school demands the warrant — the sentence that says why this evidence supports this claim — and enough identifying detail about a source that a reader could judge its credibility.
+Below, upper elementary attaches a reason to a claim but does not yet name who said what. Here the writer names the source and answers a counterclaim. Above, high school demands the warrant — the sentence that says why this evidence supports this claim — and enough identifying detail about a source that a reader could judge its credibility.
 
 ## Examples
 

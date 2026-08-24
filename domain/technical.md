@@ -2,10 +2,10 @@
 id: domain.technical
 layer: domain
 kind: functional
-version: 2.0.0
+version: 2.1.0
 status: draft
-budget: 2310
-tokens: 2310
+budget: 2531
+tokens: 2531
 mechanics: house
 evidence_floor: 4
 evidence:
@@ -16,13 +16,13 @@ evidence:
 
 Documentation, references, guides, READMEs, changelogs. Pairs with `citation/ieee.md` where formal citation is needed at all.
 
-The reader is stuck. That is the defining condition of this domain and the source of most of its rules. Nobody arrives at a troubleshooting page out of curiosity. They came because something failed, they are already frustrated, they are working under a deadline they did not set, and they will read exactly as far as the fix. Every convention below follows from that: front-load the answer, state the prerequisites before the steps, never make the reader read past the thing they need.
+The reader is stuck. That is the defining condition of this domain and the source of most of its rules. Nobody arrives at a troubleshooting page out of curiosity. They came because something failed, they are already frustrated, they are working under a deadline they did not set, and they will read exactly as far as the fix. So the answer goes first, the prerequisites go before the steps, and nothing sits between the reader and the thing they came for.
 
 It also explains the ban on minimizing language, which is the most-violated rule in the genre. *Simply run the migration.* *Just add the config flag.* *It's easy — obviously you'll want to set the environment variable first.* When those instructions work, the words are noise. When they fail — and the reader is on the page precisely because something failed — they have told someone already struggling that the thing defeating them is trivial. The sentence costs nothing to remove and it is the reason the reader closes the tab and files a support ticket instead.
 
 The second structural failure is a mode error, and Diátaxis names it better than anything else in circulation. Four kinds of document do four incompatible jobs. A **tutorial** takes a beginner through a guaranteed success. A **how-to guide** helps a competent user complete one task. A **reference** describes the machinery exactly and completely. An **explanation** supplies the why. Each serves a different reader in a different state, and mixing two produces a document that fails both: the tutorial that stops to explain architecture loses the beginner, the reference that teaches becomes unscannable for the person who knew what they wanted and came to check an argument's default.
 
-The third thing worth stating is the accuracy problem specific to this domain. A hallucinated method name is indistinguishable from a real one until someone runs it. Baltes and colleagues, studying how developers describe AI-assisted work, found the characteristic burden is not obviously bad output but output plausible enough to require full review — the cost moves from writing to verification. Technical documentation is where that cost lands hardest, because the reader cannot tell a real flag from an invented one and will spend an hour finding out.
+Then there is the accuracy problem specific to this domain. A hallucinated method name is indistinguishable from a real one until someone runs it. Baltes, Cheong and Treude coded 1,154 developer posts about AI-assisted work (arXiv:2603.27249v3), and one of their three clusters is review friction: the burden developers describe is output plausible enough that a reviewer has to read all of it before trusting any of it. The cost moves from writing to verification. Technical documentation is where it lands hardest, because the reader cannot tell a real flag from an invented one and will spend an hour finding out.
 
 ## Detect
 
@@ -68,8 +68,6 @@ Ship code that runs. Complete imports, real values, the actual output, and a not
 Write what you verified. Where a behavior is expected but untested, say so rather than promoting it to documentation, and never name an API you have not confirmed exists.
 
 Name one thing one way. Pick the term, define it once, and use it everywhere, including in the code samples and the error strings.
-
-Write the changelog for the reader deciding whether to upgrade: what broke, what changed, what they must do, and what is now deprecated and until when.
 
 Document the failure modes. What goes wrong, what it looks like, what to do, and what to do when that does not work either.
 
@@ -118,25 +116,35 @@ Then installation that works from a clean machine, a minimal example that runs a
 
 Keep the status honest: what works, what does not, what is planned, what version this describes. A README that oversells is discovered within ten minutes and costs the project a contributor.
 
+### Changelog
+
+Terse, versioned, and read in reverse. Somebody arrived with a working system to find out what upgrading will cost them, which makes this the one format here read adversarially — the reader is hunting for a reason not to proceed.
+
+Put breaking changes first and label them breaking. Every entry answers what broke, what changed, what the reader must do, and what is now deprecated and until when.
+
+Write the consequence, not the work. *Refactored the service layer*, *bumped deps* and *various fixes* are notes to the committer, and they leave the reader with nothing to decide on.
+
+Assume the reader is several versions behind. They read entries in a run rather than one at a time, so each entry names its version and stands without the three above it.
+
 ## Evidence
 
 Rung 4 — the source is interrogated — with a property no other domain in this directory has: the primary source is executable. A claim about software can be checked by running it, which means interrogation is not a matter of judgment but of doing the thing.
 
 That raises the standard rather than lowering it. Where a historian must weigh a source and a clinician must assess a trial, a technical writer can simply find out, so an unverified claim in this genre is a decision not to check. The version pin is what makes the verification durable: *tested against 4.2.0 on Linux* records what was interrogated and when it stops being evidence.
 
-This is a floor, not a setting. Where the audience tier sits at a higher rung, the tier governs; where this floor is higher, it governs. Plain writing for a non-specialist is a change of register and never a lower standard of proof.
+A beginner's getting-started page is checked against the same running system as a maintainer's reference. Simplify the vocabulary as far down the ladder as the reader needs; a version number does not simplify, and a command nobody ran does not become true for a novice.
 
 ## Boundaries
 
 Against `user-interface/`. A real boundary now that the layer exists. This module documents software; `user-interface/` writes the software's own words. Error message text belongs to `user-interface/applications.md`; the troubleshooting page that explains the error belongs here. Button labels are theirs; the guide that tells the reader which button belongs to this module.
 
-Against `academia`. Both are precise and both cite, and they cite for opposite reasons. An academic citation situates a claim among peers. A technical reference points at a specification so the reader can go read the authority instead of trusting the page.
+Against `non-fiction`. Both are precise and both cite, and they cite for opposite reasons. A note in non-fiction shows a reader where a claim came from so they can weigh it. A technical reference points at a specification so the reader can go read the authority instead of trusting the page. A book about how a system works is `non-fiction`; the system's own documentation is this.
 
 Against `marketing`. The most common contamination in the genre. Product documentation written by an organization that also sells the product drifts into promotional register — *powerful*, *seamless*, *enterprise-grade* — and every such word makes the document less useful to a reader who is stuck. Documentation states what the software does, including what it does badly.
 
 Against `general`. Both are functional and share the front-loading discipline. `technical` adds the mode distinction, the version obligation, and the executable-source evidence standard. When the piece has no software in it, `general` governs.
 
-With `audience/`. A reference is for `professional` at peer register; a getting-started guide is often `professional` at non-specialist register, and the tier changes the assumed vocabulary, not the accuracy. Writing down does not mean minimizing — plain language and *simply* are unrelated, and the second is the one to cut.
+With `domain/education-level/`. Load nothing from it and the reader is a working adult, which is who a reference and a getting-started guide are both written for. What separates those two is how much the writer may assume, not how carefully anything was checked. Load a tier when the reader is a student, and hold one distinction while you do it: writing down is not minimizing. Plain language and *simply* are unrelated, and the second is the one to cut.
 
 ## Examples
 

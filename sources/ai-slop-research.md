@@ -1,17 +1,19 @@
 ---
 id: sources.ai-slop-research
 layer: sources
-version: 2.0.0
+version: 2.2.0
 status: active
 budget: none
 retrieved: 2026-08-09
 consumers:
+  - core/accuracy.md
   - core/anti-slop.md
   - core/restraint.md
-  - core/accuracy.md
+  - core/rhythm.md
   - core/voice.md
-  - domain/academia.md
+  - domain/education-level/07-post-graduate.md
   - domain/fiction.md
+  - domain/non-fiction.md
   - domain/technical.md
 ---
 
@@ -27,8 +29,8 @@ Two of these four documents are arXiv preprints and neither had completed peer r
 
 Three provenance corrections, because the first version of this note got them wrong and a note about accuracy has no business being loose about its own citations:
 
-- **Miklian and Katsos is an arXiv paper, and the note previously said otherwise.** An earlier revision de-listed it on the grounds that the PDF carried no arXiv stamp. That was wrong. arXiv's own metadata records `citation_arxiv_id` 2606.12073, authors Jason Miklian and John E. Katsos, submitted 10 June 2026. Cite it as `arXiv:2606.12073`. The mistaken de-listing is recorded here rather than quietly removed, on the same principle that put this section in the file. It is still a preprint and still not peer reviewed.
-- **Baltes, Cheong and Treude was retitled between versions, and an earlier revision of this note pinned the wrong one.** v1, 28 March 2026, was subtitled *The Growing Burden of AI-Assisted Software Development*; v2 and v3, June 2026, carry *How Developers Discuss the Burden of AI-Assisted Software Development*. This note previously asserted, emphatically, that v1 was current and that the v1 subtitle was the correct one. That was already false when it was written. Cite v3. The correction of the correction is left visible for the same reason the first one was.
+- **Miklian and Katsos is an arXiv paper, and the note previously said otherwise.** An earlier revision de-listed it on the grounds that the PDF carried no arXiv stamp. That was wrong. arXiv's own metadata records `citation_arxiv_id` 2606.12073, authors Jason Miklian and John E. Katsos, submitted June 10, 2026. Cite it as `arXiv:2606.12073`. This note records the mistaken de-listing rather than quietly removing it, on the same principle that put this section in the file. It is still a preprint and still not peer reviewed.
+- **Baltes, Cheong and Treude was retitled between versions, and an earlier revision of this note pinned the wrong one.** v1, March 28, 2026, was subtitled *The Growing Burden of AI-Assisted Software Development*; v2 and v3, June 2026, carry *How Developers Discuss the Burden of AI-Assisted Software Development*. This note previously asserted, emphatically, that v1 was current and that the v1 subtitle was the correct one. That was already false when this note asserted it. Cite v3. The correction of the correction stays visible for the same reason the first one does.
 - **The Antislop paper discloses its own LLM assistance** in drafting, and states that results and citations were human-produced and human-validated.
 
 There is an obvious irony in building an anti-slop evidence base largely out of unreviewed work on the very platform that had to restrict submissions because of a flood of machine-written papers. It is worth naming rather than hiding. The mitigation is the one `core/accuracy.md` prescribes: attribute every number to the study that produced it, state the sample, and never launder a preprint finding into a bare fact.
@@ -39,7 +41,7 @@ One unverified claim, excluded up front. Several news aggregators report that ar
 
 **Paech, Roush, Goldfeder, and Shwartz-Ziv, arXiv:2510.15061v2.**
 
-The single most useful contribution here is a definition that can be computed. Slop is not a set of bad words. It is an **over-representation ratio**: how often a pattern appears in model output, divided by how often it appears in a human reference corpus. Their human baseline is the `wordfreq` library for single words, and a mix of Reddit creative writing and public-domain Gutenberg texts for n-grams. Two thousand generations per model, from Reddit writing prompts. Stop words are removed before n-gram extraction.
+The single most useful contribution here is a definition that can be computed. Slop is not a set of bad words. It is an **over-representation ratio**: how often a pattern appears in model output, divided by how often it appears in a human reference corpus. Their human baseline is the `wordfreq` library for single words, and a mix of Reddit creative writing and public-domain Gutenberg texts for n-grams. Two thousand generations per model, from Reddit writing prompts. The pipeline strips stop words before extracting n-grams.
 
 Measured ratios for `gemma-3-12b`, from their Table 1:
 
@@ -61,9 +63,9 @@ A thousandfold over-use is not a stylistic preference. It is a fingerprint. This
 
 ## 2. What the Two Thousand Patterns Actually Are
 
-This is the section the earlier note lacked, and its absence let a slogan stand in for a structure. "Token banning becomes unusable at two thousand patterns" was quoted here for a year without anyone recording what the two thousand *were*. Their composition is published, in the configuration file at the paper's Appendix M, and it is more interesting than the headline.
+This is the section the earlier note lacked, and its absence let a slogan stand in for a structure. This note quoted "token banning becomes unusable at two thousand patterns" for a year without recording what the two thousand *were*. Their composition is published, in the configuration file at the paper's Appendix M, and it is more interesting than the headline.
 
-One caution before the table. The 2,000 below is a *per-run pipeline quota*. The lists the project actually released and froze are smaller — 1,000 words, 200 bigrams, 200 trigrams — and their contents have been analyzed directly against the project's own human baseline in `sources/antislop-banlists.md`. Read that note before treating any entry here as a rule; the released bigram list contains eight of the ten most common bigrams in human creative writing.
+One caution before the table. The 2,000 below is a *per-run pipeline quota*. The lists the project actually released and froze are smaller — 1,000 words, 200 bigrams, 200 trigrams — and `sources/antislop-banlists.md` analyzes their contents directly against the project's own human baseline. Read that note before treating any entry here as a rule; the released bigram list contains eight of the ten most common bigrams in human creative writing.
 
 ### The composition is exact
 
@@ -74,11 +76,11 @@ One caution before the table. The 2,000 below is a *per-run pipeline quota*. The
 | trigrams | 300 | 200 | 500 |
 | **total** | **1,520** | **480** | **2,000** |
 
-Half the list is single words. The other half is two- and three-word phrases. There are no longer phrases in it at all: whole-phrase banning exists in the pipeline and its quota is set to zero in this configuration.
+Half the list is single words. The other half is two- and three-word phrases. There are no longer phrases in it at all: whole-phrase banning exists in the pipeline, and this configuration sets its quota to zero.
 
 **The split down the middle column is the part worth carrying.** The pipeline distinguishes patterns that also occur in human writing from patterns that occur in the human corpus *not once*. For the second group the ratio is not large, it is undefined — there is no human denominator. Those 480 are the constructions a model produces that essentially nobody else does, and they are 24% of the list.
 
-Selection thresholds, since a ranked list is only as good as its cutoffs: words shorter than three characters are excluded; the top 5,000 bigrams and top 5,000 trigrams are scanned, against the top 200,000 words; a pattern must appear across at least three independent prompts to qualify, so that one story's character name cannot carry it. `elara` cleared that bar, which is the finding rather than an artifact.
+Selection thresholds, since a ranked list is only as good as its cutoffs: the pipeline drops words shorter than three characters, scans the top 5,000 bigrams and top 5,000 trigrams against the top 200,000 words, and requires a pattern across at least three independent prompts, so one story's character name cannot carry it. `elara` cleared that bar, which is the finding rather than an artifact.
 
 ### What is in them
 
@@ -112,11 +114,11 @@ Scale, for a sense of the density: one 24B model produced `eyes never leaving` 1
 
 The abstract's claim is that the sampler suppresses 8,000+ patterns with quality intact while token banning becomes unusable at 2,000. The measured curve behind it: token banning falls to **28 out of 100** on their writing rubric at an 8,000-pattern list. The reason is mechanical rather than aesthetic. Bans fire on a token, and tokens are shared — banning `catatonic` when it tokenizes as `cat` + `atonic` bans every word beginning `cat`. The sampler instead waits until a full banned sequence has appeared, backtracks to its first token, multiplies that token's probability by 10⁻¹⁰ˢ, and resamples.
 
-Three results from that design bear directly on `core/restraint.md`:
+Three results bear directly on `core/restraint.md`. They come from three different interventions, and an author who merges them will misreport the paper, so each is labeled with the thing it measures. Only the first two are inference-time; the third is training-time and shares none of token banning's numbers.
 
-**Conditional suppression measurably beats unconditional.** The ban-strength parameter `s` runs from 0 to 1, where 1 is a hard ban. At **s = 0.4** the sampler suppressed the patterns in 90% of ordinary generation while permitting them *fully* when a prompt explicitly asked for them. Their test for this is neat: instruct the model to use the banned phrase exactly three times, and see whether it can. A hard ban cannot. A conditional one can. This is the closest thing to a direct measurement of the position `core/restraint.md` already held.
+**Inference-time, conditional suppression measurably beats unconditional.** The ban-strength parameter `s` runs from 0 to 1, where 1 is a hard ban. At **s = 0.4** the sampler suppressed the patterns in 90% of ordinary generation while permitting them *fully* when a prompt explicitly asked for them. Their test for this is neat: instruct the model to use the banned phrase exactly three times, and see whether it can. A hard ban cannot. A conditional one can. This is the closest thing to a direct measurement of the position `core/restraint.md` already held.
 
-**Maximum suppression destroys the writer, and the trade is quantified.** In their ablation, removing the safeguard that switches off training pressure once a preference is won raised suppression to 98.24% and dropped writing quality from 67.80 to **19.57**. Pushing the other way, tethering too hard held quality at 69.68 and cut suppression to 55.86%. Overcorrection is not a worry someone invented to be contrarian; it is a measured curve with a bad end.
+**Training-time, maximum suppression destroys the writer, and the trade is quantified.** This is a separate experiment from either sampler figure above, and its numbers belong to it alone. In a training-side ablation, the authors removed the safeguard that switches off preference pressure once the preference is won. Suppression rose to 98.24% and writing quality fell from 67.80 to **19.57**. Pushing the other way, tethering too hard held quality at 69.68 and cut suppression to 55.86%. Overcorrection is not a worry someone invented to be contrarian; it is a measured curve with a bad end. **Do not attach 98.24% or the 67.80 → 19.57 drop to token banning.** Token banning's own measured collapse is the 28 out of 100 above, at an 8,000-pattern list. Two downstream modules have already merged the two, so state the subject whenever either number is repeated.
 
 **Even a purpose-built ban needs exceptions to survive contact with real prose.** Their regex family for the `not X, but Y` construction is five expressions, and the primary one carries more than thirty hand-written exclusions — it declines to fire before `right`, `normal`, `true`, `sure`, `still`, `already`, and a long tail of ordinary verbs, plus any adverb. Someone had to carve those out by hand because the construction is not always wrong. The most-cited banned construction in the whole anti-slop literature could not be expressed as a rule without an exception list longer than the rule.
 
@@ -146,9 +148,9 @@ Method: 25 million Hacker News and Reddit comments, January 2023 to May 2026 —
 
 **The tone hardened and the speech act migrated.** Mockery fell from 25.9% of accusations to 7.1%. Gatekeeping rose from 1.9% to 16.5%. Structural protest — objecting to the phenomenon rather than the comment — went from 14.8% to 38.8%.
 
-**The finding that matters.** Six prose markers cleanly separate machine-generated comments from human-written ones, three of them reported here with figures: 30% lower contraction rate, 2.3x the formal-adverb density, 2.9x the sentence-length variance, all at p < 1e-9. Then the same six markers were run on accused human comments against matched non-accused human comments. **None of the six that distinguished machine text predicted accusation.** What predicted accusation instead was body length (longer, odds ratio 1.21) and *shorter* average word length (odds ratio 0.78) — the second one pointing the opposite way from the real signal.
+**The finding that matters.** Six prose markers cleanly separate machine-generated comments from human-written ones, three of them reported here with figures: 30% lower contraction rate, 2.3x the formal-adverb density, 2.9x the sentence-length variance, all at p < 1e-9. The authors then ran those same six markers on accused human comments against matched non-accused human comments. **None of the six that distinguished machine text predicted accusation.** What predicted accusation instead was body length (longer, odds ratio 1.21) and *shorter* average word length (odds ratio 0.78) — the second one pointing the opposite way from the real signal.
 
-A scope caution on the variance figure, because it appears to contradict `core/rhythm.md`'s founding premise that machine prose is metrically flat. It does not, and the reason is the comparison population. This corpus is forum comments, where the human baseline is a short reply of one or two clauses; a machine-generated comment in the same thread is a multi-paragraph expository block that mixes long sentences with short ones, so it registers as more variable. `core/rhythm.md` is about drafted prose of comparable length and ambition, where the observed failure is the opposite — a run of sentences all landing near the same weight. Neither claim generalizes to the other's population, and a future revision of `rhythm` should say which one it means rather than treating 2.9x as a refutation.
+A scope caution on the variance figure, because it appears to contradict `core/rhythm.md`'s founding premise that machine prose is metrically flat. It does not, and the reason is the comparison population. This corpus is forum comments, where the human baseline is a short reply of one or two clauses; a machine-generated comment in the same thread is a multi-paragraph expository block that mixes long sentences with short ones, so it registers as more variable. `core/rhythm.md` is about drafted prose of comparable length and ambition, where the observed failure is the opposite — a run of sentences all landing near the same weight. Neither claim generalizes to the other's population, so a module citing 2.9x must name the population it means. `core/rhythm.md` now does, and this dossier is where that caveat comes from.
 
 Also worth keeping straight: the stylistic-tell callout — the em dash, the `delve` complaint, the tricolon — is among the *least* reliable tiers in their data, confirmed as a genuine accusation only 17% to 35% of the time depending on platform. The people invoking the tells are frequently not even making the accusation they appear to be making.
 
@@ -168,7 +170,7 @@ The authors also separate the reader side from the writer side. `core/` is a wri
 
 ## 4. The Cost Lands on Someone Else
 
-**Baltes, Cheong, and Treude, arXiv:2603.27249v3.** Qualitative coding of 1,154 posts from 15 Reddit and Hacker News threads into 15 codes across three clusters — Review Friction, Quality Degradation, Forces and Consequences. 978 posts drew at least one code, yielding 1,603 codings. Coding was done with LLM assistance under human decision authority, across four review rounds and 234 post-level revisions, which the paper discloses as a threat to validity.
+**Baltes, Cheong, and Treude, arXiv:2603.27249v3.** Qualitative coding of 1,154 posts from 15 Reddit and Hacker News threads into 15 codes across three clusters — Review Friction, Quality Degradation, Forces and Consequences. 978 posts drew at least one code, yielding 1,603 codings. The authors coded with model assistance under their own decision authority, across four review rounds and 234 post-level revisions, and disclose that arrangement as a threat to validity.
 
 Their organizing claim is the useful part: this is a **tragedy of the commons**. The individual producing slop gains; the costs land on reviewers, maintainers, and everyone downstream. Cheap to generate, expensive to read.
 
@@ -182,7 +184,7 @@ Observations worth carrying:
 - **The failure modes are specific.** An agent that hallucinated external services and then mocked out the services it had hallucinated, producing an internally coherent and entirely fictional integration. Another that skipped authorization in middleware and then mocked out authorization in the tests so they would pass.
 - **The mitigations are concrete and transferable**: a size ceiling per change, mandatory self-review before asking for peer review, a synchronous walkthrough where the author explains their choices, and the norm that ownership never transfers to the tool.
 - **Craft erosion, and specifically an inversion**: the enjoyable work gets automated and the cleanup is what remains.
-- **The deskilling loop.** Using these tools well requires experience that was acquired without them.
+- **The deskilling loop.** Using these tools well requires experience people acquired without them.
 
 ### What this means for a style repo
 
@@ -192,7 +194,7 @@ This is also the honest answer to *why bother*, and a better one than evading de
 
 ## 5. The Institutional Consequence Arrived
 
-**arXiv, 31 October 2025**, plus arXiv's standing moderation policy, both read directly.
+**arXiv, October 31, 2025**, plus arXiv's standing moderation policy, both read directly.
 
 The change: review and survey articles and position papers in arXiv's CS category must now be accepted at a peer-reviewed journal or conference *before* submission, with documentation. Without it, they will likely be rejected.
 
@@ -200,14 +202,14 @@ Points that are easy to garble:
 
 - **Technically, nothing changed.** Neither content type was ever on arXiv's list of accepted submissions. Both had been taken at moderator discretion, because the few that arrived were good.
 - **The stated cause is volume, not machine authorship as such.** Hundreds of review articles now arrive monthly, and arXiv describes the majority as "little more than annotated bibliographies, with no substantial discussion of open research issues."
-- Workshop-level review is explicitly stated not to meet the bar.
+- arXiv states explicitly that workshop-level review does not meet the bar.
 - Papers *studying* technology's social impact are unaffected, which is why the preprints above were postable.
 
 arXiv's standing generative-AI policy, separately: significant use of text-to-text tools must be reported; authors take "full responsibility for all its contents, irrespective of how the contents were generated," including fabricated references; and such tools must not be listed as authors.
 
 ### What this means for a style repo
 
-**"Annotated bibliography with no substantial discussion" is a structural diagnosis from a body that reads at scale, and it is exactly what `core/anti-slop.md` calls structure standing in for content.** Complete scaffolding, correct sections, real citations, nothing argued. An institution independently arriving at the same description is decent evidence the tell is real.
+**"Annotated bibliography with no substantial discussion" is a structural diagnosis from a body that reads at scale, and it is exactly what `core/anti-slop.md` calls structure standing in for content.** Complete scaffolding, correct sections, real citations, nothing argued. An institution independently arriving at the same description is decent evidence the tell is real. The genre this bites hardest is long-form true prose, so `domain/non-fiction.md` should carry the survey-that-argues-nothing failure directly rather than leaving it to the anti-slop layer to catch by symptom.
 
 **Full authorial responsibility regardless of generation** is the rule `core/accuracy.md` operationalizes. Verification is the price of putting a name on the work.
 
@@ -223,15 +225,16 @@ arXiv's standing generative-AI policy, separately: significant use of text-to-te
 | `flickered` on 98.5% of 67 models | `anti-slop` | a shared core exists beneath the model-specific tails |
 | Vagueness trigrams transfer, scenery does not | `anti-slop` | which half of a fiction list is worth importing |
 | Every published list is creative-writing derived | `restraint` | states the limit on transfer to functional prose |
-| Token banning collapses to 28/100 at 8k | `restraint` | empirical basis for refusing unconditional bans |
-| Ban-strength 0.4 suppresses 90%, permits on request | `restraint` | conditional beats unconditional, measured |
-| Removing the safeguard: 98% suppression, quality 19.57 | `restraint` | overcorrection is a measured curve |
+| Inference-time token banning collapses to 28/100 at 8k | `restraint` | empirical basis for refusing unconditional bans |
+| Inference-time ban-strength 0.4 suppresses 90%, permits on request | `restraint` | conditional beats unconditional, measured |
+| Training-time ablation, a separate experiment: 98.24% suppression, quality 67.80 to 19.57 | `restraint` | overcorrection is a measured curve; these numbers are not token banning's |
 | The `not X, but Y` regex needs 30+ exceptions | `restraint` | no worthwhile ban survives without judgment |
 | A ban with no viable alternative is discarded | `restraint` | every prohibition must name a substitution |
 | Suppressing one layer surfaces the next | `restraint` | no published list is ever finished |
 | Accusation ignores the real features | `restraint` | evasion is not an achievable goal |
 | Stylistic-tell callouts are the least reliable tier | `restraint` | the em-dash complaint is noise |
 | Reader side ≠ writer side | `restraint` | `core/` is writer-side only |
+| 2.9x sentence-length variance is a forum-comment finding | `rhythm` | the flatness claim must name its population |
 | Tragedy of the commons | `anti-slop` | the reason the rules exist at all |
 | Annotated bibliography, nothing argued | `anti-slop` | structure standing in for content |
 | Full responsibility regardless of tool | `accuracy` | verification is not optional |
@@ -243,13 +246,13 @@ arXiv's standing generative-AI policy, separately: significant use of text-to-te
 - **The banlists themselves as a word list.** They are fiction-derived, model-dated, and 1,000 of the 2,000 entries are single words whose only offense is frequency. `core/anti-slop.md` takes the vagueness family and the reasoning, and leaves the scenery.
 - **Any promise about detection outcomes.** Finding 3 forecloses it.
 - **The workforce and labor material** in Baltes et al. It is real and it is not a writing rule.
-- **Disclosure requirements.** Venue policy, not house style. If it belongs anywhere it is `domain/academia.md`.
+- **Disclosure requirements.** Venue policy, not house style. If it belongs anywhere it is `domain/education-level/07-post-graduate.md`, which is the rung where the work enters the record and a venue's rules start to bind.
 - **The unverified one-year ban.** Not confirmed at the source.
 
 ## Limits of This Note
 
-All three papers were read in full for version 2.0.0, appendices included. The earlier version was built from abstracts and secondary coverage, and its stated limits said so; that is what let three citation errors and a missing structural finding survive in a note whose whole purpose is settling disputes about evidence. The corrections are recorded in the status caveat rather than quietly applied.
+Version 2.0.0 read all three papers in full, appendices included. The earlier version rested on abstracts and secondary coverage, and its stated limits said so; that is what let three citation errors and a missing structural finding survive in a note whose whole purpose is settling disputes about evidence. This note records the corrections in the status caveat rather than quietly applying them.
 
 What remains uncertain is unchanged. Two of the four documents are unreviewed and one is unpublished. Two study Hacker News and Reddit specifically, which are not a sample of writing in general and skew technical, male, and English-speaking — a limitation the accusation finding in particular should be read against, and one the authors name themselves, along with the observation that `slop` is a lexically English pejorative whose equivalents in other languages may not have consolidated the same way. The Antislop measurements are creative-writing measurements, stated as such above and easy to forget one section later.
 
-The rules in `core/` were derived independently from editorial practice, and most of this note only tells you which of them now have measurement behind them. But two findings are load-bearing. The accusation result is why `core/restraint.md` and the README refuse to frame any module as evading detection. The suppression curves are why this repo refuses unconditional bans on constructions — including the ones its competitors ban outright. Where a finding moves a rule, the honest record says so and carries the caveat with it.
+The rules in `core/` come from editorial practice, derived independently, and most of this note only tells you which of them now have measurement behind them. But two findings are load-bearing. The accusation result is why `core/restraint.md` and the README refuse to frame any module as evading detection. The suppression curves are why this repo refuses unconditional bans on constructions — including the ones its competitors ban outright. Where a finding moves a rule, the honest record says so and carries the caveat with it.

@@ -2,12 +2,12 @@
 id: domain.press
 layer: domain
 kind: editorial
-version: 2.0.0
+version: 2.1.0
 status: draft
-budget: 2705
-tokens: 2705
+budget: 2848
+tokens: 2848
 mechanics: ap
-edition: AP Stylebook 56th (2022-2024); 58th (2026-2028) not yet read in
+edition: AP Stylebook 56th (2022-2024); 57th (2024-2026) and 58th (2026-2028) not yet read in
 evidence_floor: 3
 evidence:
   - sources/ap-stylebook.md
@@ -17,7 +17,7 @@ evidence:
 
 Reporting for publication. AP mechanics, attribution carried in the text, no reference list.
 
-Every mechanical rule here is the AP Stylebook's 56th edition, 2022-2024. AP publishes on a two-year cycle and the 58th, 2026-2028, was released in May 2026 without being read against this module. Two known changes land inside this scope: the 58th closes *healthcare* to one word, and it expands the artificial-intelligence chapter with entries for *AI agent*, *AI slop* and *vibe coding*. Re-verify against the 58th before filing to a wire.
+Every mechanical rule here is the AP Stylebook's 56th edition, 2022-2024. Two editions have shipped since and neither has been read against this module: the 57th, 2024-2026, which added an artificial-intelligence chapter and a criminal-justice chapter the 56th does not have, and the 58th, 2026-2028, published in late May 2026. Two changes the 58th carries land inside this scope — it closes *healthcare* to one word, and it expands the artificial-intelligence chapter with entries for *AI agent*, *AI slop* and *vibe coding*. Treat the pin as two editions stale and re-verify before filing to a wire.
 
 The mechanics of journalism exist to make a claim checkable by a stranger. That is the whole of it. A dateline says where the reporter stood. Attribution says who is answerable for a fact. A second reference by last name says this is a person we have already identified and you can scroll up. None of it is etiquette, and none of it is decoration.
 
@@ -80,7 +80,7 @@ Correct in public. A corrective runs as its own item, says what was wrong, and s
 
 AP, restated. These are the entries that distinguish the domain, not a full style guide.
 
-**Datelines.** City in capitals, then the AP state or country form, then an em dash, then the copy: `MEDFORD, Ore. — The city council voted...` A dateline is a factual claim that a reporter was there; if nobody was, there is no dateline. Roughly 30 large domestic cities and a comparable list of foreign ones stand alone without a state or country. AP state forms are traditional abbreviations, not postal codes — *Ore.*, *Calif.*, *Pa.* Eight states are never abbreviated: Alaska, Hawaii, Idaho, Iowa, Maine, Ohio, Texas, Utah.
+**Datelines.** City in capitals, then the AP state or country form, then an em dash, then the copy: `MEDFORD, Ore. — The city council voted...` A dateline is a factual claim that a reporter was there; if nobody was, there is no dateline. About 30 large domestic cities stand alone without a state, and a longer list — roughly 40 — of foreign cities stands alone without a country. AP state forms are traditional abbreviations, not postal codes — *Ore.*, *Calif.*, *Pa.* Eight states are never abbreviated: Alaska, Hawaii, Idaho, Iowa, Maine, Ohio, Texas, Utah.
 
 **Numbers.** Spell out one through nine, numerals from 10. Always numerals for ages, dimensions, addresses, money, and percentages, with `%` closed up to the numeral. A number that begins a sentence is written out, years excepted — or better, recast so it does not begin there.
 
@@ -94,7 +94,7 @@ AP, restated. These are the entries that distinguish the domain, not a full styl
 
 **Charts.** Bar axes start at zero. Circles are scaled by area, not radius. No decorative third dimension. An outlier comes out only with a stated reason, in the caption.
 
-**Sports agate.** Agate is the tabular matter that runs under a game story — box scores, standings, line scores, transactions — and it is set by convention so a reader can find a number without reading a sentence. Winner first in a line score, home team second in a matchup, records in parentheses after the team. Standings run W-L-Pct-GB. Times are figures, and a period separates minutes from seconds. Abbreviations are the sport's own and are not expanded on later mention. Agate carries no attribution because the league's official scoring is the source; when a figure is disputed or unofficial, it leaves agate and moves into the story where it can be attributed.
+**Sports agate.** Agate is the tabular matter that runs under a game story — box scores, standings, line scores, transactions — and it is set by convention so a reader can find a number without reading a sentence. Winner first in a line score, home team second in a matchup, records in parentheses after the team. Each sport sets its own columns: baseball and basketball standings run W-L-Pct-GB, and the football and soccer sets differ. Times are figures, with a colon between minutes and seconds and a decimal point before the fraction of a second — `3:26.1` in agate, written out as three minutes, 26.1 seconds on first mention in the story. Abbreviations are the sport's own and are not expanded on later mention. Agate carries no attribution because the league's official scoring is the source; when a figure is disputed or unofficial, it leaves agate and moves into the story where it can be attributed.
 
 **Media law.** Libel is a false statement of fact, published, that damages reputation. On a matter of public concern the plaintiff must prove falsity, which is why sourcing is a legal posture and not only an editorial one. Public officials and public figures must additionally show actual malice — knowledge of falsity or reckless disregard for the truth. A private figure need show only the fault standard the state sets, often negligence, so the actual-malice shield does not reach most subjects a local desk writes about. Fair and accurate reports of official proceedings carry privilege; a lift from a court filing does not carry privilege into a paraphrase that goes further than the filing did.
 
@@ -124,21 +124,21 @@ Labeled as opinion, in a place the reader sees before the argument starts.
 
 Rung 3, carried in prose: every claim traceable to a named origin the reader can weigh, without a formal apparatus. Journalism's version of the rung is stricter than the general-audience version in one respect — the origin must be named in the sentence, not gestured at, because the reader has no bibliography to fall back on.
 
-Investigative and data work runs at rung 4 or 5 in practice: the method gets described, the denominator gets published, and the analysis is expected to be reproducible from the stated source data.
+Investigative and data work runs at rung 4 or 5 in practice: the reporter describes the method, publishes the denominator, and hands over enough of the source data that a stranger can rerun the analysis and get the same answer.
 
-This is a floor, not a setting. Where the audience tier sits at a higher rung, the tier governs; where this floor is higher, it governs. Plain writing for a non-specialist is a change of register and never a lower standard of proof.
+The floor does not move when the reader changes. A story written for a general readership names its sources exactly as one written for a trade audience does. A tier can simplify the sentence around an attribution. It cannot remove the attribution.
 
 ## Boundaries
 
 Against `marketing`. The nearest domain and the most dangerous, because the surface prose is similar and the obligations are inverted. Marketing copy advocates for an interested party and is regulated on whether its claims can be substantiated. Press copy is accountable to a reader who has no stake. When a press piece adopts the release's framing, the failure is not stylistic.
 
-Against `academia`. Both are evidence-bound; the apparatus differs. Academic prose cites to locate a claim in a literature, and can afford a reader who will chase a reference. Press prose has one pass to carry the source inside the sentence.
+Against `non-fiction`. Both are reported and answerable; the apparatus differs. Non-fiction cites in notes and can afford a reader who will chase a reference. Press prose has one pass to carry the source inside the sentence. The overlap is the long feature, which belongs to `non-fiction` the moment it acquires notes and a Chicago pin.
 
 Against `general`. A blog post may open with the writer. A news story may not.
 
 Against `medical`. Health and science reporting. This module owns attribution, structure, and the reporting craft; `medical` owns the numbers — absolute risk alongside relative, the ban on hyping a single study, the distinction between a finding in mice and a finding in people. A desk that wants a stronger headline does not get one from this module.
 
-With `audience/`. Press pairs most often with `professional` written for a non-specialist, which is why the attribution has to survive without a bibliography. A press piece written for peers is a trade publication and may use the field's terms unglossed; the sourcing obligation does not relax.
+With `domain/education-level/`. Nothing loaded from it means an adult reader who is not a specialist, which is the reader press has always assumed and the reason attribution has to survive without a bibliography. A trade publication written for peers may use the field's terms unglossed. A school paper written with a K-12 tier loaded gets a smaller vocabulary. Neither one relaxes the sourcing.
 
 ## Examples
 

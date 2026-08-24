@@ -1,10 +1,10 @@
 ---
 id: user-interface.charts
 layer: user-interface
-version: 1.0.0
+version: 1.0.1
 status: draft
-budget: 1151
-tokens: 1151
+budget: 1150
+tokens: 1150
 kind: overlay
 medium: data
 mechanics: house
@@ -16,7 +16,7 @@ evidence:
 
 # Interface: Charts
 
-Every chart is an argument, and the text is where the argument is stated, or where it hides. A number with no unit, an axis that starts above zero, a smoothed line over four data points: each is a claim about the world made without saying so.
+Every chart is an argument, and the text is where a writer states that argument or hides it. A number with no unit, an axis that starts above zero, a smoothed line over four data points: each is a claim about the world made without saying so.
 
 Covers the words around data — titles, axes, legends, annotations, tooltips, captions, and the sentence a reader hears when they cannot see the picture. Loads on top of a medium module, never instead of one.
 
@@ -81,7 +81,7 @@ Encoding choices — which mark, which scale, which color — are outside this m
 
 > Weekly Active Users by Week
 
-> Weekly active users doubled after the free tier launched in March *n = 12 weeks. Source: product analytics, as of 6 Jul 2026.*
+> Weekly active users doubled after the free tier launched in March *n = 12 weeks. Source: product analytics, as of Jul 6, 2026.*
 
 **Number with no unit or denominator**
 
@@ -111,7 +111,7 @@ Encoding choices — which mark, which scale, which color — are outside this m
 
 > ↓ Big drop here!
 
-> 14 Mar: API outage, 06:00–11:20 UTC
+> Mar 14: API outage, 06:00–11:20 UTC
 
 **Alt text describing the drawing**
 
@@ -123,4 +123,4 @@ Encoding choices — which mark, which scale, which color — are outside this m
 
 > No data
 
-> No sessions match these filters. Widest available range is 1 Jan – 6 Jul 2026. &nbsp; [ Clear filters ]
+> No sessions match these filters. Widest available range is Jan 1 – Jul 6, 2026. &nbsp; [ Clear filters ]

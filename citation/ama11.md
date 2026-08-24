@@ -1,10 +1,10 @@
 ---
 id: citation.ama11
 layer: citation
-version: 1.0.0
+version: 1.0.1
 status: draft
-budget: 1009
-tokens: 1009
+budget: 1006
+tokens: 1006
 edition: 11th (2020), with online updates through 2026
 ---
 
@@ -43,7 +43,7 @@ Keep the publication cluster tight — no spaces around the semicolon, the paren
 
 Close with a DOI when one exists, bare and lowercase, with no terminal period. Only where there is no DOI does a URL follow, and only then does an access date follow that: `Accessed March 7, 2024.` The URL takes no period; the access date does.
 
-Give inclusive page numbers in full: `225-231`, never `225-31`. AMA does not elide repeated digits, which is the reverse of MLA (`pp. 225-50`) and of Chicago's more elaborate rule, and it is one of the differences most often lost when a writer moves between styles.
+Give inclusive page numbers in full: `225-231`, never `225-31`. AMA does not elide repeated digits, which is the reverse of MLA (`pp. 225-50`) and of Chicago's more elaborate rule. Check this one whenever a reference has been carried over from another style.
 
 For health-policy sources that are not journal articles, keep the AMA order rather than forcing a journal shell: author or agency; title; container or publisher; date; DOI or, if no DOI, access date plus URL. Books take publisher and year; chapters add `In:` editors, book title, publisher, year, and pages. Reports, websites, package inserts, ClinicalTrials.gov records, preprints, data sets, conference presentations, and "cited by" references need enough type labels and dates for a reader to identify exactly what was used.
 

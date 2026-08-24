@@ -1,7 +1,7 @@
 ---
 id: sources.kill-ai-slop
 layer: sources
-version: 1.0.0
+version: 1.1.0
 status: active
 budget: none
 source:
@@ -15,13 +15,13 @@ source:
   url: "https://github.com/yetone/kill-ai-slop"
   retrieved: 2026-08-09
 consumers:
-  - user-interface/website.md
-  - user-interface/applications.md
-  - user-interface/charts.md
-  - user-interface/accessibility.md
   - core/formatting.md
   - core/restraint.md
   - domain/marketing.md
+  - user-interface/accessibility.md
+  - user-interface/applications.md
+  - user-interface/charts.md
+  - user-interface/website.md
 ---
 
 # Source: kill-ai-slop
@@ -30,7 +30,7 @@ The only source in this directory about *interfaces*. Everything else here studi
 
 Unbudgeted by design. Read when authoring or revising a `user-interface/` module.
 
-Restated in original wording. Flagged phrases are reproduced as flagged phrases. The taxonomy's numbering is cited as-is because the tell ids are identifiers that the scanner's `--only=` flag takes.
+This dossier restates the catalog in original wording. Flagged phrases appear as flagged phrases, because the phrase is the finding. The taxonomy's numbering appears as-is because the tell ids are identifiers that the scanner's `--only=` flag takes.
 
 ## Why This Source
 
@@ -40,7 +40,7 @@ Three things it has that no prose source does.
 
 **It ships a working detector.** `scan.mjs` is a dependency-free Node scanner that greps real source for the code-level signature of each tell and reports `file:line`. That means its claims are falsifiable in a way a prose checklist is not: you can run it against a shipped product and count. A tell that never fires on real code is a tell somebody imagined.
 
-**It builds triage into the workflow.** The skill's third step separates slop from intentional before anything is changed, on the stated grounds that a gradient, a serif, or an emoji can be a real defended choice. That step is `core/restraint.md`, arrived at independently and applied to a codebase. It is the strongest external corroboration this project has that the restraint module is load-bearing rather than decorative.
+**It builds triage into the workflow.** The skill's third step separates slop from intentional before anyone changes anything, on the stated grounds that a gradient, a serif, or an emoji can be a real defended choice. That step is `core/restraint.md`, arrived at independently and applied to a codebase. It is the strongest external corroboration this project has that the restraint module is load-bearing rather than decorative.
 
 ### The repurposing caveat
 
@@ -78,7 +78,7 @@ The centerpiece, and the tell this project's `user-interface/website.md` is buil
 - `Unlock the power of X`
 - `In seconds, not [longer unit]`
 - `blazing fast`, `effortless`, `seamless`, `game-changer`, `next-level`
-- **`X theater`** — dismissing a practice as *security theater*, *standup theater*, *process theater*. Called out as a recurring generated-copy tic. This one appears in no prose source and is worth carrying.
+- **`X theater`** — dismissing a practice as *security theater*, *standup theater*, *process theater*. The taxonomy calls it out as a recurring generated-copy tic. This one appears in no prose source and is worth carrying.
 - Punchy three-word triads set as whole paragraphs: `Fast. Beautiful. Yours.`
 - The em-dash habit, and specifically em-dash triplets.
 
@@ -92,7 +92,7 @@ Coloring or bolding scattered words mid-paragraph. Stated reason: when every wor
 
 ### Tell 15 — emoji everywhere
 
-A rocket on launch, a lightning bolt on fast, a lock on secure, on every heading, button, and bullet. Named as borrowed warmth standing in for a tone the words should have carried. The interface-specific cost, which prose sources miss: a screen reader announces the emoji name aloud, so decorative emoji in a label become spoken noise. That consequence belongs to `user-interface/accessibility.md`.
+A rocket on launch, a lightning bolt on fast, a lock on secure, on every heading, button, and bullet. The taxonomy names it borrowed warmth standing in for a tone the words should have carried. The interface-specific cost, which prose sources miss: a screen reader announces the emoji name aloud, so decorative emoji in a label become spoken noise. That consequence belongs to `user-interface/accessibility.md`.
 
 ### Tell 23 — badge and pill spam
 
@@ -120,16 +120,16 @@ Interchangeable cards with a shouted label and a number, faking structure while 
 
 - **No settings, no errors, no forms, no notifications.** The catalog stops at the marketing surface. Everything a person uses after signing up is outside it, and that gap is most of `user-interface/`.
 - **No accessibility axis.** Emoji, gradient text, and icon-only buttons all have screen-reader consequences that the taxonomy does not mention.
-- **Tell 14 is one entry doing the work of a dozen.** Voice, register, specificity, rhythm, and punctuation are collapsed into a single id because the scanner needs one regex family per id. That is a tool constraint, not a finding.
-- **Self-referential where the other sources are cited.** The strongest passages are assertions of taste, well argued and unsourced. The scanner makes the *presence* of a pattern checkable; it does not make the pattern bad.
+- **Tell 14 is one entry doing the work of a dozen.** The entry collapses voice, register, specificity, rhythm, and punctuation into a single id because the scanner needs one regex family per id. That is a tool constraint, not a finding.
+- **It cites itself where the other sources cite evidence.** The strongest passages assert a taste, well argued and unsourced. The scanner makes the *presence* of a pattern checkable; it does not make the pattern bad.
 
 ## What `emerson-press` Takes
 
-1. **Slop defined as the default rather than as the machine.** What gets reached for when no decision was made. This is the framing `user-interface/` uses throughout, and it is why the axis flags a generic label rather than a long one.
+1. **Slop defined as the default rather than as the machine.** What a builder reaches for when nobody made a decision. This is the framing `user-interface/` uses throughout, and it is why the axis flags a generic label rather than a long one.
 2. **Triage before edit.** Independent confirmation of `core/restraint.md`, from a project that had to build it or drown in false positives.
 3. **Principle 6, decoration as signal** — the source of the falsifiable-status and badge rules in `user-interface/applications.md`, and of the whole detection list in `user-interface/website.md`.
 4. **The invented stat row**, including the poisoning argument.
-5. **Named marketing constructions** — `say goodbye to`, `meet your new`, `supercharge`, `unlock the power of`, `seamless`, `effortless`, `X theater` — split between `user-interface/website.md`, which is where selling is allowed, and `user-interface/applications.md`, which is where it is not.
+5. **Named marketing constructions** — `say goodbye to`, `meet your new`, `supercharge`, `unlock the power of`, `seamless`, `effortless`, `X theater` — split between `user-interface/website.md`, which permits selling, and `user-interface/applications.md`, which does not.
 6. **Ordinals as an ordering claim**, which generalizes past marketing into any numbered interface list.
 
 ## What `emerson-press` Refuses

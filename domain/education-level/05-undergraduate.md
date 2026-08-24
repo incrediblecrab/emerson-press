@@ -1,22 +1,25 @@
 ---
-id: audience.undergraduate
-layer: audience
+id: domain.education-level.undergraduate
+layer: domain
+sublayer: education-level
 kind: ladder
-version: 1.0.0
+version: 1.1.0
 status: active
-budget: 1210
-tokens: 1210
+budget: 1423
+tokens: 1423
 stage: undergraduate
 evidence_rung: 4
 evidence:
   - sources/ap-stylebook.md
 ---
 
-# Audience: Undergraduate
+# Education: Undergraduate
 
 Reader is an undergraduate, or an instructor reading undergraduate work. The job is analysis inside a discipline's conventions: enter a conversation that is already running, and take a position in it that a reader could dispute.
 
 It is not a dissertation. Padding toward that register is the most common failure at this level and the easiest to detect, because the prose acquires subordination without acquiring ideas.
+
+WIDA stops at grade 12, so this tier rests on writing-studies sources instead: the AAC&U VALUE rubric for written communication, and the CWPA Outcomes Statement. That statement is mid-transition. Version 3.0, from 2014, still sets what most first-year writing programs assess against. Version 4.0, approved March 4, 2026, replaces universal outcomes with five knowledge domains and will not map onto a 3.0 rubric one for one. Until a program says which it follows, treat 3.0 as operative and 4.0 as the direction of travel.
 
 ## Detect
 
@@ -34,6 +37,7 @@ It is not a dissertation. Padding toward that register is the most common failur
 ### Over-reach
 
 - Dissertation drag: a literature-review posture over four sources.
+- Territory moves compressed to a clause, terms of art left unglossed, as though writing for peers who already share them. Showing the reader you know it is part of the task here, so compression reads as evasion rather than authority.
 - Theory names invoked as decoration, doing no work a plain term would not.
 - Hedges stacked on ordinary classroom-scope claims: `it could perhaps be tentatively argued that`.
 - Sentence length and subordination rising while idea density stays flat.
@@ -65,11 +69,11 @@ It is not a dissertation. Padding toward that register is the most common failur
 
 ## Mechanics
 
-Assumed fluent in everything below. Added here:
+The writer is fluent in everything below. This band adds:
 
 - Essential and nonessential appositives, where the commas depend on how many candidates the phrase could refer to.
 - Parentheses treated as a signal the sentence needs rebuilding.
-- Fractions spelled out and hyphenated under one in narration, figures inside a quotation.
+- Fractions under one spelled out and hyphenated in running text; the rule stops at a quotation, which keeps the form the speaker used.
 - Composition titles: which get quotation marks, which get nothing, and when a foreign title is translated.
 - Academic degrees preferred as a phrase over an abbreviation; `bachelor's` with an apostrophe, `Bachelor of Arts` without.
 - Departments lowercase unless containing a proper noun.
@@ -77,19 +81,19 @@ Assumed fluent in everything below. Added here:
 - Quotations never altered. If a quote is unusable as-is, paraphrase around it rather than flagging the error inside it.
 - `compose`, `comprise`, and `constitute`; descriptive versus possessive compounds.
 
-Note the style-family split. AP omits the serial comma, spells out one through nine, and puts most titles in quotation marks. Chicago and MLA disagree on all three; APA disagrees on the serial comma and on titles but takes the same one-through-nine threshold. Those are `domain/` and `citation/` decisions, not audience decisions. Pick one family and hold it — mixing them is the most reliable sign a draft changed hands.
+Note the style-family split. AP omits the serial comma, spells out one through nine, and puts most titles in quotation marks. Chicago and MLA disagree on all three; APA disagrees on the serial comma and on titles but takes the same one-through-nine threshold. The publication picks the family, so those are `domain/` and `citation/` decisions rather than schooling ones. Pick one family and hold it — mixing them is the most reliable sign a draft changed hands.
 
 ## Evidence
 
 Rung 4. The writer interrogates the source rather than only citing it: funding and motive, sample adequacy, what a margin of error actually licenses, the difference between a number changing and a rate changing. A figure without a baseline asserts nothing.
 
-Where this tier and a `domain/` evidence floor disagree, the higher of the two governs. The tier sets register; it never lowers the standard of proof a domain requires.
+Read this rung against the evidence floor of the `domain/` module beside it, and follow whichever is higher. A tier changes register. It never lowers the standard of proof a domain requires.
 
 ## Boundaries
 
-Below, high school states the warrant linking evidence to claim. Here the sources must be put in conversation with one another and pressed on their construction, and the piece must obey a disciplinary genre rather than a general essay form.
+Below, high school states the warrant linking evidence to claim, and says enough about a source for a reader to judge it. Here the writer must put sources in conversation with one another and press them on their construction, and must obey a disciplinary genre rather than a general essay form.
 
-Above, graduate work identifies a specific nameable gap in a defined literature and warrants an original contribution to closing it. The evidence demand changes with it: at this tier you interrogate someone else's uncertainty, and at the next you quantify your own — what the design licenses, what it does not, and how much weight the conclusion can bear. The audience changes from an instructor evaluating mastery to a disciplinary community that will check the claim against the literature themselves.
+Above, graduate work identifies a specific nameable gap in a defined literature and warrants an original contribution to closing it. The evidence demand changes with it: at this tier you interrogate someone else's uncertainty, and at the next you quantify your own — what the design licenses, what it does not, and how much weight the conclusion can bear. The audience changes from an instructor evaluating mastery to a committee of specialists who will check the claim against the literature themselves.
 
 ## Examples
 

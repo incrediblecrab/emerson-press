@@ -1,20 +1,21 @@
 ---
-id: audience.graduate
-layer: audience
+id: domain.education-level.graduate
+layer: domain
+sublayer: education-level
 kind: ladder
-version: 1.0.0
+version: 1.2.0
 status: active
-budget: 1121
-tokens: 1121
-stage: masters-doctoral
+budget: 1154
+tokens: 1154
+stage: masters
 evidence_rung: 5
 evidence:
   - sources/ap-stylebook.md
 ---
 
-# Audience: Graduate
+# Education: Graduate
 
-Reader is in a master's or doctoral program: fluent in the field, not yet a peer authority. The defining move is positioning — locating a claim against what the field already holds, in a way a specialist could check.
+Reader is in a master's program: fluent in the field, past coursework or working through it, not yet a peer authority. The defining move is positioning — locating a claim against what the field already holds, in a way a specialist could check. The thesis is the characteristic piece of work, and a committee is the characteristic audience.
 
 Swales' three moves describe the shape. Establish the territory, establish the niche by naming what is missing or contested, then occupy that niche. Most weak graduate writing is missing the second move entirely.
 
@@ -56,11 +57,12 @@ Swales' three moves describe the shape. Establish the territory, establish the n
 - Scope claims to the population, sample, or case actually studied, and say what would have to be true to generalize further.
 - Use theory as an instrument. Name the work it performs here.
 - Report a newsworthy false claim as false rather than as one side of a legitimate debate.
+- Keep a hard term, a long sentence, or a dense noun group where it does work no plainer form can do. The test is whether you could defend the choice, not whether the prose is hard.
 - Make the boldest claim your evidence will carry, and no bolder.
 
 ## Mechanics
 
-Assumed fluent throughout. What remains is quantitative discipline:
+The writer is fluent throughout. What remains is quantitative discipline:
 
 - Margin of error, confidence interval, and p-value stated and interpreted, not gestured at.
 - Relative risk distinguished from absolute risk.
@@ -72,15 +74,15 @@ Assumed fluent throughout. What remains is quantitative discipline:
 
 ## Evidence
 
-Rung 5. Methodology and uncertainty are quantified rather than described, wherever the underlying work produced the numbers. Where it did not, name the limitation in words and say why it is not quantified. An interval, a power calculation, or an error term invented to satisfy this rung is a fabricated figure, and the prohibition on fabricated figures outranks this requirement every time. The writer can state what a design licenses and what it does not, and can say how much weight a conclusion bears given how it was produced.
+Rung 5. The writer quantifies methodology and uncertainty rather than describing them, wherever the underlying work produced the numbers. Where it did not, name the limitation in words and say why no number stands behind it. An interval, a power calculation, or an error term invented to satisfy this rung is a fabricated figure, and the prohibition on fabricated figures outranks this requirement every time. The writer can state what a design licenses and what it does not, and can say how much weight a conclusion bears given how it was produced.
 
-Where this tier and a `domain/` evidence floor disagree, the higher of the two governs. The tier sets register; it never lowers the standard of proof a domain requires.
+Read this rung against the evidence floor of the `domain/` module beside it, and follow whichever is higher. A tier changes register. It never lowers the standard of proof a domain requires.
 
 ## Boundaries
 
 Below, undergraduate enters an existing conversation and takes a defensible position in it. Here the writer must name a specific gap in a defined literature and warrant an original contribution to closing it. Uncertainty stops being something read out of other people's work and becomes something the writer reports about their own: interval, design, and the limit of what either supports. Source handling moves from an illustrative range of texts to command of a specific sub-literature, grouped by position and method.
 
-Above, professional writing changes what the reader is for. In a decision document nearly every reward of this tier inverts: conclusions front-load instead of building toward discussion, hedging reads as unwillingness to be accountable, and citation narrows to the evidence that changes the decision. What replaces the hedging is not confidence the evidence does not support — it is a stated recommendation followed by the condition that would reverse it, which discharges the same duty to uncertainty in the form a decision-maker can act on. Writing for peers at work keeps this tier's habits and adds an institution answerable for them.
+The ladder does not end here. Above, post-graduate work puts the claim into the record, where it has to survive readers who want it to fail and has to be reproducible from the text alone. A thesis can lean on a committee that read the same sources and can ask a follow-up question. A published contribution has neither, so everything the argument rests on has to be on the page.
 
 ## Examples
 

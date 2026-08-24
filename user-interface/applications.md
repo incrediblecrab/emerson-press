@@ -1,10 +1,10 @@
 ---
 id: user-interface.applications
 layer: user-interface
-version: 1.0.0
+version: 1.0.1
 status: draft
-budget: 1702
-tokens: 1702
+budget: 1715
+tokens: 1715
 kind: medium
 medium: app
 mechanics: house
@@ -72,7 +72,7 @@ Write about people first and disability second, unless the community has said ot
 
 ## Boundaries
 
-Product surfaces, whatever the platform: a native app, a desktop client, or the logged-in half of a website. The visitor-facing half is `website.md`. Register stays with `audience/` — a children's app keeps its warmth, a peer tool keeps its terms of art. What this module strips is unearned enthusiasm, not earned tone.
+Product surfaces, whatever the platform: a native app, a desktop client, or the logged-in half of a website. The visitor-facing half is `website.md`. Register stays with the genre module, and with whatever `domain/education-level/` tier loads beside it — a children's app keeps its warmth, a peer tool keeps its terms of art. What this module strips is unearned enthusiasm, not earned tone.
 
 Long-form product writing — release notes, help articles, in-app guides — is `domain/technical.md`. Email and other messages that arrive outside the product are neither this module nor `website.md`; use `domain/` until this axis claims them. Conversational surfaces — an assistant's replies, a chat agent's refusals — are not covered here either: they are read rather than scanned, so the attention economy this module assumes does not hold.
 

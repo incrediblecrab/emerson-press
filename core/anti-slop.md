@@ -1,10 +1,10 @@
 ---
 id: core.anti-slop
 layer: core
-version: 1.1.0
+version: 1.3.0
 status: draft
-budget: 2002
-tokens: 2002
+budget: 2161
+tokens: 2161
 evidence:
   - sources/signs-of-ai-writing.md
   - sources/field-guide-to-ai-slop.md
@@ -16,7 +16,7 @@ evidence:
 
 # Anti-Slop
 
-One mechanism produces nearly all of this. A model predicts likely words, and specific facts are rare while approving generalities are everywhere. So detail gets traded for praise, and the prose comes out less specific and more emphatic at once. Volume rises as resolution drops.
+One mechanism produces nearly all of this. A model predicts likely words, and specific facts are rare while approving generalities are everywhere. So the model trades detail for praise, and the prose comes out less specific and more emphatic at once. Volume rises as resolution drops.
 
 The trade leaves a countable trace. Profiling work that compares model output against a human baseline finds some phrasings running more than a thousand times more often on the machine side. That ratio is the thing a reader notices — not any single word, which is why no list of forbidden words survives contact with the next model.
 
@@ -38,6 +38,7 @@ Read what follows as symptoms. The disease is that trade, and it routes around a
 - **Inflated consensus.** `scholars` or `reviewers` in the plural over one cited source. One view reported as settled.
 - **False open sets.** `such as` or `among others` in front of a list that is actually the whole list.
 - **Speculation after a disclaimer.** Announcing something is `not widely documented`, then guessing at it with `likely`. For people this collapses into formula: the subject `keeps personal details private`, or `maintains a low profile`.
+- **Vague connection.** `in connection with`, `in connection to`, `connected with`, `connected to`, `in association with`, `associated with` standing where a nameable relation belongs. Ask what the relation is: if it is ownership, employment, funding, authorship, membership, or cause, name it and let `of`, `for`, or `by` carry it. Where the relation genuinely is an unexplained correlation, the phrase is exact and `accuracy` requires it.
 
 ### Reflex
 
@@ -45,9 +46,9 @@ Read what follows as symptoms. The disease is that trade, and it routes around a
 - **Vague declaratives.** `The implications are significant.` `The stakes are high.` `The reasons are structural.` `The consequences are real.` A sentence asserting that something is important, deep, or structural without naming the thing. Delete it, or replace it with the thing.
 - **Emphasis crutches.** `Full stop.` `Period.` `Let that sink in.` `Make no mistake.` `Here's why that matters.` Punctuation of tone substituting for a reason.
 - **Meta-commentary.** `In this section, we'll`, `Let me walk you through`, `As we'll see`, `The rest of this piece explains`. A section announcing itself instead of starting.
-- **Negative parallelism.** `not just X, but Y`, `it isn't X — it's Y`, `no X, no Y, just Z`. Stages the correction of a misconception the reader never held. Runs across sentence boundaries too, so a one-sentence check misses it. The plain comparative `X rather than Y` is not this — it negates nothing and states a preference, and `voice` depends on it.
+- **Negative parallelism.** `not just X, but Y`, `it isn't X — it's Y`, `no X, no Y, just Z`. Stages the correction of a misconception the reader never held. Runs across sentence boundaries too, so a one-sentence check misses it. The plain comparative `X rather than Y` is not this: it negates nothing and states a preference, and `voice` depends on it. Some models do overuse the comparative, so watch its rate and never its presence.
 - **Negative listing.** `Not a study. Not a survey. A guess.` The same move spread across three fragments.
-- **Triads.** Three adjectives, three clauses, three parallel phrases, used to make a thin observation look surveyed. A list that genuinely has three members is not this.
+- **Triads.** Three stacked adjectives, or three parallel clauses, used to make a thin observation look surveyed. A list that genuinely has three members is not this.
 - **Tacked-on participles.** A fact with an interpretive tail: `..., highlighting its role in`, `..., ensuring continued growth`, `..., reflecting the region's character`, `..., contributing to`, `..., fostering`, `..., underscoring`.
 - **Formula edges.** `In today's fast-paced world`, `As technology continues to evolve`, `At the end of the day`, `Despite these challenges`, `In conclusion`. Also the closing shape itself: a `Challenges` section built on a concession, then a `Future Outlook` of speculative optimism.
 - **Unearned profundity.** `Something shifted.` `Everything changed.` `But here's the thing.` A grave pivot arriving from nowhere.
@@ -57,7 +58,7 @@ Read what follows as symptoms. The disease is that trade, and it routes around a
 
 ### Churn
 
-- **Synonym rotation.** One referent renamed at each mention — `the company`, `the firm`, `the organization`, `the enterprise` — because repetition felt like a fault.
+- **Synonym rotation.** One referent renamed at each mention — `the company`, `the firm`, `the organization`, `the enterprise` — until a reader cannot tell whether a second organization has entered the paragraph. Older than the models and no longer particular to them, so it stays here on reader grounds alone; `restraint` carries it among the non-tells.
 - **Dilution.** Four sentences carrying one sentence of content. The other three do not merely add nothing; they weaken the one that mattered.
 - **No throughline.** Every sentence parses and you cannot say what is being claimed.
 - **Generic figures of speech.** Comparisons landing near the idea without being thought through — a skill as a muscle, a process as a journey, parts clicking into place like puzzle pieces.

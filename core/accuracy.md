@@ -1,10 +1,10 @@
 ---
 id: core.accuracy
 layer: core
-version: 1.1.0
+version: 1.2.0
 status: draft
-budget: 1037
-tokens: 1037
+budget: 1026
+tokens: 1026
 evidence:
   - sources/ap-stylebook.md
   - sources/signs-of-ai-writing.md
@@ -13,7 +13,7 @@ evidence:
 
 # Accuracy
 
-Padded or imprecise language misinforms a reader even when no sentence in it is false, which is why this module sits in `core/` rather than in a domain.
+Padded or imprecise language misinforms a reader even when no sentence in it is false. Accuracy is therefore a craft obligation in every genre, not a specialty of the regulated ones.
 
 ## Detect
 
@@ -53,7 +53,7 @@ Padded or imprecise language misinforms a reader even when no sentence in it is 
 - `Average` reported where a median was calculated.
 - Averages taken across averages.
 - Margin of error omitted, or a lead claimed inside it.
-- Relative risk quoted without the absolute numbers, so a rise from two cases per 100,000 to four sounds like a doubling of exposure.
+- Relative risk quoted without the absolute numbers, so a rise from two cases per 100,000 to four is reported only as a doubling.
 - Too many digits in one paragraph to hold.
 
 ### Handling of sources
@@ -71,7 +71,7 @@ Say what is unconfirmed rather than writing around it. When you did not find som
 
 Cite so a reader can check: page numbers for books, resolvable identifiers, a link that loads. A citation that cannot be verified is not a citation.
 
-Own every claim regardless of what drafted it. A wrong date, a fabricated reference, a borrowed sentence — the name on the work answers for all of it, and the venues that have written this rule down allow no exception for tooling. Verification is part of authorship. The name on the work answers for every fact in it, however the draft was produced.
+Own every claim regardless of what drafted it. A wrong date, a fabricated reference, a borrowed sentence — the name on the work answers for all of it, however the draft was produced, and the venues that have written this rule down allow no exception for tooling. Verification is part of authorship.
 
 Keep confidence proportional to evidence. One study is provisional. Prefer `linked to` over `causes`, and say what would have to be true for the causal reading to hold.
 

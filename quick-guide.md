@@ -1,16 +1,18 @@
 # Quick Guide
 
-A self-contained writing standard. Paste it into a prompt whole; it depends on no other file and points at none. The prose standard runs from here to the end of *The evidence*. The last two sections, *Engineering* and *Working rules*, govern whoever is applying the standard rather than the prose itself, and matter only when that is an agent working in a codebase.
+Three rules fail more often than the rest and cost more when they fail. Name the actor and the act, in active voice. Let a list have three members only when the world has three; a third item added to finish a rhythm is a defect, and a reader hears it. Write nothing about the draft inside the draft — no section that announces itself, no sentence that says what is coming, no closing that tells a reader what they just read.
 
-It exists because prose stripped of every machine tell still reads as machine-made if nothing particular is left. Subtraction cannot add a particular that was never there. So the guide has a negative half and a positive half, and the positive half matters more.
+Paste this into a prompt whole; it depends on no other file and points at none. The prose standard runs from here to the end of *The evidence*. The last two sections, *Engineering* and *Working rules*, govern whoever is applying the standard rather than the prose itself, and matter only when that is an agent working in a codebase.
+
+Prose stripped of every machine tell still reads as machine-made if nothing particular is left. Subtraction cannot add a particular that was never there. Adding one is the harder half and the one that decides.
 
 ## The mechanism
 
-One trade produces nearly all of it. A model predicts likely words. Specific facts are rare and approving generalities are everywhere, so detail gets traded for praise and the prose comes out less specific and more emphatic at once. Volume rises as resolution drops.
+One trade produces nearly all of it. A model predicts likely words. Specific facts are rare and approving generalities are everywhere, so the model trades detail for praise, and the prose comes out less specific and more emphatic at once. Volume rises as resolution drops.
 
 The trade leaves a countable trace. Measured against a human baseline, some phrasings run more than a thousand times more often on the machine side. That ratio is what a reader notices — not any single word, which is why no list of forbidden words survives contact with the next model.
 
-Read every list below as symptoms. The disease is that trade, and it routes around any vocabulary you forbid.
+Every list below is a symptom. The disease is that trade, and it routes around any vocabulary you forbid.
 
 ## Write
 
@@ -44,7 +46,7 @@ Two procedures do most of the work, and both keep working after the vocabulary s
 
 Density convicts, never a single instance. Several of these in one paragraph is the signal.
 
-These lists date on purpose. They name what current models overproduce, and the next one will overproduce something else. So a clean pass here is not a pass on the document: it means this half found nothing, and the question moves to the positive half — is anything particular being said, and does the prose move. A draft can clear every list below and still be slop, because subtraction cannot add a particular that was never there. When nothing fires, stop hunting words and go read the rhythm.
+These lists date on purpose. They name what current models overproduce, and the next model will overproduce something else. A draft can clear every one of them and still be slop, because subtraction cannot add a particular that was never there. When nothing fires, stop hunting words: ask what particular thing the writer is saying, and read the rhythm.
 
 ### Inflation
 
@@ -52,15 +54,15 @@ Significance attached to ordinary facts — `a pivotal moment in`, `stands as a 
 
 ### Evasion
 
-Unnamed authorities — `experts argue`, `observers have noted`, `industry reports suggest`, `critics contend`, `it is widely regarded`. `Scholars` in the plural over one cited source. `Such as` or `among others` in front of a list that is actually the whole list. Speculation after a disclaimer: announcing something is `not widely documented`, then guessing at it with `likely`. For people this collapses into formula — the subject `keeps personal details private`.
+Unnamed authorities — `experts argue`, `observers have noted`, `industry reports suggest`, `critics contend`, `it is widely regarded`. `Scholars` in the plural over one cited source. `Such as` or `among others` in front of a list that is actually the whole list. Speculation after a disclaimer: announcing something is `not widely documented`, then guessing at it with `likely`. Vague connection — `in connection with`, `connected to`, `in association with`, `associated with` — standing where a nameable relation belongs; if the relation is ownership, employment, funding, authorship, membership or cause, name it, and where it genuinely is an unexplained correlation the phrase is the exact one. For people this collapses into formula — the subject `keeps personal details private`.
 
 ### Reflex
 
-Throat-clearing openers — `Here's the thing`, `The truth is`, `It turns out`, `Let me be clear`. Vague declaratives — `The implications are significant.` `The stakes are high.` A sentence asserting that something is important without naming the thing; delete it or replace it with the thing. Emphasis crutches — `Full stop.` `Let that sink in.` `Make no mistake.` Meta-commentary — `In this section, we'll`, `Let me walk you through`, `As we'll see`. Negative parallelism — `not just X, but Y`, `it isn't X — it's Y`, `no X, no Y, just Z` — which stages the correction of a misconception the reader never held, and runs across sentence boundaries so a one-sentence check misses it. The plain comparative `X rather than Y` is not this; it negates nothing. Negative listing spread across fragments: `Not a study. Not a survey. A guess.` Triads used as cadence rather than because there are three of something. Tacked-on participles — `..., highlighting its role in`, `..., ensuring continued growth`, `..., underscoring`. Formula edges — `In today's fast-paced world`, `As technology continues to evolve`, `At the end of the day`, `In conclusion` — and the closing shape itself, a `Challenges` section built on a concession followed by speculative optimism. Unearned profundity: `Something shifted.` `Everything changed.` Permission-granting closers: `And that's okay.` Questions as drum hits: `The solution? Simpler than you think.` Copula avoidance — `serves as`, `stands as`, `functions as`, `represents`, `boasts`, `features`, `offers` where `is` or `has` is honest.
+Throat-clearing openers — `Here's the thing`, `The truth is`, `It turns out`, `Let me be clear`. Vague declaratives — `The implications are significant.` `The stakes are high.` A sentence asserting that something is important without naming the thing; delete it or replace it with the thing. Emphasis crutches — `Full stop.` `Let that sink in.` `Make no mistake.` Meta-commentary — `In this section, we'll`, `Let me walk you through`, `As we'll see` — and the same move without the phrasing: a section announcing itself instead of starting, a closing paragraph telling a reader what they just read. Negative parallelism — `not just X, but Y`, `it isn't X — it's Y`, `no X, no Y, just Z` — which stages the correction of a misconception the reader never held, and runs across sentence boundaries so a one-sentence check misses it. The plain comparative `X rather than Y` is not this; it negates nothing. Negative listing spread across fragments: `Not a study. Not a survey. A guess.` Triads used as cadence rather than because there are three of something; rate counts as much as instance, and if a reader can feel the three-beat arriving, the prose is keeping time rather than saying something. Tacked-on participles — `..., highlighting its role in`, `..., ensuring continued growth`, `..., underscoring`. Formula edges — `In today's fast-paced world`, `As technology continues to evolve`, `At the end of the day`, `In conclusion` — and the closing shape itself, a `Challenges` section built on a concession followed by speculative optimism. Unearned profundity: `Something shifted.` `Everything changed.` Permission-granting closers: `And that's okay.` Questions as drum hits: `The solution? Simpler than you think.` Copula avoidance — `serves as`, `stands as`, `functions as`, `represents`, `boasts`, `features`, `offers` where `is` or `has` is honest.
 
 ### Churn
 
-Synonym rotation, one referent renamed at each mention — `the company`, `the firm`, `the organization` — because repetition felt like a fault. Dilution: four sentences carrying one sentence of content, where the other three weaken the one that mattered. No throughline: every sentence parses and you cannot say what is being claimed. Generic figures of speech landing near the idea without being thought through — a skill as a muscle, a process as a journey, parts clicking into place like puzzle pieces. A comparison must be either specific, rooted in something actually observed, or culturally resonant. One that is neither is merely plausible; cut it.
+Synonym rotation, one referent renamed at each mention — `the company`, `the firm`, `the organization` — until a reader cannot tell whether a second organization has entered the paragraph. This one is a style fault older than the models rather than a machine tell, so fix it for the reader and never read it as a signature. Dilution: four sentences carrying one sentence of content, where the other three weaken the one that mattered. No throughline: every sentence parses and you cannot say what the writer is claiming. Generic figures of speech landing near the idea without being thought through — a skill as a muscle, a process as a journey, parts clicking into place like puzzle pieces. A comparison must be either specific — rooted in something actually observed — or culturally resonant. One that is neither is merely plausible; cut it.
 
 ### Cliche and jargon
 
@@ -80,15 +82,15 @@ Vague collectives where people belong — `stakeholders`, `the community`, `casu
 
 ## Rhythm
 
-The quietest tell and the hardest to fake. Machine prose is metrically flat: when every sentence weighs the same, nothing is emphasized, and a reader loses the thread without being able to say why.
+The quietest tell and the hardest to fake. Machine prose drafted at length is metrically flat: when every sentence weighs the same, nothing is emphasized, and a reader loses the thread without being able to say why.
 
-Watch for sentence lengths clustered in one band, nearly everything between fifteen and twenty-five words; paragraphs of uniform size all the way down; every sentence subject-verb-object; nothing under eight words anywhere; sentences opening with the same connective — `Additionally`, `Moreover`, `Furthermore`; one tense held across material that changed in time; uniform distance from the subject, no moment closer and none further back.
+Watch for sentence lengths clustered in one band, nearly everything between fifteen and twenty-five words; paragraphs of uniform size all the way down; every sentence subject-verb-object; nothing under eight words anywhere; sentences opening with the same connective — `Additionally`, `Moreover`, `Furthermore`; three-part constructions recurring often enough to become the meter; one tense held across material that changed in time; uniform distance from the subject, no moment closer and none further back.
 
 Vary length on purpose, as a diagnostic and not a quota — do not mint a four-word sentence to hit a count. A short sentence after a long one carries weight; put it where the emphasis should fall. Fragments are permitted, and so is a sentence that runs long and picks up clauses as it goes, provided a reader can follow the thread to the end of it. One idea per sentence is the default: every clause spends the reader's attention, and once a sentence has spent more than it earns, no punctuation rescues it. Treat punctuation density as a symptom — when a sentence needs a comma, a dash, and a parenthesis to stand up, the construction went wrong earlier than where you are patching it. Let paragraph length vary; a one-line paragraph is emphasis, not an error. Shift tense when the footing changes. Read it aloud, and where you run out of breath, cut.
 
 ## Formatting
 
-Structure gets overproduced for a reason worth knowing: raters preferred answers that looked organized, so bullets were reinforced. The pull toward structure is therefore strongest exactly where the material is thinnest. Treat a sudden outbreak of formatting as a signal to check whether anything is being said.
+Models overproduce structure for a reason: raters preferred answers that looked organized, so training rewarded bullets. The pull toward structure is therefore strongest exactly where the material is thinnest. Treat a sudden outbreak of formatting as a signal to check whether the writer said anything.
 
 Watch for inline-header bullets repeated down the page — `- **Thing:** description` — which is the signature list shape of chatbot output; bold sprayed mid-paragraph or a `Key takeaways` block; lists where prose belongs, especially three items that each need a sentence of explanation; non-parallel list items; two-row tables; headings with no prose between them. A reference list — a taxonomy, an index, a glossary, where each item is a distinct named thing — is not this tell. The fault is a list standing in for prose that had a throughline.
 
@@ -108,7 +110,7 @@ Watch for a checkable claim with no source; invented specifics that read plausib
 
 Watch confidence outrunning evidence: causal verbs on correlational evidence; a single study carrying a general claim; statistical significance reported as real-world importance; two positions given equal weight when the evidence behind them is not equal.
 
-Watch numbers that mislead: false precision beyond what the method supports; a bare figure with nothing to compare it against; raw counts across groups of different sizes where a rate is needed; percent change confused with percentage-point change; percent change computed off a small base; `average` reported where a median was calculated; averages taken across averages; margin of error omitted, or a lead claimed inside it; relative risk quoted without the absolute numbers, so a rise from two cases per 100,000 to four sounds like a doubling of exposure.
+Watch numbers that mislead: false precision beyond what the method supports; a bare figure with nothing to compare it against; raw counts across groups of different sizes where a rate is needed; percent change confused with percentage-point change; percent change computed off a small base; `average` reported where a median was calculated; averages taken across averages; margin of error omitted, or a lead claimed inside it; relative risk quoted without the absolute numbers, so a rise from two cases per 100,000 to four is reported only as a doubling.
 
 So: attribute anything a reader could dispute, and name the source. If one person said it, write that one person said it. When you cannot name one, you have three honest moves and inventing a source is not among them: cut the claim, mark it unattributed in the sentence itself, or state it as your own inference and show what it rests on. An attribution manufactured to satisfy this rule is the worst outcome available, worse than the bare claim it was meant to fix. Say what is unconfirmed rather than writing around it — when you did not find something, report where you looked and stop there. A failed search is a finding; a guess after a disclaimer is not. Cite so a reader can check: page numbers for books, resolvable identifiers, a link that loads. A citation that cannot be verified is not a citation.
 
@@ -122,7 +124,7 @@ Everything above assumes prose that makes claims about the world. Fiction makes 
 
 What does not change is the discipline against saying what has already been said, and in narrative that discipline is the whole game.
 
-The failure has a mechanism worth knowing, because it predicts where to look. A model producing narrative is producing a legible signal that meaning is present. Subtext is by definition the part of the meaning left unstated. So the prose states the thing whose entire value lay in going unstated — and it does this in the last line, where the damage is greatest, because that is where a summary belongs in every other genre it has learned. Read the final sentence of every scene. If it explains what the scene just did, cut it and end on the action.
+The failure has a mechanism, and the mechanism predicts where to look. A model producing narrative is producing a legible signal that meaning is present. Subtext is by definition the part of the meaning left unstated. So the prose states the thing whose entire value lay in going unstated — and it does this in the last line, where the damage is greatest, because that is where a summary belongs in every other genre it has learned. Read the final sentence of every scene. If it explains what the scene just did, cut it and end on the action.
 
 Name the feeling and you have taken it from the reader. `She slammed the door. She was furious.` — the second sentence deletes the first. Show the behavior and stop. The reader came to do the inference; supplying enough and then stopping is your side of that bargain, and explaining the subtext is the narrative equivalent of an unsourced claim.
 
@@ -130,7 +132,7 @@ Give each character their own diction, rhythm, and characteristic evasion. If yo
 
 ## Calibrate
 
-Register is set by the reader; the standard of proof is set by the subject. Where they disagree, the higher standard governs.
+The reader sets register; the subject sets the standard of proof. Where they disagree, the higher standard governs.
 
 A reading level sets register, not truth. Simplifying for a reader never licenses a smaller fact. Simplify by spending words — a concrete instance, a slower build — not by cutting the mechanism or trading a precise term for a wrong one. Name the real term and gloss it rather than routing around it. Where you have flattened something, say so in a clause. If the content cannot be stated truly at the target level, the level is wrong, not the fact.
 
@@ -146,7 +148,7 @@ Overcorrection is its own tell: every sentence clipped and every paragraph one l
 
 A rule stated without exception is a density signal misread as a binary. Competing instructions ban all em dashes, all adverbs, all sentences opening with a question word, all three-item lists, all absolutes. Each turns a tell into a filter. A rule that cannot tell `fell sharply` from `declined slightly` is removing measurements, not intensifiers. A list with three real members is a fact about the world, and rewriting it to two changes the content to escape a suspicion. Sometimes a claim is universal and `never` is the exact word — flag the unverified superlative, not the superlative. Where a prescriptive instruction disagrees with a measurement, the measurement wins.
 
-So: triage before editing. Separate what is slop from what was chosen. A dash, a formal word, a triad, a clean sentence — each can be a decision someone made and can defend. Change what was never decided, fix what costs the reader, and leave the rest. Ask what a change buys: if cutting a word loses precision and buys only the absence of suspicion, keep the word.
+So: triage before editing. Separate what is slop from what was chosen. A dash, a formal word, a triad, a clean sentence — each can be a decision someone made and can defend. Change what was never decided and what costs the reader. Leave the rest. Ask what a change buys: if cutting a word loses precision and buys only the absence of suspicion, keep the word.
 
 Where committing and staying proportional pull against each other, split on the kind of claim. Commit on judgment and taste, where the stance is the content. Stay proportional on fact and cause, where the evidence is the content. The anti-hedge rule frees you to take a position; it never frees you to overstate what you can show.
 
@@ -162,19 +164,17 @@ Two failures follow from ignoring this. Editing a compliant draft moves it towar
 
 ## The evidence
 
-The numbers these rules rest on, with their limits, so nothing here has to be taken on faith.
-
 **Slop is a rate, not a word list.** Paech, Roush, Goldfeder and Shwartz-Ziv (arXiv:2510.15061) define it as an over-representation ratio: how often a pattern appears in model output divided by how often it appears in a human corpus. Measured extremes for one 12B model reach 85,513x for a single invented name, 2,882x for `shimmered`, 1,192x for `heart hammered ribs`. A thousandfold over-use is a fingerprint, not a stylistic preference.
 
 **A banlist is the wrong instrument, and this is measurable.** Of 200 released slop bigrams, 192 — 96% — appear in the human top-500k, at a median human rank of 5,373. Eight of the ten most frequent bigrams in human creative writing are on the list: `could see`, `shook head`, `first time`, `looked like`, `long time`, `years ago`, `old man`, `one thing`. The top slop trigram, `took deep breath`, is the single most common trigram humans write. Only about 15% of the entries have no meaningful human rate at all, and that minority clusters on two habits — narrating resolve and decorating scenery with participles. Applied as find-and-replace, the list deletes ordinary English.
 
-**Long lists are more repetitive, not more thorough.** 74% of the released trigrams merely extend a bigram already on the list; a single invented stem consumes twelve of a thousand word slots. Pushed to its maximum, flat token banning raised suppression to 98% while dropping writing quality from 67.8 to 19.6 on the same rubric, and an 8,000-token banlist collapsed quality to 28/100. Suppression that could back up and choose again in context handled four times as many patterns with quality intact. That experiment ran on weights and logits rather than prompts, so read it as an analogy — but the mechanism is the same: a ban filters a surface form, a revision is a decision made in context, and only the second scales.
+**Long lists are more repetitive, not more thorough.** 74% of the released trigrams merely extend a bigram already on the list; a single invented stem consumes twelve of a thousand word slots. Length costs directly: an 8,000-pattern banlist scored 28 out of 100 on the project's writing rubric. Suppression that could back up and choose again in context handled four times as many patterns with quality intact. Overcorrection carries a second measured curve in the same work, on the training side rather than the sampler: removing the safeguard that ends training pressure once a preference is won raised suppression to 98% and dropped writing quality from 67.8 to 19.6. All of it ran on weights and logits rather than prompts, so read it as an analogy — but the mechanism is the same: a ban filters a surface form, a revision is a decision made in context, and only the second scales.
 
 **Slop is repetition, not ornate diction and not padding.** Across 38 profiled models, slop score correlates with repetition at +0.83, with vocabulary complexity at +0.01, and with length at +0.05. Both folk theories die there. Within one model family it declines monotonically with scale, 61.1 at 1B down to 45.1 at 405B, so "AI writing sounds like this" is a claim about small models and it ages.
 
-**Accusation does not track the evidence.** Miklian and Katsos (arXiv:2606.12073) matched 421 accused human comments against 2,048 controls from 25 million forum comments. Six prose markers cleanly separate machine from human text at p < 1e-9. None of the four that distinguished machine text predicted accusation. What predicted it was greater length and *shorter* average word length — the second pointing opposite to the real signal. Stylistic-tell callouts such as the em-dash complaint are the least reliable accusation tier measured, confirmed as genuine only 17% to 35% of the time. So writing to escape suspicion cannot be made to work: much of accusation is social gatekeeping that never reads the text, and no revision reaches it. Writing well still works, because every rule above is independently a defect worth fixing.
+**Accusation does not track the evidence.** Miklian and Katsos (arXiv:2606.12073) matched 421 accused human comments against 2,048 controls from 25 million forum comments. Six prose markers cleanly separate machine from human text, three of them reported with figures at p < 1e-9. None of the six predicted accusation. What predicted it was greater length and *shorter* average word length — the second pointing opposite to the real signal. Stylistic-tell callouts such as the em-dash complaint are the least reliable accusation tier measured, confirmed as genuine only 17% to 35% of the time. So writing to escape suspicion cannot be made to work: much of accusation is social gatekeeping that never reads the text, and no revision reaches it. Writing well still works, because every rule above is independently a defect worth fixing.
 
-**The cost is why it matters.** Baltes, Cheong and Treude (arXiv:2603.27249) coded 1,154 forum posts and framed the result as a tragedy of the commons: the producer gains and the cost lands on reviewers, maintainers, and everyone downstream. Cheap to write, expensive to read. Their documented failure modes are worth remembering — an agent that hallucinated external services and then mocked out the services it had hallucinated, and one that skipped authorization in middleware and then mocked out authorization in the tests so they would pass.
+**The cost is why it matters.** Baltes, Cheong and Treude (arXiv:2603.27249) coded 1,154 forum posts and framed the result as a tragedy of the commons: the producer gains and the cost lands on reviewers, maintainers, and everyone downstream. Cheap to write, expensive to read. They document two failure modes: an agent that hallucinated external services and then mocked out the services it had hallucinated, and one that skipped authorization in middleware and then mocked out authorization in the tests so they would pass.
 
 **Two limits on all of the above.** The n-gram measurements were taken on creative writing, which bounds how far they transfer to functional prose. And detectors do not work: untrained human accuracy sits near chance, automated error rates are too high to act on, and documenting these tells feeds them back into the next generation of training, which trains them away.
 
@@ -182,7 +182,7 @@ The numbers these rules rest on, with their limits, so nothing here has to be ta
 
 Read first, code second. Understand the existing patterns before changing anything.
 
-Solve the stated problem only. No extra features, no unrequested refactoring, no improvements nobody asked for.
+Solve the stated problem only. No extra features, and no refactoring or improvement nobody asked for.
 
 Edit existing files. Avoid new classes, new files and new abstractions where an edit will do.
 
@@ -190,7 +190,7 @@ Delete unused code. No deprecation comments, no backwards-compatibility shims.
 
 Simple over clever. If a fix feels complex, stop and reconsider the approach. Simplicity is the ultimate sophistication, and there is no duct tape and no temporary solution that does not become permanent.
 
-Build for scale and modularity, with a UI and UX focus, a secure and stable architecture, and a future-proof mindset.
+Design for scale, for modularity, for security and stability, and for the person using the interface. Do not make a choice that will be expensive to reverse.
 
 ## Working rules
 

@@ -2,10 +2,10 @@
 id: domain.medical
 layer: domain
 kind: regulated
-version: 2.0.0
+version: 2.1.0
 status: draft
-budget: 2548
-tokens: 2548
+budget: 2912
+tokens: 2912
 mechanics: ama
 evidence_floor: 5
 evidence:
@@ -14,13 +14,13 @@ evidence:
 
 # Domain: Medical
 
-Clinical documentation, research reporting, patient education. Pairs with `citation/ama11.md`.
+Clinical documentation, research reporting, patient education, public guidance. Pairs with `citation/ama11.md`.
 
-Overstated certainty is a safety defect here, and that framing is the whole module. In press, an overclaim damages credibility. In marketing, it draws a regulator. In medicine, someone stops a medication, or does not go to the emergency department, or agrees to a procedure they would have declined with the real numbers. The prose is part of the intervention, and it can hurt the reader the way a wrong dose can.
+Overstated certainty is a safety defect here, not a stylistic one. In press, an overclaim damages credibility. In marketing, it draws a regulator. In medicine, someone stops a medication, or does not go to the emergency department, or agrees to a procedure they would have declined with the real numbers. The prose is part of the intervention, and it can hurt the reader the way a wrong dose can.
 
 The most common way it happens is not a lie. It is a relative risk reported without its base. *Cuts your risk in half* is true of a drop from two in ten thousand to one in ten thousand, and it is the same sentence a writer would use for a drop from forty percent to twenty. Those two facts should not share a sentence, and the fix costs eleven words: give the absolute numbers, in natural frequencies, on a common denominator. Gigerenzer's research is unambiguous that clinicians and patients both reason better from *3 in 1,000* than from *0.3%* — and the finding holds for the clinicians, which is the part that should end the argument.
 
-The second thing this module carries is a correction to a rule that circulated too successfully. Person-first language — *a person with epilepsy* rather than *an epileptic* — was a genuine advance, and applying it blindly is now its own failure. Much of the autistic community prefers *autistic person*, and much of the Deaf community prefers *Deaf person*, on the ground that the trait is identity rather than affliction. The AMA manual acknowledges this. A style module that hard-codes person-first everywhere writes over the stated preference of the people it claims to respect, which was the thing person-first language was invented to stop.
+Person-first language — *a person with epilepsy* rather than *an epileptic* — was a genuine advance, and applying it blindly has become its own failure. Much of the autistic community prefers *autistic person*, and much of the Deaf community prefers *Deaf person*, on the ground that the trait is identity rather than affliction. The AMA manual acknowledges this. A style rule that hard-codes person-first everywhere writes over the stated preference of the people it claims to respect, which was the thing person-first language was invented to stop.
 
 ## Detect
 
@@ -84,8 +84,8 @@ AMA style, restated. `citation/ama11.md` carries the full form.
 - A leading zero on every dose or measurement below one — 0.5 mg, never .5 mg — and never a trailing zero after a whole number. No leading zero on a statistic that cannot exceed 1: *P* = .04, not *P* = 0.04.
 - Doses written out — units, not `U`; daily, not `QD`; micrograms as `mcg`.
 - Generic drug names, with the brand in parentheses on first mention if it matters.
-- Trial registration number and funding source disclosed. ICMJE authorship criteria applied rather than assumed.
-- The reporting guideline that matches the design: CONSORT for trials, PRISMA for systematic reviews, STROBE for observational studies.
+- Trial registration number and funding source disclosed. ICMJE authorship criteria checked against each name on the paper.
+- The reporting guideline that matches the design, cited by version: CONSORT 2025 for trials, SPIRIT 2025 for trial protocols, PRISMA 2020 for systematic reviews, STROBE 2007 for observational studies. CONSORT 2025 replaced the 2010 statement in April 2025 and adds an open-science item, so a paper checked against the older list is checked against a superseded one.
 
 ## Formats
 
@@ -93,19 +93,29 @@ AMA style, restated. `citation/ama11.md` carries the full form.
 
 Written for another clinician, under time pressure, in a document that is also a legal record.
 
-Precise, structured, no filler. Abbreviate only from the approved list. Record what was observed and what was done, and mark inference as inference rather than folding it into the observation.
+Precise, structured, no filler. Abbreviate only from the approved list. Record what you observed and what you did, and mark inference as inference rather than folding it into the observation.
 
 Hedge where the evidence hedges. *Consistent with* and *cannot exclude* are exact terms, not softening, and a reader in this genre reads them exactly.
 
 The note will be read by someone who was not there, possibly years later, possibly in a deposition. Write for that reader.
 
+### Research reporting
+
+Written for a peer reviewer hunting the flaw and a clinician deciding whether the finding reaches their patient. Both read adversarially, and neither reads in order.
+
+Methods before results, results before interpretation, and the interpretation held to what the design supports. Pick the reporting checklist for the design while planning the study, not while formatting the manuscript — it governs what has to be measured and recorded before there is anything to write up.
+
+State the limitation a reviewer would raise. Naming your own weakness reads as candor; omitting it invites the reviewer to find it and to ask what else is missing.
+
 ### Patient-facing
 
-Plain language, roughly eighth-grade reading level, and an eighth-grade reading level is not a simplification of the content — it is a translation of it. The numbers stay true.
+Plain language, roughly eighth-grade reading level, and an eighth-grade reading level is not a simplification of the content — it is a translation of it. The numbers stay true. ISO 24495-3:2026 draws the line this section depends on: writing about a scientific subject for readers outside the field is its own task, with its own standards, and distinct from writing aimed at experts inside it.
 
 Lead with what to do. Structure follows the reader's questions: what this is, what it means for me, what I do now, when I call someone.
 
 One idea per paragraph, short sentences, no Latin, every retained term defined in the sentence that introduces it. Natural frequencies, common denominators, absolute numbers.
+
+A plainer word is only a translation when it denotes the same thing. *High blood pressure* stands in for *hypertension* safely. *Heart attack* does not stand in for *cardiac arrest* — those are different events with different treatments, and swapping one for the other is a clinical error wearing the costume of plain language.
 
 Name the red flags explicitly and separately, with a threshold and a destination. *Call 911 if the chest pain lasts more than a few minutes or comes with sweating or shortness of breath* — not *seek care if symptoms worsen*.
 
@@ -123,11 +133,11 @@ Safe-messaging conventions apply to suicide and self-harm: no method detail, no 
 
 ## Evidence
 
-Rung 5 for any clinical claim, tied with `legal` for the highest floor in this directory: uncertainty quantified rather than described — the interval on the estimate, the design that licenses it, and the population it covers. The sources that can carry that are a peer-reviewed study, a systematic review, or a guideline from a body that publishes its methodology. Preprints are labeled. Press releases about studies are not studies.
+Rung 5 for any clinical claim, tied with `legal` for the highest floor in this directory: uncertainty given a number — the interval on the estimate, the design that licenses it, and the population it covers. The sources that can carry that are a peer-reviewed study, a systematic review, or a guideline from a body that publishes its methodology. Preprints are labeled. Press releases about studies are not studies.
 
 Rung 5 is also a floor rather than a ceiling here, because a study can be real, peer reviewed, correctly cited, and still not support the sentence built on it. Design, population, endpoint, and effect size all have to match the claim. The citation being valid is necessary and nowhere near sufficient.
 
-This is a floor, not a setting. Where the audience tier sits at a higher rung, the tier governs; where this floor is higher, it governs. Plain writing for a non-specialist is a change of register and never a lower standard of proof.
+The floor stands where the reader is a patient with no clinical training at all. A handout gets shorter sentences and the same interval, the same denominator, the same statement of who the finding does not cover. A `domain/education-level/` tier sets the words. Rung 5 sets what may be said with them.
 
 ## Boundaries
 
@@ -135,11 +145,11 @@ Against `press`. Health journalism sits in both. `press` owns attribution, struc
 
 Against `marketing`. The dangerous overlap. Pharmaceutical and device promotion, wellness copy, and health-adjacent product claims all pull toward marketing's register and are held to this module's evidence floor. Substantiation is not satisfied by a mechanism, a testimonial, or a study in mice.
 
-Against `academia`. Both carry the research-reporting apparatus, and medical adds the reporting guidelines and the registration and disclosure obligations. A finding written for a journal and the same finding written for patients are different documents, not the same document at two reading levels.
+Against `non-fiction`. Science writing, illness memoir and the history of a trial all sit here at book length, and all of them make claims a reader may act on. `non-fiction` governs the prose and this module governs every live claim inside it — the estimate, the denominator, the population the finding covers. A finding written for a journal and the same finding written for patients are different documents, not one document at two reading levels.
 
 Against `legal`. Both are regulated and both treat overstatement as a professional failure rather than a stylistic one. The difference that matters at the boundary is the reader's next move: a client can ask a follow-up question inside a continuing relationship, while a patient may act on a handout alone. Where the two meet — informed consent, an adverse-event notice, a capacity assessment — `legal` owns what the document must contain and this module owns how the risk is stated.
 
-With `audience/`. `professional` at peer register for the clinical note, `professional` at non-specialist register for patient material, and the tier changes the vocabulary and the sentence length. It does not change the estimate. A plain-language handout that overstates certainty to sound reassuring has failed at the thing it was for.
+With `domain/education-level/`. The default reader is an adult, and the split that matters — a colleague for the clinical note, a patient for the handout — is set by format rather than by tier. Load a tier when the reader is a student or a child, and it will shorten the sentences and simplify the words. It will not move the estimate. A handout that overstates certainty to sound reassuring has failed at the thing it was for.
 
 ## Examples
 

@@ -1,10 +1,10 @@
 ---
 id: core.voice
 layer: core
-version: 1.1.0
+version: 1.2.0
 status: draft
-budget: 1221
-tokens: 1221
+budget: 1205
+tokens: 1205
 evidence:
   - sources/ap-stylebook.md
   - sources/field-guide-to-ai-slop.md
@@ -16,7 +16,7 @@ evidence:
 
 # Human Voice
 
-Anti-slop subtracts. This module is the positive half, and it is the half that matters more: prose stripped of every tell still reads as machine-made if nothing particular is left. Subtraction cannot add a particular that was never there. Particulars are retrieved, not generated.
+Anti-slop subtracts. Supplying what subtraction cannot reach is the half that matters more, because prose stripped of every tell still reads as machine-made when nothing particular is left in it. A particular that was never there cannot be subtracted into existence. Particulars are retrieved, not generated.
 
 ## Detect
 
@@ -25,7 +25,7 @@ Anti-slop subtracts. This module is the positive half, and it is the half that m
 - Claims whose opposite would be absurd. `The company values its customers.`
 - Detail that fits any subject. Swap the company, town, or year and nothing breaks.
 - Evaluation standing in for evidence: `hero`, `traitor`, `visionary`, `controversial`. Most things called controversial obviously are, which makes the word padding.
-- Characterization reached for as shortcut rather than supported by what was reported.
+- Reaching for a characterization the reporting does not support.
 
 ### People dissolved into categories
 
@@ -66,11 +66,9 @@ Say the thing plainly where a euphemism is available. If a term must appear beca
 
 Commit. Say which is better and why. Definite claims are allowed when you can support them — `the only`, `the first`, `the best of them` — and machine prose hedges exactly these away. Readers forgive a position they disagree with and skim past a hedge.
 
-Keep the ordinary words. `Very`, `perhaps`, `in order to`, `the fact that`, `there is a`. Prose polished free of these moves toward machine register, not away from it. Restraint governs here.
+Keep the ordinary words. `Very`, `perhaps`, `in order to`, `the fact that`, `there is a`. Prose polished free of these moves toward machine register, not away from it. `restraint` governs here.
 
-Write from what you can check: a number in the record, a document you read, a sentence someone is on record saying. A model can counterfeit the surface of a specific — a plausible date, a clean figure, a name — so concreteness alone proves nothing. What cannot be faked is a specific that is *true*, because its truth sits outside the prose and has to be gone and gotten. Prefer the number, the proper noun, the date, and invent none of them.
-
-Specificity is a retrieval task, not a generation task. Draw the number, the name, and the date from the record. Where the record is silent, say so rather than inventing one. `accuracy` sets that floor.
+Write from what you can check: a number in the record, a document you read, a sentence someone is on record saying. A model can counterfeit the surface of a specific — a plausible date, a clean figure, a name — so concreteness alone proves nothing. What cannot be faked is a specific that is *true*, because its truth sits outside the prose and has to be gone and gotten. So specificity is a retrieval task rather than a generation task: take the number, the proper noun, and the date from the record, invent none of them, and where the record is silent say so. `accuracy` sets that floor.
 
 ## Examples
 

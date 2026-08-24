@@ -1,10 +1,10 @@
 ---
 id: citation.bluebook22
 layer: citation
-version: 1.0.0
+version: 1.0.2
 status: draft
-budget: 1514
-tokens: 1514
+budget: 1686
+tokens: 1686
 edition: 22nd (May 2025)
 ---
 
@@ -17,10 +17,11 @@ edition: 22nd (May 2025)
 - **`Contrast ... with ...` treated as an error.** It is a signal now, new in the 22nd edition, sitting beside `compare ... with ...` in the comparison group.
 - **A signal where none belongs.** `See` implies an inferential step. An authority that states the proposition outright, or supplies a quotation, takes no signal at all.
 - **Signals from different categories in one citation sentence.** Support, comparison, contradiction and background each start a new sentence.
-- **`Id.` after a string cite**, or across an intervening authority. Either makes the referent ambiguous, and both are prohibited.
+- **`Id.` after a string cite**, or across an intervening authority. Either makes the referent ambiguous, and the Bluebook forbids both.
 - **`Supra` for a case, statute, constitution, regulation, restatement, model code, uniform act or ordinary legislative material.** It is available for secondary sources and for congressional hearings, not for those primary authorities.
 - **A short form reaching back more than five footnotes** in academic writing, with no full citation in between.
-- **An internet citation with no archival link and no `on file` parenthetical.** The 22nd requires archival preservation; a `last visited` parenthetical is not a substitute.
+- **An internet citation with no archival link and no `on file` parenthetical.** Law-library guides to the 22nd read rule 18.2.1(d) as requiring archival preservation; a `last visited` parenthetical is not a substitute.
+- **`(cleaned up)`.** The 22nd edition replaced it with `(citation modified)`, so the older parenthetical now dates a brief even where a court still accepts it.
 - **Education-law authority filtered through cases only.** Policy prose that relies on an enacted rule should usually cite the statute, regulation or agency guidance directly, not just a case describing it.
 - **A missing pincite.** A citation to a case for a specific proposition points at the page, not just the first page.
 - **An alteration inside a quotation left unmarked**, where brackets, an ellipsis, or `(citation modified)` should carry it.
@@ -51,7 +52,7 @@ and regulations as:
 Title C.F.R. § Section (Year).
 ```
 
-Agency guidance that is not in the C.F.R. or Federal Register usually follows the internet-source pattern: agency or author, title, date, URL, and archival preservation. For unofficial online codes, name the publisher or database when the rule calls for it.
+Agency guidance that is not in the C.F.R. or Federal Register usually follows the internet-source pattern: agency or author, title, date, URL, and archival preservation. For an unofficial online code, rule 12.5(a) puts the publisher ahead of the database — `(West, Westlaw through the 2026 regular session)` — rather than naming the database alone.
 
 Shorten with discipline. `Id.` refers only to the immediately preceding authority, with `Id. at [page]` for a different page and bare `Id.` for the same one. Where an authority intervenes, or where the preceding citation was a string, use a case short form instead — one distinctive party name, the volume, the reporter and `at`:
 
@@ -63,7 +64,7 @@ Party Name, Volume Reporter at Pincite.
 
 The 22nd edition rewrote rule 18 for internet sources. Give the author where one is identifiable, the title, the host, the date of publication or last update, and the URL. Public law-library guides reading rule 18.2.1(d) treat archival preservation as required rather than encouraged, reversing the 21st edition's position, and they read it as reaching every internet source rather than only the volatile ones. Append a reliable archive URL in brackets; where no archive can be made, state in a parenthetical that a fixed PDF or other copy is on file. The two are not co-equal — the on-file statement is the fallback. `Last visited` survives when the page has no usable date, but it replaces neither. Rule 22 is new and governs the law of Tribal Nations; use the Tribal Nation's own citation format first within that jurisdiction, with any commercial parallel citation after it. Rule 23 is new and governs archival and unpublished materials.
 
-Rule 18.3 is new and gives generative AI its first standardized form here: the prompt's author, the model name and version if one exists, the exact prompt in quotation marks, the date submitted, and a parenthetical saying where the saved output is held. The rule's own examples have been criticized for disagreeing on whether the company name accompanies the model name, so either reading is defensible. Note the tension the rule creates — saving prompts that contain client information runs against the duty of confidentiality.
+Rule 18.3 is new and gives generative AI its first standardized form here: the prompt's author, the model name and version if one exists, the exact prompt in quotation marks, the date submitted, and a parenthetical saying where the saved output is held. The rule expects a screenshot or PDF of that output to be kept, so a citation with nothing behind it does not comply. Jessica Gunder quotes 18.3(a) in full at the 22nd edition's page 191, in *Yikes! The Bluebook's Generative AI Rule is Flawed*, 99 S. Cal. L. Rev. Postscript (Apr. 9, 2026); those five elements are the rule's, and a guide that also wants the company name beside the model name is adding to it. Gunder names the sharper problem too: saving and citing a prompt that carries client facts runs against the duty of confidentiality.
 
 Alter quotations visibly. Brackets mark a changed letter or substituted word, and an ellipsis marks an omission. `(citation modified)` — new in the 22nd edition — covers the tidying that used to need a string of parentheticals: removed internal quotation marks, brackets, ellipses, internal citations and footnote numbers, and capitalization changed without brackets. It does not license a substantive change of words, which still takes brackets.
 

@@ -2,10 +2,10 @@
 id: domain.marketing
 layer: domain
 kind: regulated
-version: 2.0.0
+version: 2.1.0
 status: draft
-budget: 2516
-tokens: 2516
+budget: 2539
+tokens: 2539
 mechanics: ap
 evidence_floor: 4
 evidence:
@@ -19,11 +19,11 @@ Copy that sells. Landing pages, product descriptions, campaigns, press releases.
 
 This is the only domain in the directory where the writer's interest is structurally opposed to the reader's. Everywhere else the two align: the technical writer wants the reader unstuck, the clinician wants the patient informed, the lawyer wants the client to understand their exposure. A copywriter is paid when the reader buys, whether or not buying was good for them. That conflict is not a moral accusation, it is a description of the incentive, and it is why this is the one kind of writing with a federal agency devoted to policing whether it is true.
 
-Which produces the fact that organizes this module: **marketing is the only genre where the evidence must exist before publication as a matter of law, and where the reader never sees it.** The FTC's substantiation doctrine requires an advertiser to possess and rely on a reasonable basis for an objective claim at the time it is made — not to be able to find one later if challenged. Academia displays its citations. Law cites its authority in the sentence. Marketing holds its evidence in a file the reader will never open and asks to be believed anyway. Everything that makes this domain hazardous follows from that asymmetry.
+Which produces the fact that organizes this module: **marketing is the only genre where the evidence must exist before publication as a matter of law, and where the reader never sees it.** The FTC's substantiation doctrine, set out in its 1984 policy statement, requires an advertiser to possess and rely on a reasonable basis for an objective claim at the time it is made — not to be able to find one later if challenged. Academia displays its citations. Law cites its authority in the sentence. Marketing holds its evidence in a file the reader will never open and asks to be believed anyway.
 
-Now the argument that matters for style, because it is where most copy actually dies. **Puffery is non-actionable and rhetorically dead.** Subjective, unfalsifiable boasts — *the world's best coffee*, *a magical experience* — are not actionable because they are not statements of fact a reasonable consumer would rely on. Read that as a writer rather than a lawyer: what buys the safety is that the claim cannot be checked, so nothing in it can be shown false. And the safety is decided after the fact and in context — a superlative that implies a measurable comparison is not puffery, whatever it sounded like in the draft. So when review cycles push copy away from the specific and toward the general, they are pushing it into a register that is safe because it is inert. The vague claim and the empty claim are the same claim. The specific, substantiated one — *38% fewer support tickets in the first quarter across 240 accounts* — is simultaneously the more persuasive and the more defensible, provided the evidence exists. Risk aversion practiced without evidence produces the worst available outcome: copy nobody believes and nobody remembers.
+**Puffery is non-actionable and rhetorically dead**, which is where most copy actually dies. Subjective, unfalsifiable boasts — *the world's best coffee*, *a magical experience* — are not actionable because they are not statements of fact a reasonable consumer would rely on. Read that as a writer rather than a lawyer: what buys the safety is that the claim cannot be checked, so nothing in it can be shown false. And the safety is decided after the fact and in context — a superlative that implies a measurable comparison is not puffery, whatever it sounded like in the draft. So when review cycles push copy away from the specific and toward the general, they are pushing it into a register that is safe because it is inert. The vague claim and the empty claim are the same claim. The specific, substantiated one — *38% fewer support tickets in the first quarter across 240 accounts* — is simultaneously the more persuasive and the more defensible, provided the evidence exists. Risk aversion practiced without evidence produces the worst available outcome: copy nobody believes and nobody remembers.
 
-This is also where machine-written prose is not merely bad but actionable. The FTC's 2024 rule prohibits fabricated consumer reviews and testimonials, including AI-generated ones, with civil penalties per violation. A generated testimonial is not a style problem.
+This is also where machine-written prose is not merely bad but actionable. The FTC's Rule on the Use of Consumer Reviews and Testimonials, 16 CFR Part 465, effective October 2024, prohibits fabricated consumer reviews and testimonials, including AI-generated ones, and carries civil penalties per violation. A generated testimonial is not a style problem.
 
 ## Detect
 
@@ -96,7 +96,7 @@ The characteristic failure is a page assembled out of interchangeable parts — 
 
 ### Product copy
 
-Short, dense, decision-supporting. The reader is comparing.
+Short and decision-supporting. The reader is comparing.
 
 Give specifications rather than adjectives: dimensions, materials, capacity, compatibility, what is in the box. *Fits a 16-inch laptop* beats *spacious* because it settles the question.
 
@@ -132,7 +132,7 @@ Two properties make this the strangest rung in the directory. The evidence must 
 
 Fabrication here is not a rung failure. It is a legal one.
 
-This is a floor, not a setting. Where the audience tier sits at a higher rung, the tier governs; where this floor is higher, it governs. Plain writing for a non-specialist is a change of register and never a lower standard of proof.
+The floor is not a courtesy the writer extends, so no reader gets to decline it. A `domain/education-level/` tier changes the words on the page. The substantiation file behind them stays exactly the same size.
 
 ## Boundaries
 
@@ -146,7 +146,7 @@ Against `technical`. Product documentation drifts into this register whenever th
 
 Against `core/anti-slop.md`. Substantial overlap and a division of labor. `core` bans the constructions wherever they appear; this module explains why they cluster here, and adds the obligation `core` cannot know about — that the claim be substantiated before it ships.
 
-With `audience/`. Register moves freely across tiers. The substantiation floor does not. Copy written for a reader with less capacity to interrogate a claim may not exploit that gap, and simplification that removes a material qualifier is a disclosure failure rather than an editing decision.
+With `domain/education-level/`. Register moves freely. The substantiation floor does not. Copy pitched at a reader with less capacity to interrogate a claim may not exploit that gap, and simplification that removes a material qualifier is a disclosure failure rather than an editing decision — which makes this the one place in the repository where loading a tier raises the legal exposure instead of lowering it.
 
 ## Examples
 

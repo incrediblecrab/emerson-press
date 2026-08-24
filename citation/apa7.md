@@ -1,10 +1,10 @@
 ---
 id: citation.apa7
 layer: citation
-version: 1.0.0
+version: 1.0.1
 status: draft
-budget: 1090
-tokens: 1090
+budget: 1096
+tokens: 1096
 edition: 7th (Oct. 2019; current as of Aug. 2026); AI reference formats revised Sept. 2025
 ---
 
@@ -45,13 +45,13 @@ In the reference list, sentence case for the titles of articles, chapters, books
 
 Give a DOI whenever one exists, in resolver form, with no terminal period — a period risks being read as part of the link. Where there is no DOI, give the URL. Add a retrieval date only for content designed to change: a wiki, a live feed, a page that is rewritten in place. A missing publication date does not by itself call for one; that case takes `(n.d.)` instead.
 
-Quotations of forty words or more are blocked: indented, no quotation marks, citation after the final period.
+Block a quotation of forty words or more: indent it, drop the quotation marks, and put the citation after the final period.
 
 Cite personal communications — interviews, emails, unrecorded lectures — in text alone: `(A. Ali, personal communication, August 14, 2025)`. They never enter the reference list, because the reader cannot retrieve them.
 
 For education-policy staples, preserve the source type in brackets: data sets use `[Data set]`; dissertations and theses name the institution and database when retrievable; conference papers, technical reports, standards, and agency reports name the sponsoring body. When the agency and publisher are the same, do not repeat it as publisher. For a source known only through another source, cite `as cited in` in text and list only the work actually read.
 
-For generative AI, current APA guidance puts the company in the author slot. A shareable conversation is dated, descriptively titled, and marked `[Generative AI chat]`; the tool itself, when cited generally, is marked `[Large language model]`. A private or non-retrievable exchange is a personal communication. AI used only as a search engine, or as routine software assistance, normally gets no reference entry; cite the underlying sources.
+For generative AI, current APA guidance puts the company in the author slot. Date a shareable conversation, give it a short descriptive title, and mark it `[Generative AI chat]`; mark the tool itself, when you cite it generally, `[Large language model]`. A private or non-retrievable exchange is a personal communication. AI used only as a search engine, or as routine software assistance, normally gets no reference entry; cite the underlying sources.
 
 ## Examples
 
