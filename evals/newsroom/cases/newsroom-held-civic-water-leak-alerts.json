@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-civic-water-leak-alerts",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic exercise using fictional reporting notes. Use only the supplied reporting notes as the fixed record: select, organize and phrase the story without inventing additional reported events, scenes, quotations or reporting activity. Write a headline and a straight news update of roughly 450–650 words in AP style for general newspaper readers about a new unusual-use notification program at Moorhaven Water. Write from this reporting snapshot as of September 18, 2026.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Moorhaven Water utility will begin mailing unusual-use notices with its next quarterly meter-reading cycle in October 2026."},
+    {"id": "f2", "text": "At each quarterly run, the utility will consider a notice only when consumption for the newly completed billing period is at least twice consumption for the property's comparable period a year earlier, with a positive prior-period amount."},
+    {"id": "f3", "text": "The comparison is an initial screening rule, not a diagnosis that a pipe or appliance is leaking."},
+    {"id": "f4", "text": "Staff will check readings for obvious transcription problems before sending a notice, but the process does not include inspecting a property."},
+    {"id": "f5", "text": "The program uses existing quarterly readings rather than installing continuous-monitoring equipment in customers' homes."},
+    {"id": "f6", "text": "Properties without a positive comparable prior-year consumption amount will not receive an alert under this first version of the rule."},
+    {"id": "f7", "text": "Utility director Enna Rook said, \"The letter means something changed in the reading; it cannot tell us what changed inside a home.\""},
+    {"id": "f8", "text": "The notice will invite customers to discuss possible explanations with the utility and review the supplied reading history."},
+    {"id": "f9", "text": "An extended household stay or additional garden watering are examples in the utility's explanation, not findings about any named customer."},
+    {"id": "f10", "text": "Receiving a notice will not automatically change the bill or establish eligibility for a bill adjustment."},
+    {"id": "f11", "text": "The utility's existing adjustment process requires a separate request and supporting information, with decisions made case by case."},
+    {"id": "f12", "text": "The city allocated $19,500 for printing, staff training and evaluation of the first two reading cycles."},
+    {"id": "f13", "text": "No estimate of water savings or number of repairs resulting from the program has been supplied."},
+    {"id": "f14", "text": "A tenants group asked that notices explain how renters can raise a concern when they do not control repairs to the property."},
+    {"id": "f15", "text": "Tenants group organizer Sol Danner said, \"Knowing there may be a problem and being able to authorize a repair are different things.\""},
+    {"id": "f16", "text": "Notices will go to the account holder, and the utility has not created a new system for sending copies to every occupant."},
+    {"id": "f17", "text": "The first evaluation will record how many notices were issued and how many recipients contacted the utility, not assume every notice found a leak."},
+    {"id": "f18", "text": "The utility will retain ordinary routes for reporting an obvious fault instead of asking customers to wait for a quarterly alert."},
+    {"id": "f19", "text": "The notice's diagram calculates each period's consumption by subtracting its valid opening cumulative meter reading from its closing cumulative reading and labels both billing periods."},
+    {"id": "f20", "text": "The utility's customer-service room still displays a mechanical meter removed from the town's first pumping station."},
+    {"id": "f21", "text": "The screening rule may be revised after the first two cycles if staff find that it misses useful cases or produces confusing notices."},
+    {"id": "f22", "text": "The packet gives no current household readings, account identifiers or confirmed examples of a customer's leak."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f5", "f6", "f10", "f14", "f16"],
+    "forbidden_additions": ["Continuous home monitoring, a confirmed leak or demonstrated water savings.", "Automatic bill reductions or notices reaching every tenant directly.", "Actual customer account data or an invented diagnosis.", "Comparison of cumulative readings instead of consumption, division by a missing or zero baseline, or a threshold strictly greater than twice prior consumption."],
+    "preserve": ["Screening, diagnosis, repair authority and bill adjustment as different stages.", "The same-property period-consumption comparison, inclusive threshold and exclusion of missing or nonpositive baselines.", "Exact quotation wording and attribution when quotations are used."],
+    "expected_action": "draft"
+  }
+}

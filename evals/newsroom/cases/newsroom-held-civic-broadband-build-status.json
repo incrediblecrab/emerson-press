@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-civic-broadband-build-status",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic exercise using fictional reporting notes. Use only the supplied reporting notes as the fixed record: select, organize and phrase the story without inventing additional reported events, scenes, quotations or reporting activity. Write a headline and an explainer of roughly 450–650 words in AP style for general newspaper readers about the different stages shown on Wrenbar's municipal broadband expansion map. Write from this reporting snapshot as of September 18, 2026.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Wrenbar network office publishes an expansion map with separate categories for planned streets, completed street works and addresses ready to order."},
+    {"id": "f2", "text": "A cable route passing a property does not by itself mean the individual connection, equipment and service checks are complete."},
+    {"id": "f3", "text": "The current expansion area contains 650 premises, including businesses and multiunit buildings, rather than 650 confirmed new household customers."},
+    {"id": "f4", "text": "The office has received 430 expressions of interest, which are not completed installations or paid service subscriptions; it has not linked or deduplicated those expressions by premise."},
+    {"id": "f5", "text": "A resident may place a $25 reservation payment under the published terms, but the payment does not guarantee an installation date."},
+    {"id": "f6", "text": "The reservation payment is refundable before a service order is finalized and will be credited against the first service bill if the order proceeds."},
+    {"id": "f7", "text": "Network manager Irena Pell said, \"The map follows the work toward the front door. It does not make every street-level milestone a connection inside the building.\""},
+    {"id": "f8", "text": "Street construction, property permission, an appointment for the final connection and service activation are recorded as separate stages."},
+    {"id": "f9", "text": "A block can have completed street construction while access arrangements for a particular building remain unresolved."},
+    {"id": "f10", "text": "Multiunit properties may require coordination with building management for shared routes before individual apartments can be connected."},
+    {"id": "f11", "text": "The office has not promised that every apartment in a passed building will become order-ready on the same day."},
+    {"id": "f12", "text": "Resident representative Olan Marr said, \"People are making decisions about their existing service, so the words ready and planned need to mean different things.\""},
+    {"id": "f13", "text": "The network tells prospective customers not to treat an expression of interest as a notice that their current service can be discontinued."},
+    {"id": "f14", "text": "The public map is updated weekly, while individual appointment confirmations are sent directly through the ordering process."},
+    {"id": "f15", "text": "The expansion budget covers the stated build area and does not authorize automatic service to every neighboring road."},
+    {"id": "f16", "text": "Requests outside the area are logged for future planning and do not carry the same construction status as included streets."},
+    {"id": "f17", "text": "The office will publish changes when a construction dependency affects the schedule, rather than quietly converting a planned date into a completed milestone."},
+    {"id": "f18", "text": "The packet gives no universal speed result measured in customer homes or comparison with every competing provider."},
+    {"id": "f19", "text": "A planned community demonstration will explain ordering and map terminology, not serve as an installation appointment."},
+    {"id": "f20", "text": "Paper copies of the expansion map are available at the civic center because some intended customers have limited current internet access."},
+    {"id": "f21", "text": "The office's older map used one color for all included streets, which led to the present distinction between stages."},
+    {"id": "f22", "text": "No decision has been made on the next expansion area after the current 650-premise project."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f6", "f8", "f10"],
+    "forbidden_additions": ["Expressions of interest treated as subscriptions or premises treated as unique households.", "A guaranteed date from a reservation payment or a passed building.", "Measured home speeds, a provider ranking or an approved next build area.", "An interest or adoption rate calculated by dividing 430 undeduplicated expressions by 650 premises."],
+    "preserve": ["Street-level progress distinguished from property access and individual activation.", "The reservation's limited role and separate direct appointment confirmation.", "Exact quotation wording and attribution when quotations are used."],
+    "expected_action": "draft"
+  }
+}

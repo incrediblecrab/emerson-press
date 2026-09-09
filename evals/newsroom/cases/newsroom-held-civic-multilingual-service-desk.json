@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-civic-multilingual-service-desk",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic exercise using fictional reporting notes. Use only the supplied reporting notes as the fixed record: select, organize and phrase the story without inventing additional reported events, scenes, quotations or reporting activity. Write a headline and a straight news update of roughly 450–650 words in AP style for general newspaper readers about the multilingual public-service desk opening at Bellharrow's civic center. Write from this reporting snapshot as of September 18, 2026.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Bellharrow civic center will open a multilingual navigation desk on Oct. 19, 2026, beside its main reception area."},
+    {"id": "f2", "text": "The desk's first staffed languages will be English, Spanish and Somali, with scheduled interpreters rather than every language available at every hour."},
+    {"id": "f3", "text": "Its purpose is to help residents identify the correct city office, understand required documents and arrange appointments."},
+    {"id": "f4", "text": "Desk employees will not decide housing applications, issue permits or give legal advice about an individual's case."},
+    {"id": "f5", "text": "The city approved two coordinator positions and a contracted interpreting budget of $48,000 for the first year."},
+    {"id": "f6", "text": "The coordinators' salaries are funded separately in the civic center staffing budget and are not included in the interpreting allocation."},
+    {"id": "f7", "text": "Residents can visit without an appointment, although a specialist interpreter may need to be booked for a later conversation."},
+    {"id": "f8", "text": "The city will display a weekly language schedule at reception and provide it by telephone."},
+    {"id": "f9", "text": "Service manager Arla Deyn said, \"The first question is often not how to complete a form, but which counter should receive it.\""},
+    {"id": "f10", "text": "A community survey supplied examples of residents visiting several offices for the same inquiry, but it was not designed to estimate a citywide error rate."},
+    {"id": "f11", "text": "The neighborhood language forum asked the city to track unmet requests for languages outside the initial three."},
+    {"id": "f12", "text": "Forum member Iman Varek said, \"Publishing the hours matters as much as publishing the list of languages.\""},
+    {"id": "f13", "text": "Staff will record inquiry topics and requests they cannot meet without retaining copies of a visitor's personal application documents."},
+    {"id": "f14", "text": "The desk will use a side room for conversations that should not take place in the public reception queue."},
+    {"id": "f15", "text": "The city has not promised that using the desk will shorten the processing time of the underlying application."},
+    {"id": "f16", "text": "Existing city departments remain responsible for decisions and for telling applicants what further evidence they need."},
+    {"id": "f17", "text": "The opening follows a six-month planning period involving reception staff and local organizations that already help residents navigate services."},
+    {"id": "f18", "text": "Those organizations will continue operating independently and are not being absorbed into a city-run advice service."},
+    {"id": "f19", "text": "The civic center's original reception window will remain available for routine inquiries in addition to the new desk."},
+    {"id": "f20", "text": "The building's large wall directory is being replaced because its department names no longer match several current office signs."},
+    {"id": "f21", "text": "A review after three months will examine the language schedule, unmet requests and whether visitors reached the relevant department."},
+    {"id": "f22", "text": "The packet includes no results from that review and no commitment to add a particular fourth language."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f7", "f8", "f11", "f15"],
+    "forbidden_additions": ["All languages available at all times or a guaranteed fourth language.", "Authority to approve applications, legal representation or guaranteed faster processing.", "A citywide error rate inferred from the planning survey."],
+    "preserve": ["Navigation assistance distinguished from substantive decisions by city departments.", "The practical importance of published interpreter availability and private conversation space.", "Exact quotation wording and attribution when quotations are used."],
+    "expected_action": "draft"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-civic-community-fridge-replacement",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic exercise using fictional reporting notes. Use only the supplied reporting notes as the fixed record: select, organize and phrase the story without inventing additional reported events, scenes, quotations or reporting activity. Write a headline and a straight news update of roughly 450–650 words in AP style for general newspaper readers about the replacement of a community fridge with staffed pantry sessions in Oatbridge. Write from this reporting snapshot as of September 18, 2026.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Oatbridge Food Circle will close its outdoor community fridge Sept. 30, 2026, when permission to use the host property's forecourt ends."},
+    {"id": "f2", "text": "The host business is renovating its entrance, and the circle has not described the closure as the result of a food-safety violation."},
+    {"id": "f3", "text": "The circle will begin staffed pantry sessions at the neighborhood hall on Oct. 6, rather than moving the same fridge to another outdoor site."},
+    {"id": "f4", "text": "The pantry will open Tuesday evenings and Saturday mornings; the outdoor fridge can currently be approached at any hour."},
+    {"id": "f5", "text": "The hall has offered a lockable food-storage room under a one-year agreement, with renewal still to be negotiated."},
+    {"id": "f6", "text": "An $18,600 community grant allocates $9,300 to a year's room charges and $9,300 to equipment, transport and volunteer training."},
+    {"id": "f7", "text": "Visitors will not need a referral or proof of income to use the pantry under the circle's supplied participation policy."},
+    {"id": "f8", "text": "Food availability will depend on donations and storage capacity, and the circle has not promised a fixed parcel for every visit."},
+    {"id": "f9", "text": "Coordinator Una Fenn said, \"We can offer a person to ask, but we are losing the freedom to come at three in the morning.\""},
+    {"id": "f10", "text": "A group of shift workers asked the circle to assess access outside the two opening sessions before treating the new arrangement as a full replacement."},
+    {"id": "f11", "text": "Resident representative Cal Roven said, \"A staffed door can be welcoming and still be a closed door when your shift ends.\""},
+    {"id": "f12", "text": "The circle will collect feedback during the first month before deciding whether it has enough volunteers for another session."},
+    {"id": "f13", "text": "Four local food businesses will continue donating, but their written commitments do not specify a guaranteed daily quantity."},
+    {"id": "f14", "text": "Donations will be received by volunteers during arranged delivery windows instead of being left anonymously on the hall doorstep."},
+    {"id": "f15", "text": "The hall's other users will not have general access to the pantry's locked storage room."},
+    {"id": "f16", "text": "Existing fridge notices will list the closure date, new opening sessions and the circle's contact point during the transition."},
+    {"id": "f17", "text": "The circle has arranged a final collection of remaining food before the forecourt closes, using its existing donation-handling procedures."},
+    {"id": "f18", "text": "The packet contains no estimate of how many distinct households used the unstaffed fridge."},
+    {"id": "f19", "text": "The fridge door has carried handwritten recipe cards and spare shopping bags supplied by visitors."},
+    {"id": "f20", "text": "Volunteers hope to retain the recipe-card exchange at the pantry, but recipe cards are not a condition of receiving food."},
+    {"id": "f21", "text": "The new grant covers one year and does not establish a permanent municipal food service."},
+    {"id": "f22", "text": "The circle says its new records will count visits and stock movements, not assess individual visitors' health or nutritional outcomes."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f7", "f8", "f10", "f21"],
+    "forbidden_additions": ["A food-safety shutdown, guaranteed food parcels or measured health benefits.", "Round-the-clock pantry access or a permanent funded service.", "A mandatory income test or unverified household-use count."],
+    "preserve": ["The gain in staffed assistance and the loss of unrestricted access.", "The property-related reason for closure and the transition dates.", "Exact quotation wording and attribution when quotations are used."],
+    "expected_action": "draft"
+  }
+}

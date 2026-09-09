@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-civic-neighborhood-mural-maintenance",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic exercise using fictional reporting notes. Use only the supplied reporting notes as the fixed record: select, organize and phrase the story without inventing additional reported events, scenes, quotations or reporting activity. Write a headline and a reported feature of roughly 450–650 words in AP style for general newspaper readers about the annual maintenance of the community mural beside the Lark Ford underpass. Write from this reporting snapshot as of September 18, 2026.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Lark Ford mural depicts invented river birds and working boats on a wall beside a pedestrian underpass."},
+    {"id": "f2", "text": "Original artist Hessa Noll returns with neighborhood volunteers for an annual assessment and agreed maintenance work."},
+    {"id": "f3", "text": "The supplied scene describes Noll holding an older reference sheet near a faded painted wing while volunteers mark areas needing attention."},
+    {"id": "f4", "text": "The team distinguishes surface dirt, paint loss and marks added after the mural was completed before deciding what work to do."},
+    {"id": "f5", "text": "Not every visible difference is treated as a reason to repaint an entire section."},
+    {"id": "f6", "text": "Noll said, \"We have a record of the colors, but the wall has also had several winters. Matching one little patch is not always a simple act of going back.\""},
+    {"id": "f7", "text": "The wall remains city-owned, while the maintenance agreement requires the artist's approval for changes to the mural's design."},
+    {"id": "f8", "text": "The agreement permits specified maintenance and does not authorize any volunteer to add a new character or slogan."},
+    {"id": "f9", "text": "Resident Orin Vale helped paint one of the original boat shapes and brings an earlier project photograph to the session."},
+    {"id": "f10", "text": "Vale said, \"I recognize the part I worked on even when I can no longer remember the exact shade that came out of the tin.\""},
+    {"id": "f11", "text": "The photograph is used as a reference, not as proof that every displayed color exactly reproduces the original paint."},
+    {"id": "f12", "text": "A small neighborhood fund pays for agreed materials, while city staff arrange the temporary work-area barriers."},
+    {"id": "f13", "text": "The pedestrian route remains available through a marked alternative while the team works beside the wall."},
+    {"id": "f14", "text": "The session is planned around the underpass's busiest school and commuting periods rather than assuming the wall is isolated from daily movement."},
+    {"id": "f15", "text": "The team records completed work and leaves unresolved material questions for the artist and the city's building-maintenance staff."},
+    {"id": "f16", "text": "The record contains no conclusion that every later mark was made with the same motive or by the same person."},
+    {"id": "f17", "text": "Some residents have proposed a new panel for a later project, but that is outside the approved maintenance session."},
+    {"id": "f18", "text": "The original project gathered local drawings before Noll produced the final design, which is why residents recognize different small elements."},
+    {"id": "f19", "text": "The current mural is an original fictional work; no actual artwork or real artist's text is reproduced in the packet."},
+    {"id": "f20", "text": "The city has not supplied a study showing that the mural reduced vandalism or increased nearby property values."},
+    {"id": "f21", "text": "The maintenance notes are kept with the original design records so future work can identify which areas were changed and when."},
+    {"id": "f22", "text": "No permanent repainting schedule or expanded design has been approved beyond the current maintenance arrangement."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f7", "f8", "f9", "f15"],
+    "forbidden_additions": ["Unrestricted redesign, an approved new panel or a permanent repainting schedule.", "Exact original colors established solely from a photograph.", "A common motive for all later marks or measured crime and property-value effects."],
+    "preserve": ["Maintenance as an act of judgment involving records, weathering and shared memories.", "The artist, volunteers and city performing different agreed roles.", "Exact quotation wording and attribution when quotations are used."],
+    "expected_action": "draft"
+  }
+}

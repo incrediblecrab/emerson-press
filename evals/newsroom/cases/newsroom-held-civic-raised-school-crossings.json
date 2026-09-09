@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-civic-raised-school-crossings",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic exercise using fictional reporting notes. Use only the supplied reporting notes as the fixed record: select, organize and phrase the story without inventing additional reported events, scenes, quotations or reporting activity. Write a headline and a straight news update of roughly 450–650 words in AP style for general newspaper readers about funding for three raised crossings near schools in Terncross. Write from this reporting snapshot as of September 18, 2026.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Terncross Council accepted a $310,000 county grant toward three raised pedestrian crossings near primary schools."},
+    {"id": "f2", "text": "The city will contribute $100,000, bringing the approved project budget to $410,000."},
+    {"id": "f3", "text": "The sites are outside Willow Gate School, at the west approach to Bell Lane School and between Ash Court School and its playing field."},
+    {"id": "f4", "text": "The transport team selected the sites because they connect existing walking routes, rather than simply choosing the locations with the most complaints."},
+    {"id": "f5", "text": "The design raises the crossing surface to the level of the adjoining footway and includes revised drainage at each site."},
+    {"id": "f6", "text": "The grant pays for construction and design but does not fund additional crossing-guard wages."},
+    {"id": "f7", "text": "Two sites currently have crossing guards; the approved project does not remove either staffed position."},
+    {"id": "f8", "text": "A guard vacancy at the third site remains unfilled, and recruitment is continuing separately from construction procurement."},
+    {"id": "f9", "text": "Transport engineer Sela Dorn said, \"The new surface and the person helping children across are different parts of the route.\""},
+    {"id": "f10", "text": "Construction is planned for the February 2027 school break, but a contractor and final work sequence have not yet been selected."},
+    {"id": "f11", "text": "The city expects short lane restrictions during the work and will publish the arrangements after the contractor's plan is approved."},
+    {"id": "f12", "text": "The packet contains no completed safety evaluation or prediction of a specific reduction in collisions."},
+    {"id": "f13", "text": "A parents group welcomed the connected walking route but asked the city to address the unfilled guard position before the new crossings open."},
+    {"id": "f14", "text": "Parent representative Evin Rell said, \"A construction date is not an answer to who will be standing there next Monday.\""},
+    {"id": "f15", "text": "The grant application includes written accounts of difficult crossings, not a verified count of crashes or near misses."},
+    {"id": "f16", "text": "Bus operators asked for the raised surfaces to be reviewed with their vehicles in mind during detailed design."},
+    {"id": "f17", "text": "The county has required a post-opening assessment of access and drainage before it releases the final portion of its grant."},
+    {"id": "f18", "text": "That assessment will be conducted after construction and is not evidence that the crossings already meet every intended outcome."},
+    {"id": "f19", "text": "The city will retain the present marked crossings until each replacement is ready for use."},
+    {"id": "f20", "text": "The schools will distribute the city's work notices through both printed newsletters and their existing electronic mailing lists."},
+    {"id": "f21", "text": "Willow Gate's older wooden crossing signs have been offered to its drama department after removal."},
+    {"id": "f22", "text": "The funding covers these three locations only; other requested crossings remain in the city's wider transport programme."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f6", "f7", "f8", "f10", "f12"],
+    "forbidden_additions": ["Guaranteed collision reductions or a verified crash count.", "Filled guard vacancies, abolished guard roles or grant funding for guard wages.", "A selected contractor, final lane closures or funding for all requested crossings."],
+    "preserve": ["Construction and staffing as related but separate responsibilities.", "The selected route connections, budget and provisional construction timing.", "Exact quotation wording and attribution when quotations are used."],
+    "expected_action": "draft"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-civic-public-chess-tables",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic exercise using fictional reporting notes. Use only the supplied reporting notes as the fixed record: select, organize and phrase the story without inventing additional reported events, scenes, quotations or reporting activity. Write a headline and a reported feature of roughly 450–650 words in AP style for general newspaper readers about the regulars and newcomers sharing the public chess tables in Greymere Square. Write from this reporting snapshot as of September 18, 2026.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Greymere Square has six fixed chess tables installed as part of an earlier public-space refurbishment."},
+    {"id": "f2", "text": "The tables are public furniture rather than property reserved for the town's registered chess club."},
+    {"id": "f3", "text": "Regular player Arven Pell brings two cloth bags of spare pieces because passersby often arrive without a set."},
+    {"id": "f4", "text": "The supplied afternoon scene includes one continuing game, a newcomer watching and a pair using a spare set at the next table."},
+    {"id": "f5", "text": "Pell asks to recover borrowed pieces before leaving, but does not collect a playing fee or require club membership."},
+    {"id": "f6", "text": "Pell said, \"Some people want a game, some want to point at a move, and some are still deciding whether to sit down.\""},
+    {"id": "f7", "text": "The regulars have an informal custom of making a table available for a new game when people are waiting."},
+    {"id": "f8", "text": "That custom is not a city-enforced tournament rule or a guarantee that a table is always immediately available."},
+    {"id": "f9", "text": "Newcomer Edda Vale first watched several afternoons before asking to play."},
+    {"id": "f10", "text": "Vale said, \"It helped that I could listen before I had to explain what I knew.\""},
+    {"id": "f11", "text": "The formal chess club sometimes invites square players to its indoor sessions, but the two settings have different booking and membership arrangements."},
+    {"id": "f12", "text": "No player in the supplied account is identified as a titled champion or representative of a measured improvement in local chess ability."},
+    {"id": "f13", "text": "The square also serves shoppers and people waiting for buses, so not everyone sitting near the tables is there for chess."},
+    {"id": "f14", "text": "A nearby cafe allows players to refill a water jug during its opening hours without making that service part of the city installation."},
+    {"id": "f15", "text": "The tables have built-in boards, while pieces remain the responsibility of the people who bring or lend them."},
+    {"id": "f16", "text": "Wind and rain can end an afternoon's play; the city has not enclosed or roofed the tables."},
+    {"id": "f17", "text": "Some regulars prefer the square's open conversation to timed club matches, while others use both settings."},
+    {"id": "f18", "text": "The parks team repairs the public furniture but does not referee games or maintain a player ranking."},
+    {"id": "f19", "text": "A chipped corner on one table has been logged for repair and is not described as already fixed."},
+    {"id": "f20", "text": "The group has no attendance register that can establish the number of distinct players over a season."},
+    {"id": "f21", "text": "The packet supplies no claim that public chess has reduced crime or produced a measured health effect in the square."},
+    {"id": "f22", "text": "Pell's spare pieces include mismatched replacements, which remain usable even when a set no longer looks uniform."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f7", "f8", "f9", "f11"],
+    "forbidden_additions": ["Compulsory club membership, playing fees or city tournament rules.", "Champion status, unique seasonal player counts or social-outcome measurements.", "An enclosed all-weather venue or an already completed repair."],
+    "preserve": ["The informal customs that coexist with publicly shared space.", "Different degrees of participation and the distinction from the formal club.", "Exact quotation wording and attribution when quotations are used."],
+    "expected_action": "draft"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-civic-below-market-housing-definition",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic exercise using fictional reporting notes. Use only the supplied reporting notes as the fixed record: select, organize and phrase the story without inventing additional reported events, scenes, quotations or reporting activity. Write a headline and an explainer of roughly 450–650 words in AP style for general newspaper readers answering what the below-market label means in Stoneharbor's new rental program. Write from this reporting snapshot as of September 18, 2026.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Stoneharbor rental program caps the stated rent of participating homes at 80% of the program's annually published reference rent."},
+    {"id": "f2", "text": "The reference is a program benchmark for a defined type of home, not a calculation based on each tenant's actual household income."},
+    {"id": "f3", "text": "The program's illustration uses a $1,000 monthly reference rent, producing an $800 participating-home rent."},
+    {"id": "f4", "text": "For a hypothetical household with $2,000 in gross monthly income, that $800 rent alone would equal 40% of its gross income."},
+    {"id": "f5", "text": "The example is instructional and does not disclose a real tenant's income or establish the typical household burden."},
+    {"id": "f6", "text": "Utilities and any separately listed service charges are not included in the simple reference-rent comparison."},
+    {"id": "f7", "text": "The first program agreement covers 70 privately managed apartments, not all new rental housing in the city."},
+    {"id": "f8", "text": "The apartments remain under the participating owners' management rather than becoming city-owned public housing."},
+    {"id": "f9", "text": "Housing director Vera Dall said, \"The label needs its number beside it. A reduction from a benchmark does not tell us what every household can manage.\""},
+    {"id": "f10", "text": "Applicants must meet the program's published eligibility conditions, but the packet does not supply a universal income cutoff or a guarantee of an offer."},
+    {"id": "f11", "text": "A housing advice group asked the city to show total expected housing charges, not only the discounted base rent, in its listings."},
+    {"id": "f12", "text": "Advice worker Perrin Moss said, \"People need the amount they will actually have to find each month, including the lines below the headline rent.\""},
+    {"id": "f13", "text": "The participating agreements apply the rent restriction for five years, with any extension requiring a further agreement."},
+    {"id": "f14", "text": "The city has not promised that every property will remain in the program indefinitely."},
+    {"id": "f15", "text": "An annual benchmark revision can change the cap, but individual tenancy terms and notice arrangements must still be considered under the program documents."},
+    {"id": "f16", "text": "The city plans to publish the benchmark source and the date it applies to so applicants can compare like periods."},
+    {"id": "f17", "text": "The program does not give participants a right to buy their apartments as part of this rental agreement."},
+    {"id": "f18", "text": "The advice group distinguishes this scheme from separate emergency accommodation and direct rent-assistance programs."},
+    {"id": "f19", "text": "No occupancy results, average tenant incomes or citywide rent effect have yet been reported for the new agreement."},
+    {"id": "f20", "text": "The 70 homes are spread across three existing buildings with different layouts and service-charge arrangements."},
+    {"id": "f21", "text": "The city will check participating landlords' submitted rent schedules against the program cap."},
+    {"id": "f22", "text": "The definition supplied is specific to this local program and does not establish a universal meaning of affordable housing."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f6", "f8", "f13"],
+    "forbidden_additions": ["Rent fixed at a percentage of each actual tenant's income.", "The example treated as a typical household or a universal affordability test.", "Permanent restrictions, city ownership or a right to purchase the homes."],
+    "preserve": ["Below a reference rent distinguished from affordable to a particular household.", "The limits of the agreement, additional charges and illustrative arithmetic.", "Exact quotation wording and attribution when quotations are used."],
+    "expected_action": "draft"
+  }
+}

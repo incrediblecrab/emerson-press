@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-civic-snow-clearance-contract",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic exercise using fictional reporting notes. Use only the supplied reporting notes as the fixed record: select, organize and phrase the story without inventing additional reported events, scenes, quotations or reporting activity. Write a headline and a straight news update of roughly 450–650 words in AP style for general newspaper readers about Northrill's decision to divide its snow-clearing work between two contractors. Write from this reporting snapshot as of September 18, 2026.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Northrill Council awarded its next winter snow-clearance work through two contracts instead of the previous combined contract."},
+    {"id": "f2", "text": "The road-clearing contract is $188,000 and the pedestrian-route contract is $124,000, for a combined base price of $312,000."},
+    {"id": "f3", "text": "The previous season's combined base contract was $290,000, a different figure from the amount ultimately paid for all weather-related callouts."},
+    {"id": "f4", "text": "The new base prices cover standby capacity and specified routine deployments, with exceptional additional work billed under separate agreed rates."},
+    {"id": "f5", "text": "The road contractor will handle the priority vehicle network, while the second contractor will clear designated footways and public-building approaches."},
+    {"id": "f6", "text": "The pedestrian route list includes school approaches, the civic center and the main bus interchange rather than every sidewalk in the city."},
+    {"id": "f7", "text": "The former combined contractor did not submit a bid this year, and the council has not described the change as a dismissal for misconduct."},
+    {"id": "f8", "text": "Operations manager Elen Marr said, \"A cleared road with an uncleared crossing can still leave someone unable to finish the journey.\""},
+    {"id": "f9", "text": "The council will assign one city duty officer to coordinate deployment and resolve gaps where road and footway responsibilities meet."},
+    {"id": "f10", "text": "Both contractors must report completed sections to that officer, rather than assuming the other contractor has dealt with connecting crossings."},
+    {"id": "f11", "text": "A mobility group asked for crossing points and bus-stop approaches to appear explicitly on the pedestrian route maps."},
+    {"id": "f12", "text": "Mobility group representative Pera Voss said, \"The last few yards are not a small detail when they are the yards you cannot get through.\""},
+    {"id": "f13", "text": "The final pedestrian route maps will be published before the contracts begin on Nov. 1, 2026."},
+    {"id": "f14", "text": "The contracts run through March 31, 2027, with any extension subject to the supplied approval process."},
+    {"id": "f15", "text": "The council has not promised that every listed route will be clear by the same hour after every snowfall."},
+    {"id": "f16", "text": "Deployment order depends on the conditions reported to the duty officer and the priority network described in the contracts."},
+    {"id": "f17", "text": "The city's own crews will continue maintaining grit bins and handling smaller tasks outside the contractors' main routes."},
+    {"id": "f18", "text": "The approved award report contains no forecast of how many major snow events the coming season will bring."},
+    {"id": "f19", "text": "A public contact line will accept reports of blocked designated routes, but reports will enter the coordinated work queue rather than guarantee an immediate visit."},
+    {"id": "f20", "text": "The depot will hold a joint route familiarization session for the two contractors before winter operations begin."},
+    {"id": "f21", "text": "The council will compare completed work records and public reports at a midseason review."},
+    {"id": "f22", "text": "The depot still uses a large wall map with removable route markers alongside its newer dispatch screens."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f4", "f5", "f6", "f7", "f9", "f15"],
+    "forbidden_additions": ["A final all-inclusive winter cost or a forecast of snowfall.", "The previous contractor fired for misconduct.", "Guaranteed immediate clearance of all streets or sidewalks."],
+    "preserve": ["The split responsibilities and the need to coordinate connecting routes.", "Base prices distinguished from weather-dependent additional work.", "Exact quotation wording and attribution when quotations are used."],
+    "expected_action": "draft"
+  }
+}

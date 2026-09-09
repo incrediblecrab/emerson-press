@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "kind": "pre-generation-civic-source-review-summary",
+  "assessor": "model",
+  "human_reviews": 0,
+  "primary_writing_outputs": 0,
+  "cases": 74,
+  "fact_entries": 1628,
+  "source_word_range": [
+    369,
+    463
+  ],
+  "word_count_method": "Whitespace-separated words in fact text only",
+  "genre_counts": {
+    "Straight news": 24,
+    "Explainer": 24,
+    "Reported feature": 26
+  },
+  "original_declared_families": 74,
+  "provisional_families_after_review": 73,
+  "changed_cases": [
+    "newsroom-held-civic-allotment-water-rotation"
+  ],
+  "verified_literal_issue_excerpts": 5,
+  "tasks_and_checks_unchanged": true,
+  "raw_audit_retained": true,
+  "efficacy_result": null,
+  "writing_quality_conclusion": "Not evaluated by source review",
+  "limitations": [
+    "This is input review by models, with separate deterministic source bindings; it is not human review or writing-quality evidence.",
+    "The raw audit remains unchanged, including its mistaken enrollment inference and weekday.",
+    "The auditor's aggregate arithmetic-check totals were not independently reproduced and are not endorsed as an error rate.",
+    "The auditor reported lighter cross-reference for three packets. Neither the audit nor the metadata checks establish that every statement is correct.",
+    "Family grouping remains provisional until the full corpus and cross-shard relationships are reviewed. Unique IDs and exact-text uniqueness do not prove statistical independence.",
+    "All source events are fictional exercise records, not real reporting or independently verified legal authority."
+  ]
+}

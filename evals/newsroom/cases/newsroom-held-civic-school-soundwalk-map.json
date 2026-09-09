@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-civic-school-soundwalk-map",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic exercise using fictional reporting notes. Use only the supplied reporting notes as the fixed record: select, organize and phrase the story without inventing additional reported events, scenes, quotations or reporting activity. Write a headline and a reported feature of roughly 450–650 words in AP style for general newspaper readers about the sound map being made by pupils and neighborhood volunteers in Alder Hollow. Write from this reporting snapshot as of September 18, 2026.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Alder Hollow community mapping project pairs a school group with adult volunteers to record how familiar public routes sound at different points."},
+    {"id": "f2", "text": "The group calls its guided listening sessions soundwalks and stays on the agreed public paths with school supervision."},
+    {"id": "f3", "text": "The supplied session passes a bus stop, a small square and a pedestrian crossing near a freight line."},
+    {"id": "f4", "text": "Participants note descriptions such as a crossing signal, leaves moving above a wall and a passing freight train interrupting conversation."},
+    {"id": "f5", "text": "They record the time and conditions with each description rather than present one walk as the sound of the place at every hour."},
+    {"id": "f6", "text": "Teacher Rena Voss said, \"The first surprise was how differently people described the same corner after standing quietly there together.\""},
+    {"id": "f7", "text": "The project uses written observations and simple symbols on a map, not calibrated noise meters."},
+    {"id": "f8", "text": "It therefore does not produce a decibel survey or a finding that a site violates a legal noise limit."},
+    {"id": "f9", "text": "A shaded square receives different notes about birds, traffic and conversation from different participants in the same visit."},
+    {"id": "f10", "text": "The group keeps those different accounts rather than replace them with one supposedly typical reaction."},
+    {"id": "f11", "text": "City planner Oren Dale has agreed to consider the map as community input alongside other information about public-space use."},
+    {"id": "f12", "text": "Dale said, \"These notes can tell us what to ask about a place. They do not do every measurement we might need afterward.\""},
+    {"id": "f13", "text": "The city has not adopted a construction project or noise restriction as a result of the unfinished map."},
+    {"id": "f14", "text": "The map's public version will describe places and observations without identifying individual pupils' routes from home."},
+    {"id": "f15", "text": "Adult volunteers help copy the notes onto a large paper map in the community center after each session."},
+    {"id": "f16", "text": "The paper version lets participants move a note when they discover it was attached to the wrong side of a street."},
+    {"id": "f17", "text": "The project plans repeat visits at other times so the record can show differences rather than imply a single permanent condition."},
+    {"id": "f18", "text": "School attendance at the activity does not make the participants a representative sample of every neighborhood resident."},
+    {"id": "f19", "text": "The project began with a question about places where people could comfortably hold a conversation outdoors."},
+    {"id": "f20", "text": "Participants have also noticed sounds they value, so the collection is not exclusively a list of unwanted noise."},
+    {"id": "f21", "text": "The community center will host a discussion of the draft map before a final public version is prepared."},
+    {"id": "f22", "text": "No recording of a private conversation or identifying information about an actual child is included in the packet."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f7", "f8", "f10", "f20"],
+    "forbidden_additions": ["A calibrated noise survey, legal violation or representative neighborhood sample.", "A city project already adopted because of the unfinished map.", "Private conversation recordings or individual children's home routes."],
+    "preserve": ["The variety of observed and valued sounds and the participants' different accounts.", "Community evidence as a source of questions rather than a substitute for every later measurement.", "Exact quotation wording and attribution when quotations are used."],
+    "expected_action": "draft"
+  }
+}

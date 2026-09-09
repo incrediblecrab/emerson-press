@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-civic-community-seed-catalog",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic exercise using fictional reporting notes. Use only the supplied reporting notes as the fixed record: select, organize and phrase the story without inventing additional reported events, scenes, quotations or reporting activity. Write a headline and a reported feature of roughly 450–650 words in AP style for general newspaper readers about the volunteers documenting seed donations at the Ashmere seed library. Write from this reporting snapshot as of September 18, 2026.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Ashmere seed library keeps small donated seed packets in drawers inside a community garden's meeting shed."},
+    {"id": "f2", "text": "Volunteer cataloger Mara Vell asks donors for the name they use, the harvest year and what they know about where the seed came from."},
+    {"id": "f3", "text": "The supplied scene includes a paper packet labeled with a family's informal bean name and another packet identified only as a red flower."},
+    {"id": "f4", "text": "Incomplete descriptions remain marked as incomplete rather than being turned into a confident commercial variety name."},
+    {"id": "f5", "text": "The library's labels distinguish a donor's description from information checked against another supplied record."},
+    {"id": "f6", "text": "Vell said, \"The name on the envelope is part of the story, but it may not be enough to tell the next gardener exactly what will grow.\""},
+    {"id": "f7", "text": "Visitors may take the offered small packets without paying a purchase price under the garden's current sharing arrangement."},
+    {"id": "f8", "text": "A future seed donation is welcomed but is not a debt that every recipient must repay with the same quantity or variety."},
+    {"id": "f9", "text": "The volunteer team limits packet sizes so the available stock can reach more than one grower."},
+    {"id": "f10", "text": "Donor Eda Noll has kept a handwritten record of beans grown through several seasons and brings a copy with her latest donation."},
+    {"id": "f11", "text": "Noll said, \"I can tell you which summer they came from. I cannot promise your garden will give you the summer I had.\""},
+    {"id": "f12", "text": "The packet contains no germination test result or guarantee of yield for the seeds described."},
+    {"id": "f13", "text": "The seed library is not presenting the collection as certified commercial stock or verified genetic preservation."},
+    {"id": "f14", "text": "The volunteers store older and newer donations separately enough to retain their collection dates rather than combine them under one fresh label."},
+    {"id": "f15", "text": "A packet may be withdrawn if its record or condition raises a question the volunteers cannot resolve."},
+    {"id": "f16", "text": "The garden invites recipients to bring observations back, but treats them as reports from particular growing conditions rather than controlled comparisons."},
+    {"id": "f17", "text": "The library began as a seed-swap table at the garden's annual gathering and later acquired the drawers from a closed stationery shop."},
+    {"id": "f18", "text": "The shed opens during staffed garden sessions and is not an unattended public seed dispenser."},
+    {"id": "f19", "text": "Volunteers maintain a simple stock list to avoid advertising packets that have already been taken."},
+    {"id": "f20", "text": "The list does not identify individual recipients or count every seed as a separate participating gardener."},
+    {"id": "f21", "text": "A planned display will explain some of the labels and donor histories with permission, rather than publish donors' private contact details."},
+    {"id": "f22", "text": "The garden has not supplied a quantified effect on townwide biodiversity or household food costs."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f8", "f10", "f12", "f16"],
+    "forbidden_additions": ["Verified variety identity where the label is incomplete.", "Guaranteed germination, yield, genetic preservation or measured townwide benefit.", "Mandatory repayment or public disclosure of private donor details."],
+    "preserve": ["Seed sharing as both a material and record-keeping practice.", "Donor experience distinguished from verified identity and predicted performance elsewhere.", "Exact quotation wording and attribution when quotations are used."],
+    "expected_action": "draft"
+  }
+}

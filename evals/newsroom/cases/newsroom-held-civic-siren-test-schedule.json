@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-civic-siren-test-schedule",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic exercise using fictional reporting notes. Use only the supplied reporting notes as the fixed record: select, organize and phrase the story without inventing additional reported events, scenes, quotations or reporting activity. Write a headline and an explainer of roughly 450–650 words in AP style for general newspaper readers about why Norvale sometimes postpones its scheduled outdoor warning-siren tests. Write from this reporting snapshot as of September 18, 2026.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Norvale emergency-management office normally schedules an outdoor warning-siren test for the first Wednesday of each month."},
+    {"id": "f2", "text": "The published October 2026 test date is Wednesday, Oct. 7, subject to the office's postponement procedure."},
+    {"id": "f3", "text": "The office may postpone a routine test when threatening weather or an ongoing incident could make the test confusing to the public."},
+    {"id": "f4", "text": "A postponed routine test is not itself evidence that the sirens are broken or that an emergency warning has been canceled."},
+    {"id": "f5", "text": "The office announces postponements through its normal public notice channels and publishes a new test date when one is arranged."},
+    {"id": "f6", "text": "Emergency manager Rina Vell said, \"The point of a test is to check the system without creating a second question about whether the sound is real.\""},
+    {"id": "f7", "text": "The sirens are designed as an outdoor warning component, not a promise that every person will hear them inside every building."},
+    {"id": "f8", "text": "The office also uses its opt-in message service and public broadcasts under the supplied local warning arrangements."},
+    {"id": "f9", "text": "Residents must register their contact details for the opt-in service; the office does not claim automatic enrollment of every household."},
+    {"id": "f10", "text": "A disability access group asked the office to make test and postponement notices available in formats that do not depend on hearing a tone."},
+    {"id": "f11", "text": "Group representative Elin Marr said, \"We need the information that goes with the sound, whether we hear the sound or not.\""},
+    {"id": "f12", "text": "A routine test checks specified equipment functions and does not prove that every possible warning channel will work under every emergency condition."},
+    {"id": "f13", "text": "Technicians record individual equipment faults separately from a decision to postpone the public test."},
+    {"id": "f14", "text": "Repairs to one siren do not automatically require silence from every other warning device in the network."},
+    {"id": "f15", "text": "The office asks residents to use current official notices rather than assume a siren heard near the usual test time must be a test."},
+    {"id": "f16", "text": "The packet describes the schedule and policy but contains no live alert, current weather forecast or instruction for an ongoing emergency."},
+    {"id": "f17", "text": "The local schools receive advance notices so they can explain scheduled tests without treating them as unannounced classroom disruptions."},
+    {"id": "f18", "text": "The office keeps earlier notices online with their dates so a past postponement is not mistaken for the present month's status."},
+    {"id": "f19", "text": "The city's oldest siren mounting was retained when the equipment itself was replaced, so the age of the pole does not establish the age of the device."},
+    {"id": "f20", "text": "No survey of indoor audibility or percentage of residents reached is supplied with the policy explanation."},
+    {"id": "f21", "text": "The office will discuss the notice formats at a public preparedness meeting separate from the scheduled audible test."},
+    {"id": "f22", "text": "The process described is specific to Norvale and does not establish what any siren means in another jurisdiction."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f7", "f8", "f9", "f15", "f16"],
+    "forbidden_additions": ["A postponed test treated as equipment failure or a canceled emergency warning.", "Universal indoor audibility, automatic message enrollment or a live warning.", "A rule that a sound at the usual test time can always be ignored."],
+    "preserve": ["Scheduled testing, equipment faults and real warnings as different matters.", "The role of dated information and multiple accessible notice channels.", "Exact quotation wording and attribution when quotations are used."],
+    "expected_action": "draft"
+  }
+}

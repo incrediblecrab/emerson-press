@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-civic-youth-budget-awards",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic exercise using fictional reporting notes. Use only the supplied reporting notes as the fixed record: select, organize and phrase the story without inventing additional reported events, scenes, quotations or reporting activity. Write a headline and a straight news update of roughly 450–650 words in AP style for general newspaper readers about the projects funded through Greywillow's first youth-budget panel. Write from this reporting snapshot as of September 15, 2026.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Greywillow Council ratified a $40,000 package recommended by its first youth-budget panel on Sept. 14, 2026."},
+    {"id": "f2", "text": "The package allocates $18,000 for seating at the skate area, $12,000 for shared rehearsal equipment and $10,000 for a community garden's water connection."},
+    {"id": "f3", "text": "The 18-member youth panel recommended the combined package by a vote of 15-3."},
+    {"id": "f4", "text": "Panel members were recruited through schools and youth organizations, not elected in a citywide vote."},
+    {"id": "f5", "text": "The council retained responsibility for authorizing expenditure and checking whether each proposed project could be delivered on city-controlled sites."},
+    {"id": "f6", "text": "The panel considered 11 eligible proposals after staff screened out submissions outside the program's budget or location rules."},
+    {"id": "f7", "text": "The panel's youth chair said in the supplied statement, \"We had to decide what could be shared, not just what each of us wanted for our own group.\""},
+    {"id": "f8", "text": "The skate-area seating will include spaces for people watching rather than taking part, but the grant does not rebuild the skating surface."},
+    {"id": "f9", "text": "Rehearsal equipment will be stored and booked through the youth center, not transferred permanently to a single band."},
+    {"id": "f10", "text": "The garden water connection requires a final utility estimate before work can be ordered."},
+    {"id": "f11", "text": "If that estimate exceeds the allocation, the garden proposal must return for a funding decision rather than automatically draw from the other two awards."},
+    {"id": "f12", "text": "Youth-services director Amra Vale said, \"The panel made real choices, and the city still has to carry out the unglamorous work of buying and installing things.\""},
+    {"id": "f13", "text": "Some panel members wanted a transport project, but a transport submission was screened out because its requested funding exceeded the entire available budget."},
+    {"id": "f14", "text": "Staff will publish reasons for eligibility decisions so rejected applicants can distinguish a rule-based exclusion from the panel's preferences."},
+    {"id": "f15", "text": "The city has not announced installation dates for all three projects or claimed that any is already operating."},
+    {"id": "f16", "text": "The grant is capital funding and does not pay for a permanent new youth-worker position."},
+    {"id": "f17", "text": "The youth center has agreed to manage bookings and routine checks of the rehearsal equipment within its existing program."},
+    {"id": "f18", "text": "Panel members will be invited to review procurement updates and inspect completed projects with city staff."},
+    {"id": "f19", "text": "The city paid panel members' travel costs but did not require them to donate money to any selected project."},
+    {"id": "f20", "text": "Meetings rotated between the youth center and a library meeting room to avoid making one school the permanent host."},
+    {"id": "f21", "text": "The council will decide whether to repeat the program after reviewing delivery and who took part in the first panel."},
+    {"id": "f22", "text": "No citywide measure of young residents' preferences or long-term participation outcome accompanies the funding decision."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f9", "f10", "f11"],
+    "forbidden_additions": ["A citywide youth election or preference mandate.", "Completed projects, guaranteed delivery dates or automatic transfers between awards.", "Permanent staff funding or equipment ownership by one band."],
+    "preserve": ["Youth choice within defined public spending and delivery responsibilities.", "The three allocations, shared-use conditions and unresolved utility estimate.", "Exact quotation wording and attribution when quotations are used."],
+    "expected_action": "draft"
+  }
+}

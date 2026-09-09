@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-civic-small-shops-shared-orders",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic exercise using fictional reporting notes. Use only the supplied reporting notes as the fixed record: select, organize and phrase the story without inventing additional reported events, scenes, quotations or reporting activity. Write a headline and a reported feature of roughly 450–650 words in AP style for general newspaper readers about four independent shops pooling orders for packaging in Bramble Ford. Write from this reporting snapshot as of September 18, 2026.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "Four fictional independent shops in Bramble Ford combine orders for selected plain packaging supplies while keeping their businesses separately owned."},
+    {"id": "f2", "text": "The current shared order consists of 40 boxes of paper bags, with each shop taking 10 boxes."},
+    {"id": "f3", "text": "The wholesaler's minimum order for that bag size is 40 boxes, larger than any one participating shop wants to store at once."},
+    {"id": "f4", "text": "Shopkeeper Rena Voss coordinates the order and receives the delivery because her premises have a rear loading entrance."},
+    {"id": "f5", "text": "The supplied scene describes the four shopkeepers counting stacks against the invoice and marking their allocations before moving them out of Voss's storeroom."},
+    {"id": "f6", "text": "Each shop pays for its own allocated goods and an agreed share of the delivery charge."},
+    {"id": "f7", "text": "Voss said, \"The bargain only works if the boxes leave my back room. Otherwise I have traded one storage problem for everybody's storage problem.\""},
+    {"id": "f8", "text": "The arrangement began with a conversation about small orders and has not created a merged retail business or a shared set of customer prices."},
+    {"id": "f9", "text": "Participating baker Elva Marr still orders specialist food packaging separately when the common product does not meet her requirements."},
+    {"id": "f10", "text": "Marr said, \"There is plenty we can buy together without pretending our counters sell the same things.\""},
+    {"id": "f11", "text": "The shops agree the product specification and allocation before Voss places an order, rather than ask her to guess what everyone will need."},
+    {"id": "f12", "text": "A shop that does not need the next batch can decline before the order is placed, with the remaining group deciding whether it can still meet the minimum."},
+    {"id": "f13", "text": "The coordinator does not guarantee to buy an absent participant's share or keep surplus stock indefinitely."},
+    {"id": "f14", "text": "The group uses a simple shared invoice record but does not pool all business income or disclose complete shop accounts to one another."},
+    {"id": "f15", "text": "The packet supplies no audited saving, profit increase or claim that every bulk order is cheaper once storage and handling are considered."},
+    {"id": "f16", "text": "Delivery damage or a short shipment is recorded before allocations are treated as complete."},
+    {"id": "f17", "text": "The supplier's agreed order terms specify how this group reports and handles a disputed shipment; its internal cost-sharing arrangement does not replace those terms."},
+    {"id": "f18", "text": "The shops have considered adding cleaning cloths to a later order but have not committed to sharing every type of supply."},
+    {"id": "f19", "text": "One participant uses a handcart to move its share along the street rather than arrange another van delivery."},
+    {"id": "f20", "text": "The shopkeepers meet around opening and delivery hours, not at a fixed monthly meeting with a permanent paid administrator."},
+    {"id": "f21", "text": "The town's business association has asked them to describe the arrangement to other small traders, but no wider purchasing scheme has been launched."},
+    {"id": "f22", "text": "The account concerns ordinary procurement cooperation and does not make a legal finding about all arrangements between competing businesses."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f6", "f8", "f11", "f13"],
+    "forbidden_additions": ["Merged businesses, agreed resale prices or pooled full business accounts.", "Guaranteed savings or coordinator responsibility for every unclaimed share.", "A townwide scheme already launched."],
+    "preserve": ["The practical minimum-order and storage problem.", "Shared purchasing with separate products, ownership and responsibilities.", "Exact quotation wording and attribution when quotations are used."],
+    "expected_action": "draft"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-civic-cinema-projection-volunteers",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic exercise using fictional reporting notes. Use only the supplied reporting notes as the fixed record: select, organize and phrase the story without inventing additional reported events, scenes, quotations or reporting activity. Write a headline and a reported feature of roughly 450–650 words in AP style for general newspaper readers about the volunteer projection team preparing the new season at the Cinder Room cinema. Write from this reporting snapshot as of September 18, 2026.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Cinder Room cinema operates inside a community hall and is preparing a mixed season of digital screenings and films available on 16 mm prints."},
+    {"id": "f2", "text": "Its volunteer group has 12 members, three of whom are trained to operate the film projector while others manage tickets, seating and refreshments."},
+    {"id": "f3", "text": "Projection volunteer Hessa Vane checks the condition of a print's leader and compares the reel labels before a scheduled practice session."},
+    {"id": "f4", "text": "The supplied scene describes the projector's intermittent mechanical sound and the beam catching dust above the empty chairs."},
+    {"id": "f5", "text": "A specialist contractor inspected the projector and supplied a list of repairs; the volunteers are not claiming to have rebuilt every component themselves."},
+    {"id": "f6", "text": "A $5,400 community grant covers the listed repair work and replacement parts, not all future film-hire and screening costs."},
+    {"id": "f7", "text": "Vane said, \"A reel has a beginning before the audience sees the beginning. That is where a lot of our attention goes.\""},
+    {"id": "f8", "text": "The season includes the invented film The Orchard Window, with a print and screening permission arranged through its fictional distributor."},
+    {"id": "f9", "text": "The packet supplies no dialogue or scene from the film for reproduction."},
+    {"id": "f10", "text": "The cinema will continue using digital projection for programs supplied in that format rather than replacing all screenings with film."},
+    {"id": "f11", "text": "Booking coordinator Perin Cole says format choices depend partly on available rights, copies and equipment, not only on aesthetic preference."},
+    {"id": "f12", "text": "Cole said, \"We start with what we can actually show to a room of people, not with a list of titles we wish we owned.\""},
+    {"id": "f13", "text": "The hall's ordinary community bookings limit practice sessions and require the cinema team to put equipment and seating away afterward."},
+    {"id": "f14", "text": "Volunteer recruitment focuses on learning a reliable sequence with another operator present before taking responsibility for a public screening."},
+    {"id": "f15", "text": "The team does not promise that a restored projector or a nostalgic format guarantees a larger audience."},
+    {"id": "f16", "text": "The previous season's attendance varied by program, and the packet gives no comparative audience study of film and digital presentation."},
+    {"id": "f17", "text": "A labeled cabinet stores spare lamps and maintenance records separately from the film reels."},
+    {"id": "f18", "text": "The group keeps an incident log when a screening is interrupted so a later operator can see what happened rather than rely on memory."},
+    {"id": "f19", "text": "The hall caretaker remains responsible for the building's systems, while the cinema group handles its agreed screening equipment."},
+    {"id": "f20", "text": "An old ticket roll is displayed near the entrance, but current tickets use the hall's present booking system."},
+    {"id": "f21", "text": "The group plans an open rehearsal demonstration before the season begins, with the date to be confirmed around hall bookings."},
+    {"id": "f22", "text": "The record establishes preparation and repairs, not a completed public performance of the new season's first film."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f8", "f10", "f13"],
+    "forbidden_additions": ["All-volunteer reconstruction of every component or replacement of all digital screenings.", "Invented film dialogue, public-performance results or format-based attendance superiority.", "A confirmed open-rehearsal date or unrestricted screening rights."],
+    "preserve": ["The technical preparation, division of responsibilities and constraints of a shared hall.", "Format decisions grounded in rights and available materials as well as preference.", "Exact quotation wording and attribution when quotations are used."],
+    "expected_action": "draft"
+  }
+}

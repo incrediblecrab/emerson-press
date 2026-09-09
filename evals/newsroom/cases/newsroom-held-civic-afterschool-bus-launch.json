@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-civic-afterschool-bus-launch",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic exercise using fictional reporting notes. Use only the supplied reporting notes as the fixed record: select, organize and phrase the story without inventing additional reported events, scenes, quotations or reporting activity. Write a headline and a straight news update of roughly 450–650 words in AP style for general newspaper readers about Dunmere School District's first late-bus service for after-school activities. Write from this reporting snapshot as of September 18, 2026.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Dunmere School District will begin a late-bus service at four secondary schools on Oct. 27, 2026."},
+    {"id": "f2", "text": "The service will run on Tuesdays and Thursdays after district-supervised clubs, study sessions and sports practices."},
+    {"id": "f3", "text": "A one-year $96,000 education-access grant covers the leased bus, driver hours and fuel in the district's approved plan."},
+    {"id": "f4", "text": "The grant does not establish a funded service for subsequent school years."},
+    {"id": "f5", "text": "Students will not pay a fare, but they must register through their school before using a late-bus route."},
+    {"id": "f6", "text": "The bus will use designated neighborhood stops rather than promise a stop at every passenger's home."},
+    {"id": "f7", "text": "School staff will confirm the passenger list before departure and tell families which stop has been assigned."},
+    {"id": "f8", "text": "Transport director Orla Venn said, \"An activity can be free to join and still be out of reach if the ride home is missing.\""},
+    {"id": "f9", "text": "The first route plan links the schools in two collection groups, with departure times adjusted to their different activity schedules."},
+    {"id": "f10", "text": "The district has not published a single districtwide departure time or guaranteed journey duration."},
+    {"id": "f11", "text": "A families group requested a third service day, particularly for activities that meet on Wednesdays."},
+    {"id": "f12", "text": "Families group organizer Teren Moss said, \"The two days help, but a club does not move its whole calendar just because a bus is available.\""},
+    {"id": "f13", "text": "The district will track registrations, actual boardings and unmet requests separately during the first term."},
+    {"id": "f14", "text": "The district has not supplied evidence that the new bus has already increased club participation or improved academic results."},
+    {"id": "f15", "text": "Schools will keep their existing supervision arrangements while registered students wait for the late bus."},
+    {"id": "f16", "text": "Students leaving an unsupervised private activity cannot assume a place on the district service without the required school arrangement."},
+    {"id": "f17", "text": "The contracted driver hours are additional paid hours, not an expectation that existing drivers extend their shifts without compensation."},
+    {"id": "f18", "text": "The district's normal morning and afternoon routes are unchanged by the late-bus grant."},
+    {"id": "f19", "text": "Each participating school will distribute printed registration information as well as electronic notices."},
+    {"id": "f20", "text": "The schools' club lists include gardening, drama, debate and supervised homework sessions, not only competitive teams."},
+    {"id": "f21", "text": "The district will review demand before deciding whether to seek funding for additional days or another bus."},
+    {"id": "f22", "text": "No expansion beyond the four participating schools has been approved."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f6", "f11", "f18"],
+    "forbidden_additions": ["Daily, districtwide or permanently funded service.", "Door-to-door travel, an invented common departure time or guaranteed participation gains.", "Unpaid driver work or eligibility for any private activity without school arrangements."],
+    "preserve": ["The access benefit alongside limits on days, locations and eligibility.", "Registration distinguished from actual boarding and future demand.", "Exact quotation wording and attribution when quotations are used."],
+    "expected_action": "draft"
+  }
+}

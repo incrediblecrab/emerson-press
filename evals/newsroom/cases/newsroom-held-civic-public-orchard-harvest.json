@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-civic-public-orchard-harvest",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic exercise using fictional reporting notes. Use only the supplied reporting notes as the fixed record: select, organize and phrase the story without inventing additional reported events, scenes, quotations or reporting activity. Write a headline and a straight news update of roughly 450–650 words in AP style for general newspaper readers about the first organized harvest of trees in Wrenfold's public orchard. Write from this reporting snapshot as of September 18, 2026.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Wrenfold parks department has authorized the Orchard Table cooperative to organize this autumn's harvest in the city's East Fold orchard."},
+    {"id": "f2", "text": "The agreement covers 36 marked fruit trees rather than every tree or ornamental planting in the surrounding park."},
+    {"id": "f3", "text": "Harvest sessions are planned for October 2026, with exact dates depending on the condition of the fruit and volunteer availability."},
+    {"id": "f4", "text": "Under the agreement, the planned distribution by harvested weight is one-half to partner pantries, one-quarter to participating harvest volunteers as a group and one-quarter to community cooking sessions."},
+    {"id": "f5", "text": "The cooperative will record harvested weight and distribution after each session; no harvest total is yet available."},
+    {"id": "f6", "text": "Parks staff will identify the trees included in each session and remain responsible for tree maintenance."},
+    {"id": "f7", "text": "The agreement is a one-season harvesting arrangement, not a sale of the trees or a transfer of the park to the cooperative."},
+    {"id": "f8", "text": "Cooperative organizer Vera Linn said, \"The fruit is already part of the place; the new work is agreeing who gathers it and where it goes.\""},
+    {"id": "f9", "text": "The cooperative will use its registered volunteer sessions rather than invite unrestricted picking from every park tree."},
+    {"id": "f10", "text": "Equipment use and work above ground level will be handled under the parks department's supervised-session arrangements."},
+    {"id": "f11", "text": "A nearby residents group asked that the orchard remain available for ordinary walks during the harvest."},
+    {"id": "f12", "text": "Resident representative Darin Cole said, \"It is a harvest site for a few hours, but it is still our path to the rest of the park.\""},
+    {"id": "f13", "text": "The plan keeps the main path open and permits short marked restrictions around individual work areas."},
+    {"id": "f14", "text": "Partner pantries will decide what quantities they can accept on each delivery day rather than receive an automatic fixed consignment."},
+    {"id": "f15", "text": "The cooperative has set aside storage crates and transport funds, but the city has not supplied a commercial value for the expected fruit."},
+    {"id": "f16", "text": "The orchard includes several varieties recorded in an old planting list, with identification of some individual trees still incomplete."},
+    {"id": "f17", "text": "The packet contains no certification that the fruit is organic or a nutritional assessment of the distribution program."},
+    {"id": "f18", "text": "The city's litter team previously removed fallen fruit from paths, but its records do not establish the weight of food that could have been recovered."},
+    {"id": "f19", "text": "The cooperative will report distribution and practical problems to the parks committee after the season."},
+    {"id": "f20", "text": "Continuation next year will require another agreement based on that review."},
+    {"id": "f21", "text": "A local school has offered to make labels for the storage crates, without taking responsibility for organizing the harvest."},
+    {"id": "f22", "text": "The city has not announced additional orchards or promised that all partner pantries will receive fruit every week."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f7", "f13", "f20"],
+    "forbidden_additions": ["Unrestricted picking throughout the park or transfer of park ownership.", "A measured harvest, commercial value, waste-reduction total or organic certification.", "Guaranteed weekly pantry supplies or a permanent agreement."],
+    "preserve": ["The planned weight-based distribution shares and designated-tree scope.", "Ordinary public access alongside supervised harvest work.", "Exact quotation wording and attribution when quotations are used."],
+    "expected_action": "draft"
+  }
+}

@@ -12,9 +12,10 @@ repository writing contract or modules. `task-only` adds the repository contract
 `full` and `compact` add their corresponding press recipes. A comparison against
 `task-only` alone cannot establish the effect of using the repository.
 
-The new corpus includes [12 tuning stories](tuning-index.json), with a target of
-220 held-out reporting-packet families still being authored. These are substantial news updates,
-explainers and reported features, not UI labels or citation exercises. A rich
+The new corpus includes [12 tuning stories](tuning-index.json) and a planned
+220-case primary collection whose independent-family count is still under review.
+These are substantial news updates, explainers and reported features, not UI
+labels or citation exercises. A rich
 packet should support the requested length without padding; nonessential facts
 need not all appear in the story. Each case needs an explicit reporting snapshot
 date so a runtime's current date does not silently change the task.
@@ -46,6 +47,24 @@ Case count is not independent sample size. Reused events and templates must stay
 in the same family and split. Freeze the actual family map, candidate recipe,
 model settings, primary contrast, grading protocol and statistical plan before
 any primary held-out generation. No such held-out writing result is available yet.
+
+The first completed input-review checkpoint covers [74 civic packets](civic-index.json):
+24 straight news updates, 24 explainers and 26 reported features, containing 1,628
+fact entries. They now form **73 provisional families**, after conservatively
+grouping two volunteer-observation features with similar recordkeeping structures.
+That grouping does not prove shared authoring provenance, and thematic similarity
+alone did not justify merging three distinct food-access stories. Other input
+reviews and the final cross-shard family map remain unfinished.
+
+The [civic source-review bundle](artifacts/civic-source-review-manifest.json)
+retains the exact before/after packets and index, the unchanged model audit and
+separate parent decisions. One source sentence now distinguishes a three-week
+watering trial from a rotation-cycle length. A claimed enrollment problem was
+rejected because it conflated current pupil totals with future projections; the
+auditor also supplied an incorrect weekday. These are input and reviewer
+corrections, not evidence that the writing instructions work. The
+[measured summary](artifacts/civic-source-review-summary.json) records no primary
+writing outputs and no human reviews.
 
 The first live smoke check uses the one pre-existing substantial press-drafting
 tuning case in the broad regression suite: the Bay Cross timetable explainer.

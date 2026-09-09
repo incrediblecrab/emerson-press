@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-civic-grandparents-story-hour",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic exercise using fictional reporting notes. Use only the supplied reporting notes as the fixed record: select, organize and phrase the story without inventing additional reported events, scenes, quotations or reporting activity. Write a headline and a reported feature of roughly 450–650 words in AP style for general newspaper readers about the grandparents helping lead bilingual story hour at the Fellmere library. Write from this reporting snapshot as of September 18, 2026.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Fellmere library pairs staff readers with volunteer grandparents for a monthly story hour using English and Arabic."},
+    {"id": "f2", "text": "The session is open to families whether or not they speak both languages, and it is not an assessed language course."},
+    {"id": "f3", "text": "Volunteer reader Laila Venn discusses the chosen picture book with the librarian before the public session."},
+    {"id": "f4", "text": "In the supplied scene, Venn repeats a character's action with her hands while the librarian holds the illustration where the children can see it."},
+    {"id": "f5", "text": "The team alternates passages and discussion rather than translating every sentence twice in a fixed one-to-one sequence."},
+    {"id": "f6", "text": "The library checks that both readers are working from the agreed story and that explanations do not change its basic events."},
+    {"id": "f7", "text": "Venn said, \"My grandson sometimes explains a word to me in English, and I give him a word he has heard at our table. Here that exchange belongs in the room.\""},
+    {"id": "f8", "text": "The session includes parents and carers who stay with the children rather than dropping them off for separate tuition."},
+    {"id": "f9", "text": "Librarian Orla Reed said, \"People join in through the picture, the movement or the sound. There is more than one way to follow what is happening.\""},
+    {"id": "f10", "text": "The library has not supplied a study of children's vocabulary gains or a comparison with formal language teaching."},
+    {"id": "f11", "text": "Volunteers contribute their reading voices and experience but are not described as certified translators for every language task."},
+    {"id": "f12", "text": "The chosen book in the supplied session is the fictional picture book The Tin Boat; no passage from it is supplied for reproduction."},
+    {"id": "f13", "text": "The library arranged permission for the planned public reading under its own program arrangements."},
+    {"id": "f14", "text": "A low display lets families borrow related books afterward, subject to the library's ordinary borrowing process."},
+    {"id": "f15", "text": "The volunteers asked for time to examine unfamiliar books in advance instead of being handed any title immediately before a session."},
+    {"id": "f16", "text": "The library covers the volunteers' local travel costs from the program budget."},
+    {"id": "f17", "text": "Some sessions include questions from adults about pronunciation or family expressions, which the readers discuss as particular uses rather than a single rule for every speaker."},
+    {"id": "f18", "text": "The activity lasts about 40 minutes, with families free to step out and return when a child needs a break."},
+    {"id": "f19", "text": "The library plans to keep the present language pairing through this term before considering other volunteer-led sessions."},
+    {"id": "f20", "text": "No commitment has been made to offer every requested language or increase the program to a weekly schedule."},
+    {"id": "f21", "text": "The reading corner shares space with the ordinary children's collection, and the cushions are packed away after each session."},
+    {"id": "f22", "text": "The supplied account concerns fictional participants and includes no private records or identifying information about an actual child."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f8", "f10", "f15"],
+    "forbidden_additions": ["Measured language gains, compulsory tuition or certified translation status for every volunteer.", "Invented text from the picture book or private child histories.", "A weekly program or all-language expansion already approved."],
+    "preserve": ["The intergenerational exchange and different ways of participating in the shared reading.", "Preparation, agreed story meaning and the informal rather than assessed setting.", "Exact quotation wording and attribution when quotations are used."],
+    "expected_action": "draft"
+  }
+}

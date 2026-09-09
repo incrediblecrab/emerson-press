@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "kind": "pre-generation-civic-source-audit-bundle",
+  "cases": 74,
+  "provisional_families": 73,
+  "primary_writing_outputs": 0,
+  "limitation": "One bundle of source inputs, an unchanged model audit and separate parent arbitration; not one case, a writing trial or a human review.",
+  "records": 1,
+  "artifact": "evals/newsroom/artifacts/civic-source-review.jsonl.xz",
+  "artifact_sha256": "6896b92ccae661df80fd94c47e4deafc428579ea81182a1b1bf3bd593d86cc6c",
+  "payload_sha256": "6d7da1b9a2ea4c8a19a0308ebf31240acec62a08e69f6d2401dc85b553d9174f",
+  "human_reviews": 0
+}

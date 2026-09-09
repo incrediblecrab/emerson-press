@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-civic-unclaimed-bicycle-process",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic exercise using fictional reporting notes. Use only the supplied reporting notes as the fixed record: select, organize and phrase the story without inventing additional reported events, scenes, quotations or reporting activity. Write a headline and an explainer of roughly 450–650 words in AP style for general newspaper readers answering what happens to unclaimed bicycles held by the city of Bracken Rill. Write from this reporting snapshot as of September 18, 2026.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Bracken Rill property office holds bicycles collected from city premises or transferred through its ordinary found-property process."},
+    {"id": "f2", "text": "A recently completed inventory covered 86 bicycles, including 58 potentially reusable bikes, 18 designated for parts or recycling and 10 still awaiting status decisions."},
+    {"id": "f3", "text": "The categories describe the office's inventory decisions and do not establish that all reusable bicycles are ready to ride."},
+    {"id": "f4", "text": "Under the city's supplied policy, a bicycle must complete the applicable 90-day claim period and be cleared of other holds before disposal can proceed."},
+    {"id": "f5", "text": "Bikes connected with an ongoing investigation follow a separate hold and are not released simply because 90 days have passed."},
+    {"id": "f6", "text": "The office checks collection records, visible identifying marks and available serial numbers when responding to an ownership claim."},
+    {"id": "f7", "text": "A missing serial number does not automatically make a claim impossible; staff may consider other supporting records, such as an earlier photograph."},
+    {"id": "f8", "text": "Property officer Lena Voss said, \"We see a row of bicycles, but each one arrived with a different paperwork trail.\""},
+    {"id": "f9", "text": "The city posts general descriptions through its found-property service without publishing every identifying detail used to assess claims."},
+    {"id": "f10", "text": "A person must arrange a claim appointment rather than remove a similar-looking bicycle from storage."},
+    {"id": "f11", "text": "Cleared reusable bicycles may be offered to the city's contracted repair charity under an agreement requiring a condition assessment before redistribution."},
+    {"id": "f12", "text": "The charity decides what repairs are feasible and does not guarantee that each transferred bike will become a complete usable bicycle."},
+    {"id": "f13", "text": "Repair charity coordinator Marin Ell said, \"Two incomplete bikes can sometimes supply one good one, but we still have to inspect what is in front of us.\""},
+    {"id": "f14", "text": "The city records transfers separately from the charity's later repair and distribution outcomes."},
+    {"id": "f15", "text": "The current inventory is not a count of bicycles stolen in the city or a measure of local cycling participation."},
+    {"id": "f16", "text": "The city does not sell the bikes directly from the storage room to people who arrive offering cash."},
+    {"id": "f17", "text": "Bicycles assessed as unsuitable for rebuilding can supply parts or enter the agreed recycling route after the same clearance checks."},
+    {"id": "f18", "text": "The property office has begun attaching inventory labels to frames rather than to removable baskets or wheels."},
+    {"id": "f19", "text": "Storage space is limited, which prompted the inventory, but the office has not shortened claim periods for this batch."},
+    {"id": "f20", "text": "The public can ask about a missing bicycle through the city's property desk, which coordinates with the relevant collecting agency."},
+    {"id": "f21", "text": "The packet contains no individual owner identifiers or evidence that a particular claimant has been refused improperly."},
+    {"id": "f22", "text": "The process described is the city's supplied procedure, not a universal rule for all found bicycles."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f2", "f3", "f4", "f5", "f6", "f7", "f11", "f14"],
+    "forbidden_additions": ["Automatic release after 90 days despite another hold.", "Eighty-six stolen bikes or 58 road-ready donated bikes.", "Direct public purchase from storage or shortened claim periods."],
+    "preserve": ["Ownership review, clearance, transfer and repair as separate decisions.", "The limited meaning of the inventory categories.", "Exact quotation wording and attribution when quotations are used."],
+    "expected_action": "draft"
+  }
+}

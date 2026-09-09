@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-civic-rink-winter-conversion",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic exercise using fictional reporting notes. Use only the supplied reporting notes as the fixed record: select, organize and phrase the story without inventing additional reported events, scenes, quotations or reporting activity. Write a headline and a reported feature of roughly 450–650 words in AP style for general newspaper readers about the seasonal conversion of the Rillhaven roller rink into an indoor winter market. Write from this reporting snapshot as of December 3, 2026.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Rillhaven community rink hosts roller skating during one part of the year and an indoor market during its scheduled winter conversion period."},
+    {"id": "f2", "text": "The change requires a removable protective floor, revised entrances and a stall layout that keeps the agreed public routes clear."},
+    {"id": "f3", "text": "Caretaker Oren Venn labels floor panels as the crew brings them from storage so the pieces can be fitted and later removed in the planned sequence."},
+    {"id": "f4", "text": "The supplied scene describes the skate rail remaining visible above stacks of folded tables while workers mark the market aisles."},
+    {"id": "f5", "text": "The rink building is not permanently being converted into retail space, and the skating equipment remains in storage for the next season."},
+    {"id": "f6", "text": "Venn said, \"The room changes jobs, but it is still the same room. We have to leave ourselves a way to turn it back.\""},
+    {"id": "f7", "text": "Market stall fees contribute to the building's winter operating costs under the community trust's budget."},
+    {"id": "f8", "text": "The packet does not show that those fees cover every annual building cost or make all skating sessions financially self-supporting."},
+    {"id": "f9", "text": "Regular skater Elin Raye helps move portable barriers but would prefer a longer indoor skating season."},
+    {"id": "f10", "text": "Raye said, \"Thursday is still skating night in my head, even when the room has tables in it.\""},
+    {"id": "f11", "text": "The trust has discussed occasional winter skating sessions, but none has been promised within the present market layout."},
+    {"id": "f12", "text": "Market traders must use the assigned pitches and equipment arrangements rather than place stalls wherever the empty floor appears available."},
+    {"id": "f13", "text": "The building's access assessment is reviewed for the market layout because a route through skating spectators is not the same as a route through rows of stalls."},
+    {"id": "f14", "text": "Storage space is a constraint: rails, panels and tables must be inventoried so equipment is not hidden behind the next season's supplies."},
+    {"id": "f15", "text": "The caretaker's conversion checklist includes public signs and toilet access as well as the floor itself."},
+    {"id": "f16", "text": "The first market day will follow completion of the conversion checks, not simply the delivery of the last table."},
+    {"id": "f17", "text": "The trust has not supplied a final opening date in the current work record."},
+    {"id": "f18", "text": "The market includes food and craft stalls under the trust's existing vendor arrangements rather than becoming a supermarket operated by the caretaker."},
+    {"id": "f19", "text": "A row of old skate sizes remains painted above the former hire counter, which becomes the market information point."},
+    {"id": "f20", "text": "The trust keeps separate booking lists for seasonal skating and market use rather than count every booking as the same activity."},
+    {"id": "f21", "text": "The account supplies no measured change in townwide retail spending or public physical activity."},
+    {"id": "f22", "text": "The next skating season will require the reverse conversion and its own preparation schedule."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f7", "f9", "f13", "f16"],
+    "forbidden_additions": ["Permanent conversion to retail, a confirmed opening date or guaranteed winter skating sessions.", "Market fees covering all annual costs or measured economic and health effects.", "A layout ready for use merely because the furniture arrived."],
+    "preserve": ["The reversible physical work and competing uses of the same community building.", "The regular skater's attachment alongside the trust's operating needs.", "Exact quotation wording and attribution when quotations are used."],
+    "expected_action": "draft"
+  }
+}

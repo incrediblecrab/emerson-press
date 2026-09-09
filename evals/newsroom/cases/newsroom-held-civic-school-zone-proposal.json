@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-civic-school-zone-proposal",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic exercise using fictional reporting notes. Use only the supplied reporting notes as the fixed record: select, organize and phrase the story without inventing additional reported events, scenes, quotations or reporting activity. Write a headline and an explainer of roughly 450–650 words in AP style for general newspaper readers about the proposed school attendance-zone changes in Merrowfield and what they would mean for families. Write from this reporting snapshot as of September 18, 2026.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Merrowfield School Board has published a proposed attendance-zone map for new enrollments in the 2027-28 school year."},
+    {"id": "f2", "text": "The map is a proposal for public comment, not an adopted assignment notice for individual children."},
+    {"id": "f3", "text": "Under the proposal, currently enrolled pupils could remain at their present schools; the draft does not require every household in a changed block to move schools."},
+    {"id": "f4", "text": "The proposed treatment of younger siblings has not been settled and is listed as a question for consultation."},
+    {"id": "f5", "text": "North Meadow School has 398 pupils against a planning capacity of 360, while nearby River Step School has 332 pupils against a planning capacity of 400."},
+    {"id": "f6", "text": "The district says whole-school totals do not show every year group's available places or the suitability of particular rooms."},
+    {"id": "f7", "text": "The draft shifts several future-enrollment blocks toward River Step while considering walking routes and the river's limited crossing points."},
+    {"id": "f8", "text": "A short distance on the map can involve a longer walk when a household must reach the nearest bridge."},
+    {"id": "f9", "text": "Planning officer Dena Orr said, \"We are drawing a route to a school, not just a line around a number of houses.\""},
+    {"id": "f10", "text": "The district will accept comments identifying route barriers, anticipated housing changes and family implications not represented in the draft data."},
+    {"id": "f11", "text": "Comments will inform a revised proposal for the board rather than act as a household referendum on each boundary segment."},
+    {"id": "f12", "text": "Parent group representative Lora Senn said, \"Please answer the sibling question before asking families to treat the map as a settled plan.\""},
+    {"id": "f13", "text": "The district has scheduled public sessions at both schools and will accept written comments from people unable to attend."},
+    {"id": "f14", "text": "The draft boundary document contains no final transport entitlement for a particular address."},
+    {"id": "f15", "text": "Any revised transport arrangements will be published with the final adopted enrollment policy rather than inferred from the draft map."},
+    {"id": "f16", "text": "The planning capacities reflect the district's current room-use assumptions and are not a guarantee that every spare place fits every year group."},
+    {"id": "f17", "text": "The district has not proposed closing either school or selling either site."},
+    {"id": "f18", "text": "One housing development included in the projections has planning approval but no confirmed occupancy schedule."},
+    {"id": "f19", "text": "The district will revise its projected pupil totals if the development timetable changes before adoption."},
+    {"id": "f20", "text": "Older printed maps show the former footbridge, which is no longer part of the designated school walking route."},
+    {"id": "f21", "text": "The board has not recorded its final vote on the proposal or announced implementation instructions for current pupils."},
+    {"id": "f22", "text": "The supplied figures concern these schools and this planning exercise, not a citywide measure of educational quality."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f6", "f7", "f14"],
+    "forbidden_additions": ["An adopted map, compulsory transfers for all current pupils or a settled sibling policy.", "Guaranteed transport from a particular address or a planned school closure.", "School quality inferred from enrollment or building capacity."],
+    "preserve": ["The proposal's future-enrollment scope and unresolved family questions.", "Geographic routes and year-group capacity rather than simple whole-school arithmetic alone.", "Exact quotation wording and attribution when quotations are used."],
+    "expected_action": "draft"
+  }
+}

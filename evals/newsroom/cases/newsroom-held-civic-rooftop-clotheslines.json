@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-civic-rooftop-clotheslines",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic exercise using fictional reporting notes. Use only the supplied reporting notes as the fixed record: select, organize and phrase the story without inventing additional reported events, scenes, quotations or reporting activity. Write a headline and a reported feature of roughly 450–650 words in AP style for general newspaper readers about the shared rooftop drying space at Bell Orchard apartments. Write from this reporting snapshot as of September 18, 2026.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Bell Orchard housing cooperative has reopened a designated rooftop drying area after replacing its access door and repairing the shared lines."},
+    {"id": "f2", "text": "The area is reached by the building's lift and a short level corridor, rather than requiring residents to carry washing up the final stairs."},
+    {"id": "f3", "text": "Resident coordinator Mara Dene keeps a paper booking sheet beside the door so households can claim a period without using an app."},
+    {"id": "f4", "text": "The supplied morning scene describes residents carrying folded sheets, checking the wind and moving pegs from a common basket to the lines."},
+    {"id": "f5", "text": "The cooperative's arrangement shares the drying area but does not require every resident to use it or replace private laundry equipment."},
+    {"id": "f6", "text": "Bookings apply to the designated line sections, not exclusive possession of the whole roof."},
+    {"id": "f7", "text": "Dene said, \"The small negotiation is usually whose sheets will be dry before the next person arrives.\""},
+    {"id": "f8", "text": "The reopened area has stated opening hours and closes in conditions identified in the cooperative's supplied building-use plan."},
+    {"id": "f9", "text": "Residents are not permitted to move drying equipment into other roof areas outside the designated space."},
+    {"id": "f10", "text": "Resident Elra Fenn values the space because bulky bedding occupies much of the usable room when dried inside her small apartment."},
+    {"id": "f11", "text": "Fenn said, \"Up here the bed linen is somebody's washing. Downstairs it can become the whole room.\""},
+    {"id": "f12", "text": "Another group of residents asked the cooperative to retain quiet hours because apartments immediately below the roof hear footsteps and moving baskets."},
+    {"id": "f13", "text": "The booking rules include time to collect dry items rather than treating the end of a booking as permission to handle another household's clothes."},
+    {"id": "f14", "text": "The cooperative spent $14,800 on the access door, lines and agreed repairs, without calculating a household energy-saving total."},
+    {"id": "f15", "text": "The project does not convert the roof into a public terrace or an events venue."},
+    {"id": "f16", "text": "The building caretaker checks the common equipment and receives fault reports through the cooperative's ordinary maintenance process."},
+    {"id": "f17", "text": "Residents supply their own washing and may use their own pegs, although the common basket contains donated spares."},
+    {"id": "f18", "text": "The rooftop view includes the backs of nearby shop signs rather than the landscaped frontage seen from the main street."},
+    {"id": "f19", "text": "The drying area existed in the building's original plans but had been closed while the access arrangements were reviewed."},
+    {"id": "f20", "text": "The cooperative will revisit booking length after residents have used the area through a full season."},
+    {"id": "f21", "text": "The packet contains no finding that shared outdoor drying suits every household or every kind of garment."},
+    {"id": "f22", "text": "The arrangement belongs to this cooperative and does not establish a right to use the roof of another building."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f6", "f10", "f12", "f15"],
+    "forbidden_additions": ["A public rooftop venue, use of all roof areas or a universal rooftop-access right.", "Calculated energy savings or universal suitability of outdoor drying.", "Permission to move another household's washing without agreement."],
+    "preserve": ["The everyday use of a shared space and the negotiations around time, sound and access.", "The particular resident's experience without turning it into every household's situation.", "Exact quotation wording and attribution when quotations are used."],
+    "expected_action": "draft"
+  }
+}

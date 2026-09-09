@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-civic-pottery-test-shard-archive",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic exercise using fictional reporting notes. Use only the supplied reporting notes as the fixed record: select, organize and phrase the story without inventing additional reported events, scenes, quotations or reporting activity. Write a headline and a reported feature of roughly 450–650 words in AP style for general newspaper readers about the test-shard archive at the Clay Window community pottery studio. Write from this reporting snapshot as of September 18, 2026.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Clay Window studio keeps labeled glaze tests and selected broken pieces beside its communal worktables rather than displaying only finished pots."},
+    {"id": "f2", "text": "Studio technician Hara Venn links each retained test to notes about its clay, glaze and firing batch when those details are known."},
+    {"id": "f3", "text": "The supplied scene describes a beginner comparing a dull green test tile with a glossy sample while the technician looks up their different batch notes."},
+    {"id": "f4", "text": "The archive's purpose is to support comparison and discussion, not guarantee that repeating a label will produce an identical object."},
+    {"id": "f5", "text": "Some older pieces lack complete notes and are marked as incomplete records rather than assigned invented firing information."},
+    {"id": "f6", "text": "Venn said, \"The piece that went wrong can be the one people spend longest looking at, provided we know enough to ask a useful question.\""},
+    {"id": "f7", "text": "The studio began the archive after instructors found themselves describing the same past experiments without being able to show them."},
+    {"id": "f8", "text": "Members can contribute a test or failed piece, but the technician selects what can be stored and documented within the available shelf space."},
+    {"id": "f9", "text": "The studio does not retain every member's work or require anyone to display a personal piece they would prefer to take home."},
+    {"id": "f10", "text": "Member Dera Cole keeps a cracked bowl as a reference for a later version rather than treating it as a finished exhibition piece."},
+    {"id": "f11", "text": "Cole said, \"I remember being annoyed with it. Now I can point to the part I changed instead of pretending the next bowl arrived from nowhere.\""},
+    {"id": "f12", "text": "Kiln operation is handled by designated trained staff under the studio's own procedures, not assigned to any visitor who studies a test tile."},
+    {"id": "f13", "text": "The labels are learning records and do not certify that a glaze or finished pot is suitable for every food or household use."},
+    {"id": "f14", "text": "The packet contains no laboratory safety test or evidence of a measured improvement in every member's work."},
+    {"id": "f15", "text": "The studio charges ordinary membership and class fees, while access to the reference shelves is included for current users of the workspace."},
+    {"id": "f16", "text": "Several metal biscuit tins hold small fragments, with written indexes showing where particular tests have been stored."},
+    {"id": "f17", "text": "Photographs are being added so a record remains available when a fragile piece can no longer be handled."},
+    {"id": "f18", "text": "A photograph can show an appearance but does not preserve the weight and texture that users compare when holding a physical sample."},
+    {"id": "f19", "text": "The studio is planning a small public display about experimentation, with member permission required for named personal work."},
+    {"id": "f20", "text": "The display's date and final selection have not been announced."},
+    {"id": "f21", "text": "The archive includes ordinary repeated tests as well as striking failures, giving users comparisons beyond the most visually dramatic pieces."},
+    {"id": "f22", "text": "The studio has not described the archive as a collection representing all local ceramic traditions."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f9", "f10", "f13"],
+    "forbidden_additions": ["Invented missing batch details or guaranteed reproducible results.", "Food-safety certification, laboratory findings or measured universal learning gains.", "Unapproved display of named personal work or unrestricted kiln operation."],
+    "preserve": ["The role of imperfect objects and documented comparisons in the shared studio.", "Differences between an example, a record and a certification.", "Exact quotation wording and attribution when quotations are used."],
+    "expected_action": "draft"
+  }
+}
