@@ -1,0 +1,4806 @@
+{
+  "schema_version": 1,
+  "kind": "newsroom-primary-source-selection",
+  "status": "source_selection_complete_not_execution_protocol",
+  "prepared_at": "2026-09-09T10:52:52.730897+00:00",
+  "source_intake_cases": 220,
+  "eligible_case_count": 219,
+  "eligible_family_count": 212,
+  "eligible_fact_entries": 4524,
+  "family_independence_proven": false,
+  "source_review_input_sha256": "67a79cfa1f231b5788a32f0d9c2fc0b10e00ddb13514138dc6cf70e40b392c8a",
+  "indices": [
+    {
+      "area": "civic",
+      "path": "evals/newsroom/civic-index.json",
+      "source_sha256": "df5372f2c25ff248e63e0b61b80f5721f9d1f5eeffa715639cc9363136a6c3a0"
+    },
+    {
+      "area": "science",
+      "path": "evals/newsroom/science-index.json",
+      "source_sha256": "0a990a20bcb4978f10e972b69f002ccf39f72be792fbd06a27d9a78a58f6b300"
+    },
+    {
+      "area": "business",
+      "path": "evals/newsroom/business-index.json",
+      "source_sha256": "61e2b1f47789c1869debcbb813e953f4ae7fe5ade9bd8a52e3ec05e4ce156583"
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "newsroom-held-business-explain-apprentice-paid-class",
+      "path": "evals/newsroom/cases/newsroom-held-business-explain-apprentice-paid-class.json",
+      "family_id": "business-corven-apprentice-pay",
+      "area": "business",
+      "genre": "explainer",
+      "case_sha256": "d11dd2da4382f50f9a3ecf641a584c6d2808aebeef5689690f29bc6f1681dc67",
+      "source_sha256": "c6e466e285a01cf31ba46a4f9dada4be34b72e513cc71bad93faf587cd7564b3",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-explain-assessment-tax-rate",
+      "path": "evals/newsroom/cases/newsroom-held-business-explain-assessment-tax-rate.json",
+      "family_id": "business-aldercove-assessment-levy",
+      "area": "business",
+      "genre": "explainer",
+      "case_sha256": "84c0f1d3ef2b850d77d1c2c2aaea85af231bba698635232de0b214cddba4aa08",
+      "source_sha256": "52e8c625704f79c7819d9e70828f9db1780e56c2e8a7251364cc5b74ed666bd4",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-explain-commercial-water-bills",
+      "path": "evals/newsroom/cases/newsroom-held-business-explain-commercial-water-bills.json",
+      "family_id": "business-ashcombe-water-tariff",
+      "area": "business",
+      "genre": "explainer",
+      "case_sha256": "e0b5e00a5288471a510d35378ae7c787bcd0e68d089349c20bd137b3b4743ce5",
+      "source_sha256": "b850e312763c777e5db292be4e92a62c8b63f71427a1d597f1516f4dcbe36c05",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-explain-construction-retainage",
+      "path": "evals/newsroom/cases/newsroom-held-business-explain-construction-retainage.json",
+      "family_id": "business-wickmere-roof-retention",
+      "area": "business",
+      "genre": "explainer",
+      "case_sha256": "c257129e35fa43b7f06ab9a9244a0da735105e407e5464bf0fb71d9e2a5aedd7",
+      "source_sha256": "ea4f5e3ff9c9ac1e4569bbb40e03cce374eb04a281faddad3d94b14a2e77837e",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-explain-crop-cover-market-loss",
+      "path": "evals/newsroom/cases/newsroom-held-business-explain-crop-cover-market-loss.json",
+      "family_id": "business-fen-orchard-yield-cover",
+      "area": "business",
+      "genre": "explainer",
+      "case_sha256": "cf46ba28f40da0faa4c25d84393cb77992d3c0692bfb11c016a8e1d989aeffad",
+      "source_sha256": "04e41fd32216fd2650679e646a324d39356f976799355e9b00df7cb1e4a21f1a",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-explain-endowment-operating-gap",
+      "path": "evals/newsroom/cases/newsroom-held-business-explain-endowment-operating-gap.json",
+      "family_id": "business-orlan-endowment-budget",
+      "area": "business",
+      "genre": "explainer",
+      "case_sha256": "ca15a45b6575905afd02c0002e99927f63dc7719baaf5a123d5f7701f44fe989",
+      "source_sha256": "952f01a01e01dddb47b22cb0322f3ce0fb71cf67c07746e392f670a30150270a",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-explain-franchise-ownership",
+      "path": "evals/newsroom/cases/newsroom-held-business-explain-franchise-ownership.json",
+      "family_id": "business-cormere-franchise-store",
+      "area": "business",
+      "genre": "explainer",
+      "case_sha256": "ccce85a68181581d6fe3ddbb9da561a58ae2e06586d0a0b69bb86ff11abdeecc",
+      "source_sha256": "a2cdd8b3f9146c7a0fd54adac19126254168717ac964c680f1647bfd34082782",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-explain-freight-fuel-lag",
+      "path": "evals/newsroom/cases/newsroom-held-business-explain-freight-fuel-lag.json",
+      "family_id": "business-willow-splice-fuel-index",
+      "area": "business",
+      "genre": "explainer",
+      "case_sha256": "afa5cdf129a507fb9adc0832d75608f3644e4fe55901b788b753da95114fda9d",
+      "source_sha256": "893d1a008557a2452724a4cd52fec959e3895cf5c20aa099a23380e86671a04d",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-explain-hotel-occupancy-denominator",
+      "path": "evals/newsroom/cases/newsroom-held-business-explain-hotel-occupancy-denominator.json",
+      "family_id": "business-wren-coast-room-inventory",
+      "area": "business",
+      "genre": "explainer",
+      "case_sha256": "6f5c227693307d9c1299b31b2662a9473b163341c9c95663bbd102c6513fedda",
+      "source_sha256": "2496fbe890c374ca1dfaf3d7ef18059030a773103fa2a6101707a83322692adc",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-explain-invoice-factoring",
+      "path": "evals/newsroom/cases/newsroom-held-business-explain-invoice-factoring.json",
+      "family_id": "business-hawthorn-receivable-sale",
+      "area": "business",
+      "genre": "explainer",
+      "case_sha256": "5eb5d0a3a493a6743366015d3c5186323addddb0f5f9d801cef0812d54252b7d",
+      "source_sha256": "6ddcd6db894d7e7a13451a36cbbb3c5e349857346e950dc6eae6f5ac11e9c936",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-explain-jobs-and-unemployment",
+      "path": "evals/newsroom/cases/newsroom-held-business-explain-jobs-and-unemployment.json",
+      "family_id": "business-bellwether-labor-series",
+      "area": "business",
+      "genre": "explainer",
+      "case_sha256": "a6b80f80814c8ffe9f4e7c6ca76c4f26dfc3bf4a8e7cbcb6101b6877f104f1e4",
+      "source_sha256": "6df6145b8c116101523bee1c89e14b830f5edfd220cadb647f79b920895b00a5",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-explain-library-digital-queue",
+      "path": "evals/newsroom/cases/newsroom-held-business-explain-library-digital-queue.json",
+      "family_id": "business-talver-digital-loan-licenses",
+      "area": "business",
+      "genre": "explainer",
+      "case_sha256": "1adf0738904817f273d9055bad73c861244e2f9c360dec6b504a0cc5c00a7466",
+      "source_sha256": "faae279fb4e46261991c0734f30391a03f157b7c1df99519354e4902bb9e5d71",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-explain-music-membership",
+      "path": "evals/newsroom/cases/newsroom-held-business-explain-music-membership.json",
+      "family_id": "business-juniper-membership-redemption",
+      "area": "business",
+      "genre": "explainer",
+      "case_sha256": "8bc295bd3f1ffc4178638a5d8be6b11dc43e668ff68c09c5ceae941291cabdb8",
+      "source_sha256": "961ff0c01b0a3e34d3a72b1ac2f7f7cc2c63cb6d771e8f168e4fb0a86c13ecf7",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-explain-peak-demand-bill",
+      "path": "evals/newsroom/cases/newsroom-held-business-explain-peak-demand-bill.json",
+      "family_id": "business-arden-demand-metering",
+      "area": "business",
+      "genre": "explainer",
+      "case_sha256": "4ff16d67b73d138ad954e5387349874434988ad2d23a84ba40327a8874d82732",
+      "source_sha256": "934717bc923a1fd7b4e65a74f88f561e60698829415c9aaa451e6299ea863807",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-explain-profit-share-not-stock",
+      "path": "evals/newsroom/cases/newsroom-held-business-explain-profit-share-not-stock.json",
+      "family_id": "business-elmward-profit-pool",
+      "area": "business",
+      "genre": "explainer",
+      "case_sha256": "c4cee5f8dcf007e376732c4274d6ef18d8e145b36a89797347ab2ddf0b142b4e",
+      "source_sha256": "c213971abfd694069f06da13d0cbaf532a2b29986434ffeeeb7e67de1af8c100",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-explain-return-shipping-choices",
+      "path": "evals/newsroom/cases/newsroom-held-business-explain-return-shipping-choices.json",
+      "family_id": "business-vellum-step-return-options",
+      "area": "business",
+      "genre": "explainer",
+      "case_sha256": "100b1c9bffc7422ad49d2777d68f7eb026dbc6868968a26266ef6e8d9b4ffb43",
+      "source_sha256": "2b2b4300bdb2468f5edb2ef9bc35c3aa1d36390fc7f52acc78149203f6e39e1f",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-explain-school-laptop-lease",
+      "path": "evals/newsroom/cases/newsroom-held-business-explain-school-laptop-lease.json",
+      "family_id": "business-south-nacre-device-bids",
+      "area": "business",
+      "genre": "explainer",
+      "case_sha256": "94db028ad520201e7b24d82962e57dd82b910fea8228ebd13e232fe40602042e",
+      "source_sha256": "e3476e194bd60fa64991fd0c2d2e188cd3b99de5af74a6173e0409a5c8b79ac6",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-explain-service-charge-wages",
+      "path": "evals/newsroom/cases/newsroom-held-business-explain-service-charge-wages.json",
+      "family_id": "business-copper-wren-charge-allocation",
+      "area": "business",
+      "genre": "explainer",
+      "case_sha256": "215f72ad28e76102ebbb3a58d51a209f5d6d6a4b47a199625e083d14ea58ff0b",
+      "source_sha256": "d9e257770b0ea051f3e3999db67561d52316dbc90f8c56a22903c7ed84c7d9a3",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-explain-smaller-packages",
+      "path": "evals/newsroom/cases/newsroom-held-business-explain-smaller-packages.json",
+      "family_id": "business-marshglen-package-size",
+      "area": "business",
+      "genre": "explainer",
+      "case_sha256": "e39f3c73ba69867404ecf1af7610ebb956243ef4dcd92fc6670891239de58286",
+      "source_sha256": "fd051a55f6298f469581fcc943f0869125d2237e3499db8dfdf8e31ada136473",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-explain-textbook-access-code",
+      "path": "evals/newsroom/cases/newsroom-held-business-explain-textbook-access-code.json",
+      "family_id": "business-fenwick-course-access",
+      "area": "business",
+      "genre": "explainer",
+      "case_sha256": "73314b77b3c08a0d53d3b6e3761a0d1f1d47213afdde2462b0ac84e58434d4fa",
+      "source_sha256": "375e0efb176fed6c20be85266c419e49196d50091de0aa6042b30849ce5ed573",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-explain-ticket-fee-display",
+      "path": "evals/newsroom/cases/newsroom-held-business-explain-ticket-fee-display.json",
+      "family_id": "business-fernwick-ticket-display",
+      "area": "business",
+      "genre": "explainer",
+      "case_sha256": "705d522499856407ad5347f2d9b9a0f0dcdaa89749bdd90df2d333b9c635bc45",
+      "source_sha256": "e3691d83eaee937bfadae5c595be9dbeb841c9c054ab33cb9f3286ccb1d9341e",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-explain-tiered-savings-rate",
+      "path": "evals/newsroom/cases/newsroom-held-business-explain-tiered-savings-rate.json",
+      "family_id": "business-moorfin-savings-tiers",
+      "area": "business",
+      "genre": "explainer",
+      "case_sha256": "db9c7f15996345762a4801920787ea2d427c270f4b6836aef55a86683fb80720",
+      "source_sha256": "d04cedd2d77685b655c048c153ad3295ad8360bdefcd0e6387c1d3a8c6733bad",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-explain-warehouse-robot-jobs",
+      "path": "evals/newsroom/cases/newsroom-held-business-explain-warehouse-robot-jobs.json",
+      "family_id": "business-north-loom-role-transition",
+      "area": "business",
+      "genre": "explainer",
+      "case_sha256": "2b983ae8411b0292b1f7bd4d3bba96ec9a68cf48c733b3f047a8f5fc1a52a1e5",
+      "source_sha256": "d578c91606c38f073359f2126de479e064213ab80e5b3e546efef85b93aeb89f",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-explain-wholesale-retail-gap",
+      "path": "evals/newsroom/cases/newsroom-held-business-explain-wholesale-retail-gap.json",
+      "family_id": "business-bramble-produce-price-chain",
+      "area": "business",
+      "genre": "explainer",
+      "case_sha256": "8f89df2af58ad8d3c1278ccd6178ebd9a4fc9aa3479ba7b6cc572b5fadb4a92a",
+      "source_sha256": "50bdb93037918e3ea465e7eee7473ba8204e1cdf0118272d41bf0a44f429921d",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-feature-accessible-game-components",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-accessible-game-components.json",
+      "family_id": "business-five-lantern-token-prototype",
+      "area": "business",
+      "genre": "feature",
+      "case_sha256": "f590f9433ac8b3252bccd4b926178aaa570a42a8c1a5efb7f86692d23f516312",
+      "source_sha256": "ba8f3ce1d696c87d0ffd749dfaf69497c1fe1af76a90c59778be2cd93f3f3270",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-feature-college-instrument-bench",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-college-instrument-bench.json",
+      "family_id": "business-nettleford-instrument-workshop",
+      "area": "business",
+      "genre": "feature",
+      "case_sha256": "ea158024b4fdf4c63fa6d886417b65d16bfc877e5b9d68d070f11dafa58c3abc",
+      "source_sha256": "5f9094d7aa4c51b86b4ec3b8df1f09c2b6474c45d251d55bd00d5fb647707a17",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-feature-deaf-factory-trainer",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-deaf-factory-trainer.json",
+      "family_id": "business-bracken-spur-training-design",
+      "area": "business",
+      "genre": "feature",
+      "case_sha256": "6a7a7ecfd67c1ba060a9b0553a0885f28547dfb41c080d1397b0e67336f1ed01",
+      "source_sha256": "54c81f352a754bd93aa14077b76914dce90022fdb73de82dc2f77c6084177712",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-feature-factory-bus-connection",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-factory-bus-connection.json",
+      "family_id": "business-rillstone-commute-connection",
+      "area": "business",
+      "genre": "feature",
+      "case_sha256": "f53a9ee82fc2e78dfb780b1a567f8f842d8c1d5430933ee07ddc951d695f0a36",
+      "source_sha256": "2711cad5322407a9866ab789a0b269f925ee5e68929ad1ae988f9e04591a00f3",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-feature-ferry-food-break",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-ferry-food-break.json",
+      "family_id": "business-selwick-early-food-counter",
+      "area": "business",
+      "genre": "feature",
+      "case_sha256": "f3d870a40b7150fa54212b4845c2abad9c3cc29e8cd194b3bfb78255f2b14f1f",
+      "source_sha256": "97162b0a62d7e17e1970c6c34a1292169e2d28b1c3eba378d49c812320d0add1",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-feature-festival-sorting-crew",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-festival-sorting-crew.json",
+      "family_id": "business-grey-orchard-postevent-sorting",
+      "area": "business",
+      "genre": "feature",
+      "case_sha256": "caedc6e9a86e2ed2397bd8208aa5d6df9aee7125726af41e73ce6e76b562cf7e",
+      "source_sha256": "e1d284ca9b60f42fc46f07161a7d351fd7a5eced5bbba820a89f514158698b20",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-feature-fishing-net-rope",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-fishing-net-rope.json",
+      "family_id": "business-delo-loop-polymer-batch",
+      "area": "business",
+      "genre": "feature",
+      "case_sha256": "7843375201561afcf40abdb9626d84edaa2b60595da2578b7d0ce7476f1bbef6",
+      "source_sha256": "5baf958a3d94aa9985706202ce29614d97a2e0605712450e8bd49c7666cb86d4",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-feature-flower-standing-orders",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-flower-standing-orders.json",
+      "family_id": "business-plover-reed-flower-channels",
+      "area": "business",
+      "genre": "feature",
+      "case_sha256": "10da93bccd34693468b8c7e8bee2120c1ab4b8be3550bd15f884267f6021a599",
+      "source_sha256": "28caaea8dec43ebccf3b0d5e78815112680bcf4c343a062c3ea71f36997dad11",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-feature-mall-repair-popups",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-mall-repair-popups.json",
+      "family_id": "business-ambercourt-temporary-repair-shops",
+      "area": "business",
+      "genre": "feature",
+      "case_sha256": "b73e938b0eab65f513176ac65b8c4c5b196bcb9d62e8e7a94945bde4633910bd",
+      "source_sha256": "5e1c5543723ab10b1eb5b5e4d8671a53f847d617d367532bf537c98b9968d448",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-feature-memorial-printing",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-memorial-printing.json",
+      "family_id": "business-plain-bower-memorial-proofs",
+      "area": "business",
+      "genre": "feature",
+      "case_sha256": "1cf42dddf001ba461a75fec7f407991dc983fccf0c3a2575dc2c0f1227774e64",
+      "source_sha256": "75142ba57350a87fd152f3958827baf9dc4a3d70513caf9b4f9902d499890388",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-feature-mending-time-exchange",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-mending-time-exchange.json",
+      "family_id": "business-stitch-hour-labor-exchange",
+      "area": "business",
+      "genre": "feature",
+      "case_sha256": "672f923da53791e19138cb30dffad218b1c8b876831e65be75f98eccab452b38",
+      "source_sha256": "065f040c44267f61b2b88d023023d8a3ca9c377d1a63ac4960d30273be1d83ee",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-feature-night-bakery-pickup",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-night-bakery-pickup.json",
+      "family_id": "business-low-ember-night-production",
+      "area": "business",
+      "genre": "feature",
+      "case_sha256": "322e996596a22e66a22dd8d5ae16921886616c87f19ab101fd1cf7dad62750a1",
+      "source_sha256": "3cec53c138f82212357dd7dbebec750e7d9eddef0b0e76f7b2b0e58a2786247c",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-feature-paper-map-updates",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-paper-map-updates.json",
+      "family_id": "business-foldline-seasonal-map-edition",
+      "area": "business",
+      "genre": "feature",
+      "case_sha256": "669447d56467b4f52a7f4c7dfadd0fb7b3b082f68c3200388d78440226f94dc2",
+      "source_sha256": "cd0b868254d36c24bc3773b858b8278e4392f4bde91aa9326c1f76dab42edbb6",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-feature-patternmaker-succession",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-patternmaker-succession.json",
+      "family_id": "business-merrin-pattern-handover",
+      "area": "business",
+      "genre": "feature",
+      "case_sha256": "fbd36084caad62d5de0b9dc2540db426e0ed854c701e4f35b44e40e2dcc3e0bd",
+      "source_sha256": "db5a4cf1ef50c733e5c4616d0da705486ab9a0798e6fcffa9fa7b4cfcfcae45b",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-feature-portable-venue-crew",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-portable-venue-crew.json",
+      "family_id": "business-foldstage-freelance-bookings",
+      "area": "business",
+      "genre": "feature",
+      "case_sha256": "bc631058a17ddeabc922a2151f011f8b535d71cfc9ac0061feb8830caf79d6a8",
+      "source_sha256": "5417f79b966b588e95cf844ecc07259add9f61a34601c17ae76e204807082c9a",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-feature-rooftop-mushroom-chain",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-rooftop-mushroom-chain.json",
+      "family_id": "business-flint-roof-cold-chain",
+      "area": "business",
+      "genre": "feature",
+      "case_sha256": "b059b22a59fdfca2a9297f1eb7efabac6856492864fc9abd41d2d53bd3d89a41",
+      "source_sha256": "57ee40fd129ac463a0dc2b86c7e53b01435e0cb0209e08fe193e24e375b4563f",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-feature-salvage-paperwork",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-salvage-paperwork.json",
+      "family_id": "business-relay-yard-reuse-records",
+      "area": "business",
+      "genre": "feature",
+      "case_sha256": "63455fe2d2c3967bac0463c973d97c1048cb99642d036ba70d167e07d1cdca19",
+      "source_sha256": "a9af8aae6f79691a3bfcce75be497693eb530cab013c0c192938ec2db5151c3f",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-feature-sensor-calibration-route",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-sensor-calibration-route.json",
+      "family_id": "business-pellwren-calibration-service",
+      "area": "business",
+      "genre": "feature",
+      "case_sha256": "e706b3503d401ee4002b7144379c51fd6319208caed1011e1e780479d42c4610",
+      "source_sha256": "fc481733827ced58a454df16fe7c4edf33f4e65374838173aa54eaa753ddadaf",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-feature-shared-remote-workroom",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-shared-remote-workroom.json",
+      "family_id": "business-celandine-desk-booth-capacity",
+      "area": "business",
+      "genre": "feature",
+      "case_sha256": "34dc13bec9f112fb668fa1c9b8e0f86cfbae67b2f623b2dcbbfcd06d1c2b5996",
+      "source_sha256": "c4c6f213e024993b119bfae64fd5d7ca8dc0edd19fc0995ca964bd798ca3f584",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-feature-small-press-audio",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-small-press-audio.json",
+      "family_id": "business-loom-lantern-audio-pilot",
+      "area": "business",
+      "genre": "feature",
+      "case_sha256": "efcd890fdd8b2a7a38b89c46c53ff37bade0d193613e8c0cc4d625d1062f27b7",
+      "source_sha256": "190c8e01ea326fac43a8456739e4ee837655ac8d02bf795f2ffae649dadfd77d",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-feature-theater-costume-bank",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-theater-costume-bank.json",
+      "family_id": "business-aster-fold-costume-loans",
+      "area": "business",
+      "genre": "feature",
+      "case_sha256": "e6228bc03dad79139e4e7b1f639720e02aecd87fe8fb46fc03ee8a6ab33898ba",
+      "source_sha256": "fe1bc123fbf69dbc68b50908cb2479c67214396025cf13a79e1854782610378e",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-feature-thrift-sorting-cost",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-thrift-sorting-cost.json",
+      "family_id": "business-morrow-cupboard-donation-flow",
+      "area": "business",
+      "genre": "feature",
+      "case_sha256": "2e69ea1f3d0a09d030eee825466f1e96c278c1500988ac1c12576a0e7bd11232",
+      "source_sha256": "06fec5e3bbf16d9948270c6e92ce6c37df0ee319ffbd2a36a7baa245104c621e",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-feature-touring-captions",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-touring-captions.json",
+      "family_id": "business-ternlight-live-caption-tour",
+      "area": "business",
+      "genre": "feature",
+      "case_sha256": "b035e60f16a50e98c0813154a37a355535f66d646e6d97e5880aa5736da20363",
+      "source_sha256": "dbd481da13a40cd93cfa535543f74d5024ef26fd71b4958dd1debbc9dfec68a2",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-feature-translation-review-work",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-translation-review-work.json",
+      "family_id": "business-threadword-review-market",
+      "area": "business",
+      "genre": "feature",
+      "case_sha256": "a6c1afe2b3c8638a972a3c41e116bd852e33809eb3b0c9b2eedfce0a2e553b82",
+      "source_sha256": "0073f607d9ecad561c5bf624e98e1b7546e7bf6c46b64d353e04f6daaac509e0",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-feature-village-credit-book",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-village-credit-book.json",
+      "family_id": "business-alder-rill-small-credit",
+      "area": "business",
+      "genre": "feature",
+      "case_sha256": "8c6d6412984038bc7f7b78ed3ed5c9b260422bf3062af6ed3d1ed0f7128d5aea",
+      "source_sha256": "58f57d718e8ba15dae605d6d1d49ae782232b01af50a07e4d3cec8f7d70b9601",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-news-bank-counters",
+      "path": "evals/newsroom/cases/newsroom-held-business-news-bank-counters.json",
+      "family_id": "business-alder-span-counter-consolidation",
+      "area": "business",
+      "genre": "news",
+      "case_sha256": "22dc7d2a5e690dab1b6d62d4739c9fdfebe7da2c19e89cdb990a055c4fd2a819",
+      "source_sha256": "0a6f813ee8b44fd899e37392e138214766e421ecb659c6c78534bffb9d4c554c",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-news-book-order-threshold",
+      "path": "evals/newsroom/cases/newsroom-held-business-news-book-order-threshold.json",
+      "family_id": "business-wrenstack-mixed-book-orders",
+      "area": "business",
+      "genre": "news",
+      "case_sha256": "9bed0f521825e5a1541fd9c0a0512f1cbc2772625c250fd4ff0b3fa8a0408cf5",
+      "source_sha256": "8fa91aafe4cc22b463bf730b09c88f786b55132c6b9917a53ca0ddabc29e8fd1",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-news-broadband-bridge",
+      "path": "evals/newsroom/cases/newsroom-held-business-news-broadband-bridge.json",
+      "family_id": "business-moorlace-fiber-crossing",
+      "area": "business",
+      "genre": "news",
+      "case_sha256": "4f5e7c1100783495cd6544e4e3b0ef1c73930540fd33a3b83e6e798a140fcafc",
+      "source_sha256": "3419feda368ea8b8dad65d9568cf150cdbb5ca92f2e124ec7c66c7fd7da3ab00",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-news-campus-bus-pass",
+      "path": "evals/newsroom/cases/newsroom-held-business-news-campus-bus-pass.json",
+      "family_id": "business-sable-campus-pass-agreement",
+      "area": "business",
+      "genre": "news",
+      "case_sha256": "106eabab606d9b514c1eaa0f435d64947cb248631a88a4247586c984f86c9115",
+      "source_sha256": "c392fc83ae0740eae3b8629d612c9542832e647630fc60d887e1ea1dcaae9298",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-news-coop-price-vote",
+      "path": "evals/newsroom/cases/newsroom-held-business-news-coop-price-vote.json",
+      "family_id": "business-larch-food-rebate-vote",
+      "area": "business",
+      "genre": "news",
+      "case_sha256": "f246f54b45c45495559f93cc79a61e2fdfb3e517f9dfe79ae27dbc0e9de6bb2f",
+      "source_sha256": "582e64cf79b2daf4073955061d94a457d99cf0de43d13d06ff442c68932a7828",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-news-dairy-powder-line",
+      "path": "evals/newsroom/cases/newsroom-held-business-news-dairy-powder-line.json",
+      "family_id": "business-merefold-powder-suspension",
+      "area": "business",
+      "genre": "news",
+      "case_sha256": "e66209c8e55d77c76b5f55eff7952f52e4a692892ce8a65e875b357600b301d8",
+      "source_sha256": "dcd6e12091360ca354aec8a48cf3d47c9f85091229487e316d24447001874cdb",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-news-festival-night-stage",
+      "path": "evals/newsroom/cases/newsroom-held-business-news-festival-night-stage.json",
+      "family_id": "business-marrow-festival-stage-cancellation",
+      "area": "business",
+      "genre": "news",
+      "case_sha256": "bdd2e31f3e68c9c9f2e7b1f7d7657fe7ce38c6ff8693e6b00bd43dffb1da9f54",
+      "source_sha256": "54283c6dd6cafce96c4bce9d7075b8fb6a0ddd0d4c4a35ea0ddf455bea12dc44",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-news-film-crew-pledge",
+      "path": "evals/newsroom/cases/newsroom-held-business-news-film-crew-pledge.json",
+      "family_id": "business-thornhaven-stage-application",
+      "area": "business",
+      "genre": "news",
+      "case_sha256": "1121f359d40e2cbd7c35371cadb65c71d672caa26a5febfcf01aca29721cf05b",
+      "source_sha256": "a4ed7dc42996334d68b84fa278b904044d529f440a45301c0193798c052ae5a5",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-news-four-day-rota",
+      "path": "evals/newsroom/cases/newsroom-held-business-news-four-day-rota.json",
+      "family_id": "business-hallow-wholesale-rota",
+      "area": "business",
+      "genre": "news",
+      "case_sha256": "6399b97af56d5a8fbb12f1b75ba8d747ad10ec4298ef8e63aad5519a007bb10c",
+      "source_sha256": "795d2d90e44a617598b0949ee41c84a29cedd514f200aa3b302966b745e38a4e",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-news-glass-furnace",
+      "path": "evals/newsroom/cases/newsroom-held-business-news-glass-furnace.json",
+      "family_id": "business-brindle-furnace-transition",
+      "area": "business",
+      "genre": "news",
+      "case_sha256": "910d0f845b44518e221a75610828efb6c329ceea278b21e5d260878549fed4aa",
+      "source_sha256": "6eae61606df0b3189208afa9d329fdf277b3da4771d0cccf31a566eceef3a3f3",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-news-grain-terminal-hours",
+      "path": "evals/newsroom/cases/newsroom-held-business-news-grain-terminal-hours.json",
+      "family_id": "business-vesper-grain-order-roster",
+      "area": "business",
+      "genre": "news",
+      "case_sha256": "72a81a48d12aea6cc38e206ec0303d75ce7b854b41c48aefbcace05f59086d76",
+      "source_sha256": "52da4ba50f115368858019a516fe9779ac0bc0c484e1ac316c1adcf1646a79f0",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-news-hangar-delay",
+      "path": "evals/newsroom/cases/newsroom-held-business-news-hangar-delay.json",
+      "family_id": "business-rookmeadow-hangar-drainage",
+      "area": "business",
+      "genre": "news",
+      "case_sha256": "914be48fd0201eaac2280be47dac0ac13734c3e00debed7571e0d5f6c495bff5",
+      "source_sha256": "bc279278a5dc544dee9494edcbf3832d90865b7a972893020e89a40a10e9b3bb",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-news-library-fine-amnesty",
+      "path": "evals/newsroom/cases/newsroom-held-business-news-library-fine-amnesty.json",
+      "family_id": "business-rivermoth-overdue-policy",
+      "area": "business",
+      "genre": "news",
+      "case_sha256": "fee079129ec27ef21d0caaa3a98ded3c190208f486e88f1095549fdc1c8e3a99",
+      "source_sha256": "1668203e47ee7b7b54c88afafb546433bbf6d5131069259473727a6f33e6eac7",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-news-market-fees",
+      "path": "evals/newsroom/cases/newsroom-held-business-news-market-fees.json",
+      "family_id": "business-kestrel-market-fee-vote",
+      "area": "business",
+      "genre": "news",
+      "case_sha256": "76367e40501728f3e32c05b86caf4f83cff78e429d2583076aa5b3e11eb7527f",
+      "source_sha256": "ce896ccc3d3f2338ea2e09f3f6e3b993590877ebdf630e33374b125730fea049",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-news-mill-water-loop",
+      "path": "evals/newsroom/cases/newsroom-held-business-news-mill-water-loop.json",
+      "family_id": "business-sedge-paper-water-reuse",
+      "area": "business",
+      "genre": "news",
+      "case_sha256": "1cc8aa1057cff03b0d9b128ae07d530b8fa9d827525423251250d771e49fc599",
+      "source_sha256": "71d6b425eae3fba30ce544d3a9cf2752c1f0c3f1dd11dcc113e5a2376fab47be",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-news-museum-ticket-reversal",
+      "path": "evals/newsroom/cases/newsroom-held-business-news-museum-ticket-reversal.json",
+      "family_id": "newsroom-museum-admission-policy-template",
+      "area": "business",
+      "genre": "news",
+      "case_sha256": "52ab6b3107037e01805ef9a39d4b377bdacae8df009a0a5a47c4a913ca55112f",
+      "source_sha256": "960c47f42bbae9dbe0d05efc18e5f4d0e1486bc500bf66b0f9a9e815832347aa",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-news-night-childcare",
+      "path": "evals/newsroom/cases/newsroom-held-business-news-night-childcare.json",
+      "family_id": "business-lantern-shift-care-opening",
+      "area": "business",
+      "genre": "news",
+      "case_sha256": "c0dd46c199071eae0c78705ec1220f3e95b90953319b2e6df3b1769408a35175",
+      "source_sha256": "1501bd8fc4f5e739dac7cf36ac24e504b45d848251fea2c6e23839abb5257175",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-news-paid-opening-work",
+      "path": "evals/newsroom/cases/newsroom-held-business-news-paid-opening-work.json",
+      "family_id": "business-threadgate-opening-pay",
+      "area": "business",
+      "genre": "news",
+      "case_sha256": "adce5b3db133f5e2f80b78d79be253d8b564bd880fc569bc158f13fe3301499f",
+      "source_sha256": "99afb8af8b82cc653ad39ff3ae083f19d1827768a77516b16e51348c0d2b7745",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-news-printer-deadlines",
+      "path": "evals/newsroom/cases/newsroom-held-business-news-printer-deadlines.json",
+      "family_id": "business-pine-journal-print-contract",
+      "area": "business",
+      "genre": "news",
+      "case_sha256": "afe655d99cb5d3ac9c928828cdcc05f19883d214d4a2cb742b65be387cf3440f",
+      "source_sha256": "fd985ede008877234b786ebe7ccf4a9b8fd054fdf36c4e153f43e49074be77d4",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-news-rural-delivery-contracts",
+      "path": "evals/newsroom/cases/newsroom-held-business-news-rural-delivery-contracts.json",
+      "family_id": "business-reedmile-rural-contracting",
+      "area": "business",
+      "genre": "news",
+      "case_sha256": "f7cbeb1c7035dfe550379971fdce0dfbfa5f5857173749e8348122776c8a2853",
+      "source_sha256": "72b2f6e035a8e1336f414f4db91cbdcef6219af5e908496a1060bebd2d507b30",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-news-studio-program-merger",
+      "path": "evals/newsroom/cases/newsroom-held-business-news-studio-program-merger.json",
+      "family_id": "business-lenwick-studio-merger",
+      "area": "business",
+      "genre": "news",
+      "case_sha256": "dc383eb0c9cd801c49b16d0d1953f988e0dba75094e2fc5c73e34bef698e1d9d",
+      "source_sha256": "dd3fd548fa234410ac5b82dde68145a86cdcabf36f3c6c3344e1c8498b2d00f6",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-news-transfer-fee-cut",
+      "path": "evals/newsroom/cases/newsroom-held-business-news-transfer-fee-cut.json",
+      "family_id": "business-wayfern-remittance-price",
+      "area": "business",
+      "genre": "news",
+      "case_sha256": "da43c79601bc44f545ab3eab2cdb4abb449de85a46ca978cb79c973ce7506170",
+      "source_sha256": "9b4267d97caf8fdcefac1334ac658bfb2a72d867b9061d00a97d93b69a1f8224",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-news-warranty-sales-stop",
+      "path": "evals/newsroom/cases/newsroom-held-business-news-warranty-sales-stop.json",
+      "family_id": "business-hearthline-service-plan-cutoff",
+      "area": "business",
+      "genre": "news",
+      "case_sha256": "d6b643e29a93e3daf902ccdbfdef5ae5e7b819e8ffe5a3f29592309bca46d0ec",
+      "source_sha256": "2bbd6fee466369387df1d08929edc1e59109252826c161dac629f11336bb3400",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-business-news-worker-buyout",
+      "path": "evals/newsroom/cases/newsroom-held-business-news-worker-buyout.json",
+      "family_id": "business-ospen-cooperative-acquisition",
+      "area": "business",
+      "genre": "news",
+      "case_sha256": "717ce69fb52c56cdf3fe1e539240b9eb9ac39ecead90c76a48250340b91425de",
+      "source_sha256": "78bdbc14dc017da35a0cdd696909db76f6ac13b19e4e5c5568f4e15d4067a891",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-civic-address-number-gaps",
+      "path": "evals/newsroom/cases/newsroom-held-civic-address-number-gaps.json",
+      "family_id": "civic-address-number-gaps",
+      "area": "civic",
+      "genre": "explainer",
+      "case_sha256": "cbd2f73fb7ce4cd2b0283def4e6cb81dc9f2445a0a6f6bbcf9b61d9a1bea6f0e",
+      "source_sha256": "445f114c0f36d7df8178c8cf7588561fe5e7390b9584ce304ef262cd1d097362",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-afterschool-bus-launch",
+      "path": "evals/newsroom/cases/newsroom-held-civic-afterschool-bus-launch.json",
+      "family_id": "civic-afterschool-bus-launch",
+      "area": "civic",
+      "genre": "news",
+      "case_sha256": "03e34915de78bb79b6eada0a95586dc9bb7469873d6f96c8d661e5079b0bc414",
+      "source_sha256": "766ab369eeb3034d7ab7d5dfa52d98ae8dc364b69bddb13bf1c25509f0fd39f7",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-alley-maintenance-responsibility",
+      "path": "evals/newsroom/cases/newsroom-held-civic-alley-maintenance-responsibility.json",
+      "family_id": "civic-alley-maintenance-responsibility",
+      "area": "civic",
+      "genre": "explainer",
+      "case_sha256": "03b8553c357a240809f269c325bf1c49ac398b9c52a439dd2d2146f35badc44c",
+      "source_sha256": "522e13217136c21aca53f8cff97d2f75e622a2725cd656f0f487b8105addc8ff",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-allotment-water-rotation",
+      "path": "evals/newsroom/cases/newsroom-held-civic-allotment-water-rotation.json",
+      "family_id": "civic-allotment-water-rotation",
+      "area": "civic",
+      "genre": "explainer",
+      "case_sha256": "93035238fa900ed7c0da19b21d4e8605dae18999ffff175474c7b40f0408a1ab",
+      "source_sha256": "5efd6febaa462551efaea6550becd022a4beb2baaa4dca54d6564a56461918da",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-anonymous-arts-grant-review",
+      "path": "evals/newsroom/cases/newsroom-held-civic-anonymous-arts-grant-review.json",
+      "family_id": "civic-anonymous-arts-grant-review",
+      "area": "civic",
+      "genre": "explainer",
+      "case_sha256": "2163147c1061b51a81b6f8032ce73faa968be5d5068a2423e7c924cef7e2ea75",
+      "source_sha256": "4a086fa550be00ebd029d137fe0e2649cfe4c9aa2bebc08265e8e456ccdfb3f5",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-backyard-weather-observers",
+      "path": "evals/newsroom/cases/newsroom-held-civic-backyard-weather-observers.json",
+      "family_id": "civic-community-observation-records",
+      "area": "civic",
+      "genre": "feature",
+      "case_sha256": "720ea2e4f79f0d5730e94db79887632b72df21975141c466457eaa4b08b59c81",
+      "source_sha256": "af5f00f5149a94b478aa07142cdf7b79e37eaa939837d99ee9d4480e6bd72a10",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-below-market-housing-definition",
+      "path": "evals/newsroom/cases/newsroom-held-civic-below-market-housing-definition.json",
+      "family_id": "civic-below-market-housing-definition",
+      "area": "civic",
+      "genre": "explainer",
+      "case_sha256": "4c104d4743cb2c343b701a10c8ded7322e524481cf8f982077255998e3facbb4",
+      "source_sha256": "0c11937f804c767764f3d0e8568e61f367d0e8167815034fb6520e47c94e8494",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-broadband-build-status",
+      "path": "evals/newsroom/cases/newsroom-held-civic-broadband-build-status.json",
+      "family_id": "civic-broadband-build-status",
+      "area": "civic",
+      "genre": "explainer",
+      "case_sha256": "005ce4634e5839a215187e9e079a55605aee0ecb07b39ba536c2854463723442",
+      "source_sha256": "9d50f6e6232f7896c424877919ae30f254223682191eb476b4aeb3374dc35da7",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-cemetery-map-contract",
+      "path": "evals/newsroom/cases/newsroom-held-civic-cemetery-map-contract.json",
+      "family_id": "civic-cemetery-map-contract",
+      "area": "civic",
+      "genre": "news",
+      "case_sha256": "a79918df1850a0a6af84b835501ade3d7f79a570cff0e645a89f35d462bab984",
+      "source_sha256": "27f32b641422a07376d505a7359d9282f2268eb59cf4c3446b2dad67b6052f3b",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-choir-family-rehearsal-space",
+      "path": "evals/newsroom/cases/newsroom-held-civic-choir-family-rehearsal-space.json",
+      "family_id": "civic-choir-family-rehearsal-space",
+      "area": "civic",
+      "genre": "feature",
+      "case_sha256": "e0fecbe754d8216334001ba896dc41838d98c62a9202b474863f0e17b87e105d",
+      "source_sha256": "7e3ffc29ca9744c097016e278a432c18a35e6cc248df8358d7bad07a6b3dc126",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-cinema-projection-volunteers",
+      "path": "evals/newsroom/cases/newsroom-held-civic-cinema-projection-volunteers.json",
+      "family_id": "civic-cinema-projection-volunteers",
+      "area": "civic",
+      "genre": "feature",
+      "case_sha256": "600709b235803789866369c25ae10baeea9d3cee76c4fce3b48426ef91483550",
+      "source_sha256": "40fad61adf12c4d8a87e405ec64f26c9c9fd2bab77e4df7ffdef7c21c25b3461",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-city-archive-relocation",
+      "path": "evals/newsroom/cases/newsroom-held-civic-city-archive-relocation.json",
+      "family_id": "civic-city-archive-relocation",
+      "area": "civic",
+      "genre": "news",
+      "case_sha256": "530fff4a2b36c9b6a0d178d6496aa3ae3c479e08746f2d75a79bb05f64b7f6fe",
+      "source_sha256": "b41cf3fda7ea33d5241e884d2cb7dbdd834a1faa48114bbfc8d062e7cbdbaae7",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-community-cookbook-kitchen",
+      "path": "evals/newsroom/cases/newsroom-held-civic-community-cookbook-kitchen.json",
+      "family_id": "civic-community-cookbook-kitchen",
+      "area": "civic",
+      "genre": "feature",
+      "case_sha256": "ace48bbdfdb30eab4288de15eacc0d63f49a0fbf942dce9bccdf99fe4b22f46b",
+      "source_sha256": "995fa7037ff168f520f9a85670aa43d281ec7987278570b743a187ad09019e25",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-community-fridge-replacement",
+      "path": "evals/newsroom/cases/newsroom-held-civic-community-fridge-replacement.json",
+      "family_id": "civic-community-fridge-replacement",
+      "area": "civic",
+      "genre": "news",
+      "case_sha256": "edf5ee0dba38472959d33e9a8c22d8998f34014c5a3268064106e905c98b2b50",
+      "source_sha256": "f81ae890e1280c138d479292fb2cb78b347710e2b7281eea5240dbba099c19c2",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-community-radio-move",
+      "path": "evals/newsroom/cases/newsroom-held-civic-community-radio-move.json",
+      "family_id": "civic-community-radio-move",
+      "area": "civic",
+      "genre": "news",
+      "case_sha256": "7ff394021e0a96f373860159d9fa29c0dfe768b5c99da22da0193c7211e33c19",
+      "source_sha256": "710cdfbaeac2421c545536c2825d56932ac2627c080049d1480a5b84ac8d5881",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-community-seed-catalog",
+      "path": "evals/newsroom/cases/newsroom-held-civic-community-seed-catalog.json",
+      "family_id": "civic-community-seed-catalog",
+      "area": "civic",
+      "genre": "feature",
+      "case_sha256": "aa955599696b933b2de596611ea55ed645a8bb22c7a5f87300e33eb7eb17c593",
+      "source_sha256": "94b6c3d29410b737588d9b62f0501f8609b37b18ff369eba229cf5a072d2be51",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-compostable-bag-rules",
+      "path": "evals/newsroom/cases/newsroom-held-civic-compostable-bag-rules.json",
+      "family_id": "civic-compostable-bag-rules",
+      "area": "civic",
+      "genre": "explainer",
+      "case_sha256": "f11fef300d0c5db319fe197f98ea10a9bcd782ad93699f4f36730e32286ae183",
+      "source_sha256": "2ad738ab5830b5f8f9ee60ac88a025b2932b509f9a0138c0f110d9c2922f4a7a",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-court-navigation-desk",
+      "path": "evals/newsroom/cases/newsroom-held-civic-court-navigation-desk.json",
+      "family_id": "civic-court-navigation-desk",
+      "area": "civic",
+      "genre": "news",
+      "case_sha256": "b16f517c0a7fd42a33ccbd392665bc5ec74b3f11014b9c56adf6e262133e155b",
+      "source_sha256": "cc5a167719e1c5b23491bd8084bd07e30e789b92851c78a1a83a3257131d518c",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-curb-ramp-priorities",
+      "path": "evals/newsroom/cases/newsroom-held-civic-curb-ramp-priorities.json",
+      "family_id": "civic-curb-ramp-priorities",
+      "area": "civic",
+      "genre": "explainer",
+      "case_sha256": "c345821abadc274e7d94729f49266ec469e00646832a7069f651935a0d3cf6c8",
+      "source_sha256": "1697e399ab8d5d813e6a0b3a0b6c23bf6bd317d6e57bff9ce2c9fbb4c83722f7",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-depot-evening-class",
+      "path": "evals/newsroom/cases/newsroom-held-civic-depot-evening-class.json",
+      "family_id": "civic-depot-evening-class",
+      "area": "civic",
+      "genre": "feature",
+      "case_sha256": "6265fef40bc8e2b94e3aff74f9691e02fd991f12e9cfe4fec7f9e30513fb3486",
+      "source_sha256": "f5cfe49811dbb305d54dc42ed8fa6e653d56248b1f13a66219fdcb1ba3fa58e9",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-drain-adoption-neighbors",
+      "path": "evals/newsroom/cases/newsroom-held-civic-drain-adoption-neighbors.json",
+      "family_id": "civic-drain-adoption-neighbors",
+      "area": "civic",
+      "genre": "feature",
+      "case_sha256": "36ad08870cc873f98888fe38e7a21e323c9265100d6d45e4c1ed81de47b67a96",
+      "source_sha256": "8e8addf6e301049aa7f2d09305d3cd38ce2bcc8f4d251d7628914c243c9d7e1f",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-drainage-district-merger",
+      "path": "evals/newsroom/cases/newsroom-held-civic-drainage-district-merger.json",
+      "family_id": "civic-drainage-district-merger",
+      "area": "civic",
+      "genre": "news",
+      "case_sha256": "b1b11d7b3a853251f7c07ded80176b8887dfbe394e301905594c543a12bcfee7",
+      "source_sha256": "454450fc65ec4fe38f022fbdb9e7cc5ed4426dc2ca39eb733c5d2e577214a90d",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-electric-bus-charging-sequence",
+      "path": "evals/newsroom/cases/newsroom-held-civic-electric-bus-charging-sequence.json",
+      "family_id": "civic-electric-bus-charging-sequence",
+      "area": "civic",
+      "genre": "explainer",
+      "case_sha256": "3e9c244423d513b817681945c4ed7e43d396bac07324a8f03fac10cbd7bed0c7",
+      "source_sha256": "94c817e2f68be0a61e33cca9fa1a92b455e1eb34562a6f9eb3c287f003c8a7a3",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-evening-waste-pilot",
+      "path": "evals/newsroom/cases/newsroom-held-civic-evening-waste-pilot.json",
+      "family_id": "civic-evening-waste-pilot",
+      "area": "civic",
+      "genre": "news",
+      "case_sha256": "23210984964ecf7c70cf6722732287593fac794626a540be9350e8c15694f874",
+      "source_sha256": "d132914b579aba6686bc98330683aa72a1b53d6dd8a803aaa3097cf1fc7978cf",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-farm-surplus-dispatch",
+      "path": "evals/newsroom/cases/newsroom-held-civic-farm-surplus-dispatch.json",
+      "family_id": "civic-farm-surplus-dispatch",
+      "area": "civic",
+      "genre": "feature",
+      "case_sha256": "a529ecebb3d45ac68a83db8d4284f2d95f6576f89e795577945f200b31de4ea9",
+      "source_sha256": "f37e4fb7193921b141473e359a56ba1cc05089f87338c66f99d2688eccab9e9f",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-fenced-ballfield-opening",
+      "path": "evals/newsroom/cases/newsroom-held-civic-fenced-ballfield-opening.json",
+      "family_id": "civic-fenced-ballfield-opening",
+      "area": "civic",
+      "genre": "news",
+      "case_sha256": "9ffee91a2b93f675eeb1d06133ccb45e98eb672b9bf0ff08230b455bea23d3be",
+      "source_sha256": "f608217283c38bea3034880d1b6c084e0deab72f332dedb7a18207e120f5f655",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-floodgate-decisions",
+      "path": "evals/newsroom/cases/newsroom-held-civic-floodgate-decisions.json",
+      "family_id": "civic-floodgate-decisions",
+      "area": "civic",
+      "genre": "explainer",
+      "case_sha256": "0a2038738455d54f7676506e14b2da5ec4c1bb57738afff20c97bdfc956aa8a2",
+      "source_sha256": "67c0a3bdbc7e3d872b934a81ee0b5e1b54d2ffbfeae686c1e075e6baaeaa904a",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-floodplain-parking-purchase",
+      "path": "evals/newsroom/cases/newsroom-held-civic-floodplain-parking-purchase.json",
+      "family_id": "civic-floodplain-parking-purchase",
+      "area": "civic",
+      "genre": "news",
+      "case_sha256": "3ea64ea5d51759cdf4a1556ce283011d3ac49d70da54079a18e940b2036a4a97",
+      "source_sha256": "6574dcb1b1776a983bbef6bf7e270093e9bb4770c283fefb37d0416c0dab37cc",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-grandparents-story-hour",
+      "path": "evals/newsroom/cases/newsroom-held-civic-grandparents-story-hour.json",
+      "family_id": "civic-grandparents-story-hour",
+      "area": "civic",
+      "genre": "feature",
+      "case_sha256": "829d64cf3fa76797abe59e6ea5def38255f5625b47bc50b3670f92285f7677f9",
+      "source_sha256": "63a1f7dd69dda5a1229286e520fc916da624d1302fbce980351fb569c605e493",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-grocery-patronage-return",
+      "path": "evals/newsroom/cases/newsroom-held-civic-grocery-patronage-return.json",
+      "family_id": "civic-grocery-patronage-return",
+      "area": "civic",
+      "genre": "explainer",
+      "case_sha256": "cb0e1d09d7d86bba3b7f876e4b1eb62babc9c1660571dabab963a001b816b98c",
+      "source_sha256": "0ec2315821975babc7153a42d93eebf8c0e160746298a4a2cc42538ea3e11080",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-grocery-post-counter",
+      "path": "evals/newsroom/cases/newsroom-held-civic-grocery-post-counter.json",
+      "family_id": "civic-grocery-post-counter",
+      "area": "civic",
+      "genre": "news",
+      "case_sha256": "e81f9ae928206d3da8729e6dc687e7dedcc272d6c99b522216faa8e308249f23",
+      "source_sha256": "a67d48e72e40622b106d1d0e17dd565b24c0ebb25a93b322642ca9cf8b1bbf34",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-land-trust-resale-formula",
+      "path": "evals/newsroom/cases/newsroom-held-civic-land-trust-resale-formula.json",
+      "family_id": "civic-land-trust-resale-formula",
+      "area": "civic",
+      "genre": "explainer",
+      "case_sha256": "a46c1292d554934dbc823e9f41148c0cb59f36d404d467704e2bf32c9053e795",
+      "source_sha256": "39ba2a8509b9800846032878882e8fe60b756e68bcb6dc8d4b64ba0a277d3133",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-last-public-payphone",
+      "path": "evals/newsroom/cases/newsroom-held-civic-last-public-payphone.json",
+      "family_id": "civic-last-public-payphone",
+      "area": "civic",
+      "genre": "feature",
+      "case_sha256": "3dd66c802784f8fedc84353d02ae7deeee115458790bbb5a66f781984a3f493b",
+      "source_sha256": "6f76c40fa8cb8363a8a42e9dc99feca7ad53e9440d5157bf6fff129652cdbc79",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-laundromat-noticeboard",
+      "path": "evals/newsroom/cases/newsroom-held-civic-laundromat-noticeboard.json",
+      "family_id": "civic-laundromat-noticeboard",
+      "area": "civic",
+      "genre": "feature",
+      "case_sha256": "03ec102621a6ba983a35e2f91941cd12e0bf9e584e036e02fc0933f70e8327b6",
+      "source_sha256": "7001607b5a1c9e685b71ee956c27cbfe2d219d4f0f80e9e02871461fae63de95",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-library-book-reconsideration",
+      "path": "evals/newsroom/cases/newsroom-held-civic-library-book-reconsideration.json",
+      "family_id": "civic-library-book-reconsideration",
+      "area": "civic",
+      "genre": "explainer",
+      "case_sha256": "c5d2c896a5f1aa97ecf9c3d64f108ce060a8a889ffc85d10100971c89933d9e8",
+      "source_sha256": "a19c82f74d715e61f8561bc86625e70d061f3073398ef271c0cb95646e224d0d",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-library-return-lockers",
+      "path": "evals/newsroom/cases/newsroom-held-civic-library-return-lockers.json",
+      "family_id": "civic-library-return-lockers",
+      "area": "civic",
+      "genre": "news",
+      "case_sha256": "a50d8cccb6da32f8a38ed8ed22d28a392c5c225c64c5351742411ec3a700cf6a",
+      "source_sha256": "512401257b87b68ae2dd9ec6014389961f5331cebeb3676d817ff4080d51c9e5",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-market-dawn-porters",
+      "path": "evals/newsroom/cases/newsroom-held-civic-market-dawn-porters.json",
+      "family_id": "civic-market-dawn-porters",
+      "area": "civic",
+      "genre": "feature",
+      "case_sha256": "dea7749b6ad1efc55a58e0b07a67b68914e874b2a60eaa1ce4aee6f799c546b2",
+      "source_sha256": "412f994789a83808b1335c96f4c34b06b2da0fa64be2153bdf9794b4b0b96277",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-market-electricity-project",
+      "path": "evals/newsroom/cases/newsroom-held-civic-market-electricity-project.json",
+      "family_id": "civic-market-electricity-project",
+      "area": "civic",
+      "genre": "news",
+      "case_sha256": "c4f2c6e4b5399a4d9935b840bb321c9250bf9937693922df0f7405a1eb2bc5d8",
+      "source_sha256": "5ac45076dfd384468297b22d83fb38097c4db59895f686ee5e239ef752020b2c",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-market-voucher-launch",
+      "path": "evals/newsroom/cases/newsroom-held-civic-market-voucher-launch.json",
+      "family_id": "civic-market-voucher-launch",
+      "area": "civic",
+      "genre": "news",
+      "case_sha256": "864f19de4c0f01b203479443ac6227062a3739a64a9b5662307cc82aec344fbb",
+      "source_sha256": "eb6a40a33658812d61776e3410bb359cc8ff15ba0c2fe697c589f37b6c009c8d",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-motel-housing-purchase",
+      "path": "evals/newsroom/cases/newsroom-held-civic-motel-housing-purchase.json",
+      "family_id": "civic-motel-housing-purchase",
+      "area": "civic",
+      "genre": "news",
+      "case_sha256": "f0871d243929c262c461b971b18e5653a9353eec8ea6fb41f0adfe53fdc2fb0a",
+      "source_sha256": "39a05b3e29daab873315fc48db9f261d7dd3e6fa95f0a1f1592ef81b9ce9f9a6",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-multilingual-service-desk",
+      "path": "evals/newsroom/cases/newsroom-held-civic-multilingual-service-desk.json",
+      "family_id": "civic-multilingual-service-desk",
+      "area": "civic",
+      "genre": "news",
+      "case_sha256": "79a912314afe989f486d8a08a1c7249fb3ebc10255ffbec84e4acd59fb6bcdb2",
+      "source_sha256": "363a74368368f8cfb17c647adf07fe1218ade5ed2e5145e3c1489da80da0924f",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-municipal-tree-nursery",
+      "path": "evals/newsroom/cases/newsroom-held-civic-municipal-tree-nursery.json",
+      "family_id": "civic-municipal-tree-nursery",
+      "area": "civic",
+      "genre": "feature",
+      "case_sha256": "2c4fa43d4d139bcb2c67c85f60289f22d1ecbeb58994caae7ab8ac1d0add9891",
+      "source_sha256": "ba59ee337378d3d0c10c6024c68fe389ea884595a3ddfa3d3386e969ba7205e5",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-museum-free-admission",
+      "path": "evals/newsroom/cases/newsroom-held-civic-museum-free-admission.json",
+      "family_id": "newsroom-museum-admission-policy-template",
+      "area": "civic",
+      "genre": "news",
+      "case_sha256": "af136144acc2dc80d64b8d1aea0207ce3eba699a4900cf60551e3bcad14c352f",
+      "source_sha256": "8c7c70de743a6422234c4849dff7764ae5238e1d1e2ed88462f5a76e07f1c17f",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-neighborhood-mural-maintenance",
+      "path": "evals/newsroom/cases/newsroom-held-civic-neighborhood-mural-maintenance.json",
+      "family_id": "civic-neighborhood-mural-maintenance",
+      "area": "civic",
+      "genre": "feature",
+      "case_sha256": "dc71b3d6afa8df1cc0fcc43fb5edf9ee60f8e1a641cc21eb79fa2006ecd1f7ec",
+      "source_sha256": "7c9bd4dbbabd7e2d3ea6e48b1f29bee449455e7308ad403478e37eb3704b1a03",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-odor-complaint-investigation",
+      "path": "evals/newsroom/cases/newsroom-held-civic-odor-complaint-investigation.json",
+      "family_id": "civic-odor-complaint-investigation",
+      "area": "civic",
+      "genre": "explainer",
+      "case_sha256": "0bfeb5bb17e7dac5decf0cd83c4ce13170d10ae6af9679b152da698d1696fa04",
+      "source_sha256": "0c0f9ce5b9ec487b2cb6334ea4fe1e860aec2d4d29f0fdb78cbcec99624c972c",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-permit-parking-extension",
+      "path": "evals/newsroom/cases/newsroom-held-civic-permit-parking-extension.json",
+      "family_id": "civic-permit-parking-extension",
+      "area": "civic",
+      "genre": "news",
+      "case_sha256": "0f7ed663cab2ac040d8ff9f1a64dc1f277f4ac729cbf4af672c328d088770a7c",
+      "source_sha256": "0fc5e6b09b81b485185a6afc6fbb3fe5a46bb04e9615c1b991ef0ce11b3ad403",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-playground-surface-choice",
+      "path": "evals/newsroom/cases/newsroom-held-civic-playground-surface-choice.json",
+      "family_id": "civic-playground-surface-choice",
+      "area": "civic",
+      "genre": "explainer",
+      "case_sha256": "ffdd0499d3fe3f3f9bd5f05056764bd3db2dce5a6ea870ab14d54d51e05dfa7b",
+      "source_sha256": "d0a359917ba9263a430873d9a002ac60dcd61a5d080c5b0581e2341bd3f66ca3",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-pottery-test-shard-archive",
+      "path": "evals/newsroom/cases/newsroom-held-civic-pottery-test-shard-archive.json",
+      "family_id": "civic-pottery-test-shard-archive",
+      "area": "civic",
+      "genre": "feature",
+      "case_sha256": "cdc14e88166c936459ac7db74b9358ebb94388bb14f448b25e37bcfc1c877f82",
+      "source_sha256": "e50b3cc19e2ab66aed950da21eb3a3eed686791e33df5d16aa82dd5c69df872b",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-public-bench-workshop",
+      "path": "evals/newsroom/cases/newsroom-held-civic-public-bench-workshop.json",
+      "family_id": "civic-public-bench-workshop",
+      "area": "civic",
+      "genre": "feature",
+      "case_sha256": "e07adf669e23d42243e1aac0ed052fe17bb072b7434058f5ace273ef3a17ab11",
+      "source_sha256": "9e69e55b5d6becb2f2b659bde8d5728a370334f7c2814d4a69ae45526818127d",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-public-chess-tables",
+      "path": "evals/newsroom/cases/newsroom-held-civic-public-chess-tables.json",
+      "family_id": "civic-public-chess-tables",
+      "area": "civic",
+      "genre": "feature",
+      "case_sha256": "ff9d486c18b5000b3e45e86ec75a7ff1833dcafa15d9806a21a2337a1c844bf8",
+      "source_sha256": "a278eae6cdb39a3754235ca44a8e31aa4f4f038ae33dc9db8145da36e016bfe0",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-public-orchard-harvest",
+      "path": "evals/newsroom/cases/newsroom-held-civic-public-orchard-harvest.json",
+      "family_id": "civic-public-orchard-harvest",
+      "area": "civic",
+      "genre": "news",
+      "case_sha256": "5d22d2a8602eca55071796ca7c43c2ccd12f03e45869978bce5366df724a44ee",
+      "source_sha256": "78acfa25a07b797f393fe3ddc447fd905de7d92bdfb362bad267f2c2437ddc04",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-public-toilet-caretakers",
+      "path": "evals/newsroom/cases/newsroom-held-civic-public-toilet-caretakers.json",
+      "family_id": "civic-public-toilet-caretakers",
+      "area": "civic",
+      "genre": "feature",
+      "case_sha256": "ae4f30bc4f56afe2bbea38031b6591f4cf635512b45b3c6a61e9d24fcc32bb28",
+      "source_sha256": "6e9d4147918425aeec4188064f1aad35e3d6873f0b6e809d52b7f6c1f8601781",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-raised-school-crossings",
+      "path": "evals/newsroom/cases/newsroom-held-civic-raised-school-crossings.json",
+      "family_id": "civic-raised-school-crossings",
+      "area": "civic",
+      "genre": "news",
+      "case_sha256": "a581b730a08ba31d9a263a3eb03fa90b290d5646093223f5ecb866760f6a2d81",
+      "source_sha256": "cd6f00ff98f83ae6457be192bd9af0b98bde2121cf62ec90a79076f6c35f8317",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-retrofit-temporary-moves",
+      "path": "evals/newsroom/cases/newsroom-held-civic-retrofit-temporary-moves.json",
+      "family_id": "civic-retrofit-temporary-moves",
+      "area": "civic",
+      "genre": "explainer",
+      "case_sha256": "a077ebfdf16198792a0963a4a78dd6795daafb827d2cf5b8aaa1cae76ccd36da",
+      "source_sha256": "1cbe6678ab7345f26ae7580050d20ed05119e3ce319bfbbd8d42e44107e7c6d8",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-rink-winter-conversion",
+      "path": "evals/newsroom/cases/newsroom-held-civic-rink-winter-conversion.json",
+      "family_id": "civic-rink-winter-conversion",
+      "area": "civic",
+      "genre": "feature",
+      "case_sha256": "8b25065cbd6fd54f26e648f6d9592d683b93e51b942928a5f6a25c748292f097",
+      "source_sha256": "4d6440e2012d37b4ad98834df77327329b2e87ca96b6e64111a5b4849abea1f8",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-rooftop-clotheslines",
+      "path": "evals/newsroom/cases/newsroom-held-civic-rooftop-clotheslines.json",
+      "family_id": "civic-rooftop-clotheslines",
+      "area": "civic",
+      "genre": "feature",
+      "case_sha256": "061b605700277a41f3505963b054294cbed7c7d9e6e1f8405408494e12a42f18",
+      "source_sha256": "45b3bca24941a89871b60087eb4b087ff508fd42af553b288c7cd6726af031a0",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-school-soundwalk-map",
+      "path": "evals/newsroom/cases/newsroom-held-civic-school-soundwalk-map.json",
+      "family_id": "civic-school-soundwalk-map",
+      "area": "civic",
+      "genre": "feature",
+      "case_sha256": "c21eb68eede66efbd0fdd0ee179bf8225fd60e3b474f2df71d4d88e829db9864",
+      "source_sha256": "d83386f216e124a6d81ba46d19fa4fc9678924ba83afd32ef12b8ea017c0b1d2",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-school-zone-proposal",
+      "path": "evals/newsroom/cases/newsroom-held-civic-school-zone-proposal.json",
+      "family_id": "civic-school-zone-proposal",
+      "area": "civic",
+      "genre": "explainer",
+      "case_sha256": "912949ced61bf869e60fe320beadf6c3047907ae6070d63470bed7d5c0d1e464",
+      "source_sha256": "f34d4041b70510c4d06b407eb710edaca16bdd9bd10e262e901082ca7156a1ab",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-shared-solar-allocation",
+      "path": "evals/newsroom/cases/newsroom-held-civic-shared-solar-allocation.json",
+      "family_id": "civic-shared-solar-allocation",
+      "area": "civic",
+      "genre": "explainer",
+      "case_sha256": "fb98a1273202213dfd7d54d0d2913195bd0d8e2ea6e906e6d06a936730734001",
+      "source_sha256": "ec4a0bdcdb166188e04986c40b703bf1e7074e46de97f66d8ad0212c698561bf",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-siren-test-schedule",
+      "path": "evals/newsroom/cases/newsroom-held-civic-siren-test-schedule.json",
+      "family_id": "civic-siren-test-schedule",
+      "area": "civic",
+      "genre": "explainer",
+      "case_sha256": "bd0caa73a9dca25e2d06077fe184b4ad08731a90fa77757c042a10cc7f8b9070",
+      "source_sha256": "364e648458eb10e1f578ddc555ae4b8452cd04ebd7bea784faa121dd8123532a",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-small-shops-shared-orders",
+      "path": "evals/newsroom/cases/newsroom-held-civic-small-shops-shared-orders.json",
+      "family_id": "civic-small-shops-shared-orders",
+      "area": "civic",
+      "genre": "feature",
+      "case_sha256": "e3fba48724b5f1c54ba51ae80c3b2096764f0defcd0413613190b4cf5fc819fd",
+      "source_sha256": "09e200789a370a386409a20244da0859cd6adadb8612ac8205d9e5577399b92c",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-snow-clearance-contract",
+      "path": "evals/newsroom/cases/newsroom-held-civic-snow-clearance-contract.json",
+      "family_id": "civic-snow-clearance-contract",
+      "area": "civic",
+      "genre": "news",
+      "case_sha256": "de159346448abeb03a5e1204af3b829db78b48970185debb4370b61c0373f477",
+      "source_sha256": "6ab444e6337fdf6317d20f50d9d9304044309319ed8ab459ff3ec30e885a658c",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-station-piano-stewards",
+      "path": "evals/newsroom/cases/newsroom-held-civic-station-piano-stewards.json",
+      "family_id": "civic-station-piano-stewards",
+      "area": "civic",
+      "genre": "feature",
+      "case_sha256": "deef7d4dd0841f7f585485a1d2e94bef116737a81508729149407241de3c8b7d",
+      "source_sha256": "7381fe6ac2f3b544802c36f5d694ba36b0ccf0a18077b2b063a38e26db0e7068",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-street-tree-review",
+      "path": "evals/newsroom/cases/newsroom-held-civic-street-tree-review.json",
+      "family_id": "civic-street-tree-review",
+      "area": "civic",
+      "genre": "explainer",
+      "case_sha256": "1cb3969595611bbae887c013c21ffb234c3889b53578b1e9976f85e0d695cbb0",
+      "source_sha256": "f3d2da655213724731593e3242d3fb31c6204e30cfa901827c17f002270e2cad",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-surplus-furniture-disposal",
+      "path": "evals/newsroom/cases/newsroom-held-civic-surplus-furniture-disposal.json",
+      "family_id": "civic-surplus-furniture-disposal",
+      "area": "civic",
+      "genre": "explainer",
+      "case_sha256": "74b133255844b1c3845ea462ad7d90c0b88efb302d21d4576461e215ea10fa51",
+      "source_sha256": "9d0d11b73f02a53878698caf654770c0630cb051ba7836236fd449f27f4799f7",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-temporary-road-repairs",
+      "path": "evals/newsroom/cases/newsroom-held-civic-temporary-road-repairs.json",
+      "family_id": "civic-temporary-road-repairs",
+      "area": "civic",
+      "genre": "explainer",
+      "case_sha256": "5677aa51f54264f5b84d89f02969756b6b99ce46dd0f2b203bf5d8074267fd70",
+      "source_sha256": "a70d4c1b08fb16e19a6f238b899f75ae294095a4e97c167b13154ee6e42f882f",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-temporary-shop-leases",
+      "path": "evals/newsroom/cases/newsroom-held-civic-temporary-shop-leases.json",
+      "family_id": "civic-temporary-shop-leases",
+      "area": "civic",
+      "genre": "news",
+      "case_sha256": "272efe529e319485bb512d8e05007cbc15b7b4830e08ae88c5488940f0448ecd",
+      "source_sha256": "1267484da4fc141434bd154b26e049c6a8218ea7ad0cce11750e1af98bc08fe8",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-unclaimed-bicycle-process",
+      "path": "evals/newsroom/cases/newsroom-held-civic-unclaimed-bicycle-process.json",
+      "family_id": "civic-unclaimed-bicycle-process",
+      "area": "civic",
+      "genre": "explainer",
+      "case_sha256": "3f42f029027140ba0321bfb1609d231b3369df53fba6ce3ee964cde408f1b12c",
+      "source_sha256": "9b495aa450ca4b72f03ca2008f11dc516669168936e67a382ef955d052d71ea7",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-volunteer-stream-records",
+      "path": "evals/newsroom/cases/newsroom-held-civic-volunteer-stream-records.json",
+      "family_id": "civic-community-observation-records",
+      "area": "civic",
+      "genre": "feature",
+      "case_sha256": "1e057e6e8f3ac42ff73dc16808d6519d0c587b457b1e9c11e92a6edb8cff2e01",
+      "source_sha256": "5e06b94dc3e02cadc16fa2acbcd9f76db5c330b38e0105ee5541be7a05285705",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-water-bill-fixed-charges",
+      "path": "evals/newsroom/cases/newsroom-held-civic-water-bill-fixed-charges.json",
+      "family_id": "civic-water-bill-fixed-charges",
+      "area": "civic",
+      "genre": "explainer",
+      "case_sha256": "6c4074b6407928be8d3b3fa8987e807630d07b30bdace2281370c2e1774ddbce",
+      "source_sha256": "f33829c27e0456c92cd9768743c8aa2ae344a0d6f1fda87587d615c7f87dba82",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-water-leak-alerts",
+      "path": "evals/newsroom/cases/newsroom-held-civic-water-leak-alerts.json",
+      "family_id": "civic-water-leak-alerts",
+      "area": "civic",
+      "genre": "news",
+      "case_sha256": "0169b04f7dd294a3b3a3ca5c0767590aad67ee8553ebfa6402bcf0d2b5f623e0",
+      "source_sha256": "bb3895edd3aa05020dd7619e67617655750cd8cbd82c666173270de3875ca00e",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-weekly-paper-delivery-round",
+      "path": "evals/newsroom/cases/newsroom-held-civic-weekly-paper-delivery-round.json",
+      "family_id": "civic-weekly-paper-delivery-round",
+      "area": "civic",
+      "genre": "feature",
+      "case_sha256": "4ea4ce000bd14013094b4fa5dfe28d6e371376055e2adcdc8e17a4a97401998d",
+      "source_sha256": "993f3e50e585171fc7020f72b8d47b9460607bf97ef0720f69a72f4619c2a9d3",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-womens-boat-workshop",
+      "path": "evals/newsroom/cases/newsroom-held-civic-womens-boat-workshop.json",
+      "family_id": "civic-womens-boat-workshop",
+      "area": "civic",
+      "genre": "feature",
+      "case_sha256": "3bd5ff298c84e20157c37693fc6e1c35c8ec2e28967dadff695c73a8413e32a7",
+      "source_sha256": "983399fb52b4b2a62dc934ee19c8ee6cb12bc51cb0f7c865e8df4f1fa4a22f39",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-civic-youth-budget-awards",
+      "path": "evals/newsroom/cases/newsroom-held-civic-youth-budget-awards.json",
+      "family_id": "civic-youth-budget-awards",
+      "area": "civic",
+      "genre": "news",
+      "case_sha256": "c0d65f5d245f0bd6c074436e3da9a520401149810fc2aff03ca1ac1972b17a09",
+      "source_sha256": "92915820f5224eea435fdf887347c18a6800755e6707714ab439c40d319761d3",
+      "fact_entries": 22
+    },
+    {
+      "case_id": "newsroom-held-science-anesthesia-drug-shortage",
+      "path": "evals/newsroom/cases/newsroom-held-science-anesthesia-drug-shortage.json",
+      "family_id": "fam-propofol-shortage",
+      "area": "science",
+      "genre": "news",
+      "case_sha256": "33904476a4798eb71a777e2ae61d8ca5db78c69d7c279c1c9ae18892ff510e81",
+      "source_sha256": "d58391a02d611797c47d2381dc26ba3bbc4ba8a0674a7fe162680a91c7e1bde2",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-antibiotic-trial-halted",
+      "path": "evals/newsroom/cases/newsroom-held-science-antibiotic-trial-halted.json",
+      "family_id": "fam-antibiotic-trial",
+      "area": "science",
+      "genre": "news",
+      "case_sha256": "4981c01c5c9fff590511556dfd54b79ecb147787f18895cd7eec7a5d1bc0163d",
+      "source_sha256": "6fb6f268e9efff0eb25309a1b8318a3546af0062eb82c29c5ba95654ac94421b",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-aquifer-depletion-study",
+      "path": "evals/newsroom/cases/newsroom-held-science-aquifer-depletion-study.json",
+      "family_id": "fam-meridian-aquifer",
+      "area": "science",
+      "genre": "news",
+      "case_sha256": "e5cbce0c86a0ce59575ff66507b8c308b5449b78fe2e2e39bdd18a47d5b782cf",
+      "source_sha256": "5549e56a87d4596569db86ade8e6588da5dbd4fac90286648e0c672935a4e840",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-autonomous-port-fatality",
+      "path": "evals/newsroom/cases/newsroom-held-science-autonomous-port-fatality.json",
+      "family_id": "fam-portside-fatality",
+      "area": "science",
+      "genre": "news",
+      "case_sha256": "2a3ea08fb509f96724f85260c048b0357e54b76b2a94b6ae8490fb35c355afe2",
+      "source_sha256": "be0675808e20ab7cb5ba7f4e1f6caf7adbb60b02546c9de1863152745afbb49e",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-biosafety-breach",
+      "path": "evals/newsroom/cases/newsroom-held-science-biosafety-breach.json",
+      "family_id": "fam-bsl4-breach",
+      "area": "science",
+      "genre": "news",
+      "case_sha256": "7819672d906863ccd6421f74a99ae2eca3f13ab1a93d8bcd74e5ac54e7cfd015",
+      "source_sha256": "2891c55ed413f853752709feda2ed8b1f9c13afdeadc19d6b07160f1839af1b2",
+      "fact_entries": 18
+    },
+    {
+      "case_id": "newsroom-held-science-carbon-credit-fraud",
+      "path": "evals/newsroom/cases/newsroom-held-science-carbon-credit-fraud.json",
+      "family_id": "science-protected-forest-credit-template",
+      "area": "science",
+      "genre": "news",
+      "case_sha256": "683a46a89bf0a482a4c17518483208a62e04f11bff7e410a1269740e44a6c5f4",
+      "source_sha256": "2c0ccf07d5af5d18e2976dc81a0ee3b04381670ec9553ce483c2756f6b760faa",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-crispr-therapy-approved",
+      "path": "evals/newsroom/cases/newsroom-held-science-crispr-therapy-approved.json",
+      "family_id": "science-crispr-approval-access-template",
+      "area": "science",
+      "genre": "news",
+      "case_sha256": "055db9d8e825cca6605c75e0df35dcd556cf52a671c9d25c336ca98bde1ba09c",
+      "source_sha256": "3bbcdcb33e2eb5852998d045a6a7cb4eeaa4ddabc14553f4c13743175b6b1b0c",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-dam-structural-warning",
+      "path": "evals/newsroom/cases/newsroom-held-science-dam-structural-warning.json",
+      "family_id": "science-dam-asr-monitoring-template",
+      "area": "science",
+      "genre": "news",
+      "case_sha256": "1cbd1e425c4baa4d4ab222a136aa69eb8e40627ed255743a54482f505ba32879",
+      "source_sha256": "e9e3354e0711a8d116415678a1f5d861e8b1cde238087d066f6bea1df0eab2eb",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-ev-battery-recall",
+      "path": "evals/newsroom/cases/newsroom-held-science-ev-battery-recall.json",
+      "family_id": "fam-ev-recall",
+      "area": "science",
+      "genre": "news",
+      "case_sha256": "2da637b5744e116d43b79823b0c9ac57a45a350b3c76069f463cc0e05edcf37b",
+      "source_sha256": "5dc495addc3f75ede9ddf3c867c7ea02b4cc4fb94509259276faa39729559ddb",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-expl-antibiotic-resistance",
+      "path": "evals/newsroom/cases/newsroom-held-science-expl-antibiotic-resistance.json",
+      "family_id": "fam-expl-abx-resist",
+      "area": "science",
+      "genre": "explainer",
+      "case_sha256": "ebbef00421769e73caa3a5769ac941813c6ebabae78c504ab64fffc7c13c0282",
+      "source_sha256": "4942e2373959850065bc79570c64227d5e952fa45919ecfd68bbb6fb72ed624b",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-expl-carbon-capture",
+      "path": "evals/newsroom/cases/newsroom-held-science-expl-carbon-capture.json",
+      "family_id": "fam-expl-ccs",
+      "area": "science",
+      "genre": "explainer",
+      "case_sha256": "d4d855763521e02cfd5d14e63f525b1d6030b1114f316b2a3ab73f8e8a64e607",
+      "source_sha256": "ccd9b3e1f41854c997ca36c988badfd9e6f9beabd9b46cafc6a89271b326a3a8",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-expl-chip-fab",
+      "path": "evals/newsroom/cases/newsroom-held-science-expl-chip-fab.json",
+      "family_id": "fam-expl-chip-fab",
+      "area": "science",
+      "genre": "explainer",
+      "case_sha256": "0e78a06c85c56ab0aad62b8fea1abfa5de36d032170b43ac5544226811e9ffc4",
+      "source_sha256": "82ba0dde26fda3ed4a527b2b6709b59842c76d65501d4e4658601e2cf7e8b4f9",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-expl-crispr-editing",
+      "path": "evals/newsroom/cases/newsroom-held-science-expl-crispr-editing.json",
+      "family_id": "fam-expl-crispr",
+      "area": "science",
+      "genre": "explainer",
+      "case_sha256": "5064aa6e679561d19332c0aea14d35886933ffc4a625e5d217c741e8ed8473cc",
+      "source_sha256": "c00c04a6e306ed3eaca35eab632024ddf9d6dece4734075997f64b7a597fcaaa",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-expl-dam-inspection",
+      "path": "evals/newsroom/cases/newsroom-held-science-expl-dam-inspection.json",
+      "family_id": "fam-expl-dam",
+      "area": "science",
+      "genre": "explainer",
+      "case_sha256": "da9eb0825b550e6b9a64a689877a6bfc86d24b1ff002c093e258f7294dfd0cd9",
+      "source_sha256": "cbbf31c73d2b5ca313285044174762ec0ac385441336321565827b1689192b72",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-expl-dark-matter",
+      "path": "evals/newsroom/cases/newsroom-held-science-expl-dark-matter.json",
+      "family_id": "science-apex-dark-matter-program",
+      "area": "science",
+      "genre": "explainer",
+      "case_sha256": "c6d32bf308da480d753e9d4da502b9b677a50fb49c6354c382655fea10ec3b53",
+      "source_sha256": "0fb15391b4f696bf91a56ec6a0b7f8b07da00153cbd81737b4a6f69a6c70a445",
+      "fact_entries": 19
+    },
+    {
+      "case_id": "newsroom-held-science-expl-deep-sea-mining",
+      "path": "evals/newsroom/cases/newsroom-held-science-expl-deep-sea-mining.json",
+      "family_id": "fam-expl-dsm",
+      "area": "science",
+      "genre": "explainer",
+      "case_sha256": "9662265efe72b74671f180454513d32d80ecdf4d6e33891af31622e2b3fd4012",
+      "source_sha256": "a7eec0e0f6cfa758b3dc156529dd2134544303f28662b2bd92401d64fb9323fd",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-expl-enhanced-geothermal",
+      "path": "evals/newsroom/cases/newsroom-held-science-expl-enhanced-geothermal.json",
+      "family_id": "fam-expl-egs",
+      "area": "science",
+      "genre": "explainer",
+      "case_sha256": "7a38319ffd25c8e3eb117e804891a9b4c49b9fae5932313f32bb3c399c03a738",
+      "source_sha256": "7a2f7edf87a855cf2398210151456bcf8f5cb9478ccdce34b6a74ffeee9bf915",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-expl-ev-battery-fire",
+      "path": "evals/newsroom/cases/newsroom-held-science-expl-ev-battery-fire.json",
+      "family_id": "fam-expl-ev-fire",
+      "area": "science",
+      "genre": "explainer",
+      "case_sha256": "113311cf94e6b0d76a35f154d36ee7cf8941b222defa64f60dd45e373f4469da",
+      "source_sha256": "274b9a224b91fafca4db96e2be083574d2a6936e9f17ffb38a2f5566c89e587c",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-expl-fmri-limits",
+      "path": "evals/newsroom/cases/newsroom-held-science-expl-fmri-limits.json",
+      "family_id": "fam-expl-fmri",
+      "area": "science",
+      "genre": "explainer",
+      "case_sha256": "74a3267e63a99fe10c060c735cb8e91052ba2e1f59aced4077202cfbf4d7b697",
+      "source_sha256": "e5ffb806fae33d492d57be197b131d0fd5e9e82885df5c8d3cb6d03de3ff22f6",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-expl-fusion-basics",
+      "path": "evals/newsroom/cases/newsroom-held-science-expl-fusion-basics.json",
+      "family_id": "fam-expl-fusion",
+      "area": "science",
+      "genre": "explainer",
+      "case_sha256": "2bd9a93671336371d96cff546d72b08005614c966ee5a2e9dcf82b03d4f759d2",
+      "source_sha256": "99af5dd9c1919926d8c410697b7678888b6d850e05376d5c0c93d1820a54e497",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-expl-grid-frequency",
+      "path": "evals/newsroom/cases/newsroom-held-science-expl-grid-frequency.json",
+      "family_id": "fam-expl-grid",
+      "area": "science",
+      "genre": "explainer",
+      "case_sha256": "dfd4fa389cc5040204d224c100c970fb27a8631dfca6d53439dd3f58af47b777",
+      "source_sha256": "49d9400e7f8839ce11b7346b581ac43667eb7e25d3740389609364d747a6741f",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-expl-hydrogen-colors",
+      "path": "evals/newsroom/cases/newsroom-held-science-expl-hydrogen-colors.json",
+      "family_id": "fam-expl-h2-colors",
+      "area": "science",
+      "genre": "explainer",
+      "case_sha256": "fb33778b698453a69f900666fc2bc36fd055f34a324e8cf3954c4dd404d4c862",
+      "source_sha256": "41cb7174e5b3ca963c70b8f5c1f8a841dd040ce0f34e7b9f9f36f04c6e60d245",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-expl-mrna-platform",
+      "path": "evals/newsroom/cases/newsroom-held-science-expl-mrna-platform.json",
+      "family_id": "fam-expl-mrna",
+      "area": "science",
+      "genre": "explainer",
+      "case_sha256": "0df053aac2eaba85db3d0a030999ba2a585a27b8c038cf0d51579cc28d40bbcd",
+      "source_sha256": "c502ce9a1f65c70e0a4aef749937355dd7a88e3bde70e248afcb096f3b545070",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-expl-offshore-wind-grid",
+      "path": "evals/newsroom/cases/newsroom-held-science-expl-offshore-wind-grid.json",
+      "family_id": "fam-expl-wind-grid",
+      "area": "science",
+      "genre": "explainer",
+      "case_sha256": "fb8e80c25a2390d942cc8377e42623f6949f65bb5a723fd9e35e64932c8642a7",
+      "source_sha256": "012f1af27acd1dac8c80c9b562aeedfeeeb5faf13e0ca223689b0e1857449242",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-expl-quake-warning-how",
+      "path": "evals/newsroom/cases/newsroom-held-science-expl-quake-warning-how.json",
+      "family_id": "fam-expl-quake",
+      "area": "science",
+      "genre": "explainer",
+      "case_sha256": "91d95083ac3c62c682a139e352adbbbeec8ef89176737709c4688267e5f2441a",
+      "source_sha256": "7fa07ac4e6ca33f74d0a46bc1e680526d80d1dc8625ec1004f18bca86708c724",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-expl-rare-earth-critical",
+      "path": "evals/newsroom/cases/newsroom-held-science-expl-rare-earth-critical.json",
+      "family_id": "fam-expl-rare-earth",
+      "area": "science",
+      "genre": "explainer",
+      "case_sha256": "4cbe2c3387418d044a2a290af6f5aff11f31d94a11190e43aaceac26bcf4b1f0",
+      "source_sha256": "4ebf12b79b6f6ba77523d47c83594f9d4b87d9c8b0ea73318aa4a7b978368e3e",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-expl-sea-level-rise",
+      "path": "evals/newsroom/cases/newsroom-held-science-expl-sea-level-rise.json",
+      "family_id": "fam-expl-sea-level",
+      "area": "science",
+      "genre": "explainer",
+      "case_sha256": "d7c953bb43a84a53c74953bcd424e712354ee034a865b4669100bc71adf63227",
+      "source_sha256": "539c7501dc4fb1cfc35bf7dbfe95fe9a795535ab4386300780eb88f00982769d",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-expl-soil-carbon",
+      "path": "evals/newsroom/cases/newsroom-held-science-expl-soil-carbon.json",
+      "family_id": "fam-expl-soil-carbon",
+      "area": "science",
+      "genre": "explainer",
+      "case_sha256": "7bd3adbb96520b1693f362219283026a864bb02259b540a38dcb19537781654c",
+      "source_sha256": "67bf5bce72058ad1b4c928a7fe08ddf35d89a842b6287f19ad1d2d03678c9be2",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-expl-space-debris-risk",
+      "path": "evals/newsroom/cases/newsroom-held-science-expl-space-debris-risk.json",
+      "family_id": "fam-expl-debris-risk",
+      "area": "science",
+      "genre": "explainer",
+      "case_sha256": "03d3079de5feadee7a7d4122b607fd19e79833f3bdde4befd0cb09445bc65efa",
+      "source_sha256": "e3279c5ebee9febfd537161322b52c41c2008a3a3c942224496194b362be625b",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-expl-superconductors",
+      "path": "evals/newsroom/cases/newsroom-held-science-expl-superconductors.json",
+      "family_id": "fam-expl-superconductors",
+      "area": "science",
+      "genre": "explainer",
+      "case_sha256": "6aedf416ce03e5579e8bf8297814c4f5b9aa3bd0a8df004ebb75a3093738bf65",
+      "source_sha256": "4fc6f19800af54b836ee5f76fff43003a0372db8761e0212c1a5720b4d9f9c65",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-expl-urban-heat-island",
+      "path": "evals/newsroom/cases/newsroom-held-science-expl-urban-heat-island.json",
+      "family_id": "science-riverdale-cooling-program",
+      "area": "science",
+      "genre": "explainer",
+      "case_sha256": "4aaa82e2c366ce9977dc41eddf25802f9ba76797bbd73d4d76b8848d23aee220",
+      "source_sha256": "944b334d77cf4a7bfde30439a7fd2c30fb2d9b30f82e5094a47f24b706da32a0",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-expl-vaccine-cold-chain",
+      "path": "evals/newsroom/cases/newsroom-held-science-expl-vaccine-cold-chain.json",
+      "family_id": "fam-expl-cold-chain",
+      "area": "science",
+      "genre": "explainer",
+      "case_sha256": "fc58206836ab3e8cf8450c28b8a766e1a67b5d91ed363ead7f3b469c2bfad745",
+      "source_sha256": "2748a029baab4ae48cad860760eaf736a8ef32033266bd1004fa972d91cccec0",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-expl-weather-attribution",
+      "path": "evals/newsroom/cases/newsroom-held-science-expl-weather-attribution.json",
+      "family_id": "fam-expl-attribution",
+      "area": "science",
+      "genre": "explainer",
+      "case_sha256": "2a950fb9c7a20549ec3c2e608a71fc7591402587e9e9adae478ea9fb2b69fb94",
+      "source_sha256": "98f0cb40afd17b803c7188d767fff9ce659fbf806806d5ef29e2e846b75fccff",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-feat-antibiotic-pipeline",
+      "path": "evals/newsroom/cases/newsroom-held-science-feat-antibiotic-pipeline.json",
+      "family_id": "fam-feat-areteia",
+      "area": "science",
+      "genre": "feature",
+      "case_sha256": "8ac9c6f0cb9875a4548aaa0d076e00c3ce1c22595dc82eed3bd8c8c4cb004265",
+      "source_sha256": "9cb779fc47b9c2ad5fc6f3e018c15a16dd7ad1bcc80fde16fa8f0a229dc4b744",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-feat-aquifer-farming",
+      "path": "evals/newsroom/cases/newsroom-held-science-feat-aquifer-farming.json",
+      "family_id": "fam-feat-clearwater-aquifer",
+      "area": "science",
+      "genre": "feature",
+      "case_sha256": "b4d83efb74229f69519575c822f6148e7d6ff03fe2c41afaf01ab8d9b9511fd5",
+      "source_sha256": "aaa8dbf563d7d7f69d4b9d27d7092e65862585ecf34c8c0ee8917390162cf469",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-feat-aquifer-wells",
+      "path": "evals/newsroom/cases/newsroom-held-science-feat-aquifer-wells.json",
+      "family_id": "fam-feat-prairie-wells",
+      "area": "science",
+      "genre": "feature",
+      "case_sha256": "df7315603d907155bac3b605ca0cb2943e774668034230064c7a0eba75390051",
+      "source_sha256": "5bbfd14ccadb9cf3661d7d466aea5197232a98c138a8454dc6ae1c38dafa0d8d",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-feat-attribution-legal",
+      "path": "evals/newsroom/cases/newsroom-held-science-feat-attribution-legal.json",
+      "family_id": "fam-feat-eastport-lawsuit",
+      "area": "science",
+      "genre": "feature",
+      "case_sha256": "f2abc2c64194e9577054bf965b3373adaf97a04f81d79d7c17b12b0b210975ee",
+      "source_sha256": "88f6bac78b455a961816c8164e59be1da5a58ae43c8a5ae447a95ad35e81f0aa",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-feat-biosafety-whistleblower",
+      "path": "evals/newsroom/cases/newsroom-held-science-feat-biosafety-whistleblower.json",
+      "family_id": "fam-feat-northgate-whistle",
+      "area": "science",
+      "genre": "feature",
+      "case_sha256": "4b927c3901d25a869c3a2738995d90d21f65a287b31e11c2e330ab7493e561bf",
+      "source_sha256": "abc62beae1d189d0a06e14778c2772040d364b09180e4711ccd6be7c4217985f",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-feat-carbon-credit-buyers",
+      "path": "evals/newsroom/cases/newsroom-held-science-feat-carbon-credit-buyers.json",
+      "family_id": "science-protected-forest-credit-template",
+      "area": "science",
+      "genre": "feature",
+      "case_sha256": "cb6e2b15c7fba630daf152ccd6a24ba5e92e7901325c9a9b87f5a6b58aafbe1e",
+      "source_sha256": "0c0c4f881e61df83a33d06e247a569acb6dc5b9f704bb770a9b5025abedc99d8",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-feat-chip-fab-water",
+      "path": "evals/newsroom/cases/newsroom-held-science-feat-chip-fab-water.json",
+      "family_id": "fam-feat-nexus-water",
+      "area": "science",
+      "genre": "feature",
+      "case_sha256": "c2b08b686addef609a689ca33800d0c1c4f834dcace63ff20890441edf499e61",
+      "source_sha256": "2579c83bc040aba258cb076163168673e3058033cbc632d9e59122eddd3d0744",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-feat-crispr-access-gap",
+      "path": "evals/newsroom/cases/newsroom-held-science-feat-crispr-access-gap.json",
+      "family_id": "science-crispr-approval-access-template",
+      "area": "science",
+      "genre": "feature",
+      "case_sha256": "2e63338d00dad61956ae95d9333c888b5392da2eb5ff837a14001364f8b24e13",
+      "source_sha256": "3ac95dbc72c4e100796b3d934f254beaf28439dae8a5262b8621df0408ef4819",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-feat-dam-engineers",
+      "path": "evals/newsroom/cases/newsroom-held-science-feat-dam-engineers.json",
+      "family_id": "science-dam-asr-monitoring-template",
+      "area": "science",
+      "genre": "feature",
+      "case_sha256": "3714b20dbc7bbb9220e74bb982e0669dd26b787289f7e01754008b474dc10171",
+      "source_sha256": "46a3c5ed46db6e32efeb578c11e94a85ed94d28c896060d4dcdc639831c7c758",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-feat-dark-matter-lab",
+      "path": "evals/newsroom/cases/newsroom-held-science-feat-dark-matter-lab.json",
+      "family_id": "science-apex-dark-matter-program",
+      "area": "science",
+      "genre": "feature",
+      "case_sha256": "8e39166401937b23a044842593b5b1c0b678f3ae4a43c67e52d7f1fbdcf6b4a4",
+      "source_sha256": "d7f6f2c13c23a66e5a67ebcc7cea92ae02d997c09d463925605a493ad48aba2f",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-feat-debris-cleanup",
+      "path": "evals/newsroom/cases/newsroom-held-science-feat-debris-cleanup.json",
+      "family_id": "fam-feat-orbclear",
+      "area": "science",
+      "genre": "feature",
+      "case_sha256": "251e827415229fa16f73e85a11ea80eee07e9c4f12650c92074dca016ee7c5a8",
+      "source_sha256": "f212e8281e4f974843abb164c0312cd12331b80d0441377388c462a996b905b2",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-feat-flood-barrier-tradeoff",
+      "path": "evals/newsroom/cases/newsroom-held-science-feat-flood-barrier-tradeoff.json",
+      "family_id": "fam-feat-caldwell-barrier",
+      "area": "science",
+      "genre": "feature",
+      "case_sha256": "bb66914dad5eed4cedf0f2cbe85da1c176ef0a45ab4bda4843d5bc03143d371d",
+      "source_sha256": "ecceb09930ad582a12918306244af12f36812248b92a53001c38118faed2c1f8",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-feat-fusion-workforce",
+      "path": "evals/newsroom/cases/newsroom-held-science-feat-fusion-workforce.json",
+      "family_id": "fam-feat-fusion-workforce",
+      "area": "science",
+      "genre": "feature",
+      "case_sha256": "6bfb0520d1c580a149903a3c2a39b96909f31d3d961b70352724e4138399d128",
+      "source_sha256": "7a91b0645a3cc6b1cfdfb0236626dfd49613bfc63c87d67a84b1652e22dec425",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-feat-geothermal-drilling",
+      "path": "evals/newsroom/cases/newsroom-held-science-feat-geothermal-drilling.json",
+      "family_id": "fam-feat-deepheat",
+      "area": "science",
+      "genre": "feature",
+      "case_sha256": "36ba98eba6462c784640d59b59435bca620fe9b711d5ec94da2298bc89005cbf",
+      "source_sha256": "3735fecaa943b4d64e692e33d8071498a13b9233baf105879de1e4eb5770c561",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-feat-microplastic-watershed",
+      "path": "evals/newsroom/cases/newsroom-held-science-feat-microplastic-watershed.json",
+      "family_id": "fam-feat-clearwater-river",
+      "area": "science",
+      "genre": "feature",
+      "case_sha256": "70674197c27e0fb39b830bc3c3f0c4e0784981c336ccf00601776f1a002e49e8",
+      "source_sha256": "60efb36d4af078905839c628697ed828b70b1dc8603b0967231951e2cd6f550b",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-feat-mrna-sovereignty",
+      "path": "evals/newsroom/cases/newsroom-held-science-feat-mrna-sovereignty.json",
+      "family_id": "fam-feat-mariva",
+      "area": "science",
+      "genre": "feature",
+      "case_sha256": "60c7c7449fa1b23bd15d8cf29086988f04641e9bd59f87381acd4eb4017513d3",
+      "source_sha256": "e39c217fe23217c40f6d8f749b615cbd542c96d857b31832fd07c1e6a7e591f3",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-feat-neuroimaging-flaw",
+      "path": "evals/newsroom/cases/newsroom-held-science-feat-neuroimaging-flaw.json",
+      "family_id": "fam-feat-mctical-flaw",
+      "area": "science",
+      "genre": "feature",
+      "case_sha256": "470d06689836c75fa003da0a7e9d709154ffb26d62212b79dbd743169d759673",
+      "source_sha256": "43d99d7cdf3c3191eb84571b0a88a40a4f6c25037e9d8ec9b146cebeb06a7801",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-feat-rare-earth-recycling",
+      "path": "evals/newsroom/cases/newsroom-held-science-feat-rare-earth-recycling.json",
+      "family_id": "fam-feat-westfield-recycling",
+      "area": "science",
+      "genre": "feature",
+      "case_sha256": "0ba8bc8d4db0d2373a69661a547f4d28dbd9b0707cd578997cd9c04edce77688",
+      "source_sha256": "427dfff651f38ddc66cce343106f28ae6b1577012db6292f2099cc81a6d3479e",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-feat-soil-carbon-audit",
+      "path": "evals/newsroom/cases/newsroom-held-science-feat-soil-carbon-audit.json",
+      "family_id": "fam-feat-sandover-soil",
+      "area": "science",
+      "genre": "feature",
+      "case_sha256": "34203dadee67f63ea5be6b7ce9dc469869b50d6751257e6312447fecd41e41a7",
+      "source_sha256": "b9d473bcd7aedb85c3b5217b271671e987bc3a622e296d0d0496c51f536bf652",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-feat-supercomputer-research",
+      "path": "evals/newsroom/cases/newsroom-held-science-feat-supercomputer-research.json",
+      "family_id": "fam-feat-prism1",
+      "area": "science",
+      "genre": "feature",
+      "case_sha256": "4dfa4da10895f16daba7c1012ee32ea75e18b76532d214c2c5e753a2f6dd4f2d",
+      "source_sha256": "01550c3940550067c70178afea31d2403c73796152567c588c3689971ac4e82a",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-feat-tunnel-decision",
+      "path": "evals/newsroom/cases/newsroom-held-science-feat-tunnel-decision.json",
+      "family_id": "fam-feat-redcliff-tunnel",
+      "area": "science",
+      "genre": "feature",
+      "case_sha256": "a8c781435f77a9b677316351370cdd5b47a06b86e5e4899259776525d498a5a1",
+      "source_sha256": "dced1a7ccc838c75b7d19b38d6a2c8865b13be5ab8b0884cf8213d4d218d1ca9",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-feat-urban-cooling",
+      "path": "evals/newsroom/cases/newsroom-held-science-feat-urban-cooling.json",
+      "family_id": "science-riverdale-cooling-program",
+      "area": "science",
+      "genre": "feature",
+      "case_sha256": "b35dd3a8f0af97f9de688a425cb717768e8b0ed19c4c5b11a841516f604ea0b9",
+      "source_sha256": "f35bfa38da0800876aef48dcad5f0f369dc1096640dc5723eb5899a761abc600",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-feat-waste-repository-town",
+      "path": "evals/newsroom/cases/newsroom-held-science-feat-waste-repository-town.json",
+      "family_id": "fam-feat-ridgemont",
+      "area": "science",
+      "genre": "feature",
+      "case_sha256": "c455070455ef796a20ff3af3a3fa1fa14a3f9657bb7c05dc0823df1c98be4df8",
+      "source_sha256": "416bc1d9c5e24e47dbde64786143c959a0eedd1838e83edb18b4e8e1529a0078",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-feat-wind-farm-fishing",
+      "path": "evals/newsroom/cases/newsroom-held-science-feat-wind-farm-fishing.json",
+      "family_id": "fam-feat-eastport-fishing",
+      "area": "science",
+      "genre": "feature",
+      "case_sha256": "e4e3f37f810a9e012c4793e0b3b134b2a6663fb9d3fa05339c5ce9894be761de",
+      "source_sha256": "de1022ee64288342ed111daf25feaf22f1b95181256d767a77795df522d8087b",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-flood-barrier-storm-test",
+      "path": "evals/newsroom/cases/newsroom-held-science-flood-barrier-storm-test.json",
+      "family_id": "fam-harrington-barrier",
+      "area": "science",
+      "genre": "news",
+      "case_sha256": "00ded97a89aaa180cde34f30fe798f0a6beb399a02cdde161e2e72be2013d459",
+      "source_sha256": "951c3f5b2cdb6077bb6c4b61cec3f99b90cbc56525033192b0a3a35fc9c0b090",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-fusion-permit-decision",
+      "path": "evals/newsroom/cases/newsroom-held-science-fusion-permit-decision.json",
+      "family_id": "fam-fusion-permit",
+      "area": "science",
+      "genre": "news",
+      "case_sha256": "b0c9d5a1519d076feea3a5c3d0ae4c47fb5cc95be81daf80792612414af564be",
+      "source_sha256": "18e9639c92ef45852c555388bc0af493e30720984b939225c75242ea6a3ff88e",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-grid-cascade-probe",
+      "path": "evals/newsroom/cases/newsroom-held-science-grid-cascade-probe.json",
+      "family_id": "fam-grid-cascade",
+      "area": "science",
+      "genre": "news",
+      "case_sha256": "8d394deb5c9a0983569abeaa80937d2b6efbf2a9b7419fcf53e391ffbe6dd4d8",
+      "source_sha256": "d8a00348f6361148f30d1484b378fe8b085782343686d2ea31bc5b8f24c225a7",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-hydrogen-pipeline-approved",
+      "path": "evals/newsroom/cases/newsroom-held-science-hydrogen-pipeline-approved.json",
+      "family_id": "fam-h2-pipeline",
+      "area": "science",
+      "genre": "news",
+      "case_sha256": "31b7336cbd053ec43bd138cdcb489917c41c558772d07dfbcdc3b9d868574c1d",
+      "source_sha256": "f9b41d49d4de36aea8e18a585efa4c648916403e51c58407d4030241081ff1ff",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-microplastic-tap-water",
+      "path": "evals/newsroom/cases/newsroom-held-science-microplastic-tap-water.json",
+      "family_id": "fam-tap-microplastic",
+      "area": "science",
+      "genre": "news",
+      "case_sha256": "74ef7706f86b1dc4a4714be47f4e062f3f47d0aedad0ec22546d76735f167d38",
+      "source_sha256": "28c4fca7106e8f8270fb212297e3aa110a02e689823d79731c39261a05624388",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-mrna-factory-certified",
+      "path": "evals/newsroom/cases/newsroom-held-science-mrna-factory-certified.json",
+      "family_id": "fam-mrna-factory",
+      "area": "science",
+      "genre": "news",
+      "case_sha256": "547a6133e1b20db8c906ce76e554da9e350a35919d3322d62b0b4e23e56f8e5a",
+      "source_sha256": "995347d7c9891f4d78c33dc665b6ef7cf389d8d1cad235df45ec1f1d497a54b6",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-nuclear-waste-approval",
+      "path": "evals/newsroom/cases/newsroom-held-science-nuclear-waste-approval.json",
+      "family_id": "fam-nuclear-waste",
+      "area": "science",
+      "genre": "news",
+      "case_sha256": "406e788713ee4427bb6976c8ccd1a376a06bc739a10d6ed5b96d4207da395595",
+      "source_sha256": "df6ef29e2a5aac273c94765bbcc63566d4eec78bc8f41cb7197bffaf12c00230",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-offshore-wind-contract",
+      "path": "evals/newsroom/cases/newsroom-held-science-offshore-wind-contract.json",
+      "family_id": "fam-wind-contract",
+      "area": "science",
+      "genre": "news",
+      "case_sha256": "c1b75a31b0030680a0ff6a309ac4f211cfe0ae87b85422e08288e22807bbaefe",
+      "source_sha256": "06b6a1274f324ef185ddcc878e446e7ddb0eff09d667f169bbb41c4880553415",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-rail-derailment-findings",
+      "path": "evals/newsroom/cases/newsroom-held-science-rail-derailment-findings.json",
+      "family_id": "fam-rail-derail",
+      "area": "science",
+      "genre": "news",
+      "case_sha256": "2780761ef15758912a27e7f9453045e4d5fcf308cc0ce10ef33c9b146d7782e0",
+      "source_sha256": "0612c880c950fc56951bc94b49dee3938bcfcdd451a1ffe9963bd546bf5cbc64",
+      "fact_entries": 19
+    },
+    {
+      "case_id": "newsroom-held-science-rare-earth-permit-denied",
+      "path": "evals/newsroom/cases/newsroom-held-science-rare-earth-permit-denied.json",
+      "family_id": "fam-rare-earth-permit",
+      "area": "science",
+      "genre": "news",
+      "case_sha256": "c1b9962e093ff97d2e56d3e971a19bfdae4b2f79e5f1aa732cd6674e6b971623",
+      "source_sha256": "12fce626fe43122e4221d81733fbff18f7298fb9b8c09cc515a50c67625fdbd5",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-rural-fiber-complete",
+      "path": "evals/newsroom/cases/newsroom-held-science-rural-fiber-complete.json",
+      "family_id": "fam-fiber-rollout",
+      "area": "science",
+      "genre": "news",
+      "case_sha256": "787e0dc89c0c1de129aeede841051419ba03daaed343101edd738e645daad99f",
+      "source_sha256": "5daf7db9124aa58c40a94badbc44302a177fba759772fe5b70647a3c7199b99d",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-satellite-debris-collision",
+      "path": "evals/newsroom/cases/newsroom-held-science-satellite-debris-collision.json",
+      "family_id": "fam-debris-collision",
+      "area": "science",
+      "genre": "news",
+      "case_sha256": "eb02e7a053717b9384931859f8c26daaedb096a356d4e2c1ab04d12d9476225a",
+      "source_sha256": "1b037b6f9cb15878cf76c50bc6beb08e81b166ded9844f825b5dfe08bc52da33",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-seismic-warning-activated",
+      "path": "evals/newsroom/cases/newsroom-held-science-seismic-warning-activated.json",
+      "family_id": "fam-seismic-alert",
+      "area": "science",
+      "genre": "news",
+      "case_sha256": "b0e241048519d1607085a65a697c3fd0e3313cdfe68455f3a332ef71c2e74047",
+      "source_sha256": "bffffee4abd6805d4dccb3714a930d9c5e793d95159b0822f24a77867f3aabfa",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-supercomputer-launched",
+      "path": "evals/newsroom/cases/newsroom-held-science-supercomputer-launched.json",
+      "family_id": "fam-helios2",
+      "area": "science",
+      "genre": "news",
+      "case_sha256": "357d7d1c77322ee1e458c5e0519b125e066fb4b76701f384191d29808e0644a7",
+      "source_sha256": "3a9776553bee9f1b5b3ef9f354ab511a23c96de56b684f324f984c0f48849184",
+      "fact_entries": 20
+    },
+    {
+      "case_id": "newsroom-held-science-tunnel-fault-delay",
+      "path": "evals/newsroom/cases/newsroom-held-science-tunnel-fault-delay.json",
+      "family_id": "fam-tunnel-fault",
+      "area": "science",
+      "genre": "news",
+      "case_sha256": "543f291497dc638d7c5bcaa4703220694d6790552f27f7d69362fd6b48065730",
+      "source_sha256": "77d6429524dcad28c12862ec9586485c55f8dbff8d4bc9e47e78eeefa36824da",
+      "fact_entries": 20
+    }
+  ],
+  "families": [
+    {
+      "family_id": "business-alder-rill-small-credit",
+      "case_ids": [
+        "newsroom-held-business-feature-village-credit-book"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "business-alder-span-counter-consolidation",
+      "case_ids": [
+        "newsroom-held-business-news-bank-counters"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "business-aldercove-assessment-levy",
+      "case_ids": [
+        "newsroom-held-business-explain-assessment-tax-rate"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "business-ambercourt-temporary-repair-shops",
+      "case_ids": [
+        "newsroom-held-business-feature-mall-repair-popups"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "business-arden-demand-metering",
+      "case_ids": [
+        "newsroom-held-business-explain-peak-demand-bill"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "business-ashcombe-water-tariff",
+      "case_ids": [
+        "newsroom-held-business-explain-commercial-water-bills"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "business-aster-fold-costume-loans",
+      "case_ids": [
+        "newsroom-held-business-feature-theater-costume-bank"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "business-bellwether-labor-series",
+      "case_ids": [
+        "newsroom-held-business-explain-jobs-and-unemployment"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "business-bracken-spur-training-design",
+      "case_ids": [
+        "newsroom-held-business-feature-deaf-factory-trainer"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "business-bramble-produce-price-chain",
+      "case_ids": [
+        "newsroom-held-business-explain-wholesale-retail-gap"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "business-brindle-furnace-transition",
+      "case_ids": [
+        "newsroom-held-business-news-glass-furnace"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "business-celandine-desk-booth-capacity",
+      "case_ids": [
+        "newsroom-held-business-feature-shared-remote-workroom"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "business-copper-wren-charge-allocation",
+      "case_ids": [
+        "newsroom-held-business-explain-service-charge-wages"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "business-cormere-franchise-store",
+      "case_ids": [
+        "newsroom-held-business-explain-franchise-ownership"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "business-corven-apprentice-pay",
+      "case_ids": [
+        "newsroom-held-business-explain-apprentice-paid-class"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "business-delo-loop-polymer-batch",
+      "case_ids": [
+        "newsroom-held-business-feature-fishing-net-rope"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "business-elmward-profit-pool",
+      "case_ids": [
+        "newsroom-held-business-explain-profit-share-not-stock"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "business-fen-orchard-yield-cover",
+      "case_ids": [
+        "newsroom-held-business-explain-crop-cover-market-loss"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "business-fenwick-course-access",
+      "case_ids": [
+        "newsroom-held-business-explain-textbook-access-code"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "business-fernwick-ticket-display",
+      "case_ids": [
+        "newsroom-held-business-explain-ticket-fee-display"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "business-five-lantern-token-prototype",
+      "case_ids": [
+        "newsroom-held-business-feature-accessible-game-components"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "business-flint-roof-cold-chain",
+      "case_ids": [
+        "newsroom-held-business-feature-rooftop-mushroom-chain"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "business-foldline-seasonal-map-edition",
+      "case_ids": [
+        "newsroom-held-business-feature-paper-map-updates"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "business-foldstage-freelance-bookings",
+      "case_ids": [
+        "newsroom-held-business-feature-portable-venue-crew"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "business-grey-orchard-postevent-sorting",
+      "case_ids": [
+        "newsroom-held-business-feature-festival-sorting-crew"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "business-hallow-wholesale-rota",
+      "case_ids": [
+        "newsroom-held-business-news-four-day-rota"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "business-hawthorn-receivable-sale",
+      "case_ids": [
+        "newsroom-held-business-explain-invoice-factoring"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "business-hearthline-service-plan-cutoff",
+      "case_ids": [
+        "newsroom-held-business-news-warranty-sales-stop"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "business-juniper-membership-redemption",
+      "case_ids": [
+        "newsroom-held-business-explain-music-membership"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "business-kestrel-market-fee-vote",
+      "case_ids": [
+        "newsroom-held-business-news-market-fees"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "business-lantern-shift-care-opening",
+      "case_ids": [
+        "newsroom-held-business-news-night-childcare"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "business-larch-food-rebate-vote",
+      "case_ids": [
+        "newsroom-held-business-news-coop-price-vote"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "business-lenwick-studio-merger",
+      "case_ids": [
+        "newsroom-held-business-news-studio-program-merger"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "business-loom-lantern-audio-pilot",
+      "case_ids": [
+        "newsroom-held-business-feature-small-press-audio"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "business-low-ember-night-production",
+      "case_ids": [
+        "newsroom-held-business-feature-night-bakery-pickup"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "business-marrow-festival-stage-cancellation",
+      "case_ids": [
+        "newsroom-held-business-news-festival-night-stage"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "business-marshglen-package-size",
+      "case_ids": [
+        "newsroom-held-business-explain-smaller-packages"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "business-merefold-powder-suspension",
+      "case_ids": [
+        "newsroom-held-business-news-dairy-powder-line"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "business-merrin-pattern-handover",
+      "case_ids": [
+        "newsroom-held-business-feature-patternmaker-succession"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "business-moorfin-savings-tiers",
+      "case_ids": [
+        "newsroom-held-business-explain-tiered-savings-rate"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "business-moorlace-fiber-crossing",
+      "case_ids": [
+        "newsroom-held-business-news-broadband-bridge"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "business-morrow-cupboard-donation-flow",
+      "case_ids": [
+        "newsroom-held-business-feature-thrift-sorting-cost"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "business-nettleford-instrument-workshop",
+      "case_ids": [
+        "newsroom-held-business-feature-college-instrument-bench"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "business-north-loom-role-transition",
+      "case_ids": [
+        "newsroom-held-business-explain-warehouse-robot-jobs"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "business-orlan-endowment-budget",
+      "case_ids": [
+        "newsroom-held-business-explain-endowment-operating-gap"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "business-ospen-cooperative-acquisition",
+      "case_ids": [
+        "newsroom-held-business-news-worker-buyout"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "business-pellwren-calibration-service",
+      "case_ids": [
+        "newsroom-held-business-feature-sensor-calibration-route"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "business-pine-journal-print-contract",
+      "case_ids": [
+        "newsroom-held-business-news-printer-deadlines"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "business-plain-bower-memorial-proofs",
+      "case_ids": [
+        "newsroom-held-business-feature-memorial-printing"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "business-plover-reed-flower-channels",
+      "case_ids": [
+        "newsroom-held-business-feature-flower-standing-orders"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "business-reedmile-rural-contracting",
+      "case_ids": [
+        "newsroom-held-business-news-rural-delivery-contracts"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "business-relay-yard-reuse-records",
+      "case_ids": [
+        "newsroom-held-business-feature-salvage-paperwork"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "business-rillstone-commute-connection",
+      "case_ids": [
+        "newsroom-held-business-feature-factory-bus-connection"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "business-rivermoth-overdue-policy",
+      "case_ids": [
+        "newsroom-held-business-news-library-fine-amnesty"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "business-rookmeadow-hangar-drainage",
+      "case_ids": [
+        "newsroom-held-business-news-hangar-delay"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "business-sable-campus-pass-agreement",
+      "case_ids": [
+        "newsroom-held-business-news-campus-bus-pass"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "business-sedge-paper-water-reuse",
+      "case_ids": [
+        "newsroom-held-business-news-mill-water-loop"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "business-selwick-early-food-counter",
+      "case_ids": [
+        "newsroom-held-business-feature-ferry-food-break"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "business-south-nacre-device-bids",
+      "case_ids": [
+        "newsroom-held-business-explain-school-laptop-lease"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "business-stitch-hour-labor-exchange",
+      "case_ids": [
+        "newsroom-held-business-feature-mending-time-exchange"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "business-talver-digital-loan-licenses",
+      "case_ids": [
+        "newsroom-held-business-explain-library-digital-queue"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "business-ternlight-live-caption-tour",
+      "case_ids": [
+        "newsroom-held-business-feature-touring-captions"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "business-thornhaven-stage-application",
+      "case_ids": [
+        "newsroom-held-business-news-film-crew-pledge"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "business-threadgate-opening-pay",
+      "case_ids": [
+        "newsroom-held-business-news-paid-opening-work"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "business-threadword-review-market",
+      "case_ids": [
+        "newsroom-held-business-feature-translation-review-work"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "business-vellum-step-return-options",
+      "case_ids": [
+        "newsroom-held-business-explain-return-shipping-choices"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "business-vesper-grain-order-roster",
+      "case_ids": [
+        "newsroom-held-business-news-grain-terminal-hours"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "business-wayfern-remittance-price",
+      "case_ids": [
+        "newsroom-held-business-news-transfer-fee-cut"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "business-wickmere-roof-retention",
+      "case_ids": [
+        "newsroom-held-business-explain-construction-retainage"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "business-willow-splice-fuel-index",
+      "case_ids": [
+        "newsroom-held-business-explain-freight-fuel-lag"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "business-wren-coast-room-inventory",
+      "case_ids": [
+        "newsroom-held-business-explain-hotel-occupancy-denominator"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "business-wrenstack-mixed-book-orders",
+      "case_ids": [
+        "newsroom-held-business-news-book-order-threshold"
+      ],
+      "areas": [
+        "business"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "civic-address-number-gaps",
+      "case_ids": [
+        "newsroom-held-civic-address-number-gaps"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "civic-afterschool-bus-launch",
+      "case_ids": [
+        "newsroom-held-civic-afterschool-bus-launch"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "civic-alley-maintenance-responsibility",
+      "case_ids": [
+        "newsroom-held-civic-alley-maintenance-responsibility"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "civic-allotment-water-rotation",
+      "case_ids": [
+        "newsroom-held-civic-allotment-water-rotation"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "civic-anonymous-arts-grant-review",
+      "case_ids": [
+        "newsroom-held-civic-anonymous-arts-grant-review"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "civic-below-market-housing-definition",
+      "case_ids": [
+        "newsroom-held-civic-below-market-housing-definition"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "civic-broadband-build-status",
+      "case_ids": [
+        "newsroom-held-civic-broadband-build-status"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "civic-cemetery-map-contract",
+      "case_ids": [
+        "newsroom-held-civic-cemetery-map-contract"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "civic-choir-family-rehearsal-space",
+      "case_ids": [
+        "newsroom-held-civic-choir-family-rehearsal-space"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "civic-cinema-projection-volunteers",
+      "case_ids": [
+        "newsroom-held-civic-cinema-projection-volunteers"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "civic-city-archive-relocation",
+      "case_ids": [
+        "newsroom-held-civic-city-archive-relocation"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "civic-community-cookbook-kitchen",
+      "case_ids": [
+        "newsroom-held-civic-community-cookbook-kitchen"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "civic-community-fridge-replacement",
+      "case_ids": [
+        "newsroom-held-civic-community-fridge-replacement"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "civic-community-observation-records",
+      "case_ids": [
+        "newsroom-held-civic-backyard-weather-observers",
+        "newsroom-held-civic-volunteer-stream-records"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "civic-community-radio-move",
+      "case_ids": [
+        "newsroom-held-civic-community-radio-move"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "civic-community-seed-catalog",
+      "case_ids": [
+        "newsroom-held-civic-community-seed-catalog"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "civic-compostable-bag-rules",
+      "case_ids": [
+        "newsroom-held-civic-compostable-bag-rules"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "civic-court-navigation-desk",
+      "case_ids": [
+        "newsroom-held-civic-court-navigation-desk"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "civic-curb-ramp-priorities",
+      "case_ids": [
+        "newsroom-held-civic-curb-ramp-priorities"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "civic-depot-evening-class",
+      "case_ids": [
+        "newsroom-held-civic-depot-evening-class"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "civic-drain-adoption-neighbors",
+      "case_ids": [
+        "newsroom-held-civic-drain-adoption-neighbors"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "civic-drainage-district-merger",
+      "case_ids": [
+        "newsroom-held-civic-drainage-district-merger"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "civic-electric-bus-charging-sequence",
+      "case_ids": [
+        "newsroom-held-civic-electric-bus-charging-sequence"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "civic-evening-waste-pilot",
+      "case_ids": [
+        "newsroom-held-civic-evening-waste-pilot"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "civic-farm-surplus-dispatch",
+      "case_ids": [
+        "newsroom-held-civic-farm-surplus-dispatch"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "civic-fenced-ballfield-opening",
+      "case_ids": [
+        "newsroom-held-civic-fenced-ballfield-opening"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "civic-floodgate-decisions",
+      "case_ids": [
+        "newsroom-held-civic-floodgate-decisions"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "civic-floodplain-parking-purchase",
+      "case_ids": [
+        "newsroom-held-civic-floodplain-parking-purchase"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "civic-grandparents-story-hour",
+      "case_ids": [
+        "newsroom-held-civic-grandparents-story-hour"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "civic-grocery-patronage-return",
+      "case_ids": [
+        "newsroom-held-civic-grocery-patronage-return"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "civic-grocery-post-counter",
+      "case_ids": [
+        "newsroom-held-civic-grocery-post-counter"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "civic-land-trust-resale-formula",
+      "case_ids": [
+        "newsroom-held-civic-land-trust-resale-formula"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "civic-last-public-payphone",
+      "case_ids": [
+        "newsroom-held-civic-last-public-payphone"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "civic-laundromat-noticeboard",
+      "case_ids": [
+        "newsroom-held-civic-laundromat-noticeboard"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "civic-library-book-reconsideration",
+      "case_ids": [
+        "newsroom-held-civic-library-book-reconsideration"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "civic-library-return-lockers",
+      "case_ids": [
+        "newsroom-held-civic-library-return-lockers"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "civic-market-dawn-porters",
+      "case_ids": [
+        "newsroom-held-civic-market-dawn-porters"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "civic-market-electricity-project",
+      "case_ids": [
+        "newsroom-held-civic-market-electricity-project"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "civic-market-voucher-launch",
+      "case_ids": [
+        "newsroom-held-civic-market-voucher-launch"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "civic-motel-housing-purchase",
+      "case_ids": [
+        "newsroom-held-civic-motel-housing-purchase"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "civic-multilingual-service-desk",
+      "case_ids": [
+        "newsroom-held-civic-multilingual-service-desk"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "civic-municipal-tree-nursery",
+      "case_ids": [
+        "newsroom-held-civic-municipal-tree-nursery"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "civic-neighborhood-mural-maintenance",
+      "case_ids": [
+        "newsroom-held-civic-neighborhood-mural-maintenance"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "civic-odor-complaint-investigation",
+      "case_ids": [
+        "newsroom-held-civic-odor-complaint-investigation"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "civic-permit-parking-extension",
+      "case_ids": [
+        "newsroom-held-civic-permit-parking-extension"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "civic-playground-surface-choice",
+      "case_ids": [
+        "newsroom-held-civic-playground-surface-choice"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "civic-pottery-test-shard-archive",
+      "case_ids": [
+        "newsroom-held-civic-pottery-test-shard-archive"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "civic-public-bench-workshop",
+      "case_ids": [
+        "newsroom-held-civic-public-bench-workshop"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "civic-public-chess-tables",
+      "case_ids": [
+        "newsroom-held-civic-public-chess-tables"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "civic-public-orchard-harvest",
+      "case_ids": [
+        "newsroom-held-civic-public-orchard-harvest"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "civic-public-toilet-caretakers",
+      "case_ids": [
+        "newsroom-held-civic-public-toilet-caretakers"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "civic-raised-school-crossings",
+      "case_ids": [
+        "newsroom-held-civic-raised-school-crossings"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "civic-retrofit-temporary-moves",
+      "case_ids": [
+        "newsroom-held-civic-retrofit-temporary-moves"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "civic-rink-winter-conversion",
+      "case_ids": [
+        "newsroom-held-civic-rink-winter-conversion"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "civic-rooftop-clotheslines",
+      "case_ids": [
+        "newsroom-held-civic-rooftop-clotheslines"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "civic-school-soundwalk-map",
+      "case_ids": [
+        "newsroom-held-civic-school-soundwalk-map"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "civic-school-zone-proposal",
+      "case_ids": [
+        "newsroom-held-civic-school-zone-proposal"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "civic-shared-solar-allocation",
+      "case_ids": [
+        "newsroom-held-civic-shared-solar-allocation"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "civic-siren-test-schedule",
+      "case_ids": [
+        "newsroom-held-civic-siren-test-schedule"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "civic-small-shops-shared-orders",
+      "case_ids": [
+        "newsroom-held-civic-small-shops-shared-orders"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "civic-snow-clearance-contract",
+      "case_ids": [
+        "newsroom-held-civic-snow-clearance-contract"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "civic-station-piano-stewards",
+      "case_ids": [
+        "newsroom-held-civic-station-piano-stewards"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "civic-street-tree-review",
+      "case_ids": [
+        "newsroom-held-civic-street-tree-review"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "civic-surplus-furniture-disposal",
+      "case_ids": [
+        "newsroom-held-civic-surplus-furniture-disposal"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "civic-temporary-road-repairs",
+      "case_ids": [
+        "newsroom-held-civic-temporary-road-repairs"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "civic-temporary-shop-leases",
+      "case_ids": [
+        "newsroom-held-civic-temporary-shop-leases"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "civic-unclaimed-bicycle-process",
+      "case_ids": [
+        "newsroom-held-civic-unclaimed-bicycle-process"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "civic-water-bill-fixed-charges",
+      "case_ids": [
+        "newsroom-held-civic-water-bill-fixed-charges"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "civic-water-leak-alerts",
+      "case_ids": [
+        "newsroom-held-civic-water-leak-alerts"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "civic-weekly-paper-delivery-round",
+      "case_ids": [
+        "newsroom-held-civic-weekly-paper-delivery-round"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "civic-womens-boat-workshop",
+      "case_ids": [
+        "newsroom-held-civic-womens-boat-workshop"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "civic-youth-budget-awards",
+      "case_ids": [
+        "newsroom-held-civic-youth-budget-awards"
+      ],
+      "areas": [
+        "civic"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "fam-antibiotic-trial",
+      "case_ids": [
+        "newsroom-held-science-antibiotic-trial-halted"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "fam-bsl4-breach",
+      "case_ids": [
+        "newsroom-held-science-biosafety-breach"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "fam-debris-collision",
+      "case_ids": [
+        "newsroom-held-science-satellite-debris-collision"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "fam-ev-recall",
+      "case_ids": [
+        "newsroom-held-science-ev-battery-recall"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "fam-expl-abx-resist",
+      "case_ids": [
+        "newsroom-held-science-expl-antibiotic-resistance"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "fam-expl-attribution",
+      "case_ids": [
+        "newsroom-held-science-expl-weather-attribution"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "fam-expl-ccs",
+      "case_ids": [
+        "newsroom-held-science-expl-carbon-capture"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "fam-expl-chip-fab",
+      "case_ids": [
+        "newsroom-held-science-expl-chip-fab"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "fam-expl-cold-chain",
+      "case_ids": [
+        "newsroom-held-science-expl-vaccine-cold-chain"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "fam-expl-crispr",
+      "case_ids": [
+        "newsroom-held-science-expl-crispr-editing"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "fam-expl-dam",
+      "case_ids": [
+        "newsroom-held-science-expl-dam-inspection"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "fam-expl-debris-risk",
+      "case_ids": [
+        "newsroom-held-science-expl-space-debris-risk"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "fam-expl-dsm",
+      "case_ids": [
+        "newsroom-held-science-expl-deep-sea-mining"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "fam-expl-egs",
+      "case_ids": [
+        "newsroom-held-science-expl-enhanced-geothermal"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "fam-expl-ev-fire",
+      "case_ids": [
+        "newsroom-held-science-expl-ev-battery-fire"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "fam-expl-fmri",
+      "case_ids": [
+        "newsroom-held-science-expl-fmri-limits"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "fam-expl-fusion",
+      "case_ids": [
+        "newsroom-held-science-expl-fusion-basics"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "fam-expl-grid",
+      "case_ids": [
+        "newsroom-held-science-expl-grid-frequency"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "fam-expl-h2-colors",
+      "case_ids": [
+        "newsroom-held-science-expl-hydrogen-colors"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "fam-expl-mrna",
+      "case_ids": [
+        "newsroom-held-science-expl-mrna-platform"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "fam-expl-quake",
+      "case_ids": [
+        "newsroom-held-science-expl-quake-warning-how"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "fam-expl-rare-earth",
+      "case_ids": [
+        "newsroom-held-science-expl-rare-earth-critical"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "fam-expl-sea-level",
+      "case_ids": [
+        "newsroom-held-science-expl-sea-level-rise"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "fam-expl-soil-carbon",
+      "case_ids": [
+        "newsroom-held-science-expl-soil-carbon"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "fam-expl-superconductors",
+      "case_ids": [
+        "newsroom-held-science-expl-superconductors"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "fam-expl-wind-grid",
+      "case_ids": [
+        "newsroom-held-science-expl-offshore-wind-grid"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "explainer"
+      ]
+    },
+    {
+      "family_id": "fam-feat-areteia",
+      "case_ids": [
+        "newsroom-held-science-feat-antibiotic-pipeline"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "fam-feat-caldwell-barrier",
+      "case_ids": [
+        "newsroom-held-science-feat-flood-barrier-tradeoff"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "fam-feat-clearwater-aquifer",
+      "case_ids": [
+        "newsroom-held-science-feat-aquifer-farming"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "fam-feat-clearwater-river",
+      "case_ids": [
+        "newsroom-held-science-feat-microplastic-watershed"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "fam-feat-deepheat",
+      "case_ids": [
+        "newsroom-held-science-feat-geothermal-drilling"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "fam-feat-eastport-fishing",
+      "case_ids": [
+        "newsroom-held-science-feat-wind-farm-fishing"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "fam-feat-eastport-lawsuit",
+      "case_ids": [
+        "newsroom-held-science-feat-attribution-legal"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "fam-feat-fusion-workforce",
+      "case_ids": [
+        "newsroom-held-science-feat-fusion-workforce"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "fam-feat-mariva",
+      "case_ids": [
+        "newsroom-held-science-feat-mrna-sovereignty"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "fam-feat-mctical-flaw",
+      "case_ids": [
+        "newsroom-held-science-feat-neuroimaging-flaw"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "fam-feat-nexus-water",
+      "case_ids": [
+        "newsroom-held-science-feat-chip-fab-water"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "fam-feat-northgate-whistle",
+      "case_ids": [
+        "newsroom-held-science-feat-biosafety-whistleblower"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "fam-feat-orbclear",
+      "case_ids": [
+        "newsroom-held-science-feat-debris-cleanup"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "fam-feat-prairie-wells",
+      "case_ids": [
+        "newsroom-held-science-feat-aquifer-wells"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "fam-feat-prism1",
+      "case_ids": [
+        "newsroom-held-science-feat-supercomputer-research"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "fam-feat-redcliff-tunnel",
+      "case_ids": [
+        "newsroom-held-science-feat-tunnel-decision"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "fam-feat-ridgemont",
+      "case_ids": [
+        "newsroom-held-science-feat-waste-repository-town"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "fam-feat-sandover-soil",
+      "case_ids": [
+        "newsroom-held-science-feat-soil-carbon-audit"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "fam-feat-westfield-recycling",
+      "case_ids": [
+        "newsroom-held-science-feat-rare-earth-recycling"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "feature"
+      ]
+    },
+    {
+      "family_id": "fam-fiber-rollout",
+      "case_ids": [
+        "newsroom-held-science-rural-fiber-complete"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "fam-fusion-permit",
+      "case_ids": [
+        "newsroom-held-science-fusion-permit-decision"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "fam-grid-cascade",
+      "case_ids": [
+        "newsroom-held-science-grid-cascade-probe"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "fam-h2-pipeline",
+      "case_ids": [
+        "newsroom-held-science-hydrogen-pipeline-approved"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "fam-harrington-barrier",
+      "case_ids": [
+        "newsroom-held-science-flood-barrier-storm-test"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "fam-helios2",
+      "case_ids": [
+        "newsroom-held-science-supercomputer-launched"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "fam-meridian-aquifer",
+      "case_ids": [
+        "newsroom-held-science-aquifer-depletion-study"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "fam-mrna-factory",
+      "case_ids": [
+        "newsroom-held-science-mrna-factory-certified"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "fam-nuclear-waste",
+      "case_ids": [
+        "newsroom-held-science-nuclear-waste-approval"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "fam-portside-fatality",
+      "case_ids": [
+        "newsroom-held-science-autonomous-port-fatality"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "fam-propofol-shortage",
+      "case_ids": [
+        "newsroom-held-science-anesthesia-drug-shortage"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "fam-rail-derail",
+      "case_ids": [
+        "newsroom-held-science-rail-derailment-findings"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "fam-rare-earth-permit",
+      "case_ids": [
+        "newsroom-held-science-rare-earth-permit-denied"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "fam-seismic-alert",
+      "case_ids": [
+        "newsroom-held-science-seismic-warning-activated"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "fam-tap-microplastic",
+      "case_ids": [
+        "newsroom-held-science-microplastic-tap-water"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "fam-tunnel-fault",
+      "case_ids": [
+        "newsroom-held-science-tunnel-fault-delay"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "fam-wind-contract",
+      "case_ids": [
+        "newsroom-held-science-offshore-wind-contract"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "newsroom-museum-admission-policy-template",
+      "case_ids": [
+        "newsroom-held-business-news-museum-ticket-reversal",
+        "newsroom-held-civic-museum-free-admission"
+      ],
+      "areas": [
+        "business",
+        "civic"
+      ],
+      "genres": [
+        "news"
+      ]
+    },
+    {
+      "family_id": "science-apex-dark-matter-program",
+      "case_ids": [
+        "newsroom-held-science-expl-dark-matter",
+        "newsroom-held-science-feat-dark-matter-lab"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "explainer",
+        "feature"
+      ]
+    },
+    {
+      "family_id": "science-crispr-approval-access-template",
+      "case_ids": [
+        "newsroom-held-science-crispr-therapy-approved",
+        "newsroom-held-science-feat-crispr-access-gap"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "feature",
+        "news"
+      ]
+    },
+    {
+      "family_id": "science-dam-asr-monitoring-template",
+      "case_ids": [
+        "newsroom-held-science-dam-structural-warning",
+        "newsroom-held-science-feat-dam-engineers"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "feature",
+        "news"
+      ]
+    },
+    {
+      "family_id": "science-protected-forest-credit-template",
+      "case_ids": [
+        "newsroom-held-science-carbon-credit-fraud",
+        "newsroom-held-science-feat-carbon-credit-buyers"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "feature",
+        "news"
+      ]
+    },
+    {
+      "family_id": "science-riverdale-cooling-program",
+      "case_ids": [
+        "newsroom-held-science-expl-urban-heat-island",
+        "newsroom-held-science-feat-urban-cooling"
+      ],
+      "areas": [
+        "science"
+      ],
+      "genres": [
+        "explainer",
+        "feature"
+      ]
+    }
+  ],
+  "excluded_cases": [
+    {
+      "case_id": "newsroom-held-science-feat-port-automation-labor",
+      "path": "evals/newsroom/cases/newsroom-held-science-feat-port-automation-labor.json",
+      "family_id": "fam-hartwell-retraining",
+      "area": "science",
+      "genre": "feature",
+      "case_sha256": "8b0ac873dc524503ae16295c9fcad742bca2f508a519971f887d43875a607d20",
+      "source_sha256": "277f7ed3625a15a63be12bf8d2b73eb20f90ee18ebb032080c76bc45213bf0e6",
+      "fact_entries": 20,
+      "reason": "Conservative exposed-template exclusion",
+      "related_tuning_case_ids": [
+        "newsroom-tuning-auto-retraining"
+      ],
+      "retained_intake_id": true
+    }
+  ],
+  "human_reviews": 0,
+  "primary_writing_outputs": 0,
+  "limitations": [
+    "Family independence is an audited design assumption, not a proven property or a probability sample of all journalism.",
+    "Museum clustering and the tuning-relative exclusion are conservative responses to uncertain template hypotheses, not findings of copying.",
+    "The excluded case retains its historical intake ID; its split is tuning. Use this sealed selection and case metadata, not filename prefixes.",
+    "Model allocation, request hashes, judging, randomization and the final execution protocol are not frozen by this source selection."
+  ],
+  "selection_sha256": "ec6f898a5981559510d2e4365d9877326c906c951d338a1df5828436baffb6ec"
+}

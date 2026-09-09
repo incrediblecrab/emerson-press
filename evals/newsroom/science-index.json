@@ -481,9 +481,9 @@
     {
       "case_id": "newsroom-held-science-feat-port-automation-labor",
       "path": "evals/newsroom/cases/newsroom-held-science-feat-port-automation-labor.json",
-      "family_id": "fam-feat-marshfield-port",
+      "family_id": "fam-hartwell-retraining",
       "topic": "Feature: workers four years after automated terminal transition",
-      "independence_note": "Marshfield Harbor Terminal; distinct from Portside Container Terminal fatality in SN20"
+      "independence_note": "Excluded from primary inference and conservatively marked tuning-related to newsroom-tuning-auto-retraining: 2021 displacement, training begun in 2022, and a 2025 look back at certification followed by lower pay. This is a template-risk precaution, not proof of copying. The original intake ID is retained; its split field, not its filename, records eligibility."
     },
     {
       "case_id": "newsroom-held-science-feat-supercomputer-research",

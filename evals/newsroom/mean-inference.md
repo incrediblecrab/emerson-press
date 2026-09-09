@@ -61,14 +61,15 @@ ordinary family-bootstrap interval used in earlier descriptive reports.
 
 ## Planning and missingness
 
-At 214 independent families, the auxiliary cutoff is 122. Its type-I error is at
-most 0.02359046, and its power is at least 0.83226229 at mean preference 0.60,
+At the selected 212 families, the auxiliary cutoff is 121. Its type-I error is at
+most 0.02307257, and its power is at least 0.82634721 at mean preference 0.60,
 under the stated comparison conditions. The extra raw-mean safeguard has its own
 cost: Hoeffding's bounded-sum inequality bounds failure of that safeguard by
-`exp(-2 * n * 0.1^2)`. Subtracting that bound gives **at least 0.81841963 joint
-power**, not 0.83226229. This is a planning statement conditional on independent,
+`exp(-2 * n * 0.1^2)`. Subtracting that bound gives **at least 0.81193962 joint
+power**, not 0.82634721. This is a planning statement conditional on independent,
 complete family scores and the specified mean effect, not observed repository
-effectiveness. Recalculate at the final fixed family count; discrete critical
+effectiveness. It was recalculated after the final source eligibility decisions,
+not measured from writing outputs. Recalculate if the design changes; discrete critical
 counts mean power does not rise monotonically at every additional family.
 
 For missing components, keep their intended weights and retain `[0,1]` bounds.

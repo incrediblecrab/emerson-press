@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "kind": "primary-cross-family-review-summary",
+  "input_cases": 220,
+  "input_provisional_families": 214,
+  "exposed_tuning_inputs_screened": 28,
+  "eligible_cases": 219,
+  "eligible_families": 212,
+  "eligible_fact_entries": 4524,
+  "source_facts_tasks_and_checks_changed": false,
+  "cross_shard_clusters_added": 1,
+  "tuning_relative_cases_excluded": 1,
+  "verified_proposal_fact_excerpts": 25,
+  "verified_task_excerpts": 2,
+  "verified_fact_id_anchor_occurrences": 294,
+  "full_pair_comparisons_declared": 24,
+  "profile_only_pairs_declared": 40,
+  "family_sizes": {
+    "1": 205,
+    "2": 7
+  },
+  "selection_sha256": "ec6f898a5981559510d2e4365d9877326c906c951d338a1df5828436baffb6ec",
+  "human_reviews": 0,
+  "primary_writing_outputs": 0,
+  "efficacy_result": null,
+  "limitations": [
+    "These are conservative pre-outcome eligibility decisions, not findings of plagiarism or proven shared authoring provenance.",
+    "The model audit examined 248 profiles and 24 full-source pair comparisons involving 41 packets. Forty lexical candidates remained profile-only.",
+    "Verified fact excerpts and anchor IDs establish source traceability, not correctness of every family interpretation.",
+    "The remaining families are an audited design assumption, not a certified IID sample from all journalism.",
+    "Public audit packaging replaces only a private workstation path; the original file and its hash remain in the session evidence.",
+    "No primary writing or human assessment exists at this decision."
+  ]
+}

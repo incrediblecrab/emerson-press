@@ -52,16 +52,34 @@ All 220 input packets have received bounded within-shard model source reviews
 and parent checks of coverage, source bindings and recorded changes. This is not
 external verification of every scientific, financial or legal claim.
 
-| Input shard | Cases | Provisional families | Fact entries |
-| --- | ---: | ---: | ---: |
-| [Civic](civic-index.json) | 74 | 73 | 1,628 |
-| [Science](science-index.json) | 73 | 68 | 1,456 |
-| [Business](business-index.json) | 73 | 73 | 1,460 |
-| **Total** | **220** | **214** | **4,544** |
+| Input shard | Intake cases | Fact entries |
+| --- | ---: | ---: |
+| [Civic](civic-index.json) | 74 | 1,628 |
+| [Science](science-index.json) | 73 | 1,456 |
+| [Business](business-index.json) | 73 | 1,460 |
+| **Total** | **220** | **4,544** |
 
-The final cross-shard/tuning-family review and power plan remain unfinished.
-Shared programs and conservative template clusters reduce the family count;
-neither the remaining labels nor the source audits prove independence.
+The [sealed primary selection](primary-selection.json) contains **219 eligible
+cases, 212 family clusters and 4,524 fact entries**. The cross-family review
+conservatively grouped two museum-admission cases across the civic and business
+shards, and excluded a port-worker retraining feature as a possible relative of
+an exposed tuning template. These are uncertain template hypotheses, not findings
+of copying. The excluded case keeps its historical `newsroom-held-` intake ID
+but now has `split: tuning`; select by the sealed manifest and case metadata,
+not filename prefixes. Cross-shard families must not be counted twice.
+
+The [cross-review bundle](artifacts/cross-family-review-manifest.json) preserves
+the frozen 220-candidate/28-tuning input, the model report with a disclosed
+workstation-path-only redaction, parent verification, both decisions and the
+before/after metadata. Its [summary](artifacts/cross-family-review-summary.json)
+records 25 literal fact excerpts, two task excerpts and 294 fact-ID anchor
+occurrences checked against the input. Those are traceability checks, not
+independent findings. The bounded audit did not fully compare every pair.
+Earlier within-shard archives retain their historical index hashes unchanged.
+
+Source eligibility is complete; the execution protocol is not yet registered.
+Shared programs and conservative template clusters reduce the family count,
+but neither the remaining labels nor the source audits prove independence.
 The [mean-inference component](mean-inference.md) documents a finite-sample
 candidate method and its randomization, missingness and independence limits.
 It is not a primary-study registration or a writing result.

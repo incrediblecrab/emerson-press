@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "kind": "pre-generation-cross-family-source-audit-bundle",
+  "eligible_cases": 219,
+  "eligible_families": 212,
+  "primary_writing_outputs": 0,
+  "limitation": "One source-review bundle with a disclosed path-only redaction; not a writing trial or human review.",
+  "records": 1,
+  "artifact": "evals/newsroom/artifacts/cross-family-review.jsonl.xz",
+  "artifact_sha256": "28854d8c5b8f3826b24b3e384d677627efce6c67085b649d0ecd986adcfc35e2",
+  "payload_sha256": "0cff2bfbfb32a8a21aa292ffdfa57f8bbfd86f815f57dc92db684ec7329d2529",
+  "human_reviews": 0
+}

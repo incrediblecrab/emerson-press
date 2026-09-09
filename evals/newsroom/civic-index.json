@@ -89,9 +89,9 @@
     {
       "case_id": "newsroom-held-civic-museum-free-admission",
       "path": "evals/newsroom/cases/newsroom-held-civic-museum-free-admission.json",
-      "family_id": "civic-museum-free-admission",
+      "family_id": "newsroom-museum-admission-policy-template",
       "topic": "Straight news: A one-year free-admission decision and its remaining barriers",
-      "independence_note": "Standalone trustee decision includes replacement funding, membership benefits, separate ticketed events and access concerns beyond price. No other institution's finances are substituted."
+      "independence_note": "Conservatively clustered across shards with business news-museum-ticket-reversal: both start from $8 admission at age 16 and use bounded access/finance decisions and six-month review. The different funding and access consequences remain; a common event or copied ledger is not established."
     },
     {
       "case_id": "newsroom-held-civic-permit-parking-extension",

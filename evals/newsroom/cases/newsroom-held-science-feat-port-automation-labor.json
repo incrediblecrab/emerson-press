@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "id": "newsroom-held-science-feat-port-automation-labor",
-  "split": "held_out",
+  "split": "tuning",
   "operation": "draft",
   "task": "This is a synthetic writing exercise. Using these fictional reporting notes, write a newspaper reported feature for general readers. Draw only on the supplied notes; do not invent additional reported events, scenes, or quotations. Write from this reporting snapshot as of March 31, 2025. Include a headline. Target 450 to 650 words. Follow AP style.",
   "input": "",

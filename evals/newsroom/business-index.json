@@ -166,9 +166,9 @@
     {
       "case_id": "newsroom-held-business-news-museum-ticket-reversal",
       "path": "evals/newsroom/cases/newsroom-held-business-news-museum-ticket-reversal.json",
-      "family_id": "business-dunveil-admission-reversal",
+      "family_id": "newsroom-museum-admission-policy-template",
       "topic": "News update: a withdrawn admission rise and a remaining museum budget gap",
-      "independence_note": "Original trustees' reversal links a new operating gift to partial savings and narrower gallery access. It is not derived from another institution's ledger or restricted endowment."
+      "independence_note": "Conservatively clustered across shards with civic museum-free-admission: both start from $8 admission at age 16 and use bounded access/finance decisions and six-month review. The different funding and access consequences remain; a common event or copied ledger is not established."
     },
     {
       "case_id": "newsroom-held-business-explain-jobs-and-unemployment",
