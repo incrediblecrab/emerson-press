@@ -6,6 +6,9 @@ shipped with it. `baseline.json` freezes original instruction hashes and token
 counts, **not behavioral results**. See [rubric.md](rubric.md) for human criteria.
 The optional [synthetic backtest](synthetic/README.md) captures real model responses
 and separately labeled automated judgments; it does not supply human attestations.
+Its [model-only statistical tooling](simulation.md) validates frozen protocols
+and reports family-level preference estimates. That separate workflow does not
+run models or satisfy the human release gate.
 
 Run from the repository root with the existing virtual environment:
 
