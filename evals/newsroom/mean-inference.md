@@ -96,3 +96,33 @@ of both writers on every family. Broader population and human-editorial claims
 need additional evidence. Neither statistical significance nor source fidelity
 establishes elimination of noticeable slop; pointwise slop, fidelity, output
 compliance and human review remain distinct.
+
+## Fixed-family reporting
+
+`scripts.newsroom_results.summarize` checks the allocation seal, family
+membership, score grids and complete planned-slot coverage before aggregating
+already validated assessments. It does **not** authenticate SDK captures:
+callers must verify observed receipts, source bindings, blinded orientation and
+the strict response parser before supplying fractional preferences, pointwise
+labels and unchanged writing responses.
+
+Every planned writing and judgment slot must appear. Missing or invalid
+acquisitions are explicit `None` values, never dropped keys; an assessment cannot
+exist without its writing input. Family, case and judge weights do not change
+when another component is missing. The report preserves exact fractional family
+scores alongside the primary randomized interval.
+
+Writer/judge breakdowns, agreement counts and pointwise results are descriptive.
+Pointwise level and fidelity matrices keep rater disagreements visible;
+agreement on `unassessable` remains separately counted and does not establish
+good writing. Missing or unassessable style ratings retain `[0,1]` uncertainty
+for salient-writing prevalence. Fidelity flag rates count the literal model
+label `flag`; `uncertain` is shown separately, and neither it nor `no_flag`
+establishes factual correctness.
+
+Secondary rate bounds describe possible completions of missing scores, not
+confidence intervals. Complete-response lengths use Python's `str.split()`
+whitespace convention, including Unicode whitespace, headlines, markup tokens
+and unsolicited commentary. They are measured counts, not a licensed AP-style
+audit or a judgment that a soft length target is a factual error. Zero observed
+salient ratings never become a claim that the repository eliminates slop.
