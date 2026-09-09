@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "public-fiction-unsettled-reunion",
+  "split": "tuning",
+  "operation": "draft",
+  "task": "Write a clearly fictional adult short-story scene of about 110–160 words. Two former collaborators meet before a bookshop opens. You may invent restrained dialogue, surroundings, and small physical actions within the brief. Let their shared history remain partly unspoken; end after the pencil is returned without explaining the estrangement or promising reconciliation.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Lune and Perr used to write short stories together."},
+    {"id": "f2", "text": "They stopped exchanging pages a year before this scene."},
+    {"id": "f3", "text": "They meet outside a bookshop before it opens."},
+    {"id": "f4", "text": "Perr has Lune's old pencil and returns it during the conversation."},
+    {"id": "f5", "text": "The brief leaves the reason for their stopped correspondence unexplained."},
+    {"id": "f6", "text": "They do not agree to resume collaborating in this scene."}
+  ],
+  "modules": ["domains/fiction.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "A definite betrayal, argument, illness, or other invented explanation for the estrangement.",
+      "A promised new collaboration or complete reconciliation.",
+      "A returned pencil belonging to Perr rather than Lune."
+    ],
+    "preserve": [
+      "Shared creative history suggested through a limited encounter.",
+      "The pencil's ownership and return.",
+      "Bounded invention and an emotionally unresolved ending."
+    ],
+    "expected_action": "draft"
+  }
+}

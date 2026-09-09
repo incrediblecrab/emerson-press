@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "risk-mkt-roi-unsupported",
+  "split": "held_out",
+  "operation": "review",
+  "task": "Review this fictional B2B software marketing claim. Identify the unsupported return-on-investment figure and explain what evidence would be needed to support it.",
+  "input": "Companies using PeopleAxis report an average ROI of 340 percent in the first year.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "PeopleAxis is a fictional HR-software product."},
+    {"id": "f2", "text": "The supplied packet contains no ROI study, customer survey, or financial model."},
+    {"id": "f3", "text": "The 340 percent figure has no identified source in the packet."}
+  ],
+  "modules": ["domains/marketing.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3"],
+    "forbidden_additions": [
+      "An alternative ROI figure or range.",
+      "A claim that an ROI study might exist but was not supplied.",
+      "An invented customer financial outcome."
+    ],
+    "preserve": [
+      "The identification of the missing ROI methodology and source.",
+      "The distinction between a feature-based claim and an unsupported financial-outcome claim."
+    ],
+    "expected_action": "flag_missing_evidence"
+  }
+}

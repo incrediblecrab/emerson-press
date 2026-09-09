@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "scholarly-cit-ieee-software-release",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Edit this 45–75-word software-use note and IEEE reference using only the supplied release record. The venue's software form is [1] Organization, Software title, version, year. [Computer software]. Available: URL. The year suffices when a full release date is unavailable. Identify unsupplied bibliographic details in a brief separate note only if needed to explain removals; do not fill them. Keep the software distinct from a proceedings paper, remove unsupported access/archiving assertions, and preserve what the export does and does not contain.",
+  "input": "Gridfold 0.8.3 exports a terrain model with elevations, as the conference paper confirms [1]. We checked the archived release today.\n\n[1] Reedglass Workshop, “Gridfold,” in Proc. International Terrain Forum, 2024, pp. 12–16. Accessed: Sep. 8, 2026. Archived at https://example.org/archive/gridfold.",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "The source is the software release Gridfold, version 0.8.3, by Reedglass Workshop, released in 2024, at https://example.org/software/gridfold/0.8.3."
+    },
+    {
+      "id": "f2",
+      "text": "The supplied release description says Gridfold exports grid coordinates, not elevation values."
+    },
+    {
+      "id": "f3",
+      "text": "The packet does not provide a release month or day, DOI, conference paper, page range, access date, or archive."
+    },
+    {
+      "id": "f4",
+      "text": "No execution, retrieval, or archive verification was performed for the note."
+    }
+  ],
+  "modules": [
+    "domains/technical.md",
+    "domains/citation/ieee.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "A proceedings or journal identity for the software release",
+      "An elevation export not described in the packet",
+      "A fabricated release day, DOI, access date, archive, or test claim"
+    ],
+    "preserve": [
+      "Gridfold, version 0.8.3",
+      "Reedglass Workshop",
+      "https://example.org/software/gridfold/0.8.3",
+      "Coordinates are exported; elevations are not"
+    ],
+    "expected_action": "edit"
+  }
+}

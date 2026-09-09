@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "technical-ui-app-menu-edit",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Edit the File menu entry that has an incorrect keyboard shortcut annotation. The supplied facts show the Export command uses a different shortcut than the input states. Correct only the inaccurate shortcut; leave other items unchanged.",
+  "input": "File menu: New Document (⌘N), Open File (⌘O), Save (⌘S), Export to PDF (⌘E), Close (⌘W)",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "New Document uses ⌘N."},
+    {"id": "f2", "text": "Open File uses ⌘O."},
+    {"id": "f3", "text": "Save uses ⌘S."},
+    {"id": "f4", "text": "Export to PDF uses ⌘P, not ⌘E."},
+    {"id": "f5", "text": "⌘E is not assigned to any menu item in this application."},
+    {"id": "f6", "text": "Close uses ⌘W."}
+  ],
+  "modules": ["domains/general.md", "domains/user-interface/applications.md", "domains/user-interface/apple-hig.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f6"],
+    "forbidden_additions": [
+      "Retention of ⌘E for Export to PDF when facts specify ⌘P.",
+      "An invented new menu item not in the supplied facts.",
+      "Removal or relabeling of any correctly stated item."
+    ],
+    "preserve": [
+      "Export to PDF with the corrected shortcut ⌘P.",
+      "All other correct shortcut assignments unchanged.",
+      "Five items in the original order."
+    ],
+    "expected_action": "edit"
+  }
+}

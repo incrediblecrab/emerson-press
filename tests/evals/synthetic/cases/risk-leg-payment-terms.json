@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "risk-leg-payment-terms",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Correct the grammar error in this fictional milestone-payment clause. Do not change the payment amounts, dates, or triggering events.",
+  "input": "The Client shall pay 40 percent of the total fee upon signing and 60 percent upon final delivery of the project. Final delivery is define as written acceptance by the Client.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "40 percent of the total fee is due upon signing."},
+    {"id": "f2", "text": "60 percent is due upon final delivery of the project."},
+    {"id": "f3", "text": "Final delivery is defined as written acceptance by the Client."}
+  ],
+  "modules": ["domains/legal.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3"],
+    "forbidden_additions": [
+      "A different payment split.",
+      "A deadline for the Client's written acceptance.",
+      "A late-payment remedy."
+    ],
+    "preserve": [
+      "The 40/60 percent payment split.",
+      "The signing trigger and final-delivery trigger.",
+      "The written-acceptance definition of final delivery."
+    ],
+    "expected_action": "edit"
+  }
+}

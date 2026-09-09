@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-business-news-broadband-bridge",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic newspaper-writing exercise using fictional reporting notes. Use only the supplied reporting notes. Write from the reporting snapshot as of August 6, 2026. Write a headline and a 450–650-word AP-style newspaper update on Moorlace Broadband Cooperative's construction award and the premises left outside its first fiber build.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id":"f1","text":"Moorlace Broadband Cooperative awarded its first fiber construction contract on Thursday, Aug. 6, 2026, to Pella Trenchworks."},
+    {"id":"f2","text":"The $8.4 million phase is financed by a $5 million rural-infrastructure grant and a $3.4 million cooperative loan."},
+    {"id":"f3","text":"The contracted route passes 620 premises: 240 businesses and 380 homes."},
+    {"id":"f4","text":"An earlier proposed route covered 790 premises, including 170 farms and homes beyond the Greyfin road bridge."},
+    {"id":"f5","text":"The bridge owner has not approved attaching a cable conduit, leaving the 170 premises outside the signed contract."},
+    {"id":"f6","text":"The cooperative has requested an engineering study of an alternative river crossing but has no construction price for it."},
+    {"id":"f7","text":"Construction is scheduled to begin Sept. 14, with the first connections expected in spring 2027."},
+    {"id":"f8","text":"A property passed by the cable is not automatically connected; its owner must order service and approve installation."},
+    {"id":"f9","text":"The cooperative's announced residential package costs $59 a month, with a $149 standard installation charge."},
+    {"id":"f10","text":"A business package with priority fault response is separately priced at $95 a month."},
+    {"id":"f11","text":"General manager Daro Senn said actual service dates will depend on road-opening permits and property access."},
+    {"id":"f12","text":"Senn said, \"Signing the trenching contract gives us a route to build, not a date for every front door.\""},
+    {"id":"f13","text":"Farm-equipment dealer Neri Voss currently carries large diagnostic files to a supplier on a portable drive because uploads are unreliable."},
+    {"id":"f14","text":"Voss's workshop is on the contracted side of the river, while several customers who need remote diagnostics are beyond the bridge."},
+    {"id":"f15","text":"Farmer Yara Tern said, \"I helped sign people up for this, and I am still on the far side of the map.\""},
+    {"id":"f16","text":"Members beyond the bridge retain voting rights and will not be billed for broadband service before a connection is installed."},
+    {"id":"f17","text":"The cooperative has 412 members, a membership count that does not equal the number of premises in either route."},
+    {"id":"f18","text":"Existing wireless providers will continue operating; the new contract does not require residents to switch."},
+    {"id":"f19","text":"The cooperative formed in 2022 after a group of small employers surveyed problems sending payroll and design files."},
+    {"id":"f20","text":"No performance tests on the unbuilt fiber network or estimates of household savings have been released."}
+  ],
+  "modules": ["domains/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1","f2","f3","f4","f5","f6","f7","f8","f11","f16"],
+    "forbidden_additions": ["Service guaranteed for all 790 premises or a funded alternative river crossing","Measured network performance or compulsory switching from existing providers"],
+    "preserve": ["If quoted: Signing the trenching contract gives us a route to build, not a date for every front door.","If quoted: I helped sign people up for this, and I am still on the far side of the map.","620 contracted premises and 170 excluded premises are distinct groups."],
+    "expected_action": "draft"
+  }
+}

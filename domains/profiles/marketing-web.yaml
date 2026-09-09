@@ -1,0 +1,7 @@
+name: marketing-web
+description: A public marketing surface with substantiated claims and accessible copy.
+modules:
+  - domains/marketing.md
+  - domains/user-interface/website.md
+  - domains/user-interface/accessibility.md
+safeguards: []

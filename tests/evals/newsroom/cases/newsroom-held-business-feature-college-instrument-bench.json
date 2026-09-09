@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-business-feature-college-instrument-bench",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic newspaper-writing exercise using fictional reporting notes. Use only the supplied reporting notes. Write from the reporting snapshot as of September 8, 2026. Write a headline and a 450–650-word AP-style reported feature about the instrument-repair program at Nettleford College and the balance between giving students time to learn and getting school instruments back into use.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id":"f1","text":"A July 2026 workshop note records trainee Omi Keld fitting a clarinet pad, then taking the instrument to an instructor's inspection bench."},
+    {"id":"f2","text":"Nettleford College's one-year instrument-repair program enrolls 24 adult trainees from varied work and education backgrounds."},
+    {"id":"f3","text":"Participating school music departments supply instruments for supervised repair rather than buying a guaranteed express service."},
+    {"id":"f4","text":"Every returned instrument must pass an instructor's functional check under the program's stated process."},
+    {"id":"f5","text":"During the 2025–26 teaching year, the workshop accepted 180 school instruments and returned 150 after repair."},
+    {"id":"f6","text":"Twenty instruments were still awaiting parts at the year-end count, and ten were assessed as beyond the workshop's repair scope."},
+    {"id":"f7","text":"The figures count instruments, not distinct schools or trainee qualifications."},
+    {"id":"f8","text":"Under the program's fee schedule, schools pay a $35 handling contribution per accepted instrument, plus any agreed exceptional parts charge."},
+    {"id":"f9","text":"That payment does not cover the program's full teaching cost, which is supported by the college budget and a $20,000 annual grant."},
+    {"id":"f10","text":"A quoted commercial repair price for one comparable clarinet job was $120 with a shorter turnaround, not a price for every instrument."},
+    {"id":"f11","text":"The college normally asks schools to allow six weeks, with longer waits possible when parts are unavailable."},
+    {"id":"f12","text":"Band teacher Rella Brill uses spare instruments and changes rehearsal groups while pupils' instruments are away."},
+    {"id":"f13","text":"Brill said, \"A cheaper repair is useful only if I can keep the student playing while we wait.\""},
+    {"id":"f14","text":"Keld previously repaired household appliances and says small changes in instrument adjustment require a different kind of checking."},
+    {"id":"f15","text":"Keld said, \"The part can fit and the instrument can still tell you the job is not finished.\""},
+    {"id":"f16","text":"Instructor Teri Sorn says trainees sometimes repeat a task before it is accepted, adding learning time that a commercial quote may not allow."},
+    {"id":"f17","text":"The college has not published a matched study of long-term repair durability against commercial providers."},
+    {"id":"f18","text":"Completing the program provides a college certificate but not a guaranteed job or a promise that graduates can repair every instrument family."},
+    {"id":"f19","text":"The workshop shares a building with evening music classes, which use a separate set of instruments."},
+    {"id":"f20","text":"The next grant renewal is pending, and the current school contribution is not guaranteed to remain unchanged indefinitely."}
+  ],
+  "modules": ["domains/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f2","f3","f4","f5","f6","f8","f9","f10","f11","f12","f17","f18"],
+    "forbidden_additions": ["The $35 fee covers all costs or all 180 instruments were repaired","Universal commercial-price savings, superior long-term durability or guaranteed graduate jobs"],
+    "preserve": ["If quoted: A cheaper repair is useful only if I can keep the student playing while we wait.","If quoted: The part can fit and the instrument can still tell you the job is not finished.","150 repaired, 20 awaiting parts and ten outside scope account for 180 accepted instruments."],
+    "expected_action": "draft"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-business-news-library-fine-amnesty",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic newspaper-writing exercise using fictional reporting notes. Use only the supplied reporting notes. Write from the reporting snapshot as of August 31, 2026. Write a headline and a 450–650-word AP-style news update on Rivermoth Library's overdue-fine decision and what borrowers still owe or need to return.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id":"f1","text":"Rivermoth Library's board voted unanimously on Monday, Aug. 31, 2026, to end daily overdue fines on borrowed books beginning Oct. 1."},
+    {"id":"f2","text":"The library will also erase existing book-overdue fines, which total $15,200 on its account ledger."},
+    {"id":"f3","text":"Charges for lost or damaged materials, printing and equipment rental will not be erased by this policy."},
+    {"id":"f4","text":"Approximately 620 accounts are blocked solely by book-overdue fines in the current ledger and would regain borrowing access when those fines are erased, provided no other block applies."},
+    {"id":"f5","text":"Other blocked accounts may still owe replacement charges or have long-overdue items, according to circulation manager Leda Sorn."},
+    {"id":"f6","text":"Borrowers must still return books, and reminders will continue to be sent before an item is classified as lost."},
+    {"id":"f7","text":"Under the library's unchanged lost-item policy, a book still unreturned 35 calendar days after its due date becomes subject to a replacement charge."},
+    {"id":"f8","text":"Returning an undamaged book removes that book's replacement charge; unrelated charges on the account remain."},
+    {"id":"f9","text":"Last year's overdue-fine receipts were $9,400; a staff-time review valued the labor used to administer those fines at an estimated $18,000."},
+    {"id":"f10","text":"The staff-time estimate is not cash the library will receive after the change; staff will be reassigned to other circulation work."},
+    {"id":"f11","text":"The library budget assumes losing the fine receipts and does not count the erased ledger balances as a new cash expense."},
+    {"id":"f12","text":"Sorn said, \"We want the book back on the shelf, not a small debt that keeps its borrower outside.\""},
+    {"id":"f13","text":"Parent Neri Wren said a past overdue balance had made her reluctant to ask staff about another missing book."},
+    {"id":"f14","text":"Wren said, \"I can come in with the book instead of coming in ready to explain the bill.\""},
+    {"id":"f15","text":"The library has not measured how many restored accounts will resume borrowing after Oct. 1."},
+    {"id":"f16","text":"Board member Torin Vail asked for quarterly reporting of return times and missing-item rates."},
+    {"id":"f17","text":"The board approved that reporting request but did not set a target increase in circulation."},
+    {"id":"f18","text":"The policy covers all four branches and the mobile library, but not materials borrowed through a separate university system."},
+    {"id":"f19","text":"Rivermoth Library has waived children's book fines during occasional summer-return campaigns since 2013."},
+    {"id":"f20","text":"The new vote is a continuing policy rather than another time-limited summer campaign."}
+  ],
+  "modules": ["domains/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1","f2","f3","f4","f6","f7","f8","f9","f10","f15","f18"],
+    "forbidden_additions": ["All library debts are erased or borrowers may keep materials indefinitely","An $18,000 cash windfall or measured increase in borrowing before implementation"],
+    "preserve": ["If quoted: We want the book back on the shelf, not a small debt that keeps its borrower outside.","If quoted: I can come in with the book instead of coming in ready to explain the bill.","Overdue fines, replacement charges and actual cash receipts are distinct."],
+    "expected_action": "draft"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "risk-mkt-legal-ad-edit",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Copyedit this fictional financial-services advertisement. Marketing is the primary genre; apply legal safeguards by adding the two required disclosures identified in the supplied facts. Preserve all product feature descriptions.",
+  "input": "Carmel Wealth Advisory helps you grow your retirement savings with personalised financial plans. Start your plan today at https://example.org/carmel.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "Carmel Wealth Advisory is a fictional financial-planning service."},
+    {"id": "f2", "text": "The marketing materials must include a statement that the content is informational only and does not constitute investment advice."},
+    {"id": "f3", "text": "The materials must include a past-performance disclaimer: past performance does not guarantee future results."},
+    {"id": "f4", "text": "Neither required disclosure appears in the current advertisement text."}
+  ],
+  "modules": ["domains/marketing.md"],
+  "safeguards": ["legal"],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "A regulatory-registration claim not in the facts.",
+      "A specific jurisdiction's statutory citation.",
+      "A performance guarantee or investment recommendation."
+    ],
+    "preserve": [
+      "The personalised financial-plans feature description.",
+      "The demo URL: https://example.org/carmel.",
+      "Addition of both the informational-only disclaimer and the past-performance disclaimer."
+    ],
+    "expected_action": "edit"
+  }
+}

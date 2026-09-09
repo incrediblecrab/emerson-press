@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "ui-anonymous-checkout",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "Draft a title, brief explanation, field labels, and next-step button for a fictional website's guest checkout. The visitor is not signed in; anonymous here means no account session, not that receipt and delivery details are uncollected. Keep the copy task-oriented rather than turning checkout into a promotional landing page. Explain the supplied next step and optional account timing.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The website permits purchase of a printed zine without creating an account."},
+    {"id": "f2", "text": "This step asks for an email address to send the receipt."},
+    {"id": "f3", "text": "This step asks for a postal delivery address to ship the zine."},
+    {"id": "f4", "text": "Payment is the next checkout step."},
+    {"id": "f5", "text": "Account creation is optional after the purchase."}
+  ],
+  "modules": ["domains/general.md", "domains/user-interface/website.md", "domains/user-interface/accessibility.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5"],
+    "forbidden_additions": [
+      "Mandatory sign-in or account creation before buying.",
+      "A claim that the purchase collects no information or is fully anonymous.",
+      "Automatic mailing-list consent, a subscription, a shipping-price promise, or an unsupported retention policy.",
+      "A marketing hero section or unrelated persuasion in place of checkout instructions."
+    ],
+    "preserve": [
+      "A direct purchase path for a visitor with no account.",
+      "Clear purposes for email and delivery-address fields.",
+      "Payment as the next step and account creation as an optional post-purchase action."
+    ],
+    "expected_action": "draft"
+  }
+}

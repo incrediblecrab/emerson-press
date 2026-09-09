@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-business-news-museum-ticket-reversal",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic newspaper-writing exercise using fictional reporting notes. Use only the supplied reporting notes. Write from the reporting snapshot as of September 3, 2026. Write a headline and a 450–650-word AP-style newspaper news update about Dunveil Museum's reversal of a proposed admission increase and how the institution now plans to address its budget gap.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id":"f1","text":"Dunveil Museum's trustees withdrew a planned admission increase on Thursday, Sept. 3, 2026."},
+    {"id":"f2","text":"The standard admission charge for visitors age 16 and older will remain $8 rather than rising to $11 on Oct. 1; younger visitors enter free."},
+    {"id":"f3","text":"The increase had been announced July 23 but had not taken effect."},
+    {"id":"f4","text":"The museum's budget projection at the unchanged $8 admission price shows a $120,000 operating gap for the coming financial year, before the new gift and savings."},
+    {"id":"f5","text":"A newly confirmed unrestricted operating gift will contribute $70,000 toward that gap."},
+    {"id":"f6","text":"Trustees expect to save another $30,000 by closing the temporary-exhibition gallery on Wednesdays and reducing outside catalog printing."},
+    {"id":"f7","text":"The remaining projected gap is $20,000, and the museum has not identified a complete funding plan for it."},
+    {"id":"f8","text":"The permanent collection, reading room and cafe will remain open on Wednesdays under the revised schedule."},
+    {"id":"f9","text":"The temporary gallery's Wednesday closure begins Oct. 7 and will be reviewed after six months."},
+    {"id":"f10","text":"Director Elna Reed said no permanent posts will be cut under the announced savings plan, although casual gallery shifts will be reduced."},
+    {"id":"f11","text":"The museum has not yet published the number of casual hours affected."},
+    {"id":"f12","text":"Local tour organizer Pella Sorn said some prebooked Wednesday groups expected access to a temporary textile exhibition."},
+    {"id":"f13","text":"The museum will offer those groups an alternative date or a refund of their group-booking payment."},
+    {"id":"f14","text":"Sorn said, \"An unchanged ticket price is useful news, but my visitors also need to know which doors will be open.\""},
+    {"id":"f15","text":"Reed said, \"The gift lets us keep the entry price where it is. It does not remove every difficult choice in the budget.\""},
+    {"id":"f16","text":"The museum counted 42,600 visits last year, including free school visits and repeat admissions."},
+    {"id":"f17","text":"Those visits include free admissions and repeat visits, and the record does not specify how many paid the standard rate; multiplying all 42,600 by $3 would not establish foregone revenue."},
+    {"id":"f18","text":"The donor requested anonymity; the gift agreement supplied imposes no exhibition-theme requirement."},
+    {"id":"f19","text":"The museum occupies a former customs building and has charged the same adult price since 2021."},
+    {"id":"f20","text":"The trustees have not committed to keeping admission at $8 beyond the next financial year."}
+  ],
+  "modules": ["domains/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1","f2","f3","f4","f5","f6","f7","f8","f9","f10","f13","f17"],
+    "forbidden_additions": ["The entire museum closes on Wednesdays or the budget gap is fully covered","All 42,600 visits are paid tickets or no casual work is affected"],
+    "preserve": ["If quoted: An unchanged ticket price is useful news, but my visitors also need to know which doors will be open.","If quoted: The gift lets us keep the entry price where it is. It does not remove every difficult choice in the budget.","$70,000 in new funding plus $30,000 in planned savings leaves $20,000 of the $120,000 gap."],
+    "expected_action": "draft"
+  }
+}

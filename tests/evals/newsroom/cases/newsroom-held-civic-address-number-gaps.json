@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-civic-address-number-gaps",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic exercise using fictional reporting notes. Use only the supplied reporting notes as the fixed record: select, organize and phrase the story without inventing additional reported events, scenes, quotations or reporting activity. Write a headline and an explainer of roughly 450–650 words in AP style for general newspaper readers about gaps, suffixes and changed entrances in Westhollow's street-address system. Write from this reporting snapshot as of September 18, 2026.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Westhollow addressing office assigns identifiers to entrances and properties under a local numbering plan maintained separately from land-title records."},
+    {"id": "f2", "text": "Most streets in the current plan use odd numbers on one side and even numbers on the other, so consecutive numbers need not be neighboring entrances."},
+    {"id": "f3", "text": "Older streets retain some inherited numbering patterns that do not follow the current plan exactly."},
+    {"id": "f4", "text": "The office has received questions after two former shop units were combined and a nearby property gained a new entrance."},
+    {"id": "f5", "text": "In the office's fictional example, units formerly numbered 12 and 14 use 12 after combination, leaving 14 unused rather than renumbering the whole street."},
+    {"id": "f6", "text": "A separate example uses 20A and 20B for two approved entrances where inserting ordinary whole numbers would conflict with existing addresses."},
+    {"id": "f7", "text": "The examples explain the local system and are not the addresses of actual households supplied in this case."},
+    {"id": "f8", "text": "Addressing officer Tessa Linn said, \"A missing number may tell you about an old division of the street, not a missing building.\""},
+    {"id": "f9", "text": "A new owner, shop name or business tenant does not automatically require a new street number."},
+    {"id": "f10", "text": "The office assesses proposed address changes using entrance position, neighboring identifiers and the needs of services that locate the property."},
+    {"id": "f11", "text": "An approved address change is communicated to relevant city services, but a business must still update its own signs, deliveries and customer information."},
+    {"id": "f12", "text": "Shopkeeper Orin Fale said, \"The city's record changed in one step. Our invoices, labels and delivery notes did not all change with it.\""},
+    {"id": "f13", "text": "The city does not promise that every private map or delivery database will update at the same time."},
+    {"id": "f14", "text": "The local process distinguishes a building's official street identifier from internal apartment or suite numbers."},
+    {"id": "f15", "text": "An internal unit renumbering can still affect emergency and delivery information, so managers are asked to consult the addressing office before changing it."},
+    {"id": "f16", "text": "The supplied process does not determine who owns a property or settle a dispute about a shared entrance."},
+    {"id": "f17", "text": "The office preserves earlier address references so historical planning files can be connected to current locations."},
+    {"id": "f18", "text": "Some older plans use the name of a former pub or workshop instead of a street number, requiring staff to compare several records."},
+    {"id": "f19", "text": "The city is preparing a public explanation of the process after receiving repeated requests to fill apparent gaps simply for visual neatness."},
+    {"id": "f20", "text": "The city has not proposed a townwide renumbering exercise."},
+    {"id": "f21", "text": "No statistics about emergency-response delays or failed deliveries are included in the supplied office record."},
+    {"id": "f22", "text": "The rules described are specific to Westhollow's records and should not be presented as identical practice in every town."}
+  ],
+  "modules": ["domains/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f5", "f6", "f7", "f11", "f14"],
+    "forbidden_additions": ["A missing number treated as proof of a missing building or a townwide renumbering plan.", "Immediate updates to every private database.", "A street identifier treated as proof of ownership or an invented emergency-delay statistic."],
+    "preserve": ["Entrances, property records and internal unit labels as related but different identifiers.", "Historical continuity and the limits of the illustrative examples.", "Exact quotation wording and attribution when quotations are used."],
+    "expected_action": "draft"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-civic-public-toilet-caretakers",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic exercise using fictional reporting notes. Use only the supplied reporting notes as the fixed record: select, organize and phrase the story without inventing additional reported events, scenes, quotations or reporting activity. Write a headline and a reported feature of roughly 450–650 words in AP style for general newspaper readers about the caretakers who keep Norbridge's public toilets operating through the busy season. Write from this reporting snapshot as of September 18, 2026.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Norbridge public-facilities team maintains three staffed toilet sites around the market, riverside park and bus interchange."},
+    {"id": "f2", "text": "Caretaker Sena Vell begins her market-site shift by checking supplies, door operation and the notice showing that day's opening hours."},
+    {"id": "f3", "text": "The supplied scene describes visitors waiting while one section is briefly closed for routine cleaning, with another section still available."},
+    {"id": "f4", "text": "A temporary cleaning closure is recorded separately from a fault that takes an entire site out of service."},
+    {"id": "f5", "text": "The caretakers are paid employees of the city's contracted facilities provider, not volunteers receiving only donations."},
+    {"id": "f6", "text": "Vell said, \"A missing roll or a door that will not close is a small job on a list and a very large problem for the person who has just arrived.\""},
+    {"id": "f7", "text": "The public can use the toilets without making a purchase at a nearby business."},
+    {"id": "f8", "text": "The sites have different opening hours tied to their staffing arrangements; none is described in the packet as open around the clock."},
+    {"id": "f9", "text": "The facilities team publishes a location and opening-hours sheet through the visitor office and community centers."},
+    {"id": "f10", "text": "Resident Elra Moss uses the sheet when planning a shopping trip and says an unexpected closure can change how long she remains in town."},
+    {"id": "f11", "text": "Moss said, \"I plan the ordinary things around knowing there will be somewhere open. I am not the only person carrying that plan in my head.\""},
+    {"id": "f12", "text": "The packet supplies no medical diagnosis or personal health history for Moss."},
+    {"id": "f13", "text": "The city has received requests for later opening near the bus interchange, but no extra staffing hours have been approved."},
+    {"id": "f14", "text": "Extending one site would require a budget and roster change rather than simply leaving a staffed building unlocked."},
+    {"id": "f15", "text": "Caretakers report damaged fittings through a maintenance system, while larger repairs are handled by a separate contractor."},
+    {"id": "f16", "text": "A report being logged does not establish that a repair has already been completed."},
+    {"id": "f17", "text": "The team records supply use and closures to plan work, but the packet contains no count of unique people served."},
+    {"id": "f18", "text": "The market site receives different visitor flows on market and nonmarket days, affecting when routine work can be fitted around users."},
+    {"id": "f19", "text": "A small storeroom holds spare signs so staff can describe a specific closure rather than display the same vague notice for every problem."},
+    {"id": "f20", "text": "The riverside site's older tiled entrance remains after an interior refurbishment funded in an earlier budget year."},
+    {"id": "f21", "text": "The city has not published a study linking the sites to a quantified increase in shopping or visitor spending."},
+    {"id": "f22", "text": "The current staffing contract includes regular public-facing service as well as cleaning, such as explaining which section remains open."}
+  ],
+  "modules": ["domains/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f7", "f8", "f10", "f13"],
+    "forbidden_additions": ["Volunteer-only staffing, 24-hour access or approved extended hours.", "A medical diagnosis for the resident or a unique-user total.", "A logged fault treated as a completed repair or measured economic benefit."],
+    "preserve": ["The care and communication work behind an ordinary public service.", "Different kinds of closures and the practical consequence of reliable opening information.", "Exact quotation wording and attribution when quotations are used."],
+    "expected_action": "draft"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-civic-city-archive-relocation",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic exercise using fictional reporting notes. Use only the supplied reporting notes as the fixed record: select, organize and phrase the story without inventing additional reported events, scenes, quotations or reporting activity. Write a headline and a straight news update of roughly 450–650 words in AP style for general newspaper readers about the relocation of the public archive in Larkhaven. Write from this reporting snapshot as of September 18, 2026.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Larkhaven records office will move its public archive from the old market basement to a former school annex."},
+    {"id": "f2", "text": "The public reading room will close Nov. 2, 2026, and is scheduled to reopen at the annex Jan. 11, 2027."},
+    {"id": "f3", "text": "The archive holds planning files, council minutes, property photographs and donated community records, rather than only historical exhibition material."},
+    {"id": "f4", "text": "The move follows recurring water entry into a basement corridor; the office has not reported water damage to the stored documents."},
+    {"id": "f5", "text": "The annex offers storage on one level and a reading room with step-free access, unlike the basement's stair-only public entrance."},
+    {"id": "f6", "text": "Movers will transfer approximately 3,700 cataloged boxes in numbered batches so staff can account for each batch before shelving it."},
+    {"id": "f7", "text": "The $186,000 relocation budget covers transport, new shelving and fitting out the reading room, not digitizing the entire collection."},
+    {"id": "f8", "text": "Records manager Pella Norn said, \"A box being on a truck is a real interruption, even if its catalogue entry is still online.\""},
+    {"id": "f9", "text": "The online catalogue will remain searchable during the closure, but most listed documents are not available as digital images."},
+    {"id": "f10", "text": "Staff will continue answering research inquiries, though physical retrieval will pause while each numbered batch is being moved."},
+    {"id": "f11", "text": "Requests tied to an existing city administrative deadline will be referred to the relevant city department rather than automatically delayed with the reading room."},
+    {"id": "f12", "text": "The archive has asked regular researchers to identify essential files before Oct. 16 so staff can discuss access during the move."},
+    {"id": "f13", "text": "The office has not promised advance access to every requested file, particularly oversized plans and material awaiting conservation work."},
+    {"id": "f14", "text": "Local-history group coordinator Brin Sayer said, \"A catalogue tells us what might be there; sometimes the answer is a pencil mark that was never entered in it.\""},
+    {"id": "f15", "text": "The annex is farther from the central bus interchange but closer to two neighborhood routes, according to the city's access plan."},
+    {"id": "f16", "text": "The city will retain appointment booking and staff assistance in the new reading room; the move does not create open access to storage shelves."},
+    {"id": "f17", "text": "The old basement's future use has not been decided, and it is not included in the current market-renovation contract."},
+    {"id": "f18", "text": "A temporary scanning station will let staff provide selected requested pages when handling restrictions and reproduction permissions allow."},
+    {"id": "f19", "text": "The school annex still has low coat hooks along one corridor, which the fitting-out plan leaves in place."},
+    {"id": "f20", "text": "The records office plans to publish weekly relocation updates listing which collection sections are temporarily unavailable."},
+    {"id": "f21", "text": "No records are scheduled for disposal as part of the move; ordinary retention decisions remain a separate process."},
+    {"id": "f22", "text": "The reopening date remains dependent on completing shelving inspections and reconciling the box inventory."}
+  ],
+  "modules": ["domains/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f4", "f7", "f9", "f10", "f11", "f22"],
+    "forbidden_additions": ["A fully digitized collection, damaged documents or planned disposal.", "An unconditional reopening date or uninterrupted physical access.", "Automatic suspension of all city administrative deadlines."],
+    "preserve": ["The difference between searchable descriptions and available document images.", "Practical access limitations and the reason for the move.", "Exact quotation wording and attribution when quotations are used."],
+    "expected_action": "draft"
+  }
+}

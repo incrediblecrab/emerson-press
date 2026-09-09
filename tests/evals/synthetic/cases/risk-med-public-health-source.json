@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "risk-med-public-health-source",
+  "split": "held_out",
+  "operation": "review",
+  "task": "Review this public-health bulletin excerpt from a fictional municipal authority. Identify the unsupported statistical claim and explain what evidence is missing before the claim can be made.",
+  "input": "Hand hygiene improvements in our district have reduced community infections by 40 percent over the past two years.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The bulletin is from a fictional municipal public-health authority."},
+    {"id": "f2", "text": "The 40 percent figure appears in the bulletin without an identified source study."},
+    {"id": "f3", "text": "The packet does not supply a before-and-after infection count or rate."},
+    {"id": "f4", "text": "The packet does not supply a methodology linking hand-hygiene interventions to the stated reduction."}
+  ],
+  "modules": ["domains/medical.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "An invented source study or alternative percentage.",
+      "A confirmation that the 40 percent figure is plausible or within a typical range.",
+      "An alternative causal explanation for infection trends."
+    ],
+    "preserve": [
+      "The identification of the missing source study for the 40 percent claim.",
+      "The separate observation that the before-and-after infection counts are absent.",
+      "The separate observation that a causal methodology is missing."
+    ],
+    "expected_action": "flag_missing_evidence"
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-tuning-managed-retreat",
+  "split": "tuning",
+  "operation": "draft",
+  "task": "For this synthetic writing exercise, use the fictional reporting notes to write a reported feature for a general newspaper audience. Write from this reporting snapshot as of April 8, 2025. Include a headline. Target 450 to 650 words. Follow AP style.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "Lowland County, a fictional coastal county in North Carolina, began buying out flood-prone homes in 2019 and converting the acquired land to wetlands. Its April 2025 review describes the completed purchases, remaining owners and program finances."
+    },
+    {
+      "id": "f2",
+      "text": "Hurricane Marion, a Category 3 storm, struck the county in September 2017, flooding approximately 800 homes, many for the second or third time."
+    },
+    {
+      "id": "f3",
+      "text": "The county launched its buyout program in early 2019 using $62 million from a FEMA Hazard Mitigation Grant and an $18 million county match, for a total program budget of $80 million."
+    },
+    {
+      "id": "f4",
+      "text": "The program offered homeowners 105 percent of their property's pre-flood assessed value, with the extra 5 percent intended to help cover relocation costs."
+    },
+    {
+      "id": "f5",
+      "text": "By April 2025, the county had completed 240 buyouts; the properties have been demolished and converted to approximately 340 acres of restored coastal wetland."
+    },
+    {
+      "id": "f6",
+      "text": "County Emergency Manager Robert Yates said: \"Six years later, the neighborhoods that moved do not flood. The ones that stayed do.\""
+    },
+    {
+      "id": "f7",
+      "text": "Of the roughly 800 homes originally targeted, 112 property owners declined to sell; those properties flooded in both 2019 and 2022. Beyond the 240 completed buyouts and 112 refusals, the notes do not classify the other initially targeted properties."
+    },
+    {
+      "id": "f8",
+      "text": "Homeowners who declined buyouts faced an average of approximately $34,000 in flood repair costs per storm event."
+    },
+    {
+      "id": "f9",
+      "text": "Delia Marsh, 71, who inherited her home from her parents and has lived there her entire life, declined the buyout. She said: \"This is where I was born and this is where I intend to stay.\""
+    },
+    {
+      "id": "f10",
+      "text": "The buyout program took six years instead of the projected three, partly because of title disputes on 47 properties that required legal resolution."
+    },
+    {
+      "id": "f11",
+      "text": "County engineers modeled lower peak flood levels behind the restored wetland than in a comparison without restoration. The packet provides no universal storm-surge reduction figure or guarantee of protection in every storm."
+    },
+    {
+      "id": "f12",
+      "text": "Among the structures on bought-out land was the former Shoreline Community Elementary School, closed since 2016 due to flood damage, and the Shoreline Diner, a local gathering place that had operated for 38 years."
+    },
+    {
+      "id": "f13",
+      "text": "Neighboring Coastal Pines County rejected managed retreat after Hurricane Marion and instead spent $45 million on levee repairs and beach nourishment; it experienced significant flooding again in 2022."
+    },
+    {
+      "id": "f14",
+      "text": "Dr. Maya Santos, a researcher at fictional North Coastal University who has studied the program for four years, said the long-term effectiveness of managed retreat depends heavily on where displaced residents relocate and whether they find comparable housing affordability."
+    },
+    {
+      "id": "f15",
+      "text": "Santos's research found that of the 240 households that sold, roughly 60 percent remained within the county; 40 percent relocated to other regions, some leaving North Carolina entirely."
+    },
+    {
+      "id": "f16",
+      "text": "Congress is debating whether to require localities to adopt managed retreat plans as a condition for renewing participation in the National Flood Insurance Program; Lowland County officials have testified in favor."
+    },
+    {
+      "id": "f17",
+      "text": "Yates estimated that repeated disaster recovery, infrastructure repair and flood insurance supplementation for the 240 bought-out properties would have cost approximately $112 million over six years. He compared that counterfactual estimate with the program's $80 million authorized budget, not a supplied final expenditure total."
+    },
+    {
+      "id": "f18",
+      "text": "The county has no plans to expand the buyout program; the remaining $3.1 million in unspent FEMA funds reverted to the federal government in January 2025."
+    },
+    {
+      "id": "f19",
+      "text": "Two of the 112 holdout homeowners have since approached the county asking to sell; the county has no current program to accommodate them."
+    },
+    {
+      "id": "f20",
+      "text": "Marsh said she had flood insurance and had repaired her home twice since 2017 but declined to say how much she had spent or received in insurance payments."
+    },
+    {
+      "id": "f21",
+      "text": "Lowland County has a population of approximately 18,000; Hurricane Marion caused an estimated $340 million in total property damage in the county."
+    },
+    {
+      "id": "f22",
+      "text": "The county's experience has been cited by FEMA and the fictional Coastal Resilience Coalition as a model for communities facing repeated flood cycles."
+    },
+    {
+      "id": "f23",
+      "text": "A county consultant's 2024 model estimated that the restored wetland would retain approximately 280,000 gallons of runoff in one specified rain event. This is a modeled volume for that scenario, not a measurement of storm-surge height or a guarantee for every storm."
+    }
+  ],
+  "modules": [
+    "domains/press.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f5",
+      "f6",
+      "f7",
+      "f9",
+      "f13",
+      "f17"
+    ],
+    "forbidden_additions": [
+      "Marsh eventually accepted the buyout",
+      "Congress passed the managed retreat legislation",
+      "all holdout homeowners were forced to sell"
+    ],
+    "preserve": [
+      "Six years later, the neighborhoods that moved do not flood. The ones that stayed do.",
+      "This is where I was born and this is where I intend to stay."
+    ],
+    "expected_action": "draft"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "risk-leg-clean-clause",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Copyedit this fictional contract clause about payment timelines. Return it unchanged if it is already grammatically correct and complete for its stated purpose.",
+  "input": "Payment is due within 30 days of the invoice date. Late payments accrue interest at 1.5 percent per month on the outstanding balance.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "Payment is due within 30 days of the invoice date."},
+    {"id": "f2", "text": "Late payments accrue interest at 1.5 percent per month on the outstanding balance."}
+  ],
+  "modules": ["domains/legal.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2"],
+    "forbidden_additions": [
+      "A cap on total interest accrued.",
+      "A waiver procedure for late-payment fees.",
+      "A governing-law statement or enforceability assertion."
+    ],
+    "preserve": [
+      "The 30-day payment window from invoice date.",
+      "The 1.5 percent monthly interest rate on the outstanding balance.",
+      "The unchanged wording without substantive expansion."
+    ],
+    "expected_action": "no_change"
+  }
+}

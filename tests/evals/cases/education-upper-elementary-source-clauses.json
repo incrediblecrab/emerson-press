@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "education-upper-elementary-source-clauses",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Lightly copyedit this upper-elementary student's explicitly assigned science-notebook paragraph. The class understands barrier and channel, and can follow clauses introduced by when and but. Preserve the named source and the comprehensible sentence relationships; a formal reference list is not required. Return the paragraph unchanged if it already communicates the source and observation accurately.",
+  "input": "In our class book, the River Model Group explains that a barrier changes where the model water can go. When we moved the barrier, water reached the side channel, but it did not reach the far corner.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional class book attributes its model explanation to the River Model Group."},
+    {"id": "f2", "text": "The class book explains that a barrier changes where water in the model can go."},
+    {"id": "f3", "text": "In the supplied classroom exercise, the class moved the model's barrier."},
+    {"id": "f4", "text": "After that move, the model water reached the side channel."},
+    {"id": "f5", "text": "After that move, the model water did not reach the far corner."}
+  ],
+  "modules": ["domains/general.md", "domains/education-level/02-elementary-upper.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5"],
+    "forbidden_additions": [
+      "A claim about a real river, flood prevention, or all possible barrier arrangements.",
+      "A fabricated formal citation for the class book.",
+      "A claim that the water reached the far corner."
+    ],
+    "preserve": [
+      "The River Model Group's in-text source attribution.",
+      "The understandable when and but clauses rather than compulsory short fragments.",
+      "The limited classroom-model observation and the existing wording."
+    ],
+    "expected_action": "no_change"
+  }
+}

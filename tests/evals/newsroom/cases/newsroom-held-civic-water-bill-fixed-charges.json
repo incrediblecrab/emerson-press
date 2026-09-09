@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-civic-water-bill-fixed-charges",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic exercise using fictional reporting notes. Use only the supplied reporting notes as the fixed record: select, organize and phrase the story without inventing additional reported events, scenes, quotations or reporting activity. Write a headline and an explainer of roughly 450–650 words in AP style for general newspaper readers answering why a Marshbar water bill can rise even when the household uses less water. Write from this reporting snapshot as of September 18, 2026.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Marshbar Water Board's new quarterly tariff raises the fixed network charge from $18 to $26."},
+    {"id": "f2", "text": "The usage charge remains $1.20 per cubic meter, so the change is not an increase in the price of each metered unit."},
+    {"id": "f3", "text": "The tariff takes effect for service periods beginning Jan. 1, 2027, rather than changing the rate on every bill printed after that date."},
+    {"id": "f4", "text": "The board's worked example uses an old-period consumption of 15 cubic meters, producing $18 in usage charges and a $36 bill before other items."},
+    {"id": "f5", "text": "The same illustrative household uses 10 cubic meters in the new period, producing $12 in usage charges and a $38 bill before other items."},
+    {"id": "f6", "text": "The example is invented for the tariff explanation and is not a disclosed customer's account or a prediction of typical household behavior."},
+    {"id": "f7", "text": "The fixed charge supports network readiness, maintenance and financing costs that the board does not allocate solely according to each household's use."},
+    {"id": "f8", "text": "The board's budget identifies a planned pipe-replacement program and higher financing expenses as reasons for the increased fixed charge."},
+    {"id": "f9", "text": "Discussing the specified residential account category, finance director Pella Rane said, \"Using less still reduces the metered part, but it cannot remove a charge that is the same for every connected account.\""},
+    {"id": "f10", "text": "The tariff applies the same fixed charge to connected residential accounts in the stated category, not to every kind of commercial or shared-meter account."},
+    {"id": "f11", "text": "A renters association argues that a larger fixed share gives small households less room to reduce a bill through their own choices."},
+    {"id": "f12", "text": "Association organizer Mavin Cole said, \"People can change a habit more easily than they can change how the network is financed.\""},
+    {"id": "f13", "text": "The board's affordability assistance is a separate application-based program and is not automatically applied merely because usage falls."},
+    {"id": "f14", "text": "The packet does not give eligibility thresholds or an assurance that a particular applicant will qualify for assistance."},
+    {"id": "f15", "text": "A bill may also contain a prior balance, adjustment or other separately identified item, which is outside the simple worked example."},
+    {"id": "f16", "text": "The new bill layout will display the fixed charge and the usage calculation on separate lines."},
+    {"id": "f17", "text": "Accounts crossing the tariff start date will show the service periods used for the calculation rather than assume one rate covered the whole quarter."},
+    {"id": "f18", "text": "Households sharing a building meter may receive a landlord's allocation rather than a direct utility bill under this residential example."},
+    {"id": "f19", "text": "The utility does not set every landlord's internal allocation method through the tariff announcement."},
+    {"id": "f20", "text": "The board will publish a tariff worksheet at its customer desk and on its website before the first affected service period."},
+    {"id": "f21", "text": "The packet contains no estimate of how many households will reduce consumption or of the policy's eventual conservation effect."},
+    {"id": "f22", "text": "The board considered recovering more costs through the usage rate but chose the larger fixed-charge change in its recorded decision."}
+  ],
+  "modules": ["domains/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f6", "f7", "f13"],
+    "forbidden_additions": ["An increased per-unit rate or the worked example presented as an actual customer account.", "A claim that using less cannot reduce any part of the bill.", "Automatic assistance, invented eligibility thresholds or a universal landlord billing rule."],
+    "preserve": ["Correct arithmetic and the distinction between fixed, usage and other bill components.", "The financing rationale and the renters' concern about control over costs.", "Exact quotation wording and attribution when quotations are used."],
+    "expected_action": "draft"
+  }
+}

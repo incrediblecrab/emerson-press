@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-civic-temporary-shop-leases",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic exercise using fictional reporting notes. Use only the supplied reporting notes as the fixed record: select, organize and phrase the story without inventing additional reported events, scenes, quotations or reporting activity. Write a headline and a straight news update of roughly 450–650 words in AP style for general newspaper readers about Cinder Vale's first subsidised short-term leases for empty shopfronts. Write from this reporting snapshot as of September 18, 2026.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Cinder Vale development office selected three groups for one-year subsidised leases in empty shopfronts on Foundry Street."},
+    {"id": "f2", "text": "The selected uses are a printmaking studio, a clothing-repair workshop and a cooperative exhibition space; none is a residential tenancy."},
+    {"id": "f3", "text": "The city will pay each property owner $750 a month, while each participating group pays the city $300 a month."},
+    {"id": "f4", "text": "The resulting rent subsidy for all three premises over 12 months totals $16,200."},
+    {"id": "f5", "text": "The city separately allocated $24,000 for shared building work, including electrical checks and accessible entrance adjustments."},
+    {"id": "f6", "text": "Thirty-six groups applied, and the selection panel considered public opening hours, a feasible operating plan and suitability for each available space."},
+    {"id": "f7", "text": "The panel did not rank proposals by projected visitor totals because it considered the applicants' forecasts too inconsistent to compare."},
+    {"id": "f8", "text": "The leases are scheduled to start Dec. 1, 2026, subject to completion of the agreed building work."},
+    {"id": "f9", "text": "Development director Nelda Venn said, \"A lit window is a start; the agreement also asks what people can actually do when they walk inside.\""},
+    {"id": "f10", "text": "Each group must open to the public for at least 12 hours a week, though members may work inside at other times."},
+    {"id": "f11", "text": "The scheme requires a public-facing activity but does not require admission to every workshop or event to be free."},
+    {"id": "f12", "text": "The three property owners retain ownership and are not committing to renew the leases after the first year."},
+    {"id": "f13", "text": "Printmaker Rovi Pell said, \"An affordable room lets us start, but moving the presses again in a year is still part of the calculation.\""},
+    {"id": "f14", "text": "One unsuccessful applicant asked the city to release feedback explaining how building suitability affected the decisions."},
+    {"id": "f15", "text": "The city plans to provide written feedback to all applicants and publish a summary of the selection process without individual financial information."},
+    {"id": "f16", "text": "The properties have been vacant for different periods ranging from nine months to nearly three years."},
+    {"id": "f17", "text": "The city has not established that the programme will raise nearby retail sales or lead to permanent commercial leases."},
+    {"id": "f18", "text": "Existing shops remain eligible to propose joint events, but the subsidy is limited to the three selected vacant premises."},
+    {"id": "f19", "text": "The groups must arrange their own equipment, insurance and ordinary operating expenses within the terms of the supplied lease agreement."},
+    {"id": "f20", "text": "A faded tile sign from a former shoe shop will remain above the exhibition space's entrance at the owner's request."},
+    {"id": "f21", "text": "The city will review actual opening hours, activities and building costs after six months."},
+    {"id": "f22", "text": "A second round would need a new budget decision; the first three leases do not automatically authorise additional sites."}
+  ],
+  "modules": ["domains/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f8", "f10", "f12", "f13", "f22"],
+    "forbidden_additions": ["Permanent subsidised tenancy, residential use or automatic expansion.", "A demonstrated increase in retail sales or an undisclosed ranking score.", "All activities described as free or all applicants described as funded.", "The $16,200 net rent subsidy described as gross rent paid to owners or as including the separate $24,000 building-work allocation."],
+    "preserve": ["The public-use conditions and limited duration of the leases.", "The difference between ownership, city subsidy and participants' operating responsibilities.", "Exact quotation wording and attribution when quotations are used."],
+    "expected_action": "draft"
+  }
+}

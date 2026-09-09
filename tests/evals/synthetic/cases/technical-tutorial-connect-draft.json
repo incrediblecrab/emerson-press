@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "id": "technical-tutorial-connect-draft",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "Draft a tutorial step titled 'Connect to the service' for the fictional nexus CLI. Include the configuration setup, the token-writing command, a verification step, and what to do when the verification output signals three different failure cases. Give developers enough context to diagnose their own environment. Use only the supplied facts. Target 350–500 words.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "The CLI tool is named nexus."
+    },
+    {
+      "id": "f2",
+      "text": "The configuration file is located at ~/.nexus/config.toml."
+    },
+    {
+      "id": "f3",
+      "text": "The token field in the configuration file is required."
+    },
+    {
+      "id": "f4",
+      "text": "The base_url field in the configuration file is optional; the default is https://api.example.org."
+    },
+    {
+      "id": "f5",
+      "text": "The command nexus auth set-token <TOKEN> writes the token to the configuration file."
+    },
+    {
+      "id": "f6",
+      "text": "After writing the token, the developer runs nexus status to verify the connection."
+    },
+    {
+      "id": "f7",
+      "text": "nexus status outputs 'Connected to <base_url> as <username>' on a successful connection."
+    },
+    {
+      "id": "f8",
+      "text": "If the token is invalid, nexus status outputs 'Authentication failed: invalid token'."
+    },
+    {
+      "id": "f9",
+      "text": "If base_url is unreachable, nexus status outputs 'Connection failed: could not reach <base_url>'."
+    },
+    {
+      "id": "f10",
+      "text": "Developers in corporate environments may need to set base_url to an internal endpoint; they should contact their administrator for the correct URL."
+    }
+  ],
+  "modules": [
+    "domains/technical.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f7",
+      "f8",
+      "f9",
+      "f10"
+    ],
+    "forbidden_additions": [
+      "Invented command flags or subcommands not in the supplied facts.",
+      "A claim that nexus status automatically fixes connection problems.",
+      "An invented nexus status output not listed in the facts."
+    ],
+    "preserve": [
+      "nexus auth set-token <TOKEN> as the credential command.",
+      "nexus status as the verification step with its three possible outputs.",
+      "Corporate base_url guidance referencing administrator contact.",
+      "base_url optional with default https://api.example.org."
+    ],
+    "expected_action": "draft"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-business-explain-ticket-fee-display",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic newspaper-writing exercise using fictional reporting notes. Use only the supplied reporting notes. Write from the reporting snapshot as of August 17, 2026. Write a headline and a 450–650-word AP-style newspaper explainer answering why a ticket at the Fernwick Playhouse now shows a higher initial price online even though the mandatory checkout total has not changed.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id":"f1","text":"Fernwick Playhouse changed its online price display on Aug. 10, 2026, for its autumn production of the original fictional play The Narrow Orchard."},
+    {"id":"f2","text":"An online ticket previously displayed a $30 base price before adding a $3 booking fee and a $2 facility charge."},
+    {"id":"f3","text":"The website now initially displays $35, the same mandatory total charged online before the display change."},
+    {"id":"f4","text":"The stated total includes all mandatory charges in the supplied price schedule; optional purchases are separate."},
+    {"id":"f5","text":"Buying at the playhouse counter avoids the $3 online booking fee but still carries the $2 facility charge, for a $32 total."},
+    {"id":"f6","text":"The counter opens Tuesday through Saturday from noon to 5 p.m., which is not convenient for every customer."},
+    {"id":"f7","text":"An optional $5 donation is offered at checkout but is not automatically selected."},
+    {"id":"f8","text":"Digital delivery is free; customers choosing postal delivery pay an additional $2 per order, not per ticket."},
+    {"id":"f9","text":"The facility charge goes into the playhouse's building fund, which is paying for roof work."},
+    {"id":"f10","text":"The booking fee pays the contracted ticketing provider and does not pass directly to performers."},
+    {"id":"f11","text":"The August 10–16, 2026, sales report records 300 online tickets and 180 counter tickets across multiple performance dates for this production."},
+    {"id":"f12","text":"Those tickets generated $16,260 in mandatory ticket receipts, excluding optional donations and postal delivery."},
+    {"id":"f13","text":"Playhouse manager Leda Voss said the aim of the display change is to make the first number closer to what the customer must pay."},
+    {"id":"f14","text":"Voss said, \"The price has not gone up at checkout. We have stopped making people reach checkout to discover it.\""},
+    {"id":"f15","text":"Customer Toma Reed said comparing shows was difficult when one venue advertised totals and another advertised base prices."},
+    {"id":"f16","text":"Reed said, \"I cannot compare two nights out if one number is a ticket and the other is only the start of one.\""},
+    {"id":"f17","text":"The playhouse has not published evidence that the new display increased sales or reduced abandoned orders."},
+    {"id":"f18","text":"Its stated cancellation policy returns mandatory ticket charges when the playhouse cancels a performance; ordinary customer cancellations follow separate terms."},
+    {"id":"f19","text":"The playhouse seats 240 people and uses numbered paper tickets for customers without email."},
+    {"id":"f20","text":"The supplied record describes this venue's practices, not a finding that every ticket seller follows the same fee or refund rules."}
+  ],
+  "modules": ["domains/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1","f2","f3","f4","f5","f7","f8","f9","f10","f17","f18"],
+    "forbidden_additions": ["A $5 increase in the online mandatory total caused by the display change","Postal fees charged per ticket, an automatic donation or identical refund rules for all cancellations"],
+    "preserve": ["If quoted: The price has not gone up at checkout. We have stopped making people reach checkout to discover it.","If quoted: I cannot compare two nights out if one number is a ticket and the other is only the start of one.","The online total is $35 and the counter total is $32 under the stated schedule."],
+    "expected_action": "draft"
+  }
+}

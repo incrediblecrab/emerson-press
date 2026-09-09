@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "technical-recoverable-no-change",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Copyedit this archive-restore description. Return it unchanged if it already correctly distinguishes the recoverable action from deletion and accurately states that restoration is available at any time, as the supplied facts specify.",
+  "input": "Archiving a project hides it from your active list but does not delete any data. You can restore an archived project from the Archived tab at any time.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "Archiving a project removes it from the active project list."},
+    {"id": "f2", "text": "Archiving does not delete any project data."},
+    {"id": "f3", "text": "An archived project can be restored from the Archived tab."},
+    {"id": "f4", "text": "Restoration is available at any time; there is no expiration on archived projects."}
+  ],
+  "modules": ["domains/technical.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "A data deletion claim.",
+      "An expiration or time limit on the archived state.",
+      "An invented restore fee or approval step."
+    ],
+    "preserve": [
+      "Hidden-not-deleted distinction.",
+      "Any-time restoration from the Archived tab.",
+      "The accurate wording of the existing passage."
+    ],
+    "expected_action": "no_change"
+  }
+}

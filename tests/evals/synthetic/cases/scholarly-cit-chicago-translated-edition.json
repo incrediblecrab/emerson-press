@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "scholarly-cit-chicago-translated-edition",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Edit this 55–85-word historical reading note and its Chicago 18 footnote. Cite the English translation actually consulted and preserve the translator. The venue's note format is Author, Italicized Book Title, trans. Translator (Publisher, year of consulted edition), pinpoint. A publication city is not required. Restore the exact quotation and remove unsupported attribution of the blank column to a particular person. The original-language title and original edition's pagination are not supplied; do not invent them or attach the translation's page number to the original edition.",
+  "input": "Sava proves that the bursar deliberately concealed the payment: “The blank column was a forgotten one.” The original 1907 book identifies the culprit on page 63, so the omission is no longer uncertain.¹\n\n1. Orel Sava, Ledgers in Winter (Rookspan Editions, 1907), 63.",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "The consulted book is Orel Sava's Ledgers in Winter, translated by Ena Rusk, published by Rookspan Editions in 2022."
+    },
+    {
+      "id": "f2",
+      "text": "Page 63 of the 2022 translation says exactly “The blank column was not a forgotten one.”"
+    },
+    {
+      "id": "f3",
+      "text": "Sava interprets the blank as meaningful but does not identify who left it blank or establish concealment of a payment."
+    },
+    {
+      "id": "f4",
+      "text": "The work first appeared in another language in 1907; neither that edition's title nor its page correspondence is supplied."
+    }
+  ],
+  "modules": [
+    "domains/non-fiction.md",
+    "domains/citation/chicago18.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3"],
+    "forbidden_additions": [
+      "An identification of the bursar as responsible or a proven concealed payment",
+      "An original-language title or original-edition page locator",
+      "An invented publisher location or external verification"
+    ],
+    "preserve": [
+      "The blank column was not a forgotten one.",
+      "Ena Rusk is the translator",
+      "2022 and page 63 identify the consulted translation",
+      "Sava's interpretation remains attributed rather than established as another person's intent"
+    ],
+    "expected_action": "edit"
+  }
+}

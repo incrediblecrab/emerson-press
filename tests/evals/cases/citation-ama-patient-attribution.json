@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "citation-ama-patient-attribution",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Edit this fictional patient handout and apply AMA reference mechanics as far as the supplied metadata permits. The venue explicitly requires an understandable source attribution in the patient-facing sentence as well as a numbered reference. Preserve that attribution and the administrative question. Identify missing bibliographic information in a separate editorial note rather than inventing fields or clinical advice.",
+  "input": "According to the Practice Reading Group's article, a test result may need explanation alongside other information. Ask the service who can explain your result.\n\nReference: Practice Reading Group. Questions Before a Test.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "Practice Reading Group is the fictional corporate author of a journal article."},
+    {"id": "f2", "text": "The article's title is Questions Before a Test."},
+    {"id": "f3", "text": "The article says a test result may need explanation alongside other information."},
+    {"id": "f4", "text": "The article directs readers to ask the service who can explain their result."},
+    {"id": "f5", "text": "Corporate author and article title are the only bibliographic fields supplied."}
+  ],
+  "modules": ["domains/medical.md", "domains/citation/ama11.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "An invented journal title, year, volume, issue, page range, DOI, or archive URL.",
+      "Removal of the required patient-readable attribution because a formal citation is present.",
+      "A diagnosis, treatment instruction, promised response time, or claim that the article was retrieved."
+    ],
+    "preserve": [
+      "The source identity and journal-article type.",
+      "Lay attribution to Practice Reading Group in the patient-facing prose.",
+      "The result's qualified role and the question about who can explain it.",
+      "A clear separation between usable handout text and the missing-metadata note."
+    ],
+    "expected_action": "flag_missing_evidence"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-civic-anonymous-arts-grant-review",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic exercise using fictional reporting notes. Use only the supplied reporting notes as the fixed record: select, organize and phrase the story without inventing additional reported events, scenes, quotations or reporting activity. Write a headline and an explainer of roughly 450–650 words in AP style for general newspaper readers about the anonymous first-stage review used by the Briar Coast Arts Fund. Write from this reporting snapshot as of September 18, 2026.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Briar Coast Arts Fund received 46 applications in its current round, with 34 passing the initial eligibility check."},
+    {"id": "f2", "text": "The 12 applications that did not proceed were screened for the published eligibility and completeness rules rather than ranked by the artistic panel."},
+    {"id": "f3", "text": "A five-member panel reviews eligible project descriptions with applicants' names and direct organizational identifiers removed at the first stage."},
+    {"id": "f4", "text": "Staff retain the identifying information to check eligibility and communicate with applicants, so the process is not anonymous to everyone involved."},
+    {"id": "f5", "text": "Panel criteria include the proposed public activity, feasibility, artistic purpose and the relationship between the budget and the work described."},
+    {"id": "f6", "text": "The fund plans up to 10 awards from a $100,000 allocation, but an eligible application is not guaranteed an award."},
+    {"id": "f7", "text": "Fund director Elva Norr said, \"We can remove the name on the page. We cannot promise that a small town makes every project unrecognizable.\""},
+    {"id": "f8", "text": "An applicant's distinctive prior project or proposed venue may still allow a panelist to recognize who is applying."},
+    {"id": "f9", "text": "Panelists must disclose a relevant connection when they recognize one and follow the fund's recusal procedure."},
+    {"id": "f10", "text": "The procedure records recusals and brings the remaining panel members into the relevant decision rather than pretending the connection was absent."},
+    {"id": "f11", "text": "Artist Rena Vale said, \"The useful question for me is how a connection is handled after someone notices it.\""},
+    {"id": "f12", "text": "Before final awards, staff check the applicant's capacity to accept the grant and the practical conditions attached to the proposed activity."},
+    {"id": "f13", "text": "A strong anonymous first-stage proposal can therefore still require clarification before a final award is made."},
+    {"id": "f14", "text": "The fund will give unsuccessful applicants feedback distinguishing eligibility issues from panel judgments on an eligible proposal."},
+    {"id": "f15", "text": "The fund has not supplied evidence that removing names eliminates every form of bias or changes the award rate for a particular group."},
+    {"id": "f16", "text": "The panel does not choose projects by public popularity voting or by the number of supporters an applicant recruits."},
+    {"id": "f17", "text": "Applicants may propose workshops, performances, exhibitions or other public arts activity within the same published round."},
+    {"id": "f18", "text": "The fund separates project grant spending from applicants' unrelated organizational income when checking the proposed budget."},
+    {"id": "f19", "text": "Final award recipients and funded activities will be published after acceptance, rather than kept permanently anonymous."},
+    {"id": "f20", "text": "The first-stage panel papers use reference numbers so comments can be linked to the correct application without a displayed name."},
+    {"id": "f21", "text": "The current round has not reached final award acceptance, and no list of 10 confirmed winners is supplied."},
+    {"id": "f22", "text": "The fund will review the process after the round using staff, panel and applicant feedback, not only the eventual list of recipients."}
+  ],
+  "modules": ["domains/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f6", "f8", "f9", "f12", "f19"],
+    "forbidden_additions": ["Perfect anonymity, proof all bias is eliminated or a demographic outcome not supplied.", "Twelve artistic rejections attributed to the panel rather than eligibility screening.", "Ten confirmed winners or a guarantee for every eligible applicant.", "The $100,000 allocation described as money already spent or ten equal $10,000 awards."],
+    "preserve": ["Blinding as one stage within a process that also needs eligibility checks and conflict handling.", "Recognition, disclosure, recusal and eventual public awards as distinct matters.", "Exact quotation wording and attribution when quotations are used."],
+    "expected_action": "draft"
+  }
+}

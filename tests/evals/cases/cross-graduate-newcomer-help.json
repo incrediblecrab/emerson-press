@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "cross-graduate-newcomer-help",
+  "split": "tuning",
+  "operation": "draft",
+  "task": "Write an ordinary workplace email explaining which shared-drive folder to use. The reader has a master's degree in history but is new to this team's file workflow. Use practical scaffolding based on that unfamiliarity, not an academic preset or assumptions about technical expertise. This is not a research, essay, or literature-review task.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional team's Current folder contains working versions."},
+    {"id": "f2", "text": "The team's Approved folder contains signed-off versions."},
+    {"id": "f3", "text": "A colleague seeking feedback should use the Current version."},
+    {"id": "f4", "text": "A colleague sharing a document outside the team should use the Approved version."},
+    {"id": "f5", "text": "Files do not move between these folders automatically."}
+  ],
+  "modules": ["domains/general.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5"],
+    "forbidden_additions": [
+      "Automatic approval, automatic folder moves, or unprovided permissions.",
+      "A compulsory thesis, research question, literature review, or formal citations.",
+      "Assumed knowledge of this workflow based solely on the reader's graduate degree."
+    ],
+    "preserve": [
+      "The practical choice between requesting feedback and external sharing.",
+      "Clear explanation for a subject-matter newcomer who is an educated adult.",
+      "An ordinary helpful email rather than an imposed academic assignment."
+    ],
+    "expected_action": "draft"
+  }
+}

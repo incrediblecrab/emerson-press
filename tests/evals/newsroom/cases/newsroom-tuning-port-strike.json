@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-tuning-port-strike",
+  "split": "tuning",
+  "operation": "draft",
+  "task": "For this synthetic writing exercise, use the fictional reporting notes to write a business and labor news story for a general newspaper audience. Write from this reporting snapshot as of April 16, 2025. Include a headline. Target 450 to 650 words. Follow AP style.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "Dockworkers at Port Calloway entered their third day of a work stoppage Wednesday, April 16, 2025, with an estimated $180 million in cargo sitting idle at the port."
+    },
+    {
+      "id": "f2",
+      "text": "The strike began Monday, April 14, 2025, when International Longshore Workers Union Local 14 rejected a management offer and walked off the job."
+    },
+    {
+      "id": "f3",
+      "text": "Local 14 president Maria Reyes said: \"We move every container that keeps this economy running, and we have been offered less than inflation in real terms.\""
+    },
+    {
+      "id": "f4",
+      "text": "Port Calloway authority chief Donald Hsu said: \"We remain committed to reaching a fair agreement, but this disruption is costing everyone.\""
+    },
+    {
+      "id": "f5",
+      "text": "The 890 striking dockworkers are seeking a 28 percent wage increase over four years; the port authority's current offer is 18 percent over the same period."
+    },
+    {
+      "id": "f6",
+      "text": "A second dispute centers on automation: the union wants the port to pause all new automation investment during contract negotiations; the port authority plans to install six new automated container cranes."
+    },
+    {
+      "id": "f7",
+      "text": "Approximately 2,100 containers are currently sitting at Port Calloway that would have been loaded or unloaded under normal operations."
+    },
+    {
+      "id": "f8",
+      "text": "Port Calloway handles approximately $4.2 billion in cargo annually and is a principal entry point for electronics, auto parts, and refrigerated agricultural products."
+    },
+    {
+      "id": "f9",
+      "text": "The Calloway Regional Chamber of Commerce estimated Wednesday the strike is costing the regional economy approximately $60 million per day in delayed commerce, including downstream supply chain disruptions."
+    },
+    {
+      "id": "f10",
+      "text": "The Federal Mediation and Conciliation Service dispatched a team to Calloway on Tuesday; team leader Gerald Watts said the parties had agreed to talk but had not yet entered formal mediated sessions."
+    },
+    {
+      "id": "f11",
+      "text": "The port's terminal operator redirected four arriving cargo ships to Port Westfield, 80 miles up the coast, adding an estimated $2,300 per container in handling and trucking costs."
+    },
+    {
+      "id": "f12",
+      "text": "The union's previous contract, which expired December 31, 2024, provided a 12 percent wage increase over a four-year term."
+    },
+    {
+      "id": "f13",
+      "text": "The port authority reported a $28 million operating surplus in fiscal year 2024."
+    },
+    {
+      "id": "f14",
+      "text": "The six automated cranes the port plans to purchase are estimated to reduce labor requirements by approximately 18 percent per shift once operational."
+    },
+    {
+      "id": "f15",
+      "text": "Reyes said automation was a \"red line\" for the union; Hsu said the cranes were necessary for the port to remain competitive with neighboring facilities."
+    },
+    {
+      "id": "f16",
+      "text": "The ILWU national leadership has not declared a formal national strike; Local 14 is acting independently under its own collective bargaining agreement."
+    },
+    {
+      "id": "f17",
+      "text": "The last major work stoppage at Port Calloway was in 2011 and lasted nine days; it was resolved with federal mediation."
+    },
+    {
+      "id": "f18",
+      "text": "Cargo perishables — including strawberry and lettuce shipments — accounted for roughly 12 percent of the stranded containers, according to port records."
+    },
+    {
+      "id": "f19",
+      "text": "The California Governor's office offered to assign a state mediator; the union said it was open, but port management said it preferred the federal process."
+    },
+    {
+      "id": "f20",
+      "text": "Three electronics importers and two auto parts distributors told reporters they had missed delivery deadlines; none agreed to be named publicly."
+    }
+  ],
+  "modules": [
+    "domains/press.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f7",
+      "f9",
+      "f10"
+    ],
+    "forbidden_additions": [
+      "the strike ended Wednesday",
+      "the ILWU national declared a sympathy strike",
+      "a settlement was reached"
+    ],
+    "preserve": [
+      "We move every container that keeps this economy running, and we have been offered less than inflation in real terms.",
+      "We remain committed to reaching a fair agreement, but this disruption is costing everyone."
+    ],
+    "expected_action": "draft"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-civic-odor-complaint-investigation",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic exercise using fictional reporting notes. Use only the supplied reporting notes as the fixed record: select, organize and phrase the story without inventing additional reported events, scenes, quotations or reporting activity. Write a headline and an explainer of roughly 450–650 words in AP style for general newspaper readers about how the Celandine environmental office investigates intermittent odor complaints. Write from this reporting snapshot as of September 18, 2026.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Celandine environmental office has received intermittent odor reports from streets near a small industrial estate."},
+    {"id": "f2", "text": "The supplied complaint record does not yet identify one confirmed source for every reported episode."},
+    {"id": "f3", "text": "The office asks reporters to record the time, duration, location and character of an episode rather than simply submit a cumulative complaint count."},
+    {"id": "f4", "text": "Repeated contacts from one person remain useful observations but are not counted as different affected households."},
+    {"id": "f5", "text": "Officers compare reports with operating schedules, wind information and observations made when they can attend."},
+    {"id": "f6", "text": "An officer arriving after an odor has dispersed may record no odor at that visit without concluding that the earlier report was invented."},
+    {"id": "f7", "text": "Environmental officer Arla Venn said, \"Timing is the difficult part. A quiet afternoon visit cannot answer a question about a smell that lasted ten minutes before breakfast.\""},
+    {"id": "f8", "text": "The estate contains a bakery, a coffee roaster and several unrelated workshops with different operating patterns."},
+    {"id": "f9", "text": "The presence of a business near a report does not establish that it caused that particular episode."},
+    {"id": "f10", "text": "Businesses have been asked for relevant operating information, but the packet contains no final enforcement finding against any named operator."},
+    {"id": "f11", "text": "Resident organizer Dera Linn said, \"We keep being asked whether it is there right now. What we need understood is how often it returns.\""},
+    {"id": "f12", "text": "The office's inquiry considers frequency and duration as well as what is observed during a single visit."},
+    {"id": "f13", "text": "An odor report is not itself a medical diagnosis or proof of a particular airborne substance."},
+    {"id": "f14", "text": "The office has not supplied laboratory findings establishing a health effect in this case."},
+    {"id": "f15", "text": "If the record indicates a need for specialist sampling, that would be a separate step with its own method and scope."},
+    {"id": "f16", "text": "The current inquiry uses written logs and visits and has not completed such specialist sampling."},
+    {"id": "f17", "text": "The office gives complainants a reference so new episodes can be linked to the existing inquiry rather than treated as unrelated cases."},
+    {"id": "f18", "text": "Personal contact details are used for follow-up and are not posted on the public summary of the inquiry."},
+    {"id": "f19", "text": "The office will publish an update when it can explain the evidence and next action, not promise a fixed date for identifying a source."},
+    {"id": "f20", "text": "Some estate businesses operate before normal office hours, which complicates scheduling a visit during the reported periods."},
+    {"id": "f21", "text": "The estate's shared service road is not a public observation point residents have been asked to enter for the investigation."},
+    {"id": "f22", "text": "No closure order, verified citywide prevalence estimate or completed health study appears in the supplied record."}
+  ],
+  "modules": ["domains/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f2", "f3", "f4", "f5", "f6", "f9", "f12", "f13"],
+    "forbidden_additions": ["A confirmed culprit, enforcement finding or completed specialist test.", "No odor during one visit treated as proof all reports were false.", "A medical diagnosis, hazardous substance identification or invitation to enter private service areas."],
+    "preserve": ["The importance of timing, recurrence and source comparison.", "Observations distinguished from conclusions about cause or health.", "Exact quotation wording and attribution when quotations are used."],
+    "expected_action": "draft"
+  }
+}

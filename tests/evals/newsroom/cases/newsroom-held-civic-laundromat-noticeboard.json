@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-civic-laundromat-noticeboard",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic exercise using fictional reporting notes. Use only the supplied reporting notes as the fixed record: select, organize and phrase the story without inventing additional reported events, scenes, quotations or reporting activity. Write a headline and a reported feature of roughly 450–650 words in AP style for general newspaper readers about the community noticeboard inside the Turnwater laundry. Write from this reporting snapshot as of September 18, 2026.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Turnwater laundry has a cork noticeboard above the folding table, within view of customers waiting for its dryers."},
+    {"id": "f2", "text": "Owner Ada Venn began allowing notices after customers repeatedly asked to leave handwritten messages with staff."},
+    {"id": "f3", "text": "The supplied scene includes notices for a neighborhood lunch, a secondhand sewing machine and a volunteer gardening session."},
+    {"id": "f4", "text": "Venn stamps an expiry date on event notices and removes them after the event so old invitations do not look current."},
+    {"id": "f5", "text": "The board is not reserved for paying advertisers, and there is no posting charge under the laundry's present rules."},
+    {"id": "f6", "text": "Staff check that a notice has a contact method and a date when relevant, but they do not certify the quality of every offer."},
+    {"id": "f7", "text": "Venn said, \"The dryer gives people a few minutes to read. That is more time than a notice gets when it flashes past on a phone.\""},
+    {"id": "f8", "text": "Customer Neri Pell visits during a quiet weekday period and reads the board while folding bedding for a household she helps care for."},
+    {"id": "f9", "text": "Pell said, \"I came for clean sheets and found out the hall lunch had moved. Both things were useful that morning.\""},
+    {"id": "f10", "text": "The move mentioned by Pell was confirmed in a dated notice from the lunch organizer; the packet gives no broader attendance result."},
+    {"id": "f11", "text": "A volunteer sometimes helps notice writers make a second version in another language, with the original writer checking the details before posting."},
+    {"id": "f12", "text": "The laundry does not promise translation into every language or maintain a professional interpretation service."},
+    {"id": "f13", "text": "Customers can ask staff to remove an outdated or disputed notice, which is set aside for the writer to clarify."},
+    {"id": "f14", "text": "A removed notice is not automatically a finding of fraud or proof that the offered service never existed."},
+    {"id": "f15", "text": "The board's size limits each poster to one current sheet unless Venn agrees to a larger community announcement."},
+    {"id": "f16", "text": "The laundry's electronic page exists separately, and notices are not automatically photographed and republished there."},
+    {"id": "f17", "text": "The folding table doubles as the place where writers straighten a page and borrow a pen before pinning it up."},
+    {"id": "f18", "text": "Some customers use the premises primarily for drying bulky items rather than completing an entire wash cycle."},
+    {"id": "f19", "text": "The laundry has six dryers, so reading time and conversations vary with the ordinary work of sharing the machines."},
+    {"id": "f20", "text": "Venn keeps a folder of removed community notices to return if their writers want them, not as a publicly searchable archive."},
+    {"id": "f21", "text": "The supplied record does not measure how many jobs, sales or friendships the board has produced."},
+    {"id": "f22", "text": "The board is available during laundry opening hours and is not an independent round-the-clock public information service."}
+  ],
+  "modules": ["domains/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f6", "f8", "f10", "f16"],
+    "forbidden_additions": ["Verified quality of every offer, measured social outcomes or a professional translation service.", "Automatic online republication of notices.", "A disputed notice treated as proven fraud."],
+    "preserve": ["The ordinary laundry routine through which the information reaches readers.", "Light-touch maintenance of dates and contact details without a guarantee about every claim.", "Exact quotation wording and attribution when quotations are used."],
+    "expected_action": "draft"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "technical-ui-app-alert-review",
+  "split": "tuning",
+  "operation": "review",
+  "task": "Review this macOS application alert dialog annotation for accuracy against the supplied implementation facts. Return it unchanged if all action labels, default-button behavior, and keyboard annotations match the supplied facts exactly.",
+  "input": "Title: Delete project?\nBody: This will permanently delete the project and all its files. This cannot be undone.\nPrimary button: Delete (default, triggered by Return)\nCancel button: Cancel (triggered by Escape)",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "Deletion is permanent; no undo is available."},
+    {"id": "f2", "text": "All project files are deleted along with the project."},
+    {"id": "f3", "text": "The Delete button is the default action in this dialog."},
+    {"id": "f4", "text": "Pressing Return in this dialog triggers the Delete action."},
+    {"id": "f5", "text": "Pressing Escape dismisses the dialog without deleting."}
+  ],
+  "modules": ["domains/general.md", "domains/user-interface/applications.md", "domains/user-interface/apple-hig.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5"],
+    "forbidden_additions": [
+      "A mismatch between the reviewed annotation and the supplied behavior.",
+      "A universal platform claim about all macOS dialogs.",
+      "An invented undo or recovery route."
+    ],
+    "preserve": [
+      "Return triggers Delete per this implementation.",
+      "Escape dismisses without deleting per this implementation.",
+      "Permanent deletion of all project files with no undo."
+    ],
+    "expected_action": "no_change"
+  }
+}

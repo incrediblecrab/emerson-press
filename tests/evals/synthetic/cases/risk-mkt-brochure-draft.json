@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "risk-mkt-brochure-draft",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "Draft a short product-brochure section for a fictional electronic-signature platform aimed at legal-services firms. Use only the supplied facts. Do not add certification claims, regulatory-compliance assertions, or customer outcome data not supplied.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional product is called SignVault."},
+    {"id": "f2", "text": "SignVault generates a time-stamped audit log for each signed document."},
+    {"id": "f3", "text": "Documents can be shared with up to 20 signatories per transaction."},
+    {"id": "f4", "text": "The product is designed for use by legal-services firms handling commercial contracts."},
+    {"id": "f5", "text": "No compliance certification is listed in the supplied facts."}
+  ],
+  "modules": ["domains/marketing.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "A legal compliance certification or regulatory approval not in the facts.",
+      "A customer efficiency or cost-saving claim.",
+      "A maximum file-size or upload-speed assertion."
+    ],
+    "preserve": [
+      "The audit-log feature with time-stamping.",
+      "The 20-signatory limit per transaction.",
+      "The legal-services suitability statement without overstating compliance."
+    ],
+    "expected_action": "draft"
+  }
+}

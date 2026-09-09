@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-civic-fenced-ballfield-opening",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic exercise using fictional reporting notes. Use only the supplied reporting notes as the fixed record: select, organize and phrase the story without inventing additional reported events, scenes, quotations or reporting activity. Write a headline and a straight news update of roughly 450–650 words in AP style for general newspaper readers about public access planned for the club-leased ballfield in Coppermead. Write from this reporting snapshot as of September 18, 2026.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Coppermead Athletics Club's exclusive lease of the city-owned Mill Acre ballfield ends Sept. 30, 2026, without renewal."},
+    {"id": "f2", "text": "The city has owned the 11-acre property throughout the 30-year lease, so the change does not involve buying the land from the club."},
+    {"id": "f3", "text": "The parks department plans to open the ground for general recreation in April 2027 after access and drainage work."},
+    {"id": "f4", "text": "The fence will remain closed during the work, and the end of the lease does not immediately open the field to the public."},
+    {"id": "f5", "text": "The council approved a $275,000 works allowance, but final contractor prices have not yet been obtained."},
+    {"id": "f6", "text": "The initial work includes a step-free entrance, repairs to the perimeter path and improvements to the wet corner nearest the pavilion."},
+    {"id": "f7", "text": "Under a new booking agreement, the club will retain 12 scheduled training hours a week without retaining exclusive control of the property."},
+    {"id": "f8", "text": "Other organized groups will use the city's booking system, while casual use will be possible outside reserved sessions."},
+    {"id": "f9", "text": "Parks director Soren Vale said, \"Opening a gate is simple; making room for different uses is the work that comes after it.\""},
+    {"id": "f10", "text": "The club has agreed to transfer ownership of the small equipment shed to the city while removing its privately owned training equipment."},
+    {"id": "f11", "text": "Club secretary Mara Keel said, \"We lose the certainty of having the whole place, but we keep a place to train.\""},
+    {"id": "f12", "text": "Nearby residents have asked for seating and informal play space rather than turning every available hour into another organized booking."},
+    {"id": "f13", "text": "The current plan does not add floodlights or authorize late-night events at the field."},
+    {"id": "f14", "text": "Proposed public opening hours are 6 a.m. to 8 p.m.; the council will confirm them with the final management plan."},
+    {"id": "f15", "text": "A dog-access policy has not been settled and will be considered alongside maintenance and sports-use requirements."},
+    {"id": "f16", "text": "The city will take over routine grounds maintenance, which is currently the club's responsibility under its lease."},
+    {"id": "f17", "text": "The operating budget for that maintenance will be considered separately from the capital works allowance."},
+    {"id": "f18", "text": "The pavilion toilets will remain closed until their condition assessment and repair scope are complete."},
+    {"id": "f19", "text": "The club's noticeboard displays handwritten match results dating to its first season on the ground."},
+    {"id": "f20", "text": "The local history society has offered to photograph the noticeboard before the pavilion is altered."},
+    {"id": "f21", "text": "No attendance forecast or estimate of additional local business spending accompanies the approved transition plan."},
+    {"id": "f22", "text": "The parks department will publish a works timetable after procurement and hold a management-plan meeting before public opening."}
+  ],
+  "modules": ["domains/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f7", "f8", "f12", "f17"],
+    "forbidden_additions": ["A land purchase from the club or immediate unrestricted opening.", "Loss of all club training access, approved floodlights or a settled dog policy.", "Guaranteed April completion, fully funded ongoing maintenance or attendance forecasts."],
+    "preserve": ["The change from exclusive leasing to shared public and booked use.", "Separate capital work, operating costs and unresolved management decisions.", "Exact quotation wording and attribution when quotations are used."],
+    "expected_action": "draft"
+  }
+}

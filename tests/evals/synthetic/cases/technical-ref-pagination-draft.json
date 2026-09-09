@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "id": "technical-ref-pagination-draft",
+  "split": "tuning",
+  "operation": "draft",
+  "task": "Draft a complete pagination reference section for a fictional REST API list endpoint. Cover request parameters with types and defaults, response envelope fields, behaviour when the page runs past the total count, error responses for invalid values, the authentication requirement, and the empty-results case. Use only the supplied facts. Target 400–500 words; this is a reference section, not a one-liner.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "The endpoint path is GET /v1/items."
+    },
+    {
+      "id": "f2",
+      "text": "The offset parameter is an integer, optional, default 0, minimum 0."
+    },
+    {
+      "id": "f3",
+      "text": "The limit parameter is an integer, optional, default 20, minimum 1, maximum 100."
+    },
+    {
+      "id": "f4",
+      "text": "The response body includes a total_count integer field representing the total number of matching items regardless of pagination."
+    },
+    {
+      "id": "f5",
+      "text": "The response body includes an items array containing the results for the requested page."
+    },
+    {
+      "id": "f6",
+      "text": "No cursor-based or page-number pagination is available for this endpoint."
+    },
+    {
+      "id": "f7",
+      "text": "When offset plus limit exceeds total_count, the items array contains the remaining items and is shorter than the requested limit value."
+    },
+    {
+      "id": "f8",
+      "text": "A limit value above 100 results in a 422 Unprocessable Entity response with the error message 'limit must not exceed 100'."
+    },
+    {
+      "id": "f9",
+      "text": "Requests without a valid authentication token result in a 401 Unauthorized response."
+    },
+    {
+      "id": "f10",
+      "text": "When no items match the query, the items array is an empty array, not null, and total_count is 0."
+    }
+  ],
+  "modules": [
+    "domains/technical.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f7",
+      "f8",
+      "f9",
+      "f10"
+    ],
+    "forbidden_additions": [
+      "A cursor, page_number, or page_size parameter not in the supplied facts.",
+      "A total_pages or next_cursor field not in the supplied facts.",
+      "A claim that items is null when no results are found."
+    ],
+    "preserve": [
+      "offset default 0, limit default 20, limit maximum 100.",
+      "total_count and items in the response envelope.",
+      "The partial-page, 422, 401, and empty-results behaviours from the facts.",
+      "Explicit absence of cursor-based pagination."
+    ],
+    "expected_action": "draft"
+  }
+}

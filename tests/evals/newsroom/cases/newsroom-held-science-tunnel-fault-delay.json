@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-science-tunnel-fault-delay",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic writing exercise. Using these fictional reporting notes, write a newspaper news story for general readers. Draw only on the supplied notes; do not invent additional reported events, scenes, or quotations. Write from this reporting snapshot as of September 18, 2024. Include a headline. Target 450 to 650 words. Follow AP style.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "Metro City Transit Authority announced on September 18, 2024, that an unmapped geological fault discovered during boring operations will delay completion of the Eastside Connector tunnel by at least four years, to 2031."
+    },
+    {
+      "id": "f2",
+      "text": "The additional delay is accompanied by a cost increase of $1.9 billion, bringing the total project estimate to $7.4 billion."
+    },
+    {
+      "id": "f3",
+      "text": "Tunnel boring machines paused at the fault zone in August after geotechnical sensors detected fracturing and elevated groundwater pressure inconsistent with pre-construction surveys."
+    },
+    {
+      "id": "f4",
+      "text": "The fault runs approximately 340 meters across the tunnel path at a depth of 38 meters below a densely populated urban neighborhood."
+    },
+    {
+      "id": "f5",
+      "text": "Transit Authority director Sandra Mu\u00f1oz said: \"Pre-construction surveys do not capture every subsurface feature. We are dealing with a real geological constraint, not a project management failure.\""
+    },
+    {
+      "id": "f6",
+      "text": "Lead geotechnical engineer Dr. Chen Li said three options are under study: reorienting the tunnel bore by 11 degrees, applying soil consolidation treatment across the fault zone, or reducing boring speed through the zone at significant time cost."
+    },
+    {
+      "id": "f7",
+      "text": "The fault was not identified in any historical geological mapping of the city; the authority said it appears to be a secondary splay from a larger regional fault last active more than 10,000 years ago."
+    },
+    {
+      "id": "f8",
+      "text": "Construction on the Eastside Connector began in 2019 and was originally scheduled for completion in 2027; this is the project's third cost revision."
+    },
+    {
+      "id": "f9",
+      "text": "The previous two cost increases, totaling $1.1 billion, were attributed to COVID-related supply chain disruptions and rising steel prices."
+    },
+    {
+      "id": "f10",
+      "text": "Federal transit officials said the project's primary funding grant would require renegotiation if the scope changes substantially; the federal share is $2.2 billion of the original $4.4 billion budget."
+    },
+    {
+      "id": "f11",
+      "text": "The Eastside Connector is planned to carry 80,000 daily riders on completion; the eastern corridor it serves is currently served only by bus lines with average journey times 22 minutes longer."
+    },
+    {
+      "id": "f12",
+      "text": "City council members representing the eastern districts called for an independent audit of the geological survey process used before construction began."
+    },
+    {
+      "id": "f13",
+      "text": "Dr. Li said the fault zone will require ground treatment regardless of which routing option is chosen."
+    },
+    {
+      "id": "f14",
+      "text": "Three blocks of residential buildings above the fault zone are being monitored for surface settlement; no movement beyond normal tolerance has been detected."
+    },
+    {
+      "id": "f15",
+      "text": "The authority said it will present a preferred solution to the board in 90 days."
+    },
+    {
+      "id": "f16",
+      "text": "Bond rating agencies said they are reviewing the authority's debt rating in light of the revised cost profile."
+    },
+    {
+      "id": "f17",
+      "text": "Two completed stations at the western end of the line are already built and have been in use since 2022."
+    },
+    {
+      "id": "f18",
+      "text": "The authority did not specify which of the three mitigation options was preferred, saying an engineering decision would precede any public announcement."
+    },
+    {
+      "id": "f19",
+      "text": "The city's overall transit infrastructure is rated D+ in the most recent national infrastructure report."
+    },
+    {
+      "id": "f20",
+      "text": "Mu\u00f1oz said no worker injuries resulted from the fault discovery; boring operations were halted as a standard precaution."
+    }
+  ],
+  "modules": [
+    "domains/press.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f7",
+      "f8",
+      "f10",
+      "f11"
+    ],
+    "forbidden_additions": [
+      "a claim that the tunnel will be cancelled",
+      "a specific fault reorientation angle not in the notes",
+      "a building collapse or subsidence event"
+    ],
+    "preserve": [
+      "Pre-construction surveys do not capture every subsurface feature. We are dealing with a real geological constraint, not a project management failure."
+    ],
+    "expected_action": "draft"
+  }
+}

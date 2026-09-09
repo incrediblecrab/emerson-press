@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-business-news-hangar-delay",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic newspaper-writing exercise using fictional reporting notes. Use only the supplied reporting notes. Write from the reporting snapshot as of August 20, 2026. Write a headline and a 450–650-word AP-style newspaper update about the delayed maintenance hangar at Rookmeadow Airport and the business decisions waiting on its construction.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id":"f1","text":"Rookmeadow Airport Authority said Thursday, Aug. 20, 2026, that the start of its proposed maintenance-hangar construction will be delayed at least three months."},
+    {"id":"f2","text":"The authority had planned to begin site work in September and open the hangar in May 2027."},
+    {"id":"f3","text":"The drainage permit is incomplete because the engineering submission omitted runoff calculations for an adjacent service apron."},
+    {"id":"f4","text":"The permit office requested the missing calculations on July 29; it has not rejected the entire project."},
+    {"id":"f5","text":"The hangar project's approved capital budget is $7.2 million, including an estimated $420,000 for site drainage."},
+    {"id":"f6","text":"The authority has not priced the additional drainage design or revised the final construction budget."},
+    {"id":"f7","text":"Prospective tenant Finchward Aviation has paid a refundable $120,000 lease deposit."},
+    {"id":"f8","text":"Its agreement allows withdrawal if the hangar is not available by Sept. 1, 2027; the company has not exercised that option."},
+    {"id":"f9","text":"Finchward's current workshop is at another airport, and it plans to keep operating there during the delay."},
+    {"id":"f10","text":"The company projected 40 jobs at the new site, including 24 transfers and 16 additional positions, conditional on opening."},
+    {"id":"f11","text":"Those positions are not all new regional jobs, and no new-site hiring notices have been issued."},
+    {"id":"f12","text":"A technical-college placement program had expected six trainee rotations at the new hangar next summer."},
+    {"id":"f13","text":"The college is seeking alternative placements but has not canceled the trainees' course."},
+    {"id":"f14","text":"Finchward manager Rella Vint said, \"We can keep repairing aircraft where we are. We cannot recruit against a building date that keeps moving.\""},
+    {"id":"f15","text":"Neighboring garden-center owner Tavin Lark said he supports the jobs but wants drainage settled before more hard surface is built."},
+    {"id":"f16","text":"Lark said, \"A permit question can be paperwork at the airport and water at my fence.\""},
+    {"id":"f17","text":"The reporting record does not establish that the proposed hangar has caused flooding at the garden center."},
+    {"id":"f18","text":"The airport's existing passenger and freight services will continue; the delay concerns the new maintenance facility."},
+    {"id":"f19","text":"The proposed hangar site has been used for equipment storage since a taxiway realignment in 2011."},
+    {"id":"f20","text":"The authority will publish a revised schedule after receiving the drainage engineer's submission, with no specific publication date promised."}
+  ],
+  "modules": ["domains/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1","f2","f3","f4","f6","f7","f8","f10","f11","f13","f18"],
+    "forbidden_additions": ["A rejected or canceled project, a withdrawn tenant or 40 confirmed new jobs","Flooding caused by the unbuilt hangar or a revised opening date not announced"],
+    "preserve": ["If quoted: We can keep repairing aircraft where we are. We cannot recruit against a building date that keeps moving.","If quoted: A permit question can be paperwork at the airport and water at my fence.","The projected 40 jobs include 24 transfers and 16 additional positions."],
+    "expected_action": "draft"
+  }
+}

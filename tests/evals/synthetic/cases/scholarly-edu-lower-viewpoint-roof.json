@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "scholarly-edu-lower-viewpoint-roof",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Edit this lower-elementary reading response to 45–75 words using only the original classroom story facts. The learners can follow who says something but are practicing the difference between what a character can see and what exists in the story. Preserve Pim's quotation exactly. Give useful help with that distinction without adding a new scene, emotion, or reason for the canvas. No formal citation or debate paragraph is required.",
+  "input": "The roof was gone because Pim could not see it. Pim said, “I cannot see the roof.” This proves that the roof had fallen down, and Pim was frightened until someone put it back.",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "In the original classroom story The Blue Umbrella Map, Pim stands under a canvas."
+    },
+    {
+      "id": "f2",
+      "text": "Pim says exactly “I cannot see the roof.”"
+    },
+    {
+      "id": "f3",
+      "text": "The narrator then says that above the canvas, the roof is still there."
+    },
+    {
+      "id": "f4",
+      "text": "The story excerpt gives no fallen roof, repair, or statement that Pim is frightened."
+    }
+  ],
+  "modules": [
+    "domains/non-fiction.md",
+    "domains/education-level/01-elementary-lower.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3"],
+    "forbidden_additions": [
+      "A fallen or repaired roof",
+      "Invented fear, dialogue, or action by another character",
+      "A claim that not seeing an object establishes its absence"
+    ],
+    "preserve": [
+      "I cannot see the roof.",
+      "Pim's limited view and the narrator's additional information remain distinct",
+      "The response remains a short explanation of the supplied story"
+    ],
+    "expected_action": "edit"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "id": "risk-med-patient-faq",
+  "split": "tuning",
+  "operation": "draft",
+  "task": "Draft a five-question FAQ section for a fictional clinic's patient portal covering a routine blood panel. Answer each question in one to three sentences. Questions: (1) What does the panel measure? (2) How do I read my result report? (3) When will my results be available? (4) Who will explain my results? (5) What should I do if I am worried about a result? No diagnosis, no specific marker values, no treatment recommendations. Use plain language suitable for a general adult reader.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "The FAQ covers a fictional routine blood panel offered at Lakeview Clinic."
+    },
+    {
+      "id": "f2",
+      "text": "The panel measures markers across several categories as listed in the clinic's order form; the specific markers are not reproduced in the FAQ."
+    },
+    {
+      "id": "f3",
+      "text": "Individual normal ranges vary by laboratory; the ranges that apply to each patient are printed on the patient's own result report, not in the FAQ."
+    },
+    {
+      "id": "f4",
+      "text": "A clinician reviews the result before it is shared with the patient."
+    },
+    {
+      "id": "f5",
+      "text": "Results are available through the patient's online portal within two to three business days of the sample being received at the laboratory."
+    },
+    {
+      "id": "f6",
+      "text": "Result reports include flags (H for above range, L for below range) beside each value; these flags reflect the laboratory's reference ranges and are not a clinical interpretation."
+    },
+    {
+      "id": "f7",
+      "text": "Patients with concerns about a result should contact the clinic by phone; they should not attend an emergency department for routine blood panel queries."
+    },
+    {
+      "id": "f8",
+      "text": "The FAQ entry is not a diagnostic tool and does not replace a clinical consultation."
+    }
+  ],
+  "modules": [
+    "domains/medical.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f7"
+    ],
+    "forbidden_additions": [
+      "A diagnosis or clinical interpretation of any specific marker value.",
+      "A stated normal range beyond the note that ranges are printed on the result report.",
+      "A treatment recommendation, referral instruction, or emergency guidance beyond the supplied contact-clinic direction."
+    ],
+    "preserve": [
+      "The attribution of normal ranges to the patient's own result report, not the FAQ.",
+      "The two-to-three business-day result availability period.",
+      "The H/L flag explanation as a laboratory reference indicator, not a clinical verdict.",
+      "The instruction to contact the clinic by phone for concerns, not an emergency department."
+    ],
+    "expected_action": "draft"
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-science-rural-fiber-complete",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic writing exercise. Using these fictional reporting notes, write a newspaper news story for general readers. Draw only on the supplied notes; do not invent additional reported events, scenes, or quotations. Write from this reporting snapshot as of August 22, 2024. Include a headline. Target 450 to 650 words. Follow AP style.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "TeleLink Rural Networks announced on August 22, 2024, that it had completed fiber-optic broadband connections to 78,000 previously unserved households in Clearwater County, eight months ahead of the contract schedule."
+    },
+    {
+      "id": "f2",
+      "text": "The project was funded through a $440 million federal broadband equity grant and $450 million in state infrastructure bonds, for a total project cost of $890 million."
+    },
+    {
+      "id": "f3",
+      "text": "The rollout used aerial cable installation along existing utility poles for 84% of the connections, reducing permitting time and underground excavation costs."
+    },
+    {
+      "id": "f4",
+      "text": "TeleLink CEO Rachel Auer said: \"We finished early because we standardized the aerial installation process and trained crews to achieve 150 connections per day per team rather than the industry standard of 90.\""
+    },
+    {
+      "id": "f5",
+      "text": "The delivered service provides symmetrical speeds of 1 gigabit per second at a monthly retail price of $65."
+    },
+    {
+      "id": "f6",
+      "text": "Prior to the project, 74% of the county's rural households had access only to satellite or fixed wireless internet with speeds below 25 megabits per second."
+    },
+    {
+      "id": "f7",
+      "text": "The county school district said 4,200 students gained access to home broadband through the project, eliminating a documented gap in homework completion rates between rural and town students."
+    },
+    {
+      "id": "f8",
+      "text": "Clearwater County Board chair James Moran said two agricultural businesses had relocated operations from neighboring counties in anticipation of the fiber project; he credited the connection as enabling precision agriculture monitoring."
+    },
+    {
+      "id": "f9",
+      "text": "The project required installation of 2,300 kilometers of new fiber cable and 140 distribution nodes."
+    },
+    {
+      "id": "f10",
+      "text": "Take-up rates exceeded projections: 61% of connected households subscribed within the first 90 days, compared to the contract's 50% 18-month target."
+    },
+    {
+      "id": "f11",
+      "text": "The $890 million project serves the 78,000 households at an average cost of approximately $11,400 per household."
+    },
+    {
+      "id": "f12",
+      "text": "TeleLink built the infrastructure under a 25-year indefeasible right-of-use agreement with the county; ownership of the fiber network transfers to the county at the agreement's end."
+    },
+    {
+      "id": "f13",
+      "text": "Federal broadband rules required TeleLink to offer a $30-per-month low-income tier; as of August, 9,200 households had enrolled in the low-income plan."
+    },
+    {
+      "id": "f14",
+      "text": "Two neighboring counties with similar broadband gaps are expected to begin their own federal grant-funded projects in 2025."
+    },
+    {
+      "id": "f15",
+      "text": "Auer said early completion will allow TeleLink to redeploy its installation teams to a second project in another state, improving the company's capital efficiency."
+    },
+    {
+      "id": "f16",
+      "text": "The federal grant included a clawback provision requiring repayment if fewer than 40% of connected households subscribe within five years."
+    },
+    {
+      "id": "f17",
+      "text": "Workforce development officials noted that 140 of the 380 installation crew members hired for the project were from Clearwater County, with training provided through a TeleLink partnership program."
+    },
+    {
+      "id": "f18",
+      "text": "The county's broadband gap had been documented since 2015; two previous project proposals failed due to insufficient funding."
+    },
+    {
+      "id": "f19",
+      "text": "Healthcare officials said telehealth visit rates among county residents with newly connected households increased threefold in the first six months of availability."
+    },
+    {
+      "id": "f20",
+      "text": "The broadband equity grant program was authorized by Congress in 2021; Clearwater County's project is among the first 40 completions nationally under the program."
+    }
+  ],
+  "modules": [
+    "domains/press.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f7",
+      "f10",
+      "f11",
+      "f12"
+    ],
+    "forbidden_additions": [
+      "a claim that all 78,000 households subscribed",
+      "a speed or price different from the notes",
+      "a cost-per-household figure different from $11,400"
+    ],
+    "preserve": [
+      "We finished early because we standardized the aerial installation process and trained crews to achieve 150 connections per day per team rather than the industry standard of 90."
+    ],
+    "expected_action": "draft"
+  }
+}

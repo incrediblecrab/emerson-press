@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "technical-tutorial-steps-no-change",
+  "split": "tuning",
+  "operation": "edit",
+  "task": "Copyedit these installation and initialization steps for a fictional CLI. Return them unchanged if they already match the supplied command facts exactly, including order and placeholder format.",
+  "input": "1. Install the package: pip install nexaflow\n2. Initialize the workspace: nexaflow init\n3. Set your API key: nexaflow config set api_key <YOUR_KEY>\n4. Run a connectivity check: nexaflow ping",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "Step 1 install command: pip install nexaflow."},
+    {"id": "f2", "text": "Step 2 init command: nexaflow init."},
+    {"id": "f3", "text": "Step 3 API key command: nexaflow config set api_key <YOUR_KEY>."},
+    {"id": "f4", "text": "Step 4 connectivity check command: nexaflow ping."},
+    {"id": "f5", "text": "These four commands are the complete installation sequence in this order."}
+  ],
+  "modules": ["domains/technical.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5"],
+    "forbidden_additions": [
+      "An invented step not from the supplied facts.",
+      "A reordering of the four supplied steps.",
+      "Replacement of <YOUR_KEY> placeholder with a real or invented token."
+    ],
+    "preserve": [
+      "All four commands in the supplied order.",
+      "The <YOUR_KEY> placeholder.",
+      "nexaflow ping labeled as a connectivity check."
+    ],
+    "expected_action": "no_change"
+  }
+}

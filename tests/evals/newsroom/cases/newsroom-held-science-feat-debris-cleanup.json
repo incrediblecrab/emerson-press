@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-science-feat-debris-cleanup",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic writing exercise. Using these fictional reporting notes, write a newspaper reported feature for general readers. Draw only on the supplied notes; do not invent additional reported events, scenes, or quotations. Write from this reporting snapshot as of June 24, 2024. Include a headline. Target 450 to 650 words. Follow AP style.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "OrbClear Technologies, a 28-person startup founded in 2020, is developing a grappling spacecraft designed to capture defunct satellites and lower them to deorbit trajectories."
+    },
+    {
+      "id": "f2",
+      "text": "CEO Diana Leung said the company has secured $34 million in seed and Series A funding and is targeting a first mission demonstration in 2027, aimed at capturing a specific 400-kilogram satellite left in 820-kilometer orbit in 2009."
+    },
+    {
+      "id": "f3",
+      "text": "Leung said: \"We are not talking about cleaning up all of space. We are talking about proving that one capture is possible, on budget, on schedule. Everything else follows from that.\""
+    },
+    {
+      "id": "f4",
+      "text": "The technical approach uses a net-and-tether system: the grappler deploys a resistive net around the target object, then fires a small thruster package to begin lowering both vehicles toward atmospheric reentry."
+    },
+    {
+      "id": "f5",
+      "text": "Space law expert Prof. Kwame Asante of Pacific Ocean University said the legal problem may be harder than the engineering: international law treats defunct satellites as the property of their registration nation, meaning OrbClear cannot remove an object without the owner's consent."
+    },
+    {
+      "id": "f6",
+      "text": "Prof. Asante said: \"The 2009 satellite OrbClear is targeting is registered to a country that no longer exists as a political entity. Getting consent from a successor state for an orbital operation is not a solved legal question.\""
+    },
+    {
+      "id": "f7",
+      "text": "Leung said OrbClear has engaged international space law attorneys for 18 months and believes a workable consent pathway exists but acknowledges that consent must be secured before launch: \"We are not asking forgiveness.\""
+    },
+    {
+      "id": "f8",
+      "text": "TerraClear Inc., a competing startup backed by a larger aerospace investor, is pursuing an ion beam approach: flying close to a debris object and redirecting its orbit with a focused ion stream without physical contact."
+    },
+    {
+      "id": "f9",
+      "text": "Leung said the ion beam approach avoids the consent problem for pushing a debris object to a lower orbit, but cannot fully control the timing or trajectory of the eventual reentry."
+    },
+    {
+      "id": "f10",
+      "text": "Prof. Asante said both approaches highlight the governance gap: the technology is advancing faster than the international agreements needed to authorize its use."
+    },
+    {
+      "id": "f11",
+      "text": "OrbClear has a letter of interest from three satellite operators who are paying an annual monitoring fee for their own defunct objects; Leung said this is the company's path to revenue."
+    },
+    {
+      "id": "f12",
+      "text": "The European Space Agency's ClearSpace-1 mission is attempting a similar capture with government backing; Leung said private-sector demonstrations are necessary to prove the market can support commercial debris removal."
+    },
+    {
+      "id": "f13",
+      "text": "Leung said the biggest risk is not technical \u2014 she believes the grappling approach will work \u2014 but financial: a launch delay or failed demonstration would likely exhaust the company's capital."
+    },
+    {
+      "id": "f14",
+      "text": "Prof. Asante said the commercial debris removal industry will need a liability regime before it scales: if a removal spacecraft damages a satellite during capture, who is legally responsible?"
+    },
+    {
+      "id": "f15",
+      "text": "OrbClear has proposed to the UN Committee on the Peaceful Uses of Outer Space that it develop a 'removal consent certificate' framework; the proposal has been submitted but not yet scheduled for review."
+    },
+    {
+      "id": "f16",
+      "text": "Leung said she entered the space industry from ocean cleanup engineering: \"The principles are similar. Large, diffuse, transboundary problem. No one entity owns the harm. Everyone owns the risk.\""
+    },
+    {
+      "id": "f17",
+      "text": "TerraClear said its ion beam approach has completed ground testing and is targeting a demonstration mission in 2026; the two companies are aware of each other and are in communication."
+    },
+    {
+      "id": "f18",
+      "text": "Leung said OrbClear is not in competition with TerraClear in the way most startups compete: \"We need multiple approaches to be proven. If they succeed, it helps us. The market is the debris field, and there is plenty for everyone to work on.\""
+    },
+    {
+      "id": "f19",
+      "text": "Prof. Asante said the most optimistic outcome for the next decade is a framework in which the major spacefaring nations agree to consent procedures for debris removal of objects they can no longer use; that framework does not yet exist."
+    },
+    {
+      "id": "f20",
+      "text": "Leung said she is betting that a successful demonstration will change the legal discussion: \"Lawyers find solutions when the engineering shows the solution is real.\""
+    }
+  ],
+  "modules": [
+    "domains/press.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f7",
+      "f8",
+      "f10",
+      "f12",
+      "f13",
+      "f14"
+    ],
+    "forbidden_additions": [
+      "a completed debris capture mission",
+      "a consent framework already adopted by the UN",
+      "a funding amount different from $34 million"
+    ],
+    "preserve": [
+      "We are not talking about cleaning up all of space. We are talking about proving that one capture is possible, on budget, on schedule. Everything else follows from that.",
+      "The 2009 satellite OrbClear is targeting is registered to a country that no longer exists as a political entity. Getting consent from a successor state for an orbital operation is not a solved legal question."
+    ],
+    "expected_action": "draft"
+  }
+}

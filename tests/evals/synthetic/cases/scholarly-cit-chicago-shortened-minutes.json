@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "scholarly-cit-chicago-shortened-minutes",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Repair this 45–70-word passage and note 7 in a Chicago 18 history essay. The minutes were fully cited in note 2, and note 6 cites a different work. The venue requires a shortened note here, not ibid.: Plover Basin Makers Council, “Minutes of the September 6 Meeting,” sec. 4. The PDF has numbered sections but no pages. Retain note number 7, correct the status of the motion, and do not add a bibliography or invent an archive, page number, or later vote.",
+  "input": "The council approved moving the kiln, and work therefore began that month. The unanimous decision appears on page 8 of the meeting record.⁷\n\n7. Ibid., 8.",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "Source record: Plover Basin Makers Council; Minutes of the September 6 Meeting; September 6, 2024; https://example.org/plover-basin/minutes-2024-09-06."
+    },
+    {
+      "id": "f2",
+      "text": "Section 4 records a motion to move the kiln, which the chair deferred before a vote."
+    },
+    {
+      "id": "f3",
+      "text": "The supplied minutes contain no approval, vote count, or record that moving work began."
+    },
+    {
+      "id": "f4",
+      "text": "The document has numbered sections, no page numbers, and was fully cited in note 2; intervening note 6 cites another source."
+    }
+  ],
+  "modules": [
+    "domains/non-fiction.md",
+    "domains/citation/chicago18.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "An approval, unanimous vote, construction start, or later decision",
+      "A page 8 locator or an invented archive",
+      "An ibid. reference that points to the intervening different work"
+    ],
+    "preserve": [
+      "Note 7",
+      "Plover Basin Makers Council, “Minutes of the September 6 Meeting,” sec. 4",
+      "A proposed move was deferred before a vote"
+    ],
+    "expected_action": "edit"
+  }
+}

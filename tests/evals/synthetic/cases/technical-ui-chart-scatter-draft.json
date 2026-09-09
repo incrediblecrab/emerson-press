@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "technical-ui-chart-scatter-draft",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "Draft a title, axis labels, and a brief factual caption for a scatter plot in a technical report. Use the supplied variable names, ranges, and session count. Do not claim correlation or causation between document length and edit time.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The scatter plot shows the relationship between document length (x-axis, in words) and edit time (y-axis, in minutes)."},
+    {"id": "f2", "text": "The x-axis range is 100 to 5,000 words."},
+    {"id": "f3", "text": "The y-axis range is 5 to 120 minutes."},
+    {"id": "f4", "text": "The data represents 200 editing sessions from a fictional editorial workflow study."},
+    {"id": "f5", "text": "Correlation or causation between document length and edit time has not been analyzed in the supplied packet."}
+  ],
+  "modules": ["domains/user-interface/charts.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5"],
+    "forbidden_additions": [
+      "A correlation or causation claim between document length and edit time.",
+      "An invented regression line or coefficient.",
+      "A session count different from 200."
+    ],
+    "preserve": [
+      "Document length (words) on x-axis; edit time (minutes) on y-axis.",
+      "Axis ranges 100–5,000 words and 5–120 minutes.",
+      "200 sessions from the editorial workflow study.",
+      "Descriptive caption without causation."
+    ],
+    "expected_action": "draft"
+  }
+}

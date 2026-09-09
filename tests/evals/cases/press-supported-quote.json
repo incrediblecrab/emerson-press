@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "press-supported-quote",
+  "split": "tuning",
+  "operation": "edit",
+  "task": "Copyedit this short fictional market-news item only if there is a consequential language or fidelity problem. It is intended for a neighborhood news page. The notice supports the quotation and all practical details. Preserve the quoted contrast and return the item unchanged if no meaningful correction is needed.",
+  "input": "Larch Market will close its indoor hall on Friday while electricians replace the lights, the market's notice says. Outdoor stalls will remain open. \"The hall is closed; the market is not,\" the notice says.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Larch Market's notice says its indoor hall will be closed on Friday."},
+    {"id": "f2", "text": "The notice says electricians will replace the hall's lights during the closure."},
+    {"id": "f3", "text": "The notice says outdoor stalls will remain open."},
+    {"id": "f4", "text": "The notice includes this exact sentence: \"The hall is closed; the market is not.\""}
+  ],
+  "modules": ["domains/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "A whole-market closure or a claim that every stall will be closed.",
+      "A reporter's visit, named spokesperson, reopening hour, or repair cost.",
+      "New words inside the quotation that change its meaning."
+    ],
+    "preserve": [
+      "The distinction between the indoor hall and outdoor stalls.",
+      "The notice's attributed quotation and its purposeful contrast.",
+      "The existing concise news wording."
+    ],
+    "expected_action": "no_change"
+  }
+}

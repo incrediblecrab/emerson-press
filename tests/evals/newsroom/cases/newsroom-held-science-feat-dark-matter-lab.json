@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-science-feat-dark-matter-lab",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic writing exercise. Using these fictional reporting notes, write a newspaper reported feature for general readers. Draw only on the supplied notes; do not invent additional reported events, scenes, or quotations. Write from this reporting snapshot as of January 27, 2025. Include a headline. Target 450 to 650 words. Follow AP style.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "The Apex Dark Matter Observatory operates 1.9 kilometers below the surface in Ridgeline Mine, a former silver mine converted to scientific use in 2019."
+    },
+    {
+      "id": "f2",
+      "text": "Physicist Dr. Yuki Tanaka, 38, has led the Apex detector team for four years; she has not found a dark matter signal, a result she describes as scientifically productive."
+    },
+    {
+      "id": "f3",
+      "text": "Dr. Tanaka said: \"Every day we run without a signal, we rule out more of the parameter space. We're not finding nothing. We're finding that dark matter, if it's there, is not what those models said. That's real knowledge.\""
+    },
+    {
+      "id": "f4",
+      "text": "The Apex detector contains 3.2 tonnes of liquid xenon at minus 93 degrees Celsius; a dark matter particle collision would produce a flash of ultraviolet light and a small ionization signal detectable by photomultiplier tubes surrounding the xenon."
+    },
+    {
+      "id": "f5",
+      "text": "The mine's 1.9 kilometer rock overburden reduces the cosmic ray flux at the detector by a factor of more than a million, eliminating most of the background noise that would mask a dark matter signal at the surface."
+    },
+    {
+      "id": "f6",
+      "text": "Maintenance technician Brendan O'Brien, 52, has worked underground for 22 years \u2014 first in silver mining, now in physics. He services the cryogenic system that keeps the xenon liquid."
+    },
+    {
+      "id": "f7",
+      "text": "O'Brien said: \"I don't understand the physics. I understand the system. If the temperature drifts, Dr. Tanaka doesn't get her data. That's my job. Drift is not allowed.\""
+    },
+    {
+      "id": "f8",
+      "text": "The Apex experiment has been operating for 31 months; it has had four unplanned shutdowns, each lasting less than 18 hours, all attributed to cryogenic system maintenance events."
+    },
+    {
+      "id": "f9",
+      "text": "Dr. Tanaka said the hardest part of the job is explaining to students and funding agencies that absence of signal is a valid result: \"We live in a culture that rewards discovery. I'm asking my graduate students to do excellent science and possibly find nothing.\""
+    },
+    {
+      "id": "f10",
+      "text": "Her two graduate students on the experiment \u2014 fictionally named Nadia Holloway and Ben Tran \u2014 are both in their fifth year; both said they understand the risk and are committed to the question, not the outcome."
+    },
+    {
+      "id": "f11",
+      "text": "Holloway said: \"The question is real. Is dark matter made of the particles our models said? If Apex says no, that is the answer. Science needs the no.\""
+    },
+    {
+      "id": "f12",
+      "text": "Apex's sensitivity exceeds all previous detectors of its class; the next-generation experiment, planned to be 40 times as sensitive, will begin construction in 2027 if funding is secured."
+    },
+    {
+      "id": "f13",
+      "text": "Dr. Tanaka said the null results to date constrain WIMP models so severely that if the next-generation detector also finds nothing in the remaining viable parameter space, theorists will need to revisit the assumption that dark matter interacts through the weak nuclear force."
+    },
+    {
+      "id": "f14",
+      "text": "O'Brien said the location is strange to explain at family gatherings: \"I work in a mine. But I'm not mining anything. I'm keeping cold something that's looking for something nobody has ever seen. People look at me like I'm pulling their leg.\""
+    },
+    {
+      "id": "f15",
+      "text": "Dr. Tanaka said she finds the underground environment clarifying: \"No email down here. No cell signal. Just the detector and the question.\""
+    },
+    {
+      "id": "f16",
+      "text": "The Apex collaboration includes 18 universities across six countries; the detector's data is shared in real time with partner institutions for independent analysis."
+    },
+    {
+      "id": "f17",
+      "text": "Funding for Apex comes from the Department of Energy and four international partner agencies; the current phase of operations is funded through 2027."
+    },
+    {
+      "id": "f18",
+      "text": "Dr. Tanaka said she would be satisfied if the experiment eliminates the last viable WIMP parameter space, even without a discovery: \"Closing a door that physics has been knocking on for forty years is not failure. It's the field saying: look somewhere else.\""
+    },
+    {
+      "id": "f19",
+      "text": "Holloway said she expects her dissertation to be a careful null result: \"I'd rather find something. But I will do the most precise null result possible. That's the job we signed up for.\""
+    },
+    {
+      "id": "f20",
+      "text": "O'Brien said the physicists and the former miners share one quality: patience with things that don't yield quickly."
+    }
+  ],
+  "modules": [
+    "domains/press.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f7",
+      "f8",
+      "f9",
+      "f11",
+      "f12",
+      "f18"
+    ],
+    "forbidden_additions": [
+      "a confirmed dark matter detection at Apex",
+      "a xenon mass different from 3.2 tonnes",
+      "a depth different from 1.9 kilometers"
+    ],
+    "preserve": [
+      "Every day we run without a signal, we rule out more of the parameter space. We're not finding nothing. We're finding that dark matter, if it's there, is not what those models said. That's real knowledge.",
+      "I work in a mine. But I'm not mining anything. I'm keeping cold something that's looking for something nobody has ever seen. People look at me like I'm pulling their leg.",
+      "Closing a door that physics has been knocking on for forty years is not failure. It's the field saying: look somewhere else."
+    ],
+    "expected_action": "draft"
+  }
+}

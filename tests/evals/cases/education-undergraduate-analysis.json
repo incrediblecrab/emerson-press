@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "education-undergraduate-analysis",
+  "split": "tuning",
+  "operation": "review",
+  "task": "Review this paragraph for an explicitly assigned undergraduate close-reading exercise. Give concise notes identifying the source-supported reading, the inferential leap, and an evidence-preserving remedy. Distinguish a consequential interpretation problem from optional style preferences. Do not require a counterargument merely to produce a familiar essay structure.",
+  "input": "The committee's note calls the timetable revision \"temporary.\" Therefore, the committee promised to restore every earlier departure time.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional assigned note contains this exact sentence: \"The timetable revision is temporary.\""},
+    {"id": "f2", "text": "The note does not identify which earlier departure times, if any, will be restored."},
+    {"id": "f3", "text": "The note does not give a return date."}
+  ],
+  "modules": ["domains/non-fiction.md", "domains/education-level/05-undergraduate.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3"],
+    "forbidden_additions": [
+      "A promise to restore every previous departure time.",
+      "An invented return date, second document, committee member, or expanded quotation.",
+      "A compulsory opposing position unrelated to the source-interpretation problem."
+    ],
+    "preserve": [
+      "The source's actual word temporary.",
+      "The distinction between a temporary revision and a promise about particular future times.",
+      "Review notes separate from the student's paragraph."
+    ],
+    "expected_action": "review"
+  }
+}

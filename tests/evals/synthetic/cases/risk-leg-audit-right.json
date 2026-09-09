@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "risk-leg-audit-right",
+  "split": "tuning",
+  "operation": "review",
+  "task": "Review this fictional audit-right clause for grammatical clarity and completeness within its stated scope. Return no-change feedback if the clause correctly states the right, the notice requirement, and the frequency limit.",
+  "input": "The Client may audit the Supplier's records relevant to this Agreement upon 10 business days' written notice. Such audits shall not occur more than once per calendar year unless a material discrepancy is found.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The Client may audit relevant records upon 10 business days' written notice."},
+    {"id": "f2", "text": "Audits are limited to once per calendar year."},
+    {"id": "f3", "text": "The once-per-year limit does not apply if a material discrepancy is found."}
+  ],
+  "modules": ["domains/legal.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3"],
+    "forbidden_additions": [
+      "A cost-allocation for audit expenses.",
+      "A definition of material discrepancy.",
+      "An audit-scope limitation or record-category specification."
+    ],
+    "preserve": [
+      "The 10-business-day written notice requirement.",
+      "The once-per-calendar-year frequency cap.",
+      "The material-discrepancy exception to the frequency cap."
+    ],
+    "expected_action": "no_change"
+  }
+}

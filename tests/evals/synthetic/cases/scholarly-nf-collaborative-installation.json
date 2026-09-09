@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "scholarly-nf-collaborative-installation",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Edit this 70–105-word artist profile against the supplied fictional installation record. Preserve each contributor's actual role and the sequence of preparation, moving, and checking. An appreciative tone is allowed, but it must not erase the volunteers or invent self-financing and opposition. This is non-fiction about completed work, not a fictional heroic scene or instructions for moving a sculpture. Do not add dialogue or private motives.",
+  "input": "Ilen Morv single-handedly carried Windfold Measure into the forecourt and set every piece in place. Morv paid for the entire installation despite the neighborhood's hostility. The artist's solitary effort left nothing for anyone else to do, and the work was complete before the volunteers arrived.",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "For the installation of Windfold Measure, artist Ilen Morv first marked the base positions."
+    },
+    {
+      "id": "f2",
+      "text": "A volunteer team then moved the sculpture's pallet into the forecourt while Morv was absent."
+    },
+    {
+      "id": "f3",
+      "text": "After returning, Morv checked the alignment of the installed work."
+    },
+    {
+      "id": "f4",
+      "text": "The record supplies no installation budget, personal funding claim, neighborhood hostility, or dialogue."
+    }
+  ],
+  "modules": ["domains/non-fiction.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3"],
+    "forbidden_additions": [
+      "A solitary installation or attribution of the pallet move to Morv",
+      "Personal payment, neighborhood hostility, invented speech, or private motives",
+      "A reversal of the volunteers' move and the artist's later alignment check"
+    ],
+    "preserve": [
+      "Ilen Morv marked positions and later checked alignment",
+      "The volunteer team moved the pallet while Morv was absent",
+      "Windfold Measure",
+      "Distinct contributions within one collaborative installation"
+    ],
+    "expected_action": "edit"
+  }
+}

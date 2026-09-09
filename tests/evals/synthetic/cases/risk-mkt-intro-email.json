@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "id": "risk-mkt-intro-email",
+  "split": "tuning",
+  "operation": "draft",
+  "task": "Draft a product introduction email to prospective business customers for a fictional project-management tool. Include a subject line and a body organised into three short paragraphs covering: (1) core task-management features, (2) team visibility and integrations, (3) a closing with a demo link. Use only the supplied product facts. Do not add urgency, pricing, customer testimonials, or quantified performance claims.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "The fictional product is called TaskHaven."
+    },
+    {
+      "id": "f2",
+      "text": "TaskHaven allows teams to assign tasks to named owners and track status in a shared board."
+    },
+    {
+      "id": "f3",
+      "text": "Automated reminders are sent to task owners 24 hours before a due date."
+    },
+    {
+      "id": "f4",
+      "text": "Tasks can be tagged by project or priority to allow filtered views."
+    },
+    {
+      "id": "f5",
+      "text": "A weekly digest email summarises overdue items for each task owner."
+    },
+    {
+      "id": "f6",
+      "text": "TaskHaven integrates with Outlook and Gmail to allow tasks to be created directly from email messages."
+    },
+    {
+      "id": "f7",
+      "text": "A team dashboard shows completion-rate progress across all active projects."
+    },
+    {
+      "id": "f8",
+      "text": "A demo can be requested at https://example.org/taskhaven/demo; submitting the form does not create an account."
+    },
+    {
+      "id": "f9",
+      "text": "No pricing is included in the supplied facts."
+    }
+  ],
+  "modules": [
+    "domains/marketing.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f7",
+      "f8"
+    ],
+    "forbidden_additions": [
+      "A subscription price, free-trial offer, or expiring discount.",
+      "A customer success story, testimonial, or quantified productivity claim.",
+      "A claim that submitting the demo form immediately creates an account."
+    ],
+    "preserve": [
+      "The task-assignment, shared-board, and tag-filtering features.",
+      "The 24-hour reminder and weekly digest features.",
+      "The Outlook and Gmail integration and the team dashboard.",
+      "The demo URL without implying immediate account creation."
+    ],
+    "expected_action": "draft"
+  }
+}

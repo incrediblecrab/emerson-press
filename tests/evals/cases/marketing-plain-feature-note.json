@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "marketing-plain-feature-note",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "Draft a short, restrained product-introduction email for a small editorial team considering a shared inbox. Include a subject line and a clear demo-request action. All product details are fictional. Explain the supplied functions without adding urgency, pricing, customer proof, or quantified benefits.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional product Thread Tray organizes shared-inbox messages by owner."},
+    {"id": "f2", "text": "An assignee can see a handoff note beside the message."},
+    {"id": "f3", "text": "A demo can be requested at https://example.org/thread-tray/demo."},
+    {"id": "f4", "text": "Submitting the demo request does not automatically create an account."},
+    {"id": "f5", "text": "The packet provides no price or measured performance result."}
+  ],
+  "modules": ["domains/marketing.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "A free trial, subscription price, discount, or expiring offer.",
+      "Guaranteed time savings, sales improvements, or customer testimonials.",
+      "A claim that the demo request immediately provisions an account."
+    ],
+    "preserve": [
+      "A modest feature-led introduction for readers evaluating a tool.",
+      "The difference between requesting a demo and creating an account.",
+      "The supplied reserved-domain demo URL."
+    ],
+    "expected_action": "draft"
+  }
+}

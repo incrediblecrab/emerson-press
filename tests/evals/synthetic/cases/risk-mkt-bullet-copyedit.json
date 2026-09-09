@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "risk-mkt-bullet-copyedit",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Correct the grammatical inconsistency in this fictional feature bullet list for a document-signing platform. All bullets must use parallel present-tense verb forms. Preserve all feature names and numerical values exactly.",
+  "input": "• Creates a time-stamped audit log\n• Allows up to 20 signatories per transaction\n• Sending automated completion notifications\n• Stores documents for 10 years",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The platform creates a time-stamped audit log."},
+    {"id": "f2", "text": "The platform allows up to 20 signatories per transaction."},
+    {"id": "f3", "text": "The platform sends automated completion notifications."},
+    {"id": "f4", "text": "The platform stores documents for 10 years."}
+  ],
+  "modules": ["domains/marketing.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "A storage-security certification not in the facts.",
+      "Additional feature bullets.",
+      "A change to any numerical value."
+    ],
+    "preserve": [
+      "The 20-signatory limit per transaction.",
+      "The 10-year document-storage period.",
+      "Parallel present-tense verb form across all four bullets."
+    ],
+    "expected_action": "edit"
+  }
+}

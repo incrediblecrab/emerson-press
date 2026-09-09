@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "public-press-captioned-performances",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Copyedit this fictional theatre-news paragraph for readers asking which performances offer captions and whether the text is a translation. Preserve the useful explanation and limited source claim. Do not impose an unnecessary rewrite if the paragraph already answers those questions accurately.",
+  "input": "The Glass Orchard's Saturday matinee and Sunday evening performance will have open captions, the theatre's programme says. Written English dialogue will be displayed above the stage for the whole audience; visitors do not need to request a separate screen. The other performances in this run are not captioned. The programme does not list translation into other languages.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional production is titled The Glass Orchard."},
+    {"id": "f2", "text": "The programme lists open captions for the Saturday matinee and Sunday evening performance."},
+    {"id": "f3", "text": "For those performances, written English dialogue is displayed above the stage for the whole audience."},
+    {"id": "f4", "text": "Visitors do not need a separate screen for those captions."},
+    {"id": "f5", "text": "The other performances in the run are not captioned."},
+    {"id": "f6", "text": "The programme does not list translation into other languages."}
+  ],
+  "modules": ["domains/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f6"],
+    "forbidden_additions": [
+      "Captioning at every performance or a separate-screen requirement.",
+      "Translation into other languages, audio description, or other unlisted services.",
+      "A universal claim about how every theatre implements captions."
+    ],
+    "preserve": [
+      "The two identified performances and the limit to this production's arrangements.",
+      "The useful explanation of what the audience sees.",
+      "The programme's attribution and the already clear paragraph."
+    ],
+    "expected_action": "no_change"
+  }
+}

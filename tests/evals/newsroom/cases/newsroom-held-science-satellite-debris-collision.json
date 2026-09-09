@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-science-satellite-debris-collision",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic writing exercise. Using these fictional reporting notes, write a newspaper news story for general readers. Draw only on the supplied notes; do not invent additional reported events, scenes, or quotations. Write from this reporting snapshot as of June 12, 2024. Include a headline. Target 450 to 650 words. Follow AP style.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "A defunct upper stage of the Protek-9 rocket, launched in 2006, collided with Orion-7, a communications satellite operated by Transcontinental Communications Corp, on June 11, 2024, at an altitude of 780 kilometers."
+    },
+    {
+      "id": "f2",
+      "text": "The collision destroyed Orion-7, which had been operational since 2018."
+    },
+    {
+      "id": "f3",
+      "text": "U.S. Space Surveillance Coordinator Dr. James Folau estimated the collision produced approximately 230 trackable debris fragments and an estimated 4,000 smaller pieces below tracking threshold."
+    },
+    {
+      "id": "f4",
+      "text": "Orion-7 served as a backup communications relay for TCC's North Atlantic broadband constellation; the company said the loss reduces its regional network capacity by 8%."
+    },
+    {
+      "id": "f5",
+      "text": "TCC CEO Nora Chang said: \"We have service continuity from our active constellation, but the margin for outages in the North Atlantic corridor has narrowed significantly. We are accelerating a replacement satellite launch.\""
+    },
+    {
+      "id": "f6",
+      "text": "Folau said the new debris cloud poses elevated collision risk for all satellites operating between 750 and 820 kilometers altitude over the next two to five years as the cloud disperses."
+    },
+    {
+      "id": "f7",
+      "text": "At least 14 satellites operated by four different companies orbit in the affected band; their operators received conjunction alerts within six hours of the collision."
+    },
+    {
+      "id": "f8",
+      "text": "The Protek-9 upper stage had been tracked for 18 years with no active maneuvering capability; it was not on a predicted decay trajectory for at least another decade."
+    },
+    {
+      "id": "f9",
+      "text": "No organization claimed ownership responsibility for the defunct stage at the time of the collision; its country of registration is not public record."
+    },
+    {
+      "id": "f10",
+      "text": "TCC's financial exposure from the loss of Orion-7 is estimated at $210 million, covering satellite replacement and revenue impacts; the company's insurance claim has not yet been adjudicated."
+    },
+    {
+      "id": "f11",
+      "text": "The collision highlights the absence of any international mechanism to compel operators to deorbit defunct objects in low Earth orbit."
+    },
+    {
+      "id": "f12",
+      "text": "Current U.S. guidelines recommend satellites in low Earth orbit be deorbited within five years of mission end; the guidelines are voluntary."
+    },
+    {
+      "id": "f13",
+      "text": "Folau said this is the fourth confirmed satellite-on-debris collision since 2009, when two satellites \u2014 one defunct military satellite and one active commercial spacecraft \u2014 collided at high speed in low Earth orbit, creating the largest debris field in orbital history up to that point."
+    },
+    {
+      "id": "f14",
+      "text": "Space situational awareness experts said the collision was not predicted; the conjunction warning system had not flagged the Protek-9 stage and Orion-7 pair in the 72 hours before impact."
+    },
+    {
+      "id": "f15",
+      "text": "TCC's replacement satellite is projected to launch no earlier than 2027; a lease agreement with a partner satellite operator will partially cover the interim capacity gap."
+    },
+    {
+      "id": "f16",
+      "text": "The European Space Agency said it was adjusting the orbits of two of its research satellites in the affected altitude band as a precaution."
+    },
+    {
+      "id": "f17",
+      "text": "Debris from the Protek-9 stage will gradually decay into the atmosphere over an estimated 80 to 120 years."
+    },
+    {
+      "id": "f18",
+      "text": "An international working group on space debris has been drafting voluntary deorbit guidelines since 2021; no binding treaty exists."
+    },
+    {
+      "id": "f19",
+      "text": "Dr. Folau said the unpredicted nature of the collision underscores the limits of current tracking capability for objects smaller than 10 centimeters in diameter."
+    },
+    {
+      "id": "f20",
+      "text": "TCC operates 18 satellites total in multiple orbital regimes; Orion-7 was the company's oldest active asset."
+    }
+  ],
+  "modules": [
+    "domains/press.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f8",
+      "f9",
+      "f11",
+      "f13"
+    ],
+    "forbidden_additions": [
+      "a confirmed count of debris smaller than the tracking threshold",
+      "a claim that TCC's other satellites were damaged",
+      "a statement that the collision was caused by a guidance failure"
+    ],
+    "preserve": [
+      "We have service continuity from our active constellation, but the margin for outages in the North Atlantic corridor has narrowed significantly. We are accelerating a replacement satellite launch."
+    ],
+    "expected_action": "draft"
+  }
+}

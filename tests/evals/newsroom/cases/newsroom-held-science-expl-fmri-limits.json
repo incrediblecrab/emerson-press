@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-science-expl-fmri-limits",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic writing exercise. Using these fictional reporting notes, write a newspaper explainer for general readers answering the question: What does an fMRI brain scan actually measure, and what are its limits for understanding the mind? Draw only on the supplied notes; do not invent additional reported events, scenes, or quotations. Write from this reporting snapshot as of March 18, 2025. Include a headline. Target 450 to 650 words. Follow AP style.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "Functional MRI (fMRI) measures changes in blood flow to different regions of the brain, using the fact that active neurons require more oxygen and draw increased blood flow."
+    },
+    {
+      "id": "f2",
+      "text": "The signal fMRI detects \u2014 called the BOLD signal, for Blood Oxygen Level Dependent \u2014 is a proxy for neural activity, not a direct measure of electrical signals in neurons."
+    },
+    {
+      "id": "f3",
+      "text": "The BOLD signal responds on a timescale of seconds, while neurons fire on timescales of milliseconds; fMRI has excellent spatial resolution but poor temporal resolution compared to electroencephalography (EEG)."
+    },
+    {
+      "id": "f4",
+      "text": "A typical fMRI voxel (the smallest imaging unit) covers approximately 1 to 3 cubic millimeters of brain tissue and contains millions of neurons; the scan cannot resolve individual neurons."
+    },
+    {
+      "id": "f5",
+      "text": "Cognitive neuroscientist Dr. Yuna Breckinridge of Westfield University said: \"When someone says 'the brain region X lit up,' what they mean is the BOLD signal in that region increased under those conditions. That is not the same as saying X causes or produces the behavior.\""
+    },
+    {
+      "id": "f6",
+      "text": "Correlation versus causation is a central limitation: an fMRI study can show that a brain region is active during a task but cannot by itself demonstrate that activity in that region causes the task performance."
+    },
+    {
+      "id": "f7",
+      "text": "Small sample sizes have been a systematic problem in fMRI research; many classic studies tested fewer than 30 subjects, making results vulnerable to false positives."
+    },
+    {
+      "id": "f8",
+      "text": "A 2016 analysis found that standard statistical software used to process fMRI data contained a coding error that inflated false-positive rates; the paper estimated it affected up to 40,000 published studies."
+    },
+    {
+      "id": "f9",
+      "text": "Subject head motion during scanning creates artifacts in the data; motion correction algorithms can reduce but not eliminate this problem."
+    },
+    {
+      "id": "f10",
+      "text": "The reverse inference problem: many brain regions activate during multiple tasks, so observing activation in a region does not uniquely identify the mental process involved."
+    },
+    {
+      "id": "f11",
+      "text": "Dr. Breckinridge said the field has substantially improved since 2016 through larger sample sizes (enabled by consortium data sharing), pre-registration of study hypotheses, and multi-site replication."
+    },
+    {
+      "id": "f12",
+      "text": "fMRI studies require participants to lie still in a noisy, confined scanner; the artificiality of the setting may affect some behaviors \u2014 particularly social or emotional ones \u2014 being studied."
+    },
+    {
+      "id": "f13",
+      "text": "Resting-state fMRI, which scans the brain without a specific task, has identified networks of regions that consistently co-activate; the functional significance of these resting-state networks is still being established."
+    },
+    {
+      "id": "f14",
+      "text": "Legal applications of fMRI \u2014 using brain scans as evidence of deception, mental state, or intent \u2014 are controversial and not accepted as reliable by most forensic neuroscientists."
+    },
+    {
+      "id": "f15",
+      "text": "Machine learning tools applied to fMRI data have identified patterns that distinguish groups of people; their reliability as diagnostic tools for individual clinical decisions is limited and not generally approved."
+    },
+    {
+      "id": "f16",
+      "text": "fMRI-derived conclusions about group differences \u2014 between sexes, ethnicities, or clinical populations \u2014 require careful controls for confounds that include education, socioeconomic status, and scanner type."
+    },
+    {
+      "id": "f17",
+      "text": "Dr. Breckinridge said fMRI remains a powerful tool for mapping functional brain organization at the population level but is not a mind-reading technology and should not be interpreted as one."
+    },
+    {
+      "id": "f18",
+      "text": "Transcranial magnetic stimulation (TMS) can temporarily disrupt function in specific brain regions, providing causal evidence to complement fMRI correlations; combining methods strengthens inference."
+    },
+    {
+      "id": "f19",
+      "text": "The Human Connectome Project mapped the structural and functional connectivity of 1,200 healthy adult brains, providing a large reference dataset; it has improved understanding of individual variability."
+    },
+    {
+      "id": "f20",
+      "text": "fMRI requires expensive equipment (typically $2 million to $4 million per scanner) and specialist analysis teams, limiting research to well-funded institutions and creating selection bias in the populations studied."
+    }
+  ],
+  "modules": [
+    "domains/press.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f5",
+      "f6",
+      "f7",
+      "f8",
+      "f10",
+      "f14",
+      "f17"
+    ],
+    "forbidden_additions": [
+      "a claim that fMRI directly measures neural electrical activity",
+      "a statement that fMRI is accepted as forensic evidence in courts",
+      "a false-positive rate different from what the 2016 analysis found"
+    ],
+    "preserve": [
+      "When someone says 'the brain region X lit up,' what they mean is the BOLD signal in that region increased under those conditions. That is not the same as saying X causes or produces the behavior."
+    ],
+    "expected_action": "draft"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-business-explain-franchise-ownership",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic newspaper-writing exercise using fictional reporting notes. Use only the supplied reporting notes. Write from the reporting snapshot as of August 17, 2026. Write a headline and a 450–650-word AP-style newspaper explainer using the new Ilex Pantry in Cormere to answer what locally owned means when a store operates under a larger franchise brand.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id":"f1","text":"The Cormere branch of Ilex Pantry opened in July 2026 under a franchise held by local owners Omi and Rella Doss."},
+    {"id":"f2","text":"The Dosses own the operating company and lease the premises; the national brand does not own this store."},
+    {"id":"f3","text":"Their agreement permits use of the Ilex name, purchasing system and loyalty program in return for specified fees and operating requirements."},
+    {"id":"f4","text":"The agreement charges a 4% royalty and a 1% advertising contribution on gross store sales, not on profit."},
+    {"id":"f5","text":"For a month with $100,000 in gross sales, those charges total $5,000 before rent, wages, stock and other expenses."},
+    {"id":"f6","text":"The store's opening budget includes a $28,000 initial franchise fee, which is separate from recurring sales-based charges."},
+    {"id":"f7","text":"The owners are responsible for hiring and paying the store's 16 employees."},
+    {"id":"f8","text":"The brand sets required food-handling and shop-presentation standards; day-to-day staff schedules are set locally."},
+    {"id":"f9","text":"The agreement requires stocking a core list of 600 products while allowing additional local products approved through the purchasing process."},
+    {"id":"f10","text":"The store may set most shelf prices locally but must honor advertised national promotions during their stated periods."},
+    {"id":"f11","text":"The brand reimburses part of the cost of selected promotions under formulas not supplied in the reporting record."},
+    {"id":"f12","text":"Omi Doss said the purchasing network made it possible to obtain deliveries that a one-store buyer might struggle to arrange."},
+    {"id":"f13","text":"Doss said, \"The name gets us into a buying system. It does not pay the electricity bill for us.\""},
+    {"id":"f14","text":"Independent neighboring grocer Leda Vint said shared advertising helps customers recognize a shop but can make stores appear more uniform than their ownership."},
+    {"id":"f15","text":"Vint said, \"Two matching signs do not mean the same person is making the wage payment.\""},
+    {"id":"f16","text":"Ilex's regional network includes both company-owned and franchised stores; this location's arrangement cannot be assumed for every branch."},
+    {"id":"f17","text":"The Cormere owners have not released net profit figures, and the reporting record contains no guaranteed-return projection."},
+    {"id":"f18","text":"The franchise has a ten-year stated term, with renewal subject to conditions rather than automatic permanent ownership of the brand name."},
+    {"id":"f19","text":"The storefront previously housed a carpet dealer and retains its broad loading door at the rear."},
+    {"id":"f20","text":"The owners plan a local-producer display, but no sales results for that display are yet available."}
+  ],
+  "modules": ["domains/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1","f2","f3","f4","f5","f6","f7","f9","f10","f16","f17"],
+    "forbidden_additions": ["The national brand owns this store or fees are based only on profit","A guaranteed return, identical ownership at every branch or unrestricted local pricing"],
+    "preserve": ["If quoted: The name gets us into a buying system. It does not pay the electricity bill for us.","If quoted: Two matching signs do not mean the same person is making the wage payment.","Local ownership coexists with contractual brand requirements and recurring fees."],
+    "expected_action": "draft"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "education-lower-elementary-order",
+  "split": "tuning",
+  "operation": "draft",
+  "task": "Draft a short explanation for an explicitly assigned lower-elementary science-class activity. Readers are beginning readers who know the words cup and seed but need the activity's sequence made clear. Explain what the class will do and observe without promising that a seed will sprout. Keep the evidence standard intact while using approachable vocabulary.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "In this synthetic classroom activity, each pair of children receives one transparent cup."},
+    {"id": "f2", "text": "Each cup is lined with a damp paper towel."},
+    {"id": "f3", "text": "The teacher supplies a bean seed for each cup."},
+    {"id": "f4", "text": "The children draw what they see in their cup once each school day."},
+    {"id": "f5", "text": "The class has not yet observed whether any seed will sprout."}
+  ],
+  "modules": ["domains/general.md", "domains/education-level/01-elementary-lower.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5"],
+    "forbidden_additions": [
+      "A guaranteed sprouting result or a predicted sprouting date.",
+      "Unprovided fertilizer, temperature, watering, or measurement instructions.",
+      "A claim that the children already observed growth."
+    ],
+    "preserve": [
+      "The sequence of receiving the materials and making daily observations.",
+      "Observation distinguished from a promised outcome.",
+      "An explanation suitable for beginning readers without removing meaningful uncertainty."
+    ],
+    "expected_action": "draft"
+  }
+}

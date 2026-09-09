@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-civic-volunteer-stream-records",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic exercise using fictional reporting notes. Use only the supplied reporting notes as the fixed record: select, organize and phrase the story without inventing additional reported events, scenes, quotations or reporting activity. Write a headline and a reported feature of roughly 450–650 words in AP style for general newspaper readers about the volunteers building a long-term record of the stream through Hartham. Write from this reporting snapshot as of September 18, 2026.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Hartham Stream Watch group visits three agreed observation points along the same stream once a month."},
+    {"id": "f2", "text": "Volunteer coordinator Jessa Vane carries a folder of earlier site photographs so volunteers can compare the same view rather than choose a new angle each visit."},
+    {"id": "f3", "text": "The supplied field scene takes place after ordinary rainfall and describes leaves caught against a footbridge support and water covering part of a familiar stone."},
+    {"id": "f4", "text": "Volunteers record the date, recent weather, visible conditions and the location associated with each note or sample."},
+    {"id": "f5", "text": "The group uses agreed public observation points and landowner permissions rather than treating every stream bank as open access."},
+    {"id": "f6", "text": "Its training tells volunteers to work from designated safe positions and not enter the stream to complete a missing observation."},
+    {"id": "f7", "text": "Vane said, \"Some months the page looks uneventful. Those pages matter when you are trying to understand what changed later.\""},
+    {"id": "f8", "text": "Samples selected for laboratory work are sent through a partner college's process with labels and handling records."},
+    {"id": "f9", "text": "A visual observation in the group's notebook is not presented as a laboratory identification of a pollutant."},
+    {"id": "f10", "text": "The packet contains no laboratory result demonstrating contamination during the supplied visit."},
+    {"id": "f11", "text": "A local farmer allows access to one observation point but asked the group to avoid treating the nearest land use as the presumed source of every change."},
+    {"id": "f12", "text": "Farmer Orrin Dale said, \"I would rather have a dated question we can examine than a rumor that starts with the field beside the water.\""},
+    {"id": "f13", "text": "The group shares dated records with the environmental office, which decides whether a reported condition requires an official investigation."},
+    {"id": "f14", "text": "Volunteer observations do not replace the environmental office's separate monitoring and enforcement responsibilities."},
+    {"id": "f15", "text": "The group began after residents found that memories of earlier high water disagreed about which landmarks had been covered."},
+    {"id": "f16", "text": "Its archive now contains both digital photographs and older paper notebooks, with gaps where visits could not safely take place."},
+    {"id": "f17", "text": "A missed visit is marked as missing rather than filled with a guessed condition based on a nearby date."},
+    {"id": "f18", "text": "New volunteers first accompany experienced members so site labels and observation categories are used consistently."},
+    {"id": "f19", "text": "The partner college helps explain the difference between observations at one point and claims about the whole catchment."},
+    {"id": "f20", "text": "The group has not published a numerical trend in pollution or claimed that its work caused a measured improvement in water quality."},
+    {"id": "f21", "text": "A former school map marks an older footbridge that no longer serves as one of the group's current observation points."},
+    {"id": "f22", "text": "The next public display will pair photographs from the same locations with their dates and notes, rather than select only the most dramatic water levels."}
+  ],
+  "modules": ["domains/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f8", "f9", "f13", "f17"],
+    "forbidden_additions": ["Confirmed contamination, a named polluter or a water-quality improvement result.", "Missing observations completed from assumptions.", "Permission to enter any bank or watercourse."],
+    "preserve": ["The patient repeat-observation work and the specific supplied field scene.", "The difference between volunteer records, laboratory findings and official investigation.", "Exact quotation wording and attribution when quotations are used."],
+    "expected_action": "draft"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-civic-retrofit-temporary-moves",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic exercise using fictional reporting notes. Use only the supplied reporting notes as the fixed record: select, organize and phrase the story without inventing additional reported events, scenes, quotations or reporting activity. Write a headline and an explainer of roughly 450–650 words in AP style for general newspaper readers about temporary resident moves during the Hearth Court apartment retrofit. Write from this reporting snapshot as of September 18, 2026.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Hearth Court housing association plans a retrofit across six stairwells containing 20 apartments each, a total of 120 apartments."},
+    {"id": "f2", "text": "The first construction phase covers two stairwells, or 40 apartments, rather than moving every household at the same time."},
+    {"id": "f3", "text": "The works include replacing shared pipe runs and wiring in locations that cannot remain in normal use while the relevant sections are opened."},
+    {"id": "f4", "text": "The association's written resident plan provides temporary accommodation for affected households while their own apartments are unavailable."},
+    {"id": "f5", "text": "The plan states that a temporary move does not end the resident's existing association tenancy or allocate the apartment to another household."},
+    {"id": "f6", "text": "The association will agree individual moving dates after assessing household access needs and the contractor's sequence."},
+    {"id": "f7", "text": "A single published construction phase does not mean every apartment will be empty for the same number of days."},
+    {"id": "f8", "text": "Housing manager Selin Marr said, \"We need a building schedule and a household plan; neither one can simply stand in for the other.\""},
+    {"id": "f9", "text": "The resident plan covers agreed moving transport and temporary accommodation costs, not unlimited reimbursement of every expense a resident might incur."},
+    {"id": "f10", "text": "The association will provide a written record of the agreed arrangements before each temporary move."},
+    {"id": "f11", "text": "Residents may identify school, work, mobility and caring arrangements that affect whether a proposed temporary location is suitable."},
+    {"id": "f12", "text": "The packet contains no personal details of an actual household or a final placement list."},
+    {"id": "f13", "text": "Residents committee member Tera Vale said, \"Being offered a roof is the beginning of the conversation when your ordinary week is built around this address.\""},
+    {"id": "f14", "text": "The association has not promised that all temporary accommodation will be within walking distance of Hearth Court."},
+    {"id": "f15", "text": "The construction contract includes a check of completed services before a household is told its apartment is available again."},
+    {"id": "f16", "text": "The association will issue return arrangements after that check, rather than treat the contractor's target date as unconditional permission to move back."},
+    {"id": "f17", "text": "Rent treatment during the temporary period follows the resident plan and will be explained in each written arrangement."},
+    {"id": "f18", "text": "The supplied materials do not establish a rent increase for the completed retrofit or a general legal rule about other landlords."},
+    {"id": "f19", "text": "The first-phase notice names a resident liaison contact who is separate from the construction site's delivery and contractor contact."},
+    {"id": "f20", "text": "The association will hold meetings in the ground-floor common room and offer individual conversations for issues residents do not want to discuss publicly."},
+    {"id": "f21", "text": "The buildings' shared laundry remains outside the first construction phase, although its access route may change temporarily."},
+    {"id": "f22", "text": "Later phases will be scheduled after the association reviews the first moves and the contractor's progress."}
+  ],
+  "modules": ["domains/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f6", "f9", "f15", "f16"],
+    "forbidden_additions": ["All 120 households moving simultaneously or losing their tenancies.", "Identical move durations, guaranteed nearby accommodation or unlimited reimbursements.", "An invented rent increase or universal legal entitlement."],
+    "preserve": ["The difference between construction phases and individual household arrangements.", "The written plan's commitments and its remaining case-specific decisions.", "Exact quotation wording and attribution when quotations are used."],
+    "expected_action": "draft"
+  }
+}

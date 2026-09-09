@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "technical-ui-pdf-link-no-change",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Copyedit this download link label. Return it unchanged if it already accurately communicates the file type, the fact that the link opens in a new tab, and the resource name to a user who cannot see surrounding visual context.",
+  "input": "Download the programme (PDF, opens in a new tab)",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The link opens a PDF file in a new tab."},
+    {"id": "f2", "text": "The file is the event programme."},
+    {"id": "f3", "text": "The visible label is also the accessible name for this link."},
+    {"id": "f4", "text": "The label accurately describes the file type and new-tab behavior."}
+  ],
+  "modules": ["domains/general.md", "domains/user-interface/website.md", "domains/user-interface/accessibility.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "Shortening that removes the file type or new-tab disclosure.",
+      "An invented file size or page count.",
+      "Addition of a generic Click here prefix."
+    ],
+    "preserve": [
+      "PDF type disclosure.",
+      "Opens in a new tab disclosure.",
+      "Programme as the resource name.",
+      "The current accurate wording."
+    ],
+    "expected_action": "no_change"
+  }
+}

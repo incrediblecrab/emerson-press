@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "ui-printed-chart-counts",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "Draft a title, axis labels, value labels, and brief caption for a bar chart in a printed workbook. Use the supplied artificial sticker-choice counts and make the count unit and limited scope clear. No website, application, or interactive surface is part of this task. Do not add confidence intervals or infer community preferences when the exercise supplies no sampling model.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The workbook defines an artificial set of 24 sticker-choice cards as teaching data, not measurements of a real group."},
+    {"id": "f2", "text": "The artificial tally assigns 12 cards to the square sticker."},
+    {"id": "f3", "text": "The artificial tally assigns 7 cards to the circle sticker."},
+    {"id": "f4", "text": "The artificial tally assigns 5 cards to the triangle sticker."},
+    {"id": "f5", "text": "Each card records exactly one sticker choice."},
+    {"id": "f6", "text": "The exercise supplies no sampling method or target population."}
+  ],
+  "modules": ["domains/user-interface/charts.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5"],
+    "forbidden_additions": [
+      "Confidence intervals, margins of error, significance claims, or invented sampling assumptions.",
+      "A population preference inferred from the artificial counts.",
+      "Real-world survey dates, participants, or measurement claims.",
+      "A requirement to visit a website or use hover tooltips to obtain the printed values."
+    ],
+    "preserve": [
+      "The counts 12, 7, and 5 and their respective square, circle, and triangle categories.",
+      "The unit of cards with one choice each and a total of 24.",
+      "A self-contained printed chart rather than an assumed web interface.",
+      "Descriptive counts without unnecessary inferential statistics."
+    ],
+    "expected_action": "draft"
+  }
+}

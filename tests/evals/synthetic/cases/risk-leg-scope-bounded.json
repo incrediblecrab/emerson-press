@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "risk-leg-scope-bounded",
+  "split": "held_out",
+  "operation": "review",
+  "task": "Review this fictional contract scope clause for clarity and completeness. Return no-change feedback if the clause correctly limits scope without importing unrelated obligations.",
+  "input": "This Agreement applies only to the services described in the attached Statement of Work. Services outside that scope require a written amendment signed by both parties.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The agreement's scope is limited to the services in the attached Statement of Work."},
+    {"id": "f2", "text": "Services outside that scope require a written amendment signed by both parties."}
+  ],
+  "modules": ["domains/legal.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2"],
+    "forbidden_additions": [
+      "A specific list of in-scope services.",
+      "A unilateral amendment right for either party.",
+      "A change-control procedure not in the clause."
+    ],
+    "preserve": [
+      "The reference to the Statement of Work as the scope boundary.",
+      "The written-amendment requirement for out-of-scope work.",
+      "The existing wording without substantive expansion."
+    ],
+    "expected_action": "no_change"
+  }
+}

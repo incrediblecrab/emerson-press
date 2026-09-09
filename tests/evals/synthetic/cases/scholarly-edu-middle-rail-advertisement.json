@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "scholarly-edu-middle-rail-advertisement",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Edit this 65–100-word middle-school history response. Readers understand train timetables but are learning to distinguish an advertisement's promise from a record of service performance. Retain the original fictional slogan exactly and explain what kind of evidence it provides. The task is not to decide whether the railway was good or bad. Do not invent delays, customer opinions, or corroborating transport records.",
+  "input": "The Brightcap Line never ran late in 1937. Its advertisement says, “An arrival you can plan around.” That proves every passenger trusted the service and every train arrived at the time printed in the timetable.",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "The packet contains a Brightcap Line advertisement printed in a fictional 1937 timetable."
+    },
+    {
+      "id": "f2",
+      "text": "The advertisement's slogan is exactly “An arrival you can plan around.”"
+    },
+    {
+      "id": "f3",
+      "text": "The slogan shows how the line promoted its service, not recorded arrival times."
+    },
+    {
+      "id": "f4",
+      "text": "The packet contains no actual train-running log or passenger testimony."
+    }
+  ],
+  "modules": [
+    "domains/non-fiction.md",
+    "domains/education-level/03-middle-school.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "A claim of perfect punctuality or universal passenger trust",
+      "Invented late trains or passenger dissatisfaction as the opposite unsupported conclusion",
+      "A claim that a transport archive was consulted"
+    ],
+    "preserve": [
+      "An arrival you can plan around.",
+      "The slogan is an advertisement within a 1937 timetable",
+      "Promotional intent is distinguished from observed service performance"
+    ],
+    "expected_action": "edit"
+  }
+}

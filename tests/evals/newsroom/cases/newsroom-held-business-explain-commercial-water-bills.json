@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-business-explain-commercial-water-bills",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic newspaper-writing exercise using fictional reporting notes. Use only the supplied reporting notes. Write from the reporting snapshot as of August 31, 2026. Write a headline and a 450–650-word AP-style newspaper explainer answering why Ashcombe businesses will not all see their water bills move in the same direction under the new commercial tariff.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id":"f1","text":"Ashcombe Water Board's commercial tariff takes effect Oct. 1, 2026, following its August budget decision."},
+    {"id":"f2","text":"The monthly fixed commercial charge rises from $35 to $50, while the usage charge falls from $3 to $2.50 per 1,000 gallons."},
+    {"id":"f3","text":"For an account using 20,000 gallons, those charges produce a water-only bill of $100 instead of $95."},
+    {"id":"f4","text":"For an account using 200,000 gallons, they produce a water-only bill of $550 instead of $635."},
+    {"id":"f5","text":"The examples hold water use constant and exclude sewer charges, which are billed separately under an unchanged schedule."},
+    {"id":"f6","text":"At 30,000 gallons a month, the old and new water-only charges are both $125."},
+    {"id":"f7","text":"Below that usage point the new formula costs more; above it the new formula costs less, before separate charges."},
+    {"id":"f8","text":"Residential accounts retain their current tariff and are not included in this commercial change."},
+    {"id":"f9","text":"The board says a larger fixed charge is intended to collect more revenue for pipes and treatment capacity that must be maintained regardless of monthly use."},
+    {"id":"f10","text":"The board's budget does not project the same percentage change for every commercial customer's bill."},
+    {"id":"f11","text":"Mallow Street Bakery averages about 20,000 gallons a month and cannot reduce its fixed charge by using less water."},
+    {"id":"f12","text":"Bakery owner Deni Rook said she still sees value in repairing leaks because the usage portion of the bill remains."},
+    {"id":"f13","text":"Rook said, \"The first fifty dollars arrives before we turn on a tap.\""},
+    {"id":"f14","text":"Linen processor Vale Washworks uses about 200,000 gallons in a typical month but has substantial seasonal variation."},
+    {"id":"f15","text":"Its manager cautioned that a lower tariff at constant use does not guarantee a lower actual bill in a busier month."},
+    {"id":"f16","text":"Board finance officer Tera Linn said, \"We changed the balance between keeping the system ready and charging for each gallon.\""},
+    {"id":"f17","text":"Businesses with separate meters receive a fixed charge on each account under both the old and new schedules."},
+    {"id":"f18","text":"The board offers account-specific estimates using the previous year's monthly readings, not a guarantee of future consumption."},
+    {"id":"f19","text":"Ashcombe's oldest pumping station remains in service as a backup during maintenance."},
+    {"id":"f20","text":"No new mandatory meter installation fee or change in water quality is part of this tariff decision."}
+  ],
+  "modules": ["domains/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1","f2","f3","f4","f5","f6","f7","f8","f9","f15","f17"],
+    "forbidden_additions": ["All businesses pay less or household tariffs change","The example bills include sewer charges or guarantee bills at different usage levels"],
+    "preserve": ["If quoted: The first fifty dollars arrives before we turn on a tap.","If quoted: We changed the balance between keeping the system ready and charging for each gallon.","$125 at 30,000 gallons is the equal-bill point under the two stated formulas."],
+    "expected_action": "draft"
+  }
+}

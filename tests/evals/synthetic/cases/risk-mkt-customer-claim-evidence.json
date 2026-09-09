@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "risk-mkt-customer-claim-evidence",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Copyedit this fictional customer-outcome sentence. Return it unchanged if the claim is accurately sourced and the attribution is preserved.",
+  "input": "In a 2024 pilot with Dunhill Consulting Group, PeopleAxis supported onboarding for a 90-person cohort over six months.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "Dunhill Consulting Group is a fictional professional-services firm."},
+    {"id": "f2", "text": "Dunhill used PeopleAxis to manage a 90-person onboarding cohort."},
+    {"id": "f3", "text": "The pilot ran over six months in 2024."},
+    {"id": "f4", "text": "The facts do not report quantified productivity or cost data."}
+  ],
+  "modules": ["domains/marketing.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3"],
+    "forbidden_additions": [
+      "An outcome percentage, time saving, or cost reduction not in the facts.",
+      "An endorsement quote attributed to Dunhill.",
+      "A claim beyond the 90-person supported-onboarding scope."
+    ],
+    "preserve": [
+      "The 90-person cohort.",
+      "The six-month 2024 pilot period.",
+      "The supported-onboarding framing without outcome quantification."
+    ],
+    "expected_action": "no_change"
+  }
+}

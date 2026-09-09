@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-civic-grocery-post-counter",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic exercise using fictional reporting notes. Use only the supplied reporting notes as the fixed record: select, organize and phrase the story without inventing additional reported events, scenes, quotations or reporting activity. Write a headline and a straight news update of roughly 450–650 words in AP style for general newspaper readers about the move of Mallow Fen's postal counter into a grocery store. Write from this reporting snapshot as of September 18, 2026.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Mallow Post cooperative will move its Mallow Fen counter into the Reed Basket grocery store on Oct. 1, 2026."},
+    {"id": "f2", "text": "The lease on the current High Row counter ends Sept. 30, and the landlord has declined to renew it."},
+    {"id": "f3", "text": "The new counter is about 600 yards from the old one and is on the village's existing local bus route."},
+    {"id": "f4", "text": "Postal service will operate from 9 a.m. to 5 p.m. Monday through Friday and from 9 a.m. to noon Saturday."},
+    {"id": "f5", "text": "The grocery's longer opening hours will not extend the postal counter's hours because separately trained staff must operate it."},
+    {"id": "f6", "text": "Two existing postal employees will transfer to the new location, and the cooperative plans no job cuts connected with the move."},
+    {"id": "f7", "text": "The cooperative will rent a counter area and a secured parcel room from the grocer under a three-year agreement."},
+    {"id": "f8", "text": "Postal workers, rather than grocery cashiers, will handle undelivered parcels and customers' collection documents."},
+    {"id": "f9", "text": "The new location will retain letter posting, parcel collection and postage sales but will not add banking or money-transfer services."},
+    {"id": "f10", "text": "Cooperative manager Fenna Orr said, \"We are changing the room around the service, not asking shoppers to hand their mail to any cashier.\""},
+    {"id": "f11", "text": "The grocery entrance has no steps, while the old counter requires customers to climb two exterior steps."},
+    {"id": "f12", "text": "An internal partition is being added to keep the postal waiting line separate from the grocery checkout line."},
+    {"id": "f13", "text": "The parish transport group asked for a bench outside because some bus connections leave customers waiting beyond the counter's closing time."},
+    {"id": "f14", "text": "Grocer Dalen Wick said, \"Extra customers are welcome, but this only works if someone buying a stamp is not trapped behind a weekly shop.\""},
+    {"id": "f15", "text": "The grocer will pay for the counter partition, while the cooperative will supply the postal equipment and staff training."},
+    {"id": "f16", "text": "The packet does not disclose the rent or forecast additional grocery sales from hosting the counter."},
+    {"id": "f17", "text": "The old outdoor posting box will remain in place and continue to be emptied under its existing schedule."},
+    {"id": "f18", "text": "Uncollected parcels at the old counter will be transferred to the new secured room during the move."},
+    {"id": "f19", "text": "The cooperative will put notices on parcel-collection cards and at both premises to explain the change of address."},
+    {"id": "f20", "text": "The current postal room occupies a former tailor's shop whose wooden fitting-room door is still used for the staff cupboard."},
+    {"id": "f21", "text": "The cooperative says the move avoids closing the village counter, but it has made no guarantee about service after the three-year agreement."},
+    {"id": "f22", "text": "No decision has been made on the requested outdoor bench or on extending postal hours later in the year."}
+  ],
+  "modules": ["domains/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f4", "f5", "f8", "f9", "f17", "f21"],
+    "forbidden_additions": ["Postal service during every grocery opening hour.", "New banking services, access to parcels by all grocery staff or a permanent-service guarantee.", "Disclosed rent, additional sales results or an approved bench."],
+    "preserve": ["The separation of businesses, staffing and waiting lines within the shared premises.", "Continuity of the outdoor posting box and the transfer of existing parcels.", "Exact quotation wording and attribution when quotations are used."],
+    "expected_action": "draft"
+  }
+}

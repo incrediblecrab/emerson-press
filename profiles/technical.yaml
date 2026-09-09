@@ -1,5 +1,0 @@
-name: technical
-description: Technical documentation whose APIs, versions and verification are supplied.
-modules:
-  - domain/technical.md
-safeguards: []

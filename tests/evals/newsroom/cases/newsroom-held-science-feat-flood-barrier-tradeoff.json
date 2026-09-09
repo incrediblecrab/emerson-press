@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-science-feat-flood-barrier-tradeoff",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic writing exercise. Using these fictional reporting notes, write a newspaper reported feature for general readers. Draw only on the supplied notes; do not invent additional reported events, scenes, or quotations. Write from this reporting snapshot as of March 13, 2025. Include a headline. Target 450 to 650 words. Follow AP style.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "The Caldwell Estuary Tidal Gate, a proposed $3.1 billion flood barrier for Caldwell City, is under final engineering review; a decision on construction authorization is expected in 2026."
+    },
+    {
+      "id": "f2",
+      "text": "Chief engineer Dr. Sara Oduya, who has spent seven years on the project, said the barrier would protect 55,000 residents from surge events up to 3.5 meters but would alter the estuary's tidal exchange in ways that are difficult to fully model."
+    },
+    {
+      "id": "f3",
+      "text": "Dr. Oduya said: \"We can tell you what the gate does to water levels. We can tell you a lot less about what it does to species that evolved in this estuary over ten thousand years. That uncertainty is real and we are honest about it.\""
+    },
+    {
+      "id": "f4",
+      "text": "Marine ecologist Dr. Patrick Lund has spent four years studying the estuary's ecology; he said the barrier would reduce tidal flushing by approximately 30% during closure events, which are projected to occur 6 to 10 times per year under future climate scenarios."
+    },
+    {
+      "id": "f5",
+      "text": "Dr. Lund said: \"Thirty percent less flushing means higher salinity at the upper estuary during dry periods and lower oxygen during wet ones. Some species can adapt. Some cannot. We don't have enough data to say which is which for every important species.\""
+    },
+    {
+      "id": "f6",
+      "text": "The estuary supports two species of conservation concern: the Caldwell silverside fish and a migratory shorebird that uses the intertidal zone for foraging."
+    },
+    {
+      "id": "f7",
+      "text": "The barrier's environmental impact statement concluded that impacts on both species would be adverse but not likely to jeopardize their survival; three outside ecologists who reviewed the statement said the species population models lacked sufficient baseline data."
+    },
+    {
+      "id": "f8",
+      "text": "Dr. Oduya said the project team has designed operational protocols to minimize closure duration and maintain fish passage through fish locks during operations; she acknowledged these measures are mitigations, not solutions."
+    },
+    {
+      "id": "f9",
+      "text": "Caldwell City mayor Anna Rios said the city cannot wait for perfect ecological certainty: \"We had $890 million in flood damage from the 2018 storm. At some point, you build the thing, or you accept the losses.\""
+    },
+    {
+      "id": "f10",
+      "text": "Dr. Lund said he is not opposed to the barrier in principle but that the environmental review was compressed to meet political timelines: \"We needed three more years of baseline data. We got one.\""
+    },
+    {
+      "id": "f11",
+      "text": "A coalition of environmental groups has filed for an extended review period; the federal agency overseeing the review has not yet responded."
+    },
+    {
+      "id": "f12",
+      "text": "Dr. Oduya said she understands the ecological concerns and believes the project's mitigation package is the strongest achievable: a 50-year ecological monitoring commitment, an endowment for species research, and adaptive management provisions allowing gate operations to be modified based on monitoring data."
+    },
+    {
+      "id": "f13",
+      "text": "Dr. Lund said the adaptive management provisions are meaningful only if the city commits to modifying operations when data shows harm: \"Adaptive management is a promise. It's only as good as the institution keeping it over fifty years.\""
+    },
+    {
+      "id": "f14",
+      "text": "The barrier would be built by a consortium including firms Coastal Works International and Ridgeline Civil Engineering; both have built tidal barriers in Europe."
+    },
+    {
+      "id": "f15",
+      "text": "A local business association estimated that Caldwell's uninsured flood exposure \u2014 costs not covered by federal disaster funds \u2014 exceeded $200 million in the 2018 event; the barrier's construction cost would be recovered in insurance savings within 25 years by their estimate."
+    },
+    {
+      "id": "f16",
+      "text": "Dr. Oduya said the most honest thing she can say is that the barrier reduces one risk by introducing another: \"We are trading flood risk for ecological risk. Neither is zero. The question is which community can better manage which risk.\""
+    },
+    {
+      "id": "f17",
+      "text": "Rios said she ran for mayor on flood protection and will stand for a decision: \"People need to know whether to stay or go. The answer has to come from this project, not from the next storm.\""
+    },
+    {
+      "id": "f18",
+      "text": "Dr. Lund said he will not oppose the project if the monitoring commitment and adaptive management provisions are binding: \"I'd rather have a barrier with honest monitoring than a barrier with no monitoring.\""
+    },
+    {
+      "id": "f19",
+      "text": "Dr. Oduya said the final engineering review will take six months; she hopes the ecological and infrastructure questions will be resolved in parallel: \"The engineering is largely settled. The governance \u2014 who decides what the monitoring means and what to do about it \u2014 that is not settled.\""
+    },
+    {
+      "id": "f20",
+      "text": "The Caldwell Estuary project is being watched by coastal engineers and ecologists in six other U.S. cities facing similar decisions; its outcome will influence how those cities frame the environmental review of their own barrier proposals."
+    }
+  ],
+  "modules": [
+    "domains/press.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f7",
+      "f8",
+      "f9",
+      "f10",
+      "f13",
+      "f16"
+    ],
+    "forbidden_additions": [
+      "a construction authorization already granted",
+      "a confirmed species extinction from the barrier",
+      "a cost figure different from $3.1 billion"
+    ],
+    "preserve": [
+      "We can tell you what the gate does to water levels. We can tell you a lot less about what it does to species that evolved in this estuary over ten thousand years. That uncertainty is real and we are honest about it.",
+      "Thirty percent less flushing means higher salinity at the upper estuary during dry periods and lower oxygen during wet ones. Some species can adapt. Some cannot. We don't have enough data to say which is which for every important species.",
+      "We are trading flood risk for ecological risk. Neither is zero. The question is which community can better manage which risk."
+    ],
+    "expected_action": "draft"
+  }
+}

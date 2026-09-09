@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "technical-error-code-ref-draft",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "Draft a reference entry for the HTTP 429 error code returned by a fictional API. Document the Retry-After header and the per-key rate limit from the supplied facts. Do not invent retry algorithms or claim the limit is per IP address.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The HTTP status code is 429 Too Many Requests."},
+    {"id": "f2", "text": "The error means the caller has exceeded the rate limit for the current window."},
+    {"id": "f3", "text": "The response includes a Retry-After header whose value is the number of seconds until the next request is permitted."},
+    {"id": "f4", "text": "Clients should read the Retry-After value rather than using a fixed retry interval."},
+    {"id": "f5", "text": "The rate limit is 60 requests per minute per API key."},
+    {"id": "f6", "text": "The limit is counted per API key, not per IP address."}
+  ],
+  "modules": ["domains/technical.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f6"],
+    "forbidden_additions": [
+      "An invented retry count, backoff multiplier, or jitter algorithm.",
+      "A claim that the limit applies per IP address.",
+      "Invented response body fields not from the supplied facts."
+    ],
+    "preserve": [
+      "Retry-After header and the recommendation to read it dynamically.",
+      "60 requests per minute per API key.",
+      "Per-key (not per-IP) rate-limit scope."
+    ],
+    "expected_action": "draft"
+  }
+}

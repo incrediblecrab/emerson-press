@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-science-expl-grid-frequency",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic writing exercise. Using these fictional reporting notes, write a newspaper explainer for general readers answering the question: Why does the electrical grid operate at a fixed frequency, and what happens when it drifts? Draw only on the supplied notes; do not invent additional reported events, scenes, or quotations. Write from this reporting snapshot as of July 15, 2024. Include a headline. Target 450 to 650 words. Follow AP style.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "The North American electrical grid operates at 60 hertz \u2014 meaning the alternating current direction reverses 60 times per second."
+    },
+    {
+      "id": "f2",
+      "text": "Generators across the grid must rotate in synchrony; all large spinning generators are physically coupled to the 60-hertz frequency through the physics of electromagnetic induction."
+    },
+    {
+      "id": "f3",
+      "text": "Grid frequency is determined by the balance between generation and load: when demand exceeds supply, generators slow slightly and frequency drops; when supply exceeds demand, frequency rises."
+    },
+    {
+      "id": "f4",
+      "text": "Frequency deviations of as little as 0.5 hertz trigger automatic relay disconnections designed to protect generators and large industrial equipment from operating outside their design parameters."
+    },
+    {
+      "id": "f5",
+      "text": "When a large generator or transmission line suddenly disconnects, neighboring generators must absorb the imbalance; their collective inertia \u2014 stored kinetic energy in spinning rotors \u2014 provides seconds to minutes for operators to respond."
+    },
+    {
+      "id": "f6",
+      "text": "Power engineers call this rotational energy 'inertia'; it acts as a buffer against rapid frequency swings in the same way a flywheel stores and releases energy."
+    },
+    {
+      "id": "f7",
+      "text": "Electrical engineer Dr. Lena Strand of Ridgeline University said: \"Think of frequency as the heartbeat of the grid. When too much generation drops off, the heart rate falls, and if it falls far enough, automatic protection systems start disconnecting things \u2014 which can make the problem worse.\""
+    },
+    {
+      "id": "f8",
+      "text": "Thermal power plants (coal, gas, nuclear) have large spinning generators with significant rotational inertia; solar panels and many wind turbines produce direct current that is converted electronically and add no rotational inertia by default."
+    },
+    {
+      "id": "f9",
+      "text": "As grids add more solar and wind, total system inertia decreases; this makes frequency more sensitive to sudden generation loss."
+    },
+    {
+      "id": "f10",
+      "text": "Grid-forming inverters \u2014 a newer technology \u2014 can simulate the behavior of rotating machines electronically, providing synthetic inertia; deployment is increasing but not yet widespread."
+    },
+    {
+      "id": "f11",
+      "text": "Frequency-responsive reserves are generators held in readiness to increase output within seconds of a frequency drop; most major grid operators require a specified amount of such reserves at all times."
+    },
+    {
+      "id": "f12",
+      "text": "Large industrial customers can also provide frequency response by agreeing to reduce load automatically when frequency drops below a threshold, in exchange for lower electricity rates."
+    },
+    {
+      "id": "f13",
+      "text": "One of the largest grid failures in North American history \u2014 affecting tens of millions of people across multiple states and provinces \u2014 began with a tree-to-wire contact and was propagated by frequency and voltage instability that spread through the interconnected system within minutes; the event is studied extensively in grid reliability engineering."
+    },
+    {
+      "id": "f14",
+      "text": "Dr. Strand said the central challenge of integrating more renewable energy is not intermittency \u2014 the variability of sun and wind \u2014 but managing the resulting reduction in system inertia."
+    },
+    {
+      "id": "f15",
+      "text": "Grid operators continuously balance supply and demand using computer systems that adjust generation dispatch every few seconds."
+    },
+    {
+      "id": "f16",
+      "text": "The European grid operates at 50 hertz; the difference is historical and has no fundamental physical significance, but the two systems cannot be directly interconnected without frequency conversion equipment."
+    },
+    {
+      "id": "f17",
+      "text": "Battery storage systems can respond to frequency deviations much faster than spinning generators \u2014 in milliseconds rather than seconds \u2014 and are increasingly used as a first line of frequency response."
+    },
+    {
+      "id": "f18",
+      "text": "Under-frequency load shedding is a last-resort tool: grid operators automatically cut power to blocks of customers to prevent a total system collapse."
+    },
+    {
+      "id": "f19",
+      "text": "Dr. Strand said no grid has operated entirely without synchronous rotating machines; replacing all rotational inertia with synthetic alternatives remains an open engineering question."
+    },
+    {
+      "id": "f20",
+      "text": "The Federal Energy Regulatory Commission requires transmission operators to study the impact of each major generator retirement on system frequency stability before approving decommissioning."
+    }
+  ],
+  "modules": [
+    "domains/press.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f7",
+      "f8",
+      "f9",
+      "f11"
+    ],
+    "forbidden_additions": [
+      "a claim that solar panels provide rotational inertia",
+      "a grid frequency different from 60 hertz for North America",
+      "a specific date or cause for the 2003 blackout beyond what is in the notes"
+    ],
+    "preserve": [
+      "Think of frequency as the heartbeat of the grid. When too much generation drops off, the heart rate falls, and if it falls far enough, automatic protection systems start disconnecting things \u2014 which can make the problem worse."
+    ],
+    "expected_action": "draft"
+  }
+}

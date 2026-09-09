@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "scholarly-cit-bluebook-unpublished-memo",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Repair this 50–85-word source-description note for a fictional legal research exercise. Keep the supplied document an unsigned, unpublished training memorandum, not an opinion. For this Bluebook 22 venue, use exactly this bibliographic pattern for known fields: Draft Reasons for a Ferry Board Vote 4 (June 9, 2023) (unpublished training memorandum) (supplied packet). No author, repository, or court is known. Explain the document's evidentiary status without offering a legal opinion or manufacturing authority to make the note look complete.",
+  "input": "The appellate court held that every port must waive the storage fee. Draft Reasons v. Ferry Board, 88 Port Rep. 4 (2023). This binding judgment records the board's completed vote.",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "The packet contains an unsigned unpublished training memorandum titled Draft Reasons for a Ferry Board Vote, dated June 9, 2023."
+    },
+    {
+      "id": "f2",
+      "text": "Page 4 proposes waiving one storage fee in a fictional exercise; it does not record a vote."
+    },
+    {
+      "id": "f3",
+      "text": "The packet supplies no judicial opinion, court, reporter, document author, or repository."
+    },
+    {
+      "id": "f4",
+      "text": "No document establishes an adopted fee rule or a requirement applying to other ports."
+    }
+  ],
+  "modules": [
+    "domains/legal.md",
+    "domains/citation/bluebook22.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3"],
+    "forbidden_additions": [
+      "A case name, reporter, court, or binding status for the memorandum",
+      "A claim that a vote occurred or that all ports must waive fees",
+      "An invented author, repository, or on-file-with-author assertion"
+    ],
+    "preserve": [
+      "Draft Reasons for a Ferry Board Vote",
+      "Page 4 and June 9, 2023",
+      "The memorandum proposes one waiver rather than documenting an adopted rule"
+    ],
+    "expected_action": "edit"
+  }
+}

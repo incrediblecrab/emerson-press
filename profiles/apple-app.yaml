@@ -1,8 +1,0 @@
-name: apple-app
-description: Accessible task-oriented copy for an Apple interface.
-modules:
-  - domain/technical.md
-  - user-interface/applications.md
-  - user-interface/accessibility.md
-  - user-interface/apple-hig.md
-safeguards: []

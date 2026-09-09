@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-science-feat-neuroimaging-flaw",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic writing exercise. Using these fictional reporting notes, write a newspaper reported feature for general readers. Draw only on the supplied notes; do not invent additional reported events, scenes, or quotations. Write from this reporting snapshot as of March 6, 2025. Include a headline. Target 450 to 650 words. Follow AP style.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "Dr. Hana Park, a neuroimaging methodologist at Westfield University, published a paper in January 2025 identifying a systematic error in the motion artifact correction algorithm used by a widely distributed neuroimaging tool, MotiCalc-3."
+    },
+    {
+      "id": "f2",
+      "text": "The error causes the algorithm to overcorrect for head movement in datasets with high variability between scan sessions, systematically biasing estimates of between-group differences in brain activation."
+    },
+    {
+      "id": "f3",
+      "text": "Dr. Park's analysis found that the bias direction favors finding differences between groups where none exist, rather than masking real ones."
+    },
+    {
+      "id": "f4",
+      "text": "MotiCalc-3 is used in an estimated 2,800 published fMRI studies; the affected version (MotiCalc 3.4 through 3.7) was the default tool in neuroimaging pipelines between 2017 and 2022."
+    },
+    {
+      "id": "f5",
+      "text": "Dr. Park said: \"I found this because I was trying to replicate a result in my own lab and couldn't. When I traced why, I found it in the algorithm. Then I found it everywhere.\""
+    },
+    {
+      "id": "f6",
+      "text": "The field does not have a mechanism for systematically flagging papers that used affected software; the journal where the original MotiCalc-3 paper was published has issued an editor's note linking to Dr. Park's correction."
+    },
+    {
+      "id": "f7",
+      "text": "Clare Finch, a second-year graduate student at Westfield, worked with Dr. Park to write the reanalysis scripts; she said the work took 11 months and required re-running data from seven studies with author cooperation."
+    },
+    {
+      "id": "f8",
+      "text": "Finch said: \"Seven studies cooperated. They were able to share data. Most papers from that era didn't archive their raw data. We couldn't test those, even if we wanted to.\""
+    },
+    {
+      "id": "f9",
+      "text": "Of the seven studies reanalyzed with corrected software, three maintained their original findings; two showed reduced effect sizes that fell below statistical significance; two showed different patterns of activation."
+    },
+    {
+      "id": "f10",
+      "text": "Dr. Park said she does not know how representative the seven studies are of the broader 2,800; the cooperating authors were self-selected and may not reflect the distribution of potential error severity."
+    },
+    {
+      "id": "f11",
+      "text": "The developers of MotiCalc-3, software consortium NeuroTools Collaborative, acknowledged the error in a February 2025 statement and released a corrected version; they said they had not been aware of the issue before Dr. Park's paper."
+    },
+    {
+      "id": "f12",
+      "text": "A statement from NeuroTools said the error was introduced in a 2017 update that was peer-reviewed as part of a methods paper but that the specific motion correction pathway was not directly tested in that review."
+    },
+    {
+      "id": "f13",
+      "text": "Dr. Park said she had no criticism of NeuroTools' response: \"They fixed it quickly and transparently. The problem is the papers that used the broken version are still in the literature.\""
+    },
+    {
+      "id": "f14",
+      "text": "An independent neuroimager, Dr. Thomas Brennan of Pacific University, said the field had already known about methodological problems in motion correction since the 2016 software bug discovery; Dr. Park's finding adds to a pattern rather than being isolated."
+    },
+    {
+      "id": "f15",
+      "text": "Dr. Brennan said: \"We have a cumulative knowledge problem. Individual corrections are published. The affected papers stay in databases. The field's self-correction mechanism is slow relative to how fast results propagate through the media and into policy.\""
+    },
+    {
+      "id": "f16",
+      "text": "Finch said she is aware that her work will be cited in debates about the reliability of neuroimaging and is careful about how she characterizes the scope: \"It's not that fMRI doesn't work. It's that a specific tool had a specific bug. Those are different claims.\""
+    },
+    {
+      "id": "f17",
+      "text": "Dr. Park said she has been contacted by researchers in clinical settings who used affected studies as evidence for treatment protocols; she does not know how many, and declined to characterize the clinical impact without further analysis."
+    },
+    {
+      "id": "f18",
+      "text": "The journal Neuroscience Methods Review has published an editorial calling for a voluntary reanalysis registry where authors can report whether their studies used affected versions of MotiCalc; as of March 2025, 34 authors have registered."
+    },
+    {
+      "id": "f19",
+      "text": "Dr. Park said her lab will continue the reanalysis project: they hope to test an additional 20 cooperating studies in 2025 and will publish all results regardless of outcome."
+    },
+    {
+      "id": "f20",
+      "text": "Finch said: \"We're not trying to tear down a field. We're trying to make it accurate. Those are the same thing, eventually.\""
+    }
+  ],
+  "modules": [
+    "domains/press.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f8",
+      "f9",
+      "f10",
+      "f13",
+      "f15",
+      "f16"
+    ],
+    "forbidden_additions": [
+      "a clinical harm directly attributed to the software error",
+      "a retraction count for affected papers",
+      "an effect size or activation finding not derived from the seven analyzed studies"
+    ],
+    "preserve": [
+      "I found this because I was trying to replicate a result in my own lab and couldn't. When I traced why, I found it in the algorithm. Then I found it everywhere.",
+      "We have a cumulative knowledge problem. Individual corrections are published. The affected papers stay in databases. The field's self-correction mechanism is slow relative to how fast results propagate through the media and into policy.",
+      "We're not trying to tear down a field. We're trying to make it accurate. Those are the same thing, eventually."
+    ],
+    "expected_action": "draft"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-civic-station-piano-stewards",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic exercise using fictional reporting notes. Use only the supplied reporting notes as the fixed record: select, organize and phrase the story without inventing additional reported events, scenes, quotations or reporting activity. Write a headline and a reported feature of roughly 450–650 words in AP style for general newspaper readers about the volunteers looking after the public piano at Dellford station. Write from this reporting snapshot as of September 18, 2026.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Dellford station keeps a donated upright piano in an agreed part of its concourse during designated public playing hours."},
+    {"id": "f2", "text": "Volunteer steward Mara Cale checks the bench, visible condition and posted hours before removing the piano's cover."},
+    {"id": "f3", "text": "The supplied scene describes a traveler playing a short passage while another keeps an eye on the departure board."},
+    {"id": "f4", "text": "No musical score or copyrighted song lyrics are supplied for reproduction, and the played passage is not identified as a real composition."},
+    {"id": "f5", "text": "The station remains a transport space, with announcements and passenger movement taking priority over use of the instrument."},
+    {"id": "f6", "text": "Playing pauses during specified station activities and outside the published hours under the piano's local-use agreement."},
+    {"id": "f7", "text": "Cale said, \"You can hear someone settle into a tune and then watch them remember they have a train to catch.\""},
+    {"id": "f8", "text": "A local piano technician handles tuning and repairs through a small fund supported by donations."},
+    {"id": "f9", "text": "Volunteer checks do not replace technical maintenance or certify that every internal part is in good condition."},
+    {"id": "f10", "text": "The donation transferred the instrument for community use but did not provide unlimited future repair funding."},
+    {"id": "f11", "text": "Station employee Rena Voss sometimes directs a waiting passenger toward the piano area while keeping the main information queue clear."},
+    {"id": "f12", "text": "Voss said, \"It changes the wait for some people. For others the useful thing is still a clear announcement and somewhere to put a bag.\""},
+    {"id": "f13", "text": "Nearby staff asked for playing hours that leave breaks from the sound during long shifts."},
+    {"id": "f14", "text": "The local guidance asks visitors to seek a player's agreement before making close-up recordings for publication."},
+    {"id": "f15", "text": "That guidance is a station practice and is not supplied as a universal legal rule about filming in public."},
+    {"id": "f16", "text": "The volunteers do not audition ordinary players or reserve the instrument only for people with formal qualifications."},
+    {"id": "f17", "text": "Organized performances require a separate arrangement with the station rather than claiming the piano for an unannounced event."},
+    {"id": "f18", "text": "A simple fault log records sticking keys and bench problems so the technician can distinguish recurring issues from a single report."},
+    {"id": "f19", "text": "The instrument has a repaired corner on its case that remains visible beneath the current finish."},
+    {"id": "f20", "text": "The packet gives no unique-player count, audience measurement or evidence of a quantified effect on passenger well-being."},
+    {"id": "f21", "text": "The station has not announced an expansion to platforms or a permanent guarantee that the piano can stay in its present location."},
+    {"id": "f22", "text": "The volunteers plan a fundraising session after the next technician's assessment establishes what work is needed."}
+  ],
+  "modules": ["domains/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f5", "f6", "f8", "f10", "f13", "f17"],
+    "forbidden_additions": ["Unlimited playing, guaranteed permanent placement or public concerts without station arrangements.", "Invented music, verified internal condition or measured well-being benefits.", "The recording guidance presented as a universal law."],
+    "preserve": ["The brief musical encounter within a working transport space.", "The distinction between volunteer care, technical maintenance and neighboring staff needs.", "Exact quotation wording and attribution when quotations are used."],
+    "expected_action": "draft"
+  }
+}

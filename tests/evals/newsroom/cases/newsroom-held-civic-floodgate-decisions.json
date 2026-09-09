@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-civic-floodgate-decisions",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic exercise using fictional reporting notes. Use only the supplied reporting notes as the fixed record: select, organize and phrase the story without inventing additional reported events, scenes, quotations or reporting activity. Write a headline and an explainer of roughly 450–650 words in AP style for general newspaper readers about how the Lower Bell water team decides when to close its river gates. Write from this reporting snapshot as of September 18, 2026.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Lower Bell water team manages river gates that can limit high river water entering the town's drainage channels."},
+    {"id": "f2", "text": "Closing the gates also reduces the channels' ability to discharge collected surface water into the river without pumping."},
+    {"id": "f3", "text": "The operating decision therefore considers river levels, rainfall entering the town's drains and available pumping capacity together."},
+    {"id": "f4", "text": "The team's supplied operating summary uses both observed gauges and short-term forecasts rather than an isolated photograph of one water level."},
+    {"id": "f5", "text": "A recent public question concerned why one gate was closed while another remained open during the same wet-weather period."},
+    {"id": "f6", "text": "The gates serve different drainage areas with different channel levels, so their states need not match at every moment."},
+    {"id": "f7", "text": "Water engineer Nera Vale said, \"There is water on both sides of the decision. Keeping one side out can make the other side harder to move.\""},
+    {"id": "f8", "text": "Duty staff check the current operating information before authorizing a change, and the team keeps a log of the decision and conditions considered."},
+    {"id": "f9", "text": "The public information page shows gate status but does not publish every internal operating detail or turn status into a forecast for each street."},
+    {"id": "f10", "text": "A closed gate does not establish that every nearby property is protected from surface-water flooding."},
+    {"id": "f11", "text": "An open gate does not by itself establish that staff have ignored a warning or that the equipment has failed."},
+    {"id": "f12", "text": "Residents association chair Elin Marr asked the team to add a plain-language reason to status updates when practical."},
+    {"id": "f13", "text": "Marr said, \"A red or green symbol tells us what the gate is doing, but it leaves us guessing about the rest of the system.\""},
+    {"id": "f14", "text": "The team plans to add short status explanations but has not promised an individually tailored forecast for every reader."},
+    {"id": "f15", "text": "Pump maintenance and river-gate operations are coordinated, but the two systems are not interchangeable pieces of equipment."},
+    {"id": "f16", "text": "Planned maintenance can affect available pumping capacity, which duty staff include in the operating assessment."},
+    {"id": "f17", "text": "The county's emergency-management office remains responsible for public emergency instructions; the gate page does not replace that service."},
+    {"id": "f18", "text": "The supplied record contains no estimate of damage prevented during the recent wet-weather period."},
+    {"id": "f19", "text": "The drainage network includes older channels whose names persist in staff logs even where adjacent streets have been renamed."},
+    {"id": "f20", "text": "A public information session will use a simplified model to show the direction of water movement without presenting it as a property-level risk assessment."},
+    {"id": "f21", "text": "The team will archive status explanations so residents can distinguish the current condition from an earlier update."},
+    {"id": "f22", "text": "The packet does not describe a current emergency, provide a live forecast or authorize the public to operate any equipment."}
+  ],
+  "modules": ["domains/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f6", "f10", "f11", "f17"],
+    "forbidden_additions": ["A closed gate guaranteeing household safety or an open gate proving negligence.", "A live emergency warning, property-specific forecast or damage-prevention estimate.", "Public equipment-operation instructions."],
+    "preserve": ["The tradeoff between river exclusion and drainage discharge.", "Different conditions across gates and the separation of status information from emergency instructions.", "Exact quotation wording and attribution when quotations are used."],
+    "expected_action": "draft"
+  }
+}

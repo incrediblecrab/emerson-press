@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "public-press-capacity-not-flow",
+  "split": "tuning",
+  "operation": "edit",
+  "task": "Edit this fictional arts-centre infrastructure item against the design note, with a brief separate correction disclosure. In about 80–120 words overall, correct the unit and distinguish storage capacity from collection per day. Do not add environmental-performance claims without a baseline or present a design as an operating measurement.",
+  "input": "Courtyard Arts Centre's new tank will collect 900 kilolitres every day, cutting mains-water use in half. The system is already achieving that saving. The tank will feed the centre's display basin with water from the roof.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional design note specifies a tank with a storage capacity of 900 litres."},
+    {"id": "f2", "text": "The planned tank will collect roof runoff for the display basin at Courtyard Arts Centre."},
+    {"id": "f3", "text": "The tank has not yet been installed."},
+    {"id": "f4", "text": "The packet supplies no daily collection amount."},
+    {"id": "f5", "text": "The packet supplies no baseline water-use figure or measured saving."}
+  ],
+  "modules": ["domains/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5"],
+    "forbidden_additions": [
+      "900 kilolitres, a daily flow of 900 litres, or another invented collection rate.",
+      "A 50-percent reduction or any other unprovided water-saving result.",
+      "An installed or tested system presented as current fact."
+    ],
+    "preserve": [
+      "Litres as the correct capacity unit.",
+      "Storage capacity, collection rate, and consumption savings as different quantities.",
+      "The planned status and the design note as the correction basis."
+    ],
+    "expected_action": "edit"
+  }
+}

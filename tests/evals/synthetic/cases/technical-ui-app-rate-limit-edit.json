@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "technical-ui-app-rate-limit-edit",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Edit this in-app rate-limit error message to accurately describe the retry behavior per the supplied facts. Remove the automatic retry claim and the incorrect 5-second interval; state the correct reset timing and that retry is manual.",
+  "input": "You've hit the rate limit. The app will automatically retry in 5 seconds.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The application does not retry automatically."},
+    {"id": "f2", "text": "The rate limit resets 60 seconds after the first request in the current window."},
+    {"id": "f3", "text": "The user must manually retry by activating the Retry button."},
+    {"id": "f4", "text": "The rate limit is 10 requests per minute per account."}
+  ],
+  "modules": ["domains/general.md", "domains/user-interface/applications.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3"],
+    "forbidden_additions": [
+      "Automatic retry when the facts specify manual retry.",
+      "A 5-second retry interval when the facts specify a 60-second window.",
+      "An invented recovery action different from the Retry button."
+    ],
+    "preserve": [
+      "Rate limit reached.",
+      "60-second window reset.",
+      "Manual retry via the Retry button.",
+      "No automatic retry."
+    ],
+    "expected_action": "edit"
+  }
+}

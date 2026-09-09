@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "id": "scholarly-edu-high-count-rate-divergence",
+  "split": "tuning",
+  "operation": "edit",
+  "task": "Edit this high-school data report into a coherent 350–500-word analysis using the fictional records. Readers can calculate percentages but need help connecting aggregate rates, category mix, outcome labels, and the limits of a training claim. Preserve the useful numerical detail rather than replacing the report with a short warning. Explain counts versus percentage points, compare both repair categories, and distinguish referral from an attempted repair that failed. Address what the staffing and orientation records can support. Any suggested further recordkeeping must be clearly proposed, not already performed. Maintain an understandable student-report voice; do not infer competence from age, invent statistical tests, or claim equivalent difficulty within the broad categories.",
+  "input": "Rillbank Repair Café fixed six of 20 logged devices in 2023 and nine of 45 in 2024. Because it fixed three more devices, its success rate rose by 10 percentage points. This is an unqualified improvement: the bigger fixed-device total is the only measure needed to compare the years. The records show that the café now solves a larger share of the problems brought to it, not merely that more devices were logged. Every volunteer therefore became more effective.\n\nThe category details confirm that conclusion. In 2023, volunteers fixed four of ten electrical devices and two of ten mechanical devices. In 2024, they fixed six of 15 electrical devices and three of 30 mechanical devices. Both fixed counts rose, which means that performance improved in both categories. The larger mechanical intake cannot affect the overall rate, because all devices entered the same café. Electrical and mechanical are stable labels, so repairs within each label must also have been equally difficult across the years.\n\nThe other outcomes are straightforward failures. In 2023, eight devices were referred elsewhere and six received no repair attempt. In 2024, 26 were referred and ten received no repair attempt. All these objects were proved impossible to repair, including those sent to another shop. The larger referral count shows that the café identified more hopeless devices. A fixed label, by contrast, guarantees that the object will keep working for the rest of its useful life.\n\nStaffing explains why the successful counts increased. Six volunteers were present in 2023 and eight in 2024, and a two-hour orientation was held at the start of 2024. All eight volunteers must have attended it. Their productivity can be compared directly from the number present, without knowing how many hours they worked. The increase proves that the orientation caused better results, so further evaluation would add little.\n\nFinally, the 45 devices in the later log represent 45 new people reached. Since the records cover the whole community, the café can use this number as a community participation rate. The annual report should therefore present growth, reliability, and training success as established findings rather than separating the observations from questions the logs did not ask.",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "The 2023 log records six fixed devices out of 20 logged devices, or 30 percent."
+    },
+    {
+      "id": "f2",
+      "text": "The 2024 log records nine fixed devices out of 45 logged devices, or 20 percent."
+    },
+    {
+      "id": "f3",
+      "text": "The fixed-device count increased by three while the fixed proportion decreased by 10 percentage points."
+    },
+    {
+      "id": "f4",
+      "text": "The packet contains no training evaluation, comparable-difficulty assessment, individual-volunteer results, or record of unlogged devices."
+    },
+    {
+      "id": "f5",
+      "text": "In 2023, the log includes ten electrical devices with four fixed and ten mechanical devices with two fixed. Their fixed proportions are 40 percent and 20 percent, respectively."
+    },
+    {
+      "id": "f6",
+      "text": "In 2024, the log includes 15 electrical devices with six fixed and 30 mechanical devices with three fixed. Their fixed proportions are 40 percent and 10 percent, respectively."
+    },
+    {
+      "id": "f7",
+      "text": "The outcome categories are mutually exclusive and complete: in 2023, six fixed, eight referred elsewhere, and six with no repair attempted; in 2024, nine fixed, 26 referred elsewhere, and ten with no repair attempted."
+    },
+    {
+      "id": "f8",
+      "text": "In both years, fixed means that the device passed the café's recorded functional check before leaving. There is no later durability follow-up."
+    },
+    {
+      "id": "f9",
+      "text": "Referred means directed to another repair service, with its later outcome unknown. No repair attempted does not establish that the device was impossible to repair, and the reasons for that category were not recorded."
+    },
+    {
+      "id": "f10",
+      "text": "Six volunteers were present in the 2023 session and eight in the 2024 session. Their individual attendance hours and device assignments were not logged."
+    },
+    {
+      "id": "f11",
+      "text": "A two-hour orientation was held at the start of 2024, but there is no attendance list linking it to particular volunteers or device outcomes."
+    },
+    {
+      "id": "f12",
+      "text": "Each device appears at most once in its year's log. The records do not count distinct owners, identify first-time visitors, or provide a community denominator."
+    }
+  ],
+  "modules": [
+    "domains/non-fiction.md",
+    "domains/education-level/04-high-school.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f6", "f7", "f8", "f9", "f10", "f11", "f12"],
+    "forbidden_additions": [
+      "A rising fixed proportion or a 10 percent relative increase",
+      "A causal training effect or equal difficulty of the devices",
+      "An inference about every volunteer or all repairs outside the logs",
+      "Referral or no attempted repair treated as proof of irreparability",
+      "A lifetime durability guarantee from the departure check",
+      "Productivity per hour, orientation attendance, distinct owner totals, or community participation rates without their required records"
+    ],
+    "preserve": [
+      "6/20 = 30 percent and 9/45 = 20 percent",
+      "Three more fixed devices but a 10-percentage-point decrease",
+      "Counts and proportions describe different features of these logs",
+      "The electrical fixed proportion stays at 40 percent; the mechanical proportion falls from 20 to 10 percent",
+      "Mechanical devices form ten of 20 entries in 2023 and 30 of 45 in 2024",
+      "The complete fixed, referred, and no-attempt counts",
+      "A sustained comparison that preserves useful observations while repairing the report's inferences"
+    ],
+    "expected_action": "edit"
+  }
+}

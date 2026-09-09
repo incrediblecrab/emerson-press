@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "technical-ui-chart-donut-no-change",
+  "split": "held_out",
+  "operation": "review",
+  "task": "Review this donut chart segment description. Return it unchanged if the three segment labels, percentages, and total are all accurate and consistent with the supplied facts.",
+  "input": "Segment labels and percentages: Print (45%), Digital (35%), Audio (20%). Total: 100%.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "Print segment is 45% of the total."},
+    {"id": "f2", "text": "Digital segment is 35% of the total."},
+    {"id": "f3", "text": "Audio segment is 20% of the total."},
+    {"id": "f4", "text": "The three segments account for 100% of the total with no additional segments."}
+  ],
+  "modules": ["domains/user-interface/charts.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "A wrong percentage for any segment.",
+      "An invented fourth segment.",
+      "A total other than 100%."
+    ],
+    "preserve": [
+      "Print 45%, Digital 35%, Audio 20%.",
+      "Total 100%.",
+      "Three-segment completeness."
+    ],
+    "expected_action": "no_change"
+  }
+}

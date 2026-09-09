@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-civic-community-cookbook-kitchen",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic exercise using fictional reporting notes. Use only the supplied reporting notes as the fixed record: select, organize and phrase the story without inventing additional reported events, scenes, quotations or reporting activity. Write a headline and a reported feature of roughly 450–650 words in AP style for general newspaper readers about the community kitchen testing contributions for the Mallow Bridge neighborhood cookbook. Write from this reporting snapshot as of September 18, 2026.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Mallow Bridge community kitchen is preparing a cookbook from voluntarily contributed household recipes and the stories their contributors choose to share."},
+    {"id": "f2", "text": "Editor Rena Vell works with volunteer cooks to identify missing quantities, unexplained terms and equipment assumptions before a contribution is considered ready for print."},
+    {"id": "f3", "text": "The supplied scene describes a contributor setting a family teacup beside a measuring jug while another volunteer writes down what the cup measure means in that recipe."},
+    {"id": "f4", "text": "The team does not assume every contributor's cup, spoon or oven description refers to the same standardized measure."},
+    {"id": "f5", "text": "The kitchen keeps the contributor's original notes alongside its revised working version rather than overwrite the source without a record."},
+    {"id": "f6", "text": "Vell said, \"The instruction that is obvious at one family's table can be the line that leaves another cook stuck.\""},
+    {"id": "f7", "text": "Contributor Elva Norn brings a bread recipe she has usually made by feel and wants the printed version to remain recognizable to her family."},
+    {"id": "f8", "text": "Norn said, \"I do not mind being asked how much. I want to know which words you change when you write the answer down.\""},
+    {"id": "f9", "text": "Contributors review the edited recipe and any accompanying personal story before approving inclusion."},
+    {"id": "f10", "text": "A contributor may approve the recipe without agreeing to publication of a family anecdote or a photograph."},
+    {"id": "f11", "text": "The team records changes made during a kitchen trial, including a different pan or ingredient substitution, rather than treat every result as a test of an unchanged recipe."},
+    {"id": "f12", "text": "A successful trial in the community kitchen is not presented as a guarantee that the recipe will work identically in every kitchen."},
+    {"id": "f13", "text": "The project does not certify dishes as suitable for every allergy or health condition."},
+    {"id": "f14", "text": "The packet contains no full recipe, actual copyrighted cookbook passage or private story from a real family."},
+    {"id": "f15", "text": "The planned book will credit contributors in the form they approve, including a chosen name or a collective group credit."},
+    {"id": "f16", "text": "The community association is raising printing funds and has not announced a final cover price or guaranteed publication date."},
+    {"id": "f17", "text": "The kitchen sessions use the hall's ordinary booking times, so volunteers must clear the work area for later community meals."},
+    {"id": "f18", "text": "A wall chart records which contributions need clarification, another trial or final contributor approval."},
+    {"id": "f19", "text": "The cookbook will include different versions of similar dishes when their contributors and the editors consider the differences meaningful."},
+    {"id": "f20", "text": "The project is not claiming to select the single authentic version of every dish associated with the neighborhood."},
+    {"id": "f21", "text": "Donated ingredients support some sessions, while contributors are not required to finance the entire trial of their own recipe."},
+    {"id": "f22", "text": "The association hopes sales will support future kitchen activities but has supplied no sales forecast or guaranteed financial return."}
+  ],
+  "modules": ["domains/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f7", "f9", "f10", "f11"],
+    "forbidden_additions": ["Invented full recipes, real family anecdotes or copyrighted passages.", "Universal recipe success, allergy suitability or a single authoritative version of every dish.", "A fixed price, publication date or guaranteed sales return."],
+    "preserve": ["The negotiation between usable instructions and contributors' own knowledge and voice.", "Separate permission for recipes, stories, photographs and credit.", "Exact quotation wording and attribution when quotations are used."],
+    "expected_action": "draft"
+  }
+}

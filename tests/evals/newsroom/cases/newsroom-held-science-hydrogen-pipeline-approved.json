@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-science-hydrogen-pipeline-approved",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic writing exercise. Using these fictional reporting notes, write a newspaper news story for general readers. Draw only on the supplied notes; do not invent additional reported events, scenes, or quotations. Write from this reporting snapshot as of March 6, 2025. Include a headline. Target 450 to 650 words. Follow AP style.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "The Federal Pipeline Safety Commission approved a construction permit on March 6, 2025, for what would be the first dedicated hydrogen pipeline in the United States."
+    },
+    {
+      "id": "f2",
+      "text": "The pipeline, developed by Vantage Green Hydrogen, will run 210 kilometers from a wind-powered electrolysis facility in the Sandover County to a steel manufacturing cluster in the city of Portview."
+    },
+    {
+      "id": "f3",
+      "text": "The pipeline will have a capacity of 85,000 tonnes of hydrogen per year at full operation."
+    },
+    {
+      "id": "f4",
+      "text": "Hydrogen burns without producing carbon dioxide but requires special pipeline materials because hydrogen molecules are small enough to permeate and weaken ordinary steel \u2014 a phenomenon called hydrogen embrittlement."
+    },
+    {
+      "id": "f5",
+      "text": "The Vantage pipeline will use seamless austenitic stainless steel tubing rated for high-pressure hydrogen service; the specification exceeds current natural gas pipeline standards."
+    },
+    {
+      "id": "f6",
+      "text": "FPSC chair Sara Osei said: \"We developed new inspection and material standards for this permit because existing pipeline regulations were written for natural gas. That work took 26 months.\""
+    },
+    {
+      "id": "f7",
+      "text": "Vantage CEO Dr. Luis Moreno said: \"Hydrogen delivered by pipeline is the only way to decarbonize industrial heat at the scale these steel facilities need. Truck delivery simply cannot match the volumes.\""
+    },
+    {
+      "id": "f8",
+      "text": "Three pipeline safety advocacy groups participated in the rulemaking and secured requirements for real-time leak detection sensors at one-kilometer intervals and automatic pressure shutoff valves at 5-kilometer intervals."
+    },
+    {
+      "id": "f9",
+      "text": "The Portview steel cluster emits approximately 4.8 million tonnes of carbon dioxide annually from burning coal-derived coke; switching to hydrogen would eliminate an estimated 3.2 million tonnes per year."
+    },
+    {
+      "id": "f10",
+      "text": "Construction is expected to begin in late 2025 and take 28 months; the pipeline would be operational by early 2028."
+    },
+    {
+      "id": "f11",
+      "text": "Vantage has a 15-year supply agreement with Portview Steel Holdings, the cluster's majority owner."
+    },
+    {
+      "id": "f12",
+      "text": "Hydrogen pipelines operate in Europe and in several industrial clusters in the Gulf Coast, but those lines carry hydrogen as a byproduct of chemical processes rather than as a primary energy carrier; this would be the first purpose-built energy-carrier hydrogen pipeline in the U.S."
+    },
+    {
+      "id": "f13",
+      "text": "The electrolysis facility will use 1.4 gigawatts of dedicated wind generation from a Vantage-owned wind farm to produce hydrogen through water splitting."
+    },
+    {
+      "id": "f14",
+      "text": "At full capacity, the steel facilities would replace approximately 40% of their current coal fuel consumption with hydrogen."
+    },
+    {
+      "id": "f15",
+      "text": "The permit requires Vantage to conduct full pressure tests before commissioning and to publish test results publicly."
+    },
+    {
+      "id": "f16",
+      "text": "Five landowners along the right-of-way objected during the permitting process; three have settled easement agreements and two cases remain in negotiation."
+    },
+    {
+      "id": "f17",
+      "text": "The pipeline's operator must complete an emergency response training exercise with local fire departments at least once per year under the permit conditions."
+    },
+    {
+      "id": "f18",
+      "text": "Hydrogen is more flammable than natural gas and burns with an invisible flame, creating unique firefighting hazards that the FPSC's new standards address in emergency response protocols."
+    },
+    {
+      "id": "f19",
+      "text": "Analysts said the permit could unlock similar applications; at least three other project proposals for dedicated hydrogen pipelines are in the pre-application stage."
+    },
+    {
+      "id": "f20",
+      "text": "The permit's environmental review found no significant impacts to protected wetlands or aquifers along the route; three minor reroutes were required to avoid sensitive habitat."
+    }
+  ],
+  "modules": [
+    "domains/press.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f7",
+      "f8",
+      "f9",
+      "f12"
+    ],
+    "forbidden_additions": [
+      "a claim that the pipeline is already operational",
+      "a confirmed hydrogen embrittlement failure at another U.S. facility",
+      "a natural gas conversion comparison not in the notes"
+    ],
+    "preserve": [
+      "Hydrogen delivered by pipeline is the only way to decarbonize industrial heat at the scale these steel facilities need. Truck delivery simply cannot match the volumes."
+    ],
+    "expected_action": "draft"
+  }
+}

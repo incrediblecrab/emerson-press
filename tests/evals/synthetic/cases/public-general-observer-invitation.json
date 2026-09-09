@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "public-general-observer-invitation",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "Write a welcoming invitation of about 55–85 words for a fictional neighbourhood board-game evening. Address people who may prefer watching before joining. Explain the actual arrangements without pressuring readers to speak, compete, or make friends, and without presenting the event as a therapeutic service.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The evening takes place on Friday from 5–7 p.m. in the Lantern Room."},
+    {"id": "f2", "text": "Attendance is free and no advance booking is needed."},
+    {"id": "f3", "text": "The available games are cooperative rather than competitive."},
+    {"id": "f4", "text": "Visitors may watch without playing or speaking."},
+    {"id": "f5", "text": "A host can explain a game's rules on request."},
+    {"id": "f6", "text": "No background music is planned."}
+  ],
+  "modules": ["domains/general.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f6"],
+    "forbidden_additions": [
+      "Mandatory introductions, participation, registration, or competition.",
+      "A promise that every visitor will feel comfortable or make friends.",
+      "Therapeutic benefits or unprovided accessibility guarantees."
+    ],
+    "preserve": [
+      "Watching as a legitimate way to attend.",
+      "A low-pressure invitation grounded in concrete arrangements."
+    ],
+    "expected_action": "draft"
+  }
+}

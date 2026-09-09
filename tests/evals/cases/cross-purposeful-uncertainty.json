@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "cross-purposeful-uncertainty",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Lightly copyedit this two-sentence maintenance note for residents of a fictional building. Preserve the plainspoken first-person voice and the distinction between sequence and cause. Honest uncertainty is useful here; do not demand a decisive conclusion or invent a diagnosis. Return the note unchanged if it already works.",
+  "input": "I do not yet know why the latch sticks. The notes record rain before the last two jams, but that sequence does not establish a cause.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional maintenance diarist does not know why the latch sticks."},
+    {"id": "f2", "text": "The notes record rain before each of the last two latch jams."},
+    {"id": "f3", "text": "The notes do not establish that rain caused either jam."}
+  ],
+  "modules": ["domains/general.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3"],
+    "forbidden_additions": [
+      "A confirmed rust, moisture, installation, or mechanical diagnosis.",
+      "A numerical probability of the cause or an invented inspection result.",
+      "A guaranteed repair method or a claim that rain caused both jams."
+    ],
+    "preserve": [
+      "The justified uncertainty rather than removing it as a stylistic hedge.",
+      "Two documented sequences distinguished from causal evidence.",
+      "The concise first-person note without cosmetic rewriting."
+    ],
+    "expected_action": "no_change"
+  }
+}

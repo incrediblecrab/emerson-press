@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "technical-ui-search-placeholder-edit",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Edit this search input's placeholder text. The current placeholder duplicates the visible label and mentions genre, which is not a searchable field. Provide a placeholder that supplements the label and lists only the searchable fields from the supplied facts.",
+  "input": "Placeholder text: \"Search for books, authors, genres, or keywords here\"",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The visible label for the search input is Search the catalogue."},
+    {"id": "f2", "text": "The search matches on title, author name, and ISBN only."},
+    {"id": "f3", "text": "Genre is not a searchable field in this catalogue."},
+    {"id": "f4", "text": "Placeholder text should supplement rather than duplicate the visible label."}
+  ],
+  "modules": ["domains/general.md", "domains/user-interface/website.md", "domains/user-interface/accessibility.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "Genre or keyword in the revised placeholder.",
+      "A placeholder that repeats Search the catalogue verbatim.",
+      "An invented searchable field beyond title, author name, and ISBN."
+    ],
+    "preserve": [
+      "Supplemental role: placeholder does not duplicate the visible label.",
+      "Title, author, and ISBN as the only searchable fields.",
+      "No genre in the placeholder."
+    ],
+    "expected_action": "edit"
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-science-expl-space-debris-risk",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic writing exercise. Using these fictional reporting notes, write a newspaper explainer for general readers answering the question: How serious is the space debris problem, and what is being done about it? Draw only on the supplied notes; do not invent additional reported events, scenes, or quotations. Write from this reporting snapshot as of June 18, 2024. Include a headline. Target 450 to 650 words. Follow AP style.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "Low Earth orbit \u2014 the region from about 200 to 2,000 kilometers above Earth \u2014 contains approximately 27,000 tracked pieces of debris larger than 10 centimeters and an estimated 100 million pieces smaller than 1 centimeter."
+    },
+    {
+      "id": "f2",
+      "text": "Even a 1-centimeter piece of debris traveling at orbital speed carries enough kinetic energy to disable a satellite; a 10-centimeter piece can destroy one entirely."
+    },
+    {
+      "id": "f3",
+      "text": "The most destructive debris events are collisions between larger objects, which generate thousands of new fragments \u2014 a cascade first theorized by debris researchers in the 1970s describing how density in a given orbital shell can become self-sustaining."
+    },
+    {
+      "id": "f4",
+      "text": "This cascade risk \u2014 described in debris research literature since the late 1970s \u2014 means that debris density a scenario in which debris density in a given orbital shell becomes self-sustaining: each collision generates enough new fragments to cause further collisions, potentially rendering that altitude unusable."
+    },
+    {
+      "id": "f5",
+      "text": "Most debris consists of defunct satellites, spent rocket stages, and fragments from breakups and collisions; several antisatellite weapons tests over the past two decades have each created thousands of tracked fragments, substantially increasing the debris inventory."
+    },
+    {
+      "id": "f6",
+      "text": "Space policy researcher Dr. Amara Solis of Westfield Space Policy Center said: \"We are in a race between the debris generation rate and our ability to develop norms and technology to control it. Right now, the debris is winning.\""
+    },
+    {
+      "id": "f7",
+      "text": "The FCC and some international bodies now require satellites in low Earth orbit to deorbit within five years of mission end; compliance and enforcement remain inconsistent."
+    },
+    {
+      "id": "f8",
+      "text": "Large satellite constellations \u2014 including those operated by Orbitex and others \u2014 have added thousands of satellites to low Earth orbit since 2019; each expands the collision surface area in the orbital environment."
+    },
+    {
+      "id": "f9",
+      "text": "The International Space Station maneuvers approximately three times per year to avoid tracked debris; astronauts have sheltered in attached spacecraft for several debris conjunction events."
+    },
+    {
+      "id": "f10",
+      "text": "Debris in orbits below 600 kilometers re-enters the atmosphere within years due to atmospheric drag; debris above 800 kilometers can remain for centuries."
+    },
+    {
+      "id": "f11",
+      "text": "Active debris removal \u2014 sending a spacecraft to capture and deorbit a defunct object \u2014 has been demonstrated at small scale by Japanese company Astroscale; no commercial large-object removal has been completed."
+    },
+    {
+      "id": "f12",
+      "text": "Ion beam shepherding is a proposed technique in which a spacecraft directs an ion beam at a debris object to slow it into a lower orbit without physical contact; it has been tested in laboratory simulations but not in orbit."
+    },
+    {
+      "id": "f13",
+      "text": "The collision was the fourth confirmed satellite-on-debris collision since a 2009 event in which two satellites \u2014 one defunct, one operational \u2014 collided at high speed, creating the largest debris field in low Earth orbit history at that time."
+    },
+    {
+      "id": "f14",
+      "text": "Space situational awareness \u2014 tracking where debris is \u2014 is still dominated by the U.S. military's Space Surveillance Network; other countries have limited independent tracking capability."
+    },
+    {
+      "id": "f15",
+      "text": "Conjunction warnings \u2014 alerts when a satellite's orbit is predicted to come close to a tracked debris piece \u2014 are issued thousands of times per year; operators typically respond to those with a collision probability above 1 in 10,000."
+    },
+    {
+      "id": "f16",
+      "text": "Debris below 10 centimeters cannot currently be tracked individually from the ground; spacecraft use statistical collision avoidance rather than direct tracking for this size range."
+    },
+    {
+      "id": "f17",
+      "text": "Whipple shields \u2014 double-hull structures that fragment incoming small debris before it reaches the main hull \u2014 are used on the ISS and some military satellites; they add mass and cost."
+    },
+    {
+      "id": "f18",
+      "text": "Dr. Solis said the window to establish enforceable international norms may be closing as commercial and national space activities expand: \"Every new actor in space makes the governance problem harder to solve.\""
+    },
+    {
+      "id": "f19",
+      "text": "The European Space Agency launched a cleanup mission, ClearSpace-1, with a planned 2026 launch to grapple and deorbit a specific 113-kilogram rocket adapter left in orbit in 2013."
+    },
+    {
+      "id": "f20",
+      "text": "Market-based proposals for debris removal include liability frameworks that would require satellite operators to pay into a removal fund; no country has adopted such a system."
+    }
+  ],
+  "modules": [
+    "domains/press.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f7",
+      "f9",
+      "f13",
+      "f16"
+    ],
+    "forbidden_additions": [
+      "a claim that the debris cascade scenario is already occurring or inevitable",
+      "a debris count different from 27,000 tracked objects",
+      "a confirmed large-object commercial removal"
+    ],
+    "preserve": [
+      "We are in a race between the debris generation rate and our ability to develop norms and technology to control it. Right now, the debris is winning.",
+      "Every new actor in space makes the governance problem harder to solve."
+    ],
+    "expected_action": "draft"
+  }
+}

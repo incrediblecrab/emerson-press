@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-business-news-bank-counters",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic newspaper-writing exercise using fictional reporting notes. Use only the supplied reporting notes. Write from the reporting snapshot as of August 4, 2026. Write a headline and a 450–650-word AP-style newspaper news update about Alder Span Bank's branch consolidation, focusing on how the replacement services will work for customers who still need a counter.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id":"f1","text":"Alder Span Bank said Tuesday, Aug. 4, 2026, that its Elwick and North Nettle branches will close Nov. 6."},
+    {"id":"f2","text":"Both branches will be consolidated into the bank's larger counter service in Fair Alder, 11 miles from Elwick and 17 miles from North Nettle."},
+    {"id":"f3","text":"The bank will retain a cash-dispensing ATM at each closing branch but neither machine will accept deposits."},
+    {"id":"f4","text":"A mobile counter is scheduled to visit each town two mornings a week starting Nov. 9."},
+    {"id":"f5","text":"Mobile-counter customers can deposit cash, obtain cashier's checks and meet an employee about account problems."},
+    {"id":"f6","text":"The mobile service's daily business-deposit cutoff will be noon, compared with 4 p.m. at the existing branches."},
+    {"id":"f7","text":"The two branches employ 14 people; ten have been offered jobs in Fair Alder and four on the mobile service."},
+    {"id":"f8","text":"The bank said it would pay employees' additional commuting costs for six months but would not say how many accepted transfers."},
+    {"id":"f9","text":"Bank records show counter transactions at the two branches fell from 42,000 in 2023 to 29,400 in 2025, a 30% decline."},
+    {"id":"f10","text":"The records count transactions, not distinct visits or customers, and do not identify which customers can use online banking."},
+    {"id":"f11","text":"Chief operating officer Mira Doss said the bank expects to save $460,000 annually after the first year of consolidation."},
+    {"id":"f12","text":"The estimate includes operating the mobile counter but excludes any proceeds from a possible sale of the bank-owned Elwick building; no sale price has been supplied."},
+    {"id":"f13","text":"Elwick hardware-store owner Benno Keel deposits cash after closing his shop at 1 p.m. on Saturdays."},
+    {"id":"f14","text":"Keel said the mobile timetable would require a change to his deposit routine or a trip to Fair Alder."},
+    {"id":"f15","text":"Keel said, \"The money may move on a screen, but somebody still has to take my till to the bank.\""},
+    {"id":"f16","text":"The Elwick senior center has asked for an appointment system for the mobile counter; none has been announced."},
+    {"id":"f17","text":"Doss said, \"We are reducing buildings, not eliminating the need to speak to a person.\""},
+    {"id":"f18","text":"The bank will hold customer information sessions in both towns during September; account numbers will not change."},
+    {"id":"f19","text":"The bank owns the Elwick building, which opened as a bank in 1968, but rents the North Nettle storefront."},
+    {"id":"f20","text":"The announcement does not change existing loan interest rates, and it gives no schedule for closing any other branch."}
+  ],
+  "modules": ["domains/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1","f2","f3","f4","f5","f6","f7","f9","f10","f11","f12","f18"],
+    "forbidden_additions": ["A claim that retained ATMs accept deposits","All affected customers have moved online or all transferred employees have accepted"],
+    "preserve": ["If quoted: The money may move on a screen, but somebody still has to take my till to the bank.","If quoted: We are reducing buildings, not eliminating the need to speak to a person.","Counter-transaction counts are not customer counts."],
+    "expected_action": "draft"
+  }
+}

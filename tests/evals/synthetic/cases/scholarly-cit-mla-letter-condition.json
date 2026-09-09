@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "scholarly-cit-mla-letter-condition",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Prepare a 50–85-word historical source note and MLA 9 entry from this fictional letter facsimile. Preserve the conditional promise and the recipient's supplied role; do not invent a recipient name. The venue permits an unpaginated letter citation (Fen) and requires this entry structure: Fen, Daro. Letter to the keeper of the tide clock. 3 Feb. 1931. Handwritten letter, supplied facsimile. No repository, call number, URL, archive, or access date is known. Explain what the letter supports without treating an intended shipment as a recorded delivery.",
+  "input": "Daro Fen delivered the brass ring to the keeper on 3 February 1931. His signed shipping receipt guarantees the date: “I can send the brass ring after thaw” (Fen 2).\n\nFen, Daro. Brass Ring Delivery Register. Tide Clock Archive, box 8, 3 Feb. 1931, p. 2.",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "The supplied object is a facsimile of an unpaginated handwritten letter from Daro Fen to the keeper of the tide clock, dated February 3, 1931."
+    },
+    {
+      "id": "f2",
+      "text": "Fen writes exactly “I can send the brass ring after thaw”."
+    },
+    {
+      "id": "f3",
+      "text": "The packet contains no shipping receipt, delivery record, date of thaw, or evidence that the ring was sent."
+    },
+    {
+      "id": "f4",
+      "text": "The recipient's personal name and any holding repository, call number, or public URL are unknown."
+    }
+  ],
+  "modules": [
+    "domains/non-fiction.md",
+    "domains/citation/mla9.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3"],
+    "forbidden_additions": [
+      "A completed shipment, delivery date, or date of thaw",
+      "A receipt or register identity for the handwritten letter",
+      "An invented recipient name, page, repository, call number, URL, or archive"
+    ],
+    "preserve": [
+      "I can send the brass ring after thaw",
+      "Daro Fen and the keeper's role",
+      "3 Feb. 1931 dates the letter, not a delivery",
+      "The facsimile is unpaginated"
+    ],
+    "expected_action": "edit"
+  }
+}

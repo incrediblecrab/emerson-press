@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-civic-shared-solar-allocation",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic exercise using fictional reporting notes. Use only the supplied reporting notes as the fixed record: select, organize and phrase the story without inventing additional reported events, scenes, quotations or reporting activity. Write a headline and an explainer of roughly 450–650 words in AP style for general newspaper readers about what members receive from the shared solar installation on the Rookmere community hall. Write from this reporting snapshot as of September 18, 2026.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Rookmere Energy Circle operates a grid-connected solar installation on a community hall under a roof-use agreement."},
+    {"id": "f2", "text": "Its first household group has 20 equal allocations of the installation's eligible exported electricity for accounting purposes."},
+    {"id": "f3", "text": "An allocation is not ownership of an individually identified panel or a private wire carrying that panel's output to a member's home."},
+    {"id": "f4", "text": "The circle's illustration uses 1,000 kilowatt-hours of eligible export in a period, allocating 50 kilowatt-hours to each of the 20 household shares."},
+    {"id": "f5", "text": "That illustration is a simple accounting example, not the installation's reported production for a real month."},
+    {"id": "f6", "text": "Actual eligible export is recorded by the installation's meter after the hall's own use is accounted for under the supply arrangement."},
+    {"id": "f7", "text": "Generation and household consumption happen at different times, so a member can use grid electricity at night even if the group's panels generated power during the day."},
+    {"id": "f8", "text": "Circle engineer Dera Moss said, \"The roof keeps working while most of us are somewhere else. The allocation is how we account for the shared output afterward.\""},
+    {"id": "f9", "text": "The supplier applies the allocation under its agreed billing method, which is separate from a promise to eliminate every line on a household bill."},
+    {"id": "f10", "text": "The packet does not give a universal bill-saving percentage or a guaranteed cash return on joining the circle."},
+    {"id": "f11", "text": "Member Arin Cole said, \"I joined for a share in a local project. I still wanted someone to show me exactly where that share appears on the statement.\""},
+    {"id": "f12", "text": "The circle provides a statement showing eligible export, the member allocation and the supplier period to which it relates."},
+    {"id": "f13", "text": "A delay in meter reconciliation can place an allocation on a later statement without proving that the panels stopped generating."},
+    {"id": "f14", "text": "The installation has no battery-backed household supply in its current design and is not a promised source of power during a grid outage."},
+    {"id": "f15", "text": "Maintenance costs and replacement reserves are managed by the circle before it proposes additional distributions to members."},
+    {"id": "f16", "text": "The hall retains responsibility for the building, while the roof-use agreement assigns the circle defined responsibilities for its equipment."},
+    {"id": "f17", "text": "A household moving away must use the circle's membership-transfer process rather than assume the allocation automatically follows any new electricity account."},
+    {"id": "f18", "text": "The circle has not approved additional household shares beyond the first 20."},
+    {"id": "f19", "text": "The hall's daytime uses include a playgroup and community lunches, which affect when electricity is used on site before export."},
+    {"id": "f20", "text": "The public display in the hall shows generation and export separately rather than presenting them as the same quantity."},
+    {"id": "f21", "text": "Weather changes production, and the circle has not promised identical output in each billing period."},
+    {"id": "f22", "text": "The explanation concerns this cooperative's agreement and does not describe every possible shared-solar scheme."}
+  ],
+  "modules": ["domains/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f6", "f7", "f14"],
+    "forbidden_additions": ["A dedicated panel or private direct supply to each household.", "The illustrative export treated as observed production.", "Guaranteed bill elimination, cash returns, identical production or outage backup."],
+    "preserve": ["Generation, on-site use, export and member accounting as different quantities.", "The equal-share example and limits of the supplier and membership arrangements.", "Exact quotation wording and attribution when quotations are used."],
+    "expected_action": "draft"
+  }
+}

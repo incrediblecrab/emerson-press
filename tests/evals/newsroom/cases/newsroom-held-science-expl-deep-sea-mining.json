@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-science-expl-deep-sea-mining",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic writing exercise. Using these fictional reporting notes, write a newspaper explainer for general readers answering the question: What is deep-sea mining, what minerals are involved, and why is the environmental debate so contentious? Draw only on the supplied notes; do not invent additional reported events, scenes, or quotations. Write from this reporting snapshot as of May 15, 2025. Include a headline. Target 450 to 650 words. Follow AP style.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "Deep-sea mining refers to the commercial extraction of mineral deposits from the seafloor at depths typically exceeding 1,000 meters."
+    },
+    {
+      "id": "f2",
+      "text": "The primary targets are polymetallic nodules \u2014 potato-sized rocks that form over millions of years on abyssal plains and contain manganese, nickel, cobalt, and copper."
+    },
+    {
+      "id": "f3",
+      "text": "Seafloor massive sulfide deposits, found near hydrothermal vents, contain high concentrations of copper, zinc, gold, and silver; cobalt-rich ferromanganese crusts form on the flanks of seamounts."
+    },
+    {
+      "id": "f4",
+      "text": "The Clarion-Clipperton Zone in the Pacific Ocean, an abyssal plain of 4.5 million square kilometers, contains an estimated 340 million tonnes of nickel and 290 million tonnes of copper, among other metals."
+    },
+    {
+      "id": "f5",
+      "text": "These critical minerals are used in rechargeable batteries for electric vehicles and grid storage; growing demand has made seabed reserves commercially attractive."
+    },
+    {
+      "id": "f6",
+      "text": "Marine biologist Dr. Elise Nakamura of Pacific Ocean Science Center said: \"The abyssal plain looks like a desert but it is not. It is a slow ecosystem. Recovery from disturbance on these timescales is measured in centuries, not years.\""
+    },
+    {
+      "id": "f7",
+      "text": "Nodule collection machines would disturb the surface sediment layer, generating sediment plumes that can spread hundreds of kilometers and smother filter-feeding organisms."
+    },
+    {
+      "id": "f8",
+      "text": "The International Seabed Authority (ISA), an intergovernmental body, governs mineral rights in international waters; it has issued exploration licenses but had not issued a commercial extraction license as of mid-2025."
+    },
+    {
+      "id": "f9",
+      "text": "The small Pacific nation of Nauru triggered an accelerated review process in 2021 by invoking a rule requiring the ISA to complete mining code development within two years; that deadline passed without a finalized code."
+    },
+    {
+      "id": "f10",
+      "text": "More than 30 nations and over 700 marine scientists have called for a moratorium on deep-sea mining pending better environmental assessment."
+    },
+    {
+      "id": "f11",
+      "text": "Proponents argue that seabed mining has a smaller land footprint than terrestrial mining and avoids some of the human rights and deforestation concerns associated with land-based extraction in developing countries."
+    },
+    {
+      "id": "f12",
+      "text": "Opponents argue that abyssal ecosystems are poorly documented and that species unknown to science could be lost before being discovered; surveys in mining contract areas have found hundreds of new species."
+    },
+    {
+      "id": "f13",
+      "text": "Dr. Nakamura said the environmental impact models required for permitting use limited baseline data because these areas have rarely been studied: \"We are being asked to evaluate a risk we cannot fully quantify.\""
+    },
+    {
+      "id": "f14",
+      "text": "Hydrothermal vent ecosystems support unique chemosynthetic food webs that depend on mineral-rich hot water; mining near vents would destroy the habitat directly."
+    },
+    {
+      "id": "f15",
+      "text": "The water column above mining operations would receive the discharge of fine sediment and processed water; the effects on mid-water species are largely unknown."
+    },
+    {
+      "id": "f16",
+      "text": "Some battery manufacturers, including several major automakers, have publicly committed not to use minerals sourced from deep-sea mining, citing environmental uncertainty."
+    },
+    {
+      "id": "f17",
+      "text": "Terrestrial nickel mining is concentrated in Indonesia, the Philippines, and Russia; cobalt mining is concentrated in the Democratic Republic of Congo, where labor standards and conflict financing have drawn international scrutiny."
+    },
+    {
+      "id": "f18",
+      "text": "Recycling battery metals from end-of-life EVs could eventually reduce demand for newly mined minerals, but the recycling industry at scale is at least a decade away from meeting projected demand."
+    },
+    {
+      "id": "f19",
+      "text": "The ISA is funded in part by the royalties from exploration licenses, creating a potential conflict of interest in its role as both promoter and regulator of seabed mining."
+    },
+    {
+      "id": "f20",
+      "text": "Dr. Nakamura said the central question the ISA must answer \u2014 whether the ecosystem services of abyssal plains outweigh the mineral value of the nodules \u2014 cannot currently be answered with the available science."
+    }
+  ],
+  "modules": [
+    "domains/press.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f5",
+      "f6",
+      "f7",
+      "f8",
+      "f9",
+      "f10",
+      "f12"
+    ],
+    "forbidden_additions": [
+      "a claim that a commercial extraction license has been issued",
+      "a species count for a specific mining contract area not in the notes",
+      "a confirmed sediment plume impact on commercial fisheries"
+    ],
+    "preserve": [
+      "The abyssal plain looks like a desert but it is not. It is a slow ecosystem. Recovery from disturbance on these timescales is measured in centuries, not years.",
+      "We are being asked to evaluate a risk we cannot fully quantify."
+    ],
+    "expected_action": "draft"
+  }
+}

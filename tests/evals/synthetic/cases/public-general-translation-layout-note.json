@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "public-general-translation-layout-note",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Lightly copyedit this note to a fictional leaflet-review team. It explains a specific layout difference, not a universal rule about translation. Preserve its useful general explanation of the reviewer's job and its already clear wording. Do not demand equal prose length or claim to have checked the translations yourself.",
+  "input": "Do not compare the two leaflets line by line. They use different line breaks because the translated wording takes more space in this layout. Both follow the same sequence and include the same instructions. The review question is whether each version communicates those instructions clearly, not whether the paragraphs occupy identical rectangles.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "In the supplied layout record, the translated wording takes more space than the source wording."},
+    {"id": "f2", "text": "The two fictional leaflets have different line breaks."},
+    {"id": "f3", "text": "The supplied comparison record confirms that both contain the same instructions in the same sequence."},
+    {"id": "f4", "text": "The team's review task is to assess clear communication, not identical paragraph dimensions."}
+  ],
+  "modules": ["domains/general.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "A claim that translations always require more words or space.",
+      "An inference that unequal paragraph lengths prove missing content.",
+      "A claim that the editor performed a bilingual comparison or verified translation quality."
+    ],
+    "preserve": [
+      "The limitation to these leaflets and this layout.",
+      "The useful distinction between communicative equivalence and visual sameness.",
+      "The effective explanatory note without cosmetic rewriting."
+    ],
+    "expected_action": "no_change"
+  }
+}

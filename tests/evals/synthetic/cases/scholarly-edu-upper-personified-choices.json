@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "scholarly-edu-upper-personified-choices",
+  "split": "tuning",
+  "operation": "review",
+  "task": "Review this upper-elementary response to an original classroom poem and return it unchanged if it is useful and supported. The class has discussed how a poem can give objects wishes and can follow the distinction between quotation and interpretation. Preserve the exact line and the student's qualified reading. A short literary explanation needs neither numerical evidence nor a compulsory opposing paragraph. Do not simplify solely because of the educational label.",
+  "input": "The line “The door said wait; the path said come” gives the door and the path different wishes. They do not speak aloud in the poem. I read their disagreement as a way to show the speaker's hesitation, not as proof that either choice is right.",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "The supplied original poem line is exactly “The door said wait; the path said come”."
+    },
+    {
+      "id": "f2",
+      "text": "The poem presents a speaker considering whether to leave; it contains no scene of objects making audible speech."
+    },
+    {
+      "id": "f3",
+      "text": "The packet supplies no final choice or statement that staying or leaving is the correct decision."
+    }
+  ],
+  "modules": [
+    "domains/non-fiction.md",
+    "domains/education-level/02-elementary-upper.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3"],
+    "forbidden_additions": [
+      "A literal talking-door scene or invented ending",
+      "A declaration that the author certainly endorses one choice",
+      "A demand for numerical proof of the literary reading"
+    ],
+    "preserve": [
+      "The door said wait; the path said come",
+      "I read their disagreement as a way to show the speaker's hesitation",
+      "The supported but nonexclusive interpretation",
+      "The existing short response"
+    ],
+    "expected_action": "no_change"
+  }
+}

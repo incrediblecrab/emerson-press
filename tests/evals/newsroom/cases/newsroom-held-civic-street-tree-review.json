@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-civic-street-tree-review",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic exercise using fictional reporting notes. Use only the supplied reporting notes as the fixed record: select, organize and phrase the story without inventing additional reported events, scenes, quotations or reporting activity. Write a headline and an explainer of roughly 450–650 words in AP style for general newspaper readers about how residents can take part in Spurwick's review of proposed street-tree removals. Write from this reporting snapshot as of September 16, 2026.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Spurwick parks office published recommendations concerning 14 street trees after its latest scheduled inspections."},
+    {"id": "f2", "text": "Two trees with storm-split trunks were assigned immediate work, while the other 12 recommendations entered the city's public review process."},
+    {"id": "f3", "text": "The 12 review notices were posted Sept. 15, 2026, with comments due Oct. 6, 2026, under the supplied 21-day process."},
+    {"id": "f4", "text": "The review applies to city-managed street trees, not every privately owned tree visible from the road."},
+    {"id": "f5", "text": "Each notice identifies the tree, the recorded reason for recommending removal and the city office that will receive comments."},
+    {"id": "f6", "text": "Reasons in the current notices include conflicting root and pavement conditions, damage recorded by inspectors and unsuitable space for the tree's mature form."},
+    {"id": "f7", "text": "A submitted objection triggers consideration of the information provided but does not automatically cancel the recommendation."},
+    {"id": "f8", "text": "The parks office can request another inspection or revise its proposal when a comment supplies relevant information not addressed in the first report."},
+    {"id": "f9", "text": "City arborist Tera Venn said, \"A useful response tells us what we have missed, not simply whether a tree is loved.\""},
+    {"id": "f10", "text": "Residents may submit photographs, local observations or questions about alternatives through the city form or a paper submission at the parks office."},
+    {"id": "f11", "text": "The city form is available at https://example.org/spurwick/tree-review, and residents do not need to hire a specialist to comment."},
+    {"id": "f12", "text": "A street association has asked the city to explain replacement planting alongside removal decisions rather than after the work is finished."},
+    {"id": "f13", "text": "Association member Orrin Saye said, \"We are looking at the shade over a whole street, not only at the space around one trunk.\""},
+    {"id": "f14", "text": "Replacement planting is considered separately for site suitability, with no promise that a new tree can occupy the identical position."},
+    {"id": "f15", "text": "The current notices do not contain a total forecast of future canopy loss or growth."},
+    {"id": "f16", "text": "Immediate work on the two storm-damaged trees is outside this comment timetable under the city's supplied emergency-work procedure."},
+    {"id": "f17", "text": "The parks office will publish a decision record for the 12 reviewed recommendations after considering the submissions."},
+    {"id": "f18", "text": "That record will state the final action and the main reasons; a comment count is not treated as a binding vote."},
+    {"id": "f19", "text": "The packet does not establish that all 12 trees are unsafe or that every recommendation will remain unchanged."},
+    {"id": "f20", "text": "Several notice tags are attached to trees planted in a municipal street scheme more than 40 years ago."},
+    {"id": "f21", "text": "The office has arranged a drop-in session to explain the notices, but the session is not an on-site tree-safety assessment."},
+    {"id": "f22", "text": "The procedure described is Spurwick's current local policy, not a statement of tree-removal law in other places."}
+  ],
+  "modules": ["domains/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f7", "f8", "f14", "f18"],
+    "forbidden_additions": ["Automatic cancellation after an objection or a binding public vote.", "All 14 trees subject to the same timetable or all 12 reviewed trees declared unsafe.", "Identical replacement locations or universal legal rules."],
+    "preserve": ["The different immediate-work and review tracks.", "How evidence, alternatives and replacement questions enter the local process.", "Exact quotation wording and attribution when quotations are used."],
+    "expected_action": "draft"
+  }
+}

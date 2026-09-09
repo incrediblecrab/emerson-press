@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "id": "public-fiction-bureaucratic-refrain",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Copyedit this clearly fictional comic passage only for an actual error. The repeated response is the joke, and the backward clock belongs to the absurd world. Do not remove repetition by quota, explain the joke, or resolve the waiting. Return the passage unchanged if it already serves the brief.",
+  "input": "At the Office of Returned Shadows, Una received a receipt before anyone had taken her shadow. \"All in good time,\" said the clerk. The clock's hands moved backwards. Una asked whether the receipt meant she was free to leave. \"All in good time,\" said the clerk. She put the receipt in her pocket and remained where she was. When the clock struck the hour it had just abandoned, the clerk smiled. \"All in good time.\"",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional office handles returned shadows."},
+    {"id": "f2", "text": "Una receives a receipt before her shadow has been collected."},
+    {"id": "f3", "text": "The office clock runs backwards and strikes an hour it has already passed."},
+    {"id": "f4", "text": "Una asks whether the receipt means she may leave."},
+    {"id": "f5", "text": "Una pockets the receipt and continues waiting."},
+    {"id": "f6", "text": "The clerk repeats the exact words \"All in good time\" three times."},
+    {"id": "f7", "text": "The clerk smiles before the final repetition."}
+  ],
+  "modules": ["domains/fiction.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f6", "f7"],
+    "forbidden_additions": [
+      "A collected shadow, permission to leave, or a resolved application.",
+      "A normally running clock substituted to make the invented world realistic.",
+      "An explanation of the joke or new wording substituted for the deliberate refrain."
+    ],
+    "preserve": [
+      "Three purposeful repetitions and their comic escalation.",
+      "The absurd world rule and unresolved waiting.",
+      "The already effective passage without cosmetic rewriting."
+    ],
+    "expected_action": "no_change"
+  }
+}

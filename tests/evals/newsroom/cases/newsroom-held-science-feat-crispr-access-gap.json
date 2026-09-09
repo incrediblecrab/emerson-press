@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-science-feat-crispr-access-gap",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic writing exercise. Using these fictional reporting notes, write a newspaper reported feature for general readers. Draw only on the supplied notes; do not invent additional reported events, scenes, or quotations. Write from this reporting snapshot as of March 20, 2025. Include a headline. Target 450 to 650 words. Follow AP style.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "CellForge Biosciences received FDA approval in January 2025 for Axogene, a CRISPR-based therapy for Pelham syndrome, a lysosomal storage disorder that causes neurological deterioration beginning in childhood."
+    },
+    {
+      "id": "f2",
+      "text": "The list price for Axogene is $3.1 million per patient; approximately 1,800 patients in the United States are estimated to be eligible."
+    },
+    {
+      "id": "f3",
+      "text": "Leon Dupont, 34, was diagnosed with Pelham syndrome at 22 and is now in a progressive neurological decline; he is eligible for Axogene but his commercial insurer denied coverage in February 2025."
+    },
+    {
+      "id": "f4",
+      "text": "Dupont said: \"I found out it exists. I found out it was approved. I found out I can't have it. That sequence is its own kind of cruelty.\""
+    },
+    {
+      "id": "f5",
+      "text": "CellForge CEO Adrian Walsh said the price reflects a development investment of more than $900 million and the expectation of treating fewer than 200 patients per year: \"We cannot price this like a mass-market drug. The math doesn't work.\""
+    },
+    {
+      "id": "f6",
+      "text": "Dr. Reena Singh, a rare disease specialist at Northgate Children's Hospital, said three of her patients are eligible for Axogene; none have secured coverage as of March 2025."
+    },
+    {
+      "id": "f7",
+      "text": "Dr. Singh said: \"Approval is the first door. Insurance is the second. For rare disease therapies at this price point, the second door is harder to open than the first.\""
+    },
+    {
+      "id": "f8",
+      "text": "CellForge has a patient assistance program that provides free therapy to uninsured or Medicaid patients; the program currently has 14 applications, of which four have been approved and the others are under review."
+    },
+    {
+      "id": "f9",
+      "text": "Walsh said CellForge is pursuing outcomes-based contracts with major insurers, in which partial refunds would be offered if the therapy fails to halt neurological progression at 18 months; two insurers have agreed in principle, four others have not responded."
+    },
+    {
+      "id": "f10",
+      "text": "The Institute for Clinical and Economic Review (ICER), a nonprofit that assesses drug value, found Axogene cost-effective at prices between $1.8 million and $2.6 million but not at $3.1 million under standard threshold criteria."
+    },
+    {
+      "id": "f11",
+      "text": "Walsh said ICER's thresholds do not capture the full value to patients and families of arresting a fatal pediatric disease: \"The quality-of-life metrics ICER uses were not built for diseases like this.\""
+    },
+    {
+      "id": "f12",
+      "text": "Dupont has launched an advocacy campaign with four other Pelham patients; they have met with three congressional staffers and written to their state insurance commissioner."
+    },
+    {
+      "id": "f13",
+      "text": "Dupont said: \"I'm thirty-four. I don't have a decade. The system is designed for people who have a decade to fight.\""
+    },
+    {
+      "id": "f14",
+      "text": "Dr. Singh said the access pattern she sees reflects a structural problem: payers lack frameworks for one-time gene therapies at this scale, so they revert to denial while developing policies."
+    },
+    {
+      "id": "f15",
+      "text": "Medicaid programs in seven states have issued coverage policies for Axogene; 18 states are still developing policies; 25 states have not addressed the therapy."
+    },
+    {
+      "id": "f16",
+      "text": "CellForge has established two certified treatment centers; Dupont lives 340 miles from the nearest one."
+    },
+    {
+      "id": "f17",
+      "text": "Walsh said the company expects that within 18 months, most major payers will have coverage policies in place; he acknowledged this is not helpful to current patients."
+    },
+    {
+      "id": "f18",
+      "text": "A health policy researcher, Dr. Marcus Adem of Clearview Policy Institute, said the Axogene access gap is predictable: every CRISPR therapy approved in the next decade will face the same structural barriers unless payers develop gene therapy-specific coverage frameworks now."
+    },
+    {
+      "id": "f19",
+      "text": "Dupont said he has not given up on getting treatment: \"My situation is urgent. But the reason I'm fighting publicly is for the person who gets diagnosed next year, when the system still isn't ready.\""
+    },
+    {
+      "id": "f20",
+      "text": "Dr. Singh said the approval of Axogene is a genuine medical advance for Pelham syndrome: \"The disease couldn't be treated. Now it can. That is real. The access problem is real too. Both things are true.\""
+    }
+  ],
+  "modules": [
+    "domains/press.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f7",
+      "f8",
+      "f9",
+      "f10",
+      "f12",
+      "f13"
+    ],
+    "forbidden_additions": [
+      "a confirmed insurance coverage for Dupont",
+      "an Axogene list price different from $3.1 million",
+      "a clinical outcome for any treated patient not in the notes"
+    ],
+    "preserve": [
+      "I found out it exists. I found out it was approved. I found out I can't have it. That sequence is its own kind of cruelty.",
+      "Approval is the first door. Insurance is the second. For rare disease therapies at this price point, the second door is harder to open than the first.",
+      "I'm thirty-four. I don't have a decade. The system is designed for people who have a decade to fight."
+    ],
+    "expected_action": "draft"
+  }
+}

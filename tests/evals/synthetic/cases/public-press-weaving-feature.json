@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "public-press-weaving-feature",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Copyedit this fictional craft-fair feature paragraph only if it needs a meaningful correction. The supplied reporting record supports the scene and quotation. Preserve the measured descriptive voice and the useful craft term; do not replace observation with promotional praise or invent access to the demonstrator's thoughts.",
+  "input": "Under a blue awning at Moss Row Fair, a demonstrator worked three strips of brown cloth into a flat braid. When the ends slipped unevenly, she undid the last crossing and began it again. \"The braid should lie flat. It needn't look hurried,\" she said. Visitors watched from low stools, close enough to follow the movement of her hands.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional reporting record places the demonstration under a blue awning at Moss Row Fair."},
+    {"id": "f2", "text": "The demonstrator used three strips of brown cloth to make a flat braid."},
+    {"id": "f3", "text": "When the ends slipped unevenly, she undid and repeated the last crossing."},
+    {"id": "f4", "text": "Her exact recorded statement is: \"The braid should lie flat. It needn't look hurried.\""},
+    {"id": "f5", "text": "Visitors sat on low stools close enough to see her hand movements."}
+  ],
+  "modules": ["domains/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5"],
+    "forbidden_additions": [
+      "A claim about the demonstrator's private feelings, lifetime experience, or awards.",
+      "An invented crowd total or universal audience reaction.",
+      "A new quotation, interview, or declaration that this was the fair's best display."
+    ],
+    "preserve": [
+      "The concrete observed sequence and the term flat braid.",
+      "The supplied quotation's quiet contrast.",
+      "The already effective feature paragraph without cosmetic rewriting."
+    ],
+    "expected_action": "no_change"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "press-no-dateline-evidence",
+  "split": "tuning",
+  "operation": "edit",
+  "task": "Edit this fictional local-news brief using only the supplied reading-room notice. Remove unsupported reporting claims and location mechanics; the organization name does not establish a reporter's location. Preserve attribution and the distinction between a planned and guaranteed reopening. Explain consequential removals in a short note outside the brief.",
+  "input": "BRIAR QUAY — The Eastbank Reading Room plans to reopen Tuesday after a roof repair. According to the reading room's notice, the repair has passed its final inspection. Our reporter visited the site.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Eastbank Reading Room's notice says it plans to reopen Tuesday."},
+    {"id": "f2", "text": "The notice says a roof repair has passed its final inspection."},
+    {"id": "f3", "text": "The source packet contains the notice but no reporter's field notes."},
+    {"id": "f4", "text": "The packet does not establish a reporter's presence at any location."},
+    {"id": "f5", "text": "The packet does not supply the reading room's municipality."}
+  ],
+  "modules": ["domains/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2"],
+    "forbidden_additions": [
+      "Briar Quay or another dateline presented as an evidenced reporting location.",
+      "A site visit, interview, or independent inspection claimed by the writer.",
+      "An invented municipality, calendar date, repair cost, or quotation."
+    ],
+    "preserve": [
+      "The planned Tuesday reopening without converting it to a guarantee.",
+      "Attribution of the inspection statement to the reading room's notice.",
+      "Separation of the edited news brief from the disclosure of removed unsupported claims."
+    ],
+    "expected_action": "edit"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "risk-mkt-legal-compliance",
+  "split": "held_out",
+  "operation": "review",
+  "task": "Review this fictional investment-services marketing email for required disclosures. Marketing is the primary genre; apply legal safeguards. Identify which required disclosures are absent based on the supplied disclosure requirements.",
+  "input": "Carmel Wealth Advisory offers personalised financial plans to help you reach your retirement goals. Contact us today at https://example.org/carmel.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "Carmel Wealth Advisory is a fictional financial-planning service."},
+    {"id": "f2", "text": "The marketing materials must include a statement that the content is informational only and does not constitute investment advice."},
+    {"id": "f3", "text": "The materials must include a past-performance disclaimer: past performance does not guarantee future results."},
+    {"id": "f4", "text": "Neither required disclosure appears in the current email text."}
+  ],
+  "modules": ["domains/marketing.md"],
+  "safeguards": ["legal"],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "A specific statutory citation from a named jurisdiction.",
+      "A claim that the email violates a specific law.",
+      "An invented enforcement action or regulatory penalty."
+    ],
+    "preserve": [
+      "The identification of both missing disclosures: informational-only statement and past-performance disclaimer.",
+      "The distinction between what the supplied facts require and what a specific jurisdiction's law may additionally require."
+    ],
+    "expected_action": "flag_missing_evidence"
+  }
+}

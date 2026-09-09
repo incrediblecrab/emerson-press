@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "risk-med-rct-framing",
+  "split": "held_out",
+  "operation": "review",
+  "task": "Review this excerpt from a fictional randomised controlled trial description for appropriate framing of uncertainty. Return no-change feedback if the uncertainty is already correctly attributed to the authors and the description avoids overstatement.",
+  "input": "The investigators found a statistically significant difference in symptom scores between the intervention and control groups at week 12. The authors caution that the trial was conducted at a single centre and that results may not generalise to other settings.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional RCT found a statistically significant difference in symptom scores at week 12."},
+    {"id": "f2", "text": "The trial was conducted at a single centre."},
+    {"id": "f3", "text": "The authors themselves caution that results may not generalise to other settings."}
+  ],
+  "modules": ["domains/medical.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3"],
+    "forbidden_additions": [
+      "A generalisability conclusion that overrides the authors' own caution.",
+      "An external validity claim or multi-site inference.",
+      "A treatment recommendation drawn from the week-12 result."
+    ],
+    "preserve": [
+      "The authors' own single-centre caution.",
+      "The week-12 timepoint.",
+      "The statistically significant qualifier without added clinical interpretation."
+    ],
+    "expected_action": "no_change"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "scholarly-cit-ieee-datasheet-limits",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "Draft a 60–90-word engineering reading note and one IEEE reference for the fictional datasheet. Distinguish a nominal interval from the stated upper interval limit and keep the temperature condition attached. This is document-based explanation, not a test report. Use [1] before sentence punctuation. Venue reference form: [1] Corporate author, “Title,” Datasheet number, revision, month year. [Online]. Available: URL. The source is a datasheet, not a standard, experiment, or conference paper. Do not calculate unrequested performance metrics or retrieve the URL.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "Datasheet record: Astercoil Devices; R3 timebase; Datasheet DS-17; revision B; February 2025; https://example.org/r3/ds17-b."
+    },
+    {
+      "id": "f2",
+      "text": "The datasheet gives a nominal tick interval of 2 ms and an upper interval limit of 5 ms for operation from 0 to 35 °C."
+    },
+    {
+      "id": "f3",
+      "text": "The supplied datasheet does not specify interval behavior outside 0 to 35 °C."
+    },
+    {
+      "id": "f4",
+      "text": "No device was run or measured for this writing exercise."
+    }
+  ],
+  "modules": [
+    "domains/technical.md",
+    "domains/citation/ieee.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "A claim of measured 2 ms performance or a universal 5 ms limit",
+      "A standards-body endorsement or different source type",
+      "Invented tests, retrieval dates, DOI values, or performance calculations"
+    ],
+    "preserve": [
+      "2 ms nominal versus 5 ms upper interval limit",
+      "0 to 35 °C",
+      "DS-17, revision B",
+      "https://example.org/r3/ds17-b"
+    ],
+    "expected_action": "draft"
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-science-expl-mrna-platform",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic writing exercise. Using these fictional reporting notes, write a newspaper explainer for general readers answering the question: What is mRNA vaccine technology and why is it described as a platform? Draw only on the supplied notes; do not invent additional reported events, scenes, or quotations. Write from this reporting snapshot as of April 20, 2025. Include a headline. Target 450 to 650 words. Follow AP style.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "Messenger RNA, or mRNA, carries genetic instructions from a cell's DNA to its ribosomes, where the instructions are used to build proteins."
+    },
+    {
+      "id": "f2",
+      "text": "mRNA vaccines work by delivering synthetic mRNA molecules that instruct the body's own cells to temporarily produce a fragment of a pathogen's protein \u2014 typically a surface protein \u2014 triggering an immune response."
+    },
+    {
+      "id": "f3",
+      "text": "The mRNA does not enter the cell's nucleus and does not interact with DNA; it is broken down by cellular enzymes within days."
+    },
+    {
+      "id": "f4",
+      "text": "The 'platform' concept means the delivery system \u2014 the lipid nanoparticle shell that protects mRNA until it enters cells \u2014 remains constant while only the genetic instruction changes to target a new pathogen."
+    },
+    {
+      "id": "f5",
+      "text": "Changing the target of an mRNA vaccine theoretically requires only redesigning the mRNA sequence and verifying the new protein is produced correctly; this can take weeks rather than the months or years required for conventional vaccine development."
+    },
+    {
+      "id": "f6",
+      "text": "Lipid nanoparticles are tiny fatty spheres that protect mRNA from degradation in the bloodstream and facilitate entry into cells; formulating stable nanoparticles was a decades-long technical challenge resolved by researchers in the 1980s through 2000s."
+    },
+    {
+      "id": "f7",
+      "text": "Vaccinologist Dr. Priya Acharya of Lakeview Medical School said: \"We spent 30 years solving the delivery problem before COVID gave us the disease problem to solve. When both answers were in hand, the vaccines were ready quickly.\""
+    },
+    {
+      "id": "f8",
+      "text": "The first Emergency Use Authorizations for mRNA COVID-19 vaccines were issued in late 2020 \u2014 roughly 11 months after the virus's genome was sequenced."
+    },
+    {
+      "id": "f9",
+      "text": "mRNA vaccines require cold storage: most formulations require minus 20 to minus 80 degrees Celsius, creating distribution challenges in areas without reliable cold-chain infrastructure."
+    },
+    {
+      "id": "f10",
+      "text": "Researchers are developing mRNA vaccines for influenza, respiratory syncytial virus, HIV, and multiple cancers; personalized cancer vaccines using patient-specific tumor mutation profiles are in late-stage trials."
+    },
+    {
+      "id": "f11",
+      "text": "Unlike conventional vaccines, which require growing virus in eggs or cell cultures, mRNA vaccines are manufactured in bioreactors; this allows rapid scale-up because the process does not depend on biological growth rates."
+    },
+    {
+      "id": "f12",
+      "text": "A reported side effect of some mRNA vaccines \u2014 myocarditis, or inflammation of the heart muscle \u2014 is most common in young males after the second dose and is typically mild and resolves on its own, according to published surveillance data."
+    },
+    {
+      "id": "f13",
+      "text": "Dr. Acharya said the myocarditis signal, while real, is considerably rarer than myocarditis caused by the COVID-19 infection itself."
+    },
+    {
+      "id": "f14",
+      "text": "mRNA technology originated in research on cancer immunotherapy in the 1980s and 1990s; foundational work enabling functional mRNA vaccines was recognized with the 2023 Nobel Prize in Physiology or Medicine, awarded to two researchers whose decades of persistence in an unfashionable field made the COVID-19 vaccines possible."
+    },
+    {
+      "id": "f15",
+      "text": "The mRNA used in vaccines contains synthetic modifications to reduce triggering the immune system prematurely and to make the molecule more stable inside cells."
+    },
+    {
+      "id": "f16",
+      "text": "Long-term safety data for mRNA vaccines now extends to more than four years in hundreds of millions of recipients, the largest pharmacovigilance dataset ever assembled for a vaccine type."
+    },
+    {
+      "id": "f17",
+      "text": "Lipid nanoparticle formulations are being studied as drug delivery vehicles for cancer therapies, with the goal of delivering chemotherapy or gene editing tools directly into tumor cells."
+    },
+    {
+      "id": "f18",
+      "text": "Dr. Acharya said the next frontier is 'self-amplifying mRNA,' a modification that allows the molecule to copy itself inside cells, potentially enabling effective vaccines with much smaller doses."
+    },
+    {
+      "id": "f19",
+      "text": "mRNA molecules are too fragile to be extracted from a vaccinated person and reused; the concern sometimes expressed that mRNA vaccines 'spread' to others has no basis in the molecule's biochemistry."
+    },
+    {
+      "id": "f20",
+      "text": "The global mRNA therapeutics market was valued at $26 billion in 2024 and is projected to grow substantially as non-vaccine mRNA drugs reach clinical approval."
+    }
+  ],
+  "modules": [
+    "domains/press.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f7",
+      "f9",
+      "f11",
+      "f14"
+    ],
+    "forbidden_additions": [
+      "a claim that mRNA alters DNA",
+      "a statement that myocarditis is common or serious in most recipients",
+      "a Nobel year different from 2023"
+    ],
+    "preserve": [
+      "We spent 30 years solving the delivery problem before COVID gave us the disease problem to solve. When both answers were in hand, the vaccines were ready quickly."
+    ],
+    "expected_action": "draft"
+  }
+}

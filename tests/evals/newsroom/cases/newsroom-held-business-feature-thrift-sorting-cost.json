@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-business-feature-thrift-sorting-cost",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic newspaper-writing exercise using fictional reporting notes. Use only the supplied reporting notes. Write from the reporting snapshot as of May 1, 2026. Write a headline and a 450–650-word AP-style reported feature about the sorting work at Morrow Cupboard thrift shop and why donated goods do not arrive as ready-made money for its education fund.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id":"f1","text":"An April 2026 stock note records Morrow Cupboard volunteers separating saleable jackets from a donation containing incomplete bedding sets and damaged clothing."},
+    {"id":"f2","text":"The nonprofit shop raises money for adult music-study bursaries and employs a part-time manager."},
+    {"id":"f3","text":"Its April intake ledger records 1,200 donated items: 740 priced for sale, 260 accepted by a recycling partner and 200 sent for disposal."},
+    {"id":"f4","text":"Items priced for sale had not all sold by month-end, so the 740 count is not a cash-sales total."},
+    {"id":"f5","text":"The shop pays rent, the manager's wages, utilities and waste-handling charges despite receiving its stock without a purchase price."},
+    {"id":"f6","text":"Its published annual account records an $18,000 transfer to the bursary fund after the shop's stated operating expenses."},
+    {"id":"f7","text":"That transfer funded six $3,000 bursaries, not a $3,000 payment to every person taking local music classes."},
+    {"id":"f8","text":"The record contains no measured change in recipients' eventual earnings or musical careers."},
+    {"id":"f9","text":"Manager Cera Veylan says condition, completeness and seasonal demand affect whether an item can be priced and displayed."},
+    {"id":"f10","text":"Veylan said, \"The donation arrives once. We still have to sort it, find room for it and sometimes pay to take it away.\""},
+    {"id":"f11","text":"Fourteen volunteers contribute different amounts of time; the shop does not operate with fourteen full-time unpaid workers."},
+    {"id":"f12","text":"Volunteer Omi Nelden says evaluating an unfamiliar item can take longer than putting a familiar garment on a rack."},
+    {"id":"f13","text":"Nelden said, \"A bag at the door is a question about what is inside, not a price tag we can already count.\""},
+    {"id":"f14","text":"The recycling partner accepts specified textiles and does not guarantee that every rejected shop item can be recycled."},
+    {"id":"f15","text":"The shop has begun limiting donation drop-offs to staffed hours so volunteers can explain what it currently accepts."},
+    {"id":"f16","text":"The change has not been evaluated for its effect on donations, disposal costs or shop income."},
+    {"id":"f17","text":"Customers can buy ordinary clothing without applying for financial assistance or identifying their household income."},
+    {"id":"f18","text":"The board is considering more storage but has not signed a lease or approved additional paid hours."},
+    {"id":"f19","text":"The shop occupies a former music-supply store and retains its long glass-fronted display cabinet."},
+    {"id":"f20","text":"No verified weight-based landfill diversion or carbon-saving estimate is supplied for the April item counts."}
+  ],
+  "modules": ["domains/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f2","f3","f4","f5","f6","f7","f8","f11","f14","f15","f16","f17"],
+    "forbidden_additions": ["All 740 priced items sold, all donated goods are recyclable or donated stock has no handling costs","Fourteen full-time volunteers, universal bursaries or a verified carbon-saving calculation"],
+    "preserve": ["If quoted: The donation arrives once. We still have to sort it, find room for it and sometimes pay to take it away.","If quoted: A bag at the door is a question about what is inside, not a price tag we can already count.","740 sale candidates, 260 recycling items and 200 disposal items account for the 1,200-item intake."],
+    "expected_action": "draft"
+  }
+}

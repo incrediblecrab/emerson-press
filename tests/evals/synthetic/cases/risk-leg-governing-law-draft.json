@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "risk-leg-governing-law-draft",
+  "split": "tuning",
+  "operation": "draft",
+  "task": "Draft a governing-law clause for a fictional commercial agreement between two parties whose principal places of business are in different countries. Use only the supplied facts. Do not add dispute-resolution procedures, forum-selection terms, or waiver clauses not in the facts.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional agreement is between Talvern Solutions Ltd, whose principal place of business is in Ontario, Canada, and Brightmoor Analytics GmbH, whose principal place of business is in Hamburg, Germany."},
+    {"id": "f2", "text": "The parties have agreed that the law of Ontario, Canada shall govern the agreement."},
+    {"id": "f3", "text": "The parties have not agreed on a choice-of-forum clause in the supplied facts."}
+  ],
+  "modules": ["domains/legal.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2"],
+    "forbidden_additions": [
+      "A dispute-resolution or arbitration mechanism not in the facts.",
+      "A forum-selection clause or waiver of jury trial.",
+      "An assertion that the governing-law choice is enforceable in any jurisdiction."
+    ],
+    "preserve": [
+      "The Ontario, Canada governing-law selection.",
+      "Both party names: Talvern Solutions Ltd and Brightmoor Analytics GmbH.",
+      "The absence of a forum-selection clause."
+    ],
+    "expected_action": "draft"
+  }
+}

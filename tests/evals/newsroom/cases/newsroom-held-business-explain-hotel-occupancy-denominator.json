@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-business-explain-hotel-occupancy-denominator",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic newspaper-writing exercise using fictional reporting notes. Use only the supplied reporting notes. Write from the reporting snapshot as of August 31, 2026. Write a headline and a 450–650-word AP-style newspaper explainer answering how the Wren Coast hotel group's occupancy rate increased while it sold fewer room nights and took in less room revenue.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id":"f1","text":"The Wren Coast Lodging Association's August 2026 report compares the same five participating hotels in April 2025 and April 2026."},
+    {"id":"f2","text":"The hotels offered 3,000 available room nights in April 2025 and sold 2,400, an occupancy rate of 80%."},
+    {"id":"f3","text":"Renovations removed 20 rooms from service for all 30 days of April 2026, reducing available room nights to 2,400."},
+    {"id":"f4","text":"The hotels sold 2,040 room nights in April 2026, producing an occupancy rate of 85%."},
+    {"id":"f5","text":"Sold room nights fell by 360, or 15%, even as occupancy rose by five percentage points."},
+    {"id":"f6","text":"Across the five hotels, room revenue divided by sold room nights was $100 in April 2025 and $110 in April 2026, the report's average daily room rates."},
+    {"id":"f7","text":"Room revenue was $240,000 in the earlier month and $224,400 in the later month, a 6.5% decrease."},
+    {"id":"f8","text":"Room revenue per available room night rose from $80 to $93.50 because the available inventory changed."},
+    {"id":"f9","text":"Room nights are not individual guests: one room may hold more than one person and one stay may last several nights."},
+    {"id":"f10","text":"The revenue totals exclude food, parking and event income, and they do not measure profit."},
+    {"id":"f11","text":"Association analyst Ceri Venn said a higher occupancy rate can describe fuller remaining capacity rather than more total business."},
+    {"id":"f12","text":"Venn said, \"A smaller hotel can look fuller on the percentage line while its reception desk sells fewer nights.\""},
+    {"id":"f13","text":"The renovations affected room types unevenly, so the higher average rate does not establish that every room's listed price increased by 10%."},
+    {"id":"f14","text":"Restaurant owner Tavin Holt says hotel guests are one source of customers, alongside local residents and day visitors."},
+    {"id":"f15","text":"Holt said, \"I cannot turn a hotel percentage into a count of people coming through my door.\""},
+    {"id":"f16","text":"The association's five hotels are voluntary reporting members, not every lodging business on the coast."},
+    {"id":"f17","text":"Short-term rentals and campsites are outside the report."},
+    {"id":"f18","text":"The report does not isolate changes caused by renovations, demand, prices or the mix of rooms sold."},
+    {"id":"f19","text":"Two participating hotels occupy converted boardinghouses, while the other three were purpose-built."},
+    {"id":"f20","text":"The association expects the renovated rooms to return to sale in autumn but has not published confirmed opening dates."}
+  ],
+  "modules": ["domains/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1","f2","f3","f4","f5","f6","f7","f8","f9","f10","f13","f16"],
+    "forbidden_additions": ["Higher occupancy proves more visitors or greater total room revenue","Room revenue is profit, all room prices rose uniformly or the sample covers all tourism"],
+    "preserve": ["If quoted: A smaller hotel can look fuller on the percentage line while its reception desk sells fewer nights.","If quoted: I cannot turn a hotel percentage into a count of people coming through my door.","Inventory, sold room nights, occupancy and revenue are distinct measures."],
+    "expected_action": "draft"
+  }
+}

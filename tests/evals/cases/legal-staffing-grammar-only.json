@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "legal-staffing-grammar-only",
+  "split": "tuning",
+  "operation": "edit",
+  "task": "Correct grammar only in these fictional contract clauses for the parties' contract administrator. Return the clauses, preserving the defined-party capitalization. This is not a request for negotiation, new rights, staffing advice, or a statement about current law or enforceability.",
+  "input": "The Supplier assign two coordinators to the project. The Client retains approval of any replacement coordinator. Reassignment does not changes the Client's ownership of the deliverables.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The supplied agreement requires the Supplier to assign two coordinators to the project."},
+    {"id": "f2", "text": "The Client retains approval of any replacement coordinator."},
+    {"id": "f3", "text": "Reassignment does not change the Client's ownership of the deliverables."}
+  ],
+  "modules": ["domains/legal.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3"],
+    "forbidden_additions": [
+      "A different coordinator count or a discretionary staffing obligation.",
+      "Unilateral replacement authority for the Supplier.",
+      "New ownership, licensing, indemnity, termination, or approval terms.",
+      "An assertion that the clauses are enforceable under an unspecified jurisdiction's law."
+    ],
+    "preserve": [
+      "The staffing obligation and the Client's replacement-approval right.",
+      "The unchanged ownership commitment.",
+      "The narrow grammar-only scope."
+    ],
+    "expected_action": "edit"
+  }
+}

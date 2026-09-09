@@ -1,0 +1,461 @@
+{
+  "schema_version": 1,
+  "area": "scholarly",
+  "cases": [
+    {
+      "case_id": "scholarly-cit-ama-callout-order",
+      "path": "tests/evals/synthetic/cases/scholarly-cit-ama-callout-order.json",
+      "family_id": "scholarly-route-card-guide-pilot",
+      "topic": "AMA11: long-form implementation-and-evidence memo (350–450 words)",
+      "independence_note": "Original guide and two-session pilot, enriched with return/marking counts, unmatched reading-assistance tallies, and anonymous-card boundaries. The longer memo remains in its original family; no records, prose, or base scenario are shared with another case."
+    },
+    {
+      "case_id": "scholarly-cit-ama-voluntary-survey",
+      "path": "tests/evals/synthetic/cases/scholarly-cit-ama-voluntary-survey.json",
+      "family_id": "scholarly-reminder-preference-consent",
+      "topic": "AMA11: patient-friendly attribution and voluntary survey language",
+      "independence_note": "Original reminder-preference survey with an exact consent statement. The evidence concerns voluntary responses and appointment access, not the test-result source used in the original suite."
+    },
+    {
+      "case_id": "scholarly-cit-ama-correction-record",
+      "path": "tests/evals/synthetic/cases/scholarly-cit-ama-correction-record.json",
+      "family_id": "scholarly-crate-label-correction",
+      "topic": "AMA11: original article versus separately published correction",
+      "independence_note": "Independent publication-history packet about a corrected column label. The unchanged counts, two publication dates, and non-retraction status form one unique scenario."
+    },
+    {
+      "case_id": "scholarly-cit-ama-chapter-locator",
+      "path": "tests/evals/synthetic/cases/scholarly-cit-ama-chapter-locator.json",
+      "family_id": "scholarly-sample-label-chapter",
+      "topic": "AMA11: sound book-chapter citation and quotation locator",
+      "independence_note": "Original sample-counting chapter and exact quotation. It tests retention of a clean note with separate chapter authorship, editor, pinpoint, and span; no other case reuses this source."
+    },
+    {
+      "case_id": "scholarly-cit-apa-versioned-dataset",
+      "path": "tests/evals/synthetic/cases/scholarly-cit-apa-versioned-dataset.json",
+      "family_id": "scholarly-puddle-dataset-version",
+      "topic": "APA7: dataset version identity and duplicate observations",
+      "independence_note": "Original two-version data-release history. A metadata correction leaves observation rows unchanged, creating a distinct double-counting risk rather than a renamed incomplete article."
+    },
+    {
+      "case_id": "scholarly-cit-apa-personal-communication",
+      "path": "tests/evals/synthetic/cases/scholarly-cit-apa-personal-communication.json",
+      "family_id": "scholarly-tour-routing-email",
+      "topic": "APA7: unrecoverable communication and proposed policy",
+      "independence_note": "Original fictional personal email about a trial tour route. The communication's recoverability and conditional proposal are unique; no actual private correspondence is used."
+    },
+    {
+      "case_id": "scholarly-cit-apa-year-suffixes",
+      "path": "tests/evals/synthetic/cases/scholarly-cit-apa-year-suffixes.json",
+      "family_id": "scholarly-badge-sensor-reports",
+      "topic": "APA7: same-author year suffixes and source-to-claim alignment",
+      "independence_note": "Original paired facilities reports distinguish object returns from anonymous events. The two titles and claim assignments belong only to this case, not to the repeated-source IEEE packet."
+    },
+    {
+      "case_id": "scholarly-cit-apa-section-quote",
+      "path": "tests/evals/synthetic/cases/scholarly-cit-apa-section-quote.json",
+      "family_id": "scholarly-undated-repair-bell",
+      "topic": "APA7: undated webpage, section locator, and useful qualification",
+      "independence_note": "Original undated webpage with a section-and-paragraph quotation. It is a clean interpretation of a possible bell function, without shared text or records elsewhere."
+    },
+    {
+      "case_id": "scholarly-cit-bluebook-reserved-question",
+      "path": "tests/evals/synthetic/cases/scholarly-cit-bluebook-reserved-question.json",
+      "family_id": "scholarly-delivery-record-holding",
+      "topic": "Bluebook22: narrow holding and expressly reserved question",
+      "independence_note": "Original mock appellate decision, reporter, and contractual dispute. The decisive relationship is between a holding and an open scan question; no real authority or other case's facts are reused."
+    },
+    {
+      "case_id": "scholarly-cit-bluebook-unpublished-memo",
+      "path": "tests/evals/synthetic/cases/scholarly-cit-bluebook-unpublished-memo.json",
+      "family_id": "scholarly-ferry-fee-training-memo",
+      "topic": "Bluebook22: unsigned memorandum versus judicial authority",
+      "independence_note": "Original fee-waiver proposal in an unpublished training memorandum. Missing authorship and the absence of any vote distinguish this from a court-holding or missing-pinpoint template."
+    },
+    {
+      "case_id": "scholarly-cit-bluebook-hearing-testimony",
+      "path": "tests/evals/synthetic/cases/scholarly-cit-bluebook-hearing-testimony.json",
+      "family_id": "scholarly-records-hearing-witness",
+      "topic": "Bluebook22: witness testimony is not enacted text",
+      "independence_note": "Original mock hearing transcript with a modal quotation and named witness. Its source-to-speaker and testimony-to-enactment distinctions are not derived from another packet."
+    },
+    {
+      "case_id": "scholarly-cit-bluebook-secondary-reading",
+      "path": "tests/evals/synthetic/cases/scholarly-cit-bluebook-secondary-reading.json",
+      "family_id": "scholarly-dissent-secondary-interpretation",
+      "topic": "Bluebook22: long-form no-change seminar explainer (330–450 words)",
+      "independence_note": "Original law-review article and clean sustained explanation, now supported by page-specific timing, dispatch, and response-opportunity hypotheticals. This is an expansion of the same family, not another sample or reuse of a mock decision or hearing."
+    },
+    {
+      "case_id": "scholarly-cit-chicago-audio-history",
+      "path": "tests/evals/synthetic/cases/scholarly-cit-chicago-audio-history.json",
+      "family_id": "scholarly-ferry-light-recollection",
+      "topic": "Chicago18: long-form oral-history essay (350–450 words plus notes)",
+      "independence_note": "Original interview expanded with timestamped work roles, an initial guess revised through recollection, and an unknown later repair outcome. The existing family now supports a sustained essay; its chronology and evidence packet remain distinct from the MLA podcast."
+    },
+    {
+      "case_id": "scholarly-cit-chicago-translated-edition",
+      "path": "tests/evals/synthetic/cases/scholarly-cit-chicago-translated-edition.json",
+      "family_id": "scholarly-translated-ledger-commentary",
+      "topic": "Chicago18: consulted translation, pinpoint, and attributed intention",
+      "independence_note": "Original translated book with separate original and consulted-edition dates. Its lost negation and unsupported personal agency form a unique source-fidelity problem."
+    },
+    {
+      "case_id": "scholarly-cit-chicago-shortened-minutes",
+      "path": "tests/evals/synthetic/cases/scholarly-cit-chicago-shortened-minutes.json",
+      "family_id": "scholarly-kiln-motion-minutes",
+      "topic": "Chicago18: shortened note after an intervening source",
+      "independence_note": "Original unpaginated minutes packet with a deferred kiln motion and a specified note sequence. The section locator and cross-reference problem are not shared with another case."
+    },
+    {
+      "case_id": "scholarly-cit-chicago-catalogue-essay",
+      "path": "tests/evals/synthetic/cases/scholarly-cit-chicago-catalogue-essay.json",
+      "family_id": "scholarly-unused-window-catalogue",
+      "topic": "Chicago18: catalogue essay authorship and qualified interpretation",
+      "independence_note": "Original exhibition essay and already correct note/bibliography pair. Its interpretive ownership differs from the sample-counting chapter despite both using edited-book mechanics."
+    },
+    {
+      "case_id": "scholarly-cit-ieee-datasheet-limits",
+      "path": "tests/evals/synthetic/cases/scholarly-cit-ieee-datasheet-limits.json",
+      "family_id": "scholarly-timebase-datasheet",
+      "topic": "IEEE: conditional datasheet specifications rather than test results",
+      "independence_note": "Original timebase datasheet with nominal and upper intervals conditioned on temperature. No device, specification, or evidence packet is shared with another case."
+    },
+    {
+      "case_id": "scholarly-cit-ieee-repeat-reference",
+      "path": "tests/evals/synthetic/cases/scholarly-cit-ieee-repeat-reference.json",
+      "family_id": "scholarly-job-marker-import-flag",
+      "topic": "IEEE: repeated-source numbering and conditional software behavior",
+      "independence_note": "Original technical note and journal article on job markers and an import flag. Repeated bibliography entries and a condition lost from behavior are one unique scenario, not the APA audit reports."
+    },
+    {
+      "case_id": "scholarly-cit-ieee-software-release",
+      "path": "tests/evals/synthetic/cases/scholarly-cit-ieee-software-release.json",
+      "family_id": "scholarly-grid-coordinate-release",
+      "topic": "IEEE: versioned software identity and honest metadata gaps",
+      "independence_note": "Original coordinate-export software release, with no supplied proceedings or archive. Its release identity and feature boundary are distinct from the versioned dataset's duplicate-observation problem."
+    },
+    {
+      "case_id": "scholarly-cit-ieee-emulated-trace",
+      "path": "tests/evals/synthetic/cases/scholarly-cit-ieee-emulated-trace.json",
+      "family_id": "scholarly-paper-network-trace",
+      "topic": "IEEE: clean proceedings reference and bounded trace percentage",
+      "independence_note": "Original conference paper and exact caution about an emulated trace. It preserves a correct descriptive percentage without supplying a physical reliability estimate or sharing another technical record."
+    },
+    {
+      "case_id": "scholarly-cit-mla-poem-lines",
+      "path": "tests/evals/synthetic/cases/scholarly-cit-mla-poem-lines.json",
+      "family_id": "scholarly-loam-clock-poem",
+      "topic": "MLA9: original poetry, anthology identity, and line locators",
+      "independence_note": "Original poem excerpt created only for this case. Its speaker/time reading and line-versus-page locator distinction do not reuse the education cases' poems or narrative excerpts."
+    },
+    {
+      "case_id": "scholarly-cit-mla-recorded-performance",
+      "path": "tests/evals/synthetic/cases/scholarly-cit-mla-recorded-performance.json",
+      "family_id": "scholarly-bench-staging-recording",
+      "topic": "MLA9: recorded performance, contributor roles, and timestamps",
+      "independence_note": "Original staged work, production record, and upload record. The performance-specific interpretation and writer/character/performer distinction are unique to this packet."
+    },
+    {
+      "case_id": "scholarly-cit-mla-letter-condition",
+      "path": "tests/evals/synthetic/cases/scholarly-cit-mla-letter-condition.json",
+      "family_id": "scholarly-brass-ring-letter",
+      "topic": "MLA9: unpaginated letter and intended-versus-completed shipment",
+      "independence_note": "Original handwritten-letter facsimile with an unnamed recipient role. The contingent shipment and honest holding-information gap are distinct from the APA contemporary routing email."
+    },
+    {
+      "case_id": "scholarly-cit-mla-podcast-guest",
+      "path": "tests/evals/synthetic/cases/scholarly-cit-mla-podcast-guest.json",
+      "family_id": "scholarly-cupboard-podcast-memory",
+      "topic": "MLA9: guest quotation versus host metadata",
+      "independence_note": "Original podcast episode and guest reflection on remembered significance. The clean speaker/host distinction does not share recording text or chronology with the Chicago oral-history case."
+    },
+    {
+      "case_id": "scholarly-edu-lower-tactile-map",
+      "path": "tests/evals/synthetic/cases/scholarly-edu-lower-tactile-map.json",
+      "family_id": "scholarly-tactile-route-key",
+      "topic": "Lower elementary: accessible map key and symbolic route",
+      "independence_note": "Original tactile classroom map with an off-route object. The access need and symbol/object relationship define this scenario; it is not a renamed procedural science activity."
+    },
+    {
+      "case_id": "scholarly-edu-lower-partly-melted-ice",
+      "path": "tests/evals/synthetic/cases/scholarly-edu-lower-partly-melted-ice.json",
+      "family_id": "scholarly-partial-melting-notebook",
+      "topic": "Lower elementary: short explanation of partial melting",
+      "independence_note": "Original two-time observation of one partly melted cube. Its material-state explanation and observed extent differ from counting, route-following, and growth activities."
+    },
+    {
+      "case_id": "scholarly-edu-lower-viewpoint-roof",
+      "path": "tests/evals/synthetic/cases/scholarly-edu-lower-viewpoint-roof.json",
+      "family_id": "scholarly-pim-obstructed-view",
+      "topic": "Lower elementary: character perception versus story reality",
+      "independence_note": "Original story excerpt with a character's obstructed view and a narrator's correction. No story text, character, or event is reused elsewhere."
+    },
+    {
+      "case_id": "scholarly-edu-lower-hidden-fish",
+      "path": "tests/evals/synthetic/cases/scholarly-edu-lower-hidden-fish.json",
+      "family_id": "scholarly-covered-fish-total",
+      "topic": "Lower elementary: accurate visible-part and whole explanation",
+      "independence_note": "Original counting demonstration with a known total and temporarily covered subset. Its clean invariant-count explanation is not a scaled version of another arithmetic worksheet."
+    },
+    {
+      "case_id": "scholarly-edu-upper-undated-photograph",
+      "path": "tests/evals/synthetic/cases/scholarly-edu-upper-undated-photograph.json",
+      "family_id": "scholarly-ticket-unlinked-photo",
+      "topic": "Upper elementary: dates cannot transfer between unlinked objects",
+      "independence_note": "Original fair ticket and unrelated undated image description. Unproven linkage between two objects is distinct from the dated layers of the non-fiction annotated map."
+    },
+    {
+      "case_id": "scholarly-edu-upper-two-price-budget",
+      "path": "tests/evals/synthetic/cases/scholarly-edu-upper-two-price-budget.json",
+      "family_id": "scholarly-kits-labels-budget",
+      "topic": "Upper elementary: separate unit prices and remaining budget",
+      "independence_note": "Original mixed-price worksheet requiring two subtotals and a residual. It is not a rescaled single-quantity tray calculation or a financial-pledge scenario."
+    },
+    {
+      "case_id": "scholarly-edu-upper-survey-nonresponse",
+      "path": "tests/evals/synthetic/cases/scholarly-edu-upper-survey-nonresponse.json",
+      "family_id": "scholarly-guide-choice-nonresponse",
+      "topic": "Upper elementary: respondent denominator and unknown preferences",
+      "independence_note": "Original guide-choice exercise with explicit nonresponse and no ability measurements. Its denominator and stereotype risks are separate from the AMA patient-consent survey."
+    },
+    {
+      "case_id": "scholarly-edu-upper-personified-choices",
+      "path": "tests/evals/synthetic/cases/scholarly-edu-upper-personified-choices.json",
+      "family_id": "scholarly-door-path-poem",
+      "topic": "Upper elementary: supported personification reading without forced certainty",
+      "independence_note": "Original one-line poem and clean learner response. Its competing personified wishes and undecided ending share no source text with the MLA time poem or high-school narrative."
+    },
+    {
+      "case_id": "scholarly-edu-middle-cartogram-units",
+      "path": "tests/evals/synthetic/cases/scholarly-edu-middle-cartogram-units.json",
+      "family_id": "scholarly-household-tile-cartogram",
+      "topic": "Middle school: cartogram household counts versus geographic area",
+      "independence_note": "Original equal-household tile map with two wards. Its representational unit mismatch is distinct from the tactile route key and original suite's bar-chart labeling."
+    },
+    {
+      "case_id": "scholarly-edu-middle-rail-advertisement",
+      "path": "tests/evals/synthetic/cases/scholarly-edu-middle-rail-advertisement.json",
+      "family_id": "scholarly-rail-slogan-evidence",
+      "topic": "Middle school: advertisement as evidence of promotion, not punctuality",
+      "independence_note": "Original historical timetable advertisement and slogan. No railway, quoted phrase, service record, or source packet is reused."
+    },
+    {
+      "case_id": "scholarly-edu-middle-two-changing-conditions",
+      "path": "tests/evals/synthetic/cases/scholarly-edu-middle-two-changing-conditions.json",
+      "family_id": "scholarly-sugar-temperature-stirring",
+      "topic": "Middle school: observed timing with two confounded conditions",
+      "independence_note": "Original classroom dissolution comparison with different initial temperatures and stirring. The laboratory conditions and timing data are not a renamed observation from another case."
+    },
+    {
+      "case_id": "scholarly-edu-middle-echo-model",
+      "path": "tests/evals/synthetic/cases/scholarly-edu-middle-echo-model.json",
+      "family_id": "scholarly-echo-path-representation",
+      "topic": "Middle school: useful short explanation of a sound-path model",
+      "independence_note": "Original sound-reflection teaching model and clean explanation. Its representational correction concerns an arrow leaving a wall, not map navigation or a numerical plot."
+    },
+    {
+      "case_id": "scholarly-edu-high-conflicting-opening-dates",
+      "path": "tests/evals/synthetic/cases/scholarly-edu-high-conflicting-opening-dates.json",
+      "family_id": "scholarly-pool-register-recollection",
+      "topic": "High school: unresolved conflict between a register and later interview",
+      "independence_note": "Original pool-opening register and conflicting recollection. The directly incompatible dates differ from an interview whose event is simply undated or a memoir with obstructed sightlines."
+    },
+    {
+      "case_id": "scholarly-edu-high-narrated-silence",
+      "path": "tests/evals/synthetic/cases/scholarly-edu-high-narrated-silence.json",
+      "family_id": "scholarly-silent-street-bell",
+      "topic": "High school: literary contrast between adjacent narrative sentences",
+      "independence_note": "Original two-sentence literary excerpt created for this task. Possible irony in the narrative contrast does not reuse another case's poem, character, or interpretive packet."
+    },
+    {
+      "case_id": "scholarly-edu-high-count-rate-divergence",
+      "path": "tests/evals/synthetic/cases/scholarly-edu-high-count-rate-divergence.json",
+      "family_id": "scholarly-repair-count-rate",
+      "topic": "High school: long-form comparative data report (350–500 words)",
+      "independence_note": "The original two-year repair family now includes category mix, complete outcome dispositions, staffing counts, and an unlinked orientation record. These support a substantive report rather than stretching the original aggregate-rate paragraph; no new family is counted."
+    },
+    {
+      "case_id": "scholarly-edu-high-absence-in-tray",
+      "path": "tests/evals/synthetic/cases/scholarly-edu-high-absence-in-tray.json",
+      "family_id": "scholarly-fossil-tray-absence",
+      "topic": "High school: sample absence versus habitat absence",
+      "independence_note": "Original fossil-tray packet and clean qualified inference. Unspecified collection prevents a habitat conclusion; no physical source or wording is reused."
+    },
+    {
+      "case_id": "scholarly-edu-undergrad-offer-attendance",
+      "path": "tests/evals/synthetic/cases/scholarly-edu-undergrad-offer-attendance.json",
+      "family_id": "scholarly-workshop-offer-outcomes",
+      "topic": "Undergraduate: assignment, attendance, response, and estimand",
+      "independence_note": "Original randomized-offer participant flow with missing outcomes. The offer-effect estimand and stage-specific selection are not a renamed simple preference survey."
+    },
+    {
+      "case_id": "scholarly-edu-undergrad-diary-we",
+      "path": "tests/evals/synthetic/cases/scholarly-edu-undergrad-diary-we.json",
+      "family_id": "scholarly-scale-diary-pronoun",
+      "topic": "Undergraduate: long-form diary close reading (330–450 words)",
+      "independence_note": "The same original diary family now supplies five dated excerpts across distinct packet pages, supporting analysis of waiting, movement, pronouns, and gaps without an invented biography. No excerpt is reused in another case."
+    },
+    {
+      "case_id": "scholarly-edu-undergrad-abstract-only",
+      "path": "tests/evals/synthetic/cases/scholarly-edu-undergrad-abstract-only.json",
+      "family_id": "scholarly-folding-seat-abstract",
+      "topic": "Undergraduate: honest abstract-only appraisal and evidence type",
+      "independence_note": "Original qualitative prototype abstract. Access to an abstract cannot establish a durability test or appendix inspection; no record is reused from the original SDK example."
+    },
+    {
+      "case_id": "scholarly-edu-undergrad-sufficient-token",
+      "path": "tests/evals/synthetic/cases/scholarly-edu-undergrad-sufficient-token.json",
+      "family_id": "scholarly-copper-token-logic",
+      "topic": "Undergraduate: necessary versus sufficient in a bounded rule system",
+      "independence_note": "Original token-rule model and already correct logical explanation. The existence of wooden counterexamples and absence of an outer-gate rule define a unique logical task."
+    },
+    {
+      "case_id": "scholarly-edu-graduate-receipt-help",
+      "path": "tests/evals/synthetic/cases/scholarly-edu-graduate-receipt-help.json",
+      "family_id": "scholarly-expense-approval-branches",
+      "topic": "Graduate: ordinary accessible help for an unfamiliar receipt workflow",
+      "independence_note": "Original approval-dependent correction workflow at a fictional institute. The help need comes from unfamiliar controls and screen-reader access, not a renamed shared-folder or room-booking task."
+    },
+    {
+      "case_id": "scholarly-edu-graduate-transcript-pause",
+      "path": "tests/evals/synthetic/cases/scholarly-edu-graduate-transcript-pause.json",
+      "family_id": "scholarly-key-retention-pause",
+      "topic": "Graduate: transcript pause versus established private emotion",
+      "independence_note": "Original participant statement followed by an unmeasured pause. The explicit reason and unsupported concealed emotion differ from population-wide thematic claims in the original suite."
+    },
+    {
+      "case_id": "scholarly-edu-graduate-posthoc-exclusion",
+      "path": "tests/evals/synthetic/cases/scholarly-edu-graduate-posthoc-exclusion.json",
+      "family_id": "scholarly-opening-hours-analysis-log",
+      "topic": "Graduate: long-form methods disclosure (350–500 words)",
+      "independence_note": "The existing protocol/log family is enriched with three-studio window context, an exact protocol clause, source-note limits, decision order, and intact-data status. The two slopes remain supplied summaries; the expanded disclosure is not a new independent sample."
+    },
+    {
+      "case_id": "scholarly-edu-graduate-mediated-ledger",
+      "path": "tests/evals/synthetic/cases/scholarly-edu-graduate-mediated-ledger.json",
+      "family_id": "scholarly-clerk-foreman-mediation",
+      "topic": "Graduate: documentary mediation and justified formal qualification",
+      "independence_note": "Original ledger with an explicit reporting chain. Its clean distinction between rendering and verbatim speech does not share the translated book or composite interview sources."
+    },
+    {
+      "case_id": "scholarly-edu-postgrad-unbounded-domain",
+      "path": "tests/evals/synthetic/cases/scholarly-edu-postgrad-unbounded-domain.json",
+      "family_id": "scholarly-minimum-domain-counterexample",
+      "topic": "Post-graduate: accessible explanation of a mathematical condition",
+      "independence_note": "Original interdisciplinary explanation task using f(x) = x as a fully supplied counterexample. It tests a missing condition, not the original suite's incomplete tie-breaking record."
+    },
+    {
+      "case_id": "scholarly-edu-postgrad-frame-capture-help",
+      "path": "tests/evals/synthetic/cases/scholarly-edu-postgrad-frame-capture-help.json",
+      "family_id": "scholarly-microfilm-single-frame",
+      "topic": "Post-graduate: long-form accessible equipment guide (320–450 words)",
+      "independence_note": "The original microfilm-viewer family now documents frame identity, rotation, duplicate names, failed saves, and source-legibility limits, sufficient for substantial ordinary help. Support still follows stated workflow and access needs, not the credential; no expense-workflow facts are reused."
+    },
+    {
+      "case_id": "scholarly-edu-postgrad-unit-correction-response",
+      "path": "tests/evals/synthetic/cases/scholarly-edu-postgrad-unit-correction-response.json",
+      "family_id": "scholarly-length-table-correction",
+      "topic": "Post-graduate: reviewer reply about a logged unit correction",
+      "independence_note": "Original measurement, erroneous table, and completed correction log. The task distinguishes a unit repair from new research, rather than reusing an arithmetic budget or analysis exclusion."
+    },
+    {
+      "case_id": "scholarly-edu-postgrad-probabilistic-independence",
+      "path": "tests/evals/synthetic/cases/scholarly-edu-postgrad-probabilistic-independence.json",
+      "family_id": "scholarly-probability-spatial-distinction",
+      "topic": "Post-graduate: clean explanation of probabilistic independence",
+      "independence_note": "Original formal note distinguishing conditional probability from spatial language. Its positive-probability qualification and no-change target are not variants of the real-line minimum task."
+    },
+    {
+      "case_id": "scholarly-nf-pledges-and-cash",
+      "path": "tests/evals/synthetic/cases/scholarly-nf-pledges-and-cash.json",
+      "family_id": "scholarly-museum-packing-ledger",
+      "topic": "Non-fiction: long-form accountable project report (350–450 words)",
+      "independence_note": "The original packing-fund family now joins a dated cash ledger to spending subtotals, unvalued noncash contributions, fit-check progress, and uncosted next steps. The richer reporting context does not create another sample or reuse a shopping worksheet."
+    },
+    {
+      "case_id": "scholarly-nf-annotated-district-map",
+      "path": "tests/evals/synthetic/cases/scholarly-nf-annotated-district-map.json",
+      "family_id": "scholarly-parcel-map-layers",
+      "topic": "Non-fiction: printed-map date versus later annotation",
+      "independence_note": "Original layered map object with an unidentified annotator. It concerns later marks and unproven official status, not linkage between the education ticket and separate photograph."
+    },
+    {
+      "case_id": "scholarly-nf-marker-three-visits",
+      "path": "tests/evals/synthetic/cases/scholarly-nf-marker-three-visits.json",
+      "family_id": "scholarly-salt-pool-marker-visits",
+      "topic": "Non-fiction: long-form three-visit field-notebook essay (320–430 words)",
+      "independence_note": "The same dated-visit family is enriched with a work notice, an unidentified sound, precise notebook phrases, and retained earlier/later sketches. These support narrative development without invented experience or another independent sample; no workroom familiarity arc is reused."
+    },
+    {
+      "case_id": "scholarly-nf-transcription-alternative",
+      "path": "tests/evals/synthetic/cases/scholarly-nf-transcription-alternative.json",
+      "family_id": "scholarly-cave-cove-transcription",
+      "topic": "Non-fiction: unresolved reading and editorial notation",
+      "independence_note": "Original damaged-word transcription with two plausible geographic readings. The editorial question mark and unhelpful corroborating map define a distinct textual-editing scenario."
+    },
+    {
+      "case_id": "scholarly-nf-collaborative-installation",
+      "path": "tests/evals/synthetic/cases/scholarly-nf-collaborative-installation.json",
+      "family_id": "scholarly-windfold-installation-roles",
+      "topic": "Non-fiction: collaborative agency and installation chronology",
+      "independence_note": "Original art-installation record assigning separate contributions to artist and volunteers. It is not a renamed one-person memoir or a legal-permission case."
+    },
+    {
+      "case_id": "scholarly-nf-returned-instrument-voice",
+      "path": "tests/evals/synthetic/cases/scholarly-nf-returned-instrument-voice.json",
+      "family_id": "scholarly-reedbox-return-report",
+      "topic": "Non-fiction: sound formal voice and unknown playability",
+      "independence_note": "Original receipt-based steward's opening with deliberate parallelism. Its inventory/function distinction and no-change target share neither language nor objects with another packet."
+    },
+    {
+      "case_id": "scholarly-nf-attendance-overlap",
+      "path": "tests/evals/synthetic/cases/scholarly-nf-attendance-overlap.json",
+      "family_id": "scholarly-print-room-overlap",
+      "topic": "Non-fiction: attendances versus distinct people across events",
+      "independence_note": "Original pair of event records with complete overlap information. Set-union counting is a different relationship from response rates, changing success proportions, and simple totals."
+    },
+    {
+      "case_id": "scholarly-nf-display-loan-scope",
+      "path": "tests/evals/synthetic/cases/scholarly-nf-display-loan-scope.json",
+      "family_id": "scholarly-tide-cup-display-loan",
+      "topic": "Non-fiction: historical display permission without transfer of title",
+      "independence_note": "Original sculpture-loan document and public-history label. The genre remains non-fiction with a legal safeguard; no terms or scenario are copied from the original contract cases."
+    },
+    {
+      "case_id": "scholarly-nf-convalescent-sleep-diaries",
+      "path": "tests/evals/synthetic/cases/scholarly-nf-convalescent-sleep-diaries.json",
+      "family_id": "scholarly-house-lamps-visiting-hours",
+      "topic": "Non-fiction: historical sleep reports without clinical efficacy claims",
+      "independence_note": "Original convalescent-house diaries and concurrent institutional changes. Its historical, self-reported health evidence is not a renamed modern survey or laboratory dissolution trial."
+    },
+    {
+      "case_id": "scholarly-nf-recipe-marginal-substitution",
+      "path": "tests/evals/synthetic/cases/scholarly-nf-recipe-marginal-substitution.json",
+      "family_id": "scholarly-barley-oats-marginalia",
+      "topic": "Non-fiction: original recipe layer and conditional later substitution",
+      "independence_note": "Original dated recipe and later marginal hand. The distinction between textual suggestion and actual household practice does not reuse the map annotation or a completed-shipment scenario."
+    },
+    {
+      "case_id": "scholarly-nf-platform-memory-photo",
+      "path": "tests/evals/synthetic/cases/scholarly-nf-platform-memory-photo.json",
+      "family_id": "scholarly-platform-subjective-memory",
+      "topic": "Non-fiction: photographic spatial evidence versus remembered feeling",
+      "independence_note": "Original reflective passage with a confirmed same-visit photograph. It separates subjective experience from spatial correction rather than resolving an unknown image date."
+    },
+    {
+      "case_id": "scholarly-nf-composite-interview-quote",
+      "path": "tests/evals/synthetic/cases/scholarly-nf-composite-interview-quote.json",
+      "family_id": "scholarly-lamps-talk-two-speakers",
+      "topic": "Non-fiction: undisclosed composite quotation and collective inference",
+      "independence_note": "Original pair of independently attributed fictional interview sentences. The quotation-splicing failure is unique; neither speaker nor utterance appears in another case."
+    },
+    {
+      "case_id": "scholarly-nf-invention-priority-gap",
+      "path": "tests/evals/synthetic/cases/scholarly-nf-invention-priority-gap.json",
+      "family_id": "scholarly-folding-gear-priority",
+      "topic": "Non-fiction: uncertain maker and unsupported worldwide priority",
+      "independence_note": "Original three-object catalogue with an uncertain inscription. Authorship authentication and global-priority evidence are separately missing; no base catalogue scenario is reused."
+    }
+  ]
+}

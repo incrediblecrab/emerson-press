@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "risk-leg-effort-standard",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "This fictional contract clause uses 'best efforts' where the parties agreed to a 'commercially reasonable efforts' standard. Correct the effort standard using the supplied fact. Do not change any other obligation or party name.",
+  "input": "The Supplier shall use best efforts to deliver the software modules within the agreed project schedule.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The parties agreed to a commercially reasonable efforts standard for the Supplier's delivery obligation."},
+    {"id": "f2", "text": "The agreed project schedule is referenced in Annex C of the fictional contract."},
+    {"id": "f3", "text": "The packet does not define commercially reasonable efforts."}
+  ],
+  "modules": ["domains/legal.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1"],
+    "forbidden_additions": [
+      "A definition of commercially reasonable efforts.",
+      "A fallback to best efforts if commercially reasonable efforts fails.",
+      "A change to the delivery timeline or schedule reference."
+    ],
+    "preserve": [
+      "The reference to the agreed project schedule.",
+      "The Supplier label.",
+      "The correction to commercially reasonable efforts."
+    ],
+    "expected_action": "edit"
+  }
+}

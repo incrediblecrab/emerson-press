@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "public-general-rehearsal-relocation",
+  "split": "tuning",
+  "operation": "draft",
+  "task": "Write a practical email of about 70–110 words to members of a fictional community choir. Explain the rehearsal-room change, what members should bring, and how to enter. Most readers know the old venue arrangement. Make clear what has changed and what has not; do not turn the message into a promotional announcement.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "Thursday's rehearsal remains scheduled for 6:30–8 p.m."},
+    {"id": "f2", "text": "The rehearsal has moved from Bellhouse's main hall to its side studio."},
+    {"id": "f3", "text": "The studio has a ground-level entrance from the same courtyard."},
+    {"id": "f4", "text": "A keyboard will be provided in the studio."},
+    {"id": "f5", "text": "Singers should bring their music folders."},
+    {"id": "f6", "text": "Percussion instruments are not needed for this session."},
+    {"id": "f7", "text": "The main hall has been reserved for costume fittings."}
+  ],
+  "modules": ["domains/general.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f6", "f7"],
+    "forbidden_additions": [
+      "A changed rehearsal time, cancellation, or permanent relocation.",
+      "A claim that the main hall is damaged or unsafe.",
+      "A requirement to bring a keyboard or percussion instruments."
+    ],
+    "preserve": [
+      "The distinction between the changed room and unchanged rehearsal time.",
+      "Concrete arrival and equipment information for existing members."
+    ],
+    "expected_action": "draft"
+  }
+}

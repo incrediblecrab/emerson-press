@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "citation-ieee-preserve-article",
+  "split": "tuning",
+  "operation": "edit",
+  "task": "Edit this reference for an IEEE-style technical explainer. Use the supplied fictional fields, preserve the journal-article identity, and flag missing journal and locator metadata outside the entry. Do not retrieve the source or complete a conference-paper template merely because the title sounds technical.",
+  "input": "[1] Shared Systems Group, \"A Queue for Small Message Relays,\" 2020, https://example.org/papers/small-relays.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional corporate author is Shared Systems Group."},
+    {"id": "f2", "text": "The article's title is A Queue for Small Message Relays."},
+    {"id": "f3", "text": "The publication year is 2020."},
+    {"id": "f4", "text": "The supplied landing-page URL is https://example.org/papers/small-relays."},
+    {"id": "f5", "text": "The source is a journal article, not a conference or proceedings contribution."},
+    {"id": "f6", "text": "Author, title, year, and landing-page URL are the only bibliographic fields supplied."}
+  ],
+  "modules": ["domains/technical.md", "domains/citation/ieee.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5"],
+    "forbidden_additions": [
+      "A conference name, proceedings title, conference city, editor, or publisher.",
+      "An invented journal name, volume, issue, page range, article number, DOI, or archive URL.",
+      "A DOI derived from the URL slug or a claim that the entry was checked against a database."
+    ],
+    "preserve": [
+      "The article's corporate author, title, year, and supplied URL.",
+      "Journal-article identity rather than a plausible but different source type.",
+      "A separate and explicit missing-metadata note."
+    ],
+    "expected_action": "flag_missing_evidence"
+  }
+}

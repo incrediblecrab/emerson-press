@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "public-general-object-label-review",
+  "split": "held_out",
+  "operation": "review",
+  "task": "Review this fictional display label against the loan and restoration notes. Give 60–110 words of editorial findings for general visitors, separating errors about ownership, surviving parts, and age. Suggest evidence-preserving corrections without inventing provenance or offering a legal opinion about the loan.",
+  "input": "Permanently donated by the Copper Box Collective, this eighteenth-century box survives exactly as its maker left it. Its original hinges show how the lid was first attached. The museum now owns a complete, untouched example of the craft.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Copper Box Collective owns the box and has lent it for eight weeks."},
+    {"id": "f2", "text": "The restoration record identifies the box body as the surviving original component."},
+    {"id": "f3", "text": "The hinges were added during a later restoration."},
+    {"id": "f4", "text": "The supplied records do not date the box's manufacture."},
+    {"id": "f5", "text": "The records describe the body as hand-forged."}
+  ],
+  "modules": ["domains/general.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "Permanent donation or museum ownership.",
+      "Original hinges, an untouched condition, or an established eighteenth-century date.",
+      "An invented maker, restoration date, ownership history, or authentication claim."
+    ],
+    "preserve": [
+      "The distinction between a loan and a transfer of ownership.",
+      "Original material distinguished from later restoration.",
+      "Undated manufacture treated as unknown rather than guessed."
+    ],
+    "expected_action": "review"
+  }
+}

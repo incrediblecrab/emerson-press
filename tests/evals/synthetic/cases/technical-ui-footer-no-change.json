@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "technical-ui-footer-no-change",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Copyedit this footer legal line. Return it unchanged if the publisher name, copyright year, and linked pages match the supplied facts exactly.",
+  "input": "© 2024 Meridian Press. All rights reserved. Privacy policy | Terms of use",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The publisher name is Meridian Press."},
+    {"id": "f2", "text": "The copyright year is 2024."},
+    {"id": "f3", "text": "A privacy policy page exists on the site."},
+    {"id": "f4", "text": "A terms of use page exists on the site."}
+  ],
+  "modules": ["domains/general.md", "domains/user-interface/website.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "A wrong publisher name.",
+      "A wrong copyright year.",
+      "Links to pages that do not exist per the supplied facts."
+    ],
+    "preserve": [
+      "Meridian Press as publisher.",
+      "2024 as copyright year.",
+      "Privacy policy and Terms of use links."
+    ],
+    "expected_action": "no_change"
+  }
+}

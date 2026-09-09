@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-science-feat-wind-farm-fishing",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic writing exercise. Using these fictional reporting notes, write a newspaper reported feature for general readers. Draw only on the supplied notes; do not invent additional reported events, scenes, or quotations. Write from this reporting snapshot as of June 4, 2025. Include a headline. Target 450 to 650 words. Follow AP style.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "Atlantic Ridge Wind's 180-turbine array in Eastport Sound is scheduled to begin construction in September 2025; its cable route crosses the most productive lobster grounds in the region."
+    },
+    {
+      "id": "f2",
+      "text": "Lobster fisherman Sam Callahan, 52, has fished Eastport Sound for 28 years and says the cable installation phase \u2014 projected to take 14 months \u2014 will close 22,000 acres of his traditional fishing area."
+    },
+    {
+      "id": "f3",
+      "text": "Callahan said: \"They're building something that'll be there for decades. We're fishing something that's been here since before any of us were born. Those things don't automatically coexist.\""
+    },
+    {
+      "id": "f4",
+      "text": "Atlantic Ridge Wind hired marine liaison Divya Singh, whose role is to coordinate with the fishing fleet; Singh said the company has redesigned the cable route three times in response to fisherman input."
+    },
+    {
+      "id": "f5",
+      "text": "Singh said: \"The route isn't perfect. But it avoids the peak season grounds between April and July. What's left is a real compromise. It doesn't fully satisfy anyone.\""
+    },
+    {
+      "id": "f6",
+      "text": "Callahan said he was part of the consultations but that compromise does not adequately describe the outcome: his GPS vessel tracking data shows the avoided grounds contain his most productive traps."
+    },
+    {
+      "id": "f7",
+      "text": "The project's environmental review found no evidence that operational turbines harm lobster populations; studies from European offshore wind sites show lobster populations stable or increasing around turbine foundations, though those studies were conducted in different water conditions."
+    },
+    {
+      "id": "f8",
+      "text": "Callahan said construction disturbance, not operational turbines, is his primary concern: high-pressure jetting to bury cables disturbs the seabed and disrupts lobster molting cycles."
+    },
+    {
+      "id": "f9",
+      "text": "Atlantic Ridge has offered a compensation fund of $4.2 million for affected fishermen during the construction phase; Callahan said the fund's methodology significantly underestimates his losses."
+    },
+    {
+      "id": "f10",
+      "text": "Three Eastport Sound fishing families have agreed to the compensation terms; Callahan and two others have not."
+    },
+    {
+      "id": "f11",
+      "text": "Singh said the company is willing to continue negotiating but that construction timelines cannot be delayed past August 2025 without losing the installation vessel window and incurring $18 million in penalties."
+    },
+    {
+      "id": "f12",
+      "text": "Callahan said the fundamental problem is a regulatory process that treats fishing grounds as an environmental consideration rather than an economic asset: \"My trap license is worth $280,000. The process didn't put a dollar figure on that.\""
+    },
+    {
+      "id": "f13",
+      "text": "The regional marine fisheries council has no formal role in offshore wind siting; it can submit comments but cannot veto or condition approvals."
+    },
+    {
+      "id": "f14",
+      "text": "A federal coastal fisheries attorney said the legal standard for compensating commercial fishermen displaced by offshore construction is unclear and varies by circuit court; two pending cases in other regions may establish precedent."
+    },
+    {
+      "id": "f15",
+      "text": "Singh said Atlantic Ridge intends to pursue a long-term fishing access agreement for the operational phase that would allow trap fishing between turbine foundations; Callahan said he would not commit to that until the construction outcome is known."
+    },
+    {
+      "id": "f16",
+      "text": "European offshore wind operators who allow fishing between turbines report that the transition requires trust built over several years; one Norwegian case study found 80% of displaced fishermen returned to the grounds within four years."
+    },
+    {
+      "id": "f17",
+      "text": "Callahan said he has no objection to offshore wind as a concept: \"I'm not against clean energy. I'm against doing it in a way that destroys something else without accounting for it properly.\""
+    },
+    {
+      "id": "f18",
+      "text": "Singh said the company is funding a two-year seabed monitoring study that will track lobster density before, during, and after construction; results will be published."
+    },
+    {
+      "id": "f19",
+      "text": "Callahan said the monitoring study is welcome but comes too late to affect the cable route decision."
+    },
+    {
+      "id": "f20",
+      "text": "Singh and Callahan met for the first time face to face in April 2025, after 18 months of correspondence through lawyers and industry liaisons; Callahan said the meeting changed nothing but felt like the conversation they should have had two years earlier."
+    }
+  ],
+  "modules": [
+    "domains/press.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f7",
+      "f8",
+      "f9",
+      "f11",
+      "f12",
+      "f17"
+    ],
+    "forbidden_additions": [
+      "a confirmed lobster population decline attributed to the wind farm",
+      "a court ruling on fishermen's compensation not in the notes",
+      "a compensation fund amount different from $4.2 million"
+    ],
+    "preserve": [
+      "They're building something that'll be there for decades. We're fishing something that's been here since before any of us were born. Those things don't automatically coexist.",
+      "The route isn't perfect. But it avoids the peak season grounds between April and July. What's left is a real compromise. It doesn't fully satisfy anyone.",
+      "I'm not against clean energy. I'm against doing it in a way that destroys something else without accounting for it properly."
+    ],
+    "expected_action": "draft"
+  }
+}

@@ -1,8 +1,0 @@
-name: healthcare-marketing
-description: Marketing presentation with additional medical claim safeguards, not a manuscript.
-modules:
-  - domain/marketing.md
-  - user-interface/website.md
-  - user-interface/accessibility.md
-safeguards:
-  - medical

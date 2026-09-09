@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-business-feature-touring-captions",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic newspaper-writing exercise using fictional reporting notes. Use only the supplied reporting notes. Write from the reporting snapshot as of September 8, 2026. Write a headline and a 450–650-word AP-style reported feature about the captioning work on Ternlight Theater's four-town tour and the choices involved in making a live performance accessible away from a permanent stage.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id":"f1","text":"A July 2026 rehearsal note records caption operator Ceri Varden marking a changed pause in the script before Ternlight Theater's next tour performance."},
+    {"id":"f2","text":"The company toured the original fictional play Four Rooms for Rain to four town halls rather than a permanent theater."},
+    {"id":"f3","text":"Caption text was prepared from the approved script and advanced by a trained operator following the live performance."},
+    {"id":"f4","text":"The system was not described as an automatic guarantee that every unscripted line would immediately appear correctly."},
+    {"id":"f5","text":"The tour's approved $9,000 captioning budget allocated $3,000 to reusable display equipment, $4,000 to text preparation and $2,000 to operator time; final expenditure is not supplied."},
+    {"id":"f6","text":"The equipment can be reused, but later productions still require preparation, rehearsal and operator work."},
+    {"id":"f7","text":"The four performances recorded attendances of 80, 100, 60 and 120, totaling 360 admissions."},
+    {"id":"f8","text":"The admissions include repeat theatergoers and do not establish the number who attended specifically because captions were available."},
+    {"id":"f9","text":"Each hall required a separate check of screen position, stage sightlines and cable routes."},
+    {"id":"f10","text":"A front-row position that gave a clear stage view at one hall made the captions difficult to follow at another, according to the access rehearsal notes."},
+    {"id":"f11","text":"Deaf audience member Neri Calven attended one performance after asking where the caption display would be placed."},
+    {"id":"f12","text":"Calven's supplied written comment was, \"Being told captions exist is the first answer. Being able to see them and the actors is the next one.\""},
+    {"id":"f13","text":"Varden said, \"The text is prepared, but the timing still belongs to the people performing it tonight.\""},
+    {"id":"f14","text":"The company built caption preparation into paid production work rather than asking local volunteers to transcribe each show on arrival."},
+    {"id":"f15","text":"A grant was awarded to cover this tour's captioning budget; funding for future tours has not been secured."},
+    {"id":"f16","text":"Director Omi Braven says portable equipment broadens venue options but adds transport and setup tasks."},
+    {"id":"f17","text":"The record contains no controlled attendance or revenue comparison proving the captions paid for themselves."},
+    {"id":"f18","text":"Captioning does not by itself provide step-free entry, audio description or every other access service a hall might need."},
+    {"id":"f19","text":"Ternlight normally travels with sets designed to fit in one small truck, and the displays shared that transport."},
+    {"id":"f20","text":"The company is collecting venue-specific feedback rather than declaring a single screen arrangement suitable everywhere."}
+  ],
+  "modules": ["domains/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f2","f3","f4","f5","f6","f7","f8","f9","f10","f12","f14","f15","f17","f18"],
+    "forbidden_additions": ["Automatic perfect transcription, 360 new caption users or a proved revenue gain","The grant funds every future tour or captions solve all venue-access needs"],
+    "preserve": ["If quoted: Being told captions exist is the first answer. Being able to see them and the actors is the next one.","If quoted: The text is prepared, but the timing still belongs to the people performing it tonight.","Reusable equipment does not eliminate production-specific preparation and live operation."],
+    "expected_action": "draft"
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-tuning-drone-corridors",
+  "split": "tuning",
+  "operation": "draft",
+  "task": "For this synthetic writing exercise, use the fictional reporting notes to write a newspaper explainer for general readers. Write from this reporting snapshot as of March 20, 2025. Include a headline. Target 450 to 650 words. Follow AP style.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "The Federal Airspace Safety Commission issued Airspace Corridor Rule 14-CR-2025 in March 2025, creating designated altitude corridors for commercial drone deliveries in large U.S. cities."
+    },
+    {
+      "id": "f2",
+      "text": "The rule takes effect September 1, 2025, and is the first permanent framework permitting commercial drones to fly beyond an operator's line of sight in urban airspace."
+    },
+    {
+      "id": "f3",
+      "text": "Under the rule, commercial drones may fly between 200 and 400 feet above ground level within designated corridors."
+    },
+    {
+      "id": "f4",
+      "text": "The rule initially covers 12 cities with populations exceeding 1 million; additional cities may apply for corridor designation beginning January 2026."
+    },
+    {
+      "id": "f5",
+      "text": "Drone operators must hold a Remote Operator Certificate and a corridor-specific operating permit, which costs $500 per year per operator."
+    },
+    {
+      "id": "f6",
+      "text": "The maximum payload for a drone operating under the rule is five pounds."
+    },
+    {
+      "id": "f7",
+      "text": "Commercial operations are restricted to the hours of 6 a.m. to 9 p.m. local time."
+    },
+    {
+      "id": "f8",
+      "text": "Drones may not operate within one mile of hospitals, schools, prisons, or emergency response facilities, regardless of corridor boundaries."
+    },
+    {
+      "id": "f9",
+      "text": "Commission Chair Janet Ortega said: \"These corridors create a predictable, safe operating environment that protects both the public and emerging commercial operators.\""
+    },
+    {
+      "id": "f10",
+      "text": "The rule allows operators to use cameras and sensors necessary for navigation but does not require them to delete footage captured during deliveries."
+    },
+    {
+      "id": "f11",
+      "text": "Alan Thorpe, research director at the fictional Digital Rights Watch advocacy organization, said: \"A drone at 300 feet with a package is also a drone with a camera, and the rule says almost nothing about what operators can record.\""
+    },
+    {
+      "id": "f12",
+      "text": "Three commercial operators — fictional companies Skyward Logistics, QuickDeliver, and AirRoute — have filed applications for corridor operating permits."
+    },
+    {
+      "id": "f13",
+      "text": "The Commercial Drone Alliance said the rule would \"unlock hundreds of millions of dollars in investment in same-day delivery infrastructure.\""
+    },
+    {
+      "id": "f14",
+      "text": "Outside limited temporary waivers, the prior framework required visual line of sight. The new rule provides a permanent route to beyond-visual-line-of-sight operations within designated corridors."
+    },
+    {
+      "id": "f15",
+      "text": "The Commission estimates corridor drone deliveries could reduce short-haul delivery truck trips in covered cities by between 5 and 12 percent if widely adopted."
+    },
+    {
+      "id": "f16",
+      "text": "The rule does not address noise standards; the Commission said noise limits would be addressed in a separate rulemaking expected in 2026."
+    },
+    {
+      "id": "f17",
+      "text": "Corridor boundaries are determined by the Commission in consultation with local aviation authorities; municipalities have 30 days to object before a designation becomes final."
+    },
+    {
+      "id": "f18",
+      "text": "The Commission processed 3,400 public comments during the rulemaking period; the majority came from residents in cities included in the initial 12."
+    },
+    {
+      "id": "f19",
+      "text": "Commercial drone delivery has operated on a limited experimental basis in fewer than a dozen U.S. locations under temporary waivers; the new rule creates a permanent legal framework."
+    },
+    {
+      "id": "f20",
+      "text": "The five-pound limit excludes any payload above that weight, including larger grocery orders and many appliances. It does not categorically exclude a grocery order weighing five pounds or less."
+    },
+    {
+      "id": "f21",
+      "text": "Local air traffic controllers' unions raised concerns that the rule does not address how corridor drone traffic will be monitored and separated from low-altitude manned aircraft."
+    },
+    {
+      "id": "f22",
+      "text": "The rule's enforcement mechanism for operators who fly outside designated corridors or outside permitted hours is a civil penalty of up to $25,000 per violation, according to the commission."
+    }
+  ],
+  "modules": [
+    "domains/press.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f6",
+      "f9",
+      "f10",
+      "f11",
+      "f14"
+    ],
+    "forbidden_additions": [
+      "the rule was blocked by a court",
+      "drones will replace delivery trucks within five years",
+      "Thorpe said the rule should be repealed"
+    ],
+    "preserve": [
+      "These corridors create a predictable, safe operating environment that protects both the public and emerging commercial operators.",
+      "A drone at 300 feet with a package is also a drone with a camera, and the rule says almost nothing about what operators can record."
+    ],
+    "expected_action": "draft"
+  }
+}

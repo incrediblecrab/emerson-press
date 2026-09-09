@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-business-explain-freight-fuel-lag",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic newspaper-writing exercise using fictional reporting notes. Use only the supplied reporting notes. Write from the reporting snapshot as of August 17, 2026. Write a headline and a 450–650-word AP-style newspaper explainer answering why a furniture maker's freight surcharge rose while nearby pump prices were falling.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id":"f1","text":"Willow Splice Furniture's August 2026 shipping invoice from Dovetail Freight carries an 8% fuel surcharge, compared with 5% in July."},
+    {"id":"f2","text":"The underlying freight charge for the compared shipment is unchanged at $1,200."},
+    {"id":"f3","text":"The surcharge is therefore $96 in August and $60 in July, making freight plus surcharge $1,296 and $1,260."},
+    {"id":"f4","text":"The difference is $36; the change from 5% to 8% is three percentage points applied to base freight, not an 8% rise in the entire previous bill."},
+    {"id":"f5","text":"The contract sets each month's surcharge from the previous month's average reading of the fictional North Fen Diesel Index."},
+    {"id":"f6","text":"The August surcharge reflects July's index, while the lower pump prices observed by the furniture maker were from August."},
+    {"id":"f7","text":"The monthly index covers a defined regional group of diesel outlets rather than the single filling station nearest the factory."},
+    {"id":"f8","text":"The index can move differently from an individual carrier's fuel purchases or a particular truck's consumption."},
+    {"id":"f9","text":"The surcharge formula does not separately match a fuel receipt to each customer's shipment."},
+    {"id":"f10","text":"The base freight rate is reviewed quarterly under a separate part of the contract."},
+    {"id":"f11","text":"The compared figures exclude separately agreed unloading or storage services, none of which is priced in the supplied example."},
+    {"id":"f12","text":"Furniture maker Teri Quell says she must quote delivery costs to customers before the final monthly surcharge is known."},
+    {"id":"f13","text":"Quell said, \"My customer wants one delivery price. My carrier's bill arrives with a moving part.\""},
+    {"id":"f14","text":"Carrier manager Oren Brill says the lag gives customers one published surcharge for a whole month rather than changing it with each fill-up."},
+    {"id":"f15","text":"Brill said, \"A monthly rule is easier to quote, but it will not always look like today's pump sign.\""},
+    {"id":"f16","text":"The next surcharge has not been announced, so the observed August pump decline does not establish its exact level."},
+    {"id":"f17","text":"Other customers may have fixed-price or differently indexed freight contracts; this formula is not universal."},
+    {"id":"f18","text":"The carrier has not supplied a complete margin analysis showing whether the surcharge exactly offsets its changing fuel costs."},
+    {"id":"f19","text":"Willow Splice ships assembled furniture on reusable racks and schedules most deliveries in weekly groups."},
+    {"id":"f20","text":"The report supplies no evidence of coordinated freight pricing or a change in the delivered furniture's quality."}
+  ],
+  "modules": ["domains/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1","f2","f3","f4","f5","f6","f7","f8","f10","f11","f16","f17"],
+    "forbidden_additions": ["An 8% increase in the whole old bill or a surcharge calculated from that day's local pump price","A known next-month surcharge or audited exact cost recovery"],
+    "preserve": ["If quoted: My customer wants one delivery price. My carrier's bill arrives with a moving part.","If quoted: A monthly rule is easier to quote, but it will not always look like today's pump sign.","The published formula uses a lagged regional index, not an individual fuel receipt."],
+    "expected_action": "draft"
+  }
+}

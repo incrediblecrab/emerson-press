@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "scholarly-cit-ieee-repeat-reference",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Edit this 55–90-word technical explanation and IEEE list. Renumber by first appearance, reuse the number for a repeated source, and remove the duplicate entry. Bracketed callouts precede punctuation; the venue permits [1, p. 6] for a quotation. Technical-note form: Organization, “Title,” Technical Note identifier, year. Journal form: Initials Surname, “Title,” Journal abbreviation, vol. number, no. number, pp. span, month year. All known fields are supplied; no URLs or DOI values are available. Preserve the literal option name and the condition it expresses rather than generalizing to every import.",
+  "input": "The note says, “A resumed job keeps its original marker” [7, p. 6]. Hailen's article says interrupted imports always keep empty rows [2]. The note also distinguishes a job marker from a row number [9].\n\n[7] Nacre Step Lab, “Queue markers in batch jobs,” Technical Note TN-8, 2023.\n[2] R. Hailen, “Restart flags under interrupted imports,” J. Batch Tools, vol. 3, no. 2, pp. 14–22, May 2024.\n[9] Nacre Step Lab, “Queue markers in batch jobs,” Technical Note TN-8, 2023.",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "Technical note: Nacre Step Lab; Queue markers in batch jobs; Technical Note TN-8; 2023."
+    },
+    {
+      "id": "f2",
+      "text": "On page 6, the note says exactly “A resumed job keeps its original marker” and distinguishes a job marker from a row number."
+    },
+    {
+      "id": "f3",
+      "text": "Journal article: Reni Hailen; Restart flags under interrupted imports; J. Batch Tools; volume 3; number 2; pages 14–22; May 2024."
+    },
+    {
+      "id": "f4",
+      "text": "Hailen's article says empty rows are retained during the described interrupted import only when retain_gap=true is set."
+    }
+  ],
+  "modules": [
+    "domains/technical.md",
+    "domains/citation/ieee.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "An assertion that every interrupted import retains empty rows",
+      "A third reference number for the repeated technical note",
+      "Invented URLs, DOI values, or executed-import verification"
+    ],
+    "preserve": [
+      "A resumed job keeps its original marker",
+      "retain_gap=true",
+      "The note is [1], the article is [2], and the note's later mention remains [1]",
+      "Page 6 and the distinction between markers and row numbers"
+    ],
+    "expected_action": "edit"
+  }
+}

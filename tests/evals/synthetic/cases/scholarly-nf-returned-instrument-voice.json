@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "id": "scholarly-nf-returned-instrument-voice",
+  "split": "tuning",
+  "operation": "edit",
+  "task": "Lightly copyedit this opening of a fictional collections steward's report only if a consequential problem needs repair. Return it unchanged if it is already faithful. The formal parallelism and return/sound contrast are the writer's chosen voice, not defects in themselves. The report distinguishes received objects from unestablished function. Do not promise repair, remove useful uncertainty, or replace this short opening with promotional or academic boilerplate.",
+  "input": "The return of the instrument is not the return of its sound. Our receipt records the wooden case and three loose reeds; it records neither a playable mechanism nor a repair estimate. We can describe what came back. We cannot yet say what, if anything, will play again.",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "The receipt identifies a returned instrument and lists its wooden case and three loose reeds."
+    },
+    {
+      "id": "f2",
+      "text": "The receipt does not certify a playable mechanism."
+    },
+    {
+      "id": "f3",
+      "text": "No repair estimate or evidence about whether the instrument can be made playable is supplied."
+    }
+  ],
+  "modules": ["domains/non-fiction.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3"],
+    "forbidden_additions": [
+      "A repair price, repair promise, or confirmed playable mechanism",
+      "A declaration that the instrument can never play again",
+      "Invented conservation tests or sentimental history"
+    ],
+    "preserve": [
+      "The return of the instrument is not the return of its sound.",
+      "A wooden case and three loose reeds",
+      "The distinction between inventory and functionality",
+      "The formal parallelism and justified uncertainty in the existing opening"
+    ],
+    "expected_action": "no_change"
+  }
+}

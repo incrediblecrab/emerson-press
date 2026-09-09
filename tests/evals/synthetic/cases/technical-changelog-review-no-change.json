@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "technical-changelog-review-no-change",
+  "split": "held_out",
+  "operation": "review",
+  "task": "Review this changelog entry for accuracy against the supplied release facts. Confirm it matches the three documented changes completely and correctly, then return it unchanged if no discrepancy exists.",
+  "input": "v3.1.0 — Added support for compressed archive uploads. Fixed a race condition in the background sync worker. The maximum file size for uploads is now 200 MB.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "v3.1.0 added compressed archive upload support."},
+    {"id": "f2", "text": "A race condition in the background sync worker was fixed in v3.1.0."},
+    {"id": "f3", "text": "The maximum file upload size was increased to 200 MB in v3.1.0."},
+    {"id": "f4", "text": "These three changes are the complete set of changes in v3.1.0."}
+  ],
+  "modules": ["domains/technical.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "An invented change not in the supplied release facts.",
+      "Assignment of any change to a different version number.",
+      "Omission of any of the three documented changes."
+    ],
+    "preserve": [
+      "All three documented changes accurately described.",
+      "Accurate version number v3.1.0.",
+      "Completeness relative to supplied facts: no unacknowledged changes."
+    ],
+    "expected_action": "no_change"
+  }
+}

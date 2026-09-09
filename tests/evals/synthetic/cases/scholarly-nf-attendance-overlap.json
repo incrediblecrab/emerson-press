@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "scholarly-nf-attendance-overlap",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Edit this 75–110-word participation note for fictional Terncoil Print Rooms. Distinguish event attendances from distinct people using the complete overlap information. Briefly explain the corrected total so the public report remains auditable. Do not infer new-visitor status, growth, or community-wide engagement from a single pair of events. All attendance records are synthetic, and no names or private records are needed.",
+  "input": "The Saturday open studio drew 42 people and the Wednesday workshop drew 19, giving us 61 new visitors. Seven people attended both, but overlap does not affect the number of different people. The figures prove that our audience is growing.",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "The Saturday open studio had 42 distinct attendees."
+    },
+    {
+      "id": "f2",
+      "text": "The Wednesday workshop had 19 distinct attendees."
+    },
+    {
+      "id": "f3",
+      "text": "Exactly seven people attended both events; the supplied matching is complete."
+    },
+    {
+      "id": "f4",
+      "text": "Together the events had 61 attendances by 54 distinct people: 42 + 19 − 7 = 54."
+    },
+    {
+      "id": "f5",
+      "text": "The packet supplies no earlier-period comparison or indication of which attendees were first-time visitors."
+    }
+  ],
+  "modules": ["domains/non-fiction.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5"],
+    "forbidden_additions": [
+      "A claim that 61 distinct or new people attended",
+      "Audience growth or a community participation rate without comparison data",
+      "Invented attendance identities, names, or incomplete matching contrary to the packet"
+    ],
+    "preserve": [
+      "42 Saturday attendees, 19 Wednesday attendees, and seven at both",
+      "61 attendances and 54 different people",
+      "The overlap is subtracted once when counting distinct people"
+    ],
+    "expected_action": "edit"
+  }
+}

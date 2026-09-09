@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "scholarly-edu-middle-cartogram-units",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "Draft a 70–100-word explanation for a middle-school geography workbook about this fictional tile cartogram. Readers know grid squares and multiplication but have not encountered a map whose tile count represents households rather than land area. Use the legend to explain both wards' counts and their comparison. Make clear what the drawing cannot establish. The packet's values are exact exercise counts; no population sampling or outside map retrieval is involved.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "The cartogram legend assigns 100 households to every tile."
+    },
+    {
+      "id": "f2",
+      "text": "East Ward has six tiles, representing 600 households."
+    },
+    {
+      "id": "f3",
+      "text": "West Ward has three tiles, representing 300 households."
+    },
+    {
+      "id": "f4",
+      "text": "East Ward has twice as many represented households as West Ward; no geographic areas or household sizes are supplied."
+    }
+  ],
+  "modules": [
+    "domains/non-fiction.md",
+    "domains/education-level/03-middle-school.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "A claim that East Ward occupies twice the land area",
+      "A conversion from households to a number of people without household-size data",
+      "Invented confidence intervals, geographic measurements, or external maps"
+    ],
+    "preserve": [
+      "Each tile represents 100 households",
+      "Six tiles mean 600 households and three mean 300",
+      "The representation encodes households, not geographic size"
+    ],
+    "expected_action": "draft"
+  }
+}

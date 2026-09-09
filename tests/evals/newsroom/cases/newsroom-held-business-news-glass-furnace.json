@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-business-news-glass-furnace",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic newspaper-writing exercise using fictional reporting notes. Use only the supplied reporting notes. Write from the reporting snapshot as of August 3, 2026. Write a headline and a 450–650-word AP-style news update for a general-interest newspaper about Brindle Kiln Glass's furnace conversion and the consequences for workers, customers and the local power system.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id":"f1","text":"Brindle Kiln Glass announced on Monday, Aug. 3, 2026, that it will replace the gas furnace at its Dunmere bottle plant with an electric furnace."},
+    {"id":"f2","text":"The company expects production to stop for six weeks beginning Jan. 11, 2027, while the old furnace is removed."},
+    {"id":"f3","text":"The announced project budget is $16 million, including a $4 million grant from the fictional Fen County Industrial Fund."},
+    {"id":"f4","text":"The remaining $12 million will come from company funds and a bank loan; the loan's interest rate was not disclosed."},
+    {"id":"f5","text":"The plant has 96 production employees, all of whom received written offers for work during the shutdown."},
+    {"id":"f6","text":"The offers assign 68 employees to training, 16 to maintenance work and 12 to a company plant 34 miles away."},
+    {"id":"f7","text":"Base hourly pay would continue under all three assignments, but normal production overtime would not be available."},
+    {"id":"f8","text":"Employees assigned to the other plant would receive a company shuttle rather than mileage reimbursement."},
+    {"id":"f9","text":"Union steward Kori Bell said several employees rely on overtime for household bills; the union has requested a temporary income supplement."},
+    {"id":"f10","text":"The company has not agreed to the supplement and has not reported how many employees accepted their assignments."},
+    {"id":"f11","text":"Plant manager Ansel Pike said the new furnace should allow smaller bottle runs, which the current equipment handles inefficiently."},
+    {"id":"f12","text":"The company has not released a calculation of the new furnace's energy cost per bottle or its emissions."},
+    {"id":"f13","text":"Dunmere Power Cooperative has approved an electrical connection, but a required substation transformer is still on order."},
+    {"id":"f14","text":"The cooperative says the transformer must arrive by December for the announced installation schedule to hold."},
+    {"id":"f15","text":"Bell said, \"Keeping a job and keeping the same paycheck are not quite the same promise.\""},
+    {"id":"f16","text":"Brindle is building bottle inventory for its 23 beverage-company customers and has offered them earlier delivery dates."},
+    {"id":"f17","text":"Customer Leda Marr, owner of Thistle Run Cider, said, \"An early delivery helps only if I can find somewhere to put it.\""},
+    {"id":"f18","text":"Marr's business has rented a storage unit for the shutdown period; she would not disclose the rental cost."},
+    {"id":"f19","text":"The existing furnace began operating in 2004 and has undergone two scheduled rebuilds."},
+    {"id":"f20","text":"The grant requires annual employment reports for three years, but it does not guarantee unchanged overtime or a particular emissions reduction."}
+  ],
+  "modules": ["domains/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1","f2","f3","f5","f6","f7","f10","f12","f14","f16"],
+    "forbidden_additions": ["A guaranteed installation date despite the outstanding transformer","A quantified emissions reduction or unchanged total earnings for every worker"],
+    "preserve": ["If quoted: Keeping a job and keeping the same paycheck are not quite the same promise.","If quoted: An early delivery helps only if I can find somewhere to put it.","Work assignments are offers, not reported acceptances."],
+    "expected_action": "draft"
+  }
+}

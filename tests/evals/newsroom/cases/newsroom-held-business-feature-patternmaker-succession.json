@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-business-feature-patternmaker-succession",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic newspaper-writing exercise using fictional reporting notes. Use only the supplied reporting notes. Write from the reporting snapshot as of September 8, 2026. Write a headline and a 450–650-word AP-style reported feature about Merrin Patterns' succession problem and what a small industrial workshop must preserve when it moves work from wooden patterns into digital files.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id":"f1","text":"An Aug. 4, 2026, workshop note records owner Ila Merrin checking a wooden pump-housing pattern against a paper drawing annotated with handwritten allowances."},
+    {"id":"f2","text":"Merrin Patterns makes patterns that foundries use to form molds for casting replacement pump parts and other industrial components."},
+    {"id":"f3","text":"The forms are not the finished metal parts; dimensions account for later casting and machining requirements."},
+    {"id":"f4","text":"Merrin, who opened the workshop in 1988, plans to reduce her working week from five days to three next year."},
+    {"id":"f5","text":"The business employs two assistants, including Toma Venn, who joined from a general machining job 18 months ago."},
+    {"id":"f6","text":"The workshop holds 120 active customer patterns and a separate shelf of retired patterns kept for reference."},
+    {"id":"f7","text":"Some customer agreements require permission before a pattern or drawing is supplied to an outside scanning service."},
+    {"id":"f8","text":"A pilot scanned 14 permitted patterns; ten could be used with existing written instructions and four needed further annotations."},
+    {"id":"f9","text":"The missing annotations concerned casting allowances and machining references, not simply the visible outside shape."},
+    {"id":"f10","text":"The pilot does not establish that every stored pattern can be reproduced accurately from a scan alone."},
+    {"id":"f11","text":"A quoted $18,000 digitization package includes first-year software access; renewal is quoted separately at $2,000 annually."},
+    {"id":"f12","text":"Customers have not agreed on how much of that cost they will pay through revised orders or storage fees."},
+    {"id":"f13","text":"Merrin said, \"The shape can go into a file. The reason for that extra lip still needs to go with it.\""},
+    {"id":"f14","text":"Venn keeps a job notebook that links customer drawings to changes made after trial castings."},
+    {"id":"f15","text":"Venn said, \"I am not learning a secret by watching once. I am learning which question to ask before cutting.\""},
+    {"id":"f16","text":"Foundry customer Keri Calden says reliable replacement patterns can matter more than speed when maintaining equipment whose original maker no longer supplies parts."},
+    {"id":"f17","text":"Calden has not committed to buying the pattern business or financing all its conversion costs."},
+    {"id":"f18","text":"Merrin says she intends to keep taking orders during the transition rather than announce a closing sale."},
+    {"id":"f19","text":"The workshop occupies two rooms behind a former agricultural dealership, with customer names painted on storage racks."},
+    {"id":"f20","text":"No completed sale, guaranteed successor or measured regionwide shortage of patternmakers is established by this reporting record."}
+  ],
+  "modules": ["domains/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f2","f3","f4","f5","f7","f8","f9","f10","f11","f12","f18"],
+    "forbidden_additions": ["A completed retirement sale or a guaranteed successor","All patterns can be copied from scans alone or the pilot proves a regionwide labor shortage"],
+    "preserve": ["If quoted: The shape can go into a file. The reason for that extra lip still needs to go with it.","If quoted: I am not learning a secret by watching once. I am learning which question to ask before cutting.","Visible geometry and production knowledge are distinct parts of the handover."],
+    "expected_action": "draft"
+  }
+}

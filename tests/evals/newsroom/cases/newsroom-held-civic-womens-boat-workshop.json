@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-civic-womens-boat-workshop",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic exercise using fictional reporting notes. Use only the supplied reporting notes as the fixed record: select, organize and phrase the story without inventing additional reported events, scenes, quotations or reporting activity. Write a headline and a reported feature of roughly 450–650 words in AP style for general newspaper readers about the women-led boat-repair group working in the community shed at Sable Quay. Write from this reporting snapshot as of September 18, 2026.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Sable Quay Boat Shed hosts a women-led group repairing a donated wooden rowing skiff during weekly supervised sessions."},
+    {"id": "f2", "text": "Group lead Hara Senn has professional woodworking experience, while other members bring varied experience and are learning the boat-specific work."},
+    {"id": "f3", "text": "The supplied scene describes members labeling removed fittings and comparing a worn rail with a replacement piece before further work proceeds."},
+    {"id": "f4", "text": "The group keeps a repair notebook so people attending different weeks can see what was assessed, removed or left unresolved."},
+    {"id": "f5", "text": "The donated skiff has not been declared ready for launching or carrying passengers."},
+    {"id": "f6", "text": "A separate condition and launch-readiness review is planned after the repairs rather than assumed from the appearance of the finished wood."},
+    {"id": "f7", "text": "Senn said, \"The question at the bench is what the boat needs next. Everyone should have a chance to understand the answer.\""},
+    {"id": "f8", "text": "Member Elva Rill joined after years of helping organize club events without taking part in the workshop jobs."},
+    {"id": "f9", "text": "Rill said, \"I knew how to get the meeting ready. I wanted to know what was happening on the other side of the shed door.\""},
+    {"id": "f10", "text": "The group uses the shed through an agreement with the local boating association, which also schedules other users."},
+    {"id": "f11", "text": "Limited storage means the group must mark and put away parts so another session can use the work area."},
+    {"id": "f12", "text": "The project received a materials grant, while members contribute session fees toward ordinary shed costs."},
+    {"id": "f13", "text": "The packet does not disclose a full restoration value or claim that the repaired boat will be worth more than the project costs."},
+    {"id": "f14", "text": "Tools are introduced under the shed's supervision arrangements rather than offered for unrestricted use by any visitor."},
+    {"id": "f15", "text": "The group is a community learning project, not a course that automatically awards a professional trade qualification."},
+    {"id": "f16", "text": "Senn has asked members to record uncertainties about older repairs instead of replacing missing history with a confident explanation."},
+    {"id": "f17", "text": "The boat's earlier owner supplied photographs but no complete record of every repair over its life."},
+    {"id": "f18", "text": "The group plans to discuss a shared use for the skiff after it is cleared for service, rather than promise a launch event on a fixed date now."},
+    {"id": "f19", "text": "A chalkboard near the door lists the week's available work and tasks waiting for specialist input."},
+    {"id": "f20", "text": "The boating association says the project has prompted questions about access to future workshop sessions but has not supplied a participation survey."},
+    {"id": "f21", "text": "The packet does not generalize the members' experience to all women or all boating clubs."},
+    {"id": "f22", "text": "The skiff remains owned by the community project rather than becoming a personal boat for the lead instructor."}
+  ],
+  "modules": ["domains/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f6", "f8", "f10", "f15"],
+    "forbidden_additions": ["A launch-ready boat, fixed launch date or awarded professional qualification.", "A complete repair history or financial return not supplied.", "Generalizations about all women or all boating organizations."],
+    "preserve": ["The members' distinct experience and access to hands-on understanding.", "A supervised shared repair project with unresolved technical work.", "Exact quotation wording and attribution when quotations are used."],
+    "expected_action": "draft"
+  }
+}

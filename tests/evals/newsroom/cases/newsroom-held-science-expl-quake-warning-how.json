@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-science-expl-quake-warning-how",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic writing exercise. Using these fictional reporting notes, write a newspaper explainer for general readers answering the question: How do earthquake early warning systems work, and what can and can't they do? Draw only on the supplied notes; do not invent additional reported events, scenes, or quotations. Write from this reporting snapshot as of September 10, 2024. Include a headline. Target 450 to 650 words. Follow AP style.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "Earthquake early warning systems detect the first seismic waves from a fault rupture and calculate predicted shaking intensity at distant locations before destructive shaking arrives."
+    },
+    {
+      "id": "f2",
+      "text": "Earthquakes produce two types of seismic waves: P-waves, which travel faster but cause less damage, and S-waves, which travel slower but carry most of the destructive shaking energy."
+    },
+    {
+      "id": "f3",
+      "text": "Early warning systems detect P-waves and use them to estimate the earthquake's magnitude and location; the warning is then transmitted electrically, which travels faster than the slower S-waves."
+    },
+    {
+      "id": "f4",
+      "text": "The time between a warning and the arrival of damaging shaking can range from a few seconds in nearby areas to more than a minute for locations far from the epicenter."
+    },
+    {
+      "id": "f5",
+      "text": "Areas near the epicenter receive no warning because S-waves arrive before the system can process the P-wave data and transmit an alert \u2014 a limitation called the 'blind zone.'"
+    },
+    {
+      "id": "f6",
+      "text": "Warning times of even five to ten seconds allow automated systems to slow trains, open fire station doors, stop industrial equipment, and alert surgeons to pause procedures."
+    },
+    {
+      "id": "f7",
+      "text": "The ShakeAlert system, operated by the United States Geological Survey, covers California, Oregon, and Washington state using about 1,500 seismic sensors."
+    },
+    {
+      "id": "f8",
+      "text": "Japan's early warning system, which dates to the early 2000s, has the most extensive operational experience; it sent an alert approximately 90 seconds before strong shaking reached a major population center during a catastrophic magnitude 9.0 subduction earthquake, giving residents and transit operators time to take protective action."
+    },
+    {
+      "id": "f9",
+      "text": "Seismologist Dr. Kwame Osei of Pacific Basin University said: \"The goal is not to prevent an earthquake. It is to give automated systems and prepared individuals a window to take a protective action.\""
+    },
+    {
+      "id": "f10",
+      "text": "False alerts \u2014 warnings sent for events that do not produce damaging shaking \u2014 erode public trust over time; systems are designed to minimize false alarms, but there is a tradeoff with sensitivity."
+    },
+    {
+      "id": "f11",
+      "text": "Cell phone emergency alert systems can deliver warnings to millions of people simultaneously without requiring a separate app; the alert sounds regardless of whether the phone is silenced."
+    },
+    {
+      "id": "f12",
+      "text": "Sensor density is critical: more sensors reduce the blind zone and improve magnitude estimation accuracy; adding sensors also increases maintenance cost."
+    },
+    {
+      "id": "f13",
+      "text": "Early warning cannot predict an earthquake before it starts; the warning is issued only after rupture has begun."
+    },
+    {
+      "id": "f14",
+      "text": "The most effective individual response upon receiving an alert is drop, cover, and hold on under a sturdy surface \u2014 the window may be too short for evacuation."
+    },
+    {
+      "id": "f15",
+      "text": "Dr. Osei said research is ongoing to use new machine-learning methods to estimate final magnitude from the first half-second of P-wave data, which would extend warning times."
+    },
+    {
+      "id": "f16",
+      "text": "High-rise buildings with longer natural sway periods experience different shaking dynamics than low buildings; early warning systems can in principle trigger building-specific responses if the structure is instrumented."
+    },
+    {
+      "id": "f17",
+      "text": "Magnitude estimates improve as the rupture progresses and more sensors report data; an initial alert may be updated within seconds."
+    },
+    {
+      "id": "f18",
+      "text": "Countries without dense sensor networks \u2014 much of Latin America, Africa, and Southeast Asia \u2014 lack functional early warning coverage despite high seismic risk."
+    },
+    {
+      "id": "f19",
+      "text": "The cost of the ShakeAlert network, including sensors, software, and integration with emergency alert systems, was approximately $460 million as of 2023."
+    },
+    {
+      "id": "f20",
+      "text": "Dr. Osei said the practical limit on warning time is physics, not technology: in a megathrust earthquake directly beneath a city, even perfect detection would provide no warning to residents above the fault."
+    }
+  ],
+  "modules": [
+    "domains/press.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f9",
+      "f10",
+      "f13",
+      "f14"
+    ],
+    "forbidden_additions": [
+      "a claim that early warning systems predict earthquakes before they start",
+      "a warning time stated as guaranteed for any location",
+      "a Japan-specific alert time different from 90 seconds"
+    ],
+    "preserve": [
+      "The goal is not to prevent an earthquake. It is to give automated systems and prepared individuals a window to take a protective action."
+    ],
+    "expected_action": "draft"
+  }
+}

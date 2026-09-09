@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "id": "risk-mkt-urgency-removal",
+  "split": "tuning",
+  "operation": "edit",
+  "task": "Edit this fictional multi-section promotional email for a software product. Remove all false-urgency and false-scarcity language not supported by the supplied facts. Preserve accurate feature descriptions, the demo URL, and a functional call to action. Do not add a replacement urgency mechanism.",
+  "input": "Subject: Limited spots available—don’t miss out!\n\nHi [Name],\n\nAct now—this offer expires this Friday! TaskHaven is the last project tool you will ever need. Don’t be left behind while your competitors get ahead. Spots are filling fast and we can only take 20 new customers this month.\n\nHere’s what you’ll get:\n• Automated reminders sent to task owners 24 hours before due dates\n• Shared team boards to track progress in real time\n• Tag-based filtering by project or priority so nothing slips through\n\nBut you have to act immediately. This founding price won’t last. Once those 20 slots are gone, they’re gone. Book your demo before it’s too late at https://example.org/taskhaven/demo.\n\nDon’t wait—your competitors aren’t.\n\nThe TaskHaven Team",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "The fictional product is TaskHaven."
+    },
+    {
+      "id": "f2",
+      "text": "TaskHaven provides automated reminders sent to task owners 24 hours before a due date."
+    },
+    {
+      "id": "f3",
+      "text": "TaskHaven provides shared team boards for tracking task status."
+    },
+    {
+      "id": "f4",
+      "text": "TaskHaven supports tag-based filtering by project or priority."
+    },
+    {
+      "id": "f5",
+      "text": "A demo can be requested at https://example.org/taskhaven/demo."
+    },
+    {
+      "id": "f6",
+      "text": "The supplied facts include no expiring offer, slot limit, founding price, or competitive positioning claim."
+    }
+  ],
+  "modules": [
+    "domains/marketing.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6"
+    ],
+    "forbidden_additions": [
+      "A replacement expiry date or scarcity mechanism not in the facts.",
+      "A competitive claim not in the facts.",
+      "A founding price or discount not in the facts."
+    ],
+    "preserve": [
+      "The three feature descriptions: 24-hour reminders, shared team boards, and tag-based filtering.",
+      "The demo URL: https://example.org/taskhaven/demo.",
+      "Removal of the Friday deadline, 20-slot limit, founding-price claim, and competitor-urgency language."
+    ],
+    "expected_action": "edit"
+  }
+}

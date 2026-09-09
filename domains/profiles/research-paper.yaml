@@ -1,0 +1,7 @@
+name: research-paper
+description: An explicitly requested graduate research-writing task using APA, not merely a graduate reader.
+modules:
+  - domains/non-fiction.md
+  - domains/citation/apa7.md
+  - domains/education-level/06-graduate.md
+safeguards: []

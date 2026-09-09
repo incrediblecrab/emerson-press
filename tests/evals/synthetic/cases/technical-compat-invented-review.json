@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "technical-compat-invented-review",
+  "split": "held_out",
+  "operation": "review",
+  "task": "Review this compatibility claim in a fictional library's documentation for claims the supplied packet does not support. The packet's README states a different Python version requirement, and no operating system test results appear in the packet.",
+  "input": "The library is compatible with Python 3.8 and above, including 3.12. It has been tested on Linux, macOS, and Windows.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The supplied README states Python 3.10 or later is required."},
+    {"id": "f2", "text": "No compatibility matrix or test results appear in the supplied packet."},
+    {"id": "f3", "text": "The README does not mention operating system support."}
+  ],
+  "modules": ["domains/technical.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3"],
+    "forbidden_additions": [
+      "Acceptance of Python 3.8 compatibility when the packet says 3.10+.",
+      "Acceptance of OS testing claims without evidence in the packet.",
+      "An invented test report citation."
+    ],
+    "preserve": [
+      "Python 3.10+ requirement as stated in the supplied README.",
+      "Absence of OS-compatibility evidence in the packet.",
+      "Review notes that distinguish what is documented from what is claimed."
+    ],
+    "expected_action": "flag_missing_evidence"
+  }
+}

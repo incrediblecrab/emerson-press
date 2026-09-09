@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-science-dam-structural-warning",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic writing exercise. Using these fictional reporting notes, write a newspaper news story for general readers. Draw only on the supplied notes; do not invent additional reported events, scenes, or quotations. Write from this reporting snapshot as of August 5, 2024. Include a headline. Target 450 to 650 words. Follow AP style.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "Federal dam safety engineers issued a Level 2 structural concern designation for the Harlan Reservoir Dam on August 5, 2024, requiring accelerated monitoring and a remediation plan within 18 months."
+    },
+    {
+      "id": "f2",
+      "text": "The Harlan Reservoir Dam was constructed in 1958 and is owned and operated by the Cascade Valley Water Authority."
+    },
+    {
+      "id": "f3",
+      "text": "A structural assessment found the dam's concrete is deteriorating at a rate of 2.4 millimeters per year, a rate that has increased from 1.1 millimeters per year documented in a 2014 study."
+    },
+    {
+      "id": "f4",
+      "text": "At the current rate, engineers estimate the dam would reach a threshold requiring emergency intervention within 12 to 18 years without remediation."
+    },
+    {
+      "id": "f5",
+      "text": "The dam's downstream inundation zone encompasses 140,000 people across three counties."
+    },
+    {
+      "id": "f6",
+      "text": "Cascade Valley Water Authority director Keith Obi said the authority accepts the designation and has commissioned a full remediation design study, but noted that a Level 2 designation does not indicate imminent failure risk."
+    },
+    {
+      "id": "f7",
+      "text": "Structural engineer Dr. Pamela Johansson, who conducted the assessment, said: \"The dam is not in danger of failing today or next year. But the trajectory of deterioration is clear, and addressing it will cost far less now than after further degradation.\""
+    },
+    {
+      "id": "f8",
+      "text": "Preliminary cost estimates for full remediation, including concrete resurfacing and drainage system upgrades, range from $620 million to $740 million."
+    },
+    {
+      "id": "f9",
+      "text": "The Harlan Reservoir supplies approximately 28% of drinking water for a metropolitan area with 800,000 residents."
+    },
+    {
+      "id": "f10",
+      "text": "The reservoir also irrigates 180,000 acres of agricultural land in Harlan County."
+    },
+    {
+      "id": "f11",
+      "text": "Federal emergency action plans for the dam would require evacuation of portions of the downstream zone within six hours of an imminent failure determination."
+    },
+    {
+      "id": "f12",
+      "text": "The dam passed its most recent comprehensive federal safety inspection in 2021 with a satisfactory rating, which engineers said was based on conditions at that time and predates the updated deterioration rate data."
+    },
+    {
+      "id": "f13",
+      "text": "Level 2 is the second of three concern levels under the federal dam safety framework; Level 3 requires immediate emergency action."
+    },
+    {
+      "id": "f14",
+      "text": "Local officials in two downstream counties said they would review and update their emergency evacuation plans in light of the designation."
+    },
+    {
+      "id": "f15",
+      "text": "The authority has $80 million in reserve funds available for immediate monitoring upgrades; the full remediation would require bonding or federal assistance."
+    },
+    {
+      "id": "f16",
+      "text": "The concrete deterioration is attributed primarily to alkali-silica reaction, a chemical process in which silica in the aggregate reacts with the cement's alkaline compounds over time."
+    },
+    {
+      "id": "f17",
+      "text": "Harlan Dam is classified as a high-hazard potential structure because failure would result in probable loss of human life."
+    },
+    {
+      "id": "f18",
+      "text": "There are approximately 1,200 high-hazard-potential dams in the United States that are more than 60 years old, according to the National Dam Safety Program's most recent data."
+    },
+    {
+      "id": "f19",
+      "text": "A Level 2 designation requires the owner to submit progress reports on the remediation plan to federal engineers every 90 days."
+    },
+    {
+      "id": "f20",
+      "text": "The authority said it plans to hold public meetings in affected counties within 60 days to explain the designation and remediation timeline."
+    }
+  ],
+  "modules": [
+    "domains/press.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f7",
+      "f8",
+      "f13",
+      "f17"
+    ],
+    "forbidden_additions": [
+      "a claim that the dam is at risk of imminent failure",
+      "an evacuation order already issued",
+      "a cost figure outside the range in the notes"
+    ],
+    "preserve": [
+      "The dam is not in danger of failing today or next year. But the trajectory of deterioration is clear, and addressing it will cost far less now than after further degradation."
+    ],
+    "expected_action": "draft"
+  }
+}

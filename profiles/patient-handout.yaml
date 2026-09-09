@@ -1,5 +1,0 @@
-name: patient-handout
-description: Patient-facing information; specify actual reader and access needs without a grade proxy.
-modules:
-  - domain/medical.md
-safeguards: []

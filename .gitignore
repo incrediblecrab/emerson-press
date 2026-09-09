@@ -3,10 +3,10 @@ dist/
 node_modules/
 .venv/
 __pycache__/
-evals/runs/
+tests/evals/runs/
 
 # Working extraction from copyrighted sources (AP Stylebook, WIDA standards).
 # Restated, page-cited, and far more extensive than the published notes in
-# sources/. It must never be committed. The notes describe this tree as living
+# tests/sources/. It must never be committed. The notes describe this tree as living
 # outside the repository; until that is true, this line is what makes it safe.
 raw-data/

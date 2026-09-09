@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "id": "scholarly-edu-high-absence-in-tray",
+  "split": "held_out",
+  "operation": "review",
+  "task": "Review this high-school fossil-evidence response and return it unchanged if it is sound. The class can recognize shell and leaf impressions but has not been given a collection method for this exercise. The writer's distinction between a tray and a former habitat is the point of the assignment. Preserve useful qualification and the formal first-person conclusion; do not demand a definitive ecological claim or invented numerical uncertainty.",
+  "input": "The tray contains three shell impressions and no leaf impressions. That absence describes this tray, not the whole former habitat. Since the exercise gives us no account of how the tray was collected, I cannot decide whether leaves were absent there or simply absent from the material we received.",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "The classroom tray contains three shell impressions and no leaf impressions."
+    },
+    {
+      "id": "f2",
+      "text": "The packet supplies no collection method, selection criteria, or fuller record of the former habitat."
+    },
+    {
+      "id": "f3",
+      "text": "The absence of leaf impressions from this tray does not establish whether leaves were absent from the former habitat."
+    }
+  ],
+  "modules": [
+    "domains/non-fiction.md",
+    "domains/education-level/04-high-school.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3"],
+    "forbidden_additions": [
+      "A definite leaf-free habitat or invented collection procedure",
+      "A confidence interval or population estimate without a sampling basis",
+      "A demand that justified uncertainty be removed to sound more authoritative"
+    ],
+    "preserve": [
+      "Three shell impressions and no leaf impressions in the tray",
+      "The distinction between absence in the supplied material and absence in a habitat",
+      "The existing formal first-person qualification"
+    ],
+    "expected_action": "no_change"
+  }
+}

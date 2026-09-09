@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "technical-config-options-draft",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "Draft a configuration reference section for a fictional server application. Document all six supplied options with their types, defaults, and valid ranges or enum values. Include the environment-variable override pattern and the precedence rule. Use only the supplied facts; do not infer undocumented options or defaults. Target 400–600 words.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "pool_size: integer, default 10, valid range 1 to 100."
+    },
+    {
+      "id": "f2",
+      "text": "pool_timeout: integer (seconds), default 30, valid range 1 to 300."
+    },
+    {
+      "id": "f3",
+      "text": "pool_idle_timeout: integer (seconds), default 600, valid range 0 to 3600; a value of 0 disables idle timeout."
+    },
+    {
+      "id": "f4",
+      "text": "max_retries: integer, default 3, valid range 0 to 10; a value of 0 disables retries."
+    },
+    {
+      "id": "f5",
+      "text": "retry_delay: float (seconds), default 1.0, valid range 0.1 to 60.0."
+    },
+    {
+      "id": "f6",
+      "text": "log_level: string enum, valid values are debug, info, warn, and error; default is info."
+    },
+    {
+      "id": "f7",
+      "text": "All six options can be overridden by an environment variable using the prefix NEXASERVER_ followed by the uppercase option name (for example, NEXASERVER_POOL_SIZE=20)."
+    },
+    {
+      "id": "f8",
+      "text": "Environment variable values override configuration file values when both are present."
+    },
+    {
+      "id": "f9",
+      "text": "The configuration file is in TOML format."
+    },
+    {
+      "id": "f10",
+      "text": "These six options are the only ones documented in the supplied packet."
+    }
+  ],
+  "modules": [
+    "domains/technical.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f7",
+      "f8",
+      "f9",
+      "f10"
+    ],
+    "forbidden_additions": [
+      "An invented option not in the supplied facts.",
+      "A default or range that differs from the facts.",
+      "A precedence order other than environment variables overriding configuration file.",
+      "Omission of the zero-disables semantics for pool_idle_timeout or max_retries."
+    ],
+    "preserve": [
+      "All six options with correct types, defaults, and ranges or enums.",
+      "Zero-disables-idle-timeout and zero-disables-retries notes.",
+      "NEXASERVER_ environment variable prefix and override precedence.",
+      "TOML format for the configuration file."
+    ],
+    "expected_action": "draft"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-business-news-four-day-rota",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic newspaper-writing exercise using fictional reporting notes. Use only the supplied reporting notes. Write from the reporting snapshot as of August 24, 2026. Write a headline and a 450–650-word AP-style newspaper news update on the next phase of Hallow Reed Wholesale's workweek experiment and how it separates employee schedules from customer opening days.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id":"f1","text":"Hallow Reed Wholesale announced Monday, Aug. 24, 2026, that its service counter will reopen on Fridays while many employees retain four-day schedules."},
+    {"id":"f2","text":"The new rotating arrangement begins Sept. 14 and is scheduled for review after six months."},
+    {"id":"f3","text":"A 12-week trial ran from Monday, March 16, 2026, through Friday, June 5, 2026, with the counter closed on Fridays."},
+    {"id":"f4","text":"Eighty participating employees worked four ten-hour days instead of five eight-hour days, with unchanged base weekly pay."},
+    {"id":"f5","text":"Under the new plan, employees will rotate Monday or Friday as their nonworking day so the counter can operate five days."},
+    {"id":"f6","text":"Employees who cannot work ten-hour days may request five eight-hour shifts; management has not published approval numbers."},
+    {"id":"f7","text":"Average weekly order volume during the trial was 5,400, compared with 5,000 in the preceding 12 weeks, an 8% increase."},
+    {"id":"f8","text":"Product mix and seasonal demand differed between those periods, so the volume comparison does not isolate a schedule effect."},
+    {"id":"f9","text":"Average elapsed time from order receipt to dispatch rose from 1.2 calendar days before the trial to 1.8 calendar days during it, according to the company's order log."},
+    {"id":"f10","text":"Customer-service logs recorded 116 Friday collection requests that had to be redirected to another day."},
+    {"id":"f11","text":"The logs do not show how many different customers made those requests or how many bought elsewhere."},
+    {"id":"f12","text":"Warehouse worker Neri Gall said the longer shifts suited his commuting arrangement but conflicted with some colleagues' evening commitments."},
+    {"id":"f13","text":"Gall said, \"A day off is useful. So is being able to get home before the evening is gone.\""},
+    {"id":"f14","text":"Plumbing contractor Osa Keene said Friday collections often supply jobs that cannot wait until Monday."},
+    {"id":"f15","text":"Operations chief Torin Brack said, \"Four days for a worker does not have to mean four days for the customer.\""},
+    {"id":"f16","text":"The wholesaler will add a second supervisor to the rotating counter roster without announcing new warehouse positions."},
+    {"id":"f17","text":"The company has not released comparable absence, overtime, profit or employee-retention figures for the trial."},
+    {"id":"f18","text":"The trial covered the wholesale depot, not the company's separate weekend retail outlet."},
+    {"id":"f19","text":"The depot distributes plumbing and electrical supplies from a building expanded in 2017."},
+    {"id":"f20","text":"No permanent companywide workweek policy has been adopted beyond the announced six-month arrangement."}
+  ],
+  "modules": ["domains/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1","f2","f4","f5","f6","f7","f8","f9","f10","f17","f20"],
+    "forbidden_additions": ["The company abandons all four-day schedules or cuts the 40-hour base week","A causal productivity, profit or retention improvement established by the trial"],
+    "preserve": ["If quoted: A day off is useful. So is being able to get home before the evening is gone.","If quoted: Four days for a worker does not have to mean four days for the customer.","Order volume rose 8%, while average dispatch time also increased."],
+    "expected_action": "draft"
+  }
+}

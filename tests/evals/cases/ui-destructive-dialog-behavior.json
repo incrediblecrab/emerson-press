@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "id": "ui-destructive-dialog-behavior",
+  "split": "tuning",
+  "operation": "edit",
+  "task": "Edit the wording and control annotations for this fictional macOS application's deletion dialog. Include a title, body, action labels, initial-focus annotation, and keyboard-behavior annotation. Match the explicitly supplied implementation, including no default action; do not infer universal platform behavior. Use clear accessible wording and do not weaken the safeguard against accidental deletion.",
+  "input": "Title: Remove saved report?\nBody: This will delete the saved report. It can be restored later.\nPrimary button: Delete\nSecondary button: Keep report\nKeyboard: Return deletes; Escape closes.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The action permanently deletes one saved report from the application."},
+    {"id": "f2", "text": "The application has no undo or restore route for this deletion."},
+    {"id": "f3", "text": "Previously downloaded exports are not affected."},
+    {"id": "f4", "text": "This dialog initially places keyboard focus on its message, not on an action button."},
+    {"id": "f5", "text": "This dialog has no default action button."},
+    {"id": "f6", "text": "Pressing Return at the dialog's initial focus does not activate either action."},
+    {"id": "f7", "text": "Pressing Escape dismisses this dialog without deleting the report."},
+    {"id": "f8", "text": "Deletion requires navigating to and explicitly activating the Delete report button."}
+  ],
+  "modules": ["domains/general.md", "domains/user-interface/applications.md", "domains/user-interface/apple-hig.md", "domains/user-interface/accessibility.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f6", "f7", "f8"],
+    "forbidden_additions": [
+      "A default destructive action or deletion triggered by Return at initial focus.",
+      "An undo, restore, or export-deletion consequence contrary to the supplied implementation.",
+      "A universal claim that Return or Escape behaves this way in every macOS dialog.",
+      "Removal of the explicit activation requirement or a claim that the editor tested the interface."
+    ],
+    "preserve": [
+      "The safe no-default behavior of this particular implementation.",
+      "Permanent deletion distinguished from unaffected downloaded exports.",
+      "A clear nondeleting exit and descriptive action labels.",
+      "Behavior annotations that can be checked against the supplied facts rather than platform assumptions."
+    ],
+    "expected_action": "edit"
+  }
+}

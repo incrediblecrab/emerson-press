@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-civic-playground-surface-choice",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic exercise using fictional reporting notes. Use only the supplied reporting notes as the fixed record: select, organize and phrase the story without inventing additional reported events, scenes, quotations or reporting activity. Write a headline and an explainer of roughly 450–650 words in AP style for general newspaper readers about the surface options being considered for Maple Strand's main playground. Write from this reporting snapshot as of September 18, 2026.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Maple Strand parks committee is comparing two surface options while preparing a refurbishment plan for its main playground."},
+    {"id": "f2", "text": "The options are a renewed engineered wood-fiber surface and a bonded rubber surface, each with associated drainage work in the supplied estimates."},
+    {"id": "f3", "text": "The committee's preliminary design estimates put the wood-fiber option at $160,000 and the rubber option at $240,000 on the same stated project scope."},
+    {"id": "f4", "text": "Neither estimate is a signed construction contract, and the committee has not selected the final option."},
+    {"id": "f5", "text": "The existing loose surface has shifted at busy entry points, according to the city's maintenance inspections."},
+    {"id": "f6", "text": "The inspections identify maintenance and drainage problems at this site rather than establish that every wood-fiber playground is inaccessible."},
+    {"id": "f7", "text": "The proposed design includes a connected route from the gate to several play activities instead of evaluating only the surface immediately beneath equipment."},
+    {"id": "f8", "text": "Parks designer Nella Voss said, \"The drawing has to show where a child and the person with them can go together.\""},
+    {"id": "f9", "text": "A parents group asked the committee to assess shade and places to rest as part of the route, not treat surface material as the only access issue."},
+    {"id": "f10", "text": "Group member Evin Tare said, \"There are days when the bench and the shaded path decide how long we can stay.\""},
+    {"id": "f11", "text": "The city has not supplied comparable temperature measurements for the two proposed surfaces at this playground."},
+    {"id": "f12", "text": "The supplier information describes different maintenance tasks for the materials, including replenishing loose material or repairing damaged bonded sections."},
+    {"id": "f13", "text": "The estimates do not contain a complete lifetime cost comparison for those maintenance tasks."},
+    {"id": "f14", "text": "The committee will compare installation cost, expected maintenance, drainage and route usability before making its recommendation."},
+    {"id": "f15", "text": "The planned refurbishment does not replace every piece of play equipment or guarantee that each activity is usable in the same way by every visitor."},
+    {"id": "f16", "text": "An access group will review the proposed routes with the design team before procurement."},
+    {"id": "f17", "text": "The playground will need to close during surface installation, but no final closure dates have been announced."},
+    {"id": "f18", "text": "The adjacent grass field is outside the surface contract and is not an equivalent replacement for every playground activity."},
+    {"id": "f19", "text": "The committee's papers retain a record of previous repairs so the decision can consider recurring problem areas."},
+    {"id": "f20", "text": "Some donated benches can be moved within the site, while others require new foundations if relocated."},
+    {"id": "f21", "text": "The packet contains no material-specific health finding or claim that either option eliminates injury risk."},
+    {"id": "f22", "text": "A funding decision will follow the committee's recommendation; the larger preliminary price has not already been committed."}
+  ],
+  "modules": ["domains/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f7", "f13", "f15"],
+    "forbidden_additions": ["A selected surface, signed contract or final closure dates.", "Universal material safety, temperature or accessibility conclusions.", "A complete lifetime-cost result or replacement of all play equipment."],
+    "preserve": ["Comparable project estimates and the distinction between initial and ongoing costs.", "Whole routes, shade and resting places as part of the decision.", "Exact quotation wording and attribution when quotations are used."],
+    "expected_action": "draft"
+  }
+}

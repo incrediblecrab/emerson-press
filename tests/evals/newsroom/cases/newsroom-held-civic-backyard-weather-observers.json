@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-civic-backyard-weather-observers",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic exercise using fictional reporting notes. Use only the supplied reporting notes as the fixed record: select, organize and phrase the story without inventing additional reported events, scenes, quotations or reporting activity. Write a headline and a reported feature of roughly 450–650 words in AP style for general newspaper readers about the neighborhood weather observers comparing records around Harrowmere. Write from this reporting snapshot as of September 18, 2026.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Harrowmere Weather Circle brings together residents who keep small weather instruments at homes, gardens and a community allotment."},
+    {"id": "f2", "text": "The circle's monthly meeting compares observations and the circumstances of recording them rather than issuing an official public forecast."},
+    {"id": "f3", "text": "Observer Pella Dorne checks a rain gauge at a consistent morning time and writes the date before emptying it."},
+    {"id": "f4", "text": "The supplied scene describes Dorne removing a leaf from the gauge's rim and noting the obstruction beside that day's entry."},
+    {"id": "f5", "text": "Members record where instruments are placed because a wall, tree or paved surface can affect what a particular instrument experiences."},
+    {"id": "f6", "text": "Dorne said, \"The note about the leaf belongs beside the number. Otherwise I will trust the number more than I should when I read it next winter.\""},
+    {"id": "f7", "text": "The group does not treat different readings from differently placed instruments as automatic proof that one neighborhood has a different long-term climate."},
+    {"id": "f8", "text": "Retired technician Orin Saye helps members compare their recording routines and identify maintenance questions."},
+    {"id": "f9", "text": "Saye said, \"A row of figures gets more useful when somebody can tell you how each one arrived on the page.\""},
+    {"id": "f10", "text": "The circle's instruments are not all identical and have not all undergone the same calibration process."},
+    {"id": "f11", "text": "The group keeps missing readings blank rather than estimate them from a nearby member's record."},
+    {"id": "f12", "text": "A member's absence can produce a gap in the record even when the instrument itself continues operating."},
+    {"id": "f13", "text": "The circle shares selected dated observations with a regional community-science project that applies its own acceptance checks."},
+    {"id": "f14", "text": "Submission to that project does not mean every observation is accepted into its final dataset."},
+    {"id": "f15", "text": "The packet contains no new temperature record, climate-trend estimate or verified forecast-accuracy result."},
+    {"id": "f16", "text": "The group's records include accounts of frost timing and heavy rain that members use to compare particular gardening seasons."},
+    {"id": "f17", "text": "Those personal comparisons are not supplied as advice predicting the next season's weather."},
+    {"id": "f18", "text": "Members bring paper notebooks as well as downloads from newer instruments, and the meeting makes room for both."},
+    {"id": "f19", "text": "An older notebook includes a sketch showing where a greenhouse stood before its owner's instrument was moved."},
+    {"id": "f20", "text": "The circle plans an exhibition of recording practices at the community center rather than a live emergency-warning display."},
+    {"id": "f21", "text": "Official weather alerts remain separate from the circle's voluntary observations and social-media updates."},
+    {"id": "f22", "text": "Members pay for their own instruments, while the community center provides the monthly meeting room without charge."}
+  ],
+  "modules": ["domains/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f10", "f11", "f13", "f21"],
+    "forbidden_additions": ["An official forecast, emergency alert, climate trend or new verified weather record.", "Uniform calibration or automatic acceptance into the regional dataset.", "Invented readings in missing periods."],
+    "preserve": ["The observers' routines and notes as part of the meaning of their measurements.", "The difference between local voluntary records and broader scientific or warning functions.", "Exact quotation wording and attribution when quotations are used."],
+    "expected_action": "draft"
+  }
+}

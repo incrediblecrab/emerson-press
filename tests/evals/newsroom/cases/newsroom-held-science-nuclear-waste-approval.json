@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-science-nuclear-waste-approval",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic writing exercise. Using these fictional reporting notes, write a newspaper news story for general readers. Draw only on the supplied notes; do not invent additional reported events, scenes, or quotations. Write from this reporting snapshot as of April 3, 2025. Include a headline. Target 450 to 650 words. Follow AP style.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "The Nuclear Regulatory Authority granted a construction and operating license on April 3, 2025, for a permanent deep geological repository for spent nuclear fuel and high-level radioactive waste in the Ashford Basin of southern Nevada."
+    },
+    {
+      "id": "f2",
+      "text": "The approval ends a regulatory process that began in 1983, making it the longest-running major infrastructure licensing proceeding in U.S. history."
+    },
+    {
+      "id": "f3",
+      "text": "The repository is designed to hold 77,000 metric tons of heavy metal, roughly the volume of spent nuclear fuel accumulated at U.S. reactors since commercial nuclear power began in the 1950s."
+    },
+    {
+      "id": "f4",
+      "text": "Waste would be placed 300 meters below the desert surface in a volcanic tuff formation that scientists assessed as geologically stable for at least 100,000 years."
+    },
+    {
+      "id": "f5",
+      "text": "NRA chair William Sokol said: \"The scientific case for this site has been sustained over four decades of study. The question was never geology \u2014 it was politics.\""
+    },
+    {
+      "id": "f6",
+      "text": "Nevada Governor Diana Farr called the approval an act of federal overreach, saying the state had never consented to serve as the nation's nuclear waste dump and would pursue legal challenges."
+    },
+    {
+      "id": "f7",
+      "text": "The federal government currently stores spent fuel in temporary dry casks at 77 reactor sites across 33 states; that arrangement was intended as a short-term measure when introduced in the 1980s."
+    },
+    {
+      "id": "f8",
+      "text": "The repository is projected to cost $38 billion to construct and operate over its licensed lifetime; the funds come from a federal nuclear waste trust fund financed by utility ratepayers since 1983."
+    },
+    {
+      "id": "f9",
+      "text": "Construction is expected to begin in 2026, with the facility accepting the first waste shipments by 2032."
+    },
+    {
+      "id": "f10",
+      "text": "Governor Farr and Nevada's congressional delegation argued that waste transport to the site \u2014 involving thousands of rail and truck shipments \u2014 poses unacceptable risk along transport corridors through populated areas."
+    },
+    {
+      "id": "f11",
+      "text": "The license requires waste transport only in certified containers that meet a standard set by the International Atomic Energy Agency."
+    },
+    {
+      "id": "f12",
+      "text": "Two indigenous nations with treaty claims to land near the proposed site formally objected during the licensing process; their petitions for consultation were acknowledged but not granted standing to block approval."
+    },
+    {
+      "id": "f13",
+      "text": "Spent nuclear fuel contains uranium, plutonium, and fission products that remain hazardous on timescales ranging from decades to hundreds of thousands of years."
+    },
+    {
+      "id": "f14",
+      "text": "Finland opened the world's first operating deep geological repository for high-level nuclear waste in 2025; Sweden's is under construction."
+    },
+    {
+      "id": "f15",
+      "text": "The nuclear waste trust fund held approximately $44 billion as of 2024, more than the project's current cost estimate."
+    },
+    {
+      "id": "f16",
+      "text": "NRA's approval follows a parallel federal court ruling in 2023 that dismissed the most recent state legal challenge to the licensing process."
+    },
+    {
+      "id": "f17",
+      "text": "Critics of the site include several national environmental organizations that argue the volcanic tuff geology has not been adequately modeled for water infiltration over long time periods."
+    },
+    {
+      "id": "f18",
+      "text": "Supporters note that a permanent repository would allow reactor site dry cask storage to be consolidated, reducing the number of geographic locations where waste is kept."
+    },
+    {
+      "id": "f19",
+      "text": "The repository's design includes multiple engineered barriers in addition to the geology, including steel waste canisters and a titanium drip shield."
+    },
+    {
+      "id": "f20",
+      "text": "Sokol said the NRA would work with Nevada and affected tribal nations on transport safety planning but that the license itself was final subject to court review."
+    }
+  ],
+  "modules": [
+    "domains/press.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f7",
+      "f9",
+      "f10",
+      "f12"
+    ],
+    "forbidden_additions": [
+      "a claim that waste has already been transported to Nevada",
+      "a statement that Nevada's legal challenges have been resolved",
+      "a cost figure different from $38 billion"
+    ],
+    "preserve": [
+      "The scientific case for this site has been sustained over four decades of study. The question was never geology \u2014 it was politics."
+    ],
+    "expected_action": "draft"
+  }
+}

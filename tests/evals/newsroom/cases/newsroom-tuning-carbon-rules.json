@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-tuning-carbon-rules",
+  "split": "tuning",
+  "operation": "draft",
+  "task": "For this synthetic writing exercise, use the fictional reporting notes to write a straight news story for a general newspaper audience. Write from this reporting snapshot as of April 9, 2025. Include a headline. Target 450 to 650 words. Follow AP style.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "The Environmental Compliance Agency issued the Interim Clean Generation Standard on Wednesday, April 9, 2025."
+    },
+    {
+      "id": "f2",
+      "text": "Covered coal and natural gas plants must meet a 40 percent carbon dioxide reduction requirement by May 9, 2029, relative to their 2024 emissions. They may cover emissions above that limit with approved offset credits; the rule's initial credit price is $45 per metric ton, subject to annual revision."
+    },
+    {
+      "id": "f3",
+      "text": "The rule takes effect May 9, 2025 — 30 days after publication."
+    },
+    {
+      "id": "f4",
+      "text": "Agency Administrator Thomas Beckwith said: \"The climate math is simple: we have run out of time for voluntary measures.\""
+    },
+    {
+      "id": "f5",
+      "text": "The rule applies to approximately 340 coal and natural gas generation facilities with capacity of 100 megawatts or more."
+    },
+    {
+      "id": "f6",
+      "text": "Plants may alternatively purchase carbon offset credits; the approved third-party certifier list has not yet been published."
+    },
+    {
+      "id": "f7",
+      "text": "The American Power Producers Alliance said it would file a legal challenge in the U.S. Fifth Circuit Court of Appeals, arguing the rule exceeds the agency's statutory authority."
+    },
+    {
+      "id": "f8",
+      "text": "Alliance president Roger Holt said the rule \"bypasses congressional intent and will raise electricity rates for millions of families.\""
+    },
+    {
+      "id": "f9",
+      "text": "The fictional agency invoked emergency authority to replace its ordinary 180-day consultation schedule with the expedited process described in these notes. This is the scenario's agency-specific procedure, not a claim that all U.S. rulemaking requires a 180-day comment period."
+    },
+    {
+      "id": "f10",
+      "text": "The agency conducted an expedited 45-day comment period earlier in 2025 and received approximately 12,000 written comments."
+    },
+    {
+      "id": "f11",
+      "text": "The previous standard, adopted in 2018, required an 18 percent reduction from 2014 emissions by 2030. Its baseline differs from the new rule's 2024 baseline; the notes supply no conversion between the two."
+    },
+    {
+      "id": "f12",
+      "text": "Plants have four compliance options: reduce emissions, purchase offsets, retire the facility, or demonstrate financial hardship and apply for an 18-month extension."
+    },
+    {
+      "id": "f13",
+      "text": "The agency projects the rule will reduce annual carbon emissions from covered facilities by approximately 280 million metric tons if fully complied with."
+    },
+    {
+      "id": "f14",
+      "text": "Independent energy analysts at the fictional Meridian Policy Institute estimate compliance costs at between $18 billion and $31 billion over four years, depending on offset credit prices."
+    },
+    {
+      "id": "f15",
+      "text": "Three states — Harwick, Dunmore, and Selby — had already filed a separate legal challenge to the agency's use of emergency rulemaking authority in February 2025; that case is pending."
+    },
+    {
+      "id": "f16",
+      "text": "The rule does not apply to nuclear, solar, or wind generation facilities."
+    },
+    {
+      "id": "f17",
+      "text": "The agency's enforcement framework will be addressed in a supplemental notice expected by July 2025."
+    },
+    {
+      "id": "f18",
+      "text": "Two Democratic senators from coal-producing states issued a joint statement calling the rule \"procedurally flawed and economically reckless.\""
+    },
+    {
+      "id": "f19",
+      "text": "The Clean Energy Now coalition, representing 34 environmental organizations, called the rule \"a necessary and overdue first step.\""
+    },
+    {
+      "id": "f20",
+      "text": "The agency said the certifier list required for offset compliance will be published in a supplemental Federal Register notice before the May 9 effective date."
+    }
+  ],
+  "modules": [
+    "domains/press.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f7",
+      "f8",
+      "f9"
+    ],
+    "forbidden_additions": [
+      "the rule was struck down",
+      "experts predict electricity rate increases of a specific percentage",
+      "Beckwith announced additional rules"
+    ],
+    "preserve": [
+      "The climate math is simple: we have run out of time for voluntary measures.",
+      "bypasses congressional intent and will raise electricity rates for millions of families."
+    ],
+    "expected_action": "draft"
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-science-feat-carbon-credit-buyers",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic writing exercise. Using these fictional reporting notes, write a newspaper reported feature for general readers. Draw only on the supplied notes; do not invent additional reported events, scenes, or quotations. Write from this reporting snapshot as of August 12, 2025. Include a headline. Target 450 to 650 words. Follow AP style.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "The Coastal Mangrove Carbon Alliance issued 1.8 million carbon credits between 2018 and 2024, representing claimed carbon sequestration in Tambela Province mangrove forests; a VCMIO audit found the forests claimed as protected had already been legally protected under national conservation law since 2011."
+    },
+    {
+      "id": "f2",
+      "text": "The 1.8 million credits were sold at prices ranging from $18 to $45 per credit, generating an estimated $54 million in revenue."
+    },
+    {
+      "id": "f3",
+      "text": "Lighthouse Shipping Group, a maritime company, purchased 420,000 of those credits to support its 2022 and 2023 carbon neutrality claims."
+    },
+    {
+      "id": "f4",
+      "text": "Lighthouse sustainability director Marcus Ferreira said the company conducted due diligence through its certification vendor and was not told about the legal protection status of the mangroves."
+    },
+    {
+      "id": "f5",
+      "text": "Ferreira said: \"We paid for verified carbon reduction. We now know the verification was inadequate. We're responsible for the money we spent. We are not responsible for a fraud we had no way to detect.\""
+    },
+    {
+      "id": "f6",
+      "text": "An investigative journalism team that reviewed Lighthouse's original due diligence records found no evidence the company asked whether the forests were independently protected before being enrolled in the program."
+    },
+    {
+      "id": "f7",
+      "text": "Coastal Mangrove Carbon Alliance's founder, fictionally named Paulo Avila, has not responded to media inquiries since the audit was released; his company's website went offline in July 2025."
+    },
+    {
+      "id": "f8",
+      "text": "Carbon market transparency advocate Dr. Ruth Nkosi of International Carbon Accountability Center said: \"The buyers' defense is 'we were defrauded.' But due diligence in this market has been aspirational, not operational. Most buyers never asked the hard questions.\""
+    },
+    {
+      "id": "f9",
+      "text": "Lighthouse has committed to purchasing replacement credits from a VCMIO-verified program and to not counting the disputed credits toward its emissions claims; it has not disclosed whether it will seek legal recourse."
+    },
+    {
+      "id": "f10",
+      "text": "Four other companies that purchased Coastal Mangrove Alliance credits have disputed the VCMIO's finding; two have hired independent auditors to review their specific purchases."
+    },
+    {
+      "id": "f11",
+      "text": "The VCMIO said buyers who can demonstrate good faith due diligence may receive a grace period to replace disputed credits; the standard for good faith has not yet been published."
+    },
+    {
+      "id": "f12",
+      "text": "Dr. Nkosi said the Coastal Mangrove case illustrates a structural problem: the entities being paid to certify credits have a financial relationship with the sellers, not the buyers."
+    },
+    {
+      "id": "f13",
+      "text": "Ferreira said Lighthouse began internally reviewing all its credit purchases in July 2025 and will not purchase new voluntary credits until the review is complete."
+    },
+    {
+      "id": "f14",
+      "text": "At least six similar mangrove and forest protection programs in Tambela Province are being examined by the VCMIO; Avila's program was the largest."
+    },
+    {
+      "id": "f15",
+      "text": "Dr. Nkosi said the underlying science of mangrove carbon sequestration is sound; the fraud was in the additionality claim \u2014 the assertion that the protection was newly provided \u2014 not in the fact that mangroves store carbon."
+    },
+    {
+      "id": "f16",
+      "text": "Lighthouse's 2022 annual report included a graphic labeling the company as 'carbon neutral'; the company has removed that designation from its website pending the credit review."
+    },
+    {
+      "id": "f17",
+      "text": "Securities analysts said the reputational risk to companies that prominently marketed carbon neutrality claims based on disputed credits may exceed the financial cost of replacing the credits."
+    },
+    {
+      "id": "f18",
+      "text": "Ferreira declined to quantify the potential cost of replacing the 420,000 disputed credits at current market prices."
+    },
+    {
+      "id": "f19",
+      "text": "The VCMIO said it will publish new mandatory additionality standards in early 2026 that will require program developers to demonstrate protection additionality against a documented counterfactual, not just a claim."
+    },
+    {
+      "id": "f20",
+      "text": "Dr. Nkosi said the voluntary carbon market has a credibility problem that is now visible to its customers: \"The question is whether the response is serious reform or the appearance of it.\""
+    }
+  ],
+  "modules": [
+    "domains/press.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f7",
+      "f8",
+      "f9",
+      "f12",
+      "f15",
+      "f16"
+    ],
+    "forbidden_additions": [
+      "a criminal charge against Avila or the Alliance",
+      "a claim that Lighthouse knowingly purchased fraudulent credits",
+      "a revenue figure different from $54 million"
+    ],
+    "preserve": [
+      "We paid for verified carbon reduction. We now know the verification was inadequate. We're responsible for the money we spent. We are not responsible for a fraud we had no way to detect.",
+      "The buyers' defense is 'we were defrauded.' But due diligence in this market has been aspirational, not operational. Most buyers never asked the hard questions."
+    ],
+    "expected_action": "draft"
+  }
+}

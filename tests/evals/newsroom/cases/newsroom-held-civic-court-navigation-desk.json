@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-civic-court-navigation-desk",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic exercise using fictional reporting notes. Use only the supplied reporting notes as the fixed record: select, organize and phrase the story without inventing additional reported events, scenes, quotations or reporting activity. Write a headline and a straight news update of roughly 450–650 words in AP style for general newspaper readers about the new public navigation desk at the Harven County court building. Write from this reporting snapshot as of September 18, 2026.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Harven County court administration will open a public navigation desk in the main entrance hall on Nov. 3, 2026."},
+    {"id": "f2", "text": "The desk will explain room locations, appointment arrangements and where to obtain the court's existing public forms."},
+    {"id": "f3", "text": "Desk staff will not represent visitors, select a legal argument or predict how a judge will decide a case."},
+    {"id": "f4", "text": "The service will be free and available without an appointment during the building's public counter hours."},
+    {"id": "f5", "text": "The first-year $82,000 allocation funds two part-time staff members, training and revised building signs."},
+    {"id": "f6", "text": "The allocation does not create a new legal-aid fund or pay another person's court fees."},
+    {"id": "f7", "text": "Court administrator Edda Voss said, \"Finding the right room should not depend on having been through the building before.\""},
+    {"id": "f8", "text": "The project followed staff reports of visitors joining the wrong queues and missing check-in instructions posted in separate corridors."},
+    {"id": "f9", "text": "Those reports are examples gathered during planning, not a measured rate of missed hearings or incorrect filings."},
+    {"id": "f10", "text": "A local advice partnership will train staff on when to refer a visitor to an independent legal adviser."},
+    {"id": "f11", "text": "The partnership remains a separate organization, and its advisers will not automatically be available to everyone who visits the desk."},
+    {"id": "f12", "text": "Advice partnership coordinator Rana Pell said, \"Directions can remove one obstacle, but they cannot stand in for advice about a person's choices.\""},
+    {"id": "f13", "text": "The desk will offer printed information in large type and arrange use of the court's existing language-assistance booking process."},
+    {"id": "f14", "text": "The administration has not promised an interpreter in every language immediately at the desk."},
+    {"id": "f15", "text": "Visitors discussing private details can ask to use a side counter away from the main waiting line."},
+    {"id": "f16", "text": "Navigation staff will not retain copies of visitors' case papers as part of their inquiry log."},
+    {"id": "f17", "text": "The log will count the kinds of practical inquiries received so the administration can identify confusing signs or instructions."},
+    {"id": "f18", "text": "The new signs use the same room names as appointment letters, replacing several older departmental labels still displayed in the building."},
+    {"id": "f19", "text": "The court's ordinary filing and hearing procedures remain unchanged by the opening of the desk."},
+    {"id": "f20", "text": "A public review after six months will consider the service's hours and recurring navigation problems."},
+    {"id": "f21", "text": "No evidence of changed case outcomes or shorter court processing times is included in the opening announcement."},
+    {"id": "f22", "text": "The entrance hall's wooden benches will remain, but the desk replaces a freestanding rack that previously held mixed forms and leaflets."}
+  ],
+  "modules": ["domains/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f6", "f10", "f11", "f19"],
+    "forbidden_additions": ["Legal representation, paid court fees or predicted case outcomes.", "New filing rules, guaranteed immediate interpreting or improved processing results.", "A measured error rate inferred from planning anecdotes."],
+    "preserve": ["Practical navigation distinguished from independent legal advice.", "The scope of the funding and the unchanged court procedures.", "Exact quotation wording and attribution when quotations are used."],
+    "expected_action": "draft"
+  }
+}

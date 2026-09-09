@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "technical-ui-app-offline-banner-draft",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "Draft a status banner for a fictional macOS document application that is operating offline. Explain the situation and next step without alarming language. Do not say changes may be lost when the facts say they will not, and do not require manual sync when facts say sync is automatic.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The application cannot reach the sync service because no internet connection is available."},
+    {"id": "f2", "text": "Local changes continue to be saved to the device."},
+    {"id": "f3", "text": "Changes will sync automatically when the connection is restored."},
+    {"id": "f4", "text": "The user does not need to take any action to trigger sync after reconnection."},
+    {"id": "f5", "text": "No changes will be lost while offline."}
+  ],
+  "modules": ["domains/general.md", "domains/user-interface/applications.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5"],
+    "forbidden_additions": [
+      "A warning that changes may be lost when the facts say they will not.",
+      "A manual sync action required when facts say sync is automatic on reconnect.",
+      "An invented outage cause or estimated reconnection time."
+    ],
+    "preserve": [
+      "No connection as the cause.",
+      "Local saves continue uninterrupted.",
+      "Automatic sync on reconnect with no user action needed.",
+      "No data loss."
+    ],
+    "expected_action": "draft"
+  }
+}

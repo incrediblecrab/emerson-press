@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "id": "scholarly-edu-lower-hidden-fish",
+  "split": "held_out",
+  "operation": "review",
+  "task": "Review this lower-elementary counting explanation and return it unchanged if it is clear and accurate. The class knows under and in view and has already counted all the paper fish before the bowl was placed. The repetition of fish helps connect the visible part to the whole; it is not automatically a defect. Assess the supplied relationship, not an assumed reading ability based on age. This short explanation is sufficient for the assignment.",
+  "input": "There are nine paper fish on the mat. Six are in view, and three are under the bowl. Lifting the bowl lets us see all nine. It does not add fish; it only changes which fish we can see.",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "The class counted nine paper fish on the mat before the bowl was placed."
+    },
+    {
+      "id": "f2",
+      "text": "The bowl covers three fish and leaves six visible; no fish were added or removed."
+    },
+    {
+      "id": "f3",
+      "text": "Lifting the bowl reveals the three covered fish without changing the total of nine."
+    }
+  ],
+  "modules": [
+    "domains/general.md",
+    "domains/education-level/01-elementary-lower.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3"],
+    "forbidden_additions": [
+      "A different total or a claim that lifting the bowl creates more fish",
+      "An unsupported uncertainty about the already counted total",
+      "A new story or activity needed only to lengthen the answer"
+    ],
+    "preserve": [
+      "Six visible plus three covered equals nine",
+      "Visibility changes while the number of fish does not",
+      "The existing useful repetition and short explanation"
+    ],
+    "expected_action": "no_change"
+  }
+}

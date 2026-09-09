@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "id": "scholarly-edu-undergrad-diary-we",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Edit this undergraduate close reading into a sustained 330–450-word analysis. Readers know quotation and inference but are learning how a narrator's position can change across dated excerpts without establishing a job or a stable collective identity. Retain the worthwhile attention to waiting, movement, and thresholds; develop a qualified account rather than merely listing missing facts. Use all five supplied original excerpts with their correct packet pages, preserving quoted words exactly. Repair the invented occupation, promotion, fixed membership, and completed emotional arc. Interpretations may remain possibilities, but no author biography, intervening diary text, wage record, or external criticism is supplied. The assignment needs an argued reading, not a mandatory counterargument or a generic essay scaffold.",
+  "input": "The diary Rooms for Weights records Kera Venn's rise from salaried clerk to supervisor of a single, unified group of carriers. The opening plural establishes that occupation: “We waited by the scale” appears in the August 2 entry on packet page 8. Since the narrator stands beside the weighing equipment, Venn must be responsible for its accounts. The waiting is therefore a deliberate exercise of authority rather than an uncertain position within the workplace. Every later use of we names exactly the same people.\n\nThe August 9 entry strengthens this hierarchy. “The clerk called the carriers inside” on page 11 identifies Venn as the clerk, even though the sentence does not use the first person. The distinction between inside and outside is useful to the reading, but it also proves that Venn controlled admission to the room. The carriers' collective voice can consequently be treated as Venn's voice throughout the diary. Their separate experiences do not need to be considered.\n\nThe next two excerpts complete the promotion story. On August 12, “At noon I carried the tally to the porch.” appears on page 14. Carrying a tally proves ownership of the accounts and confirms that Venn was paid for this administrative work. On August 16, the sentence “They asked me to wait while the weights were checked.” appears on page 17. That temporary delay must be a ceremonial acknowledgment of the narrator's new rank, not a request whose speakers and purpose remain unspecified. The intervening days undoubtedly contained the promotion itself.\n\nFinally, the August 22 entry says, “We left by different doors.” on page 21. The different exits show that the same group left with a single shared conviction about Venn's leadership. The statement resolves all earlier uncertainty and establishes the narrator's pride, although no emotion is named. Across the month, movement between the scale, the room, and the porch therefore supplies a complete biography. The selected pages can stand for the whole diary, and their gaps should be filled with the events this progress narrative requires.",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "In the fictional diary Rooms for Weights by Kera Venn, the August 2 entry on packet page 8 says exactly “We waited by the scale”."
+    },
+    {
+      "id": "f2",
+      "text": "The August 9 entry on packet page 11 says exactly “The clerk called the carriers inside”."
+    },
+    {
+      "id": "f3",
+      "text": "The packet does not identify the members of we, state Venn's job or pay, or establish that the group remains the same across entries."
+    },
+    {
+      "id": "f4",
+      "text": "The second excerpt distinguishes a clerk and carriers but does not identify Venn as either."
+    },
+    {
+      "id": "f5",
+      "text": "The August 12 entry on packet page 14 says exactly “At noon I carried the tally to the porch.” It records carrying the tally, not ownership of the accounts or payment for the act."
+    },
+    {
+      "id": "f6",
+      "text": "The August 16 entry on packet page 17 says exactly “They asked me to wait while the weights were checked.” The excerpt does not identify they or state that a promotion or ceremony occurred."
+    },
+    {
+      "id": "f7",
+      "text": "The August 22 entry on packet page 21 says exactly “We left by different doors.” It gives no membership list or explicit emotion."
+    },
+    {
+      "id": "f8",
+      "text": "All five excerpts are attributed to the same diarist, Kera Venn, but the packet reproduces only these selections, not the intervening entries or the complete diary."
+    },
+    {
+      "id": "f9",
+      "text": "The available wording places the narrator among people waiting, describes another person's call indoors, records the narrator carrying a tally, and later records being asked to wait and leaving. These changes of action do not themselves supply an occupational history."
+    }
+  ],
+  "modules": [
+    "domains/non-fiction.md",
+    "domains/education-level/05-undergraduate.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f6", "f7", "f8", "f9"],
+    "forbidden_additions": [
+      "An established job, salary, authority, or group membership for Venn",
+      "A claim that we necessarily names the same people across the entries",
+      "Invented diary passages, biography, or archival verification",
+      "A promotion, ceremony, shared conviction, or established pride absent from the excerpts",
+      "The selected entries represented as the complete diary",
+      "Ownership of the accounts inferred from carrying a tally"
+    ],
+    "preserve": [
+      "We waited by the scale",
+      "The clerk called the carriers inside",
+      "Packet pages 8 and 11 remain attached to their own excerpts",
+      "Ambiguous membership is not silently resolved",
+      "At noon I carried the tally to the porch.",
+      "They asked me to wait while the weights were checked.",
+      "We left by different doors.",
+      "Packet pages 14, 17, and 21 remain attached to their own excerpts",
+      "A source-supported reading of changing positions and actions without an invented promotion narrative"
+    ],
+    "expected_action": "edit"
+  }
+}

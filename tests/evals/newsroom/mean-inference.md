@@ -1,0 +1,128 @@
+# Mean-preference inference
+
+`tests.scripts.newsroom_stats` supplies an inferential component, not an experimental
+result. The [primary protocol](primary-protocol.json) freezes the family bank,
+writer allocation, judge weights, score grids, randomization table and full
+acquisition plan before primary outcomes. The original source-aware judgments remain
+separate from the older `tests.scripts.simulate` acquisition schema.
+
+## Target and randomization
+
+The target is the equally weighted expected family preference under the frozen
+allocation. Raw judgments score win = 1, tie = 0.5 and loss = 0. Predeclared
+contributions are averaged within a reporting family; repeated cases, writers
+and judges do not add independent families.
+
+For a family score `X = a / D`, draw an independent uniform integer `K` from
+`0, ..., D-1` and define an **auxiliary** outcome `Y = 1` when `K < a`, otherwise
+zero. Then `E[Y | X] = X`. This preserves the mean estimand, unlike discarding
+tied family directions for a sign test. The auxiliary outcomes are not evaluator
+votes and must never replace the recorded judgments or their fractional means.
+
+Freeze the grids and allocation first. Draw and persist one table with
+`draw_thresholds`, before inspecting primary outcomes, and bind it into the
+registration. `analyze` requires that exact table and never redraws. The
+implementation uses the operating system's cryptographic random source; the
+mathematics assumes independent, unbiased draws. No seed or table searching is
+allowed.
+Each `FamilyDraw` binds both its grid denominator and its integer ticket;
+analysis rejects a changed grid even if the old ticket would still fit.
+
+This deliberately adds noise. The decision can depend on the auxiliary draw even
+when the raw ratings do not change. It is chosen for finite-sample calibration of
+the mean, not as a disguised deterministic fractional-binomial test.
+
+## Interval and a raw-score safeguard
+
+Independent families may have different expected scores. Their auxiliary sum is
+Poisson-binomial, not necessarily identically distributed binomial. Ordinary
+Clopper-Pearson intervals alone are not uniformly valid for the average of
+arbitrary heterogeneous Bernoulli probabilities.
+
+Let `s` be auxiliary successes among `n` families. Compute ordinary equal-tailed
+95% Clopper-Pearson bounds, then widen them to:
+
+```text
+L = max(0, min(L_CP, (s - 1) / n))
+U = min(1, max(U_CP, (s + 1) / n))
+```
+
+These limits restrict binomial-tail inversion to the separation regions in
+[Hoeffding's Poisson-binomial comparison, reproduced in Theorem 2.1 of Tang and Tang](https://ar5iv.labs.arxiv.org/html/1908.10024#S2.Thmtheorem1).
+The theorem bounds each inverted tail by 0.025; the union bound gives at least
+95% coverage for the equally weighted mean under independent family outcomes.
+[NIST describes the underlying binomial tail inversion](https://www.itl.nist.gov/div898/handbook/prc/section2/prc241.htm).
+Numerical endpoints use checked floating-point calculations.
+
+A preference signal requires **both** `L > 0.5` and the original fractional mean
+above 0.5. An all-tie result therefore cannot acquire a positive conclusion from
+lucky auxiliary bits. The interval is explicitly randomized; it is not the
+ordinary family-bootstrap interval used in earlier descriptive reports.
+
+## Planning and missingness
+
+At the selected 212 families, the auxiliary cutoff is 121. Its type-I error is at
+most 0.02307257, and its power is at least 0.82634721 at mean preference 0.60,
+under the stated comparison conditions. The extra raw-mean safeguard has its own
+cost: Hoeffding's bounded-sum inequality bounds failure of that safeguard by
+`exp(-2 * n * 0.1^2)`. Subtracting that bound gives **at least 0.81193962 joint
+power**, not 0.82634721. This is a planning statement conditional on independent,
+complete family scores and the specified mean effect, not observed repository
+effectiveness. It was recalculated after the final source eligibility decisions,
+not measured from writing outputs. Recalculate if the design changes; discrete critical
+counts mean power does not rise monotonically at every additional family.
+
+For missing components, keep their intended weights and retain `[0,1]` bounds.
+Use the same `K` for each family's lower and upper possible score. Monotonicity
+then gives a conservative interval containing the complete-data interval for
+every possible completion. The raw-mean safeguard uses the lower possible mean.
+Missing values are not observed losses or ties, and surviving judges do not gain
+extra weight. No unconditional 80% claim follows for missingness, transport
+completion or the separate fidelity gate.
+
+Conventional t and percentile-bootstrap methods are not uniformly calibrated by
+boundedness and a sample near 214 alone. For example, a hypothetical family law
+on `[0, 0.5, 0.75]` with probabilities `[0.01, 0.97, 0.02]` has mean 0.5.
+The event with no zeros, at least four 0.75 scores and at least one 0.5 score
+alone causes more than 7% upper-tail rejection for t and the infinite-resample
+percentile limit at a nominal 2.5% threshold. Its probability and both rejection
+conditions are reproduced in `tests/test_newsroom_stats.py`. This is a
+mathematical counterexample, not a distribution estimated from the writing trials.
+
+Independence remains an audited assumption, not a consequence of file count or
+fresh SDK sessions. With one writer assigned to each fixed family, the conditional
+target is that realized allocation's expected mean, not the unobserved average
+of both writers on every family. Broader population and human-editorial claims
+need additional evidence. Neither statistical significance nor source fidelity
+establishes elimination of noticeable slop; pointwise slop, fidelity, output
+compliance and human review remain distinct.
+
+## Fixed-family reporting
+
+`tests.scripts.newsroom_results.summarize` checks the allocation seal, family
+membership, score grids and complete planned-slot coverage before aggregating
+already validated assessments. It does **not** authenticate SDK captures:
+callers must verify observed receipts, source bindings, blinded orientation and
+the strict response parser before supplying fractional preferences, pointwise
+labels and unchanged writing responses.
+
+Every planned writing and judgment slot must appear. Missing or invalid
+acquisitions are explicit `None` values, never dropped keys; an assessment cannot
+exist without its writing input. Family, case and judge weights do not change
+when another component is missing. The report preserves exact fractional family
+scores alongside the primary randomized interval.
+
+Writer/judge breakdowns, agreement counts and pointwise results are descriptive.
+Pointwise level and fidelity matrices keep rater disagreements visible;
+agreement on `unassessable` remains separately counted and does not establish
+good writing. Missing or unassessable style ratings retain `[0,1]` uncertainty
+for salient-writing prevalence. Fidelity flag rates count the literal model
+label `flag`; `uncertain` is shown separately, and neither it nor `no_flag`
+establishes factual correctness.
+
+Secondary rate bounds describe possible completions of missing scores, not
+confidence intervals. Complete-response lengths use Python's `str.split()`
+whitespace convention, including Unicode whitespace, headlines, markup tokens
+and unsolicited commentary. They are measured counts, not a licensed AP-style
+audit or a judgment that a soft length target is a factual error. Zero observed
+salient ratings never become a claim that the repository eliminates slop.

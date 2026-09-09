@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "citation-apa-incomplete-journal",
+  "split": "tuning",
+  "operation": "edit",
+  "task": "Repair the reference and its accompanying sentence for an APA-style reading list using only the supplied fictional metadata. Format what is known and identify what remains incomplete in an editorial note. Do not search for a source or turn the journal article into a conference contribution to fill a familiar template.",
+  "input": "Workshop Observation Unit. Shared Tables and Quiet Work. Field Notes on Collaboration, 2022. https://example.org/notes/shared-tables\n\nThe article describes how its author recorded room use.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional article's corporate author is Workshop Observation Unit."},
+    {"id": "f2", "text": "The article's title is Shared Tables and Quiet Work."},
+    {"id": "f3", "text": "The journal title is Field Notes on Collaboration."},
+    {"id": "f4", "text": "The publication year is 2022."},
+    {"id": "f5", "text": "The supplied article URL is https://example.org/notes/shared-tables."},
+    {"id": "f6", "text": "The source is a journal article, not a conference paper."},
+    {"id": "f7", "text": "The article describes its author's method for recording room use."},
+    {"id": "f8", "text": "Author, article title, journal title, year, and URL are the only bibliographic fields supplied."}
+  ],
+  "modules": ["domains/non-fiction.md", "domains/citation/apa7.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f6", "f7"],
+    "forbidden_additions": [
+      "An invented volume, issue, page range, DOI, or archive link.",
+      "Conference proceedings, editors, a conference location, or a publisher substituted for the journal.",
+      "A source-retrieval claim or an invented finding about the effects of room use."
+    ],
+    "preserve": [
+      "The corporate author, article and journal identities, supplied year, and URL.",
+      "The description of a recording method rather than an outcome study.",
+      "An explicit note that the record is incomplete."
+    ],
+    "expected_action": "flag_missing_evidence"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "technical-ui-signup-form-draft",
+  "split": "tuning",
+  "operation": "draft",
+  "task": "Draft a heading, field labels, helper text, and submit button label for a fictional newsletter signup page. Distinguish required from optional fields and state what subscribers receive. Use only the supplied facts; do not add additional consent purposes or posting frequencies.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The newsletter is named The Weekly Press Digest."},
+    {"id": "f2", "text": "The email address field is required."},
+    {"id": "f3", "text": "The first name field is optional; it is used to personalize the greeting."},
+    {"id": "f4", "text": "Subscribers receive a weekly editorial digest."},
+    {"id": "f5", "text": "By signing up, subscribers agree that their email address will be used only to send the digest."}
+  ],
+  "modules": ["domains/general.md", "domains/user-interface/website.md", "domains/user-interface/accessibility.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5"],
+    "forbidden_additions": [
+      "Additional consent for advertising or third-party sharing not in the supplied facts.",
+      "A claim that the first name field is required.",
+      "An invented posting frequency different from weekly."
+    ],
+    "preserve": [
+      "Email required; first name optional with its stated purpose.",
+      "Weekly digest as the subscriber benefit.",
+      "Single stated use of the email address."
+    ],
+    "expected_action": "draft"
+  }
+}

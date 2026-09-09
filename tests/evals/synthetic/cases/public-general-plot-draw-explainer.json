@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "public-general-plot-draw-explainer",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "Explain a fictional association's garden-plot allocation process in about 80–120 words for applicants who assume the list is first-come, first-served. Describe priority and the draw in ordinary language without promising a plot or a waiting time. This is an explanation of the supplied local process, not of housing or public-allocation law.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "Vacant plots are first offered among applicants who do not already have an association plot."},
+    {"id": "f2", "text": "A draw determines the order within that priority group."},
+    {"id": "f3", "text": "The association holds a draw once each quarter when a plot is available."},
+    {"id": "f4", "text": "The date an application was received does not determine draw order."},
+    {"id": "f5", "text": "Unsuccessful applications remain on the list for the next draw."},
+    {"id": "f6", "text": "The association cannot give an applicant a guaranteed waiting time."}
+  ],
+  "modules": ["domains/general.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f6"],
+    "forbidden_additions": [
+      "First-come priority, a guaranteed quarterly vacancy, or a promised waiting time.",
+      "A requirement to reapply after every unsuccessful draw.",
+      "An invented legal entitlement or a claim that the process has been independently audited."
+    ],
+    "preserve": [
+      "Eligibility priority separated from random order within the priority group.",
+      "A quarterly opportunity conditional on a vacancy, not a guaranteed offer."
+    ],
+    "expected_action": "draft"
+  }
+}

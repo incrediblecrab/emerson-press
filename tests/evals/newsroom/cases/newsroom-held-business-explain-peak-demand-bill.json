@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-business-explain-peak-demand-bill",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic newspaper-writing exercise using fictional reporting notes. Use only the supplied reporting notes. Write from the reporting snapshot as of July 15, 2026. Write a headline and a 450–650-word AP-style newspaper explainer answering why a laundromat's electricity bill can fall even when its monthly energy use stays the same, using the supplied demand-charge records.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id":"f1","text":"Arden Wash's May and June 2026 bills from Cobalt Municipal Power both show 5,000 kilowatt-hours of electricity use."},
+    {"id":"f2","text":"Its commercial tariff charges $20 monthly, 12 cents per kilowatt-hour and $9 per kilowatt of billed peak demand."},
+    {"id":"f3","text":"The energy-use charge was therefore $600 in both months."},
+    {"id":"f4","text":"Billed peak demand fell from 60 kilowatts in May to 45 in June, reducing the demand charge from $540 to $405."},
+    {"id":"f5","text":"The stated electricity charges totaled $1,160 in May and $1,025 in June, a $135 difference."},
+    {"id":"f6","text":"These totals exclude separately itemized taxes, which are not supplied for the comparison."},
+    {"id":"f7","text":"The tariff measures billed demand using the highest 15-minute average load during weekday 4-7 p.m. windows in the billing month."},
+    {"id":"f8","text":"Kilowatt-hours describe accumulated electricity use, while the billed kilowatts describe the rate of use during a particular peak interval."},
+    {"id":"f9","text":"Owner Mara Selt installed timers to stagger the start of several large dryers instead of starting them together."},
+    {"id":"f10","text":"The bills show lower demand after that change but do not isolate every difference in weather, customers or machine use between months."},
+    {"id":"f11","text":"Staggering machines can spread electricity use across time without eliminating the energy required for each completed load."},
+    {"id":"f12","text":"Selt said some customers prefer starting several loads together because they have limited time at the laundromat."},
+    {"id":"f13","text":"Selt said, \"The meter rewards spreading things out. A customer may need to be finished before the bus leaves.\""},
+    {"id":"f14","text":"Utility analyst Oren Quill said a single busy interval can set the demand charge for the month."},
+    {"id":"f15","text":"Quill said, \"The bill remembers the busiest quarter-hour, even after the machines have gone quiet.\""},
+    {"id":"f16","text":"The utility offers a reading of past interval data but does not guarantee a business will reproduce its lowest demand next month."},
+    {"id":"f17","text":"Cobalt's residential tariff does not include this commercial demand charge."},
+    {"id":"f18","text":"The laundromat's lease includes no automatic rent reduction for lower electricity bills."},
+    {"id":"f19","text":"Arden Wash has operated in the same storefront since 2008 and provides both self-service and staffed washing."},
+    {"id":"f20","text":"The supplied bills do not establish a carbon-emissions saving from using the same monthly energy at different times."}
+  ],
+  "modules": ["domains/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1","f2","f3","f4","f5","f6","f7","f8","f10","f12","f17"],
+    "forbidden_additions": ["A reduction in the stated monthly kilowatt-hours or a guaranteed future bill","Identical household charges, included taxes or a quantified emissions benefit"],
+    "preserve": ["If quoted: The meter rewards spreading things out. A customer may need to be finished before the bus leaves.","If quoted: The bill remembers the busiest quarter-hour, even after the machines have gone quiet.","Peak load and accumulated energy use are different billing measures."],
+    "expected_action": "draft"
+  }
+}

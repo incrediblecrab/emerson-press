@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-civic-surplus-furniture-disposal",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic exercise using fictional reporting notes. Use only the supplied reporting notes as the fixed record: select, organize and phrase the story without inventing additional reported events, scenes, quotations or reporting activity. Write a headline and an explainer of roughly 450–650 words in AP style for general newspaper readers about how Calder Fen disposes of furniture it no longer needs. Write from this reporting snapshot as of September 18, 2026.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Calder Fen property office has inventoried 280 chairs, 110 desks and 70 cabinets after consolidating several city offices."},
+    {"id": "f2", "text": "The 460 listed items are pieces of furniture, not 460 sale lots or items all assessed as suitable for immediate reuse."},
+    {"id": "f3", "text": "The city's supplied disposal policy first offers usable furniture to other city departments and eligible public institutions."},
+    {"id": "f4", "text": "Items not reassigned through that stage may enter a public sale, an approved donation route or recycling according to condition and demand."},
+    {"id": "f5", "text": "The office checks that an item is no longer needed for an approved city use before describing it as surplus."},
+    {"id": "f6", "text": "Surplus does not necessarily mean broken; some furniture became unnecessary because two services now share one building."},
+    {"id": "f7", "text": "Property manager Elra Voss said, \"A chair can still have years in it without having a place in the room it came from.\""},
+    {"id": "f8", "text": "The internal reassignment period allows receiving institutions to check dimensions and collection arrangements rather than select solely from a photograph."},
+    {"id": "f9", "text": "A desk accepted by another department is recorded as a transfer, not counted as sale revenue."},
+    {"id": "f10", "text": "For public sale, the office may group several pieces into one lot and describe condition in the lot listing."},
+    {"id": "f11", "text": "The city has not announced that every listed item will be sold individually or at the same price."},
+    {"id": "f12", "text": "Community-center coordinator Pella Dane said, \"The hard part is often the van and the doorway, not whether we could use another table.\""},
+    {"id": "f13", "text": "Recipients and buyers must arrange collection within the period stated for their transfer or sale; citywide free delivery is not included."},
+    {"id": "f14", "text": "The city will retain a record of the destination, sale proceeds or recycling route for each inventory item."},
+    {"id": "f15", "text": "Gross sale proceeds do not equal net savings because handling, storage and disposal costs are recorded separately."},
+    {"id": "f16", "text": "The packet contains no forecast of final proceeds or independently measured environmental savings."},
+    {"id": "f17", "text": "Items with unresolved condition questions are held for assessment rather than listed as ready-to-use donations."},
+    {"id": "f18", "text": "Computers and other data-bearing equipment follow a separate disposal process and are not included in this furniture inventory."},
+    {"id": "f19", "text": "Employees cannot simply take an item from storage because it has been removed from their former office."},
+    {"id": "f20", "text": "A public sale date will be announced after the internal reassignment stage, not inferred from the date the inventory was published."},
+    {"id": "f21", "text": "Several cabinets still carry labels from departments that have since changed names, which staff will remove before transfer."},
+    {"id": "f22", "text": "The current inventory is a one-time consequence of office consolidation, not a complete count of furniture owned by the city."}
+  ],
+  "modules": ["domains/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f6", "f9", "f13", "f15"],
+    "forbidden_additions": ["All 460 pieces promised as individual sale lots or ready for use.", "Free delivery, a published sale date or a net-savings figure.", "Computers included in the furniture process or informal employee removal rights."],
+    "preserve": ["Transfers, sales and recycling as different outcomes with different records.", "The useful condition of some surplus items and the practical collection constraints.", "Exact quotation wording and attribution when quotations are used."],
+    "expected_action": "draft"
+  }
+}

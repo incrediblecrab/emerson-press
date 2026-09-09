@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-business-explain-school-laptop-lease",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic newspaper-writing exercise using fictional reporting notes. Use only the supplied reporting notes. Write from the reporting snapshot as of August 31, 2026. Write a headline and a 450–650-word AP-style newspaper explainer about South Nacre School District's laptop bids, answering why the lowest upfront figure is not the whole buy-versus-lease decision.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id":"f1","text":"South Nacre School District published purchase and lease bids for 300 student laptops in August 2026 and plans a board decision in September."},
+    {"id":"f2","text":"The purchase bid is $450 per laptop, or $135,000 for 300 devices, paid at delivery."},
+    {"id":"f3","text":"The lease bid is $54,000 a year for three years, totaling $162,000 before optional charges."},
+    {"id":"f4","text":"The lease includes ordinary fault repairs and battery replacement when tested capacity falls below its stated threshold."},
+    {"id":"f5","text":"Accidental damage and missing devices are excluded from that repair coverage."},
+    {"id":"f6","text":"District technicians estimate purchased-device maintenance at $12,000 annually, or $36,000 over three years, but that is an estimate rather than a fixed vendor price."},
+    {"id":"f7","text":"Adding the maintenance estimate to the purchase bid gives a three-year comparison of $171,000."},
+    {"id":"f8","text":"Purchased laptops remain district property after three years; leased laptops must be returned unless the district exercises an option."},
+    {"id":"f9","text":"The end-of-lease purchase option is $90 per device, adding $27,000 if exercised for all 300."},
+    {"id":"f10","text":"The district needs 260 regularly assigned devices and plans to keep 40 as repair and enrollment spares."},
+    {"id":"f11","text":"Its current fleet is six years old and required 71 battery replacements in the 2025–26 school year."},
+    {"id":"f12","text":"The old fleet's device count and repeat-repair count are not supplied, and its repair history does not establish a failure rate for the new models."},
+    {"id":"f13","text":"Finance director Sora Brill says the lease would spread cash payments while the purchase would use more of the current capital allocation."},
+    {"id":"f14","text":"Brill said, \"A lower bill in September can come with a different decision waiting three years later.\""},
+    {"id":"f15","text":"Technician Peren Moss said staff time arranging repairs and preparing loan devices is not eliminated by either bid."},
+    {"id":"f16","text":"Moss said, \"Someone still has to get a working machine onto the student's desk.\""},
+    {"id":"f17","text":"Both bids cover the same specified hardware model and include initial setup, so those items are not differences in this comparison."},
+    {"id":"f18","text":"Neither bid includes the district's separately purchased teaching-software subscriptions."},
+    {"id":"f19","text":"The district operates two secondary schools and a shared technology workshop."},
+    {"id":"f20","text":"The board has not selected a bid or released a reliable resale-value estimate for purchased laptops after three years."}
+  ],
+  "modules": ["domains/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1","f2","f3","f4","f5","f6","f7","f8","f9","f17","f18","f20"],
+    "forbidden_additions": ["A selected bid, guaranteed maintenance estimate or established resale value","Ownership included automatically in the $162,000 lease or coverage of all accidental damage"],
+    "preserve": ["If quoted: A lower bill in September can come with a different decision waiting three years later.","If quoted: Someone still has to get a working machine onto the student's desk.","The $27,000 option is additional to, not part of, the three-year lease total."],
+    "expected_action": "draft"
+  }
+}

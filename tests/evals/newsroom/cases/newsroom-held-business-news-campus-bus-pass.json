@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-business-news-campus-bus-pass",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic newspaper-writing exercise using fictional reporting notes. Use only the supplied reporting notes. Write from the reporting snapshot as of August 13, 2026. Write a headline and a 450–650-word AP-style news update about a new campus bus-pass agreement in Sable Crossing and what it changes for students and other riders.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id":"f1","text":"Sable Crossing Transit signed student-pass agreements with Nerith College and West Sable Technical Institute on Thursday, Aug. 13, 2026."},
+    {"id":"f2","text":"Beginning Sept. 14, enrolled students at either institution can activate a pass for unlimited travel on the system's local bus routes."},
+    {"id":"f3","text":"The agreements do not cover the separately operated regional express service or travel by faculty and other employees."},
+    {"id":"f4","text":"Nerith will pay the transit system $180,000 for the academic year and West Sable will pay $120,000."},
+    {"id":"f5","text":"Each institution will fund its contribution from its existing transport budget rather than adding a student fee for the 2026–27 academic year."},
+    {"id":"f6","text":"Combined enrollment is approximately 6,000, but activating a pass requires a student's separate request."},
+    {"id":"f7","text":"The agreement does not establish how many students will use a pass or how often they will ride."},
+    {"id":"f8","text":"A standard monthly adult pass costs $48; that fare will remain unchanged for other riders."},
+    {"id":"f9","text":"Students can activate a physical card at campus service desks without owning a smartphone."},
+    {"id":"f10","text":"Both campuses already sit on existing routes, and the agreement does not immediately add buses or extend operating hours."},
+    {"id":"f11","text":"The last weekday bus serving West Sable leaves campus at 9:10 p.m., before some workshops finish at 9:30 p.m."},
+    {"id":"f12","text":"West Sable has requested a later departure, but the transit board has not funded it."},
+    {"id":"f13","text":"Student council member Sora Penn works at a supermarket between morning and evening classes."},
+    {"id":"f14","text":"Penn said, \"The pass removes a bill. It does not make the last bus wait for my class.\""},
+    {"id":"f15","text":"Transit director Daven Reed said ridership will be counted by boardings, with no academic records shared with the transit system."},
+    {"id":"f16","text":"Reed said, \"We need to see which trips fill up before we decide where another bus belongs.\""},
+    {"id":"f17","text":"The institutions and transit system will review route-level boarding totals in January 2027."},
+    {"id":"f18","text":"The contracts run through Aug. 31, 2027, and renewal funding has not been approved."},
+    {"id":"f19","text":"The transit system operates 11 local routes and has used the same central transfer square since 2001."},
+    {"id":"f20","text":"Students already receiving a separate travel allowance should ask their campus office how the new pass affects that allowance; the two agreements do not set a uniform rule."}
+  ],
+  "modules": ["domains/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1","f2","f3","f4","f5","f6","f9","f10","f11","f12","f18"],
+    "forbidden_additions": ["All 6,000 students are confirmed riders or additional evening buses are funded","The regional express, employees or future renewal are included in the agreement"],
+    "preserve": ["If quoted: The pass removes a bill. It does not make the last bus wait for my class.","If quoted: We need to see which trips fill up before we decide where another bus belongs.","The institutions' combined annual contribution is $300,000."],
+    "expected_action": "draft"
+  }
+}

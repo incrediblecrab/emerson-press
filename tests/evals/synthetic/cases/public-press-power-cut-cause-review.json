@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "public-press-power-cut-cause-review",
+  "split": "held_out",
+  "operation": "review",
+  "task": "Review this fictional power-cut brief in about 60–110 words. Distinguish the utility's documented restoration update from an unestablished cause and an unsupported injury statement. Preserve the limited value of the shopkeeper's observation without treating it as a technical finding.",
+  "input": "A faulty kiosk heater caused the weekend power cut, injuring nobody. A shopkeeper said, \"I heard a bang before the lights went out,\" proving that the heater overloaded the circuit. Service returned at 7 a.m. on Monday.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional utility's update says service was restored at 7 a.m. on Monday."},
+    {"id": "f2", "text": "The utility says the cause of the interruption has not been determined."},
+    {"id": "f3", "text": "The supplied shopkeeper statement is exactly: \"I heard a bang before the lights went out.\""},
+    {"id": "f4", "text": "The packet contains no evidence identifying a faulty heater or overloaded circuit."},
+    {"id": "f5", "text": "The packet contains no injury-status report."}
+  ],
+  "modules": ["domains/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5"],
+    "forbidden_additions": [
+      "A confirmed heater fault, overloaded circuit, or replacement causal explanation.",
+      "A claim that nobody was injured based only on the absence of an injury report.",
+      "An invented inspection, expert opinion, or new interview."
+    ],
+    "preserve": [
+      "Restoration time as a sourced fact.",
+      "A witness's sequence of observations distinguished from a causal finding.",
+      "The limits of the packet on both cause and injuries."
+    ],
+    "expected_action": "flag_missing_evidence"
+  }
+}

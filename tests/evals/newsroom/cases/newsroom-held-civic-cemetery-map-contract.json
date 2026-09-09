@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-civic-cemetery-map-contract",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic exercise using fictional reporting notes. Use only the supplied reporting notes as the fixed record: select, organize and phrase the story without inventing additional reported events, scenes, quotations or reporting activity. Write a headline and a straight news update of roughly 450–650 words in AP style for general newspaper readers about Rillgate's contract to reconcile its cemetery maps and burial registers. Write from this reporting snapshot as of September 18, 2026.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Rillgate Council approved a $74,000 contract to compare cemetery ground plans, burial registers and existing plot markers."},
+    {"id": "f2", "text": "The project covers the old municipal cemetery and its later eastern extension, which use different row-numbering systems."},
+    {"id": "f3", "text": "The contractor will create a digital working map for cemetery staff, with a public location map planned as a separate later step."},
+    {"id": "f4", "text": "The contract does not authorize excavation or movement of remains, and no such work is included in the current plan."},
+    {"id": "f5", "text": "Cemetery staff identified conflicting references in several inherited records but have not supplied a verified total of wrongly recorded burials."},
+    {"id": "f6", "text": "The older plans include annotations made over several decades without a consistent record of who added each note."},
+    {"id": "f7", "text": "Cemetery superintendent Neris Pell said, \"A blank space on a plan is not evidence that nothing is there.\""},
+    {"id": "f8", "text": "The contractor will flag unresolved discrepancies for staff review instead of filling gaps with an assumed name or location."},
+    {"id": "f9", "text": "Physical markers will be photographed from existing paths where possible, with arrangements made for work near scheduled services."},
+    {"id": "f10", "text": "The contractor estimates an eight-month schedule from the November 2026 start, although unresolved records may require further work afterward."},
+    {"id": "f11", "text": "Funding comes from the cemetery's accumulated maintenance reserve rather than a new charge on families using the grounds."},
+    {"id": "f12", "text": "A cemetery friends group asked that the staff map preserve old spellings and explain corrections rather than replacing earlier entries without a trace."},
+    {"id": "f13", "text": "Friends group secretary Oren Cade said, \"Families sometimes arrive with a name written differently on three pieces of paper, and those differences can matter.\""},
+    {"id": "f14", "text": "The working database will retain links to scanned source pages so staff can see the basis for each reconciled entry."},
+    {"id": "f15", "text": "Scans will not all be published online automatically; staff must first decide which details belong in the proposed public map."},
+    {"id": "f16", "text": "Questions about a family's existing burial documents will continue through the cemetery office, not be resolved by a map screen alone."},
+    {"id": "f17", "text": "The old and eastern sections will remain open during most mapping work, with short local restrictions announced when needed."},
+    {"id": "f18", "text": "The contractor is not being asked to judge the historical importance of particular graves or select monuments for removal."},
+    {"id": "f19", "text": "The grounds include a row of chestnut trees planted along the former boundary between the two sections."},
+    {"id": "f20", "text": "Volunteers will be invited to supply copies of relevant records, but submitted material will require comparison with existing sources."},
+    {"id": "f21", "text": "The council will receive progress reports on completed comparisons and unresolved discrepancies rather than a single percentage described as certainty."},
+    {"id": "f22", "text": "No launch date or final search features have been approved for the public map."}
+  ],
+  "modules": ["domains/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f3", "f4", "f5", "f8", "f14", "f15", "f22"],
+    "forbidden_additions": ["Excavation, moved remains, confirmed misburial totals or a live public database.", "Unknown names or locations completed from assumptions.", "A map treated as a substitute for reviewing a family's documents."],
+    "preserve": ["Reconciliation with traceable sources rather than automatic certainty.", "Separate staff and public mapping stages and the treatment of unresolved records.", "Exact quotation wording and attribution when quotations are used."],
+    "expected_action": "draft"
+  }
+}

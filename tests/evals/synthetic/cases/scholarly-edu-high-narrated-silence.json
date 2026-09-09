@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "id": "scholarly-edu-high-narrated-silence",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "Write a 70–105-word close reading for a high-school literature notebook. Readers know the ordinary meanings of silence and quarter-hour but are learning how neighboring sentences can complicate a narrator's description. Use both original sentences exactly if quoting. Offer a defensible reading of the contrast, such as possible irony or exaggeration, without declaring a unique authorial intention or diagnosing the narrator. A focused paragraph is sufficient; no external critics or compulsory counterargument are needed.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "The complete supplied original excerpt is “Our street was perfectly silent. The bell rang every quarter-hour.”"
+    },
+    {
+      "id": "f2",
+      "text": "Both sentences belong to the same narrator's description of the street."
+    },
+    {
+      "id": "f3",
+      "text": "The packet supplies no author commentary, further plot, or information about the narrator's health."
+    }
+  ],
+  "modules": [
+    "domains/non-fiction.md",
+    "domains/education-level/04-high-school.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2"],
+    "forbidden_additions": [
+      "An invented author biography, later scene, or critical consensus",
+      "A diagnosis of the narrator",
+      "An assertion that the packet proves a single intended interpretation"
+    ],
+    "preserve": [
+      "Our street was perfectly silent.",
+      "The bell rang every quarter-hour.",
+      "The relationship between the two descriptions rather than an isolated keyword judgment"
+    ],
+    "expected_action": "draft"
+  }
+}

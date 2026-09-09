@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-business-feature-theater-costume-bank",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic newspaper-writing exercise using fictional reporting notes. Use only the supplied reporting notes. Write from the reporting snapshot as of September 8, 2026. Write a headline and a 450–650-word AP-style reported feature about the Aster Fold costume bank and how shared garments change the cost and practical work of school theater.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id":"f1","text":"A June 2026 costume-room note records coordinator Omi Savren pinning a temporary hem while a drama teacher compared the garment with a production's color plan."},
+    {"id":"f2","text":"Aster Fold serves 14 member schools from a rented room in an arts center."},
+    {"id":"f3","text":"Each school pays $180 annually, generating $2,520 in annual membership receipts if all current memberships are paid."},
+    {"id":"f4","text":"The service recorded 1,200 garment checkouts last year, including repeated loans of the same clothing."},
+    {"id":"f5","text":"The checkout count is not an inventory of 1,200 distinct costumes or a count of student performers."},
+    {"id":"f6","text":"The current terms charge a separate $2 cleaning contribution per returned garment; the packet gives no annual return count or total cleaning receipts."},
+    {"id":"f7","text":"Membership permits requests subject to availability; it does not guarantee a full matching cast wardrobe for every production."},
+    {"id":"f8","text":"Schools may make reversible alterations but must seek approval before cutting or permanently changing garments."},
+    {"id":"f9","text":"Popular sizes and neutral coats are booked earlier than unusual costume pieces, according to the reservation ledger."},
+    {"id":"f10","text":"Drama teacher Nera Vossel shifted one production's color choices after the requested coats were already reserved by another school."},
+    {"id":"f11","text":"Vossel said, \"Borrowing changes the budget, but it also asks the production to work with what is actually on the rail.\""},
+    {"id":"f12","text":"Savren is paid for eight hours a week; volunteers help sort returns and perform simple repairs."},
+    {"id":"f13","text":"Membership and cleaning receipts are supplemented by arts-center support and donations; they do not cover all staffing and room costs alone."},
+    {"id":"f14","text":"Some donated garments require more alteration or cleaning than their likely future use justifies, and the bank does not accept every donation."},
+    {"id":"f15","text":"Savren said, \"A free coat can still arrive with an expensive amount of work inside it.\""},
+    {"id":"f16","text":"The bank has not measured a uniform per-school saving because schools would otherwise buy, hire, make or reuse different items."},
+    {"id":"f17","text":"Late returns can affect the next school's fitting period even when an item comes back undamaged."},
+    {"id":"f18","text":"The bank's loan records use garment identifiers and school contacts, not pupils' personal measurements."},
+    {"id":"f19","text":"The collection began with costumes from a dissolved amateur theater company in 2019."},
+    {"id":"f20","text":"A proposal for more paid coordinator hours remains unfunded, and the current service cannot promise to add more member schools."}
+  ],
+  "modules": ["domains/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f2","f3","f4","f5","f6","f7","f8","f9","f12","f13","f16","f17","f20"],
+    "forbidden_additions": ["Guaranteed complete wardrobes, 1,200 distinct costumes or a uniform school saving","All donations are costless or extra coordinator hours have been financed"],
+    "preserve": ["If quoted: Borrowing changes the budget, but it also asks the production to work with what is actually on the rail.","If quoted: A free coat can still arrive with an expensive amount of work inside it.","Repeated garment loans, available stock and paid operating capacity are distinct."],
+    "expected_action": "draft"
+  }
+}

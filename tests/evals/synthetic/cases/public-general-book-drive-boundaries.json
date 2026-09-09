@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "public-general-book-drive-boundaries",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Edit this fictional book-drive notice into a clear, respectful poster of about 45–80 words. Explain the acceptance criteria without shaming people for used or annotated books. Keep the practical donation window and do not promise that every donated book will be placed with a reader.",
+  "input": "Bring absolutely any books, in any condition, to the community foyer on Saturday. We accept them all and guarantee every book a new home. Please avoid books with writing in them; we only want pristine copies. Drop off whenever it suits you.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional drive accepts complete books whose text is legible."},
+    {"id": "f2", "text": "Annotations are acceptable if the printed text remains legible."},
+    {"id": "f3", "text": "Damp books and books with missing pages are not accepted."},
+    {"id": "f4", "text": "Donations are received in the community foyer on Saturday from 10 a.m. to noon."},
+    {"id": "f5", "text": "The organisers have not guaranteed placement of every donated book."}
+  ],
+  "modules": ["domains/general.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "A pristine-copy requirement or a blanket prohibition on annotations.",
+      "Acceptance of incomplete or damp books.",
+      "All-day drop-off or guaranteed placement of every donation."
+    ],
+    "preserve": [
+      "Legibility and completeness as the relevant criteria.",
+      "A welcoming rather than judgmental description of acceptable used books.",
+      "The specific two-hour collection window."
+    ],
+    "expected_action": "edit"
+  }
+}

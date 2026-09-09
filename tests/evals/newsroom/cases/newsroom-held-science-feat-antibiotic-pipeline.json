@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-science-feat-antibiotic-pipeline",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic writing exercise. Using these fictional reporting notes, write a newspaper reported feature for general readers. Draw only on the supplied notes; do not invent additional reported events, scenes, or quotations. Write from this reporting snapshot as of March 18, 2025. Include a headline. Target 450 to 650 words. Follow AP style.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "Areteia Pharma, a antibiotics-focused company with 34 employees, has three antibiotic candidates in clinical development and is running on 14 months of cash as of March 2025."
+    },
+    {
+      "id": "f2",
+      "text": "The company has not launched a commercial product; it generates no revenue from drug sales and depends entirely on grant funding and investor backing."
+    },
+    {
+      "id": "f3",
+      "text": "Areteia CEO Dr. Carlos Fuentes said: \"We have drugs that work against bacteria that nothing else kills. We cannot raise the Series C to bring them to market. That is not a scientific failure. It is an economic failure.\""
+    },
+    {
+      "id": "f4",
+      "text": "Infectious disease specialist Dr. Josephine Amin said the Areteia situation is representative: the WHO's 2024 pipeline assessment found only 12 antibiotics in Phase 3 trials globally, of which four address priority resistant pathogens."
+    },
+    {
+      "id": "f5",
+      "text": "Dr. Amin said: \"The pipeline is not empty. It is not funded. There is a difference. The science works. The business model doesn't.\""
+    },
+    {
+      "id": "f6",
+      "text": "The core economic problem: a new antibiotic approved today would be used sparingly to delay resistance \u2014 good medical practice, but it means sales volumes stay low and the company cannot recover its development cost."
+    },
+    {
+      "id": "f7",
+      "text": "Two antibiotic startups that reached Phase 3 trials in the United States between 2018 and 2023 declared bankruptcy after approval; their drugs remained available but production nearly ceased."
+    },
+    {
+      "id": "f8",
+      "text": "Fuentes said Areteia's most advanced candidate targets Acinetobacter baumannii, a gram-negative bacterium responsible for severe hospital infections and classified by the WHO as a critical priority pathogen."
+    },
+    {
+      "id": "f9",
+      "text": "A Phase 2 trial showed the drug cleared the pathogen in 14 of 18 patients whose infections had not responded to any other antibiotic; the trial was too small to be statistically definitive."
+    },
+    {
+      "id": "f10",
+      "text": "Dr. Amin said the Phase 2 data is scientifically encouraging but insufficient for FDA approval; reaching Phase 3 requires $60 to $90 million, which Fuentes said Areteia cannot raise under current market conditions."
+    },
+    {
+      "id": "f11",
+      "text": "The U.S. PASTEUR Act, which would create a subscription payment model to compensate antibiotic developers based on availability rather than volume, has passed committee but not been enacted."
+    },
+    {
+      "id": "f12",
+      "text": "Under PASTEUR, the government would pay companies up to $3 billion over 10 years for maintaining an approved antibiotic available for use, regardless of how many prescriptions are written."
+    },
+    {
+      "id": "f13",
+      "text": "Fuentes said Areteia cannot wait for PASTEUR: \"It's been in Congress for four years. We have 14 months. Legislation that hasn't passed doesn't pay salaries.\""
+    },
+    {
+      "id": "f14",
+      "text": "Dr. Amin said she has seen three promising antibiotic programs discontinued in the past decade for economic reasons, not scientific ones: \"It is a preventable loss. We are choosing not to prevent it.\""
+    },
+    {
+      "id": "f15",
+      "text": "The National Institutes of Health provided $14 million in preclinical funding to Areteia's lead candidate; private investors have contributed $38 million across two funding rounds."
+    },
+    {
+      "id": "f16",
+      "text": "Fuentes said the company is in conversations with two large pharmaceutical companies about licensing the Acinetobacter program; neither has made a formal offer."
+    },
+    {
+      "id": "f17",
+      "text": "Large pharmaceutical companies exited antibiotic research in the 2010s because the returns did not justify the investment; several have said they would re-enter if pull incentive programs were enacted."
+    },
+    {
+      "id": "f18",
+      "text": "Dr. Amin said the gap between scientific readiness and commercial viability in antibiotics is not new: it has been documented since the early 2000s and has not been resolved by any policy response so far."
+    },
+    {
+      "id": "f19",
+      "text": "Fuentes said he will not describe the situation as hopeless: \"The drugs work. The need is real. We are one policy decision or one partnership away from a different outcome. That's both encouraging and maddening.\""
+    },
+    {
+      "id": "f20",
+      "text": "Dr. Amin said the final irony is that if Areteia fails, its compound could disappear even if the clinical data would have supported approval: \"It takes more than science to save a drug. It takes money and timing and luck, which is a terrible way to manage a public health emergency.\""
+    }
+  ],
+  "modules": [
+    "domains/press.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f7",
+      "f8",
+      "f9",
+      "f11",
+      "f13",
+      "f14"
+    ],
+    "forbidden_additions": [
+      "a Phase 3 trial initiated by Areteia",
+      "PASTEUR Act enacted into law",
+      "a corporate partnership deal concluded"
+    ],
+    "preserve": [
+      "We have drugs that work against bacteria that nothing else kills. We cannot raise the Series C to bring them to market. That is not a scientific failure. It is an economic failure.",
+      "The pipeline is not empty. It is not funded. There is a difference. The science works. The business model doesn't."
+    ],
+    "expected_action": "draft"
+  }
+}
