@@ -101,6 +101,14 @@ registered preference and pointwise acquisition is in progress; raw invalid
 judgments are retained, not repaired or selectively requested again. No primary
 effectiveness conclusion is available yet.
 
+The first judging pass stopped at its three-failure circuit breaker after
+provider content filters blocked three Claude assessments of one biosafety
+packet. It retained 689 valid assessments and 61 format failures, leaving 561
+jobs untouched. The [recorded operational deviation](artifacts/primary-continuation-01.json)
+permits first attempts for those original untouched jobs, without retrying
+filtered/failed jobs, changing models or prompts, replacing ratings or
+renormalizing missing weights. No efficacy result informed that decision.
+
 Shared programs and conservative template clusters reduce the family count,
 but neither the remaining labels nor the source audits prove independence.
 The [mean-inference component](mean-inference.md) documents a finite-sample

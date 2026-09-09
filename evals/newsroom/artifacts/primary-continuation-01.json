@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "kind": "primary-operational-protocol-deviation",
+  "recorded_on": "September 9, 2026",
+  "recorded_before_continuation": true,
+  "protocol_sha256": "a6701efdddae8cf8f4fd4c6944f5da65c64b2dbfb41b0975b0f9acbad9176574",
+  "closed_summary_sha256": "dd385bfa87da3f96b11b81094640f1342e660e48c7fe02669307bc6148243c0f",
+  "planned_judgment_slots": 1314,
+  "valid_assessments_before_continuation": 689,
+  "assessment_format_failures_retained": 61,
+  "provider_filter_failures_retained": 3,
+  "never_started_slots_to_continue": 561,
+  "filtered_jobs": [
+    "pointwise-newsroom-held-science-biosafety-breach-bare-task-claude-sonnet-5",
+    "pointwise-newsroom-held-science-biosafety-breach-full-claude-sonnet-5",
+    "preference-newsroom-held-science-biosafety-breach-claude-sonnet-5"
+  ],
+  "observed_failure": "provider reported a content filter",
+  "deviation": "The registration described continuation after infrastructure repair. This continuation follows a provider-filter circuit-breaker stop instead; it is disclosed rather than silently characterized as a repaired infrastructure outage.",
+  "decision": "Continue only never-started jobs from the original frozen plan. Keep all 64 failed attempts unscored and all 689 completed assessments unchanged.",
+  "rationale": "A filter affecting three planned assessments should not silently terminate the remaining fixed bank. No filtered job is retried or replaced; the original predeclared jobs, models and inputs remain unchanged.",
+  "untouched_same_packet_jobs": [
+    "pointwise-newsroom-held-science-biosafety-breach-full-gpt-6-astra"
+  ],
+  "same_packet_model_context": "The GPT preference and bare-task pointwise jobs were already captured before this stop. Its remaining full-text pointwise job also existed at registration; no model is substituted for Claude.",
+  "candidate_sources_templates_models_or_settings_changed": false,
+  "failed_or_completed_jobs_to_be_repeated": 0,
+  "new_or_substitute_jobs_added": 0,
+  "auxiliary_table_redrawn": false,
+  "missing_weights_renormalized": false,
+  "primary_effectiveness_results_inspected_for_this_decision": false,
+  "human_reviews": 0
+}
