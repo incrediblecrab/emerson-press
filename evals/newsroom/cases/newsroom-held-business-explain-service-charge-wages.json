@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-business-explain-service-charge-wages",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic newspaper-writing exercise using fictional reporting notes. Use only the supplied reporting notes. Write from the reporting snapshot as of August 17, 2026. Write a headline and a 450–650-word AP-style newspaper explainer about the service charge at the Copper Wren restaurant, answering where the charge goes and how it differs from an optional tip under this business's stated policy.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id":"f1","text":"Copper Wren introduced an 18% service charge on dine-in food and drink checks in July 2026."},
+    {"id":"f2","text":"A $50 eligible check receives a $9 service charge, making $59 before separately calculated taxes."},
+    {"id":"f3","text":"The charge does not apply to takeaway orders under the restaurant's policy."},
+    {"id":"f4","text":"The restaurant retains the service-charge receipts as business revenue used for payroll, paid leave and other labor costs."},
+    {"id":"f5","text":"It does not promise to hand the full 18% from each table directly to that table's server."},
+    {"id":"f6","text":"The restaurant raised servers' base pay from $16 to $22 an hour when the charge began."},
+    {"id":"f7","text":"The higher base rate is not a guarantee of a fixed number of shifts or a particular weekly take-home amount."},
+    {"id":"f8","text":"Customers may leave an additional optional tip, but the payment screen starts with no additional tip selected."},
+    {"id":"f9","text":"The restaurant's notice asks diners not to treat the service charge as an automatic obligation to add another 18%."},
+    {"id":"f10","text":"Owner Leda Selt says the policy is intended to make the base wage less dependent on the size of individual table tips."},
+    {"id":"f11","text":"Selt said, \"We can promise an hourly rate more clearly than we can promise what a particular table will leave.\""},
+    {"id":"f12","text":"Server Toma Dain says the new base rate makes quiet shifts easier to plan around, while busy nights previously could produce larger tips."},
+    {"id":"f13","text":"Dain said, \"A steadier floor matters, but people should not assume every worker's total went up by the same amount.\""},
+    {"id":"f14","text":"The reporting record lacks matched shift-by-shift earnings data establishing every employee's total change."},
+    {"id":"f15","text":"Kitchen workers also receive pay under the revised labor budget, but their individual rates are not provided."},
+    {"id":"f16","text":"The service charge appears on menus and the restaurant's booking page; it is not introduced only on the final receipt."},
+    {"id":"f17","text":"Menu base prices were unchanged at the July transition, so customers' mandatory pretax totals increased for eligible dine-in orders."},
+    {"id":"f18","text":"The restaurant has not published a verified profit comparison before and after the change."},
+    {"id":"f19","text":"Copper Wren has 46 seats and serves lunch and dinner five days a week."},
+    {"id":"f20","text":"This account describes one restaurant's allocation policy, not a universal legal rule governing all service charges or tips."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1","f2","f3","f4","f5","f6","f7","f8","f14","f16","f17","f20"],
+    "forbidden_additions": ["The entire charge goes directly to the server or an extra tip is mandatory","Every worker's total earnings or restaurant profit is proved higher"],
+    "preserve": ["If quoted: We can promise an hourly rate more clearly than we can promise what a particular table will leave.","If quoted: A steadier floor matters, but people should not assume every worker's total went up by the same amount.","The $59 example is before separate taxes and any optional additional tip."],
+    "expected_action": "draft"
+  }
+}

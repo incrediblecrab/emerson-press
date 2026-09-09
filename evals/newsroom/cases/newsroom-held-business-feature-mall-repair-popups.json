@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-business-feature-mall-repair-popups",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic newspaper-writing exercise using fictional reporting notes. Use only the supplied reporting notes. Write from the reporting snapshot as of September 8, 2026. Write a headline and a 450–650-word AP-style reported feature about temporary repair businesses occupying part of Ambercourt mall's vacant former department store and the opportunities and limits of a short lease.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id":"f1","text":"An August 2026 site note describes upholsterer Rena Selt showing a customer two replacement chair fabrics in a unit formerly used to display luggage."},
+    {"id":"f2","text":"Ambercourt mall has divided part of its vacant department-store space into eight temporary workshop-retail units."},
+    {"id":"f3","text":"Five units were occupied at the end of July and three remained available."},
+    {"id":"f4","text":"A unit's weekly charge is $150 rent plus $35 for shared utilities, totaling $185 a week before the tenant's other expenses."},
+    {"id":"f5","text":"The agreements renew in 28-day periods for up to six months and provide 14 days' notice if the landlord ends the arrangement."},
+    {"id":"f6","text":"The landlord is still seeking a long-term tenant for the former anchor space and has not promised permanent workshops."},
+    {"id":"f7","text":"Selt uses the unit for customer meetings, fabric cutting and small repairs, while dusty stripping work remains at a separate workspace."},
+    {"id":"f8","text":"The mall's temporary-use rules exclude large saws and spray finishing inside these units."},
+    {"id":"f9","text":"Selt completed eight paid repair jobs in her first month and made three additional quick adjustments without a charge."},
+    {"id":"f10","text":"Those job counts do not establish profit after rent, materials, labor and the cost of the separate workspace."},
+    {"id":"f11","text":"Selt said, \"A shop window lets people bring a question in. A four-week lease makes me careful about what I leave behind.\""},
+    {"id":"f12","text":"Customer Oren Bell says seeing fabric samples in person helped him decide whether to repair chairs rather than replace them."},
+    {"id":"f13","text":"Bell asked how to contact Selt if the mall unit closes before a later repair is needed."},
+    {"id":"f14","text":"Selt's written work orders list her business contact details separately from the temporary unit address."},
+    {"id":"f15","text":"Mall manager Ceri Marel says the arrangement generates some rent and occupied frontage while negotiations with prospective anchor tenants continue."},
+    {"id":"f16","text":"Marel said, \"We can offer a beginning here without pretending we have already found a permanent ending for the building.\""},
+    {"id":"f17","text":"The mall counted 320 visits to the workshop area during one observed week but has no comparable count for the former department store."},
+    {"id":"f18","text":"The visit count is not a count of repair purchases or evidence that the entire mall has recovered commercially."},
+    {"id":"f19","text":"The original department store closed in 2024, leaving some display rails and old fitting-room mirrors in place."},
+    {"id":"f20","text":"No permanent anchor lease, tenant profit survey or mall-wide employment recovery has been announced."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f2","f3","f4","f5","f6","f7","f8","f9","f10","f14","f17","f18"],
+    "forbidden_additions": ["Permanent workshops, proven tenant profits or complete mall recovery","All observed visits resulted in paid repairs or every repair process can occur in the unit"],
+    "preserve": ["If quoted: A shop window lets people bring a question in. A four-week lease makes me careful about what I leave behind.","If quoted: We can offer a beginning here without pretending we have already found a permanent ending for the building.","The visible storefront and the off-site workshop serve different parts of the business."],
+    "expected_action": "draft"
+  }
+}

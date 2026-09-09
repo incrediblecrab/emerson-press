@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "kind": "pre-generation-science-source-audit-bundle",
+  "cases": 73,
+  "provisional_families": 68,
+  "primary_writing_outputs": 0,
+  "limitation": "One bundle of source inputs, unchanged model audit records and separate parent decisions; not one case, a writing trial or a human review.",
+  "records": 1,
+  "artifact": "evals/newsroom/artifacts/science-source-review.jsonl.xz",
+  "artifact_sha256": "7690f3fe2f1b66a4689d5d743c23941596ae2b96a0132310075f68d24d02d072",
+  "payload_sha256": "1d6d7b053fb8a5f91d52b0d1c0e410af3a20a6b83456d4d84483ec4d6ede97c1",
+  "human_reviews": 0
+}

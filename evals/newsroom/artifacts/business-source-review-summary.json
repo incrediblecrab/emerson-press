@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "kind": "pre-generation-business-source-review-summary",
+  "assessor": "model",
+  "human_reviews": 0,
+  "primary_writing_outputs": 0,
+  "cases": 73,
+  "fact_entries": 1460,
+  "fact_entry_distribution": {
+    "20": 73
+  },
+  "source_word_range": [
+    327,
+    392
+  ],
+  "word_count_method": "Whitespace-separated words in fact text only",
+  "original_declared_families": 73,
+  "provisional_families_after_review": 73,
+  "changed_cases": [],
+  "changed_checks": [],
+  "tasks_preserved_quotations_and_required_fact_ids_unchanged": true,
+  "raw_audits_retained": true,
+  "efficacy_result": null,
+  "writing_quality_conclusion": "Not evaluated by source review",
+  "limitations": [
+    "An empty model issue list does not certify that every source statement is correct.",
+    "Parent checks verify source/index coverage and unchanged hashes, not the auditor's private reasoning.",
+    "The auditor's 96 grouped assertions are retained as its report, not independently reproduced parent checks or independent findings.",
+    "No external legal, financial or professional-standard verification was performed.",
+    "Family labels and exact-text uniqueness do not prove independence; cross-shard/tuning review is still pending.",
+    "This is source review, not a writing trial; primary writing outputs and human reviews remain zero."
+  ]
+}

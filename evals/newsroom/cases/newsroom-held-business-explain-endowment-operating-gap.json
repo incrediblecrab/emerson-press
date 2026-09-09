@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-business-explain-endowment-operating-gap",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic newspaper-writing exercise using fictional reporting notes. Use only the supplied reporting notes. Write from the reporting snapshot as of August 31, 2026. Write a headline and a 450–650-word AP-style newspaper explainer answering why Orlan College's reported $40 million endowment does not function as a $40 million checking account for its projected operating-budget gap.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id":"f1","text":"Orlan College's June 2026 financial statement lists endowment assets valued at $40 million and a projected $800,000 operating-budget gap."},
+    {"id":"f2","text":"The endowment figure is a value of invested assets at the reporting date, not the balance of an unrestricted operating bank account."},
+    {"id":"f3","text":"The college's adopted annual spending plan calls for a $1.6 million endowment draw, equivalent to 4% of the stated $40 million valuation."},
+    {"id":"f4","text":"Of that planned draw, $1.4 million supports purposes specified in gift agreements, including scholarships and named teaching posts."},
+    {"id":"f5","text":"The remaining $200,000 can support general operations under the college's records."},
+    {"id":"f6","text":"That $200,000 is already included in the operating budget used to calculate the $800,000 gap; it is not additional new money to subtract again."},
+    {"id":"f7","text":"The college says changing a restricted gift's use requires a separate process and cannot be assumed from the headline asset total."},
+    {"id":"f8","text":"Approximately $9 million of the endowment valuation is in property and other investments that are not immediately convertible to cash at a guaranteed price."},
+    {"id":"f9","text":"Under the college's restricted-gift agreements, selling an asset changes the holding's form without removing the donor's specified spending limits."},
+    {"id":"f10","text":"Treasurer Nessa Quill says spending decisions also account for future years in which scholarships and teaching posts need support."},
+    {"id":"f11","text":"Quill said, \"An asset can belong to the college without being available for any bill the college chooses.\""},
+    {"id":"f12","text":"Student representative Daro Linn says the distinction matters but does not answer every question about priorities within the unrestricted budget."},
+    {"id":"f13","text":"Linn said, \"Explaining a restriction is not the same as explaining why the library is the part asked to close earlier.\""},
+    {"id":"f14","text":"The college has proposed shorter library evening hours as one possible saving but has not adopted the final operating budget."},
+    {"id":"f15","text":"Trustees have requested alternatives, including delayed administrative software purchases and additional unrestricted fundraising."},
+    {"id":"f16","text":"No new unrestricted donation has been pledged in the supplied record."},
+    {"id":"f17","text":"The endowment's market value can change with investment performance; the $40 million figure is not a promised future sale price."},
+    {"id":"f18","text":"The financial statement does not give trustees authority to spend every invested dollar immediately or establish that no other budget choice exists."},
+    {"id":"f19","text":"The college's oldest named scholarship dates to a 1948 gift from a former textile merchant."},
+    {"id":"f20","text":"Orlan enrolls 1,900 students, including commuters and residential students; the endowment is not distributed as an equal cash payment to each student."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1","f2","f3","f4","f5","f6","f7","f8","f9","f14","f15"],
+    "forbidden_additions": ["The entire endowment is spendable cash or the unrestricted $200,000 newly reduces the stated gap to $600,000","Final library cuts, a guaranteed asset sale value or a new donation not documented"],
+    "preserve": ["If quoted: An asset can belong to the college without being available for any bill the college chooses.","If quoted: Explaining a restriction is not the same as explaining why the library is the part asked to close earlier.","Asset value, annual draw, restricted spending and the operating budget are distinct."],
+    "expected_action": "draft"
+  }
+}

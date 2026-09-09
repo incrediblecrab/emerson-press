@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-business-explain-assessment-tax-rate",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic newspaper-writing exercise using fictional reporting notes. Use only the supplied reporting notes. Write from the reporting snapshot as of August 31, 2026. Write a headline and a 450–650-word AP-style newspaper explainer answering why a 20% increase in a property's taxable assessment does not necessarily produce a 20% increase in its city property-tax bill.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id":"f1","text":"The city of Aldercove sent new property assessments in August 2026 alongside a council-approved reduction in its city tax rate."},
+    {"id":"f2","text":"The city rate falls from $1.50 to $1.30 per $100 of taxable assessed value for the next billing year."},
+    {"id":"f3","text":"A supplied city example increases a home's taxable assessment from $200,000 to $240,000, a 20% rise."},
+    {"id":"f4","text":"At the old value and rate, that home's city charge is $3,000; at the new value and rate, it is $3,120."},
+    {"id":"f5","text":"The example city charge therefore increases $120, or 4%, rather than 20%."},
+    {"id":"f6","text":"The figures concern taxable value after applicable adjustments, not an estimate of cash a homeowner has received."},
+    {"id":"f7","text":"County and school charges appear separately and are not included in the city's $3,000-to-$3,120 comparison."},
+    {"id":"f8","text":"Those other authorities have not all finalized their rates, so the example is not a complete forecast of the owner's combined property-tax bill."},
+    {"id":"f9","text":"Assessments estimate property values while the elected council sets the city rate through its budget process."},
+    {"id":"f10","text":"The city assessor says individual assessment changes vary; the 20% example is not the increase assigned to every property."},
+    {"id":"f11","text":"The city budget calls for a larger total levy despite the lower rate because the aggregate taxable base has grown."},
+    {"id":"f12","text":"Some base growth comes from newly completed buildings rather than solely from higher values on existing homes."},
+    {"id":"f13","text":"Homeowner Tera Moss said her wages did not rise when the assessed value of her house did."},
+    {"id":"f14","text":"Moss said, \"The house may have a bigger number on paper, but I still pay the bill from the same paycheck.\""},
+    {"id":"f15","text":"Finance director Oren Fenn said, \"The assessment and the rate are two parts of one multiplication, set through different decisions.\""},
+    {"id":"f16","text":"The city provides an account calculator using the adopted city rate but labels other authorities' unfinished charges as unavailable."},
+    {"id":"f17","text":"The assessor's notice explains a valuation-review process; that process does not itself change the council's adopted tax rate."},
+    {"id":"f18","text":"The reporting record provides no estimate of how many households will receive a lower combined bill."},
+    {"id":"f19","text":"Aldercove carries out a full assessment review every four years rather than valuing every property from a new sale each year."},
+    {"id":"f20","text":"No citywide rent increase, house-sale windfall or change in mortgage payments can be calculated from the supplied example alone."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1","f2","f3","f4","f5","f6","f7","f8","f9","f10","f18"],
+    "forbidden_additions": ["Every property's bill rises 20% or the example forecasts the entire combined bill","A lower tax rate necessarily means a lower levy or cash income for homeowners"],
+    "preserve": ["If quoted: The house may have a bigger number on paper, but I still pay the bill from the same paycheck.","If quoted: The assessment and the rate are two parts of one multiplication, set through different decisions.","The stated city charge rises from $3,000 to $3,120, a 4% increase."],
+    "expected_action": "draft"
+  }
+}

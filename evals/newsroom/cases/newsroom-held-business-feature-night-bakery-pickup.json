@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-business-feature-night-bakery-pickup",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic newspaper-writing exercise using fictional reporting notes. Use only the supplied reporting notes. Write from the reporting snapshot as of September 8, 2026. Write a headline and a 450–650-word AP-style reported feature about the people arranging their days around the overnight production shift at Low Ember Bakery and the customers who depend on it.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id":"f1","text":"A July 28, 2026, production note records Low Ember Bakery's first delivery van leaving at 5:45 a.m. while the finishing crew was still packing the second route."},
+    {"id":"f2","text":"The bakery supplies breakfast rolls and sandwich bread to 18 cafes and three workplace canteens."},
+    {"id":"f3","text":"Five employees work the overnight production shift, which runs from 12:30 a.m. to 8:30 a.m. and includes eight paid hours under the bakery's roster."},
+    {"id":"f4","text":"The overnight hourly rate is $25, including a $3 premium above the corresponding $22 daytime base rate."},
+    {"id":"f5","text":"The bakery moved production earlier in February after several cafe customers requested deliveries before their own opening times."},
+    {"id":"f6","text":"Baker Ceri Dain now finishes in time to collect her child from an afternoon school activity but relies on her partner for morning arrangements."},
+    {"id":"f7","text":"Dain says she sleeps during part of the daytime; the record contains no measured health or sleep outcome for the crew."},
+    {"id":"f8","text":"Dain said, \"Finishing early gives me one part of the family day and takes me out of another.\""},
+    {"id":"f9","text":"Crew members can request roster swaps, and the supervisor recorded four approved swaps in August 2026."},
+    {"id":"f10","text":"The four approvals do not show every request made or establish that all employees can obtain their preferred schedule."},
+    {"id":"f11","text":"The bakery makes approximately 3,000 rolls on a normal weekday, with orders placed by customers before noon the preceding day."},
+    {"id":"f12","text":"Changes after that cutoff can leave the bakery with surplus bread or an unfilled addition to an order."},
+    {"id":"f13","text":"Owner Oren Moss sells some surplus at a reduced price from a morning counter but has no guaranteed buyer for every extra tray."},
+    {"id":"f14","text":"Cafe owner Nessa Orlen says a late bread delivery can delay assembled lunch orders even when coffee service opens on time."},
+    {"id":"f15","text":"Orlen said, \"The morning rush in my shop starts with work somebody else did while our shutters were down.\""},
+    {"id":"f16","text":"The supplied August 2026 delivery log covers 120 completed stops, three of which arrived after the promised window."},
+    {"id":"f17","text":"No comparable earlier-period log was supplied, so the record does not establish that the new shift improved delivery reliability."},
+    {"id":"f18","text":"The bakery employs a separate daytime cleaning and preparation crew rather than asking the overnight bakers to cover all daytime work."},
+    {"id":"f19","text":"Low Ember occupies a former restaurant kitchen, and one wall still carries an unused menu rail."},
+    {"id":"f20","text":"The owner has not published a profit comparison or a net energy-saving estimate for the earlier production schedule."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f2","f3","f4","f5","f6","f7","f9","f10","f11","f12","f16","f17"],
+    "forbidden_additions": ["A proven health, reliability, profit or energy improvement from the shift","All workers have the same family arrangement or unrestricted access to preferred shifts"],
+    "preserve": ["If quoted: Finishing early gives me one part of the family day and takes me out of another.","If quoted: The morning rush in my shop starts with work somebody else did while our shutters were down.","The overnight premium is included in, not added on top of, the $25 rate."],
+    "expected_action": "draft"
+  }
+}

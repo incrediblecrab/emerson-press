@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-business-news-transfer-fee-cut",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic newspaper-writing exercise using fictional reporting notes. Use only the supplied reporting notes. Write from the reporting snapshot as of September 1, 2026. Write a headline and a 450–650-word AP-style newspaper news update about Wayfern Transfer's lower cash-transfer fee and what changes, and does not change, in the recipient's payment.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id":"f1","text":"Wayfern Transfer announced Tuesday, Sept. 1, 2026, that its fee on qualifying transfers to fictional Keldra will fall from $4 to $2 on Sept. 15."},
+    {"id":"f2","text":"The change applies when a customer sends $100 through $500, inclusive, in a cash-funded transfer at one of eight local agency counters; the amount range excludes the separate fee."},
+    {"id":"f3","text":"Transfers through a different online product retain their own fee schedule."},
+    {"id":"f4","text":"The transfer fee is charged in addition to the amount sent, rather than deducted from that amount."},
+    {"id":"f5","text":"Wayfern's currency-conversion margin is unchanged by the announcement."},
+    {"id":"f6","text":"For the supplied Sept. 1 quote, the reference exchange rate was 10 Keldran luma per dollar and Wayfern offered 9.8."},
+    {"id":"f7","text":"Holding the September 1 exchange quote constant, a $200 transfer would pay 1,960 luma to the recipient and cost the sender $202 with the new fee, compared with $204 under the current fee."},
+    {"id":"f8","text":"The quoted exchange rate is a dated example and is not guaranteed to remain available on Sept. 15 or later."},
+    {"id":"f9","text":"The company says recipients pay no additional Wayfern collection fee through the payout partners covered by this offer; the packet does not name those partners."},
+    {"id":"f10","text":"The record does not establish charges imposed by unrelated banks or intermediaries outside those partners."},
+    {"id":"f11","text":"Wayfern processed 12,400 transfers on this route last month, a transaction count rather than a count of different senders."},
+    {"id":"f12","text":"Manager Iona Pell said a renegotiated agency contract made the lower fee possible; its commercial terms were not disclosed."},
+    {"id":"f13","text":"Customer Reni Moss sends money for a relative's household expenses and uses a counter because she prefers a printed receipt."},
+    {"id":"f14","text":"Moss said, \"The fee on my side matters, but I also ask what number appears on the other side.\""},
+    {"id":"f15","text":"Pell said, \"The transfer fee is lower. We are not saying every part of the exchange has become cheaper.\""},
+    {"id":"f16","text":"The company will display the amount paid and the payout amount before a customer confirms a transfer."},
+    {"id":"f17","text":"Expected payout timing remains the next business day, subject to the existing identity and transaction checks."},
+    {"id":"f18","text":"The announcement contains no end date for the lower fee but does not lock future exchange rates or all future fees."},
+    {"id":"f19","text":"Wayfern opened its first local counter in a travel shop in 2010."},
+    {"id":"f20","text":"The reporting packet supplies no market-wide ranking proving Wayfern is the cheapest provider."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1","f2","f3","f4","f5","f6","f7","f8","f9","f16","f17"],
+    "forbidden_additions": ["All transfer costs are halved or the dated exchange rate is guaranteed","A cheapest-provider ranking or no charges anywhere beyond the covered payout partners"],
+    "preserve": ["If quoted: The fee on my side matters, but I also ask what number appears on the other side.","If quoted: The transfer fee is lower. We are not saying every part of the exchange has become cheaper.","At the supplied rate, $200 sent yields 1,960 luma; the fee changes the sender's outlay."],
+    "expected_action": "draft"
+  }
+}

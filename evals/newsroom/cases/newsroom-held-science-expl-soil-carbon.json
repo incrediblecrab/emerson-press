@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-science-expl-soil-carbon",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic writing exercise. Using these fictional reporting notes, write a newspaper explainer for general readers answering the question: How does soil store carbon, and why is there so much uncertainty about farming's role in the climate? Draw only on the supplied notes; do not invent additional reported events, scenes, or quotations. Write from this reporting snapshot as of June 5, 2025. Include a headline. Target 450 to 650 words. Follow AP style.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "Soil is the largest terrestrial carbon reservoir, storing approximately 1,500 to 2,400 billion tonnes of carbon \u2014 about three times more than the atmosphere and four times more than all living plants combined."
+    },
+    {
+      "id": "f2",
+      "text": "Carbon enters soil primarily through plant roots and decomposing organic matter; soil microbes break down organic material and release some carbon back to the atmosphere as CO2, while some carbon is stabilized in mineral complexes."
+    },
+    {
+      "id": "f3",
+      "text": "The fraction of carbon that becomes stable soil organic matter depends on temperature, moisture, soil mineral composition, and the chemical structure of the original plant material; the process is poorly understood at the molecular level."
+    },
+    {
+      "id": "f4",
+      "text": "Tillage \u2014 plowing and turning soil \u2014 disrupts the soil structure and fungal networks that help stabilize carbon, releasing CO2; no-till farming reduces these losses."
+    },
+    {
+      "id": "f5",
+      "text": "Cover crops \u2014 plants grown between cash crop seasons \u2014 can add organic matter to soil and reduce erosion; whether they build lasting soil carbon depends heavily on local conditions."
+    },
+    {
+      "id": "f6",
+      "text": "Soil scientist Dr. Benedikt Osei of Prairie Soil Research Institute said: \"Farming can be a carbon sink or a carbon source depending on management. The hard part is that the difference shows up over decades, not seasons, and varies enormously across soil types.\""
+    },
+    {
+      "id": "f7",
+      "text": "The voluntary carbon credit market has paid farmers to adopt soil carbon storage practices; methodologies for measuring, reporting, and verifying the actual carbon stored have been contested."
+    },
+    {
+      "id": "f8",
+      "text": "Soil carbon measurement typically requires physical sampling and laboratory analysis; remote sensing from satellites can detect some proxies but cannot directly measure subsurface carbon at the precision needed for verification."
+    },
+    {
+      "id": "f9",
+      "text": "A major scientific concern is permanence: carbon stored in soil can be released by drought, fire, soil disturbance, or management changes; credits are typically issued upfront, creating liability if the carbon is later lost."
+    },
+    {
+      "id": "f10",
+      "text": "Soil respiration \u2014 the CO2 released by microbial decomposition \u2014 increases with temperature; warmer soils could release carbon currently stored in northern soils, creating a feedback loop that amplifies warming."
+    },
+    {
+      "id": "f11",
+      "text": "Peatlands \u2014 waterlogged soils with slowly decomposing organic matter built up over thousands of years \u2014 store approximately 550 billion tonnes of carbon globally; draining them for agriculture releases this store rapidly."
+    },
+    {
+      "id": "f12",
+      "text": "Biochar \u2014 charred organic material applied to soil \u2014 is more stable than fresh organic matter and can persist for hundreds to thousands of years; it also improves soil structure and water retention in some soil types."
+    },
+    {
+      "id": "f13",
+      "text": "Dr. Osei said the maximum technically achievable soil carbon increase from best-practice farming across all agricultural soils globally is estimated at 0.9 billion tonnes per year \u2014 significant but less than 10% of current annual global emissions."
+    },
+    {
+      "id": "f14",
+      "text": "The 4 per Mille initiative, launched by France in 2015, proposes increasing soil carbon globally by 0.4% per year as a climate solution; critics say the target is difficult to verify and the potential is smaller than the initiative implies."
+    },
+    {
+      "id": "f15",
+      "text": "Some soils are already near saturation for carbon storage; the potential for additional carbon uptake varies enormously by region and soil type."
+    },
+    {
+      "id": "f16",
+      "text": "Soil carbon monitoring networks are sparse compared to atmospheric CO2 monitoring; standardizing global soil carbon accounting is an active area of work among international scientific bodies."
+    },
+    {
+      "id": "f17",
+      "text": "Dr. Osei said the verification problem is not unique to soil carbon: all natural carbon sinks \u2014 forests, ocean, soil \u2014 fluctuate with weather and are difficult to attribute to specific management actions."
+    },
+    {
+      "id": "f18",
+      "text": "Grassland restoration \u2014 converting degraded land back to native prairie \u2014 is estimated to store more carbon than most row crop practices because grass root systems are deeper and longer-lived."
+    },
+    {
+      "id": "f19",
+      "text": "Warming Arctic permafrost, permanently frozen soil that stores enormous amounts of ancient organic carbon, is thawing as temperatures rise; models suggest permafrost thaw could release 50 to 250 billion tonnes of carbon by 2100, depending on warming trajectory."
+    },
+    {
+      "id": "f20",
+      "text": "Dr. Osei said the soil carbon discussion often conflates what is scientifically possible with what is economically feasible at scale, given the land area, behavioral change, and verification infrastructure required."
+    }
+  ],
+  "modules": [
+    "domain/press.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f6",
+      "f7",
+      "f8",
+      "f9",
+      "f10",
+      "f13"
+    ],
+    "forbidden_additions": [
+      "a soil carbon storage figure larger than 13% of annual emissions for best-practice farming",
+      "a claim that soil carbon markets are broadly verified and reliable",
+      "a specific peatland drainage rate not in the notes"
+    ],
+    "preserve": [
+      "Farming can be a carbon sink or a carbon source depending on management. The hard part is that the difference shows up over decades, not seasons, and varies enormously across soil types."
+    ],
+    "expected_action": "draft"
+  }
+}

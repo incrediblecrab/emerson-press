@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-science-crispr-therapy-approved",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic writing exercise. Using these fictional reporting notes, write a newspaper news story for general readers. Draw only on the supplied notes; do not invent additional reported events, scenes, or quotations. Write from this reporting snapshot as of February 28, 2025. Include a headline. Target 450 to 650 words. Follow AP style.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "The FDA approved GenEdit Therapeutics' Korrexin on February 28, 2025, a CRISPR-based gene editing therapy for Fanconi anemia type IV, a rare inherited disorder that impairs DNA repair and leads to bone marrow failure."
+    },
+    {
+      "id": "f2",
+      "text": "Korrexin is designed to correct the defective gene itself. The earlier CRISPR treatment for sickle cell disease, approved in late 2023, modified cells to compensate for the disease rather than correcting its underlying mutation."
+    },
+    {
+      "id": "f3",
+      "text": "The approved indication covers patients aged 5 and older with confirmed type IV mutations; approximately 2,100 eligible patients are estimated to be alive in the U.S."
+    },
+    {
+      "id": "f4",
+      "text": "The therapy is a one-time treatment in which a patient's own hematopoietic stem cells are extracted, edited with CRISPR-Cas9 to correct the defective FANCD2 gene, and reinfused."
+    },
+    {
+      "id": "f5",
+      "text": "In a pivotal trial of 68 patients, 61 (90%) achieved durable bone marrow function restoration at 24-month follow-up; median follow-up was 31 months."
+    },
+    {
+      "id": "f6",
+      "text": "GenEdit set the list price for Korrexin at $2.4 million per treatment."
+    },
+    {
+      "id": "f7",
+      "text": "FDA commissioner Dr. Maya Singh said: \"Today's approval demonstrates that CRISPR's precision can translate from laboratory promise to regulatory reality in a disease where patients have had few options.\""
+    },
+    {
+      "id": "f8",
+      "text": "Patient advocacy group Fanconi Hope's director Robert Kwan said the price would prevent many patients from accessing the treatment without major insurance or policy interventions."
+    },
+    {
+      "id": "f9",
+      "text": "GenEdit chief medical officer Diane Flores said the company would offer an outcomes-based payment arrangement to major payers, allowing refunds if functional restoration is not sustained."
+    },
+    {
+      "id": "f10",
+      "text": "The National Institute of Health contributed $44 million to early-stage CRISPR research underlying Korrexin's development."
+    },
+    {
+      "id": "f11",
+      "text": "Fanconi anemia type IV has no cure through conventional therapy; current management involves blood transfusions and, in suitable candidates, bone marrow transplantation from a matched donor, which carries its own risks."
+    },
+    {
+      "id": "f12",
+      "text": "The approval is subject to a post-market requirement: a registry study of all treated patients for at least 15 years to monitor long-term efficacy and detect delayed adverse effects."
+    },
+    {
+      "id": "f13",
+      "text": "CRISPR-Cas9 is a gene editing tool that uses a guide RNA to direct a protein to a specific DNA sequence, where it makes a precise cut that the cell's repair machinery can use to fix or disable a gene."
+    },
+    {
+      "id": "f14",
+      "text": "The FDA received 11,400 public comments during the Korrexin review, more than for any previous gene therapy application."
+    },
+    {
+      "id": "f15",
+      "text": "Korrexin's approval was supported by a unanimous advisory committee vote in December 2024."
+    },
+    {
+      "id": "f16",
+      "text": "Three payers covering an estimated 40% of eligible patients have indicated they will cover Korrexin pending outcomes data; three others have not yet issued coverage decisions."
+    },
+    {
+      "id": "f17",
+      "text": "GenEdit received a rare pediatric disease priority review voucher along with the approval; such vouchers can be sold on the open market, typically for $80 million to $150 million."
+    },
+    {
+      "id": "f18",
+      "text": "The therapy requires an eight-day hospital stay for stem cell collection, cell processing, and reinfusion with monitoring."
+    },
+    {
+      "id": "f19",
+      "text": "Flores said the company projects treating 80 to 120 patients in the first two years; treatment centers must be certified by GenEdit."
+    },
+    {
+      "id": "f20",
+      "text": "Kwan noted that 45% of children with Fanconi anemia type IV die before age 25 without treatment."
+    }
+  ],
+  "modules": [
+    "domain/press.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f7",
+      "f8",
+      "f9",
+      "f11"
+    ],
+    "forbidden_additions": [
+      "a claim that Korrexin cures all Fanconi anemia subtypes",
+      "a confirmed payer coverage decision for all patients",
+      "a mortality figure not in the notes"
+    ],
+    "preserve": [
+      "Today's approval demonstrates that CRISPR's precision can translate from laboratory promise to regulatory reality in a disease where patients have had few options."
+    ],
+    "expected_action": "draft"
+  }
+}

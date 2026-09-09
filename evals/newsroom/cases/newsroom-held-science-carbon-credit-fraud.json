@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-science-carbon-credit-fraud",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic writing exercise. Using these fictional reporting notes, write a newspaper news story for general readers. Draw only on the supplied notes; do not invent additional reported events, scenes, or quotations. Write from this reporting snapshot as of July 23, 2025. Include a headline. Target 450 to 650 words. Follow AP style.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "The Voluntary Carbon Markets Integrity Office announced on July 23, 2025, that an audit of the Boreal Shield Forest Carbon Program had identified 4.2 million fraudulently issued credits sold to 23 corporations between 2019 and 2024."
+    },
+    {
+      "id": "f2",
+      "text": "The 4.2 million credits, which represented purported carbon offsets, were sold at prices averaging $30 per credit, generating approximately $126 million in revenue."
+    },
+    {
+      "id": "f3",
+      "text": "The audit found that the forested areas claimed as protected by the program were never at risk of deforestation, meaning no real carbon sequestration was preserved."
+    },
+    {
+      "id": "f4",
+      "text": "VCMIO director Dr. Allen Park said: \"These credits were sold as protecting forests that were already legally protected. The corporations that bought them were paying for a service that was never delivered.\""
+    },
+    {
+      "id": "f5",
+      "text": "The program's developer, Arboreal Carbon Solutions, is accused of misrepresenting satellite imagery to show deforestation pressure in areas where logging had not occurred for decades."
+    },
+    {
+      "id": "f6",
+      "text": "Credits under the Boreal Shield program were certified by certification body GreenVerify International; the VCMIO found GreenVerify's auditors failed to independently verify deforestation baseline modeling."
+    },
+    {
+      "id": "f7",
+      "text": "Sophie Renaud, a spokesperson for GreenVerify, said the company was cooperating with the investigation and had suspended certification of all new Arboreal Carbon Solutions projects."
+    },
+    {
+      "id": "f8",
+      "text": "Twenty-three corporations that purchased the credits had used them to claim carbon neutrality in annual sustainability reports."
+    },
+    {
+      "id": "f9",
+      "text": "The VCMIO said the 23 companies must either restate their emissions disclosures or procure replacement credits from verified sources."
+    },
+    {
+      "id": "f10",
+      "text": "Carbon credits are bought and sold in voluntary markets by companies seeking to offset emissions they cannot yet eliminate from their own operations; the market is not governed by a binding international treaty."
+    },
+    {
+      "id": "f11",
+      "text": "The fraudulent credits represent approximately 0.8% of all voluntary carbon credits issued in North America during the same period, according to market data cited in the audit."
+    },
+    {
+      "id": "f12",
+      "text": "Arboreal Carbon Solutions did not respond to requests for comment as of the July 23 reporting date."
+    },
+    {
+      "id": "f13",
+      "text": "The Department of Justice confirmed it is reviewing the audit findings to determine whether criminal referrals are appropriate."
+    },
+    {
+      "id": "f14",
+      "text": "Park said the VCMIO will require all forest carbon programs it oversees to resubmit deforestation baseline documentation for independent re-verification."
+    },
+    {
+      "id": "f15",
+      "text": "Two of the 23 corporations voluntarily disclosed their Arboreal Credit purchases before the audit's public release, having commissioned their own internal reviews."
+    },
+    {
+      "id": "f16",
+      "text": "The voluntary carbon market globally was estimated at $1.2 billion in 2024; critics argue lax verification standards are a systemic problem across the sector."
+    },
+    {
+      "id": "f17",
+      "text": "Arboreal Carbon Solutions was founded in 2016 and received a federal small-business grant of $400,000 for technology development in 2018."
+    },
+    {
+      "id": "f18",
+      "text": "The audit used high-resolution satellite imagery and historical land tenure records to cross-check claims; the review took 14 months."
+    },
+    {
+      "id": "f19",
+      "text": "At least four academic research groups had published papers between 2020 and 2023 questioning forest carbon program baseline methodology, but none specifically examined the Boreal Shield program."
+    },
+    {
+      "id": "f20",
+      "text": "The VCMIO was created by executive order in 2023 in response to earlier controversies about voluntary carbon market integrity."
+    }
+  ],
+  "modules": [
+    "domain/press.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f8",
+      "f9",
+      "f10",
+      "f13"
+    ],
+    "forbidden_additions": [
+      "a confirmed criminal charge against Arboreal Carbon Solutions",
+      "a specific company name among the 23 purchasers",
+      "a credit price different from $30"
+    ],
+    "preserve": [
+      "These credits were sold as protecting forests that were already legally protected. The corporations that bought them were paying for a service that was never delivered."
+    ],
+    "expected_action": "draft"
+  }
+}

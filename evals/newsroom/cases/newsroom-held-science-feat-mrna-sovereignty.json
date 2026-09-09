@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-science-feat-mrna-sovereignty",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic writing exercise. Using these fictional reporting notes, write a newspaper reported feature for general readers. Draw only on the supplied notes; do not invent additional reported events, scenes, or quotations. Write from this reporting snapshot as of May 12, 2025. Include a headline. Target 450 to 650 words. Follow AP style.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "The nation of Mariva, population 28 million, received its first domestically manufactured mRNA vaccine doses in March 2025 under a technology transfer agreement with BioGate International."
+    },
+    {
+      "id": "f2",
+      "text": "Mariva's Health Ministry received 600,000 doses of a locally produced mRNA influenza vaccine in the first production run; the doses were released for use after a three-week national quality assessment."
+    },
+    {
+      "id": "f3",
+      "text": "Health Minister Dr. Amara Diallo said: \"During COVID, we received vaccines 18 months after high-income countries. Never again. That is not a slogan. It is a policy.\""
+    },
+    {
+      "id": "f4",
+      "text": "The technology transfer agreement, negotiated over three years, gives Mariva the right to produce BioGate's mRNA platform for national use and authorized regional export to four neighboring countries."
+    },
+    {
+      "id": "f5",
+      "text": "BioGate tech transfer director Chen Wei said the agreement is the most comprehensive vaccine technology transfer BioGate has concluded with a low-income partner: \"We transferred the process, the quality systems, and the training. Not just the recipe.\""
+    },
+    {
+      "id": "f6",
+      "text": "Mariva spent $220 million building the manufacturing facility, with $160 million from multilateral development bank loans; the facility employs 280 people, 70% of whom were trained through a two-year program at Mariva's national health sciences university."
+    },
+    {
+      "id": "f7",
+      "text": "The facility's current capacity is 12 million doses per year; the Ministry's target is 25 million doses by 2027, sufficient to cover Mariva's annual influenza vaccination target."
+    },
+    {
+      "id": "f8",
+      "text": "Dr. Diallo said the first production run also produced 80,000 doses for two neighboring countries; neither had domestic mRNA manufacturing capacity."
+    },
+    {
+      "id": "f9",
+      "text": "Biomedical engineer Fatou Diouf, 31, was among the first cohort trained at the facility; she manages the lipid nanoparticle formulation line and said her team spent six months qualifying the process before producing the first release batch."
+    },
+    {
+      "id": "f10",
+      "text": "Diouf said: \"People asked me why I came back from my graduate program in Europe. I came back because this is where the work matters. We built something. It works. That's the answer.\""
+    },
+    {
+      "id": "f11",
+      "text": "A pharmaceutical industry analyst said Mariva's agreement is unusual because most technology transfer deals in vaccine manufacturing do not include full process documentation and quality system transfer, creating facilities that can produce but not troubleshoot."
+    },
+    {
+      "id": "f12",
+      "text": "Chen Wei acknowledged that the quality system transfer took longer and cost more than the initial contract anticipated: \"It was harder than we planned. We're better at it now. That's the honest answer.\""
+    },
+    {
+      "id": "f13",
+      "text": "Dr. Diallo said the Ministry's plan is to use the mRNA platform for future pathogens beyond influenza; the facility was designed with the flexibility to change the mRNA sequence within two to three weeks."
+    },
+    {
+      "id": "f14",
+      "text": "A global health researcher, Dr. Ingrid Lindqvist of Nordic Health Institute, said Mariva's model \u2014 sustained political commitment, multilateral financing, and genuine technology transfer \u2014 is rarely achieved and should be studied as a policy template."
+    },
+    {
+      "id": "f15",
+      "text": "The facility currently cannot produce the ultra-cold storage equipment needed to maintain the vaccine at minus 20 degrees Celsius; refrigeration units are imported, creating a supply chain vulnerability Dr. Diallo acknowledged."
+    },
+    {
+      "id": "f16",
+      "text": "Mariva has applied for WHO prequalification for the facility; prequalification would allow the doses to be procured by United Nations health agencies for global distribution."
+    },
+    {
+      "id": "f17",
+      "text": "The influenza vaccine produced in the first run uses a seasonal formulation provided by the WHO Global Influenza Surveillance Network; Mariva adapted the sequence to its manufacturing platform within three weeks of receiving the WHO recommendation."
+    },
+    {
+      "id": "f18",
+      "text": "Dr. Diallo said the Ministry intends the facility to serve regional health needs, not to compete with global manufacturers: \"We are not trying to become a pharmaceutical exporter. We are trying to not be left behind again.\""
+    },
+    {
+      "id": "f19",
+      "text": "Diouf said she is aware that the facility's success is also a symbol: \"If we do this right, it proves that this can be done here. If we fail, it proves something else. That weight is there every day.\""
+    },
+    {
+      "id": "f20",
+      "text": "Chen Wei said BioGate's experience with the Mariva transfer has changed how the company structures agreements: future deals will include longer quality system support periods from the outset."
+    }
+  ],
+  "modules": [
+    "domain/press.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f7",
+      "f9",
+      "f10",
+      "f13",
+      "f14",
+      "f18"
+    ],
+    "forbidden_additions": [
+      "a claim that Mariva achieved WHO prequalification",
+      "a production capacity different from 12 million doses per year current",
+      "a dose count delivered to neighboring countries different from 80,000"
+    ],
+    "preserve": [
+      "During COVID, we received vaccines 18 months after high-income countries. Never again. That is not a slogan. It is a policy.",
+      "People asked me why I came back from my graduate program in Europe. I came back because this is where the work matters. We built something. It works. That's the answer.",
+      "We are not trying to become a pharmaceutical exporter. We are trying to not be left behind again."
+    ],
+    "expected_action": "draft"
+  }
+}

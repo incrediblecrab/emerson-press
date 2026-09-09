@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-business-explain-return-shipping-choices",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic newspaper-writing exercise using fictional reporting notes. Use only the supplied reporting notes. Write from the reporting snapshot as of August 3, 2026. Write a headline and a 450–650-word AP-style newspaper explainer answering what remains free in Vellum Step Shoes' revised returns policy and how the choice of refund method changes a customer's options.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id":"f1","text":"Vellum Step Shoes revised its online returns policy on July 1, 2026, while retaining free returns at its six stores."},
+    {"id":"f2","text":"For an ordinary change-of-mind return by mail, the retailer deducts a $6 label charge from a refund to the original payment method."},
+    {"id":"f3","text":"A customer choosing store credit instead receives the item's full eligible price without that label deduction."},
+    {"id":"f4","text":"Under the supplied policy, the merchandise portion of a mailed return on a $60 item is $54 back to the original payment method or $60 in store credit."},
+    {"id":"f5","text":"Those figures exclude separately handled tax adjustments and assume no original delivery charge or discount allocation."},
+    {"id":"f6","text":"Store credit can be used only with Vellum Step and expires 12 months after issuance under the stated terms."},
+    {"id":"f7","text":"The policy's 40-day return window and unworn-condition requirement remain unchanged."},
+    {"id":"f8","text":"The retailer separately provides prepaid labels for items it accepts as faulty or sent in error; the $6 change-of-mind charge does not apply to those returns."},
+    {"id":"f9","text":"The reporting record contains no finding about how every disputed fault claim is resolved."},
+    {"id":"f10","text":"The company estimates an average mailing and handling cost of $9.50 for an ordinary posted return, not including the item's resale loss."},
+    {"id":"f11","text":"That average does not establish the cost or profit on each individual return."},
+    {"id":"f12","text":"Online sales director Mara Tern says store-credit customers often combine the credit with a later purchase."},
+    {"id":"f13","text":"Tern said, \"A credit keeps the next transaction with us. Cash goes back to whatever the customer needs next.\""},
+    {"id":"f14","text":"Customer Iven Sore ordered two sizes because neither was stocked at his nearest branch."},
+    {"id":"f15","text":"Sore said, \"Free in a shop is a different offer when the shop is two buses away.\""},
+    {"id":"f16","text":"The nearest branch can accept online returns even if it does not carry that product in its own inventory."},
+    {"id":"f17","text":"The company's first four-week report shows a lower return rate than the previous four weeks but also a different product and promotion mix."},
+    {"id":"f18","text":"The company has not isolated the fee's effect on return behavior or published the value of unredeemed new credits."},
+    {"id":"f19","text":"Vellum Step started as a catalog seller and opened its first physical branch in 2012."},
+    {"id":"f20","text":"The supplied terms describe this retailer's options rather than legal advice about all retailers' return obligations."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1","f2","f3","f4","f5","f6","f7","f8","f11","f16","f17","f18"],
+    "forbidden_additions": ["Every return costs $6, store credit is cash or credits never expire","A demonstrated causal reduction in returns or identical rights and terms across all retailers"],
+    "preserve": ["If quoted: A credit keeps the next transaction with us. Cash goes back to whatever the customer needs next.","If quoted: Free in a shop is a different offer when the shop is two buses away.","The $54 cash-method merchandise refund and $60 retailer credit have different uses."],
+    "expected_action": "draft"
+  }
+}

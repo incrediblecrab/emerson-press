@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-science-autonomous-port-fatality",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic writing exercise. Using these fictional reporting notes, write a newspaper news story for general readers. Draw only on the supplied notes; do not invent additional reported events, scenes, or quotations. Write from this reporting snapshot as of March 10, 2025. Include a headline. Target 450 to 650 words. Follow AP style.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "A worker was struck and killed by an autonomous straddle carrier at the Portside Container Terminal on March 9, 2025, in what federal investigators said is the first fatality at a fully automated container terminal in the United States."
+    },
+    {
+      "id": "f2",
+      "text": "The victim, identified by family as maintenance technician David Osei, 41, was performing a scheduled inspection of a carrier guide rail when the vehicle entered the zone."
+    },
+    {
+      "id": "f3",
+      "text": "The autonomous carrier's proximity detection system had been in a degraded-mode status for approximately 90 minutes before the incident due to a software update deployed that morning."
+    },
+    {
+      "id": "f4",
+      "text": "Portside Terminal director Melissa Ward said: \"We have suspended all autonomous vehicle operations pending a full safety review. Our deepest condolences go to the family of our colleague.\""
+    },
+    {
+      "id": "f5",
+      "text": "The Occupational Safety and Health Administration opened an inspection within hours of the incident and has jurisdiction over the investigation of the workplace conditions."
+    },
+    {
+      "id": "f6",
+      "text": "Portside Terminal became fully automated in 2022; the terminal uses 28 autonomous straddle carriers, automated guided vehicles, and remote-operated ship-to-shore cranes."
+    },
+    {
+      "id": "f7",
+      "text": "Terminal records show that the degraded proximity mode was flagged by the terminal's central management system but was not escalated to a stop-work decision; standard protocol allows carriers to continue operating in degraded mode with reduced speed limits."
+    },
+    {
+      "id": "f8",
+      "text": "Paul Kimura, director of the federal Maritime Automation Safety Task Force, said: \"We have not had a fatality at a U.S. automated terminal before. This event will force a reassessment of degraded-mode operating permissions at facilities across the country.\""
+    },
+    {
+      "id": "f9",
+      "text": "A union representing port workers at adjacent non-automated berths said it had raised safety concerns about the Portside expansion to OSHA in 2023; those concerns were addressed in a compliance audit that year."
+    },
+    {
+      "id": "f10",
+      "text": "Portside Terminal handles approximately 1.4 million container units per year; the suspension of autonomous operations has halted roughly 70% of terminal throughput."
+    },
+    {
+      "id": "f11",
+      "text": "The carrier involved is a model manufactured by Helix Automation; the company said it is providing full cooperation to investigators."
+    },
+    {
+      "id": "f12",
+      "text": "Maintenance technicians at Portside are required to use a zone clearance procedure before entering active carrier areas; investigators are examining whether that procedure was followed."
+    },
+    {
+      "id": "f13",
+      "text": "Automated terminals have operated in Europe and Asia since the 1990s; European industry data shows two prior fatalities, both involving temporary workers and human entry into active zones."
+    },
+    {
+      "id": "f14",
+      "text": "Ward said the terminal would not resume autonomous operations until an independent safety audit is complete."
+    },
+    {
+      "id": "f15",
+      "text": "Federal investigators are examining whether the degraded-mode software update should have triggered a mandatory stop-work hold under existing automated equipment regulations."
+    },
+    {
+      "id": "f16",
+      "text": "The Maritime Automation Safety Task Force was established in 2024 but has not yet issued binding standards for automated terminal operations."
+    },
+    {
+      "id": "f17",
+      "text": "Osei's family attorney said the family would pursue all available legal remedies."
+    },
+    {
+      "id": "f18",
+      "text": "Terminal operators' trade group said the industry was committed to working with regulators to update standards in light of the incident."
+    },
+    {
+      "id": "f19",
+      "text": "The autonomous straddle carrier weighs approximately 42 tonnes when unladen."
+    },
+    {
+      "id": "f20",
+      "text": "OSHA has six months to complete its inspection and issue any citations."
+    }
+  ],
+  "modules": [
+    "domain/press.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f7",
+      "f8",
+      "f12",
+      "f15"
+    ],
+    "forbidden_additions": [
+      "a finding that the zone clearance procedure was not followed",
+      "a criminal charge against Portside or its operators",
+      "a claim that the fatality count at automated terminals is higher than stated"
+    ],
+    "preserve": [
+      "We have not had a fatality at a U.S. automated terminal before. This event will force a reassessment of degraded-mode operating permissions at facilities across the country."
+    ],
+    "expected_action": "draft"
+  }
+}

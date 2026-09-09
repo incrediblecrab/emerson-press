@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-science-expl-superconductors",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic writing exercise. Using these fictional reporting notes, write a newspaper explainer for general readers answering the question: What are superconductors, and why does the quest for a room-temperature superconductor matter so much? Draw only on the supplied notes; do not invent additional reported events, scenes, or quotations. Write from this reporting snapshot as of February 12, 2025. Include a headline. Target 450 to 650 words. Follow AP style.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "Superconductors have zero electrical resistance under suitable conditions below a critical temperature, allowing a steady current to flow without resistive heating."
+    },
+    {
+      "id": "f2",
+      "text": "Conventional electrical conductors such as copper dissipate energy as heat. The power lost to electrical resistance equals current squared multiplied by resistance."
+    },
+    {
+      "id": "f3",
+      "text": "In a superconductor, electrons form bound pairs (Cooper pairs) that travel through the material's lattice without scattering off atoms, the mechanism that causes resistance in normal conductors."
+    },
+    {
+      "id": "f4",
+      "text": "Established superconductors that work at ordinary pressure require cooling below room temperature; most conventional superconductors work only near absolute zero (minus 273 degrees Celsius)."
+    },
+    {
+      "id": "f5",
+      "text": "High-temperature superconductors \u2014 a class discovered in the 1980s \u2014 work at temperatures achievable with liquid nitrogen (minus 196 degrees Celsius), which is far cheaper than liquid helium used for conventional superconductors."
+    },
+    {
+      "id": "f6",
+      "text": "Physicist Dr. Elena Saito of Lakeside Materials Institute said: \"Room temperature superconductivity would be one of the most transformative material discoveries in history. Every motor, every transformer, every power line would work on a different physics.\""
+    },
+    {
+      "id": "f7",
+      "text": "A claimed room-temperature, high-pressure superconductor published in 2023 by a research group attracted intense scrutiny; follow-up attempts by other laboratories failed to reproduce the results, and the paper was retracted."
+    },
+    {
+      "id": "f8",
+      "text": "The reproducibility crisis in superconductor research has been a recurring problem; several high-profile room-temperature claims since 2015 have failed independent verification."
+    },
+    {
+      "id": "f9",
+      "text": "Current applications of superconductors include MRI machine magnets, particle accelerator magnets, maglev train levitation systems, and laboratory scientific instruments."
+    },
+    {
+      "id": "f10",
+      "text": "High-temperature superconducting (HTS) magnets are used in compact fusion reactors being developed by private companies; their stronger field strength allows smaller tokamak designs."
+    },
+    {
+      "id": "f11",
+      "text": "Superconducting power cables are being piloted in urban grids in Germany and South Korea, carrying 5 times more current than conventional cables of the same diameter with lower losses."
+    },
+    {
+      "id": "f12",
+      "text": "A room-temperature superconductor that worked at atmospheric pressure would enable superconducting electronics, low-loss power transmission, faster trains, and dramatically more powerful medical and scientific magnets."
+    },
+    {
+      "id": "f13",
+      "text": "Dr. Saito said the theoretical understanding of high-temperature superconductivity is still incomplete; the mechanism that allows some materials to superconduct at liquid nitrogen temperatures is not fully explained."
+    },
+    {
+      "id": "f14",
+      "text": "Manufacturing superconducting wire is technically challenging; the ceramic materials that superconduct at higher temperatures are brittle and difficult to form into flexible cables."
+    },
+    {
+      "id": "f15",
+      "text": "The global superconductor market is valued at approximately $8 billion per year, dominated by medical imaging and scientific applications."
+    },
+    {
+      "id": "f16",
+      "text": "Quantum computing systems use superconducting circuits cooled near absolute zero as quantum bits (qubits); companies including Google and IBM rely on superconducting technology for their current quantum computers."
+    },
+    {
+      "id": "f17",
+      "text": "Dr. Saito said the field has genuine theoretical reasons to believe room-temperature superconductivity is physically possible; the challenge is finding the right material, which may require systematic exploration of millions of compounds."
+    },
+    {
+      "id": "f18",
+      "text": "High-entropy alloys and hydrogen-rich materials called hydrides are current areas of intense research; some hydrides superconduct at high temperature but only under enormous pressures that preclude practical use."
+    },
+    {
+      "id": "f19",
+      "text": "If achieved and scalable, room-temperature superconducting transmission lines could reduce global electricity losses by hundreds of terawatt-hours annually."
+    },
+    {
+      "id": "f20",
+      "text": "The National Science Foundation has increased funding for superconductor material discovery research following the failed room-temperature claim in 2023, which the NSF said highlighted both the potential importance and the need for rigorous verification protocols."
+    }
+  ],
+  "modules": [
+    "domain/press.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f7",
+      "f8",
+      "f9",
+      "f12"
+    ],
+    "forbidden_additions": [
+      "a confirmed room-temperature superconductor discovery",
+      "a national transmission-loss percentage not supplied in the notes",
+      "a superconductor temperature warmer than described in the notes"
+    ],
+    "preserve": [
+      "Room temperature superconductivity would be one of the most transformative material discoveries in history. Every motor, every transformer, every power line would work on a different physics."
+    ],
+    "expected_action": "draft"
+  }
+}

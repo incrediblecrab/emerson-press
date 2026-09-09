@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-business-feature-small-press-audio",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic newspaper-writing exercise using fictional reporting notes. Use only the supplied reporting notes. Write from the reporting snapshot as of September 8, 2026. Write a headline and a 450–650-word AP-style reported feature about Loom Lantern Press's move into audiobooks and the production, rights and sales work behind making a small backlist audible.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id":"f1","text":"A July 2026 production note records narrator Iri Venn stopping a recording to check a place-name pronunciation with Loom Lantern Press's editor."},
+    {"id":"f2","text":"The independent publisher has 14 print backlist titles and selected three for a proposed audio pilot."},
+    {"id":"f3","text":"Audio permission has been agreed with the authors of two selected works; negotiations for the third remain unfinished."},
+    {"id":"f4","text":"The publisher's print agreements do not all include the same audio rights, according to the supplied contract summary."},
+    {"id":"f5","text":"The first completed audiobook is the original fictional novel Tide Keys, read by Venn and edited by a contracted sound engineer."},
+    {"id":"f6","text":"Its completed production cost was $6,000, including narration, editing and quality checks, but not the publisher's general overhead."},
+    {"id":"f7","text":"Under the supplied terms for individual retail downloads, the publisher retains $10 per sale after the retailer's deduction and the author's allocation."},
+    {"id":"f8","text":"Recovering that $6,000 production cost at an unchanged $10 contribution would require 600 paid downloads, before other costs."},
+    {"id":"f9","text":"The retail report for the title's first six sales weeks, July 20 through August 30, 2026, lists 120 paid downloads and $1,200 in publisher receipts under those terms."},
+    {"id":"f10","text":"The first six weeks do not establish lifetime sales or the profitability of the entire audio program."},
+    {"id":"f11","text":"Publisher Mara Quill says some print readers want audio for commuting while other listeners may never buy a physical copy."},
+    {"id":"f12","text":"Quill said, \"A book we already printed still needs a new set of work before somebody can listen to it.\""},
+    {"id":"f13","text":"Venn marks breaths, names and character changes in a working script rather than recording every page successfully in one pass."},
+    {"id":"f14","text":"Venn said, \"A quiet recording is not just a quiet room. It is all the decisions you stop and check.\""},
+    {"id":"f15","text":"The publisher has not measured how many audio buyers would otherwise have bought the print edition."},
+    {"id":"f16","text":"Library and subscription-platform deals are being discussed separately and do not necessarily pay the same $10 contribution as an individual retail download."},
+    {"id":"f17","text":"The second authorized title has not yet completed recording, so its final duration and production cost are unknown."},
+    {"id":"f18","text":"A planned launch event was moved from a bookshop to a community listening room because the bookshop could not accommodate headphones for the expected group."},
+    {"id":"f19","text":"Loom Lantern began with local travel essays in 2016 and now publishes fiction and memoir."},
+    {"id":"f20","text":"No outside investor, guaranteed audio-sales contract or decision to stop printing books has been announced."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f2","f3","f4","f5","f6","f7","f8","f9","f10","f15","f16","f17"],
+    "forbidden_additions": ["All three titles are authorized and completed or 120 sales have recovered $6,000","The individual-download contribution applies to every distribution channel or audio replaces print by decision"],
+    "preserve": ["If quoted: A book we already printed still needs a new set of work before somebody can listen to it.","If quoted: A quiet recording is not just a quiet room. It is all the decisions you stop and check.","The 600-download calculation covers the specified production cost only, not every business expense."],
+    "expected_action": "draft"
+  }
+}

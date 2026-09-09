@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-business-explain-jobs-and-unemployment",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic newspaper-writing exercise using fictional reporting notes. Use only the supplied reporting notes. Write from the reporting snapshot as of August 31, 2026. Write a headline and a 450–650-word AP-style newspaper explainer answering why Bellwether County can report more jobs and a higher unemployment rate at the same time.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id":"f1","text":"Bellwether County's August 2026 economic bulletin reports 25,600 payroll jobs in July, up from 25,000 in July 2025."},
+    {"id":"f2","text":"The payroll count measures positions at workplaces in the county, including positions held by people who commute from elsewhere."},
+    {"id":"f3","text":"A separate resident labor-force estimate puts July 2026 employment at 19,740 people and unemployment at 1,260."},
+    {"id":"f4","text":"Those resident figures total a labor force of 21,000, with an unemployment rate of 6%."},
+    {"id":"f5","text":"The July 2025 resident estimate was 19,000 employed and 1,000 unemployed, a labor force of 20,000 and a 5% unemployment rate."},
+    {"id":"f6","text":"Resident employment therefore rose by 740 while the number seeking work without a job rose by 260."},
+    {"id":"f7","text":"The labor force grew by 1,000; the unemployment rate rose by one percentage point, not one percent of its previous value."},
+    {"id":"f8","text":"The bulletin counts a resident as unemployed only when the person has no job, is available and is actively seeking work under its stated survey definition."},
+    {"id":"f9","text":"Students, retirees and caregivers not looking for work are outside that definition, rather than automatically unemployed."},
+    {"id":"f10","text":"Payroll positions and employed residents cannot be subtracted to count commuters because they also differ in coverage of self-employment and multiple jobs."},
+    {"id":"f11","text":"The bulletin compares the same month in consecutive years and labels the figures as not seasonally adjusted."},
+    {"id":"f12","text":"County analyst Omi Drel said later employer returns may revise the payroll estimate."},
+    {"id":"f13","text":"Drel said, \"One count starts at the workplace. The other starts with the person who lives here.\""},
+    {"id":"f14","text":"Parcel sorter Nessa Holt returned to job seeking in June after spending a year caring for a relative."},
+    {"id":"f15","text":"Holt has applied for daytime work but says several local vacancies require overnight availability she does not have."},
+    {"id":"f16","text":"Holt said, \"A vacancy can be close to home and still be a shift I cannot take.\""},
+    {"id":"f17","text":"A county employer survey lists transport scheduling and machine maintenance among hard-to-fill roles but does not match vacancies to individual job seekers."},
+    {"id":"f18","text":"The bulletin does not determine how much labor-force growth came from migration, new graduates or people returning to work."},
+    {"id":"f19","text":"Bellwether has published separate workplace and resident tables since 2012."},
+    {"id":"f20","text":"The figures do not establish that every industry expanded or that people already employed received higher wages."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1","f2","f3","f4","f5","f6","f7","f8","f10","f11","f18"],
+    "forbidden_additions": ["The two series count the same population or reveal an exact commuter total","A proven single cause of labor-force growth or a wage increase for all workers"],
+    "preserve": ["If quoted: One count starts at the workplace. The other starts with the person who lives here.","If quoted: A vacancy can be close to home and still be a shift I cannot take.","A larger employed population can coexist with faster growth in the labor force."],
+    "expected_action": "draft"
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-science-expl-fusion-basics",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic writing exercise. Using these fictional reporting notes, write a newspaper explainer for general readers answering the question: How does nuclear fusion work, and why has it taken so long to generate useful power from it? Draw only on the supplied notes; do not invent additional reported events, scenes, or quotations. Write from this reporting snapshot as of November 19, 2024. Include a headline. Target 450 to 650 words. Follow AP style.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "Nuclear fusion is the process by which two light atomic nuclei merge to form a heavier nucleus, releasing energy; it is the reaction that powers the sun."
+    },
+    {
+      "id": "f2",
+      "text": "The most studied fusion reaction for energy purposes combines deuterium and tritium, both isotopes of hydrogen; this reaction releases a helium nucleus and a high-energy neutron."
+    },
+    {
+      "id": "f3",
+      "text": "To fuse, nuclei must be brought close enough for the strong nuclear force to overcome their natural electrostatic repulsion; this requires temperatures above 100 million degrees Celsius, hotter than the sun's core."
+    },
+    {
+      "id": "f4",
+      "text": "At those temperatures, matter exists as a plasma \u2014 a diffuse gas of charged particles; confining plasma without any physical wall touching it is one of the central engineering challenges."
+    },
+    {
+      "id": "f5",
+      "text": "The tokamak design confines plasma in a doughnut-shaped magnetic field; the word is a Russian acronym for 'toroidal chamber with magnetic coils.'"
+    },
+    {
+      "id": "f6",
+      "text": "Fusion produces no carbon dioxide and generates no long-lived radioactive waste; the primary radioactive byproduct, tritium, has a half-life of 12.3 years."
+    },
+    {
+      "id": "f7",
+      "text": "Deuterium is abundant in seawater at approximately one part in 6,400; tritium must be bred in the reactor from lithium using the neutrons produced by fusion reactions."
+    },
+    {
+      "id": "f8",
+      "text": "The key performance benchmark is called Q: the ratio of energy out to energy in; a Q above 1 means the reaction produces more energy than it consumes."
+    },
+    {
+      "id": "f9",
+      "text": "The U.S. National Ignition Facility reported a Q greater than 1 for a brief laser-driven implosion in December 2022; that experiment used an inertial confinement method, not a tokamak."
+    },
+    {
+      "id": "f10",
+      "text": "Sustained Q greater than 1 in a tokamak, for a duration useful to a power plant, has not yet been achieved by any facility."
+    },
+    {
+      "id": "f11",
+      "text": "Physicist Dr. Rena Whitfield of Lakeshore University said: \"The joke used to be that commercial fusion is 30 years away and always will be. The honest answer is we're closer than ever, but closer doesn't yet mean soon.\""
+    },
+    {
+      "id": "f12",
+      "text": "ITER, an international experimental tokamak under construction in France since 2013, is designed to reach Q of 10 \u2014 ten times more energy out than in \u2014 but is not designed to generate electricity."
+    },
+    {
+      "id": "f13",
+      "text": "ITER is scheduled for first plasma in 2025 and full-power deuterium-tritium experiments by the mid-2030s; the project has experienced cost overruns and schedule delays."
+    },
+    {
+      "id": "f14",
+      "text": "More than 30 private companies are pursuing commercial fusion timelines; most project operational plants between 2035 and 2050."
+    },
+    {
+      "id": "f15",
+      "text": "Alternative confinement approaches include stellarators, which use complex twisted coils instead of plasma current to confine the plasma; they are less prone to instability but more difficult to engineer."
+    },
+    {
+      "id": "f16",
+      "text": "The biggest unsolved engineering problems include: maintaining plasma for hours or days rather than seconds; breeding enough tritium inside the reactor to sustain itself; and harvesting heat from high-energy neutrons without degrading structural materials."
+    },
+    {
+      "id": "f17",
+      "text": "Fusion's energy advantage over fission is that fuel is abundant and waste is manageable; the disadvantage is that it is far harder to sustain the reaction."
+    },
+    {
+      "id": "f18",
+      "text": "Dr. Whitfield said the most optimistic credible commercial timeline requires solving tritium breeding and plasma stability simultaneously, which no facility has yet done at scale."
+    },
+    {
+      "id": "f19",
+      "text": "High-temperature superconducting magnets, now commercially available, allow tokamaks to be built smaller while generating the field strength previously requiring much larger machines \u2014 a development private companies cite as genuinely new."
+    },
+    {
+      "id": "f20",
+      "text": "Fusion energy would not require the continuous fuel chain of fossil power plants; a pellet of deuterium-tritium fuel the size of a marble contains the energy equivalent of roughly 45 tons of coal."
+    }
+  ],
+  "modules": [
+    "domain/press.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f8",
+      "f10",
+      "f11",
+      "f16"
+    ],
+    "forbidden_additions": [
+      "a claim that commercial fusion power already exists",
+      "a Q value different from those in the notes",
+      "a description of ITER as generating electricity"
+    ],
+    "preserve": [
+      "The joke used to be that commercial fusion is 30 years away and always will be. The honest answer is we're closer than ever, but closer doesn't yet mean soon."
+    ],
+    "expected_action": "draft"
+  }
+}

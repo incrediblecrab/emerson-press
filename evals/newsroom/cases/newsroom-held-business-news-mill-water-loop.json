@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-business-news-mill-water-loop",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic newspaper-writing exercise using fictional reporting notes. Use only the supplied reporting notes. Write from the reporting snapshot as of August 28, 2026. Write a headline and a 450–650-word AP-style newspaper news update on Sedge Row Paper's water-reuse investment and the costs and claims attached to it.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id":"f1","text":"Sedge Row Paper's board approved a $5.6 million water-reuse installation on Friday, Aug. 28, 2026."},
+    {"id":"f2","text":"Construction at the Dovewick mill is scheduled to begin in November and take eight months."},
+    {"id":"f3","text":"The mill currently draws an average of 900,000 gallons of fresh water a production day, according to its metered annual report."},
+    {"id":"f4","text":"The equipment supplier projects a reduction to 540,000 gallons at the same paper output, a target decrease of 40%."},
+    {"id":"f5","text":"That projection is not a measured result from the unbuilt installation."},
+    {"id":"f6","text":"The system will filter process water for reuse but will still require fresh water and a controlled discharge stream."},
+    {"id":"f7","text":"Company engineer Teri Holt said dissolved salts limit how often the same water can circulate."},
+    {"id":"f8","text":"The project includes new pumps that will increase electricity use; the company has not published a net energy or emissions calculation."},
+    {"id":"f9","text":"The mill expects its fresh-water purchase bill to fall but has not disclosed a verified payback period."},
+    {"id":"f10","text":"The budget includes a $1.2 million manufacturing-efficiency grant and $4.4 million in company borrowing."},
+    {"id":"f11","text":"Dovewick Water Authority has confirmed that the project does not itself require higher household water charges."},
+    {"id":"f12","text":"The authority has not promised that industrial savings will produce a cut in residential rates."},
+    {"id":"f13","text":"Mill employees will receive training for three new water-treatment operator assignments filled from existing staff."},
+    {"id":"f14","text":"Holt said, \"Reusing more water is not the same as never needing another gallon.\""},
+    {"id":"f15","text":"River-users association chair Inna Cole supports reduced withdrawals but wants public comparisons at similar production levels."},
+    {"id":"f16","text":"Cole said, \"A quieter mill uses less water too. We need to know what it took to make the same amount of paper.\""},
+    {"id":"f17","text":"The company's plan provides for monthly water-use reporting during the first operating year."},
+    {"id":"f18","text":"The mill's existing water authorization remains in place; the environmental office has requested updated discharge-design details."},
+    {"id":"f19","text":"The mill makes packaging paper from recovered fiber and replaced its pulping equipment in 2016."},
+    {"id":"f20","text":"The record contains no measured change in river wildlife, water quality or neighborhood health attributable to the project."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1","f2","f3","f4","f5","f6","f8","f10","f12","f17","f18"],
+    "forbidden_additions": ["A measured 40% reduction or a completely closed water loop","Guaranteed household rate cuts, quantified net emissions benefits or demonstrated wildlife recovery"],
+    "preserve": ["If quoted: Reusing more water is not the same as never needing another gallon.","If quoted: A quieter mill uses less water too. We need to know what it took to make the same amount of paper.","The 40% target compares the same paper output."],
+    "expected_action": "draft"
+  }
+}

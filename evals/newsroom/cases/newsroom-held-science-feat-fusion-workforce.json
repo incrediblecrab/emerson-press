@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-science-feat-fusion-workforce",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic writing exercise. Using these fictional reporting notes, write a newspaper reported feature for general readers. Draw only on the supplied notes; do not invent additional reported events, scenes, or quotations. Write from this reporting snapshot as of October 21, 2024. Include a headline. Target 450 to 650 words. Follow AP style.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "Vantage Fusion Corp is building a fusion research and pre-commercial facility in Kelso Basin, Montana, expected to employ 320 people by 2027."
+    },
+    {
+      "id": "f2",
+      "text": "The project faces a skilled trades shortage: no standard apprenticeship curriculum covers superconducting magnet installation in a fusion environment."
+    },
+    {
+      "id": "f3",
+      "text": "Vantage has hired Piotr Kaminski, 54, a former welding inspector who spent 28 years at a coal plant turbine shop; he is now training to weld cryostat sections that operate at minus 269 degrees Celsius."
+    },
+    {
+      "id": "f4",
+      "text": "Kaminski said: \"The physics is different. The tolerances are different. But I'm still making a seal that has to hold. The skill transfers. The confidence from twenty-eight years transfers.\""
+    },
+    {
+      "id": "f5",
+      "text": "Luz Morales, 34, an electrical engineer from the decommissioned Glenwood coal plant, joined Vantage after a federally funded retraining program; she is now designing control systems for the superconducting magnet power supplies."
+    },
+    {
+      "id": "f6",
+      "text": "Morales said the toughest adjustment was the pace: \"In coal, you have decades of documentation. Here we're writing the manual as we go.\""
+    },
+    {
+      "id": "f7",
+      "text": "Vantage construction director Derek Flynn said approximately 40% of the facility's senior technicians came from fossil fuel plant backgrounds; the company views this as a workforce transfer strategy, not a coincidence."
+    },
+    {
+      "id": "f8",
+      "text": "Flynn said: \"We needed people who understood how to keep large, complex machinery running. The energy source is different. The discipline is the same.\""
+    },
+    {
+      "id": "f9",
+      "text": "The National Fusion Workforce Consortium, a industry group, estimates that commercial-scale fusion will require 50,000 new skilled workers by 2040; no coordinated national training program exists."
+    },
+    {
+      "id": "f10",
+      "text": "Vantage has partnered with Kelso Community College to develop an eight-month certificate program in cryogenic systems maintenance; the first cohort of 18 students graduated in September 2024."
+    },
+    {
+      "id": "f11",
+      "text": "The Kelso Basin site is in a county where the coal industry employed more than 1,200 people at its peak in 2008 and now employs fewer than 200; local officials see the fusion project as an economic anchor."
+    },
+    {
+      "id": "f12",
+      "text": "Industry analysts note that fusion companies collectively represent only a few hundred current operational jobs; the workforce ramp described by the consortium assumes commercial facilities that have not yet been built."
+    },
+    {
+      "id": "f13",
+      "text": "Kaminski said he tells younger workers in his former union: \"Don't wait. The plant is not coming back. But the skills you have \u2014 somebody needs them.\""
+    },
+    {
+      "id": "f14",
+      "text": "Vantage offers a starting wage of $42 per hour for qualified fusion technicians; the median wage for similar roles at conventional power plants in Montana is $36 per hour."
+    },
+    {
+      "id": "f15",
+      "text": "OSHA has not yet issued specific safety standards for fusion workplace environments; Vantage operates under adapted standards from cryogenics, high-voltage, and radiation safety regulations."
+    },
+    {
+      "id": "f16",
+      "text": "The facility will require helium liquefaction experts to maintain the cryogenic systems; Morales said that specialty is so rare that the company recruited internationally."
+    },
+    {
+      "id": "f17",
+      "text": "Flynn said Vantage plans to double its technical workforce by 2026 and is competing with other fusion startups, advanced manufacturing firms, and national laboratories for the same limited talent pool."
+    },
+    {
+      "id": "f18",
+      "text": "Kaminski is on a two-year probationary credential as Vantage develops internal certification standards; he said he expects to receive full certification before the facility enters its first operational phase."
+    },
+    {
+      "id": "f19",
+      "text": "The Department of Energy has asked fusion companies to document workforce development approaches as part of their grant reporting; DOE officials said workforce is cited as a top risk in project plans across the sector."
+    },
+    {
+      "id": "f20",
+      "text": "Morales said she does not know whether the facility will ultimately achieve its goal \u2014 but that building something genuinely new, after years of managing decline, is reason enough to try."
+    }
+  ],
+  "modules": [
+    "domain/press.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f7",
+      "f8",
+      "f9",
+      "f10",
+      "f11",
+      "f13",
+      "f14"
+    ],
+    "forbidden_additions": [
+      "a claim that Vantage Fusion Corp has achieved net fusion energy",
+      "job figures for the sector larger than stated",
+      "wages or credentials not in the notes"
+    ],
+    "preserve": [
+      "The physics is different. The tolerances are different. But I'm still making a seal that has to hold. The skill transfers. The confidence from twenty-eight years transfers.",
+      "We needed people who understood how to keep large, complex machinery running. The energy source is different. The discipline is the same.",
+      "Don't wait. The plant is not coming back. But the skills you have \u2014 somebody needs them."
+    ],
+    "expected_action": "draft"
+  }
+}

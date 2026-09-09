@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-science-expl-rare-earth-critical",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic writing exercise. Using these fictional reporting notes, write a newspaper explainer for general readers answering the question: What are rare earth elements and why are they considered critical to technology and national security? Draw only on the supplied notes; do not invent additional reported events, scenes, or quotations. Write from this reporting snapshot as of June 18, 2025. Include a headline. Target 450 to 650 words. Follow AP style.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "Rare earth elements are a group of 17 metallic elements, including the 15 lanthanides plus scandium and yttrium; despite their name, most are more abundant in Earth's crust than gold or platinum."
+    },
+    {
+      "id": "f2",
+      "text": "They are called 'rare' not because they are scarce globally but because they rarely occur in concentrated, economically mineable deposits; they are typically dispersed through rock in small amounts."
+    },
+    {
+      "id": "f3",
+      "text": "Neodymium and dysprosium are used in the strongest permanent magnets known \u2014 neodymium-iron-boron magnets \u2014 which are essential for electric vehicle motors, wind turbine generators, and military precision guidance systems."
+    },
+    {
+      "id": "f4",
+      "text": "Europium and terbium are used in phosphors that produce the colors in LED displays and fluorescent lighting."
+    },
+    {
+      "id": "f5",
+      "text": "Lanthanum is used in catalytic converters for gasoline vehicles and in specialized optical glass."
+    },
+    {
+      "id": "f6",
+      "text": "China mines approximately 60% of global rare earth supply and processes approximately 85% of the world's rare earth oxides; this concentration of refining capacity creates significant supply chain risk for other countries."
+    },
+    {
+      "id": "f7",
+      "text": "Materials scientist Dr. Anika Patel of Ridgeline Institute of Technology said: \"The mining part is solvable. The refining part is where most countries have fallen behind \u2014 it took China decades to build that capacity, and it cannot be replicated quickly.\""
+    },
+    {
+      "id": "f8",
+      "text": "Rare earth refining produces radioactive byproducts because rare earth ores often contain thorium and uranium; managing this waste is expensive and subject to strict environmental regulation."
+    },
+    {
+      "id": "f9",
+      "text": "The U.S. has significant rare earth deposits, primarily at Mountain Pass, but most raw ore is still sent overseas for processing."
+    },
+    {
+      "id": "f10",
+      "text": "Recycling rare earths from end-of-life products \u2014 motors, electronics, magnets \u2014 is possible but currently captures less than 1% of global supply, partly because dismantling and sorting at scale remains expensive."
+    },
+    {
+      "id": "f11",
+      "text": "Heavy rare earths, including dysprosium and terbium, are less abundant than light rare earths and are primarily mined in specific regions of China; their supply is considered more strategically sensitive."
+    },
+    {
+      "id": "f12",
+      "text": "Substitution \u2014 using alternative materials that do not require rare earths \u2014 is being pursued by some manufacturers; ferrite magnets can replace neodymium magnets in some applications but are significantly weaker."
+    },
+    {
+      "id": "f13",
+      "text": "Japan, which has no domestic rare earth deposits, has invested heavily in stockpiling, recycling research, and overseas mining partnerships to reduce its dependence."
+    },
+    {
+      "id": "f14",
+      "text": "The U.S. Department of Defense considers 14 rare earth elements critical to defense applications including missile guidance, communications, and stealth technology."
+    },
+    {
+      "id": "f15",
+      "text": "Dr. Patel said the scale of the clean-energy transition \u2014 hundreds of millions of EV motors and wind turbines \u2014 will require rare earth supply to grow substantially, creating demand pressure regardless of geopolitics."
+    },
+    {
+      "id": "f16",
+      "text": "Deep-sea polymetallic nodules contain significant rare earth concentrations; deep-sea mining is being evaluated but has not yet begun at commercial scale due to environmental and technical uncertainties."
+    },
+    {
+      "id": "f17",
+      "text": "China imposed export controls on gallium and germanium, two minerals used in semiconductors, in 2023; analysts saw the move as a signal that rare earth export restrictions were a credible future policy tool."
+    },
+    {
+      "id": "f18",
+      "text": "Rare earth oxide prices are volatile; neodymium oxide prices have swung from $40 per kilogram to more than $150 per kilogram within a decade."
+    },
+    {
+      "id": "f19",
+      "text": "Dr. Patel said diversifying the refining supply chain is a 15- to 20-year project even with full government support, because the chemical engineering expertise and environmental permitting timelines are both substantial."
+    },
+    {
+      "id": "f20",
+      "text": "Australia, Canada, and several African nations have rare earth deposits that are being developed with Western government backing as alternatives to Chinese supply."
+    }
+  ],
+  "modules": [
+    "domain/press.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f6",
+      "f7",
+      "f8",
+      "f10",
+      "f11",
+      "f14",
+      "f15"
+    ],
+    "forbidden_additions": [
+      "a claim that rare earth elements are geologically scarce globally",
+      "a specific Chinese export restriction on rare earths not in the notes",
+      "a current U.S. market share of rare earth refining different from what is in the notes"
+    ],
+    "preserve": [
+      "The mining part is solvable. The refining part is where most countries have fallen behind \u2014 it took China decades to build that capacity, and it cannot be replicated quickly."
+    ],
+    "expected_action": "draft"
+  }
+}

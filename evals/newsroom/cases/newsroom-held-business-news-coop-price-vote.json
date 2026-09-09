@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-business-news-coop-price-vote",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic newspaper-writing exercise using fictional reporting notes. Use only the supplied reporting notes. Write from the reporting snapshot as of August 26, 2026. Write a headline and a 450–650-word AP-style news update about the Larch Hollow Food Cooperative's decision to replace a future member rebate with selected shelf-price reductions.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id":"f1","text":"Members voting at Larch Hollow Food Cooperative approved a pricing change 280-90 on Wednesday, Aug. 26, 2026."},
+    {"id":"f2","text":"The vote authorizes ending the rebate on purchases made after Oct. 1 and redirecting its planned budget to selected staple-food prices."},
+    {"id":"f3","text":"Rebate credits already earned will remain redeemable under their existing expiration dates."},
+    {"id":"f4","text":"The cooperative has approximately 6,800 members; 370 cast ballots in this vote."},
+    {"id":"f5","text":"Last year's rebate distributed $54,000 in credits, based on members' eligible purchases."},
+    {"id":"f6","text":"The board plans a $54,000 price-reduction budget for the coming year but has not selected the final item list."},
+    {"id":"f7","text":"Reduced shelf prices will apply to members and nonmembers alike."},
+    {"id":"f8","text":"The cooperative's annual membership fee will remain $20, with voting rights and workshop discounts retained."},
+    {"id":"f9","text":"Manager Edda Pike said the cooperative will compare item-level sales and gross margins before expanding the list."},
+    {"id":"f10","text":"The cooperative has no household-level estimate showing which shoppers will save more than their former rebate."},
+    {"id":"f11","text":"A shopper's outcome will depend on eligible past purchases and whether the shopper buys the newly discounted items."},
+    {"id":"f12","text":"Member Oren Lusk said his rebate had helped pay for a large winter grocery trip."},
+    {"id":"f13","text":"Lusk said, \"A little off a shelf price does not arrive in one envelope when the heating bill does.\""},
+    {"id":"f14","text":"Nonmember customer Cira Venn said she shops there for basic ingredients but cannot regularly spend enough to justify membership for rebates alone."},
+    {"id":"f15","text":"Venn said, \"I can use a lower price today without waiting to become somebody's loyal customer.\""},
+    {"id":"f16","text":"The cooperative reported an operating surplus of $61,000 last year before distributing rebate credits."},
+    {"id":"f17","text":"The board says the new budget is not an additional $54,000 on top of an unchanged rebate program."},
+    {"id":"f18","text":"The vote requires a member review after 12 months; it does not promise that the scheme will continue permanently."},
+    {"id":"f19","text":"The store began as a bulk-buying club in 1989 and still keeps a noticeboard for member recipes and classes."},
+    {"id":"f20","text":"No decision has been made to reduce wages, alter supplier payment periods or sell the cooperative."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1","f2","f3","f4","f6","f7","f8","f10","f11","f17","f18"],
+    "forbidden_additions": ["All members voted or every household is guaranteed greater savings","Existing earned credits are canceled or two separate $54,000 programs will operate"],
+    "preserve": ["If quoted: A little off a shelf price does not arrive in one envelope when the heating bill does.","If quoted: I can use a lower price today without waiting to become somebody's loyal customer.","The item list is unfinished and price cuts will also reach nonmembers."],
+    "expected_action": "draft"
+  }
+}

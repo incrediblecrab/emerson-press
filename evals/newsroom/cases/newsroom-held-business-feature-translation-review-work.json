@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-business-feature-translation-review-work",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic newspaper-writing exercise using fictional reporting notes. Use only the supplied reporting notes. Write from the reporting snapshot as of September 8, 2026. Write a headline and a 450–650-word AP-style reported feature about Threadword Services' changing translation work, focusing on the people, pricing and checking involved when clients arrive with machine-generated drafts.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id":"f1","text":"A July 2026 job note at Threadword Services records translator Aro Naylen comparing a client's draft visitor guide against an approved list of place names and opening hours."},
+    {"id":"f2","text":"The agency translates exhibition guides, booking messages and visitor information for museums and tour operators."},
+    {"id":"f3","text":"It has six employees and contracts with additional translators for language pairs outside the staff's coverage."},
+    {"id":"f4","text":"In the first half of 2026, 32 clients submitted machine-generated drafts for review, compared with nine in the preceding half-year."},
+    {"id":"f5","text":"Those figures count clients requesting that service, not every document handled or the quality of every machine draft."},
+    {"id":"f6","text":"The agency prices ordinary translation by the word but normally quotes draft review by the estimated checking time."},
+    {"id":"f7","text":"Review work can include confirming names, dates, omitted qualifications and consistency with earlier approved material."},
+    {"id":"f8","text":"A draft's existing length does not establish how much checking it needs or how quickly a translator can approve it."},
+    {"id":"f9","text":"Founder Anya Ravelle says some routine messages need limited revision while unfamiliar exhibition terminology can require specialist review."},
+    {"id":"f10","text":"Ravelle said, \"The document arrives already written. That is not the same as arriving already finished.\""},
+    {"id":"f11","text":"Naylen says the agency sometimes asks a client to clarify the original source before deciding whether a draft translated it correctly."},
+    {"id":"f12","text":"Naylen said, \"I cannot check a confident sentence against an opening time the client has not settled.\""},
+    {"id":"f13","text":"Threadword's client agreement requires approved source documents and does not authorize publishing every first draft without review."},
+    {"id":"f14","text":"The agency reports that paid review represented 28% of its first-half revenue, up from 11% in the preceding period."},
+    {"id":"f15","text":"The agency has not supplied total revenue, matched job complexity or staff-hour data sufficient to calculate a productivity gain."},
+    {"id":"f16","text":"No employee has been dismissed under the current workflow change, according to the owner, but future staffing has not been guaranteed."},
+    {"id":"f17","text":"Museum client Keri Varden says a single consistent version across signs, tickets and emails matters more than receiving the first draft earliest."},
+    {"id":"f18","text":"The reporting packet contains no machine-generated passages, outside system tests or universal error-rate comparison."},
+    {"id":"f19","text":"Threadword began in 2018 with two translators working above a stationery shop."},
+    {"id":"f20","text":"The agency is preparing a new client briefing on review scope but has not announced a uniform fee for all draft types."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f2","f3","f4","f5","f6","f7","f8","f11","f13","f14","f15","f16","f18"],
+    "forbidden_additions": ["A tested universal model error rate, measured productivity gain or invented example machine output","All drafts need equal effort or current staffing is guaranteed indefinitely"],
+    "preserve": ["If quoted: The document arrives already written. That is not the same as arriving already finished.","If quoted: I cannot check a confident sentence against an opening time the client has not settled.","Client counts, revenue shares and staff productivity are different measures."],
+    "expected_action": "draft"
+  }
+}

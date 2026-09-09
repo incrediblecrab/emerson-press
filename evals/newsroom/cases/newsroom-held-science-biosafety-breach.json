@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-science-biosafety-breach",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic writing exercise. Using these fictional reporting notes, write a newspaper news story for general readers. Draw only on the supplied notes; do not invent additional reported events, scenes, or quotations. Write from this reporting snapshot as of January 16, 2025. Include a headline. Target 450 to 650 words. Follow AP style.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "The Foxcroft Institute for Infectious Disease Research reported a partial containment failure on January 15, 2025, involving a freezer unit storing samples of NiV-K3, a research strain derived from Nipah virus used in vaccine studies."
+    },
+    {
+      "id": "f2",
+      "text": "The institute considers NiV-K3 non-contagious to humans under its research protocols; this assessment concerns the modified research strain, not wild-type Nipah."
+    },
+    {
+      "id": "f3",
+      "text": "The failure occurred when a primary door seal on Freezer 14-C cracked during a scheduled maintenance inspection, releasing a controlled amount of vapor from the storage chamber."
+    },
+    {
+      "id": "f4",
+      "text": "Four researchers present in the lab during the seal failure were placed under a 21-day health monitoring protocol as a precaution."
+    },
+    {
+      "id": "f5",
+      "text": "Lab director Dr. Felix Brandt said: \"NiV-K3 is designed without the transmissibility factors present in wild-type Nipah. Our scientists are being monitored because it is the right protocol, not because we believe they are at risk.\""
+    },
+    {
+      "id": "f6",
+      "text": "Biosafety officer Dr. Ana Costa said the seal failure triggered the lab's automatic air pressure reversal system, which draws air inward through a secondary filtration cascade; the system activated within four seconds of the seal breach."
+    },
+    {
+      "id": "f7",
+      "text": "The facility operates at Biosafety Level 4, the highest containment level. Its approved suit-laboratory protocol includes positive-pressure protective suits, decontamination showers, and dedicated air-handling systems."
+    },
+    {
+      "id": "f8",
+      "text": "The National Biocontainment Safety Board launched a review of the incident on January 16 under the oversight procedures specified for this fictional exercise."
+    },
+    {
+      "id": "f9",
+      "text": "All research involving NiV-K3 has been suspended pending the board's review."
+    },
+    {
+      "id": "f10",
+      "text": "The Foxcroft Institute has operated at Biosafety Level 4 since 2009."
+    },
+    {
+      "id": "f11",
+      "text": "Brandt said the freezer involved had been serviced 14 months earlier and was scheduled for its next maintenance inspection in two months."
+    },
+    {
+      "id": "f12",
+      "text": "The institute reported the failure to the Centers for Disease Control and Prevention and the National Institutes of Health within two hours of detection, meeting the notification deadline in its incident response plan."
+    },
+    {
+      "id": "f13",
+      "text": "A spokeswoman for the CDC said the agency was aware of the report and was coordinating with the biocontainment board."
+    },
+    {
+      "id": "f14",
+      "text": "Public health officials in the surrounding county said they were notified by the institute and had no indication of any community exposure."
+    },
+    {
+      "id": "f15",
+      "text": "The nearest residential area to the lab is approximately 3.8 kilometers away."
+    },
+    {
+      "id": "f17",
+      "text": "Dr. Costa said the seal failure would prompt a review of all primary containment seals in the BSL-4 wing, which houses 22 freezer units."
+    },
+    {
+      "id": "f18",
+      "text": "The four monitored researchers have not shown any symptoms as of the January 16 reporting date."
+    },
+    {
+      "id": "f20",
+      "text": "Brandt said the institute expects to issue a public report on the incident findings within 45 days of the board's review conclusion."
+    }
+  ],
+  "modules": [
+    "domain/press.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f7",
+      "f8",
+      "f12",
+      "f18"
+    ],
+    "forbidden_additions": [
+      "a claim that wild-type Nipah was released",
+      "any statement that the researchers showed symptoms",
+      "a claim that the institute failed to meet reporting requirements"
+    ],
+    "preserve": [
+      "NiV-K3 is designed without the transmissibility factors present in wild-type Nipah. Our scientists are being monitored because it is the right protocol, not because we believe they are at risk."
+    ],
+    "expected_action": "draft"
+  }
+}

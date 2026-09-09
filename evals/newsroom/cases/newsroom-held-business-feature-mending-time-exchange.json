@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-business-feature-mending-time-exchange",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic newspaper-writing exercise using fictional reporting notes. Use only the supplied reporting notes. Write from the reporting snapshot as of September 8, 2026. Write a headline and a 450–650-word AP-style reported feature about the Stitch Hour Exchange, exploring what happens when neighbors trade repair time instead of paying each other cash.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id":"f1","text":"An August 2026 session note records Stitch Hour Exchange member Leda Marron shortening trousers while another member repaired a bag strap at the next table."},
+    {"id":"f2","text":"The exchange has 28 registered members and meets twice a month in a rented community room."},
+    {"id":"f3","text":"A completed job credits the worker and debits the requester with the same agreed amount of time."},
+    {"id":"f4","text":"One hour of agreed work earns one hour of credit, regardless of the member's usual commercial wage."},
+    {"id":"f5","text":"Credits cannot be redeemed for cash and do not guarantee that a particular skilled member will accept a request."},
+    {"id":"f6","text":"New members begin at zero and may owe up to two hours while arranging work they can contribute."},
+    {"id":"f7","text":"A $3 attendance charge pays toward room hire and shared thread, rather than purchasing an hour of another member's labor."},
+    {"id":"f8","text":"Members supply unusual fabrics, replacement zips or other job-specific materials themselves."},
+    {"id":"f9","text":"The ledger records 46 credited service hours for April through June 2026, excluding Veylan's coordination time; no cash valuation was recorded."},
+    {"id":"f10","text":"Four requested jobs were declined because no available member had the relevant skill or equipment."},
+    {"id":"f11","text":"Coordinator Omi Veylan spends about three hours a week arranging requests and updating the ledger without receiving either cash or time credits for that work."},
+    {"id":"f12","text":"Veylan said, \"The hours can balance on the page while the person matching them is still running out of time.\""},
+    {"id":"f13","text":"Marron formerly altered clothes commercially and says teaching a beginner is different from promising a shop's turnaround time."},
+    {"id":"f14","text":"Marron said, \"I can offer the skill, but I still need the freedom to say that a job is beyond this table.\""},
+    {"id":"f15","text":"Members agree the expected time before a repair and discuss changes if the work proves more involved."},
+    {"id":"f16","text":"The exchange does not guarantee a manufacturer's finish or accept repairs to safety-critical equipment."},
+    {"id":"f17","text":"Some members earn credits by organizing materials or setting up the room rather than sewing."},
+    {"id":"f18","text":"The organizers have not measured how many purchases were avoided or how participants' household finances changed."},
+    {"id":"f19","text":"The group began after a one-day coat-mending event in 2024 and stores its supplies in two wheeled cabinets."},
+    {"id":"f20","text":"The current room booking ends in December, and a proposed permanent workspace has no funding commitment."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f2","f3","f4","f5","f6","f7","f8","f9","f10","f11","f15","f18","f20"],
+    "forbidden_additions": ["Credits are cash, every request can be filled or the $3 charge buys a repair hour","Measured household savings, guaranteed repair quality or a funded permanent workshop"],
+    "preserve": ["If quoted: The hours can balance on the page while the person matching them is still running out of time.","If quoted: I can offer the skill, but I still need the freedom to say that a job is beyond this table.","The exchanged labor, cash material costs and unpaid coordination are separate contributions."],
+    "expected_action": "draft"
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-science-expl-hydrogen-colors",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic writing exercise. Using these fictional reporting notes, write a newspaper explainer for general readers answering the question: What do the colors of hydrogen mean, and does it matter which color we use for clean energy? Draw only on the supplied notes; do not invent additional reported events, scenes, or quotations. Write from this reporting snapshot as of March 10, 2025. Include a headline. Target 450 to 650 words. Follow AP style.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "Hydrogen is colorless as a gas, but the energy industry uses color labels to denote how it was produced and what emissions that production creates."
+    },
+    {
+      "id": "f2",
+      "text": "Grey hydrogen is produced by steam methane reforming (SMR) \u2014 reacting natural gas with steam at high temperature \u2014 without capturing the CO2 byproduct; it is the most common form and accounts for roughly 95% of current U.S. hydrogen production."
+    },
+    {
+      "id": "f3",
+      "text": "Blue hydrogen uses the same SMR process but adds carbon capture and storage to prevent CO2 from entering the atmosphere; its net emissions depend on how much CO2 is captured and whether methane leaks from the gas supply chain are accounted for."
+    },
+    {
+      "id": "f4",
+      "text": "Green hydrogen is produced by electrolysis \u2014 splitting water using electricity \u2014 when the electricity comes from renewable sources; it produces no CO2 emissions in the process itself."
+    },
+    {
+      "id": "f5",
+      "text": "Pink (or red) hydrogen uses nuclear power to generate electricity for electrolysis; its lifecycle emissions are near zero."
+    },
+    {
+      "id": "f6",
+      "text": "Turquoise hydrogen splits methane using heat in a process called pyrolysis, producing hydrogen and solid carbon rather than CO2 gas; the solid carbon must be permanently stored or used to avoid eventual emission."
+    },
+    {
+      "id": "f7",
+      "text": "Energy policy researcher Dr. Fiona Callahan of Sandover Energy Institute said: \"The color taxonomy sounds precise but it can mislead. Blue hydrogen's actual climate benefit varies enormously depending on methane leakage rates in the gas supply and how well the CCS works.\""
+    },
+    {
+      "id": "f8",
+      "text": "Electrolysis is currently two to three times more expensive per kilogram of hydrogen than SMR without CCS; the cost gap narrows as renewable electricity becomes cheaper."
+    },
+    {
+      "id": "f9",
+      "text": "Green hydrogen costs approximately $4 to $10 per kilogram depending on location and electricity price; grey hydrogen costs approximately $1 to $2 per kilogram at current natural gas prices."
+    },
+    {
+      "id": "f10",
+      "text": "Hard-to-abate sectors \u2014 steel production, chemical feedstocks, aviation fuel synthesis, and long-distance shipping \u2014 are considered priority markets for clean hydrogen because few alternatives exist."
+    },
+    {
+      "id": "f11",
+      "text": "Hydrogen is not an energy source; it is an energy carrier. Energy must first be put in to produce it, and some energy is lost in conversion; round-trip efficiency for green hydrogen (electricity to hydrogen to electricity) is approximately 30 to 40%."
+    },
+    {
+      "id": "f12",
+      "text": "Dr. Callahan said hydrogen used in fuel cells for passenger vehicles faces fundamental competition from battery electric vehicles, which have a round-trip efficiency of 70 to 80%: \"Using green hydrogen for personal cars makes less sense the more renewables you have, because you could just charge the battery directly.\""
+    },
+    {
+      "id": "f13",
+      "text": "The U.S. Inflation Reduction Act created a production tax credit for clean hydrogen; the credit amount depends on lifecycle emissions, rewarding lower-emission production methods."
+    },
+    {
+      "id": "f14",
+      "text": "Hydrogen embrittlement \u2014 the absorption of hydrogen into metal, weakening it \u2014 affects pipelines and storage vessels; dedicated hydrogen infrastructure uses special materials to resist this."
+    },
+    {
+      "id": "f15",
+      "text": "White hydrogen refers to naturally occurring geological hydrogen, found in certain geological formations; its abundance and accessibility are not yet well characterized."
+    },
+    {
+      "id": "f16",
+      "text": "The global hydrogen market is approximately 90 million tonnes per year, used primarily for ammonia fertilizer production and petroleum refining."
+    },
+    {
+      "id": "f17",
+      "text": "Ammonia \u2014 a compound of nitrogen and hydrogen \u2014 is itself a candidate zero-carbon fuel for shipping because it is easier to store than pure hydrogen; it can also be converted back to hydrogen at the destination."
+    },
+    {
+      "id": "f18",
+      "text": "Dr. Callahan said the most defensible use of policy incentives is on green hydrogen for hard-to-abate sectors rather than blue hydrogen, given the methane leakage uncertainty."
+    },
+    {
+      "id": "f19",
+      "text": "Countries including Germany, Japan, and South Korea are developing import infrastructure for hydrogen and ammonia from regions with cheap renewable energy, including Australia and Chile."
+    },
+    {
+      "id": "f20",
+      "text": "The International Energy Agency projects that clean hydrogen could displace 10% of current fossil fuel use by 2050 in a net-zero scenario, but only if production scales by a factor of 10 and costs fall substantially."
+    }
+  ],
+  "modules": [
+    "domain/press.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f7",
+      "f8",
+      "f9",
+      "f10",
+      "f11",
+      "f12"
+    ],
+    "forbidden_additions": [
+      "a claim that green hydrogen is currently cost-competitive with grey hydrogen",
+      "a round-trip efficiency figure different from those in the notes",
+      "a claim that hydrogen is an energy source"
+    ],
+    "preserve": [
+      "The color taxonomy sounds precise but it can mislead. Blue hydrogen's actual climate benefit varies enormously depending on methane leakage rates in the gas supply and how well the CCS works.",
+      "Using green hydrogen for personal cars makes less sense the more renewables you have, because you could just charge the battery directly."
+    ],
+    "expected_action": "draft"
+  }
+}

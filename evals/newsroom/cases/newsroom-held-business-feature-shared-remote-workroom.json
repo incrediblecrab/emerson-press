@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-business-feature-shared-remote-workroom",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic newspaper-writing exercise using fictional reporting notes. Use only the supplied reporting notes. Write from the reporting snapshot as of September 8, 2026. Write a headline and a 450–650-word AP-style reported feature about remote workers using the old Celandine schoolroom as shared workspace and the practical limits of selling a quiet place to work.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id":"f1","text":"An August 2026 room-use note records customer-service worker Tara Veyne moving from a shared desk into a reserved booth before starting a scheduled call."},
+    {"id":"f2","text":"Celandine Workroom occupies a former school classroom and provides 12 desks and four enclosed call booths."},
+    {"id":"f3","text":"A day pass costs $12; booth time must be reserved but carries no extra charge within the pass's stated daily allowance."},
+    {"id":"f4","text":"The operator also sells a monthly $80 pass permitting up to 12 visits, rather than unlimited attendance."},
+    {"id":"f5","text":"Forty-six people hold monthly passes, but the room cannot seat all of them at the same time."},
+    {"id":"f6","text":"In a supplied full working week, 210 desk-hours were booked out of 600 offered, an overall booking rate of 35%."},
+    {"id":"f7","text":"The weekly average masks busier Tuesday and Thursday periods and does not measure booth occupancy."},
+    {"id":"f8","text":"Veyne uses the workroom when building repairs make her home unsuitable for calls; her employer permits customer calls only from an enclosed booth in this shared setting."},
+    {"id":"f9","text":"No customer call content, account details or employer credentials are included in the reporting notes."},
+    {"id":"f10","text":"Veyne said, \"I am not buying another office identity. I am buying a room where I can finish this day's work.\""},
+    {"id":"f11","text":"Operator Omi Lerren says booth demand can be high even when several desks are empty."},
+    {"id":"f12","text":"Lerren said, \"A free chair does not solve a booking problem when everybody needs to talk at once.\""},
+    {"id":"f13","text":"The operator estimates that the backup unit can power the essential network equipment for about 45 minutes, not all desks and appliances."},
+    {"id":"f14","text":"A power backup does not guarantee that an external broadband-provider outage will be resolved."},
+    {"id":"f15","text":"The operator recorded three service interruptions in the first quarter but has not supplied a comparison proving better reliability than every user's home connection."},
+    {"id":"f16","text":"A town start-up grant pays part of the first year's rent and ends in December."},
+    {"id":"f17","text":"The operator has not published a complete break-even calculation or secured replacement grant funding."},
+    {"id":"f18","text":"Users include employees, freelancers and people completing administrative work for small businesses, not one uniform occupational group."},
+    {"id":"f19","text":"The former classroom's blackboard remains on one wall and is used for room notices rather than recording clients' work."},
+    {"id":"f20","text":"No plan has been approved to convert the entire former school into offices or add residential accommodation."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f2","f3","f4","f5","f6","f7","f8","f9","f11","f13","f14","f16","f17"],
+    "forbidden_additions": ["Unlimited monthly access, simultaneous space for all members or guaranteed connectivity","Private customer details, verified profitability or funded expansion of the whole school"],
+    "preserve": ["If quoted: I am not buying another office identity. I am buying a room where I can finish this day's work.","If quoted: A free chair does not solve a booking problem when everybody needs to talk at once.","Desk capacity, booth demand and an average weekly booking rate describe different constraints."],
+    "expected_action": "draft"
+  }
+}

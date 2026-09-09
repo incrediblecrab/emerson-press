@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-science-expl-sea-level-rise",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic writing exercise. Using these fictional reporting notes, write a newspaper explainer for general readers answering the question: Why is sea level rising, how much and how fast, and what determines which coastal areas are most at risk? Draw only on the supplied notes; do not invent additional reported events, scenes, or quotations. Write from this reporting snapshot as of January 22, 2025. Include a headline. Target 450 to 650 words. Follow AP style.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "Global average sea level has risen approximately 21 to 24 centimeters since 1880; the rate of rise has accelerated and is currently approximately 3.7 millimeters per year, up from about 1.5 millimeters per year in the early 20th century."
+    },
+    {
+      "id": "f2",
+      "text": "There are two primary causes: thermal expansion (water expands as it warms) and the addition of water from melting ice \u2014 glaciers, the Greenland ice sheet, and the Antarctic ice sheet."
+    },
+    {
+      "id": "f3",
+      "text": "Thermal expansion accounts for approximately 40% of observed rise; ice melt accounts for the remainder, with glacier melt and ice sheet loss each contributing roughly 30%."
+    },
+    {
+      "id": "f4",
+      "text": "The IPCC's most likely projection for global average sea level rise by 2100 is between 0.3 and 1.0 meter relative to 2000 levels, depending on greenhouse gas emissions trajectories."
+    },
+    {
+      "id": "f5",
+      "text": "Under high-emissions scenarios, some projections include a 'low-probability, high-impact' tail risk of up to 2 meters by 2100 if Antarctic ice sheet instabilities trigger faster-than-expected collapse."
+    },
+    {
+      "id": "f6",
+      "text": "Coastal oceanographer Dr. Yemi Adeyinka of Atlantic Research Center said: \"Global averages obscure the local reality. Some coasts are rising relative to sea level due to land uplift; others are sinking due to subsidence, doubling or tripling the effective rate of rise.\""
+    },
+    {
+      "id": "f7",
+      "text": "Land subsidence \u2014 the sinking of land \u2014 is caused by groundwater extraction, sediment compaction, and the slow post-glacial adjustment of Earth's crust; cities on river deltas, including New Orleans, Jakarta, and Bangkok, are subsiding faster than global sea level is rising."
+    },
+    {
+      "id": "f8",
+      "text": "Storm surge \u2014 temporary but extreme water level rises during hurricanes and typhoons \u2014 is the most immediate flood threat in most coastal areas; higher baseline sea level increases how far surge penetrates inland."
+    },
+    {
+      "id": "f9",
+      "text": "Salt water intrusion into coastal freshwater aquifers is an early consequence of sea level rise that affects drinking water before permanent inundation occurs."
+    },
+    {
+      "id": "f10",
+      "text": "Low-lying coral atoll nations, including Tuvalu and Kiribati, are at existential risk from sea level rise; both nations have begun negotiating legal status for their populations if the islands are submerged."
+    },
+    {
+      "id": "f11",
+      "text": "Managed retreat \u2014 planned relocation of populations from coastal areas \u2014 is considered a long-term option but has faced resistance in most countries where it has been proposed."
+    },
+    {
+      "id": "f12",
+      "text": "Nature-based shoreline protection \u2014 restoring mangroves, salt marshes, and barrier reefs \u2014 reduces wave energy and erosion; these ecosystems are themselves threatened by sea level rise and warming."
+    },
+    {
+      "id": "f13",
+      "text": "Dr. Adeyinka said measuring sea level globally requires reconciling tide gauge records (which measure relative to land) with satellite altimetry (which measures absolute ocean surface height)."
+    },
+    {
+      "id": "f14",
+      "text": "The last time global temperatures were 2 to 3 degrees Celsius above pre-industrial levels \u2014 during the last interglacial period, about 125,000 years ago \u2014 sea levels were 5 to 9 meters higher than today."
+    },
+    {
+      "id": "f15",
+      "text": "Ice sheet response to warming is slow by human timescales; some sea level rise already locked in by past emissions cannot be avoided even if all emissions stopped today."
+    },
+    {
+      "id": "f16",
+      "text": "Greenland's ice sheet contains enough water to raise global sea level approximately 7 meters if fully melted; Antarctica contains enough for roughly 58 meters."
+    },
+    {
+      "id": "f17",
+      "text": "Complete melting of either major ice sheet would take centuries to millennia even under worst-case warming; the near-term risk is accelerated flow of outlet glaciers into the ocean."
+    },
+    {
+      "id": "f18",
+      "text": "Dr. Adeyinka said the socioeconomic impacts of sea level rise are highly unequal: wealthy nations can invest in seawalls and adaptation, but low-income coastal communities have fewer options."
+    },
+    {
+      "id": "f19",
+      "text": "Coastal property insurance markets in some U.S. regions are already responding to sea level risk, with insurers withdrawing from high-risk markets or increasing premiums substantially."
+    },
+    {
+      "id": "f20",
+      "text": "NOAA's sea level rise technical report for the U.S. projects 0.3 to 1.5 meters of rise along U.S. coastlines by 2100, with the Southeast and Gulf Coast at the higher end of local projections."
+    }
+  ],
+  "modules": [
+    "domain/press.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f6",
+      "f7",
+      "f8",
+      "f10",
+      "f14",
+      "f15"
+    ],
+    "forbidden_additions": [
+      "a sea level rise figure outside the IPCC range for 2100",
+      "a claim that Greenland or Antarctic ice sheets could melt within this century",
+      "specific flood damage dollar figures not in the notes"
+    ],
+    "preserve": [
+      "Global averages obscure the local reality. Some coasts are rising relative to sea level due to land uplift; others are sinking due to subsidence, doubling or tripling the effective rate of rise."
+    ],
+    "expected_action": "draft"
+  }
+}

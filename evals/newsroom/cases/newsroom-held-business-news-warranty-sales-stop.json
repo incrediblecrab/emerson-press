@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-business-news-warranty-sales-stop",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic newspaper-writing exercise using fictional reporting notes. Use only the supplied reporting notes. Write from the reporting snapshot as of August 18, 2026. Write a headline and a 450–650-word AP-style newspaper news update about Hearthline Appliances ending new sales of its extended service plan and the consequences for existing plan holders.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id":"f1","text":"Hearthline Appliances said Tuesday, Aug. 18, 2026, that it will stop selling its Extra Years service plan after Sept. 30."},
+    {"id":"f2","text":"The retailer's 14 stores will continue selling appliances, parts and separately priced repair visits."},
+    {"id":"f3","text":"There are approximately 14,000 active Extra Years contracts, according to the retailer's account records."},
+    {"id":"f4","text":"Those contracts will remain administered by the existing provider, Cinder Service Network, until their stated expiration dates."},
+    {"id":"f5","text":"The active-contract count is not a count of distinct households because some customers hold plans for several appliances."},
+    {"id":"f6","text":"The sales decision does not alter the written manufacturer warranties supplied with appliances."},
+    {"id":"f7","text":"Hearthline says its renewed agreement with Cinder increased the one-time administration charge on each newly sold plan from $22 to $31; this is a retailer cost, not a new charge to existing plan holders."},
+    {"id":"f8","text":"The company has not disclosed the average retail plan price or its margin, so the fee increase does not establish its total profit change."},
+    {"id":"f9","text":"Chief commercial officer Nessa Flint said sales staff will no longer receive commissions for new service-plan sales after the cutoff."},
+    {"id":"f10","text":"Staff will receive a temporary three-month commission supplement, but the amount will vary with their prior sales."},
+    {"id":"f11","text":"Cinder's stated process for existing claims begins with a telephone assessment before an in-home appointment is scheduled."},
+    {"id":"f12","text":"Cinder's July 2026 report gives a median of eight calendar days from completed telephone assessment to the first home visit among visits completed in this service region that month."},
+    {"id":"f13","text":"That median excludes still-pending visits and any later parts orders; it is not a maximum wait or a measure of time to a completed repair."},
+    {"id":"f14","text":"Customer Dane Voss has a refrigerator plan expiring in 2028 and said he initially thought the sales announcement ended his coverage."},
+    {"id":"f15","text":"Voss said, \"I wanted to know who would answer the phone, not whether they would sell me another leaflet.\""},
+    {"id":"f16","text":"Flint said, \"Stopping new sales does not move an existing repair request to the back of a different queue.\""},
+    {"id":"f17","text":"The retailer plans to mail active contract holders a notice naming their provider and expiration date."},
+    {"id":"f18","text":"No blanket cancellation refund or automatic plan extension is part of the announced change."},
+    {"id":"f19","text":"Hearthline began selling service plans in 2014, after previously offering repairs only on a per-visit basis."},
+    {"id":"f20","text":"The reporting record contains no regulator assessment of the plans' value or finding that every claim has been handled correctly."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1","f2","f3","f4","f5","f6","f10","f12","f13","f17","f18"],
+    "forbidden_additions": ["Existing plans are canceled or all 14,000 contracts belong to different households","An eight-day maximum repair guarantee, blanket refund or regulatory endorsement"],
+    "preserve": ["If quoted: I wanted to know who would answer the phone, not whether they would sell me another leaflet.","If quoted: Stopping new sales does not move an existing repair request to the back of a different queue.","The retailer's future sales and provider's existing obligations are distinct."],
+    "expected_action": "draft"
+  }
+}

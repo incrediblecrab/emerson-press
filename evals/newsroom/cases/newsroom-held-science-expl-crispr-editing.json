@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-science-expl-crispr-editing",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic writing exercise. Using these fictional reporting notes, write a newspaper explainer for general readers answering the question: What is CRISPR gene editing, how does it work, and what can it actually do? Draw only on the supplied notes; do not invent additional reported events, scenes, or quotations. Write from this reporting snapshot as of February 14, 2025. Include a headline. Target 450 to 650 words. Follow AP style.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "CRISPR-Cas9 is a gene editing tool adapted from a bacterial immune system that naturally uses it to cut and destroy invading viral DNA."
+    },
+    {
+      "id": "f2",
+      "text": "The tool works in two parts: a guide RNA, customized by the researcher, that navigates to a specific DNA sequence; and Cas9, an enzyme that cuts both strands of DNA at that location."
+    },
+    {
+      "id": "f3",
+      "text": "When DNA is cut, cells attempt to repair the break; different repair pathways produce different outcomes \u2014 one can disable a gene, another can insert new genetic information if a template is provided."
+    },
+    {
+      "id": "f4",
+      "text": "The same guide RNA can target any species with a compatible DNA sequence; the tool is used in agriculture, basic research, and therapeutic development."
+    },
+    {
+      "id": "f5",
+      "text": "Geneticist Dr. Yusuf Abebe of Clearview Research Institute said: \"CRISPR is not magic and it is not science fiction. It is a very precise molecular scissors, and like scissors, it cuts where you point it \u2014 and can cut off-target if you point badly.\""
+    },
+    {
+      "id": "f6",
+      "text": "Off-target editing \u2014 cuts at unintended DNA locations \u2014 is a documented limitation; the frequency depends on the specific guide RNA design, the delivery method, and the target sequence's uniqueness in the genome."
+    },
+    {
+      "id": "f7",
+      "text": "CRISPR therapies currently approved or in advanced trials deliver the editing tool into the patient's body or work on cells removed from the patient, edited in a laboratory, and reinfused."
+    },
+    {
+      "id": "f8",
+      "text": "In vivo CRISPR \u2014 editing inside the living body \u2014 requires a delivery vehicle, typically a lipid nanoparticle or a modified virus, to carry the editing machinery into the target cells."
+    },
+    {
+      "id": "f9",
+      "text": "Ex vivo CRISPR \u2014 editing cells outside the body \u2014 is technically more controllable because the edit can be verified before the cells are reinfused; this approach is used in blood disorder therapies."
+    },
+    {
+      "id": "f10",
+      "text": "Two CRISPR-based therapies for sickle cell disease and beta-thalassemia received FDA approval in December 2023; both work ex vivo on the patient's own hematopoietic stem cells."
+    },
+    {
+      "id": "f11",
+      "text": "Germline editing \u2014 editing sperm, eggs, or embryos, which passes edits to future generations \u2014 is banned in most countries; a researcher who created gene-edited babies without regulatory approval in 2018 was imprisoned in the country where the work was conducted."
+    },
+    {
+      "id": "f12",
+      "text": "Base editing and prime editing are refinements of CRISPR that change one DNA letter at a time without cutting both strands; these methods reduce off-target effects in some applications."
+    },
+    {
+      "id": "f13",
+      "text": "CRISPR has been used to engineer crops resistant to fungal disease, cattle with more muscle mass, and mosquitoes unable to transmit malaria; none of these agricultural applications have been fully released into the environment in the United States."
+    },
+    {
+      "id": "f14",
+      "text": "Dr. Abebe said CRISPR is not useful for conditions controlled by dozens or hundreds of genes, such as most common diseases; it is most effective when a single gene or a small number of genes is the causal target."
+    },
+    {
+      "id": "f15",
+      "text": "The 2020 Nobel Prize in Chemistry was awarded to two scientists for developing CRISPR-Cas9 as a gene editing tool; their work, begun years before the technology had clear therapeutic applications, is described by the Nobel committee as having revolutionized the life sciences."
+    },
+    {
+      "id": "f16",
+      "text": "Intellectual property disputes over CRISPR patents have been extensive; the key patent for human cell applications is held by the Broad Institute, following a multi-year legal proceeding."
+    },
+    {
+      "id": "f17",
+      "text": "Manufacturing a CRISPR therapy for a single patient \u2014 when cells are personalized \u2014 costs substantially more than manufacturing a mass-produced drug; this contributes to high list prices."
+    },
+    {
+      "id": "f18",
+      "text": "Dr. Abebe said the limiting factor for expanding CRISPR therapies is not the editing technology but rather the difficulty of delivering it safely and efficiently to tissues other than the liver and blood."
+    },
+    {
+      "id": "f19",
+      "text": "Research teams are developing CRISPR-based diagnostics that use the editing tool's DNA-binding precision to detect specific viral sequences without cutting; some are designed for point-of-care use."
+    },
+    {
+      "id": "f20",
+      "text": "Animal experiments using CRISPR to eliminate latent HIV from infected cells have shown preliminary success; human trials are in early stages."
+    }
+  ],
+  "modules": [
+    "domain/press.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f5",
+      "f6",
+      "f7",
+      "f9",
+      "f10",
+      "f11",
+      "f14"
+    ],
+    "forbidden_additions": [
+      "a claim that germline editing is legal in the U.S.",
+      "a Nobel year different from 2020",
+      "a claim that CRISPR has no off-target effects"
+    ],
+    "preserve": [
+      "CRISPR is not magic and it is not science fiction. It is a very precise molecular scissors, and like scissors, it cuts where you point it \u2014 and can cut off-target if you point badly."
+    ],
+    "expected_action": "draft"
+  }
+}

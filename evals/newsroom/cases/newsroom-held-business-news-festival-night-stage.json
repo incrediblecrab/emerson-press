@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-business-news-festival-night-stage",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic newspaper-writing exercise using fictional reporting notes. Use only the supplied reporting notes. Write from the reporting snapshot as of August 14, 2026. Write a headline and a 450–650-word AP-style newspaper update on the canceled evening stage at the Marrow Quay Lantern Festival, including the implications for ticket holders, vendors and the remaining program.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id":"f1","text":"The Marrow Quay Lantern Festival canceled its ticketed evening stage on Friday, Aug. 14, 2026, three weeks before the event."},
+    {"id":"f2","text":"Free daytime workshops and the lantern walk remain scheduled for Sept. 4-6."},
+    {"id":"f3","text":"Festival accounts show 2,400 evening tickets sold at a single face price of $25, totaling $60,000 in face-value receipts."},
+    {"id":"f4","text":"The festival says ticket face values and its booking fees will be refunded automatically to the original payment method."},
+    {"id":"f5","text":"Refunds are scheduled to begin Aug. 17 and be completed by Aug. 28."},
+    {"id":"f6","text":"The production contractor's revised stage, lighting and power quote was $112,000, up from a provisional $78,000."},
+    {"id":"f7","text":"The provisional quote had not been a fixed-price contract, according to festival treasurer Una Vale."},
+    {"id":"f8","text":"A $40,000 municipal grant is restricted by its award terms to free daytime activities and cannot cover the evening stage under those terms."},
+    {"id":"f9","text":"The festival has paid $19,000 in nonrefundable planning and artist deposits associated with the canceled stage."},
+    {"id":"f10","text":"Vale said the board chose cancellation rather than taking a short-term loan it could not repay from current ticket sales."},
+    {"id":"f11","text":"Twenty-two food vendors booked pitches for the full weekend; nine planned to operate mainly during the evening concerts."},
+    {"id":"f12","text":"Vendors may cancel without losing their pitch deposits through Aug. 21, but the festival will not reimburse purchased food or travel."},
+    {"id":"f13","text":"Food-stall owner Ceri Holt has ordered frozen ingredients that can be used at later events, but has already paid for festival signage."},
+    {"id":"f14","text":"Holt said, \"Getting the pitch money back is not the same as getting the whole week of preparation back.\""},
+    {"id":"f15","text":"Four musical acts had contracts for the stage; their representatives and the festival are discussing cancellation payments beyond deposits."},
+    {"id":"f16","text":"Festival director Rian Quell said, \"Keeping the free program open is a smaller promise, but it is one we can still make.\""},
+    {"id":"f17","text":"The daytime program uses existing indoor rooms and does not require the canceled temporary stage."},
+    {"id":"f18","text":"The board has not approved an evening replacement event or a date for next year's festival."},
+    {"id":"f19","text":"The festival began as a school lantern display in 2009 and added paid concerts in 2018."},
+    {"id":"f20","text":"The accounts supplied do not establish a final festival-wide loss because vendor cancellations and artist settlements remain unresolved."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1","f2","f3","f4","f5","f6","f8","f9","f12","f15","f20"],
+    "forbidden_additions": ["The entire festival is canceled or the restricted grant is available for the stage","A final festival loss, completed refunds or settled artist payments before they are documented"],
+    "preserve": ["If quoted: Getting the pitch money back is not the same as getting the whole week of preparation back.","If quoted: Keeping the free program open is a smaller promise, but it is one we can still make.","The temporary evening stage and existing-room daytime program are separate operations."],
+    "expected_action": "draft"
+  }
+}

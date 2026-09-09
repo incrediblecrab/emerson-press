@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-business-news-rural-delivery-contracts",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic newspaper-writing exercise using fictional reporting notes. Use only the supplied reporting notes. Write from the reporting snapshot as of September 2, 2026. Write a headline and a 450–650-word AP-style news update about Reedmile Parcel's rural-route contracting change and the tradeoffs facing drivers and customers.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id":"f1","text":"Reedmile Parcel announced Wednesday, Sept. 2, 2026, that three rural delivery zones will move to contractor Brack Lane Logistics on Oct. 19."},
+    {"id":"f2","text":"The three zones cover 1,460 delivery addresses; the count does not represent daily parcel volume."},
+    {"id":"f3","text":"Fourteen Reedmile drivers currently cover those zones within a wider workforce of 48 drivers."},
+    {"id":"f4","text":"Brack Lane has offered the 14 affected drivers route contracts that it describes as self-employed arrangements, not employee transfers."},
+    {"id":"f5","text":"The offered route fee is $168 for a completed route day, with drivers supplying their own vehicle, fuel and maintenance."},
+    {"id":"f6","text":"The offer does not guarantee a fixed number of route days every week."},
+    {"id":"f7","text":"Affected employee drivers currently receive $19 an hour and use company vehicles."},
+    {"id":"f8","text":"The record does not provide comparable route-hour or vehicle-cost data needed to calculate each driver's future net income."},
+    {"id":"f9","text":"Reedmile has also advertised two internal warehouse vacancies to affected drivers, with applications still open."},
+    {"id":"f10","text":"The company has not announced how many drivers accepted contracts, applied internally or intend to leave."},
+    {"id":"f11","text":"Reedmile says retail delivery charges and the promised delivery-day window will not change when contracting begins."},
+    {"id":"f12","text":"Customer complaints and compensation requests will still go through Reedmile rather than directly to individual drivers."},
+    {"id":"f13","text":"Driver Tavi Holt currently borrows a family car outside work and does not own a suitable parcel van."},
+    {"id":"f14","text":"Holt said, \"A route fee starts looking different when the van has to come out of it.\""},
+    {"id":"f15","text":"Reedmile operations director Mara Venn said lower parcel density makes its rural routes more expensive per stop."},
+    {"id":"f16","text":"Venn said, \"We are changing who runs the route, not asking customers to find a new parcel company.\""},
+    {"id":"f17","text":"Brack Lane has not published a route-by-route schedule or a guaranteed fuel adjustment in the offers supplied."},
+    {"id":"f18","text":"The reporting record contains no court or regulator determination of the proposed drivers' employment status."},
+    {"id":"f19","text":"Reedmile began serving the rural zones in 2019 after acquiring a smaller carrier."},
+    {"id":"f20","text":"The company has not released an independently assessed service-quality comparison between its current crews and the new contractor."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1","f2","f3","f4","f5","f6","f7","f8","f10","f11","f12","f18"],
+    "forbidden_additions": ["An employee transfer, accepted offers or guaranteed weekly contract income","A legal status ruling or a calculated net-pay reduction without hours and vehicle costs"],
+    "preserve": ["If quoted: A route fee starts looking different when the van has to come out of it.","If quoted: We are changing who runs the route, not asking customers to find a new parcel company.","Drivers would have to cover vehicle, fuel and maintenance costs from the $168 route fee, costs currently borne by their employer."],
+    "expected_action": "draft"
+  }
+}

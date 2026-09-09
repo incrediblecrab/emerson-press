@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-business-news-studio-program-merger",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic newspaper-writing exercise using fictional reporting notes. Use only the supplied reporting notes. Write from the reporting snapshot as of August 7, 2026. Write a headline and a 450–650-word AP-style news update about Lenwick University's merger of two studio programs, addressing the practical consequences for current students and future applicants.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id":"f1","text":"Lenwick University announced Friday, Aug. 7, 2026, that its ceramics and furniture-design programs will share a new materials-design department."},
+    {"id":"f2","text":"The administrative merger takes effect in January 2027, while the first combined degree intake is planned for autumn 2027."},
+    {"id":"f3","text":"Current enrollment is 74 students in ceramics and 46 in furniture design, for a combined 120."},
+    {"id":"f4","text":"Current students may finish their existing degrees under the university's published completion plan."},
+    {"id":"f5","text":"Annual admission to the two programs has totaled 40 new students; the combined degree will admit 32."},
+    {"id":"f6","text":"The university will retain all nine full-time instructors but will not renew three part-time teaching contracts after the 2026–27 academic year; it has not disclosed how many individuals hold those contracts."},
+    {"id":"f7","text":"The new department will share drawing, materials-history and business-practice courses while retaining separate kiln and machine workshops."},
+    {"id":"f8","text":"Evening workshop access will end at 9 p.m. rather than 11 p.m. because the university is reducing staffed access hours."},
+    {"id":"f9","text":"Provost Iona Brill projects annual savings of $310,000 once the new curriculum is fully running."},
+    {"id":"f10","text":"That estimate includes reduced administration and part-time teaching but does not include a one-time workshop refit."},
+    {"id":"f11","text":"The university budgets $180,000 for a one-time workshop refit from an existing capital allocation; final expenditure is not yet known."},
+    {"id":"f12","text":"Third-year ceramics student Milo Fenn works afternoons at a grocery store and currently uses the workshop after 9 p.m."},
+    {"id":"f13","text":"Fenn said, \"Finishing my degree is not just a promise about the name on the certificate. I need time at the kiln.\""},
+    {"id":"f14","text":"Brill said the department will seek student scheduling requests before publishing its January workshop timetable."},
+    {"id":"f15","text":"Local furniture maker Tavi Reed said shared materials training could be useful, but employers still need graduates who can operate specific equipment."},
+    {"id":"f16","text":"Reed said, \"A broader course helps if there is still enough time to get good at a difficult tool.\""},
+    {"id":"f17","text":"The university has not released separate employment-outcome data for the existing programs."},
+    {"id":"f18","text":"Tuition for current students will not change as a result of the merger; autumn 2027 tuition has not been set."},
+    {"id":"f19","text":"The ceramics studio occupies a former railway goods office and includes a student-run shop open one afternoon a week."},
+    {"id":"f20","text":"The university's published plan retains the shop, which is operated as a supervised sales placement rather than a separate degree requirement."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1","f2","f3","f4","f5","f6","f8","f9","f10","f14","f18"],
+    "forbidden_additions": ["Current students lose their existing degrees or all instructors are retained","A verified employment benefit or unchanged tuition for the unpriced 2027 intake"],
+    "preserve": ["If quoted: Finishing my degree is not just a promise about the name on the certificate. I need time at the kiln.","If quoted: A broader course helps if there is still enough time to get good at a difficult tool.","The administrative merger, new intake and current-student completion plan have different timelines."],
+    "expected_action": "draft"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "kind": "pre-generation-science-source-review-summary",
+  "assessor": "model",
+  "human_reviews": 0,
+  "primary_writing_outputs": 0,
+  "cases": 73,
+  "fact_entries": 1456,
+  "fact_entry_distribution": {
+    "20": 70,
+    "19": 2,
+    "18": 1
+  },
+  "source_word_range": [
+    383,
+    730
+  ],
+  "word_count_method": "Whitespace-separated words in fact text only",
+  "original_declared_families": 73,
+  "provisional_families_after_review": 68,
+  "changed_cases": [
+    "newsroom-held-science-rail-derailment-findings",
+    "newsroom-held-science-biosafety-breach",
+    "newsroom-held-science-crispr-therapy-approved",
+    "newsroom-held-science-expl-dark-matter",
+    "newsroom-held-science-expl-superconductors",
+    "newsroom-held-science-feat-dark-matter-lab"
+  ],
+  "changed_checks": [
+    "newsroom-held-science-expl-superconductors"
+  ],
+  "tasks_preserved_quotations_and_required_fact_ids_unchanged": true,
+  "raw_audits_retained": true,
+  "efficacy_result": null,
+  "writing_quality_conclusion": "Not evaluated by source review",
+  "limitations": [
+    "These are pre-generation input revisions, not observed writing-model errors or an efficacy result.",
+    "The original and completion model audits remain unchanged; separate parent decisions do not turn them into human reviews.",
+    "The parent verified the declared coverage sets and literal issue bindings, not the auditor's private reasoning about every fact.",
+    "Source packets mix fictional reporting records with explanatory background and some real institution names. They are not real agency reports, verified law, medical advice or authenticated current statistics.",
+    "No full external scientific, historical or legal reference audit was performed. Remaining background qualifications and the model audits' stated limitations remain relevant.",
+    "Conservative template clusters are operational precautions, not proof of common authoring provenance. Cross-shard/tuning review and the final primary family map remain unfinished.",
+    "No primary writing outputs or human assessments exist at this checkpoint."
+  ]
+}

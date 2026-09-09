@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-science-flood-barrier-storm-test",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic writing exercise. Using these fictional reporting notes, write a newspaper news story for general readers. Draw only on the supplied notes; do not invent additional reported events, scenes, or quotations. Write from this reporting snapshot as of November 3, 2024. Include a headline. Target 450 to 650 words. Follow AP style.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "The Harrington Bay Storm Surge Barrier closed on October 31, 2024, for its first operational activation against Hurricane Vera, which made landfall at Category 2 strength with peak storm surge levels recorded at 3.1 meters."
+    },
+    {
+      "id": "f2",
+      "text": "The barrier held and the protected estuary area recorded surge levels of 0.4 meters, compared to 3.1 meters in unprotected reference areas to the north."
+    },
+    {
+      "id": "f3",
+      "text": "No flooding was reported within the barrier's protection zone, an area of 62 square kilometers including 38,000 residents and $14 billion in assessed property."
+    },
+    {
+      "id": "f4",
+      "text": "Benjamin Clarke, director of the Harrington Bay Coastal Authority, said: \"The barrier performed exactly as modeled. We can now say with confidence that it will protect the city in storms of this category.\""
+    },
+    {
+      "id": "f5",
+      "text": "Chief engineer Dr. Ingrid Larsen said the 30 surge gates reached full closure in 84 minutes after the decision to activate, within the design specification of 90 minutes."
+    },
+    {
+      "id": "f6",
+      "text": "Flooding was reported at several points north of the barrier boundary during the storm; those areas are outside the protected zone."
+    },
+    {
+      "id": "f7",
+      "text": "The barrier took 11 years to plan and construct at a cost of $4.8 billion; it opened in March 2024."
+    },
+    {
+      "id": "f8",
+      "text": "Marine ecologist Dr. Simon Ward of Harrington University said the barrier's closure for the 18-hour storm duration temporarily blocked juvenile fish passage in the estuary; the ecological effect is under post-storm monitoring."
+    },
+    {
+      "id": "f9",
+      "text": "The barrier is designed to provide protection against storms up to Category 3 strength and surge events with a one-in-100-year probability."
+    },
+    {
+      "id": "f10",
+      "text": "Dr. Larsen said the closure used 14 of the 30 gates fully and the remaining 16 at 75% closure; the partial closure approach was designed to minimize flow disruption while maintaining protection."
+    },
+    {
+      "id": "f11",
+      "text": "Hurricane Vera produced 148 millimeters of rainfall over the Harrington watershed in six hours; stormwater drainage systems within the barrier zone operated without significant backup."
+    },
+    {
+      "id": "f12",
+      "text": "The authority said a full post-activation engineering inspection of all gate mechanisms will be completed before the next activation, which could occur at any point in the remaining Atlantic hurricane season."
+    },
+    {
+      "id": "f13",
+      "text": "Two other major coastal barrier projects in the eastern United States are under construction; neither has yet been operationally tested by a storm."
+    },
+    {
+      "id": "f14",
+      "text": "Storm surge caused 11 of the 14 deaths attributed to Hurricane Vera in the Harrington Bay region; all 11 occurred north of the barrier boundary."
+    },
+    {
+      "id": "f15",
+      "text": "Dr. Ward said the long-term ecological question is whether repeated barrier closures over the facility's design life of 50 years will alter the estuary's salinity gradients and sediment dynamics."
+    },
+    {
+      "id": "f16",
+      "text": "Clarke said the authority will conduct a lessons-learned review and publish its findings before the 2025 hurricane season."
+    },
+    {
+      "id": "f17",
+      "text": "The barrier's gates are maintained in a normally open position to allow tidal exchange; closure is triggered only when surge forecasts exceed a defined threshold."
+    },
+    {
+      "id": "f18",
+      "text": "A cost-benefit analysis commissioned by the authority in 2021 estimated the barrier would prevent $1.2 billion in storm damage annually under median hurricane frequency projections."
+    },
+    {
+      "id": "f19",
+      "text": "The Harrington Bay area experienced $6.8 billion in flood damage from Hurricane Petra in 2017, a storm of comparable surge intensity."
+    },
+    {
+      "id": "f20",
+      "text": "Larsen said two gate hydraulic actuators showed minor wear that will be addressed during the post-storm inspection but did not affect gate performance."
+    }
+  ],
+  "modules": [
+    "domain/press.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f7",
+      "f8",
+      "f9",
+      "f14"
+    ],
+    "forbidden_additions": [
+      "deaths within the barrier protection zone",
+      "a claim that the barrier failed to close any gates",
+      "a storm surge level different from 3.1 meters outside the barrier"
+    ],
+    "preserve": [
+      "The barrier performed exactly as modeled. We can now say with confidence that it will protect the city in storms of this category."
+    ],
+    "expected_action": "draft"
+  }
+}

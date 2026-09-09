@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "kind": "pre-generation-business-source-audit-bundle",
+  "cases": 73,
+  "provisional_families": 73,
+  "primary_writing_outputs": 0,
+  "limitation": "One bundle of source inputs, unchanged model audit records and separate parent decisions; not one case, a writing trial or a human review.",
+  "records": 1,
+  "artifact": "evals/newsroom/artifacts/business-source-review.jsonl.xz",
+  "artifact_sha256": "dcbf470fbaaefa044908c4300a27b81b04a95d141fc489f3c9049fe04493c793",
+  "payload_sha256": "85aef62abc5cf9b0f8630b500c2ac2edd4c31a2be5addde9fa30d5e308643a63",
+  "human_reviews": 0
+}

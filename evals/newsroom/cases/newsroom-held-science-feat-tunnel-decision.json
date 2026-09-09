@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-science-feat-tunnel-decision",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic writing exercise. Using these fictional reporting notes, write a newspaper reported feature for general readers. Draw only on the supplied notes; do not invent additional reported events, scenes, or quotations. Write from this reporting snapshot as of January 14, 2025. Include a headline. Target 450 to 650 words. Follow AP style.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "The Redcliff Tunnel \u2014 a proposed 4.2-kilometer road tunnel beneath a urban neighborhood \u2014 has been in environmental review for 11 years and its final approval decision is expected in spring 2025."
+    },
+    {
+      "id": "f2",
+      "text": "Civil engineer Marcus Oduya, 58, led the project's original planning team and retired in 2022 before a decision was made; he is now a transportation consultant who says the project's delay has been professionally formative."
+    },
+    {
+      "id": "f3",
+      "text": "Oduya said: \"I designed that tunnel to solve a traffic problem that existed in 2013. I can't tell you whether it solves the 2025 problem because we haven't made decisions fast enough to find out.\""
+    },
+    {
+      "id": "f4",
+      "text": "The delay cost an estimated $280 million in inflation-adjusted construction cost increases; the project is now projected to cost $1.4 billion, up from $840 million in the 2013 estimate."
+    },
+    {
+      "id": "f5",
+      "text": "Key points of contention: an underground aquifer that an early environmental study underestimated, community opposition from the Ridgemont neighborhood over surface disruption during construction, and two competing surface alternatives proposed by environmental advocates."
+    },
+    {
+      "id": "f6",
+      "text": "Ridgemont resident Carmen Osei, 43, leads the Ridgemont Traffic Justice Coalition, which opposed the tunnel in its current form but says the coalition is not anti-tunnel in principle \u2014 it wants a rerouted alignment that avoids the neighborhood's historic district."
+    },
+    {
+      "id": "f7",
+      "text": "Osei said: \"We were told in 2016 that they had heard our concerns. We were told in 2019 that they had heard our concerns. We are still here in 2025.\""
+    },
+    {
+      "id": "f8",
+      "text": "An independent review commissioned by the state in 2023 found the aquifer management plan inadequate for the project's depth profile in its northeastern section; the plan was revised but critics say the revision is also inadequate."
+    },
+    {
+      "id": "f9",
+      "text": "Traffic on the surface arterials that the tunnel is meant to relieve has continued to grow; the corridor now handles 92,000 vehicle trips per day, compared to 71,000 in the original planning study."
+    },
+    {
+      "id": "f10",
+      "text": "Transportation planner Veronica Cheng, who advises the city on the alternative surface options, said: \"A transit-oriented surface redesign could absorb a third of those trips and cost a fifth as much. But it requires taking roadway space away from cars, and that is politically very hard.\""
+    },
+    {
+      "id": "f11",
+      "text": "The state transportation department has publicly committed to a decision by June 2025; a department spokesperson said a decision will not be delayed again."
+    },
+    {
+      "id": "f12",
+      "text": "Federal highway funds for the project expire in September 2025; losing the $620 million federal commitment would require the state to restart the funding process."
+    },
+    {
+      "id": "f13",
+      "text": "Oduya said he visits the project's staging area occasionally: \"It's a hole in the ground and a billboard. Eleven years. The city is holding its breath.\""
+    },
+    {
+      "id": "f14",
+      "text": "Community surveys conducted in 2024 found 58% of Ridgemont residents prefer the rerouted alignment to the original, but 61% of city-wide respondents prefer the faster original alignment."
+    },
+    {
+      "id": "f15",
+      "text": "Three council members have publicly called for a full project restart; two others have said cancellation would waste the $340 million already spent on design and permitting."
+    },
+    {
+      "id": "f16",
+      "text": "Cheng said the delay has itself changed the problem: transit ridership in the corridor has grown 40% since 2013, meaning the case for a transit alternative is now stronger than when the tunnel was first proposed."
+    },
+    {
+      "id": "f17",
+      "text": "The project's prime contractor has maintained a standby contract at an annual cost of $12 million since 2021, awaiting a decision to proceed."
+    },
+    {
+      "id": "f18",
+      "text": "Osei said her coalition will go to court if the original alignment is approved without addressing the historic district concerns; a previous lawsuit by the coalition was dismissed on procedural grounds."
+    },
+    {
+      "id": "f19",
+      "text": "Oduya said he hopes for a decision, whatever it is: \"A bad decision we can learn from. No decision is just time and money and opportunity disappearing.\""
+    },
+    {
+      "id": "f20",
+      "text": "The state has not disclosed which alignment it prefers; the transportation director said the decision will incorporate community feedback, traffic modeling, and cost."
+    }
+  ],
+  "modules": [
+    "domain/press.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f7",
+      "f9",
+      "f11",
+      "f12",
+      "f16",
+      "f19"
+    ],
+    "forbidden_additions": [
+      "a final decision on the alignment",
+      "a construction start date",
+      "the aquifer being breached during construction"
+    ],
+    "preserve": [
+      "I designed that tunnel to solve a traffic problem that existed in 2013. I can't tell you whether it solves the 2025 problem because we haven't made decisions fast enough to find out.",
+      "We were told in 2016 that they had heard our concerns. We were told in 2019 that they had heard our concerns. We are still here in 2025.",
+      "A bad decision we can learn from. No decision is just time and money and opportunity disappearing."
+    ],
+    "expected_action": "draft"
+  }
+}

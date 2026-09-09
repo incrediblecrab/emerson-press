@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-science-expl-antibiotic-resistance",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic writing exercise. Using these fictional reporting notes, write a newspaper explainer for general readers answering the question: How does antibiotic resistance develop, and why is the pipeline of new antibiotics so thin? Draw only on the supplied notes; do not invent additional reported events, scenes, or quotations. Write from this reporting snapshot as of March 14, 2025. Include a headline. Target 450 to 650 words. Follow AP style.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "Antibiotic resistance occurs when bacteria evolve mechanisms to survive exposure to a drug; the mechanisms include pumping the antibiotic out of the cell, chemically neutralizing it, or modifying the cellular target the drug attacks."
+    },
+    {
+      "id": "f2",
+      "text": "Resistance is a natural evolutionary process that occurs without human action, but overuse and misuse of antibiotics accelerates it by creating selection pressure that favors resistant bacteria."
+    },
+    {
+      "id": "f3",
+      "text": "A single bacterium can pass resistance genes not just to its own descendants but to entirely unrelated bacterial species through a process called horizontal gene transfer."
+    },
+    {
+      "id": "f4",
+      "text": "Drug-resistant infections kill an estimated 1.27 million people worldwide per year and contribute to 4.95 million deaths in which they are a contributing factor, according to a 2022 Lancet study."
+    },
+    {
+      "id": "f5",
+      "text": "Gram-negative bacteria \u2014 a class that includes E. coli, Klebsiella, and Pseudomonas \u2014 are particularly difficult to treat because their outer membrane acts as a second barrier that excludes many antibiotics."
+    },
+    {
+      "id": "f6",
+      "text": "The carbapenem class of antibiotics is considered a last resort for gram-negative infections; bacteria resistant to carbapenems (carbapenem-resistant organisms, or CROs) are considered a critical public health threat by the WHO."
+    },
+    {
+      "id": "f7",
+      "text": "Infectious disease researcher Dr. Victor Ogede of Northgate University said: \"We have been relying on modifications of existing antibiotic classes for decades. Truly new mechanisms of action are extraordinarily rare and take 10 to 15 years to develop.\""
+    },
+    {
+      "id": "f8",
+      "text": "The economics of antibiotic development are unfavorable: new antibiotics are used sparingly (to preserve their effectiveness), taken for short courses, and often face competition from older generic drugs priced at cents per dose."
+    },
+    {
+      "id": "f9",
+      "text": "Several large pharmaceutical companies have exited antibiotic research because the expected return on investment does not justify the development cost; small companies often cannot sustain operations long enough to bring a drug to market."
+    },
+    {
+      "id": "f10",
+      "text": "The WHO maintains a priority pathogen list of bacteria for which new treatments are urgently needed; carbapenem-resistant Acinetobacter baumannii is in the critical tier."
+    },
+    {
+      "id": "f11",
+      "text": "Pull incentives \u2014 market rewards paid when a drug is approved and used \u2014 are being piloted in the United Kingdom and proposed in U.S. legislation; they aim to decouple revenue from sales volume."
+    },
+    {
+      "id": "f12",
+      "text": "Agricultural use of antibiotics \u2014 particularly growth promoters in livestock \u2014 has been a significant driver of resistance globally; the EU has banned growth-promoting uses, and the U.S. has restricted them."
+    },
+    {
+      "id": "f13",
+      "text": "Dr. Ogede said resistance surveillance \u2014 tracking which drugs are failing in hospitals \u2014 is inadequate in low- and middle-income countries, where most deaths from resistant infections occur."
+    },
+    {
+      "id": "f14",
+      "text": "Bacteriophage therapy \u2014 using viruses that specifically kill bacteria \u2014 is an experimental alternative being used in compassionate use cases where antibiotics have failed; it is not an approved therapy in most countries."
+    },
+    {
+      "id": "f15",
+      "text": "Hospital infection control \u2014 hand hygiene, isolation of infected patients, and targeted prescribing \u2014 remains the most evidence-based tool for slowing the spread of resistant organisms."
+    },
+    {
+      "id": "f16",
+      "text": "Rapid diagnostic tests that can identify the bacterial species and its resistance profile within hours, rather than days, allow doctors to prescribe the right antibiotic sooner and avoid unnecessary broad-spectrum use."
+    },
+    {
+      "id": "f17",
+      "text": "Dr. Ogede said the lag between a drug entering clinical trials and reaching the market is 10 to 15 years, meaning the drugs needed for 2040 would need to begin development now."
+    },
+    {
+      "id": "f18",
+      "text": "The ESKAPE pathogens \u2014 Enterococcus, Staphylococcus aureus, Klebsiella, Acinetobacter, Pseudomonas, and Enterobacter \u2014 are the six species responsible for most drug-resistant hospital infections."
+    },
+    {
+      "id": "f19",
+      "text": "Global coordination on antibiotic stewardship is limited; some countries require prescriptions for antibiotics while others sell them over the counter without restriction."
+    },
+    {
+      "id": "f20",
+      "text": "Dr. Ogede said climate change may worsen resistance by expanding the geographic range of resistant organisms and increasing the frequency of infectious disease outbreaks that drive antibiotic use."
+    }
+  ],
+  "modules": [
+    "domain/press.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f7",
+      "f8",
+      "f9",
+      "f11"
+    ],
+    "forbidden_additions": [
+      "a current total of drug-resistant deaths different from the Lancet figures",
+      "a claim that antibiotic development has stopped entirely",
+      "a specific country's stewardship data not in the notes"
+    ],
+    "preserve": [
+      "We have been relying on modifications of existing antibiotic classes for decades. Truly new mechanisms of action are extraordinarily rare and take 10 to 15 years to develop."
+    ],
+    "expected_action": "draft"
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-science-expl-vaccine-cold-chain",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic writing exercise. Using these fictional reporting notes, write a newspaper explainer for general readers answering the question: What is the vaccine cold chain and why does it matter for global health equity? Draw only on the supplied notes; do not invent additional reported events, scenes, or quotations. Write from this reporting snapshot as of March 3, 2025. Include a headline. Target 450 to 650 words. Follow AP style.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "The vaccine cold chain is the system of refrigerated storage and transport that keeps vaccines at required temperatures from manufacture to the moment of administration."
+    },
+    {
+      "id": "f2",
+      "text": "Most conventional vaccines require storage between 2 and 8 degrees Celsius; some, including varicella and certain live-attenuated vaccines, require freezing at minus 20 degrees Celsius."
+    },
+    {
+      "id": "f3",
+      "text": "mRNA vaccines require storage at minus 20 to minus 80 degrees Celsius, depending on the formulation; this is far more demanding than conventional cold chains can support in most low-income settings."
+    },
+    {
+      "id": "f4",
+      "text": "Vaccines that are exposed to temperatures outside their specified range \u2014 whether too warm or frozen when they shouldn't be \u2014 may lose potency partially or completely; the loss is often invisible because the vaccine still looks normal."
+    },
+    {
+      "id": "f5",
+      "text": "Global health researcher Dr. Adaeze Okonkwo of International Health Solutions said: \"A vaccine that has been heat-exposed is not obviously damaged. It injects and the child shows no reaction. You only discover the failure at the population level, when outbreaks occur.\""
+    },
+    {
+      "id": "f6",
+      "text": "The World Health Organization estimates that up to 50% of vaccines are wasted globally due to temperature excursions, expiration, and broken vials; the proportion is highest in countries with unreliable electricity supply."
+    },
+    {
+      "id": "f7",
+      "text": "Cold storage units in low-income health facilities often run on unreliable grid power; solar-powered cold chain equipment has expanded coverage in remote areas but requires maintenance capacity."
+    },
+    {
+      "id": "f8",
+      "text": "Vaccine vial monitors (VVMs) are small heat-sensitive labels attached to vaccine vials that darken irreversibly when exposed to excessive heat; they allow health workers to discard compromised vials before use."
+    },
+    {
+      "id": "f9",
+      "text": "The last mile \u2014 delivery from a district health facility to a village clinic or home \u2014 is the most vulnerable link in the cold chain; passive cold boxes and insulated carriers are used, but they have limited duration."
+    },
+    {
+      "id": "f10",
+      "text": "Thermostable vaccine formulations \u2014 vaccines engineered to tolerate higher temperatures for longer periods \u2014 are in development for several diseases including polio and measles; regulatory approval of thermostable versions is pending."
+    },
+    {
+      "id": "f11",
+      "text": "Freeze damage \u2014 caused by accidental freezing of vaccines that must not be frozen \u2014 is a less-recognized problem than heat damage; aluminum-adjuvanted vaccines form aggregates when frozen that reduce immunogenicity."
+    },
+    {
+      "id": "f12",
+      "text": "Dr. Okonkwo said the cold chain's hidden cost is not just vaccine waste but the trust deficit it creates: when parents see children develop disease after vaccination, they may conclude the vaccine failed, eroding confidence."
+    },
+    {
+      "id": "f13",
+      "text": "During the COVID-19 pandemic, the ultra-cold chain requirements of early mRNA vaccines reinforced the geographic disparity in vaccine access, with low-income countries receiving mainly vaccines with conventional cold chain requirements."
+    },
+    {
+      "id": "f14",
+      "text": "Data loggers \u2014 electronic devices that record temperature over time \u2014 are increasingly used in cold chain monitoring; they allow post-delivery verification but require infrastructure to read and act on the data."
+    },
+    {
+      "id": "f15",
+      "text": "The GAVI Vaccine Alliance has invested more than $800 million in cold chain equipment in low-income countries over the past decade; that investment is credited with increasing vaccine coverage in sub-Saharan Africa."
+    },
+    {
+      "id": "f16",
+      "text": "Cold chain failures have been documented in conflict zones where refrigerators were destroyed or fuel was unavailable; vaccination campaigns in these settings often use short-window deployments timed to cold box capacity."
+    },
+    {
+      "id": "f17",
+      "text": "The WHO's Expanded Program on Immunization requires each country to maintain a multi-level cold chain with specified storage capacity at national, regional, district, and health facility levels."
+    },
+    {
+      "id": "f18",
+      "text": "Dr. Okonkwo said the long-term solution is thermostable vaccine formulations and passive storage technologies that do not require electricity, but both depend on regulatory and manufacturing investment that follows commercial markets rather than need."
+    },
+    {
+      "id": "f19",
+      "text": "Freeze-dried (lyophilized) vaccines are inherently more stable at higher temperatures than liquid formulations but require a diluent to be added before use; they are used for measles, yellow fever, and meningitis vaccines."
+    },
+    {
+      "id": "f20",
+      "text": "The cold chain was designed for a conventional vaccine world; the emergence of mRNA platforms has exposed how fragile that infrastructure is for next-generation biologics in any setting."
+    }
+  ],
+  "modules": [
+    "domain/press.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f7",
+      "f8",
+      "f9",
+      "f13"
+    ],
+    "forbidden_additions": [
+      "a confirmed outbreak caused by a specific cold chain failure event",
+      "a waste percentage different from 50%",
+      "a claim that thermostable vaccines are already widely approved"
+    ],
+    "preserve": [
+      "A vaccine that has been heat-exposed is not obviously damaged. It injects and the child shows no reaction. You only discover the failure at the population level, when outbreaks occur."
+    ],
+    "expected_action": "draft"
+  }
+}

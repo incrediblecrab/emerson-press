@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-business-feature-memorial-printing",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic newspaper-writing exercise using fictional reporting notes. Use only the supplied reporting notes. Write from the reporting snapshot as of July 1, 2026. Write a headline and a 450–650-word AP-style reported feature about Plain Bower Print's memorial-program work and the service decisions involved in small, time-sensitive orders.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id":"f1","text":"A June 2026 production note records Plain Bower Print setting aside a finished proof until the ordering family confirmed a name's spelling."},
+    {"id":"f2","text":"The four-person shop prints memorial programs, community notices and short-run event booklets in the town of Fernhollow."},
+    {"id":"f3","text":"Memorial orders commonly involve between 50 and 150 copies, according to the shop's job register for January 1 through June 30, 2026."},
+    {"id":"f4","text":"A standard 100-copy folded program package costs $90 and includes one proof and one ordinary correction round."},
+    {"id":"f5","text":"Additional pages, special paper and changes after printing begins are quoted separately rather than included in every order."},
+    {"id":"f6","text":"The shop asks for a written approval by email or on a paper proof before producing the full run."},
+    {"id":"f7","text":"A family can bring a handwritten draft and photographs; the shop charges separately when substantial scanning or layout work is required."},
+    {"id":"f8","text":"The register shows 42 memorial orders from January 1 through June 30, 2026, compared with 29 from July 1 through December 31, 2025."},
+    {"id":"f9","text":"Those figures describe the shop's workload and do not establish a change in local deaths or funeral attendance."},
+    {"id":"f10","text":"Owner Leda Norven says referrals from two local service organizers changed during that period."},
+    {"id":"f11","text":"Norven said, \"The deadline is usually fixed before we see the first page, so the checking has to have its own place in the schedule.\""},
+    {"id":"f12","text":"Customer Oren Mallen, who organized a family memorial, chose a plain folded program so several relatives could review it without discussing a more elaborate design."},
+    {"id":"f13","text":"Mallen said, \"The paper proof let us point to the same line instead of describing it over the phone.\""},
+    {"id":"f14","text":"The supplied customer account includes no deceased person's name, medical information or private family correspondence."},
+    {"id":"f15","text":"The shop retains approved production files for 30 days after the initial print run for agreed reprints, then deletes them under its stated retention policy."},
+    {"id":"f16","text":"A reprint uses the approved version unless a further correction is explicitly agreed; staff do not assume a later telephone message replaces the proof."},
+    {"id":"f17","text":"The shop has not supplied a profit breakdown separating memorial work from other short-run jobs."},
+    {"id":"f18","text":"Norven says rush work can displace less urgent printing, but the business does not promise to accept every same-day request."},
+    {"id":"f19","text":"The front counter retains a display of paper samples from the shop's former wedding-stationery business."},
+    {"id":"f20","text":"No claim is supplied that printed programs provide a particular emotional or therapeutic outcome for every family."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f2","f3","f4","f5","f6","f7","f8","f9","f10","f15","f16","f18"],
+    "forbidden_additions": ["A rise in local deaths inferred from the order count or a guaranteed emotional outcome","Invented deceased identities, private messages or acceptance of every rush request"],
+    "preserve": ["If quoted: The deadline is usually fixed before we see the first page, so the checking has to have its own place in the schedule.","If quoted: The paper proof let us point to the same line instead of describing it over the phone.","The approved proof, later requests and production deadline remain separate parts of the process."],
+    "expected_action": "draft"
+  }
+}

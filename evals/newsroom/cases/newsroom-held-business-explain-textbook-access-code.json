@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-business-explain-textbook-access-code",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic newspaper-writing exercise using fictional reporting notes. Use only the supplied reporting notes. Write from the reporting snapshot as of August 31, 2026. Write a headline and a 450–650-word AP-style newspaper explainer about book and online-access costs in a Fenwick College course, answering why a cheaper used textbook may not be the cheapest way to obtain all required materials.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id":"f1","text":"Fenwick College's autumn 2026 introductory accounting course uses the original fictional textbook Ledgers in Practice and an associated online problem platform."},
+    {"id":"f2","text":"The campus bookstore lists a new book-and-platform bundle at $96."},
+    {"id":"f3","text":"Its used print copy costs $28 and does not include an unused platform code."},
+    {"id":"f4","text":"The publisher sells a standalone semester platform code for $70, making that code plus the used book $98."},
+    {"id":"f5","text":"The platform code also includes a digital version of the textbook, so a print copy is not required to read the assigned text."},
+    {"id":"f6","text":"The code is assigned to one student and expires at the end of the semester under the supplied terms."},
+    {"id":"f7","text":"Buying a used book does not transfer another student's already activated code."},
+    {"id":"f8","text":"The college library has six print reserve copies available for short loans but those loans do not provide platform accounts."},
+    {"id":"f9","text":"Instructor Omi Brack says the platform is used for scheduled homework submission, not merely optional extra reading."},
+    {"id":"f10","text":"The instructor offers a no-charge offline assignment route to students who arrange it through the course office."},
+    {"id":"f11","text":"The offline route uses the same assessed topics but requires a different submission process and does not include a personal digital book license."},
+    {"id":"f12","text":"Student Rella Vale wants a print copy because she annotates pages during her commute."},
+    {"id":"f13","text":"Vale said, \"The used book is cheaper until I add the thing the assignment asks me to log into.\""},
+    {"id":"f14","text":"Publisher representative Neri Doss says the separate platform price pays for hosted exercises and updates rather than only a digital copy of printed pages."},
+    {"id":"f15","text":"Doss said, \"The book and the account travel together in a bundle, but they are not the same product.\""},
+    {"id":"f16","text":"The reporting record does not provide the publisher's platform costs or profit margin."},
+    {"id":"f17","text":"There are 150 enrolled students, but the college has not counted how many will choose bundles, standalone access or the offline route."},
+    {"id":"f18","text":"The bookstore's prices are dated August 2026 and do not establish every secondhand seller's price."},
+    {"id":"f19","text":"The bookstore operates an annual used-book exchange for courses that do not use single-user access codes."},
+    {"id":"f20","text":"The supplied policies describe this course and do not establish that every college course requires a paid platform."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1","f2","f3","f4","f5","f6","f7","f8","f9","f10","f11","f18"],
+    "forbidden_additions": ["The used book includes a transferable account or every student must buy both print and digital products","No offline alternative, a verified publisher margin or universal college policy"],
+    "preserve": ["If quoted: The used book is cheaper until I add the thing the assignment asks me to log into.","If quoted: The book and the account travel together in a bundle, but they are not the same product.","$28 plus $70 is $98, compared with the listed $96 bundle."],
+    "expected_action": "draft"
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-science-feat-supercomputer-research",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic writing exercise. Using these fictional reporting notes, write a newspaper reported feature for general readers. Draw only on the supplied notes; do not invent additional reported events, scenes, or quotations. Write from this reporting snapshot as of May 19, 2025. Include a headline. Target 450 to 650 words. Follow AP style.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "Prism-1, a 1.9-exaflop supercomputer at the Sandover Research Center, has been running open-science allocations for 18 months; 140 research groups across 22 countries have used the system."
+    },
+    {
+      "id": "f2",
+      "text": "Climate modeler Dr. Agnes Kowalski, whose team received the largest single allocation in Prism-1's first year, ran a global atmospheric model at 3-kilometer resolution for the first time \u2014 fine enough to simulate individual thunderstorms rather than average cloud cover."
+    },
+    {
+      "id": "f3",
+      "text": "Dr. Kowalski said: \"Previous models smoothed over the storms and averages their effects. At three kilometers, we see the storm. We see where it intensifies and where it dissipates. That changes what we can tell a flood forecaster.\""
+    },
+    {
+      "id": "f4",
+      "text": "Dr. Kowalski said the Prism-1 run took six weeks; on the previous generation system, the same simulation would have taken 14 months: \"Fourteen months means the simulation is obsolete before you finish it. Six weeks means you can iterate.\""
+    },
+    {
+      "id": "f5",
+      "text": "Drug discovery researcher Dr. Rahul Sen used Prism-1 to model the interaction of 4.2 million candidate compounds with a protein implicated in Parkinson's disease; the simulation identified 14 compounds for experimental follow-up."
+    },
+    {
+      "id": "f6",
+      "text": "Dr. Sen said: \"We identified the 14 in six days of compute time. The experimental team has already tested three and found one that produces the binding profile we were hoping for. It's a lead. It's not a drug. But it's a real lead.\""
+    },
+    {
+      "id": "f7",
+      "text": "Dr. Sen said the bottleneck is now the experimental side: the simulation produces candidates faster than biochemistry labs can test them: \"Compute has outrun the bench. That's a new problem. It's a good problem.\""
+    },
+    {
+      "id": "f8",
+      "text": "Prism-1's system administrator, Dr. Grace Tran, said the center has had to develop new data management infrastructure because the output files from high-resolution simulations are too large for conventional storage and transfer systems."
+    },
+    {
+      "id": "f9",
+      "text": "Dr. Tran said: \"A single climate run produces 600 terabytes. That's not a file you email to a colleague. We've had to rethink how computational results move through the scientific community.\""
+    },
+    {
+      "id": "f10",
+      "text": "The research center charges open-science users no compute fee; allocation is awarded through a peer review process with a 28% acceptance rate in the most recent cycle."
+    },
+    {
+      "id": "f11",
+      "text": "Dr. Kowalski said the peer review process is unusually rigorous: her team spent three months preparing the allocation application, including a detailed compute efficiency plan to justify the scale of the request."
+    },
+    {
+      "id": "f12",
+      "text": "Dr. Tran said Prism-1's main limitation is power cost: the system runs at 36 megawatts during peak computation; the annual electricity cost is approximately $9 million at the center's renewable energy rate."
+    },
+    {
+      "id": "f13",
+      "text": "A computational science researcher, Dr. Yuna Park of Clearview Institute, said Prism-1's impact is already visible in the literature: six papers published in 2024 and 2025 that would have required a decade's compute time on previous systems were produced in months."
+    },
+    {
+      "id": "f14",
+      "text": "Dr. Park said the democratization of high-performance computing is partial: the 28% acceptance rate means most qualifying research teams do not receive allocations, and building the compute efficiency expertise to write competitive applications requires resources smaller institutions lack."
+    },
+    {
+      "id": "f15",
+      "text": "Dr. Sen said his team's next application will request time to screen 50 million compounds: \"Prism-1 changes what's possible to ask. Every cycle, we ask a bigger question.\""
+    },
+    {
+      "id": "f16",
+      "text": "The Sandover Research Center is planning a Prism-2 system for 2029; the center has already submitted a design study to the Department of Energy."
+    },
+    {
+      "id": "f17",
+      "text": "Dr. Kowalski said the 3-kilometer climate model is already informing decisions at two regional water utilities that participated as stakeholders in the research; they are using model outputs to update their drought risk assessments."
+    },
+    {
+      "id": "f18",
+      "text": "Dr. Tran said the center has been contacted by three commercial firms interested in buying time on Prism-1 for proprietary research; the center's charter prohibits commercial allocations, but the inquiries reflect the system's capability."
+    },
+    {
+      "id": "f19",
+      "text": "Dr. Sen said the lead compound his team identified would not be a drug in his professional lifetime: \"Drug development takes 15 to 20 years. But the compound we found \u2014 if it becomes a drug \u2014 will have Prism-1 in its origin story.\""
+    },
+    {
+      "id": "f20",
+      "text": "Dr. Kowalski said supercomputers do not generate scientific understanding by themselves: \"The machine does the arithmetic. The scientists still have to know what to ask.\""
+    }
+  ],
+  "modules": [
+    "domain/press.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f7",
+      "f8",
+      "f9",
+      "f13",
+      "f14",
+      "f17"
+    ],
+    "forbidden_additions": [
+      "a drug approval based on Dr. Sen's compound",
+      "a compute speed for Prism-1 different from 1.9 exaflops",
+      "a claim that all research teams receive compute allocations"
+    ],
+    "preserve": [
+      "Previous models smoothed over the storms and averages their effects. At three kilometers, we see the storm. We see where it intensifies and where it dissipates. That changes what we can tell a flood forecaster.",
+      "Compute has outrun the bench. That's a new problem. It's a good problem.",
+      "A single climate run produces 600 terabytes. That's not a file you email to a colleague. We've had to rethink how computational results move through the scientific community."
+    ],
+    "expected_action": "draft"
+  }
+}

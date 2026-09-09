@@ -1,0 +1,517 @@
+{
+  "schema_version": 1,
+  "area": "business",
+  "cases": [
+    {
+      "case_id": "newsroom-held-business-news-glass-furnace",
+      "path": "evals/newsroom/cases/newsroom-held-business-news-glass-furnace.json",
+      "family_id": "business-brindle-furnace-transition",
+      "topic": "News update: furnace conversion, earnings and customer inventory",
+      "independence_note": "Original electrification announcement links a transformer dependency, shutdown work offers and customers' storage costs. No other packet uses this plant, grant or conversion record."
+    },
+    {
+      "case_id": "newsroom-held-business-news-bank-counters",
+      "path": "evals/newsroom/cases/newsroom-held-business-news-bank-counters.json",
+      "family_id": "business-alder-span-counter-consolidation",
+      "topic": "News update: branch closures and replacement counter access",
+      "independence_note": "Original branch-consolidation record combines mobile-service limits, merchant deposit timing and employee offers. It is not the savings-rate or remittance-provider packet."
+    },
+    {
+      "case_id": "newsroom-held-business-news-market-fees",
+      "path": "evals/newsroom/cases/newsroom-held-business-news-market-fees.json",
+      "family_id": "business-kestrel-market-fee-vote",
+      "topic": "News update: a market's shift from flat to sales-based fees",
+      "independence_note": "Original public-market vote and vendor cost records. Low-sales relief and gross-sales charges create a distinct distributional question, not a renamed retail discount case."
+    },
+    {
+      "case_id": "newsroom-held-business-news-broadband-bridge",
+      "path": "evals/newsroom/cases/newsroom-held-business-news-broadband-bridge.json",
+      "family_id": "business-moorlace-fiber-crossing",
+      "topic": "News update: a signed fiber build leaves river-crossing premises out",
+      "independence_note": "Original cooperative construction award with a missing bridge permission and different membership, premises and connection counts. No route or customer record is reused."
+    },
+    {
+      "case_id": "newsroom-held-business-news-studio-program-merger",
+      "path": "evals/newsroom/cases/newsroom-held-business-news-studio-program-merger.json",
+      "family_id": "business-lenwick-studio-merger",
+      "topic": "News update: studio-degree merger and access to practical teaching",
+      "independence_note": "Original university reorganization with separate current-student, future-intake and workshop-hour effects. It does not share a teaching program or budget with other education stories."
+    },
+    {
+      "case_id": "newsroom-held-business-news-grain-terminal-hours",
+      "path": "evals/newsroom/cases/newsroom-held-business-news-grain-terminal-hours.json",
+      "family_id": "business-vesper-grain-order-roster",
+      "topic": "News update: fewer export orders and a shorter loading roster",
+      "independence_note": "Original terminal order book, partial cancellation and seasonal-hours plan. Export volume, farm production and storage contracts are separate evidence relationships in this packet."
+    },
+    {
+      "case_id": "newsroom-held-business-news-paid-opening-work",
+      "path": "evals/newsroom/cases/newsroom-held-business-news-paid-opening-work.json",
+      "family_id": "business-threadgate-opening-pay",
+      "topic": "News update: paid preparation and an unfinished retrospective payroll review",
+      "independence_note": "Original retailer scheduling change, till timestamps and provisional compensation estimate. Future paid time and unresolved past calculations define this event, not a generic wage-rise template."
+    },
+    {
+      "case_id": "newsroom-held-business-news-printer-deadlines",
+      "path": "evals/newsroom/cases/newsroom-held-business-news-printer-deadlines.json",
+      "family_id": "business-pine-journal-print-contract",
+      "topic": "News update: outsourced newspaper printing and earlier deadlines",
+      "independence_note": "Original newspaper print contract, staffing disposition and transport schedule. Its reader-timing problem differs from audiobook production, memorial proofs and seasonal map publishing."
+    },
+    {
+      "case_id": "newsroom-held-business-news-campus-bus-pass",
+      "path": "evals/newsroom/cases/newsroom-held-business-news-campus-bus-pass.json",
+      "family_id": "business-sable-campus-pass-agreement",
+      "topic": "News update: institutional bus-pass funding without new evening service",
+      "independence_note": "Original two-campus purchase agreement and activation rules. The policy concerns who pays and what existing service is covered, not the factory commuter's proposed shuttle."
+    },
+    {
+      "case_id": "newsroom-held-business-news-festival-night-stage",
+      "path": "evals/newsroom/cases/newsroom-held-business-news-festival-night-stage.json",
+      "family_id": "business-marrow-festival-stage-cancellation",
+      "topic": "News update: partial festival cancellation, refunds and committed costs",
+      "independence_note": "Original canceled evening production with restricted daytime funding and unsettled contractor costs. No event, ticket ledger or crew contract is shared with the other cultural cases."
+    },
+    {
+      "case_id": "newsroom-held-business-news-worker-buyout",
+      "path": "evals/newsroom/cases/newsroom-held-business-news-worker-buyout.json",
+      "family_id": "business-ospen-cooperative-acquisition",
+      "topic": "News update: employee acquisition financing and nonmember workers",
+      "independence_note": "Original machine-shop acquisition and membership offer. Its ownership transfer and purchase funding are distinct from an employee profit-sharing bonus without equity."
+    },
+    {
+      "case_id": "newsroom-held-business-news-warranty-sales-stop",
+      "path": "evals/newsroom/cases/newsroom-held-business-news-warranty-sales-stop.json",
+      "family_id": "business-hearthline-service-plan-cutoff",
+      "topic": "News update: ending service-plan sales while existing plans continue",
+      "independence_note": "Original appliance-retailer cutoff and third-party administration record. It concerns existing contract service rather than the footwear retailer's refund-method choices."
+    },
+    {
+      "case_id": "newsroom-held-business-news-dairy-powder-line",
+      "path": "evals/newsroom/cases/newsroom-held-business-news-dairy-powder-line.json",
+      "family_id": "business-merefold-powder-suspension",
+      "topic": "News update: surplus powder, toll processing and member-farm commitments",
+      "independence_note": "Original dairy inventory and processing suspension with farm collection commitments. Unlike the glass conversion, this pause responds to unsold commodity stock and changes processing destinations."
+    },
+    {
+      "case_id": "newsroom-held-business-news-hangar-delay",
+      "path": "evals/newsroom/cases/newsroom-held-business-news-hangar-delay.json",
+      "family_id": "business-rookmeadow-hangar-drainage",
+      "topic": "News update: permit delay, conditional tenancy and projected jobs",
+      "independence_note": "Original airport maintenance-facility project, incomplete drainage submission and conditional tenant record. No construction site, employer projection or permit is reused."
+    },
+    {
+      "case_id": "newsroom-held-business-news-book-order-threshold",
+      "path": "evals/newsroom/cases/newsroom-held-business-news-book-order-threshold.json",
+      "family_id": "business-wrenstack-mixed-book-orders",
+      "topic": "News update: mixed-publisher shipping thresholds for small bookstores",
+      "independence_note": "Original distributor order-policy change with contrasting shop inventory constraints. Its copy-based aggregation is separate from ticket fees, digital licenses and textbook bundles."
+    },
+    {
+      "case_id": "newsroom-held-business-news-four-day-rota",
+      "path": "evals/newsroom/cases/newsroom-held-business-news-four-day-rota.json",
+      "family_id": "business-hallow-wholesale-rota",
+      "topic": "News update: rotating four-day work schedules and five-day service",
+      "independence_note": "Original depot trial, order measures and revised rota. The distinction between an employee's week and customer opening days is not reused as another scheduling event."
+    },
+    {
+      "case_id": "newsroom-held-business-news-film-crew-pledge",
+      "path": "evals/newsroom/cases/newsroom-held-business-news-film-crew-pledge.json",
+      "family_id": "business-thornhaven-stage-application",
+      "topic": "News update: conditional film-training commitments and a grant application",
+      "independence_note": "Original studio proposal separates an unfunded grant, producer interest and conditional trainee work. It is not a report of the completed event bookings in the portable-crew feature."
+    },
+    {
+      "case_id": "newsroom-held-business-news-coop-price-vote",
+      "path": "evals/newsroom/cases/newsroom-held-business-news-coop-price-vote.json",
+      "family_id": "business-larch-food-rebate-vote",
+      "topic": "News update: future member rebates exchanged for shared shelf-price cuts",
+      "independence_note": "Original food-cooperative ballot and rebate transition. Household outcomes depend on purchasing patterns, not the payroll-unit formula in the profit-sharing case."
+    },
+    {
+      "case_id": "newsroom-held-business-news-night-childcare",
+      "path": "evals/newsroom/cases/newsroom-held-business-news-night-childcare.json",
+      "family_id": "business-lantern-shift-care-opening",
+      "topic": "News update: employer-supported evening care and limited capacity",
+      "independence_note": "Original consortium center with conditional premises approval, fee timing and an expiring subsidy. No family, employer or care arrangement is shared with the overnight bakery feature."
+    },
+    {
+      "case_id": "newsroom-held-business-news-mill-water-loop",
+      "path": "evals/newsroom/cases/newsroom-held-business-news-mill-water-loop.json",
+      "family_id": "business-sedge-paper-water-reuse",
+      "topic": "News update: process-water reuse targets and remaining energy costs",
+      "independence_note": "Original paper-mill capital approval and output-conditioned supplier forecast. This is a physical reuse project, not the utility's commercial tariff formula or the glass furnace conversion."
+    },
+    {
+      "case_id": "newsroom-held-business-news-library-fine-amnesty",
+      "path": "evals/newsroom/cases/newsroom-held-business-news-library-fine-amnesty.json",
+      "family_id": "business-rivermoth-overdue-policy",
+      "topic": "News update: overdue-fine removal without canceling all library charges",
+      "independence_note": "Original library-board action, account balances and circulation rules. Its debt/access policy uses no title, license or queue record from the digital-lending explainer."
+    },
+    {
+      "case_id": "newsroom-held-business-news-transfer-fee-cut",
+      "path": "evals/newsroom/cases/newsroom-held-business-news-transfer-fee-cut.json",
+      "family_id": "business-wayfern-remittance-price",
+      "topic": "News update: lower remittance fees and an unchanged conversion margin",
+      "independence_note": "Original cash-transfer announcement and dated fictional currency quote. Fee outlay and recipient proceeds differ from tiered savings interest or bank branch access."
+    },
+    {
+      "case_id": "newsroom-held-business-news-rural-delivery-contracts",
+      "path": "evals/newsroom/cases/newsroom-held-business-news-rural-delivery-contracts.json",
+      "family_id": "business-reedmile-rural-contracting",
+      "topic": "News update: route contracting transfers vehicle costs to drivers",
+      "independence_note": "Original rural-carrier contracting offer with unresolved acceptances and employment-status questions. No routes, vehicles or worker records are reused in another packet."
+    },
+    {
+      "case_id": "newsroom-held-business-news-museum-ticket-reversal",
+      "path": "evals/newsroom/cases/newsroom-held-business-news-museum-ticket-reversal.json",
+      "family_id": "business-dunveil-admission-reversal",
+      "topic": "News update: a withdrawn admission rise and a remaining museum budget gap",
+      "independence_note": "Original trustees' reversal links a new operating gift to partial savings and narrower gallery access. It is not derived from another institution's ledger or restricted endowment."
+    },
+    {
+      "case_id": "newsroom-held-business-explain-jobs-and-unemployment",
+      "path": "evals/newsroom/cases/newsroom-held-business-explain-jobs-and-unemployment.json",
+      "family_id": "business-bellwether-labor-series",
+      "topic": "Explainer: rising payroll jobs alongside rising resident unemployment",
+      "independence_note": "Original county bulletin contains separate workplace and resident series and an individual job-seeking account. Different populations and labor-force growth define this packet."
+    },
+    {
+      "case_id": "newsroom-held-business-explain-commercial-water-bills",
+      "path": "evals/newsroom/cases/newsroom-held-business-explain-commercial-water-bills.json",
+      "family_id": "business-ashcombe-water-tariff",
+      "topic": "Explainer: fixed and usage charges redistribute commercial water bills",
+      "independence_note": "Original tariff and two business-use records establish a crossover point. Its fixed/volume pricing differs from the time-based electricity demand charge and the mill's physical water project."
+    },
+    {
+      "case_id": "newsroom-held-business-explain-smaller-packages",
+      "path": "evals/newsroom/cases/newsroom-held-business-explain-smaller-packages.json",
+      "family_id": "business-marshglen-package-size",
+      "topic": "Explainer: a stable package price and a higher price per kilogram",
+      "independence_note": "Original cereal packaging change, limited shelf check and mixed stock. The quantity/price relationship does not reuse a wholesale-index basket or another retail product."
+    },
+    {
+      "case_id": "newsroom-held-business-explain-school-laptop-lease",
+      "path": "evals/newsroom/cases/newsroom-held-business-explain-school-laptop-lease.json",
+      "family_id": "business-south-nacre-device-bids",
+      "topic": "Explainer: school laptop cash timing, maintenance uncertainty and ownership",
+      "independence_note": "Original public purchase/lease bids for identical hardware, with a separate end-of-term option. This institutional procurement decision is not a consumer finance or textbook-access template."
+    },
+    {
+      "case_id": "newsroom-held-business-explain-ticket-fee-display",
+      "path": "evals/newsroom/cases/newsroom-held-business-explain-ticket-fee-display.json",
+      "family_id": "business-fernwick-ticket-display",
+      "topic": "Explainer: upfront ticket totals, counter prices and optional charges",
+      "independence_note": "Original playhouse display change preserves an unchanged online checkout total. It uses no festival refund record or membership entitlement from another cultural case."
+    },
+    {
+      "case_id": "newsroom-held-business-explain-warehouse-robot-jobs",
+      "path": "evals/newsroom/cases/newsroom-held-business-explain-warehouse-robot-jobs.json",
+      "family_id": "business-north-loom-role-transition",
+      "topic": "Explainer: automation changes job composition and output measures",
+      "independence_note": "Original cart installation, vacancy history and training outcomes distinguish role additions from net headcount. No workforce or performance observations are shared with the workweek trial."
+    },
+    {
+      "case_id": "newsroom-held-business-explain-peak-demand-bill",
+      "path": "evals/newsroom/cases/newsroom-held-business-explain-peak-demand-bill.json",
+      "family_id": "business-arden-demand-metering",
+      "topic": "Explainer: unchanged electricity use with a lower peak-demand charge",
+      "independence_note": "Original laundromat interval-meter and billing records. Timing of load, customer constraints and accumulated energy make this distinct from volume-tier water pricing."
+    },
+    {
+      "case_id": "newsroom-held-business-explain-invoice-factoring",
+      "path": "evals/newsroom/cases/newsroom-held-business-explain-invoice-factoring.json",
+      "family_id": "business-hawthorn-receivable-sale",
+      "topic": "Explainer: selling an invoice accelerates cash but retains specified risks",
+      "independence_note": "Original voluntary receivable sale with a fee and recourse. This mechanism differs from a public client's compulsory quality-retention provision in the roof-contract case."
+    },
+    {
+      "case_id": "newsroom-held-business-explain-franchise-ownership",
+      "path": "evals/newsroom/cases/newsroom-held-business-explain-franchise-ownership.json",
+      "family_id": "business-cormere-franchise-store",
+      "topic": "Explainer: local store ownership within a national franchise agreement",
+      "independence_note": "Original store opening, royalty terms and local operating choices. Brand use, operating ownership and gross-sales fees are a separate reporting record from cooperatives and employee bonuses."
+    },
+    {
+      "case_id": "newsroom-held-business-explain-assessment-tax-rate",
+      "path": "evals/newsroom/cases/newsroom-held-business-explain-assessment-tax-rate.json",
+      "family_id": "business-aldercove-assessment-levy",
+      "topic": "Explainer: property assessment, city rate and combined household bills",
+      "independence_note": "Original city assessment notice and adopted rate create a bounded household example. Separate taxing authorities and a changing base are not borrowed from another tariff or fee case."
+    },
+    {
+      "case_id": "newsroom-held-business-explain-endowment-operating-gap",
+      "path": "evals/newsroom/cases/newsroom-held-business-explain-endowment-operating-gap.json",
+      "family_id": "business-orlan-endowment-budget",
+      "topic": "Explainer: invested assets, restricted draws and an operating deficit",
+      "independence_note": "Original college financial statement and disputed budget choices. Already-budgeted unrestricted income and illiquid restricted assets differ from the museum's newly received operating gift."
+    },
+    {
+      "case_id": "newsroom-held-business-explain-music-membership",
+      "path": "evals/newsroom/cases/newsroom-held-business-explain-music-membership.json",
+      "family_id": "business-juniper-membership-redemption",
+      "topic": "Explainer: recurring venue income and limited admission entitlements",
+      "independence_note": "Original music-room membership review links reservations, unused benefits and artist allocations. Its recurring service economics do not share the playhouse's one-off ticket-price display."
+    },
+    {
+      "case_id": "newsroom-held-business-explain-crop-cover-market-loss",
+      "path": "evals/newsroom/cases/newsroom-held-business-explain-crop-cover-market-loss.json",
+      "family_id": "business-fen-orchard-yield-cover",
+      "topic": "Explainer: a harvested crop can lose sales without a covered yield loss",
+      "independence_note": "Original carrot harvest, canceled purchase and yield-policy terms. It differs from the flower feature's ongoing channel choice and the grain terminal's aggregate export order book."
+    },
+    {
+      "case_id": "newsroom-held-business-explain-construction-retainage",
+      "path": "evals/newsroom/cases/newsroom-held-business-explain-construction-retainage.json",
+      "family_id": "business-wickmere-roof-retention",
+      "topic": "Explainer: certified construction value and conditional payment release",
+      "independence_note": "Original municipal roof invoice, unfinished detail and two release conditions. Its client-held retention is a distinct financial relationship from voluntarily selling an invoice to a factor."
+    },
+    {
+      "case_id": "newsroom-held-business-explain-return-shipping-choices",
+      "path": "evals/newsroom/cases/newsroom-held-business-explain-return-shipping-choices.json",
+      "family_id": "business-vellum-step-return-options",
+      "topic": "Explainer: return-label costs, retailer credit and payment-method refunds",
+      "independence_note": "Original footwear returns policy distinguishes channels, credit expiry and fault exceptions. It does not use the appliance service-plan cutoff's contracts or claims queue."
+    },
+    {
+      "case_id": "newsroom-held-business-explain-apprentice-paid-class",
+      "path": "evals/newsroom/cases/newsroom-held-business-explain-apprentice-paid-class.json",
+      "family_id": "business-corven-apprentice-pay",
+      "topic": "Explainer: paid classroom hours, tuition support and remaining training costs",
+      "independence_note": "Original enrolled apprenticeship cohort with wages, conditional progression and delayed tool reimbursement. This is not the studio's unfunded trainee proposal or a classroom worksheet."
+    },
+    {
+      "case_id": "newsroom-held-business-explain-tiered-savings-rate",
+      "path": "evals/newsroom/cases/newsroom-held-business-explain-tiered-savings-rate.json",
+      "family_id": "business-moorfin-savings-tiers",
+      "topic": "Explainer: a headline interest rate applies to only part of a balance",
+      "independence_note": "Original bank product schedule includes annual crediting and payroll qualification. Its balance-tier calculation shares no account or pricing record with the remittance and branch stories."
+    },
+    {
+      "case_id": "newsroom-held-business-explain-hotel-occupancy-denominator",
+      "path": "evals/newsroom/cases/newsroom-held-business-explain-hotel-occupancy-denominator.json",
+      "family_id": "business-wren-coast-room-inventory",
+      "topic": "Explainer: occupancy rises as available inventory and room sales fall",
+      "independence_note": "Original matched-hotel report with renovation closures, average rates and room revenue. Changing available capacity is a distinct mechanism from labor-force growth or product package size."
+    },
+    {
+      "case_id": "newsroom-held-business-explain-textbook-access-code",
+      "path": "evals/newsroom/cases/newsroom-held-business-explain-textbook-access-code.json",
+      "family_id": "business-fenwick-course-access",
+      "topic": "Explainer: used books, single-user accounts and an offline course route",
+      "independence_note": "Original course material list, bookstore prices and instructor alternative. Individual semester access and print preferences do not reuse the public library's concurrent-loan contract."
+    },
+    {
+      "case_id": "newsroom-held-business-explain-wholesale-retail-gap",
+      "path": "evals/newsroom/cases/newsroom-held-business-explain-wholesale-retail-gap.json",
+      "family_id": "business-bramble-produce-price-chain",
+      "topic": "Explainer: wholesale indexes, supply contracts and retail margins",
+      "independence_note": "Original produce-market index and two grocers' purchasing arrangements. Market composition and retail discretion differ from the freight contract's automatic lagged formula."
+    },
+    {
+      "case_id": "newsroom-held-business-explain-service-charge-wages",
+      "path": "evals/newsroom/cases/newsroom-held-business-explain-service-charge-wages.json",
+      "family_id": "business-copper-wren-charge-allocation",
+      "topic": "Explainer: mandatory restaurant charges, wage budgets and optional tips",
+      "independence_note": "Original dine-in policy and pay change distinguish business revenue from a table's optional tip. The record is not a general legal template or another venue's ticket-fee schedule."
+    },
+    {
+      "case_id": "newsroom-held-business-explain-library-digital-queue",
+      "path": "evals/newsroom/cases/newsroom-held-business-explain-library-digital-queue.json",
+      "family_id": "business-talver-digital-loan-licenses",
+      "topic": "Explainer: digital waiting lists, expiring licenses and simultaneous capacity",
+      "independence_note": "Original title-specific license ledger and reader-access account. Renewal counts and concurrent permissions differ from overdue fines and students' individual platform accounts."
+    },
+    {
+      "case_id": "newsroom-held-business-explain-freight-fuel-lag",
+      "path": "evals/newsroom/cases/newsroom-held-business-explain-freight-fuel-lag.json",
+      "family_id": "business-willow-splice-fuel-index",
+      "topic": "Explainer: lagged fuel indexes and a shipment's moving surcharge",
+      "independence_note": "Original carrier contract and matched shipment invoices. A mechanical lagged percentage explains this record, unlike discretionary retail pricing in the produce-index story."
+    },
+    {
+      "case_id": "newsroom-held-business-explain-profit-share-not-stock",
+      "path": "evals/newsroom/cases/newsroom-held-business-explain-profit-share-not-stock.json",
+      "family_id": "business-elmward-profit-pool",
+      "topic": "Explainer: allocating a profit-linked payment without transferring ownership",
+      "independence_note": "Original employer profit pool and eligibility ledger. Allocation units, wage separation and unchanged ownership are not variants of the machine-shop employee acquisition."
+    },
+    {
+      "case_id": "newsroom-held-business-feature-patternmaker-succession",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-patternmaker-succession.json",
+      "family_id": "business-merrin-pattern-handover",
+      "topic": "Reported feature: passing on industrial patterns and knowledge a scan omits",
+      "independence_note": "Original workshop succession record, scan pilot and customer-permission problem. The transfer of production knowledge differs from the calibration service's measurement-and-placement question."
+    },
+    {
+      "case_id": "newsroom-held-business-feature-night-bakery-pickup",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-night-bakery-pickup.json",
+      "family_id": "business-low-ember-night-production",
+      "topic": "Reported feature: overnight bread production and linked family and customer days",
+      "independence_note": "Original bakery shift, delivery log and household arrangements. This already operating production schedule shares no families or care service with the employer child-care announcement."
+    },
+    {
+      "case_id": "newsroom-held-business-feature-factory-bus-connection",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-factory-bus-connection.json",
+      "family_id": "business-rillstone-commute-connection",
+      "topic": "Reported feature: a worker's short timetable margins and an unfunded shuttle",
+      "independence_note": "Original commuter observation, voluntary survey and shuttle quote. Its employer-specific connection problem is different from campuses purchasing access to existing public buses."
+    },
+    {
+      "case_id": "newsroom-held-business-feature-mall-repair-popups",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-mall-repair-popups.json",
+      "family_id": "business-ambercourt-temporary-repair-shops",
+      "topic": "Reported feature: visible repair businesses inside an uncertain mall lease",
+      "independence_note": "Original temporary retail occupancy and upholsterer's first-month record. A storefront/off-site workshop split and short tenancy define this event, not a generic empty-building recovery story."
+    },
+    {
+      "case_id": "newsroom-held-business-feature-college-instrument-bench",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-college-instrument-bench.json",
+      "family_id": "business-nettleford-instrument-workshop",
+      "topic": "Reported feature: repair teaching time and schools waiting for instruments",
+      "independence_note": "Original supervised repair program, intake outcomes and school workaround. Its teaching-service tradeoff uses no program, instrument record or source quotation from another case."
+    },
+    {
+      "case_id": "newsroom-held-business-feature-village-credit-book",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-village-credit-book.json",
+      "family_id": "business-alder-rill-small-credit",
+      "topic": "Reported feature: neighborhood credit between household payday and wholesale bills",
+      "independence_note": "Original village-shop ledger and capped informal credit practice. Repayment versus sales recognition and household timing are distinct from commercial invoice financing."
+    },
+    {
+      "case_id": "newsroom-held-business-feature-small-press-audio",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-small-press-audio.json",
+      "family_id": "business-loom-lantern-audio-pilot",
+      "topic": "Reported feature: a small backlist becomes an audio production business",
+      "independence_note": "Original rights negotiations, narrated production and early download ledger. Its format-conversion costs do not reuse another recording, publication or printing contract."
+    },
+    {
+      "case_id": "newsroom-held-business-feature-flower-standing-orders",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-flower-standing-orders.json",
+      "family_id": "business-plover-reed-flower-channels",
+      "topic": "Reported feature: regular restaurant flowers versus higher-priced occasional orders",
+      "independence_note": "Original flower-farm standing orders, substitutions and delivery work. This ongoing channel choice is not the canceled carrot sale or an insured crop-loss scenario."
+    },
+    {
+      "case_id": "newsroom-held-business-feature-mending-time-exchange",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-mending-time-exchange.json",
+      "family_id": "business-stitch-hour-labor-exchange",
+      "topic": "Reported feature: trading repair time while cash and coordination costs remain",
+      "independence_note": "Original time-credit ledger and skill-matching practice. Noncash reciprocal labor is a different economic relationship from paid repair storefronts or employee profit allocations."
+    },
+    {
+      "case_id": "newsroom-held-business-feature-deaf-factory-trainer",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-deaf-factory-trainer.json",
+      "family_id": "business-bracken-spur-training-design",
+      "topic": "Reported feature: a Deaf mentor redesigns visible and repeatable factory instruction",
+      "independence_note": "Original paid mentor, training-material design and trainee feedback record. Prepared demonstrations and obscured movements differ from following a changing live theater performance."
+    },
+    {
+      "case_id": "newsroom-held-business-feature-portable-venue-crew",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-portable-venue-crew.json",
+      "family_id": "business-foldstage-freelance-bookings",
+      "topic": "Reported feature: setup and removal work around the audience's evening",
+      "independence_note": "Original freelancer booking desk, equipment ownership and canceled-booking record. It is not a template expansion of the proposed studio or the canceled festival stage."
+    },
+    {
+      "case_id": "newsroom-held-business-feature-translation-review-work",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-translation-review-work.json",
+      "family_id": "business-threadword-review-market",
+      "topic": "Reported feature: translation clients bring drafts but still need checking",
+      "independence_note": "Original agency workflow, client counts and revenue composition. No model outputs are included or consulted; the story's evidence concerns human work and unsettled source documents."
+    },
+    {
+      "case_id": "newsroom-held-business-feature-rooftop-mushroom-chain",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-rooftop-mushroom-chain.json",
+      "family_id": "business-flint-roof-cold-chain",
+      "topic": "Reported feature: nearby food production still needs cooling, lifts and delivery",
+      "independence_note": "Original rooftop grower's harvest disposition and short cold chain. Its urban infrastructure and unmatched accounting periods differ from field-crop contracts and wholesale-price indexes."
+    },
+    {
+      "case_id": "newsroom-held-business-feature-salvage-paperwork",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-salvage-paperwork.json",
+      "family_id": "business-relay-yard-reuse-records",
+      "topic": "Reported feature: salvaged materials wait for evidence, buyers and building schedules",
+      "independence_note": "Original reusable-component inventory and specification records. Selling identifiable old components is distinct from recovering and blending polymers in the fishing-net pilot."
+    },
+    {
+      "case_id": "newsroom-held-business-feature-theater-costume-bank",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-theater-costume-bank.json",
+      "family_id": "business-aster-fold-costume-loans",
+      "topic": "Reported feature: shared school costumes and the work behind a low fee",
+      "independence_note": "Original garment-loan bank, alteration rules and constrained staffing. Repeated loans and school production choices use no inventory or membership terms from other institutions."
+    },
+    {
+      "case_id": "newsroom-held-business-feature-ferry-food-break",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-ferry-food-break.json",
+      "family_id": "business-selwick-early-food-counter",
+      "topic": "Reported feature: food vouchers and narrow work breaks at a ferry terminal",
+      "independence_note": "Original vendor's extended hours and delayed voucher reimbursement. Its employer-funded purchase timing differs from the overnight bakery's wholesale production and family schedule."
+    },
+    {
+      "case_id": "newsroom-held-business-feature-sensor-calibration-route",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-sensor-calibration-route.json",
+      "family_id": "business-pellwren-calibration-service",
+      "topic": "Reported feature: the calibration work behind growers' sensor readings",
+      "independence_note": "Original instrument-service ledger and bounded bench example. Measurement accuracy, installation context and turnaround are distinct from pattern digitization and manufacturing-job transitions."
+    },
+    {
+      "case_id": "newsroom-held-business-feature-memorial-printing",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-memorial-printing.json",
+      "family_id": "business-plain-bower-memorial-proofs",
+      "topic": "Reported feature: proof approval and deadlines in sensitive short-run printing",
+      "independence_note": "Original printer's job register and fictional customer account contain no actual family records. Approval and service capacity, not regional mortality or a publishing-format shift, define this packet."
+    },
+    {
+      "case_id": "newsroom-held-business-feature-thrift-sorting-cost",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-thrift-sorting-cost.json",
+      "family_id": "business-morrow-cupboard-donation-flow",
+      "topic": "Reported feature: donated stock becomes sorting work before bursary income",
+      "independence_note": "Original charity-shop intake dispositions and completed fund transfer. Free stock, sale candidates and cash raised are a distinct reporting chain from garment lending or construction salvage."
+    },
+    {
+      "case_id": "newsroom-held-business-feature-paper-map-updates",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-paper-map-updates.json",
+      "family_id": "business-foldline-seasonal-map-edition",
+      "topic": "Reported feature: a printed map's usefulness has a revision date",
+      "independence_note": "Original cartographic revision, stock-risk and retailer-share records. Field verification and information obsolescence differ from the other printing and publication businesses."
+    },
+    {
+      "case_id": "newsroom-held-business-feature-shared-remote-workroom",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-shared-remote-workroom.json",
+      "family_id": "business-celandine-desk-booth-capacity",
+      "topic": "Reported feature: remote workers buy a quiet day, not interchangeable empty chairs",
+      "independence_note": "Original shared-workroom bookings, booth constraints and expiring rent support. Its service-capacity record and private-call boundary are not the mall's temporary retail lease scenario."
+    },
+    {
+      "case_id": "newsroom-held-business-feature-fishing-net-rope",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-fishing-net-rope.json",
+      "family_id": "business-delo-loop-polymer-batch",
+      "topic": "Reported feature: retired fishing gear becomes a measured-content rope blend",
+      "independence_note": "Original recovery pilot with material losses, new-polymer input and limited product uses. It concerns transformation and mass balance, not direct reuse of building components."
+    },
+    {
+      "case_id": "newsroom-held-business-feature-touring-captions",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-touring-captions.json",
+      "family_id": "business-ternlight-live-caption-tour",
+      "topic": "Reported feature: portable captions require live timing and venue-specific sightlines",
+      "independence_note": "Original four-town tour, production budget and written audience response. Live performance timing and touring logistics differ from the factory's prepared instructional-video record."
+    },
+    {
+      "case_id": "newsroom-held-business-feature-festival-sorting-crew",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-festival-sorting-crew.json",
+      "family_id": "business-grey-orchard-postevent-sorting",
+      "topic": "Reported feature: vendor packaging choices become a cleanup crew's work",
+      "independence_note": "Original completed fair, weighed material streams and cup-return ledger. It shares no event, contractor or ticket record with the canceled evening-stage news case."
+    },
+    {
+      "case_id": "newsroom-held-business-feature-accessible-game-components",
+      "path": "evals/newsroom/cases/newsroom-held-business-feature-accessible-game-components.json",
+      "family_id": "business-five-lantern-token-prototype",
+      "topic": "Reported feature: distinguishable game pieces meet handling and manufacturing constraints",
+      "independence_note": "Original tabletop prototype, user comments, tooling quote and refundable deposits. The consumer-design and production decision uses no other accessibility packet's people, equipment or results."
+    }
+  ]
+}

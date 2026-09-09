@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-science-expl-ev-battery-fire",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic writing exercise. Using these fictional reporting notes, write a newspaper explainer for general readers answering the question: Why do electric vehicle batteries catch fire, and how dangerous are those fires compared to conventional car fires? Draw only on the supplied notes; do not invent additional reported events, scenes, or quotations. Write from this reporting snapshot as of February 7, 2025. Include a headline. Target 450 to 650 words. Follow AP style.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "Electric vehicle batteries use lithium-ion chemistry; energy is stored in the electrochemical reaction between a lithium-containing cathode, an anode typically made of graphite, and a liquid electrolyte."
+    },
+    {
+      "id": "f2",
+      "text": "Thermal runaway is a chain reaction in which one overheated cell transfers heat to neighboring cells, each of which releases more heat, until the battery pack catches fire or ruptures."
+    },
+    {
+      "id": "f3",
+      "text": "Triggers for thermal runaway include physical damage (collision or puncture), overcharging beyond design limits, manufacturing defects, and exposure to extreme heat."
+    },
+    {
+      "id": "f4",
+      "text": "Lithium-ion battery fires burn at temperatures that can exceed 1,000 degrees Celsius and produce toxic gases including hydrogen fluoride, which is extremely hazardous."
+    },
+    {
+      "id": "f5",
+      "text": "EV battery fires reignite repeatedly as neighboring cells reach their thermal threshold; firefighters often need to cool the battery continuously for hours to prevent reignition."
+    },
+    {
+      "id": "f6",
+      "text": "Vehicle safety engineer Dr. Tom\u00e1s Lindgren of Northview Automotive Institute said: \"The fire itself is not necessarily more likely in an EV. The challenge is the duration and the chemical toxicity of the gases, which are different from a gasoline fire.\""
+    },
+    {
+      "id": "f7",
+      "text": "U.S. fire safety data from the National Automotive Safety Institute shows EVs have a lower fire rate per vehicle-mile traveled than gasoline vehicles, but EV fires take longer to extinguish when they do occur."
+    },
+    {
+      "id": "f8",
+      "text": "Battery management systems monitor cell voltage, temperature, and current to prevent overcharge and overtemperature; a failure or bypass of these systems is the most common pathway to thermal runaway."
+    },
+    {
+      "id": "f9",
+      "text": "High-speed DC fast charging produces more heat in cells than slower AC charging and is more likely to trigger thermal runaway if a cell has a manufacturing defect; most EV manufacturers recommend limiting fast charging frequency."
+    },
+    {
+      "id": "f10",
+      "text": "Solid-state batteries, which replace liquid electrolyte with a solid material, are considered inherently safer because they do not contain the flammable liquid electrolyte; they are not yet in commercial mass production."
+    },
+    {
+      "id": "f11",
+      "text": "Garage fires involving EVs have raised concerns because the fires can spread to the building structure before responders arrive; some fire safety officials recommend not parking EVs in enclosed garages if the battery is damaged."
+    },
+    {
+      "id": "f12",
+      "text": "Fire departments in major cities have developed EV-specific protocols, including the use of large volumes of water applied continuously; some departments use immersion containers for small vehicles."
+    },
+    {
+      "id": "f13",
+      "text": "Lithium iron phosphate (LFP) battery chemistry is considered more thermally stable than nickel manganese cobalt (NMC) chemistry; some manufacturers have shifted toward LFP for standard-range vehicles."
+    },
+    {
+      "id": "f14",
+      "text": "Dr. Lindgren said the industry's response to thermal runaway risk has focused on cell-level isolation \u2014 design features that prevent one failing cell from triggering its neighbor \u2014 rather than eliminating the root cause."
+    },
+    {
+      "id": "f15",
+      "text": "Regulatory testing for EV batteries includes nail penetration tests, overcharge tests, and thermal propagation tests, all designed to simulate abuse conditions."
+    },
+    {
+      "id": "f16",
+      "text": "EV manufacturers are required to disclose battery safety data including the results of abuse testing; access to that data for third-party researchers varies by company."
+    },
+    {
+      "id": "f17",
+      "text": "Hydrogen fuel cell vehicles do not use lithium-ion batteries for primary propulsion and do not carry the same thermal runaway risk, though compressed hydrogen storage has its own safety considerations."
+    },
+    {
+      "id": "f18",
+      "text": "Dr. Lindgren said the public perception of EV fire risk is disproportionate to the statistical rate: gasoline vehicle fires number in the hundreds of thousands per year in the U.S.; EV fires are in the thousands."
+    },
+    {
+      "id": "f19",
+      "text": "The National Automotive Safety Institute said it is working with federal regulators to develop standardized post-crash battery inspection protocols for first responders."
+    },
+    {
+      "id": "f20",
+      "text": "Battery manufacturers are researching fire-retardant electrolyte additives and ceramic separators to slow thermal propagation even if a cell fails."
+    }
+  ],
+  "modules": [
+    "domain/press.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f7",
+      "f8",
+      "f9",
+      "f13"
+    ],
+    "forbidden_additions": [
+      "a claim that EV fires are more common per mile than gasoline vehicle fires",
+      "a fire temperature different from 1,000 degrees Celsius",
+      "a claim that solid-state batteries are commercially available"
+    ],
+    "preserve": [
+      "The fire itself is not necessarily more likely in an EV. The challenge is the duration and the chemical toxicity of the gases, which are different from a gasoline fire."
+    ],
+    "expected_action": "draft"
+  }
+}

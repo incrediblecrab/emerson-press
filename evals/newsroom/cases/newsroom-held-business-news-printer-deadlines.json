@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-business-news-printer-deadlines",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic newspaper-writing exercise using fictional reporting notes. Use only the supplied reporting notes. Write from the reporting snapshot as of August 12, 2026. Write a headline and a 450–650-word AP-style newspaper news update on the Pine Estuary Journal's printing move, including what readers, advertisers and print workers will notice.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id":"f1","text":"The Pine Estuary Journal announced Wednesday, Aug. 12, 2026, that its weekday editions will be printed at Oriole Pressworks beginning Oct. 5."},
+    {"id":"f2","text":"The contracted printer is 62 miles from the newspaper's current pressroom."},
+    {"id":"f3","text":"Publisher Veda Quill said the newspaper will continue publishing five print editions a week and will not change its subscription price at the move."},
+    {"id":"f4","text":"The newspaper's weekday print deadline will move from 10:30 p.m. to 8:30 p.m. to allow transport time."},
+    {"id":"f5","text":"Late council meetings and evening sports results may appear online first and in the next print edition whose deadline has not passed."},
+    {"id":"f6","text":"Delivery contractors have been given the same target doorstep times as under the existing printing arrangement."},
+    {"id":"f7","text":"The company has not completed a trial run of the new weekday transport route."},
+    {"id":"f8","text":"The current pressroom employs nine people; three have accepted packaging jobs at the Journal and six positions will be eliminated."},
+    {"id":"f9","text":"The six affected employees have been offered severance based on service length; individual amounts were not disclosed."},
+    {"id":"f10","text":"The newspaper will retain its newsroom, advertising staff and public office in Pine Estuary."},
+    {"id":"f11","text":"Quill estimates $380,000 in recurring annual printing and maintenance savings once the move is complete; one-time transition expenses are separate and their total was not disclosed."},
+    {"id":"f12","text":"The existing press needs a replacement control unit, quoted by the publisher at a one-time $240,000; that is not an annual maintenance cost."},
+    {"id":"f13","text":"Commercial leaflets currently printed for local shops will also move to the contractor; order deadlines for those jobs are still being negotiated."},
+    {"id":"f14","text":"Press operator Deni Vale said, \"We know which rollers complain before the machine stops. That knowledge does not fit in a moving box.\""},
+    {"id":"f15","text":"Hardware advertiser Kira Stenn said she needs confirmation of the leaflet deadline before booking her November sale."},
+    {"id":"f16","text":"Editor Milo Reeve said the newsroom plans an online late-news page but has not announced a paid-access change."},
+    {"id":"f17","text":"Reeve said, \"An earlier press time changes when a reader gets a fact, not whether we should report it.\""},
+    {"id":"f18","text":"The Journal's current print circulation is 11,200, according to its latest publisher statement, not an independently audited figure in this packet."},
+    {"id":"f19","text":"The newspaper installed its current press in 1993 and still prints a weekly tide table on the back page."},
+    {"id":"f20","text":"No decision has been announced about selling the pressroom property or changing the newspaper's ownership."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1","f3","f4","f5","f6","f7","f8","f10","f11","f13","f20"],
+    "forbidden_additions": ["A reduction in print publication days or a confirmed on-time transport trial","A property sale, ownership change or independently audited circulation absent from the record"],
+    "preserve": ["If quoted: We know which rollers complain before the machine stops. That knowledge does not fit in a moving box.","If quoted: An earlier press time changes when a reader gets a fact, not whether we should report it.","The print deadline moves two hours earlier; reporting and online publication continue."],
+    "expected_action": "draft"
+  }
+}

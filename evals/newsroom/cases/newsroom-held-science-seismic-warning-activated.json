@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-science-seismic-warning-activated",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic writing exercise. Using these fictional reporting notes, write a newspaper news story for general readers. Draw only on the supplied notes; do not invent additional reported events, scenes, or quotations. Write from this reporting snapshot as of September 3, 2024. Include a headline. Target 450 to 650 words. Follow AP style.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "A magnitude 5.8 earthquake struck the Hollister Fault at 7:22 a.m. on September 3, 2024, with an epicenter 41 kilometers east of Harrington Bay."
+    },
+    {
+      "id": "f2",
+      "text": "The Western Seismic Alert Network issued an automated public warning 14 seconds before strong shaking reached Harrington Bay's downtown core."
+    },
+    {
+      "id": "f3",
+      "text": "The 14-second alert was triggered when WSAN's sensor station at Hollow Creek detected fault slip and calculated the wave travel time to the city."
+    },
+    {
+      "id": "f4",
+      "text": "It was the first time WSAN's system issued a live public warning during an actual damaging earthquake rather than a test."
+    },
+    {
+      "id": "f5",
+      "text": "The Harrington Bay Metro Authority halted three in-service trains and locked elevator banks at four underground stations in response to the alert."
+    },
+    {
+      "id": "f6",
+      "text": "No train derailments or elevator failures were reported; transit operations resumed within 32 minutes."
+    },
+    {
+      "id": "f7",
+      "text": "At least 47 people were treated at area hospitals for minor injuries, primarily cuts and bruises from falling objects."
+    },
+    {
+      "id": "f8",
+      "text": "WSAN director Dr. Lena Choi said: \"Fourteen seconds is not a lot of time, but it is enough to stop a train, brace yourself, or step away from glass. Today showed that.\""
+    },
+    {
+      "id": "f9",
+      "text": "Metro Authority spokesman Tom\u00e1s Reyes said dispatchers received the alert and triggered the emergency stop sequence before any controller heard the shaking."
+    },
+    {
+      "id": "f10",
+      "text": "The system sent alerts through cellphone emergency broadcast, a public siren network, and an integration with the metro's internal dispatch software."
+    },
+    {
+      "id": "f11",
+      "text": "Areas within 10 kilometers of the epicenter received no warning because shaking arrived before any signal could be transmitted \u2014 a known limitation of all current early warning systems."
+    },
+    {
+      "id": "f12",
+      "text": "WSAN's network comprises 187 seismic sensors installed between 2018 and 2022 at a total cost of $94 million."
+    },
+    {
+      "id": "f13",
+      "text": "Building damage was limited to cracked facades and broken windows in the downtown district; the Harrington Bay Office of Emergency Management reported no structural collapses."
+    },
+    {
+      "id": "f14",
+      "text": "The Hollister Fault last produced a damaging earthquake in 1978, a magnitude 6.1 event that caused widespread damage before modern early warning technology existed."
+    },
+    {
+      "id": "f15",
+      "text": "Federal seismological officials said the alert's accuracy \u2014 within 0.2 magnitude units of the final assessment \u2014 validated the network's detection algorithm."
+    },
+    {
+      "id": "f16",
+      "text": "Public alerts were delivered to an estimated 1.4 million mobile phones; a survey response system logged 22,000 replies within two hours."
+    },
+    {
+      "id": "f17",
+      "text": "Engineers will review the automated train-stop response to assess whether the 32-minute resumption time can be shortened in lower-severity events."
+    },
+    {
+      "id": "f18",
+      "text": "Dr. Choi said the agency plans to expand the sensor network by 40 stations over the next two years using state funding already appropriated."
+    },
+    {
+      "id": "f19",
+      "text": "The earthquake was felt as far as 180 kilometers away but caused no reported injuries outside Harrington County."
+    },
+    {
+      "id": "f20",
+      "text": "California, Oregon, and Washington state operate similar systems; Harrington Bay's WSAN was modeled on those networks and became operational in 2022."
+    }
+  ],
+  "modules": [
+    "domain/press.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f7",
+      "f8",
+      "f9",
+      "f11",
+      "f15"
+    ],
+    "forbidden_additions": [
+      "a claim that no injuries occurred",
+      "a statement that the fault ruptured completely",
+      "a description of sensor technology not in the notes"
+    ],
+    "preserve": [
+      "Fourteen seconds is not a lot of time, but it is enough to stop a train, brace yourself, or step away from glass. Today showed that."
+    ],
+    "expected_action": "draft"
+  }
+}

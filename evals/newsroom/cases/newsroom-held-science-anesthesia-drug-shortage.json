@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-science-anesthesia-drug-shortage",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic writing exercise. Using these fictional reporting notes, write a newspaper news story for general readers. Draw only on the supplied notes; do not invent additional reported events, scenes, or quotations. Write from this reporting snapshot as of October 29, 2024. Include a headline. Target 450 to 650 words. Follow AP style.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "A fire at Meridia Pharma's primary U.S. propofol manufacturing plant in Clearfield, Indiana, on October 22, 2024, destroyed the facility's largest fill-and-finish line, triggering a national propofol shortage."
+    },
+    {
+      "id": "f2",
+      "text": "Propofol is the most commonly used general anesthetic in U.S. operating rooms; roughly 50 million procedures annually require it."
+    },
+    {
+      "id": "f3",
+      "text": "The destroyed line produced approximately 40% of Meridia's U.S. propofol supply; Meridia holds a 58% share of the U.S. propofol market."
+    },
+    {
+      "id": "f4",
+      "text": "The FDA placed propofol on its critical shortage list on October 25 and issued import facilitation orders for two international manufacturers, Pharmax Belgium and Adena Laboratorios of Spain."
+    },
+    {
+      "id": "f5",
+      "text": "Hospital procurement officers said propofol allocations from distributors had already been cut by 25 to 35% at institutions they represent."
+    },
+    {
+      "id": "f6",
+      "text": "Dr. Patricia Lam, anesthesiology chief at a regional hospital, said: \"We have shifted some elective cases to alternative agents, but propofol's pharmacokinetics \u2014 particularly how quickly patients wake up \u2014 cannot be fully replicated by any single substitute.\""
+    },
+    {
+      "id": "f7",
+      "text": "Meridia CEO Dr. Carlos Estrada said the company is redirecting output from its secondary plant in Arizona and expects the Clearfield line to be rebuilt within 12 to 18 months."
+    },
+    {
+      "id": "f8",
+      "text": "Cause of the fire is under investigation by the Indiana State Fire Marshal's office; no injuries were reported."
+    },
+    {
+      "id": "f9",
+      "text": "The FDA said it is monitoring substitution rates to track whether alternative agents are being used safely in patient populations for whom they are less appropriate."
+    },
+    {
+      "id": "f10",
+      "text": "Hospital networks in the Southeast and Midwest reported the most severe allocation constraints because of their greater dependence on Meridia as a regional distributor."
+    },
+    {
+      "id": "f11",
+      "text": "The two alternative intravenous anesthetics most commonly used in place of propofol are etomidate and ketamine; both have different sedation depth profiles and side effect spectrums."
+    },
+    {
+      "id": "f12",
+      "text": "The FDA's import facilitation does not waive good manufacturing practice requirements; imported product still requires FDA inspection or documentation of equivalence."
+    },
+    {
+      "id": "f13",
+      "text": "Drug policy researchers have noted the Meridia shortage as a case study in single-source dependence risk; one company held a majority U.S. market share with a single primary domestic manufacturing site."
+    },
+    {
+      "id": "f14",
+      "text": "No elective surgery cancellations have been publicly confirmed as of the October 29 reporting date, but hospital administrators said decisions about case prioritization were being made daily."
+    },
+    {
+      "id": "f15",
+      "text": "The FDA said it expects imported product from Pharmax Belgium to begin arriving within three weeks."
+    },
+    {
+      "id": "f16",
+      "text": "Propofol has a relatively short shelf life of 24 months from manufacture; building strategic reserves is therefore more difficult than for solid oral medications."
+    },
+    {
+      "id": "f17",
+      "text": "The U.S. drug shortage database lists 47 active shortages of sterile injectable medications; propofol is the highest-volume item on the current list."
+    },
+    {
+      "id": "f18",
+      "text": "Meridia stock fell 18% in the week after the fire, then partially recovered when the import facilitation was announced."
+    },
+    {
+      "id": "f19",
+      "text": "Dr. Lam noted that training programs for anesthesia providers focus heavily on propofol protocols; switching agents mid-shortage requires rapid in-service retraining."
+    },
+    {
+      "id": "f20",
+      "text": "Congressional members from Indiana have asked the FDA to provide monthly shortage status reports."
+    }
+  ],
+  "modules": [
+    "domain/press.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f7",
+      "f8",
+      "f11",
+      "f14"
+    ],
+    "forbidden_additions": [
+      "patient deaths attributed to the propofol shortage",
+      "a confirmed cause of the fire",
+      "import arrival before October 29"
+    ],
+    "preserve": [
+      "We have shifted some elective cases to alternative agents, but propofol's pharmacokinetics \u2014 particularly how quickly patients wake up \u2014 cannot be fully replicated by any single substitute."
+    ],
+    "expected_action": "draft"
+  }
+}

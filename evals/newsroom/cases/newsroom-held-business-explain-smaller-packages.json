@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-business-explain-smaller-packages",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic newspaper-writing exercise using fictional reporting notes. Use only the supplied reporting notes. Write from the reporting snapshot as of August 31, 2026. Write a headline and a 450–650-word AP-style newspaper explainer about package-size changes at the grocery shelf, using the Marshglen cereal change to answer what an unchanged package price does and does not tell shoppers.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id":"f1","text":"Marshglen Foods began shipping a 400-gram bag of its Orchard Grain cereal in July 2026, replacing a 500-gram bag."},
+    {"id":"f2","text":"Both sizes sold for $4 at the three participating stores in the supplied August shelf check."},
+    {"id":"f3","text":"At those prices, the old bag cost $8 per kilogram and the new bag costs $10 per kilogram, a 25% increase in unit price."},
+    {"id":"f4","text":"The package contains 20% less cereal; that percentage differs from the 25% rise in the price per kilogram."},
+    {"id":"f5","text":"The new weight is printed on the front label, and the bag's shape and main color remain similar to the previous packaging."},
+    {"id":"f6","text":"The manufacturer says the ingredient recipe is unchanged, but the reporting record contains no independent laboratory comparison."},
+    {"id":"f7","text":"Company purchasing director Lora Dain says its contracted grain and dried-fruit costs increased during the past year."},
+    {"id":"f8","text":"The company has not disclosed a complete product-cost breakdown or the margin earned on either bag size."},
+    {"id":"f9","text":"Dain said, \"We chose a smaller pack at the familiar ticket price rather than a larger jump on the shelf label.\""},
+    {"id":"f10","text":"The Household Basket Observatory examined ten selected packaged products for its local comparison: three became smaller, five stayed the same size and two became larger."},
+    {"id":"f11","text":"The observatory selected those products after shopper inquiries and does not describe them as a representative inflation sample."},
+    {"id":"f12","text":"Old and new cereal bags were both still on sale during the shelf check, so shoppers could encounter two unit prices at one package price."},
+    {"id":"f13","text":"Store manager Omi Venn said staff had replaced unit-price labels for the new stock but were keeping separate labels where both sizes remained."},
+    {"id":"f14","text":"Customer Rella Pike normally buys the cereal by the number of breakfasts it supplies rather than by package count."},
+    {"id":"f15","text":"Pike said, \"Four dollars looks familiar until the bag runs out a day earlier.\""},
+    {"id":"f16","text":"Pike's experience does not establish a standardized serving size or the same number of breakfasts for every household."},
+    {"id":"f17","text":"The stores sometimes offer temporary multi-buy discounts, which were not running during the supplied comparison."},
+    {"id":"f18","text":"A lower promotional package price can change the unit-price comparison, so the observatory records price and quantity together."},
+    {"id":"f19","text":"Marshglen has sold the cereal under the same product name since 2017."},
+    {"id":"f20","text":"The packet contains no finding of misleading-label violations or evidence that every manufacturer is reducing package size."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1","f2","f3","f4","f5","f8","f10","f11","f12","f17","f18"],
+    "forbidden_additions": ["The 20% quantity reduction equals a 20% unit-price increase","A representative national inflation measure, proven margin increase or labeling-law violation"],
+    "preserve": ["If quoted: We chose a smaller pack at the familiar ticket price rather than a larger jump on the shelf label.","If quoted: Four dollars looks familiar until the bag runs out a day earlier.","Package price, package quantity and unit price answer different questions."],
+    "expected_action": "draft"
+  }
+}

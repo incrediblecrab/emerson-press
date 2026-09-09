@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-business-feature-factory-bus-connection",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic newspaper-writing exercise using fictional reporting notes. Use only the supplied reporting notes. Write from the reporting snapshot as of September 8, 2026. Write a headline and a 450–650-word AP-style reported feature about how the bus timetable shapes working days at Rillstone Switchgear and the practical choices behind a proposed employer shuttle.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id":"f1","text":"A field note from Aug. 6, 2026, follows assembler Omi Doren from the 6:05 a.m. bus arrival to Rillstone Switchgear, a seven-minute walk away."},
+    {"id":"f2","text":"Doren's shift begins at 6:15 a.m., leaving three minutes between the normal walk's end and the scheduled start."},
+    {"id":"f3","text":"The shift ends at 2:15 p.m., and the return bus leaves at 2:25 p.m. from the same stop."},
+    {"id":"f4","text":"Missing that departure usually means waiting an hour for the next bus under the current weekday timetable."},
+    {"id":"f5","text":"Doren does not own a car and sometimes declines optional extra work at the end of the shift because of the return connection."},
+    {"id":"f6","text":"Doren said, \"Ten more minutes at the bench can become an hour at the bus stop.\""},
+    {"id":"f7","text":"The factory has 85 employees, and 40 answered its voluntary commuting survey."},
+    {"id":"f8","text":"Fourteen respondents said they regularly depended on the bus; the survey does not establish the commuting choices of nonrespondents."},
+    {"id":"f9","text":"The factory's production line includes a shared morning briefing, making completely different start times difficult for some jobs."},
+    {"id":"f10","text":"Production manager Teri Vann has requested a quote for a shuttle between the central bus interchange and the factory."},
+    {"id":"f11","text":"A local operator quoted $140 per working day for a limited morning-and-afternoon pilot, or $2,800 for 20 working days."},
+    {"id":"f12","text":"The employer has not approved the pilot budget or selected a start date."},
+    {"id":"f13","text":"The public bus operator says its vehicles also serve school journeys and cannot simply move this route's departures without affecting other runs."},
+    {"id":"f14","text":"Driver Leda Quill said the published timetable is a chain of trips rather than a separate vehicle waiting for each factory shift."},
+    {"id":"f15","text":"Quill said, \"Moving one departure means deciding which other passengers will wait.\""},
+    {"id":"f16","text":"The proposed shuttle would serve a single employer, not replace the town's public bus route."},
+    {"id":"f17","text":"The factory has six advertised vacancies, but its recruitment records do not isolate transport as the cause of those vacancies."},
+    {"id":"f18","text":"Doren says a reliable connection would matter more to her than a workplace parking benefit."},
+    {"id":"f19","text":"The factory makes electrical cabinets on an industrial estate developed before the current housing expansion."},
+    {"id":"f20","text":"The reporting record contains no adopted bus-route cut, attendance penalty against Doren or confirmed hiring increase from a shuttle."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f2","f3","f4","f5","f7","f8","f9","f10","f11","f12","f13","f17"],
+    "forbidden_additions": ["An approved shuttle, public-route closure or proven transport cause for all vacancies","Fourteen bus-dependent respondents represent every worker or Doren was disciplined"],
+    "preserve": ["If quoted: Ten more minutes at the bench can become an hour at the bus stop.","If quoted: Moving one departure means deciding which other passengers will wait.","The quoted $2,800 covers a proposed 20-day pilot, not a permanent service."],
+    "expected_action": "draft"
+  }
+}

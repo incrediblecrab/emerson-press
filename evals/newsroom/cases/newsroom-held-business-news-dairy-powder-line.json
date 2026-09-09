@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-business-news-dairy-powder-line",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic newspaper-writing exercise using fictional reporting notes. Use only the supplied reporting notes. Write from the reporting snapshot as of August 19, 2026. Write a headline and a 450–650-word AP-style news update about Merefold Dairy Cooperative's temporary powder-line shutdown, explaining the implications for employees and member farms.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id":"f1","text":"Merefold Dairy Cooperative announced Wednesday, Aug. 19, 2026, that it will suspend milk-powder production for nine months beginning Oct. 1."},
+    {"id":"f2","text":"The cooperative's fresh-milk packaging and cultured-products lines will continue operating."},
+    {"id":"f3","text":"Powder inventory stands at 3,600 tons, compared with 1,900 tons a year earlier, according to the cooperative's monthly stock report."},
+    {"id":"f4","text":"Chief executive Olin Wray said powder orders have fallen while storage and financing costs have increased."},
+    {"id":"f5","text":"The cooperative has not published customer-level order figures or attributed the change to a single buyer or trade measure."},
+    {"id":"f6","text":"The powder line has 42 employees: 22 will receive transfer offers to fresh products, 12 maintenance assignments and eight redundancy notices."},
+    {"id":"f7","text":"The wider plant employs 110 people, including the 42 assigned to the powder line."},
+    {"id":"f8","text":"Transfer offers preserve base pay but involve different shift times; acceptance totals are not yet available."},
+    {"id":"f9","text":"The cooperative will retain all contracted milk-collection volumes from its 87 member farms through the current contract year."},
+    {"id":"f10","text":"Some collected milk will be processed under a tolling agreement at Larkspur Dairies, 76 miles away."},
+    {"id":"f11","text":"The additional transport and tolling costs have not been disclosed, and next year's farm payment formula remains under review."},
+    {"id":"f12","text":"Member farmer Ina Selk said she needs the next payment schedule before renewing a feed contract."},
+    {"id":"f13","text":"Selk said, \"Collecting the milk answers one question. What comes back on the statement answers another.\""},
+    {"id":"f14","text":"Employee representative Tavren Cole has asked the cooperative to offer retraining to the eight workers receiving redundancy notices."},
+    {"id":"f15","text":"No retraining agreement or severance total has been announced."},
+    {"id":"f16","text":"Wray said, \"We are pausing one way of processing milk, not telling our farms to stop producing it.\""},
+    {"id":"f17","text":"The cooperative will reassess powder stocks and orders in March 2027 before committing to a restart date."},
+    {"id":"f18","text":"The nine-month planning period is not a guaranteed production restart, according to the board's notice."},
+    {"id":"f19","text":"The cooperative was formed by 19 farms in 1978 and added powder production in 2006."},
+    {"id":"f20","text":"The stock report supplies no evidence of milk being discarded or of a consumer shortage of fresh dairy products."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1","f2","f3","f5","f6","f8","f9","f10","f11","f17","f18"],
+    "forbidden_additions": ["The whole dairy closes, farms must discard milk or fresh products face a proven shortage","A guaranteed restart, unchanged future farm payments or accepted transfers for all employees"],
+    "preserve": ["If quoted: Collecting the milk answers one question. What comes back on the statement answers another.","If quoted: We are pausing one way of processing milk, not telling our farms to stop producing it.","22 transfer offers, 12 maintenance assignments and eight redundancy notices account for the 42 powder-line positions."],
+    "expected_action": "draft"
+  }
+}

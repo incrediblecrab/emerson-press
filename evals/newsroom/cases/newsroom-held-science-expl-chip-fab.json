@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-held-science-expl-chip-fab",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "This is a synthetic writing exercise. Using these fictional reporting notes, write a newspaper explainer for general readers answering the question: Why is semiconductor manufacturing so concentrated geographically, and why is it so hard to build new chip factories? Draw only on the supplied notes; do not invent additional reported events, scenes, or quotations. Write from this reporting snapshot as of March 25, 2025. Include a headline. Target 450 to 650 words. Follow AP style.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "Semiconductor chips are produced in fabrication plants called fabs; the most advanced fabs manufacture transistors with features measured in nanometers \u2014 a nanometer is one-billionth of a meter, roughly 10 atomic diameters."
+    },
+    {
+      "id": "f2",
+      "text": "Taiwan Semiconductor Manufacturing Company (TSMC) and Samsung together manufacture the vast majority of the world's most advanced chips; TSMC alone produces about 90% of chips below 5 nanometers."
+    },
+    {
+      "id": "f3",
+      "text": "Building a leading-edge fab costs $15 to $25 billion and takes three to five years to construct and commission; the equipment inside the fab is also extraordinarily specialized."
+    },
+    {
+      "id": "f4",
+      "text": "Extreme ultraviolet (EUV) lithography machines, used to print the smallest chip features, are produced by only one company in the world \u2014 ASML of the Netherlands; each machine costs approximately $200 million and weighs 180 tonnes."
+    },
+    {
+      "id": "f5",
+      "text": "Chip manufacturing requires ultra-pure chemicals (with parts-per-trillion purity), ultra-pure water, vibration-controlled floors, and Class 1 cleanrooms \u2014 air cleaner than any hospital operating room."
+    },
+    {
+      "id": "f6",
+      "text": "Semiconductor engineer Dr. James Ren of Pacific Technology Institute said: \"A leading-edge fab is not a building that makes things. It is a precision instrument at the scale of a city block. It cannot simply be moved or replicated by following a recipe.\""
+    },
+    {
+      "id": "f7",
+      "text": "The geographic concentration of chip manufacturing in Taiwan creates a systemic risk for global supply chains; any disruption \u2014 military, seismic, or operational \u2014 would affect the supply of chips used in electronics, vehicles, medical devices, and defense systems."
+    },
+    {
+      "id": "f8",
+      "text": "The U.S. CHIPS and Science Act, passed in 2022, allocated $52 billion to incentivize semiconductor manufacturing in the United States; several companies announced new fab projects using the funding."
+    },
+    {
+      "id": "f9",
+      "text": "Building a fab workforce requires years of specialized training; TSMC reported challenges finding enough qualified technicians for its Arizona fab and extended the training period to bring workers up to its standards."
+    },
+    {
+      "id": "f10",
+      "text": "Chip manufacturing depends on global supply chains for raw materials: gallium, germanium, neon gas (used in lasers), and dozens of specialized chemicals; no single country produces all of them."
+    },
+    {
+      "id": "f11",
+      "text": "Taiwan's geography \u2014 near the Pacific Ring of Fire \u2014 creates seismic risk, though TSMC fabs are engineered with seismic isolation systems and have maintained operations through major earthquakes."
+    },
+    {
+      "id": "f12",
+      "text": "Water is a major input: a large fab uses 10 to 20 million liters of ultra-pure water per day; siting in arid regions requires substantial water infrastructure."
+    },
+    {
+      "id": "f13",
+      "text": "Fab electricity consumption is also large: a leading-edge fab draws 150 to 300 megawatts, equivalent to a small city; the fab industry is a significant consumer of industrial electricity."
+    },
+    {
+      "id": "f14",
+      "text": "Dr. Ren said the tacit knowledge embedded in a chip factory's operations \u2014 the accumulated expertise of thousands of engineers \u2014 takes a decade or more to develop and cannot be transferred quickly."
+    },
+    {
+      "id": "f15",
+      "text": "The international chip supply chain is highly interdependent: a chip designed in the U.S. may be manufactured in Taiwan using Dutch lithography machines, Japanese chemicals, and South Korean memory, then assembled in Malaysia."
+    },
+    {
+      "id": "f16",
+      "text": "Export controls on advanced chip manufacturing equipment \u2014 imposed by the U.S., Netherlands, and Japan starting in 2022\u20132023 \u2014 limit China's access to EUV machines and some deposition equipment."
+    },
+    {
+      "id": "f17",
+      "text": "Chip manufacturing is subject to Moore's Law, the observation that transistor density doubles roughly every two years; staying on this trajectory requires continuous reinvestment in new equipment and processes."
+    },
+    {
+      "id": "f18",
+      "text": "Dr. Ren said the U.S. CHIPS Act investments address the capital cost but not the workforce and supply chain challenges; the U.S. will depend on imported chemicals and equipment for any new domestic fabs."
+    },
+    {
+      "id": "f19",
+      "text": "A mature-node fab \u2014 producing chips at 28 nanometers or larger, used in automobiles and industrial equipment \u2014 costs $3 to $5 billion and is more broadly buildable; the 2021 chip shortage affected these nodes as much as leading-edge ones."
+    },
+    {
+      "id": "f20",
+      "text": "China is investing heavily in domestic semiconductor manufacturing; it can produce 28-nanometer chips domestically but remains unable to produce chips below 7 nanometers without foreign equipment it is now restricted from purchasing."
+    }
+  ],
+  "modules": [
+    "domain/press.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f7",
+      "f8",
+      "f9",
+      "f12"
+    ],
+    "forbidden_additions": [
+      "a market share figure for TSMC different from 90% of sub-5nm chips",
+      "an EUV machine price different from $200 million",
+      "a claim that China can produce chips below 7 nanometers domestically"
+    ],
+    "preserve": [
+      "A leading-edge fab is not a building that makes things. It is a precision instrument at the scale of a city block. It cannot simply be moved or replicated by following a recipe."
+    ],
+    "expected_action": "draft"
+  }
+}

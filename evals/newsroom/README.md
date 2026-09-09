@@ -48,13 +48,20 @@ in the same family and split. Freeze the actual family map, candidate recipe,
 model settings, primary contrast, grading protocol and statistical plan before
 any primary held-out generation. No such held-out writing result is available yet.
 
-The first completed input-review checkpoint covers [74 civic packets](civic-index.json):
-24 straight news updates, 24 explainers and 26 reported features, containing 1,628
-fact entries. They now form **73 provisional families**, after conservatively
-grouping two volunteer-observation features with similar recordkeeping structures.
-That grouping does not prove shared authoring provenance, and thematic similarity
-alone did not justify merging three distinct food-access stories. Other input
-reviews and the final cross-shard family map remain unfinished.
+All 220 input packets have received bounded within-shard model source reviews
+and parent checks of coverage, source bindings and recorded changes. This is not
+external verification of every scientific, financial or legal claim.
+
+| Input shard | Cases | Provisional families | Fact entries |
+| --- | ---: | ---: | ---: |
+| [Civic](civic-index.json) | 74 | 73 | 1,628 |
+| [Science](science-index.json) | 73 | 68 | 1,456 |
+| [Business](business-index.json) | 73 | 73 | 1,460 |
+| **Total** | **220** | **214** | **4,544** |
+
+The final cross-shard/tuning-family review and power plan remain unfinished.
+Shared programs and conservative template clusters reduce the family count;
+neither the remaining labels nor the source audits prove independence.
 
 The [civic source-review bundle](artifacts/civic-source-review-manifest.json)
 retains the exact before/after packets and index, the unchanged model audit and
@@ -65,6 +72,23 @@ auditor also supplied an incorrect weekday. These are input and reviewer
 corrections, not evidence that the writing instructions work. The
 [measured summary](artifacts/civic-source-review-summary.json) records no primary
 writing outputs and no human reviews.
+
+The [science bundle](artifacts/science-source-review-manifest.json) retains both
+original model audits, literal-evidence checks and separate parent arbitration.
+Six packets received source revisions: among them, an overdue-inspection
+calculation and speed-limit conflict, incompatible Apex observatory timelines,
+an unsupported first-approval claim and unverified background rules/statistics.
+The withdrawn transmission-loss percentage also required changing its associated
+check. The [summary](artifacts/science-source-review-summary.json) distinguishes
+these revisions from writing-model errors. Two nonliteral audit quotations and
+a mistaken claim that snapshot dates were absent remain visible in the evidence.
+
+The [business bundle](artifacts/business-source-review-manifest.json) preserves
+all 73 packets and the index unchanged. Its model audit proposed no grounded
+corrections or within-shard mergers; that is not a certification of error-free
+sources or an independent sample. The [summary](artifacts/business-source-review-summary.json)
+keeps those limits explicit. No source-review record is a human assessment or a
+primary prose-quality result.
 
 The first live smoke check uses the one pre-existing substantial press-drafting
 tuning case in the broad regression suite: the Bay Cross timetable explainer.
