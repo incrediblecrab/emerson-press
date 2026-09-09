@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "kind": "matched-instruction-revision-tuning-captures",
+  "design_sha256": "64ada18f6aa5d0243f11c0d27f31ba43202bf335fa59138ef9e5baa008fbe935",
+  "planned_responses": 40,
+  "newsroom_responses": 24,
+  "regression_responses": 16,
+  "newsroom_families": 4,
+  "regression_scenarios": 4,
+  "condition_note": "reference-full and scoped-full are external study conditions; both preserve their genuine request variant=full and distinct instruction hashes.",
+  "limitation": "Repeated tuning scenarios under a common closed-record brief, not a powered or independent new newsroom sample.",
+  "records": 40,
+  "artifact": "evals/newsroom/artifacts/scope-revision-writing.jsonl.xz",
+  "artifact_sha256": "f493e65b15bb688f258fd98078f26446b53daee7d8e7cc9f2a3e770c0fd9d2f9",
+  "payload_sha256": "b290850325469d5638c6885cbd3db91d89e563307067eb1c2356604e61027c89",
+  "human_reviews": 0
+}

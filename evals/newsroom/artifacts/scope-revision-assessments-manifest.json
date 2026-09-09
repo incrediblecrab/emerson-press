@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "kind": "source-aware-instruction-revision-tuning-assessments",
+  "design_sha256": "64ada18f6aa5d0243f11c0d27f31ba43202bf335fa59138ef9e5baa008fbe935",
+  "assessment_plan_sha256": "cd30ddbce3e41674485f9d39954df54c242144c36139c04d2653785338b624c3",
+  "planned_judgments": 80,
+  "valid_preferences": 32,
+  "valid_pointwise": 45,
+  "invalid_pointwise": 3,
+  "newsroom_families": 4,
+  "limitation": "All raw opinions and malformed pointwise responses retained. Four repeated newsroom families, not a powered efficacy sample or human review.",
+  "records": 80,
+  "artifact": "evals/newsroom/artifacts/scope-revision-assessments.jsonl.xz",
+  "artifact_sha256": "11b9765c271a3b64a243b0578c9c066ed3d15a45153396c50ca772a685eaf191",
+  "payload_sha256": "3136582420601ee1960b28823556a906d58c73068bfc495bdbe9c4f736069cc8",
+  "human_reviews": 0
+}

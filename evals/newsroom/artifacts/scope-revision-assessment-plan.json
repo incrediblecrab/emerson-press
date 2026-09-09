@@ -1,0 +1,656 @@
+{
+  "schema_version": 1,
+  "kind": "model-only-scope-assessment-plan",
+  "design_sha256": "64ada18f6aa5d0243f11c0d27f31ba43202bf335fa59138ef9e5baa008fbe935",
+  "prepared_at": "2026-09-09T07:23:00.213692+00:00",
+  "parser_sha256": "9b7f28bf69f745daff470e63067f7bb6f09117b5aef96cb734042eef91c1e780",
+  "paragraph_parser_sha256": "63b4af08679222e05ad05c0384ebe3cf644abfe932241f39e07b9ccbcf705eff",
+  "transport_sha256": "132697045cb71c727331bce03562ae1ce2163b46376973b2ba3dac7c2d46c704",
+  "order_seed": 8107,
+  "concurrency": 4,
+  "jobs": [
+    {
+      "id": "preference-001-gpt-6-astra",
+      "kind": "preference",
+      "model": "gpt-6-astra",
+      "request": "assessment-requests/preference-001-gpt-6-astra.json",
+      "prompt_sha256": "74a6b65dba38bdd13583ea7d3e0307dc2ac21d97163e14ed139efa5b39205213",
+      "request_file_sha256": "a96b66a107a807ed9ba7bee6dc3b5fe9a50da5030ff53d6b2e1a96a8c8db85f0"
+    },
+    {
+      "id": "preference-001-claude-sonnet-5",
+      "kind": "preference",
+      "model": "claude-sonnet-5",
+      "request": "assessment-requests/preference-001-claude-sonnet-5.json",
+      "prompt_sha256": "74a6b65dba38bdd13583ea7d3e0307dc2ac21d97163e14ed139efa5b39205213",
+      "request_file_sha256": "d56b368f82655d6c9f20f75cba3f23810ed1286b49fd91e9e561fabd957275aa"
+    },
+    {
+      "id": "preference-002-gpt-6-astra",
+      "kind": "preference",
+      "model": "gpt-6-astra",
+      "request": "assessment-requests/preference-002-gpt-6-astra.json",
+      "prompt_sha256": "5fa1f4b9ee6d389f9d6d588b2bce08a84534402d846f51f0b5a457b1a7301863",
+      "request_file_sha256": "f96994b0597bfa93ace5652394fbe591f1ee71e8973763c0f582fc9ae8ad860c"
+    },
+    {
+      "id": "preference-002-claude-sonnet-5",
+      "kind": "preference",
+      "model": "claude-sonnet-5",
+      "request": "assessment-requests/preference-002-claude-sonnet-5.json",
+      "prompt_sha256": "5fa1f4b9ee6d389f9d6d588b2bce08a84534402d846f51f0b5a457b1a7301863",
+      "request_file_sha256": "b71b7871b3787905cb2e252f0de57ca6a6ab952efbf522970c2cf4cb39670168"
+    },
+    {
+      "id": "pointwise-newsroom-tuning-council-rezone-claude-sonnet-5-bare-task-gpt-6-astra",
+      "kind": "pointwise",
+      "model": "gpt-6-astra",
+      "request": "assessment-requests/pointwise-newsroom-tuning-council-rezone-claude-sonnet-5-bare-task-gpt-6-astra.json",
+      "prompt_sha256": "4b931fee96ca94c89935f15473aef3c1ac7d05f754397133127699024e7d19aa",
+      "request_file_sha256": "16e8e8bcd5137460b5cc668d9459101a83545fdc70d5fd1435c3230d26fe4711"
+    },
+    {
+      "id": "pointwise-newsroom-tuning-council-rezone-claude-sonnet-5-bare-task-claude-sonnet-5",
+      "kind": "pointwise",
+      "model": "claude-sonnet-5",
+      "request": "assessment-requests/pointwise-newsroom-tuning-council-rezone-claude-sonnet-5-bare-task-claude-sonnet-5.json",
+      "prompt_sha256": "4b931fee96ca94c89935f15473aef3c1ac7d05f754397133127699024e7d19aa",
+      "request_file_sha256": "0e61153d04447ff7b7b085584fc05fe98eafbe7202e3eb00f13dddb87f0dd63a"
+    },
+    {
+      "id": "pointwise-newsroom-tuning-council-rezone-claude-sonnet-5-reference-full-gpt-6-astra",
+      "kind": "pointwise",
+      "model": "gpt-6-astra",
+      "request": "assessment-requests/pointwise-newsroom-tuning-council-rezone-claude-sonnet-5-reference-full-gpt-6-astra.json",
+      "prompt_sha256": "fafa5a090cfeb92f78f1c6a650906395f54fa8745db413a902f94cbca6993e11",
+      "request_file_sha256": "a3349e30e54fd4bb9bc3ecabd446ca0d00d18fb9807b37b4d3aa6b5a1a005571"
+    },
+    {
+      "id": "pointwise-newsroom-tuning-council-rezone-claude-sonnet-5-reference-full-claude-sonnet-5",
+      "kind": "pointwise",
+      "model": "claude-sonnet-5",
+      "request": "assessment-requests/pointwise-newsroom-tuning-council-rezone-claude-sonnet-5-reference-full-claude-sonnet-5.json",
+      "prompt_sha256": "fafa5a090cfeb92f78f1c6a650906395f54fa8745db413a902f94cbca6993e11",
+      "request_file_sha256": "3103e393e177c804c87dfddd4bf1dc3be06a430be24c60697743dab9eeb7fce6"
+    },
+    {
+      "id": "pointwise-newsroom-tuning-council-rezone-claude-sonnet-5-scoped-full-gpt-6-astra",
+      "kind": "pointwise",
+      "model": "gpt-6-astra",
+      "request": "assessment-requests/pointwise-newsroom-tuning-council-rezone-claude-sonnet-5-scoped-full-gpt-6-astra.json",
+      "prompt_sha256": "0e5450c99a9b333a5ec1c2f8d7206ec340d75f6b136165b2eea20df5c46e3db2",
+      "request_file_sha256": "4136f71b70c24b74ebcbcd81cc4305835ad7b1d0085fdf208a0d69b1b6016112"
+    },
+    {
+      "id": "pointwise-newsroom-tuning-council-rezone-claude-sonnet-5-scoped-full-claude-sonnet-5",
+      "kind": "pointwise",
+      "model": "claude-sonnet-5",
+      "request": "assessment-requests/pointwise-newsroom-tuning-council-rezone-claude-sonnet-5-scoped-full-claude-sonnet-5.json",
+      "prompt_sha256": "0e5450c99a9b333a5ec1c2f8d7206ec340d75f6b136165b2eea20df5c46e3db2",
+      "request_file_sha256": "4eb4ca3c5c2d6bda0b2002d1444a55789191d619e15964761fe7b30a9e94506b"
+    },
+    {
+      "id": "preference-003-gpt-6-astra",
+      "kind": "preference",
+      "model": "gpt-6-astra",
+      "request": "assessment-requests/preference-003-gpt-6-astra.json",
+      "prompt_sha256": "99feb75f18d7be7074515998559f5041c5148f2e6ececca9c5ac8f3af4ac188c",
+      "request_file_sha256": "bd588de300d6087af395996bdea9541caa4f9e81ea187f466f3678aecdaff200"
+    },
+    {
+      "id": "preference-003-claude-sonnet-5",
+      "kind": "preference",
+      "model": "claude-sonnet-5",
+      "request": "assessment-requests/preference-003-claude-sonnet-5.json",
+      "prompt_sha256": "99feb75f18d7be7074515998559f5041c5148f2e6ececca9c5ac8f3af4ac188c",
+      "request_file_sha256": "974df08eab3e67680d921925b07f5080cb6ef57d94f4a390d3be595b66006145"
+    },
+    {
+      "id": "preference-004-gpt-6-astra",
+      "kind": "preference",
+      "model": "gpt-6-astra",
+      "request": "assessment-requests/preference-004-gpt-6-astra.json",
+      "prompt_sha256": "617e0979a4699187c3341d923a74255611056402b9dc7898286f86ccea5c68cc",
+      "request_file_sha256": "c0df78ba2b8cba0ca8fffdd32bb62f521149f3e1fc74782fb414c16dd53313bc"
+    },
+    {
+      "id": "preference-004-claude-sonnet-5",
+      "kind": "preference",
+      "model": "claude-sonnet-5",
+      "request": "assessment-requests/preference-004-claude-sonnet-5.json",
+      "prompt_sha256": "617e0979a4699187c3341d923a74255611056402b9dc7898286f86ccea5c68cc",
+      "request_file_sha256": "c0fffeef78eee0b8607efd775842ce6dc1bfcb72cee1051fd3022323772ceabe"
+    },
+    {
+      "id": "pointwise-newsroom-tuning-council-rezone-gpt-6-astra-bare-task-gpt-6-astra",
+      "kind": "pointwise",
+      "model": "gpt-6-astra",
+      "request": "assessment-requests/pointwise-newsroom-tuning-council-rezone-gpt-6-astra-bare-task-gpt-6-astra.json",
+      "prompt_sha256": "1f1142cca12a9c1fcd7084d33beb7f7fb5bc1e9da7b6d884819a6783f11d95fa",
+      "request_file_sha256": "0ba37ba69bd0a5ed66c7998ab7cac1353f5ef4e078c7346533705139d5109aa2"
+    },
+    {
+      "id": "pointwise-newsroom-tuning-council-rezone-gpt-6-astra-bare-task-claude-sonnet-5",
+      "kind": "pointwise",
+      "model": "claude-sonnet-5",
+      "request": "assessment-requests/pointwise-newsroom-tuning-council-rezone-gpt-6-astra-bare-task-claude-sonnet-5.json",
+      "prompt_sha256": "1f1142cca12a9c1fcd7084d33beb7f7fb5bc1e9da7b6d884819a6783f11d95fa",
+      "request_file_sha256": "522784ce79eb060f5319b773069454b5a435b670e72ea7e08707271fa8f9eda7"
+    },
+    {
+      "id": "pointwise-newsroom-tuning-council-rezone-gpt-6-astra-reference-full-gpt-6-astra",
+      "kind": "pointwise",
+      "model": "gpt-6-astra",
+      "request": "assessment-requests/pointwise-newsroom-tuning-council-rezone-gpt-6-astra-reference-full-gpt-6-astra.json",
+      "prompt_sha256": "759fb3ac55bd5004d5e8b355491c18e2b2e33e9aff70d4f0b96a84a82e4b7d64",
+      "request_file_sha256": "65658d3445ad5adef4e7af976b40f9abde6b8e943ae2c47940ce300a7d6a940f"
+    },
+    {
+      "id": "pointwise-newsroom-tuning-council-rezone-gpt-6-astra-reference-full-claude-sonnet-5",
+      "kind": "pointwise",
+      "model": "claude-sonnet-5",
+      "request": "assessment-requests/pointwise-newsroom-tuning-council-rezone-gpt-6-astra-reference-full-claude-sonnet-5.json",
+      "prompt_sha256": "759fb3ac55bd5004d5e8b355491c18e2b2e33e9aff70d4f0b96a84a82e4b7d64",
+      "request_file_sha256": "61d9a89ccac6f64ea3811fa1b59aabbe3b7b1d22a87c6aadfa839f8ae63fb318"
+    },
+    {
+      "id": "pointwise-newsroom-tuning-council-rezone-gpt-6-astra-scoped-full-gpt-6-astra",
+      "kind": "pointwise",
+      "model": "gpt-6-astra",
+      "request": "assessment-requests/pointwise-newsroom-tuning-council-rezone-gpt-6-astra-scoped-full-gpt-6-astra.json",
+      "prompt_sha256": "20347dd72b167d39ebbbd1880c6f5bac69002aebb16cc3ae0bc91939dc76354c",
+      "request_file_sha256": "bea2ebdb5e10400f8eec7a5ad834f9fccb5ff46014782d931a5ba487717747b6"
+    },
+    {
+      "id": "pointwise-newsroom-tuning-council-rezone-gpt-6-astra-scoped-full-claude-sonnet-5",
+      "kind": "pointwise",
+      "model": "claude-sonnet-5",
+      "request": "assessment-requests/pointwise-newsroom-tuning-council-rezone-gpt-6-astra-scoped-full-claude-sonnet-5.json",
+      "prompt_sha256": "20347dd72b167d39ebbbd1880c6f5bac69002aebb16cc3ae0bc91939dc76354c",
+      "request_file_sha256": "bedefdd482ddfac7b7a6136351aa8bac7455efdb092e637eb565942adeba5638"
+    },
+    {
+      "id": "preference-005-gpt-6-astra",
+      "kind": "preference",
+      "model": "gpt-6-astra",
+      "request": "assessment-requests/preference-005-gpt-6-astra.json",
+      "prompt_sha256": "853f726b9835425dad506c931b7573ca3716c26295afec0b199658cac94a3e48",
+      "request_file_sha256": "f201cd9f783731d993faa027f7b8d1264d105b850229605a9e2c00d964814dce"
+    },
+    {
+      "id": "preference-005-claude-sonnet-5",
+      "kind": "preference",
+      "model": "claude-sonnet-5",
+      "request": "assessment-requests/preference-005-claude-sonnet-5.json",
+      "prompt_sha256": "853f726b9835425dad506c931b7573ca3716c26295afec0b199658cac94a3e48",
+      "request_file_sha256": "e0cefd5a55e6c19510ac12c8d236c288f320a56d55f43207da1118852004cd08"
+    },
+    {
+      "id": "preference-006-gpt-6-astra",
+      "kind": "preference",
+      "model": "gpt-6-astra",
+      "request": "assessment-requests/preference-006-gpt-6-astra.json",
+      "prompt_sha256": "c496f22baa983f43119d1bdb3a0277af5d667eba49c6404bbffb55c895fa47b4",
+      "request_file_sha256": "9dec5804e3fe52efff4c0eb9a60b5cab804524afed5c07d73a00f45bcc5dcd9d"
+    },
+    {
+      "id": "preference-006-claude-sonnet-5",
+      "kind": "preference",
+      "model": "claude-sonnet-5",
+      "request": "assessment-requests/preference-006-claude-sonnet-5.json",
+      "prompt_sha256": "c496f22baa983f43119d1bdb3a0277af5d667eba49c6404bbffb55c895fa47b4",
+      "request_file_sha256": "e8e97f03ae4c229e94b435b968e46fc8061e29ec52e93b999b493f3ef03f3fe9"
+    },
+    {
+      "id": "pointwise-newsroom-tuning-grocery-closures-claude-sonnet-5-bare-task-gpt-6-astra",
+      "kind": "pointwise",
+      "model": "gpt-6-astra",
+      "request": "assessment-requests/pointwise-newsroom-tuning-grocery-closures-claude-sonnet-5-bare-task-gpt-6-astra.json",
+      "prompt_sha256": "c19b86266718bf6c1d0ae35f4532dccbb2f56cc2f6ead0a419771dc2240549be",
+      "request_file_sha256": "3282a663214d8c090078077744e7c7b67615efdf428f19f9f5f8c34379d5194d"
+    },
+    {
+      "id": "pointwise-newsroom-tuning-grocery-closures-claude-sonnet-5-bare-task-claude-sonnet-5",
+      "kind": "pointwise",
+      "model": "claude-sonnet-5",
+      "request": "assessment-requests/pointwise-newsroom-tuning-grocery-closures-claude-sonnet-5-bare-task-claude-sonnet-5.json",
+      "prompt_sha256": "c19b86266718bf6c1d0ae35f4532dccbb2f56cc2f6ead0a419771dc2240549be",
+      "request_file_sha256": "8dd91774684983254b865d582445ecaec1b710b06a210fc388218a0d376fb68f"
+    },
+    {
+      "id": "pointwise-newsroom-tuning-grocery-closures-claude-sonnet-5-reference-full-gpt-6-astra",
+      "kind": "pointwise",
+      "model": "gpt-6-astra",
+      "request": "assessment-requests/pointwise-newsroom-tuning-grocery-closures-claude-sonnet-5-reference-full-gpt-6-astra.json",
+      "prompt_sha256": "45b9860e4f7044782404c9d5b7001d99083452377f6ce3220fa58d3410bef8bb",
+      "request_file_sha256": "0815bb8c9b2d8d6213bb369e9b56ab861abe2455850b01653ed44c7080a53cfd"
+    },
+    {
+      "id": "pointwise-newsroom-tuning-grocery-closures-claude-sonnet-5-reference-full-claude-sonnet-5",
+      "kind": "pointwise",
+      "model": "claude-sonnet-5",
+      "request": "assessment-requests/pointwise-newsroom-tuning-grocery-closures-claude-sonnet-5-reference-full-claude-sonnet-5.json",
+      "prompt_sha256": "45b9860e4f7044782404c9d5b7001d99083452377f6ce3220fa58d3410bef8bb",
+      "request_file_sha256": "f190710c756cbfba0c3154cd14bdbd776d0ca3b40670f1a384bf4e352af78a56"
+    },
+    {
+      "id": "pointwise-newsroom-tuning-grocery-closures-claude-sonnet-5-scoped-full-gpt-6-astra",
+      "kind": "pointwise",
+      "model": "gpt-6-astra",
+      "request": "assessment-requests/pointwise-newsroom-tuning-grocery-closures-claude-sonnet-5-scoped-full-gpt-6-astra.json",
+      "prompt_sha256": "72eb1e057e0dd7076f180c325326b77c1bdfe86d954b981753e08aa3f097ca83",
+      "request_file_sha256": "141f17c9d89451135e19e199685454994ed234b0c698e91089669f66a22b22d5"
+    },
+    {
+      "id": "pointwise-newsroom-tuning-grocery-closures-claude-sonnet-5-scoped-full-claude-sonnet-5",
+      "kind": "pointwise",
+      "model": "claude-sonnet-5",
+      "request": "assessment-requests/pointwise-newsroom-tuning-grocery-closures-claude-sonnet-5-scoped-full-claude-sonnet-5.json",
+      "prompt_sha256": "72eb1e057e0dd7076f180c325326b77c1bdfe86d954b981753e08aa3f097ca83",
+      "request_file_sha256": "84e4470ce55c28e43321af27733eb66b217dc663ad6cf5d17330902343d508eb"
+    },
+    {
+      "id": "preference-007-gpt-6-astra",
+      "kind": "preference",
+      "model": "gpt-6-astra",
+      "request": "assessment-requests/preference-007-gpt-6-astra.json",
+      "prompt_sha256": "44f2d92a545b36cc4d2709a8ec334435d75d5b34242ae8993f5c7a2b5075821a",
+      "request_file_sha256": "67c5f14a7d36712394c1bc302a5c586c9f0b87b8f00274044869233318aaeb9f"
+    },
+    {
+      "id": "preference-007-claude-sonnet-5",
+      "kind": "preference",
+      "model": "claude-sonnet-5",
+      "request": "assessment-requests/preference-007-claude-sonnet-5.json",
+      "prompt_sha256": "44f2d92a545b36cc4d2709a8ec334435d75d5b34242ae8993f5c7a2b5075821a",
+      "request_file_sha256": "9dd01b5346e74fe4cba67e9560296f5105827f3e6daca8b9f9e2bace3179a701"
+    },
+    {
+      "id": "preference-008-gpt-6-astra",
+      "kind": "preference",
+      "model": "gpt-6-astra",
+      "request": "assessment-requests/preference-008-gpt-6-astra.json",
+      "prompt_sha256": "9b29255425489c5becd03990b06822cb51b0b4fa351029817387aa78eb7b20c0",
+      "request_file_sha256": "2eb713d17e4eac05c2ead6d77a523188ca3fde1f54a965c2f86fd9f2ec3b640d"
+    },
+    {
+      "id": "preference-008-claude-sonnet-5",
+      "kind": "preference",
+      "model": "claude-sonnet-5",
+      "request": "assessment-requests/preference-008-claude-sonnet-5.json",
+      "prompt_sha256": "9b29255425489c5becd03990b06822cb51b0b4fa351029817387aa78eb7b20c0",
+      "request_file_sha256": "6425bfa24f45253afdcb6af19d768861bbfc9f902525f640daa5c0afa541b81f"
+    },
+    {
+      "id": "pointwise-newsroom-tuning-grocery-closures-gpt-6-astra-bare-task-gpt-6-astra",
+      "kind": "pointwise",
+      "model": "gpt-6-astra",
+      "request": "assessment-requests/pointwise-newsroom-tuning-grocery-closures-gpt-6-astra-bare-task-gpt-6-astra.json",
+      "prompt_sha256": "c56d329663d05aae0a898e91706249ca82c354407d0a8ef1f7a4a3809ae084be",
+      "request_file_sha256": "d685df4fa1175b2dc1c4e86cbf4c21353ca6c5f3fdf05f4fccba867142f12d3d"
+    },
+    {
+      "id": "pointwise-newsroom-tuning-grocery-closures-gpt-6-astra-bare-task-claude-sonnet-5",
+      "kind": "pointwise",
+      "model": "claude-sonnet-5",
+      "request": "assessment-requests/pointwise-newsroom-tuning-grocery-closures-gpt-6-astra-bare-task-claude-sonnet-5.json",
+      "prompt_sha256": "c56d329663d05aae0a898e91706249ca82c354407d0a8ef1f7a4a3809ae084be",
+      "request_file_sha256": "4f5f358628764b3b704b6032e06d1f716d192c95dff8cc85742bad285b51465d"
+    },
+    {
+      "id": "pointwise-newsroom-tuning-grocery-closures-gpt-6-astra-reference-full-gpt-6-astra",
+      "kind": "pointwise",
+      "model": "gpt-6-astra",
+      "request": "assessment-requests/pointwise-newsroom-tuning-grocery-closures-gpt-6-astra-reference-full-gpt-6-astra.json",
+      "prompt_sha256": "487c2de9c254a43c05b957ca235fc912578ef1db86b3b01c1125e7585212b37d",
+      "request_file_sha256": "f7518f7a36e26eb92392e62845cb2f6210ef4e39337c6419b7826a087476510a"
+    },
+    {
+      "id": "pointwise-newsroom-tuning-grocery-closures-gpt-6-astra-reference-full-claude-sonnet-5",
+      "kind": "pointwise",
+      "model": "claude-sonnet-5",
+      "request": "assessment-requests/pointwise-newsroom-tuning-grocery-closures-gpt-6-astra-reference-full-claude-sonnet-5.json",
+      "prompt_sha256": "487c2de9c254a43c05b957ca235fc912578ef1db86b3b01c1125e7585212b37d",
+      "request_file_sha256": "2ab88e613e128acfdf80bfbbc53029300783dfa0df19a2f7c72af243ad33b66d"
+    },
+    {
+      "id": "pointwise-newsroom-tuning-grocery-closures-gpt-6-astra-scoped-full-gpt-6-astra",
+      "kind": "pointwise",
+      "model": "gpt-6-astra",
+      "request": "assessment-requests/pointwise-newsroom-tuning-grocery-closures-gpt-6-astra-scoped-full-gpt-6-astra.json",
+      "prompt_sha256": "a89135a4e4ab04ac6f2204acfc4474e0e42756b23232a6ef0ed2d62decd17a1c",
+      "request_file_sha256": "32b45cceb4ea96e4828f04ef3800b187c3d1d9159bde0e98e86e035dfa5badd9"
+    },
+    {
+      "id": "pointwise-newsroom-tuning-grocery-closures-gpt-6-astra-scoped-full-claude-sonnet-5",
+      "kind": "pointwise",
+      "model": "claude-sonnet-5",
+      "request": "assessment-requests/pointwise-newsroom-tuning-grocery-closures-gpt-6-astra-scoped-full-claude-sonnet-5.json",
+      "prompt_sha256": "a89135a4e4ab04ac6f2204acfc4474e0e42756b23232a6ef0ed2d62decd17a1c",
+      "request_file_sha256": "f2b075b2a675ccc6b3dfaec928b9d7b92524be91b7c453fb9acfdd441715b2c7"
+    },
+    {
+      "id": "preference-009-gpt-6-astra",
+      "kind": "preference",
+      "model": "gpt-6-astra",
+      "request": "assessment-requests/preference-009-gpt-6-astra.json",
+      "prompt_sha256": "c4535d95ec878337fb602ac2d8e175dca0b8fae2fece953afbde178a39277f64",
+      "request_file_sha256": "7b13dc62cce7ce44bae7b0cf2e1bbc064c677bd0ecf95f246a306f9914039f01"
+    },
+    {
+      "id": "preference-009-claude-sonnet-5",
+      "kind": "preference",
+      "model": "claude-sonnet-5",
+      "request": "assessment-requests/preference-009-claude-sonnet-5.json",
+      "prompt_sha256": "c4535d95ec878337fb602ac2d8e175dca0b8fae2fece953afbde178a39277f64",
+      "request_file_sha256": "bd85de10e99de7295ee0a49cd4662678be9eb9bdf6b857eb8bd4e92b1663d2d5"
+    },
+    {
+      "id": "preference-010-gpt-6-astra",
+      "kind": "preference",
+      "model": "gpt-6-astra",
+      "request": "assessment-requests/preference-010-gpt-6-astra.json",
+      "prompt_sha256": "fcfb4cecd5682351716761c4bc7972b898d388146c39569899e149181c840b26",
+      "request_file_sha256": "50ec2c4e3d2be0e2df98ba0574d2e3eb4f428006fe2b432c0b20ca9c4d35d742"
+    },
+    {
+      "id": "preference-010-claude-sonnet-5",
+      "kind": "preference",
+      "model": "claude-sonnet-5",
+      "request": "assessment-requests/preference-010-claude-sonnet-5.json",
+      "prompt_sha256": "fcfb4cecd5682351716761c4bc7972b898d388146c39569899e149181c840b26",
+      "request_file_sha256": "20fcd5a2a5d759a2ec9e72b20ab95ba9330c54dd1e31843b48d43059443fd1d8"
+    },
+    {
+      "id": "pointwise-newsroom-tuning-managed-retreat-claude-sonnet-5-bare-task-gpt-6-astra",
+      "kind": "pointwise",
+      "model": "gpt-6-astra",
+      "request": "assessment-requests/pointwise-newsroom-tuning-managed-retreat-claude-sonnet-5-bare-task-gpt-6-astra.json",
+      "prompt_sha256": "d0571d41f5dcb98b18f87a6afccf2787ba084e323ef78128631dc3457af8cead",
+      "request_file_sha256": "23b7779cd52003b7736c5a22bb089d0bb4b8970f88e64111f251f7465880bc41"
+    },
+    {
+      "id": "pointwise-newsroom-tuning-managed-retreat-claude-sonnet-5-bare-task-claude-sonnet-5",
+      "kind": "pointwise",
+      "model": "claude-sonnet-5",
+      "request": "assessment-requests/pointwise-newsroom-tuning-managed-retreat-claude-sonnet-5-bare-task-claude-sonnet-5.json",
+      "prompt_sha256": "d0571d41f5dcb98b18f87a6afccf2787ba084e323ef78128631dc3457af8cead",
+      "request_file_sha256": "c18e361d898e14345a4b7130c9952f136cca024c5bdaf9cf249c8b83d33698fa"
+    },
+    {
+      "id": "pointwise-newsroom-tuning-managed-retreat-claude-sonnet-5-reference-full-gpt-6-astra",
+      "kind": "pointwise",
+      "model": "gpt-6-astra",
+      "request": "assessment-requests/pointwise-newsroom-tuning-managed-retreat-claude-sonnet-5-reference-full-gpt-6-astra.json",
+      "prompt_sha256": "f4daa5adbbeac1a9fb80f04f9a719dcb18775d33b46bc65cb1d4ecbc2b4fc1b2",
+      "request_file_sha256": "23be962b7d71824b3228ea0ff0d13254cbc4a45c85181d253a41f3c8d93be5cc"
+    },
+    {
+      "id": "pointwise-newsroom-tuning-managed-retreat-claude-sonnet-5-reference-full-claude-sonnet-5",
+      "kind": "pointwise",
+      "model": "claude-sonnet-5",
+      "request": "assessment-requests/pointwise-newsroom-tuning-managed-retreat-claude-sonnet-5-reference-full-claude-sonnet-5.json",
+      "prompt_sha256": "f4daa5adbbeac1a9fb80f04f9a719dcb18775d33b46bc65cb1d4ecbc2b4fc1b2",
+      "request_file_sha256": "848cf14b0ee3ab2eb914556a3a5b372d55e2aa3d3259bf9dfe5ae1dcd79bea1a"
+    },
+    {
+      "id": "pointwise-newsroom-tuning-managed-retreat-claude-sonnet-5-scoped-full-gpt-6-astra",
+      "kind": "pointwise",
+      "model": "gpt-6-astra",
+      "request": "assessment-requests/pointwise-newsroom-tuning-managed-retreat-claude-sonnet-5-scoped-full-gpt-6-astra.json",
+      "prompt_sha256": "0286db43b9f6f8d8a748e383a208824fa5c499556efe78f9f9c1f9b6f87bd25d",
+      "request_file_sha256": "c749205f5462c074a145d084aa457fb8e6c68496ebe19e4c6fe0746388bf7702"
+    },
+    {
+      "id": "pointwise-newsroom-tuning-managed-retreat-claude-sonnet-5-scoped-full-claude-sonnet-5",
+      "kind": "pointwise",
+      "model": "claude-sonnet-5",
+      "request": "assessment-requests/pointwise-newsroom-tuning-managed-retreat-claude-sonnet-5-scoped-full-claude-sonnet-5.json",
+      "prompt_sha256": "0286db43b9f6f8d8a748e383a208824fa5c499556efe78f9f9c1f9b6f87bd25d",
+      "request_file_sha256": "667447727b9cb10645b2f7925856d61825a15abf4ecdecdf82425dec88f6c50a"
+    },
+    {
+      "id": "preference-011-gpt-6-astra",
+      "kind": "preference",
+      "model": "gpt-6-astra",
+      "request": "assessment-requests/preference-011-gpt-6-astra.json",
+      "prompt_sha256": "525df63e09a8db67893b4466678615bd0e26f3670c1cd3926ced1bb7df0f63d4",
+      "request_file_sha256": "683ca20375bb64919b68943035d281b1d60e28ce89c1527e80ed107d1d28490c"
+    },
+    {
+      "id": "preference-011-claude-sonnet-5",
+      "kind": "preference",
+      "model": "claude-sonnet-5",
+      "request": "assessment-requests/preference-011-claude-sonnet-5.json",
+      "prompt_sha256": "525df63e09a8db67893b4466678615bd0e26f3670c1cd3926ced1bb7df0f63d4",
+      "request_file_sha256": "83eaff48ede3bc79f7e4f6aea8ac951771841a613663bce06c7bf86cc3b810dd"
+    },
+    {
+      "id": "preference-012-gpt-6-astra",
+      "kind": "preference",
+      "model": "gpt-6-astra",
+      "request": "assessment-requests/preference-012-gpt-6-astra.json",
+      "prompt_sha256": "ecbe65dacd141eed8524129ae85c48b61449c0e72d1e0ab17007fc7918d4dab4",
+      "request_file_sha256": "75d0fc215cb72ed24d3ac2965856d51c4087162c68b1d372f48e0eb092c3ad3c"
+    },
+    {
+      "id": "preference-012-claude-sonnet-5",
+      "kind": "preference",
+      "model": "claude-sonnet-5",
+      "request": "assessment-requests/preference-012-claude-sonnet-5.json",
+      "prompt_sha256": "ecbe65dacd141eed8524129ae85c48b61449c0e72d1e0ab17007fc7918d4dab4",
+      "request_file_sha256": "28daef7cfb0fde4d4b6c4be7a2eb238f5bdcc5bcbd35f9a7869eac0afce3ebb6"
+    },
+    {
+      "id": "pointwise-newsroom-tuning-managed-retreat-gpt-6-astra-bare-task-gpt-6-astra",
+      "kind": "pointwise",
+      "model": "gpt-6-astra",
+      "request": "assessment-requests/pointwise-newsroom-tuning-managed-retreat-gpt-6-astra-bare-task-gpt-6-astra.json",
+      "prompt_sha256": "605c7c02f6ba542e7a9e0eaeada4e43dee70f40bdf6abc9af8c6c0f4391fa37a",
+      "request_file_sha256": "f671e2bdccaecca0dcf21f49f7f71638b2b2d05339bd173c2a776fedb8eaf579"
+    },
+    {
+      "id": "pointwise-newsroom-tuning-managed-retreat-gpt-6-astra-bare-task-claude-sonnet-5",
+      "kind": "pointwise",
+      "model": "claude-sonnet-5",
+      "request": "assessment-requests/pointwise-newsroom-tuning-managed-retreat-gpt-6-astra-bare-task-claude-sonnet-5.json",
+      "prompt_sha256": "605c7c02f6ba542e7a9e0eaeada4e43dee70f40bdf6abc9af8c6c0f4391fa37a",
+      "request_file_sha256": "2961c1905b285bc599fce0ae57a486c0132bebaa7c460571045577c67f4e3edf"
+    },
+    {
+      "id": "pointwise-newsroom-tuning-managed-retreat-gpt-6-astra-reference-full-gpt-6-astra",
+      "kind": "pointwise",
+      "model": "gpt-6-astra",
+      "request": "assessment-requests/pointwise-newsroom-tuning-managed-retreat-gpt-6-astra-reference-full-gpt-6-astra.json",
+      "prompt_sha256": "062e48d44cec7f967ba168cc4c46ce20161d1922396de13e720956e3f3684dee",
+      "request_file_sha256": "47f57746b80157cadfd644364896a990fb2483b0666bbbd30704024bd9f4413e"
+    },
+    {
+      "id": "pointwise-newsroom-tuning-managed-retreat-gpt-6-astra-reference-full-claude-sonnet-5",
+      "kind": "pointwise",
+      "model": "claude-sonnet-5",
+      "request": "assessment-requests/pointwise-newsroom-tuning-managed-retreat-gpt-6-astra-reference-full-claude-sonnet-5.json",
+      "prompt_sha256": "062e48d44cec7f967ba168cc4c46ce20161d1922396de13e720956e3f3684dee",
+      "request_file_sha256": "d5a8845c7ceee45e64f7a7b1d402f617f3a7baf5071bba38182ba6e34f2da72e"
+    },
+    {
+      "id": "pointwise-newsroom-tuning-managed-retreat-gpt-6-astra-scoped-full-gpt-6-astra",
+      "kind": "pointwise",
+      "model": "gpt-6-astra",
+      "request": "assessment-requests/pointwise-newsroom-tuning-managed-retreat-gpt-6-astra-scoped-full-gpt-6-astra.json",
+      "prompt_sha256": "0703cb1f32c8facd642047c582cbcdb587d5563ffdf35262cdaeb58bc040e93b",
+      "request_file_sha256": "76867bca7461d6bfe2f2fbd19870001b67757b4806f26c14e37fb3629ad3a842"
+    },
+    {
+      "id": "pointwise-newsroom-tuning-managed-retreat-gpt-6-astra-scoped-full-claude-sonnet-5",
+      "kind": "pointwise",
+      "model": "claude-sonnet-5",
+      "request": "assessment-requests/pointwise-newsroom-tuning-managed-retreat-gpt-6-astra-scoped-full-claude-sonnet-5.json",
+      "prompt_sha256": "0703cb1f32c8facd642047c582cbcdb587d5563ffdf35262cdaeb58bc040e93b",
+      "request_file_sha256": "49f5d806536c724c6aa914eba97e86474510bedbb621968732b99b9da9c08a29"
+    },
+    {
+      "id": "preference-013-gpt-6-astra",
+      "kind": "preference",
+      "model": "gpt-6-astra",
+      "request": "assessment-requests/preference-013-gpt-6-astra.json",
+      "prompt_sha256": "b94a9a9eeaf424acde35f407c12a3825c571a3e2df5ac7642dbe83a089616acb",
+      "request_file_sha256": "9c1037aa4f2c3fbc4384025b54ffeeada88a5ece5cf519ee9a3dbef6f52b7ef5"
+    },
+    {
+      "id": "preference-013-claude-sonnet-5",
+      "kind": "preference",
+      "model": "claude-sonnet-5",
+      "request": "assessment-requests/preference-013-claude-sonnet-5.json",
+      "prompt_sha256": "b94a9a9eeaf424acde35f407c12a3825c571a3e2df5ac7642dbe83a089616acb",
+      "request_file_sha256": "89f7bda4be6defa8f3fc0bcc4fb53122f5543f617bb7f12de8fb6ade07483724"
+    },
+    {
+      "id": "preference-014-gpt-6-astra",
+      "kind": "preference",
+      "model": "gpt-6-astra",
+      "request": "assessment-requests/preference-014-gpt-6-astra.json",
+      "prompt_sha256": "710eff4f54c8c27eb8c2d412d6107b1fe742c321dd464e98c92b8fc13bb9ad07",
+      "request_file_sha256": "c994d70c2dac5e53d2262703341b9e5c376ee30e206b9f6711e379655aff0421"
+    },
+    {
+      "id": "preference-014-claude-sonnet-5",
+      "kind": "preference",
+      "model": "claude-sonnet-5",
+      "request": "assessment-requests/preference-014-claude-sonnet-5.json",
+      "prompt_sha256": "710eff4f54c8c27eb8c2d412d6107b1fe742c321dd464e98c92b8fc13bb9ad07",
+      "request_file_sha256": "799bdcf1e02c97108dd30b06123b7a84bbb82e3136a918165213561ef5756e24"
+    },
+    {
+      "id": "pointwise-newsroom-tuning-municipal-bonds-claude-sonnet-5-bare-task-gpt-6-astra",
+      "kind": "pointwise",
+      "model": "gpt-6-astra",
+      "request": "assessment-requests/pointwise-newsroom-tuning-municipal-bonds-claude-sonnet-5-bare-task-gpt-6-astra.json",
+      "prompt_sha256": "35026b6d0b8b4b4533b0b8bda82f7b224cc5c9689c436f8e9f348959b7c2ded1",
+      "request_file_sha256": "43faa707074b573f091db52418c2c948789ed3f0dfc614902b16623d189fd694"
+    },
+    {
+      "id": "pointwise-newsroom-tuning-municipal-bonds-claude-sonnet-5-bare-task-claude-sonnet-5",
+      "kind": "pointwise",
+      "model": "claude-sonnet-5",
+      "request": "assessment-requests/pointwise-newsroom-tuning-municipal-bonds-claude-sonnet-5-bare-task-claude-sonnet-5.json",
+      "prompt_sha256": "35026b6d0b8b4b4533b0b8bda82f7b224cc5c9689c436f8e9f348959b7c2ded1",
+      "request_file_sha256": "5e53b42d2d54da02ce3332d6c0f05d001f878a5da26dd0cac502ad6a5c8f5759"
+    },
+    {
+      "id": "pointwise-newsroom-tuning-municipal-bonds-claude-sonnet-5-reference-full-gpt-6-astra",
+      "kind": "pointwise",
+      "model": "gpt-6-astra",
+      "request": "assessment-requests/pointwise-newsroom-tuning-municipal-bonds-claude-sonnet-5-reference-full-gpt-6-astra.json",
+      "prompt_sha256": "1c39743d5b371b3df1fee028aa8ee49c4d7c68b97f51299a2508d27cb0db67d0",
+      "request_file_sha256": "d2af39ed1e58a599523284a57c13855bfa130376da7f03ca54402e6e2a5bfcf6"
+    },
+    {
+      "id": "pointwise-newsroom-tuning-municipal-bonds-claude-sonnet-5-reference-full-claude-sonnet-5",
+      "kind": "pointwise",
+      "model": "claude-sonnet-5",
+      "request": "assessment-requests/pointwise-newsroom-tuning-municipal-bonds-claude-sonnet-5-reference-full-claude-sonnet-5.json",
+      "prompt_sha256": "1c39743d5b371b3df1fee028aa8ee49c4d7c68b97f51299a2508d27cb0db67d0",
+      "request_file_sha256": "9c816a937cc080c2c0cbf35f7b93a291989e09b7bebc32ea80a3b26069051d53"
+    },
+    {
+      "id": "pointwise-newsroom-tuning-municipal-bonds-claude-sonnet-5-scoped-full-gpt-6-astra",
+      "kind": "pointwise",
+      "model": "gpt-6-astra",
+      "request": "assessment-requests/pointwise-newsroom-tuning-municipal-bonds-claude-sonnet-5-scoped-full-gpt-6-astra.json",
+      "prompt_sha256": "18b6b3d14f93a52fde677d93dbfc94434dccc84c7d6c2729595f6cb6734d14b0",
+      "request_file_sha256": "510e42c2035ea7a2161b0fe925cb5bce930fce4745bdb498bb37ff5d70c366cb"
+    },
+    {
+      "id": "pointwise-newsroom-tuning-municipal-bonds-claude-sonnet-5-scoped-full-claude-sonnet-5",
+      "kind": "pointwise",
+      "model": "claude-sonnet-5",
+      "request": "assessment-requests/pointwise-newsroom-tuning-municipal-bonds-claude-sonnet-5-scoped-full-claude-sonnet-5.json",
+      "prompt_sha256": "18b6b3d14f93a52fde677d93dbfc94434dccc84c7d6c2729595f6cb6734d14b0",
+      "request_file_sha256": "ab0519c1ece65e0585f848b58eedbab178722f6ffa8241b603a1b5c2c523d5c5"
+    },
+    {
+      "id": "preference-015-gpt-6-astra",
+      "kind": "preference",
+      "model": "gpt-6-astra",
+      "request": "assessment-requests/preference-015-gpt-6-astra.json",
+      "prompt_sha256": "a7311519ab02943bf1f5bf994ee47d10780be1c318a0fd9e1e955440d4ab8b2e",
+      "request_file_sha256": "b3533324dbd01886308336d2a41d4d9011bd0443408de67454bddefe2d125e27"
+    },
+    {
+      "id": "preference-015-claude-sonnet-5",
+      "kind": "preference",
+      "model": "claude-sonnet-5",
+      "request": "assessment-requests/preference-015-claude-sonnet-5.json",
+      "prompt_sha256": "a7311519ab02943bf1f5bf994ee47d10780be1c318a0fd9e1e955440d4ab8b2e",
+      "request_file_sha256": "ecc45471f88df36a6dfc1a811e0025b397b738c04fa922f018a89bd3222d0ddc"
+    },
+    {
+      "id": "preference-016-gpt-6-astra",
+      "kind": "preference",
+      "model": "gpt-6-astra",
+      "request": "assessment-requests/preference-016-gpt-6-astra.json",
+      "prompt_sha256": "ded784ce3ab6b47e571dfb564c63737ea9a1193cba48e63689305f9e87d6272b",
+      "request_file_sha256": "3b47f0fc64dfc50ff65d87b0453cf21cd07cc553db2d2cc5d02af8677bd0d16e"
+    },
+    {
+      "id": "preference-016-claude-sonnet-5",
+      "kind": "preference",
+      "model": "claude-sonnet-5",
+      "request": "assessment-requests/preference-016-claude-sonnet-5.json",
+      "prompt_sha256": "ded784ce3ab6b47e571dfb564c63737ea9a1193cba48e63689305f9e87d6272b",
+      "request_file_sha256": "8cce7e4452d25a7ae462902dba2f92f1f1512a3c1623e9f50e9ed95c6e631583"
+    },
+    {
+      "id": "pointwise-newsroom-tuning-municipal-bonds-gpt-6-astra-bare-task-gpt-6-astra",
+      "kind": "pointwise",
+      "model": "gpt-6-astra",
+      "request": "assessment-requests/pointwise-newsroom-tuning-municipal-bonds-gpt-6-astra-bare-task-gpt-6-astra.json",
+      "prompt_sha256": "362cc27fe680a17be6803052fb97d04a773a077c261d2e55848623f02cdebcec",
+      "request_file_sha256": "11a24403eea56e85c30287c3cb10a956a5fa708db8ad9e96fbe70c8677bd4811"
+    },
+    {
+      "id": "pointwise-newsroom-tuning-municipal-bonds-gpt-6-astra-bare-task-claude-sonnet-5",
+      "kind": "pointwise",
+      "model": "claude-sonnet-5",
+      "request": "assessment-requests/pointwise-newsroom-tuning-municipal-bonds-gpt-6-astra-bare-task-claude-sonnet-5.json",
+      "prompt_sha256": "362cc27fe680a17be6803052fb97d04a773a077c261d2e55848623f02cdebcec",
+      "request_file_sha256": "6adcfb753f5d05e8836e82b2178a8394a5decff43d28130e22c9985e776fd373"
+    },
+    {
+      "id": "pointwise-newsroom-tuning-municipal-bonds-gpt-6-astra-reference-full-gpt-6-astra",
+      "kind": "pointwise",
+      "model": "gpt-6-astra",
+      "request": "assessment-requests/pointwise-newsroom-tuning-municipal-bonds-gpt-6-astra-reference-full-gpt-6-astra.json",
+      "prompt_sha256": "0b3df9d365a6adac665d2e5dc48fad8b4e682f18551382d050b443cf915b3342",
+      "request_file_sha256": "f6310388c648398cd38d4c002804de0567953dd250d6c916c26a54b111c952e0"
+    },
+    {
+      "id": "pointwise-newsroom-tuning-municipal-bonds-gpt-6-astra-reference-full-claude-sonnet-5",
+      "kind": "pointwise",
+      "model": "claude-sonnet-5",
+      "request": "assessment-requests/pointwise-newsroom-tuning-municipal-bonds-gpt-6-astra-reference-full-claude-sonnet-5.json",
+      "prompt_sha256": "0b3df9d365a6adac665d2e5dc48fad8b4e682f18551382d050b443cf915b3342",
+      "request_file_sha256": "ee11de70d2c15061db9083043b703a084307e00f0aea4a48468ae5e9f853f9f8"
+    },
+    {
+      "id": "pointwise-newsroom-tuning-municipal-bonds-gpt-6-astra-scoped-full-gpt-6-astra",
+      "kind": "pointwise",
+      "model": "gpt-6-astra",
+      "request": "assessment-requests/pointwise-newsroom-tuning-municipal-bonds-gpt-6-astra-scoped-full-gpt-6-astra.json",
+      "prompt_sha256": "cadcf269ec6455e98ff2c9adf806fb691daae8876716e8cfc5741f5cab5edcde",
+      "request_file_sha256": "f2f9bc0181662ff2c0ff41aa1326847ffec234e743e4144aadb79ea2dbfa26b5"
+    },
+    {
+      "id": "pointwise-newsroom-tuning-municipal-bonds-gpt-6-astra-scoped-full-claude-sonnet-5",
+      "kind": "pointwise",
+      "model": "claude-sonnet-5",
+      "request": "assessment-requests/pointwise-newsroom-tuning-municipal-bonds-gpt-6-astra-scoped-full-claude-sonnet-5.json",
+      "prompt_sha256": "cadcf269ec6455e98ff2c9adf806fb691daae8876716e8cfc5741f5cab5edcde",
+      "request_file_sha256": "236047d0261e755f9454b1605ecf217188028ced091941a6105a09ee5a0ab1e9"
+    }
+  ],
+  "implementation_timing": "Templates were registered before writing; this numeric-ID adapter was implemented and frozen after writing and before any new judging responses.",
+  "human_reviews": 0,
+  "plan_sha256": "cd30ddbce3e41674485f9d39954df54c242144c36139c04d2653785338b624c3"
+}

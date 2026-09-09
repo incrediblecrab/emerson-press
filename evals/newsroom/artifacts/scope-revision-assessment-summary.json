@@ -1,0 +1,327 @@
+{
+  "kind": "verified-captures-unadjudicated-scope-revision-tuning",
+  "assessor": "model",
+  "human_reviews": 0,
+  "design_sha256": "64ada18f6aa5d0243f11c0d27f31ba43202bf335fa59138ef9e5baa008fbe935",
+  "assessment_plan_sha256": "cd30ddbce3e41674485f9d39954df54c242144c36139c04d2653785338b624c3",
+  "captured_judgments": 80,
+  "valid_preferences": 32,
+  "valid_pointwise": 45,
+  "invalid_pointwise": 3,
+  "newsroom_families": 4,
+  "newsroom_writer_case_groups": 8,
+  "preferences_by_baseline": {
+    "reference-full": {
+      "scoped-full": 6,
+      "tie": 3,
+      "reference-full": 7
+    },
+    "bare-task": {
+      "scoped-full": 8,
+      "tie": 2,
+      "bare-task": 6
+    }
+  },
+  "preferences_by_writer_and_judge": [
+    {
+      "baseline": "bare-task",
+      "writer": "claude-sonnet-5",
+      "judge": "claude-sonnet-5",
+      "planned_assessments": 4,
+      "tie": 1,
+      "bare-task": 1,
+      "scoped-full": 2
+    },
+    {
+      "baseline": "bare-task",
+      "writer": "claude-sonnet-5",
+      "judge": "gpt-6-astra",
+      "planned_assessments": 4,
+      "scoped-full": 3,
+      "bare-task": 1
+    },
+    {
+      "baseline": "bare-task",
+      "writer": "gpt-6-astra",
+      "judge": "claude-sonnet-5",
+      "planned_assessments": 4,
+      "tie": 1,
+      "bare-task": 2,
+      "scoped-full": 1
+    },
+    {
+      "baseline": "bare-task",
+      "writer": "gpt-6-astra",
+      "judge": "gpt-6-astra",
+      "planned_assessments": 4,
+      "scoped-full": 2,
+      "bare-task": 2
+    },
+    {
+      "baseline": "reference-full",
+      "writer": "claude-sonnet-5",
+      "judge": "claude-sonnet-5",
+      "planned_assessments": 4,
+      "tie": 1,
+      "reference-full": 2,
+      "scoped-full": 1
+    },
+    {
+      "baseline": "reference-full",
+      "writer": "claude-sonnet-5",
+      "judge": "gpt-6-astra",
+      "planned_assessments": 4,
+      "scoped-full": 2,
+      "reference-full": 2
+    },
+    {
+      "baseline": "reference-full",
+      "writer": "gpt-6-astra",
+      "judge": "claude-sonnet-5",
+      "planned_assessments": 4,
+      "tie": 2,
+      "reference-full": 2
+    },
+    {
+      "baseline": "reference-full",
+      "writer": "gpt-6-astra",
+      "judge": "gpt-6-astra",
+      "planned_assessments": 4,
+      "scoped-full": 3,
+      "reference-full": 1
+    }
+  ],
+  "pointwise_by_condition": {
+    "bare-task": {
+      "planned_assessments": 16,
+      "levels": {
+        "minor": 5,
+        "absent": 10,
+        "salient": 1
+      },
+      "fidelity": {
+        "flag": 4,
+        "no_flag": 12
+      }
+    },
+    "reference-full": {
+      "planned_assessments": 16,
+      "levels": {
+        "absent": 7,
+        "minor": 6,
+        "invalid": 2,
+        "salient": 1
+      },
+      "fidelity": {
+        "flag": 4,
+        "no_flag": 10,
+        "invalid": 2
+      }
+    },
+    "scoped-full": {
+      "planned_assessments": 16,
+      "levels": {
+        "absent": 7,
+        "minor": 6,
+        "invalid": 1,
+        "salient": 2
+      },
+      "fidelity": {
+        "flag": 7,
+        "no_flag": 8,
+        "invalid": 1
+      }
+    }
+  },
+  "pointwise_by_writer_and_judge": [
+    {
+      "condition": "bare-task",
+      "writer": "claude-sonnet-5",
+      "judge": "claude-sonnet-5",
+      "planned_assessments": 4,
+      "levels": {
+        "absent": 2,
+        "minor": 2
+      }
+    },
+    {
+      "condition": "bare-task",
+      "writer": "claude-sonnet-5",
+      "judge": "gpt-6-astra",
+      "planned_assessments": 4,
+      "levels": {
+        "minor": 2,
+        "absent": 2
+      }
+    },
+    {
+      "condition": "bare-task",
+      "writer": "gpt-6-astra",
+      "judge": "claude-sonnet-5",
+      "planned_assessments": 4,
+      "levels": {
+        "absent": 3,
+        "salient": 1
+      }
+    },
+    {
+      "condition": "bare-task",
+      "writer": "gpt-6-astra",
+      "judge": "gpt-6-astra",
+      "planned_assessments": 4,
+      "levels": {
+        "absent": 3,
+        "minor": 1
+      }
+    },
+    {
+      "condition": "reference-full",
+      "writer": "claude-sonnet-5",
+      "judge": "claude-sonnet-5",
+      "planned_assessments": 4,
+      "levels": {
+        "minor": 2,
+        "absent": 1,
+        "invalid": 1
+      }
+    },
+    {
+      "condition": "reference-full",
+      "writer": "claude-sonnet-5",
+      "judge": "gpt-6-astra",
+      "planned_assessments": 4,
+      "levels": {
+        "absent": 2,
+        "minor": 2
+      }
+    },
+    {
+      "condition": "reference-full",
+      "writer": "gpt-6-astra",
+      "judge": "claude-sonnet-5",
+      "planned_assessments": 4,
+      "levels": {
+        "minor": 1,
+        "absent": 1,
+        "invalid": 1,
+        "salient": 1
+      }
+    },
+    {
+      "condition": "reference-full",
+      "writer": "gpt-6-astra",
+      "judge": "gpt-6-astra",
+      "planned_assessments": 4,
+      "levels": {
+        "minor": 1,
+        "absent": 3
+      }
+    },
+    {
+      "condition": "scoped-full",
+      "writer": "claude-sonnet-5",
+      "judge": "claude-sonnet-5",
+      "planned_assessments": 4,
+      "levels": {
+        "absent": 1,
+        "invalid": 1,
+        "minor": 1,
+        "salient": 1
+      }
+    },
+    {
+      "condition": "scoped-full",
+      "writer": "claude-sonnet-5",
+      "judge": "gpt-6-astra",
+      "planned_assessments": 4,
+      "levels": {
+        "absent": 2,
+        "minor": 2
+      }
+    },
+    {
+      "condition": "scoped-full",
+      "writer": "gpt-6-astra",
+      "judge": "claude-sonnet-5",
+      "planned_assessments": 4,
+      "levels": {
+        "minor": 2,
+        "absent": 1,
+        "salient": 1
+      }
+    },
+    {
+      "condition": "scoped-full",
+      "writer": "gpt-6-astra",
+      "judge": "gpt-6-astra",
+      "planned_assessments": 4,
+      "levels": {
+        "minor": 1,
+        "absent": 3
+      }
+    }
+  ],
+  "paired_judge_agreement": [
+    {
+      "baseline": "reference-full",
+      "planned_writer_case_pairs": 8,
+      "both_valid": 8,
+      "same_preference": 2
+    },
+    {
+      "baseline": "bare-task",
+      "planned_writer_case_pairs": 8,
+      "both_valid": 8,
+      "same_preference": 4
+    }
+  ],
+  "failures": [
+    {
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-grocery-closures",
+      "writer": "claude-sonnet-5",
+      "condition": "scoped-full",
+      "record": "add9ed9b8245330da7792be0ccf931bf3d869a5b47c47965381ff55c22c95440",
+      "job": "pointwise-newsroom-tuning-grocery-closures-claude-sonnet-5-scoped-full-claude-sonnet-5",
+      "judge": "claude-sonnet-5",
+      "valid_assessment": false,
+      "error_type": "DocumentError",
+      "error": "invalid JSON: duplicate JSON key: 'evidence'"
+    },
+    {
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-managed-retreat",
+      "writer": "claude-sonnet-5",
+      "condition": "reference-full",
+      "record": "749ded2f94ad3e20f730b6f9b28e57db65ad4ff82abb17ab5fae1aee0787373b",
+      "job": "pointwise-newsroom-tuning-managed-retreat-claude-sonnet-5-reference-full-claude-sonnet-5",
+      "judge": "claude-sonnet-5",
+      "valid_assessment": false,
+      "error_type": "DocumentError",
+      "error": "source-aware pointwise assessment: missing fields []; unknown fields ['fidelity_reason_check']"
+    },
+    {
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-managed-retreat",
+      "writer": "gpt-6-astra",
+      "condition": "reference-full",
+      "record": "4bea5f3729cdd2ed97947c727c50a813c78b7b26b600ca4a806bb4fffd978d6e",
+      "job": "pointwise-newsroom-tuning-managed-retreat-gpt-6-astra-reference-full-claude-sonnet-5",
+      "judge": "claude-sonnet-5",
+      "valid_assessment": false,
+      "error_type": "DocumentError",
+      "error": "source-aware pointwise assessment: missing fields []; unknown fields ['source_type']"
+    }
+  ],
+  "limitations": [
+    "Four already-seen reporting families, not 32 independent preference trials or 48 independent slop observations.",
+    "Both judges assessed every comparison; disagreement and invalid assessments remain visible.",
+    "Scoped-full versus reference-full is a source-revision comparison with variant=full preserved in both records.",
+    "All newsroom conditions share a closed-record brief; results cannot be pooled with the earlier ordinary-brief cohort.",
+    "The new source-aware judging templates differ from the older five-field paired rubric and hidden-checklist packet.",
+    "The scoped revision was not preferred more often than the reference recipe in this pilot; no general quality gain is established.",
+    "The small scoped-versus-bare preference balance is not statistically powered superiority or evidence of slop elimination.",
+    "Pointwise factual flags remain model opinions, not an independently verified error rate.",
+    "No default promotion, new efficacy p-value or human editorial approval follows from the tuning results."
+  ]
+}

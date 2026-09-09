@@ -1,0 +1,169 @@
+{
+  "kind": "scope-revision-tuning-regression-artifacts",
+  "assessor": "deterministic-text-comparison",
+  "human_reviews": 0,
+  "design_sha256": "64ada18f6aa5d0243f11c0d27f31ba43202bf335fa59138ef9e5baa008fbe935",
+  "comparison_method": "Exact requested text after trimming only outer response whitespace; not a semantic-quality or factual-error rate.",
+  "by_condition": [
+    {
+      "condition": "reference-full",
+      "responses": 8,
+      "expected_text_matches": 6
+    },
+    {
+      "condition": "scoped-full",
+      "responses": 8,
+      "expected_text_matches": 6
+    }
+  ],
+  "results": [
+    {
+      "case_id": "fiction-stairwell-triad",
+      "writer": "claude-sonnet-5",
+      "condition": "reference-full",
+      "result_sha256": "b35e2751f43a25ec44eccd772af43a2799ae3bd7c92998b41aceddd2159eb192",
+      "expected_text": "Mara stopped on the stair. One knock for a visitor, two for a friend, three for trouble. From below came three knocks—slow, patient, certain.",
+      "actual_text": "Mara stopped on the stair. One knock for a visitor, two for a friend, three for trouble. From below came three knocks—slow, patient, certain.",
+      "matches_expected_text": true
+    },
+    {
+      "case_id": "fiction-stairwell-triad",
+      "writer": "gpt-6-astra",
+      "condition": "reference-full",
+      "result_sha256": "c6d5ab6cb82527baaada178dd2ae4325094f20b9c3a039bd2e72cd06ab163664",
+      "expected_text": "Mara stopped on the stair. One knock for a visitor, two for a friend, three for trouble. From below came three knocks—slow, patient, certain.",
+      "actual_text": "Mara stopped on the stair. One knock for a visitor, two for a friend, three for trouble. From below came three knocks—slow, patient, certain.",
+      "matches_expected_text": true
+    },
+    {
+      "case_id": "fiction-stairwell-triad",
+      "writer": "claude-sonnet-5",
+      "condition": "scoped-full",
+      "result_sha256": "8c8db68af6a76f54fc82c1898ed94731cbaa9417ec24bf040e86e8e24eb895f4",
+      "expected_text": "Mara stopped on the stair. One knock for a visitor, two for a friend, three for trouble. From below came three knocks—slow, patient, certain.",
+      "actual_text": "Mara stopped on the stair. One knock for a visitor, two for a friend, three for trouble. From below came three knocks—slow, patient, certain.",
+      "matches_expected_text": true
+    },
+    {
+      "case_id": "fiction-stairwell-triad",
+      "writer": "gpt-6-astra",
+      "condition": "scoped-full",
+      "result_sha256": "80bf7fd5d88bfd1feaacc86bd7c02bf9f2010b1dcfe5989d081b28d85e3af1f1",
+      "expected_text": "Mara stopped on the stair. One knock for a visitor, two for a friend, three for trouble. From below came three knocks—slow, patient, certain.",
+      "actual_text": "Mara stopped on the stair. One knock for a visitor, two for a friend, three for trouble. From below came three knocks—slow, patient, certain.",
+      "matches_expected_text": true
+    },
+    {
+      "case_id": "legal-staffing-grammar-only",
+      "writer": "claude-sonnet-5",
+      "condition": "reference-full",
+      "result_sha256": "75288ca4bcb844606a92e1f637dcaa80a5daeb87d8e822233fb77f2eed39d48d",
+      "expected_text": "The Supplier assigns two coordinators to the project. The Client retains approval of any replacement coordinator. Reassignment does not change the Client's ownership of the deliverables.",
+      "actual_text": "The Supplier assigns two coordinators to the project. The Client retains approval of any replacement coordinator. Reassignment does not change the Client's ownership of the deliverables.",
+      "matches_expected_text": true
+    },
+    {
+      "case_id": "legal-staffing-grammar-only",
+      "writer": "gpt-6-astra",
+      "condition": "reference-full",
+      "result_sha256": "4683d181a64ed421b0c90228b2cfa58879fc76c065f8e68591cfce1ae458e398",
+      "expected_text": "The Supplier assigns two coordinators to the project. The Client retains approval of any replacement coordinator. Reassignment does not change the Client's ownership of the deliverables.",
+      "actual_text": "The Supplier assigns two coordinators to the project. The Client retains approval of any replacement coordinator. Reassignment does not change the Client's ownership of the deliverables.",
+      "matches_expected_text": true
+    },
+    {
+      "case_id": "legal-staffing-grammar-only",
+      "writer": "claude-sonnet-5",
+      "condition": "scoped-full",
+      "result_sha256": "fb68dfc4c5eab6ac908f4d7eccf157fee3fabfc7469f91e1a6a9287258a48f7a",
+      "expected_text": "The Supplier assigns two coordinators to the project. The Client retains approval of any replacement coordinator. Reassignment does not change the Client's ownership of the deliverables.",
+      "actual_text": "The Supplier assigns two coordinators to the project. The Client retains approval of any replacement coordinator. Reassignment does not change the Client's ownership of the deliverables.",
+      "matches_expected_text": true
+    },
+    {
+      "case_id": "legal-staffing-grammar-only",
+      "writer": "gpt-6-astra",
+      "condition": "scoped-full",
+      "result_sha256": "610ca27836264884ed8477e415d64d7d126097cb3f5fa2643f8ee9357892a0ca",
+      "expected_text": "The Supplier assigns two coordinators to the project. The Client retains approval of any replacement coordinator. Reassignment does not change the Client's ownership of the deliverables.",
+      "actual_text": "The Supplier assigns two coordinators to the project. The Client retains approval of any replacement coordinator. Reassignment does not change the Client's ownership of the deliverables.",
+      "matches_expected_text": true
+    },
+    {
+      "case_id": "medical-attributed-uncertainty",
+      "writer": "claude-sonnet-5",
+      "condition": "reference-full",
+      "result_sha256": "8fcdf378977c3ab6617685e78439a440772a022a8b44e5fbe4c548972e4fdfba",
+      "expected_text": "The clinic's information sheet says the test result may help explain a symptom, but it cannot establish a diagnosis on its own. Ask the clinic who will explain your result and when.",
+      "actual_text": "The clinic's information sheet says the test result may help explain a symptom, but it cannot establish a diagnosis on its own. Ask the clinic who will explain your result and when it will be explained.",
+      "matches_expected_text": false
+    },
+    {
+      "case_id": "medical-attributed-uncertainty",
+      "writer": "gpt-6-astra",
+      "condition": "reference-full",
+      "result_sha256": "bddcdf9cb6eab1051a57ac5449b3d4e53fa3cc463add569088e3df33db1e91e2",
+      "expected_text": "The clinic's information sheet says the test result may help explain a symptom, but it cannot establish a diagnosis on its own. Ask the clinic who will explain your result and when.",
+      "actual_text": "The clinic's information sheet says the test result may help explain a symptom, but it cannot establish a diagnosis on its own. Ask the clinic who will explain your result and when.",
+      "matches_expected_text": true
+    },
+    {
+      "case_id": "medical-attributed-uncertainty",
+      "writer": "claude-sonnet-5",
+      "condition": "scoped-full",
+      "result_sha256": "c54b20e11dbe3731efedf2ad94d1c5023bcc1bf1966f53577f2879faea4466ae",
+      "expected_text": "The clinic's information sheet says the test result may help explain a symptom, but it cannot establish a diagnosis on its own. Ask the clinic who will explain your result and when.",
+      "actual_text": "The clinic's information sheet says the test result may help explain a symptom, but it cannot establish a diagnosis on its own. Ask the clinic who will explain your result, and when.",
+      "matches_expected_text": false
+    },
+    {
+      "case_id": "medical-attributed-uncertainty",
+      "writer": "gpt-6-astra",
+      "condition": "scoped-full",
+      "result_sha256": "ba4eb084d133e9f522d1f41043f518653a33216b9fb7bbfd80bd2b5b3261748e",
+      "expected_text": "The clinic's information sheet says the test result may help explain a symptom, but it cannot establish a diagnosis on its own. Ask the clinic who will explain your result and when.",
+      "actual_text": "The clinic's information sheet says the test result may help explain a symptom, but it cannot establish a diagnosis on its own. Ask the clinic who will explain your result and when.",
+      "matches_expected_text": true
+    },
+    {
+      "case_id": "press-supported-quote",
+      "writer": "claude-sonnet-5",
+      "condition": "reference-full",
+      "result_sha256": "6e0dbfdb1c62a29c006d18889d2bfb4df9320983a583d39942b199b337056b9f",
+      "expected_text": "Larch Market will close its indoor hall on Friday while electricians replace the lights, the market's notice says. Outdoor stalls will remain open. \"The hall is closed; the market is not,\" the notice says.",
+      "actual_text": "Draft matches all supplied facts (f1–f4), preserves the quoted contrast exactly, and has no language or fidelity problems requiring correction.\n\nLarch Market will close its indoor hall on Friday while electricians replace the lights, the market's notice says. Outdoor stalls will remain open. \"The hall is closed; the market is not,\" the notice says.",
+      "matches_expected_text": false
+    },
+    {
+      "case_id": "press-supported-quote",
+      "writer": "gpt-6-astra",
+      "condition": "reference-full",
+      "result_sha256": "26b50ed3d0d8f173c9fb0d5d714efbd42c5306ec4f92937c3fcd43be88a75916",
+      "expected_text": "Larch Market will close its indoor hall on Friday while electricians replace the lights, the market's notice says. Outdoor stalls will remain open. \"The hall is closed; the market is not,\" the notice says.",
+      "actual_text": "Larch Market will close its indoor hall on Friday while electricians replace the lights, the market's notice says. Outdoor stalls will remain open. \"The hall is closed; the market is not,\" the notice says.",
+      "matches_expected_text": true
+    },
+    {
+      "case_id": "press-supported-quote",
+      "writer": "claude-sonnet-5",
+      "condition": "scoped-full",
+      "result_sha256": "1a7e375c16fc6c9205e0fafb9e67396a99b1462bef91dbfdd01c464eceaa45db",
+      "expected_text": "Larch Market will close its indoor hall on Friday while electricians replace the lights, the market's notice says. Outdoor stalls will remain open. \"The hall is closed; the market is not,\" the notice says.",
+      "actual_text": "Draft matches all supplied facts exactly, including the exact quoted sentence, with correct attribution and no unsupported claims. No consequential language or fidelity problem exists.\n\nLarch Market will close its indoor hall on Friday while electricians replace the lights, the market's notice says. Outdoor stalls will remain open. \"The hall is closed; the market is not,\" the notice says.",
+      "matches_expected_text": false
+    },
+    {
+      "case_id": "press-supported-quote",
+      "writer": "gpt-6-astra",
+      "condition": "scoped-full",
+      "result_sha256": "1716d4c918ac67c28e9a4cb65012ccbb77e3cfa3b66e03bcd751057da427a324",
+      "expected_text": "Larch Market will close its indoor hall on Friday while electricians replace the lights, the market's notice says. Outdoor stalls will remain open. \"The hall is closed; the market is not,\" the notice says.",
+      "actual_text": "Larch Market will close its indoor hall on Friday while electricians replace the lights, the market's notice says. Outdoor stalls will remain open. \"The hall is closed; the market is not,\" the notice says.",
+      "matches_expected_text": true
+    }
+  ],
+  "limitations": [
+    "Four reused no-op/grammar cases, each written by two models per recipe.",
+    "A mismatch needs source-level review; a match is not a general safety or writing-quality certification."
+  ]
+}

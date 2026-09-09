@@ -1,0 +1,242 @@
+{
+  "kind": "parent-reviewed-objective-assessment-caveats",
+  "assessor": "model-plus-deterministic-counts",
+  "model": "gpt-6-astra",
+  "human_reviews": 0,
+  "design_sha256": "64ada18f6aa5d0243f11c0d27f31ba43202bf335fa59138ef9e5baa008fbe935",
+  "word_count_method": "Python str.split() on the unchanged response. The second count excludes its first blank-line-delimited paragraph; neither count is an editorial-quality score.",
+  "measurements": [
+    {
+      "case_id": "newsroom-tuning-council-rezone",
+      "writer": "claude-sonnet-5",
+      "condition": "bare-task",
+      "result_sha256": "fecfc36d0e8d3677a853074733b2a76e8d867fd834d8e6792c2ad336b23d14e4",
+      "whole_response_whitespace_words": 516,
+      "after_first_paragraph_whitespace_words": 506
+    },
+    {
+      "case_id": "newsroom-tuning-council-rezone",
+      "writer": "gpt-6-astra",
+      "condition": "bare-task",
+      "result_sha256": "430063fb19ffae8ac61f41862a5ddb4dda638adee102ae08bf8344ca22013a68",
+      "whole_response_whitespace_words": 474,
+      "after_first_paragraph_whitespace_words": 464
+    },
+    {
+      "case_id": "newsroom-tuning-council-rezone",
+      "writer": "claude-sonnet-5",
+      "condition": "reference-full",
+      "result_sha256": "6ae18bba1bc6dedf088804c1930d524e4e0cd103a93f08681368cb034b728fe5",
+      "whole_response_whitespace_words": 438,
+      "after_first_paragraph_whitespace_words": 425
+    },
+    {
+      "case_id": "newsroom-tuning-council-rezone",
+      "writer": "gpt-6-astra",
+      "condition": "reference-full",
+      "result_sha256": "86ef61e8661ef7283419eb0724cd735fe58d6dc1569b726857c5c5feff3e7344",
+      "whole_response_whitespace_words": 484,
+      "after_first_paragraph_whitespace_words": 474
+    },
+    {
+      "case_id": "newsroom-tuning-council-rezone",
+      "writer": "claude-sonnet-5",
+      "condition": "scoped-full",
+      "result_sha256": "ba37eb4b91b0fa9a16c0178b35bbb711edac2faa89918651acfbe29c2b2a2b5c",
+      "whole_response_whitespace_words": 410,
+      "after_first_paragraph_whitespace_words": 401
+    },
+    {
+      "case_id": "newsroom-tuning-council-rezone",
+      "writer": "gpt-6-astra",
+      "condition": "scoped-full",
+      "result_sha256": "846bb4662020c22459a821f69106d7ce9ce6737929fcef6f8109bad7800dfbd8",
+      "whole_response_whitespace_words": 482,
+      "after_first_paragraph_whitespace_words": 471
+    },
+    {
+      "case_id": "newsroom-tuning-grocery-closures",
+      "writer": "claude-sonnet-5",
+      "condition": "bare-task",
+      "result_sha256": "9aee429d879d64e9a82060bb4d7dace05717bbe47518a17dfddf0f1a8da57da4",
+      "whole_response_whitespace_words": 532,
+      "after_first_paragraph_whitespace_words": 518
+    },
+    {
+      "case_id": "newsroom-tuning-grocery-closures",
+      "writer": "gpt-6-astra",
+      "condition": "bare-task",
+      "result_sha256": "a28eff53987d8e779841d1f2e4799474e197dc8c0dfc76daa289068390a66de5",
+      "whole_response_whitespace_words": 489,
+      "after_first_paragraph_whitespace_words": 477
+    },
+    {
+      "case_id": "newsroom-tuning-grocery-closures",
+      "writer": "claude-sonnet-5",
+      "condition": "reference-full",
+      "result_sha256": "02572ff9c34afb5c8dea43ce0f0d04ae2f174e75830867102bb0cf24bdfdbd8c",
+      "whole_response_whitespace_words": 478,
+      "after_first_paragraph_whitespace_words": 465
+    },
+    {
+      "case_id": "newsroom-tuning-grocery-closures",
+      "writer": "gpt-6-astra",
+      "condition": "reference-full",
+      "result_sha256": "2397e422332ab3fce7326ed4a2b1d2b65b540d8cf098c4cd33fe0ddfd67e5404",
+      "whole_response_whitespace_words": 488,
+      "after_first_paragraph_whitespace_words": 475
+    },
+    {
+      "case_id": "newsroom-tuning-grocery-closures",
+      "writer": "claude-sonnet-5",
+      "condition": "scoped-full",
+      "result_sha256": "add9ed9b8245330da7792be0ccf931bf3d869a5b47c47965381ff55c22c95440",
+      "whole_response_whitespace_words": 487,
+      "after_first_paragraph_whitespace_words": 475
+    },
+    {
+      "case_id": "newsroom-tuning-grocery-closures",
+      "writer": "gpt-6-astra",
+      "condition": "scoped-full",
+      "result_sha256": "e6c2b76718eacdd1f32e3dac7c76a03341c0d44d28822e8d132a65891d05edd8",
+      "whole_response_whitespace_words": 485,
+      "after_first_paragraph_whitespace_words": 474
+    },
+    {
+      "case_id": "newsroom-tuning-managed-retreat",
+      "writer": "claude-sonnet-5",
+      "condition": "bare-task",
+      "result_sha256": "491e77fa76b61d3e720d607f24e6367acc698323314fff84cad0af976ad934c9",
+      "whole_response_whitespace_words": 656,
+      "after_first_paragraph_whitespace_words": 644
+    },
+    {
+      "case_id": "newsroom-tuning-managed-retreat",
+      "writer": "gpt-6-astra",
+      "condition": "bare-task",
+      "result_sha256": "5574ad4d1e044c20f4f0bae4c179632196c8c0800893ebeff96e34c560a6654b",
+      "whole_response_whitespace_words": 607,
+      "after_first_paragraph_whitespace_words": 595
+    },
+    {
+      "case_id": "newsroom-tuning-managed-retreat",
+      "writer": "claude-sonnet-5",
+      "condition": "reference-full",
+      "result_sha256": "749ded2f94ad3e20f730b6f9b28e57db65ad4ff82abb17ab5fae1aee0787373b",
+      "whole_response_whitespace_words": 651,
+      "after_first_paragraph_whitespace_words": 634
+    },
+    {
+      "case_id": "newsroom-tuning-managed-retreat",
+      "writer": "gpt-6-astra",
+      "condition": "reference-full",
+      "result_sha256": "4bea5f3729cdd2ed97947c727c50a813c78b7b26b600ca4a806bb4fffd978d6e",
+      "whole_response_whitespace_words": 606,
+      "after_first_paragraph_whitespace_words": 595
+    },
+    {
+      "case_id": "newsroom-tuning-managed-retreat",
+      "writer": "claude-sonnet-5",
+      "condition": "scoped-full",
+      "result_sha256": "8e5dfb8fa148201c7739d3bf0621b33c6d03691a91751e5aa08c613e23505f5f",
+      "whole_response_whitespace_words": 660,
+      "after_first_paragraph_whitespace_words": 645
+    },
+    {
+      "case_id": "newsroom-tuning-managed-retreat",
+      "writer": "gpt-6-astra",
+      "condition": "scoped-full",
+      "result_sha256": "198c11275d0cef4036c9dd72dd4f16de2a187a54995a5e7944d5b30d9fdd8d7e",
+      "whole_response_whitespace_words": 607,
+      "after_first_paragraph_whitespace_words": 594
+    },
+    {
+      "case_id": "newsroom-tuning-municipal-bonds",
+      "writer": "claude-sonnet-5",
+      "condition": "bare-task",
+      "result_sha256": "6f3f6fd2ca3f6d0625b485f10990011b2bc676165ce22e1c7a24bc3a962375a8",
+      "whole_response_whitespace_words": 649,
+      "after_first_paragraph_whitespace_words": 638
+    },
+    {
+      "case_id": "newsroom-tuning-municipal-bonds",
+      "writer": "gpt-6-astra",
+      "condition": "bare-task",
+      "result_sha256": "2141e09ecf804608c225fe948c214bc6fa87362df5b6e03732a55f7891b75d2d",
+      "whole_response_whitespace_words": 639,
+      "after_first_paragraph_whitespace_words": 628
+    },
+    {
+      "case_id": "newsroom-tuning-municipal-bonds",
+      "writer": "claude-sonnet-5",
+      "condition": "reference-full",
+      "result_sha256": "cd43a426fe744a689ab753f13ea56de628ea0a8684a355aecdd71ca356d34d57",
+      "whole_response_whitespace_words": 562,
+      "after_first_paragraph_whitespace_words": 551
+    },
+    {
+      "case_id": "newsroom-tuning-municipal-bonds",
+      "writer": "gpt-6-astra",
+      "condition": "reference-full",
+      "result_sha256": "c6bb45791bf267f9dad956fdff0679b4bf7731242205498ff2e627c11cd0fb59",
+      "whole_response_whitespace_words": 627,
+      "after_first_paragraph_whitespace_words": 618
+    },
+    {
+      "case_id": "newsroom-tuning-municipal-bonds",
+      "writer": "claude-sonnet-5",
+      "condition": "scoped-full",
+      "result_sha256": "d1b62e8fce9122e5014d3546c12a2722ec6adf943479b89755a7f0bbad91a052",
+      "whole_response_whitespace_words": 586,
+      "after_first_paragraph_whitespace_words": 576
+    },
+    {
+      "case_id": "newsroom-tuning-municipal-bonds",
+      "writer": "gpt-6-astra",
+      "condition": "scoped-full",
+      "result_sha256": "3967b215ff8f67e6de1a9eae306dd938392a5c89006ea499f8ad9b8137535409",
+      "whole_response_whitespace_words": 617,
+      "after_first_paragraph_whitespace_words": 608
+    }
+  ],
+  "specific_judge_claim_reviews": [
+    {
+      "job": "pointwise-newsroom-tuning-managed-retreat-claude-sonnet-5-scoped-full-claude-sonnet-5",
+      "result_sha256": "8e5dfb8fa148201c7739d3bf0621b33c6d03691a91751e5aa08c613e23505f5f",
+      "kind": "unsupported_cohort_subtraction",
+      "raw_fidelity_reason": "Paragraph 14 states two of the 112 holdouts have since asked to sell, which would logically leave 110 holdouts excluding Marsh, not 111 as stated in paragraph 16 ('Marsh and the 111 other holdouts'). This is a minor arithmetic inconsistency introduced by the writer that isn't present in the source notes, though it does not affect the core reporting.",
+      "source_facts": [
+        {
+          "id": "f7",
+          "text": "Of the roughly 800 homes originally targeted, 112 property owners declined to sell; those properties flooded in both 2019 and 2022. Beyond the 240 completed buyouts and 112 refusals, the notes do not classify the other initially targeted properties."
+        },
+        {
+          "id": "f19",
+          "text": "Two of the 112 holdout homeowners have since approached the county asking to sell; the county has no current program to accommodate them."
+        }
+      ],
+      "parent_review": "The source reports two later sale inquiries with no program to accommodate them, not two completed buyouts. Marsh plus 111 others equals the original 112-refusal cohort. Whether holdouts is the clearest current label is arguable; the asserted arithmetic error is not established."
+    },
+    {
+      "job": "pointwise-newsroom-tuning-managed-retreat-gpt-6-astra-scoped-full-gpt-6-astra",
+      "result_sha256": "198c11275d0cef4036c9dd72dd4f16de2a187a54995a5e7944d5b30d9fdd8d7e",
+      "kind": "incorrect_model_word_count",
+      "raw_fidelity_reason": "The article runs roughly 750 words before the headline, exceeding the brief's 450-to-650-word target. This is a task-coverage issue, not factual fabrication. No consequential distortion of the supplied events, quotations, figures or material qualifications was identified.",
+      "measured_whole_response_words": 607,
+      "parent_review": "The entire response, including its headline, is under 650 whitespace-separated words. The claimed roughly 750-word overrun is not supported."
+    },
+    {
+      "job": "pointwise-newsroom-tuning-municipal-bonds-claude-sonnet-5-bare-task-gpt-6-astra",
+      "result_sha256": "6f3f6fd2ca3f6d0625b485f10990011b2bc676165ce22e1c7a24bc3a962375a8",
+      "kind": "incorrect_model_word_count",
+      "raw_fidelity_reason": "At roughly 750 words, the article exceeds the brief's 450-to-650-word target. This is a task-coverage issue, not fabricated reporting. The principal amounts, dates, quotations, insurance coverage and material qualifications otherwise substantially track the supplied record.",
+      "measured_whole_response_words": 649,
+      "parent_review": "The entire response, including its headline, is under 650 whitespace-separated words. The claimed roughly 750-word overrun is not supported."
+    }
+  ],
+  "limitations": [
+    "Raw model opinions and original validity decisions are unchanged.",
+    "This is not an adjudication of every factual concern. Supported concerns remain, including a county described as a city and hurricane/program chronology conflation.",
+    "Small headline-dependent word-range differences should not be confused with the two demonstrably incorrect 750-word claims."
+  ]
+}

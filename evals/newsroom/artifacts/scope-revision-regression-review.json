@@ -1,0 +1,46 @@
+{
+  "kind": "parent-reviewed-regression-mismatches",
+  "assessor": "model",
+  "model": "gpt-6-astra",
+  "human_reviews": 0,
+  "source_summary_sha256": "cb4c2ed16cdc12a00766fd63b60eabe0bcdb1f9600e36d40c7d1863a57becd0c",
+  "reviewed_mismatches": [
+    {
+      "case_id": "medical-attributed-uncertainty",
+      "writer": "claude-sonnet-5",
+      "condition": "reference-full",
+      "result_sha256": "8fcdf378977c3ab6617685e78439a440772a022a8b44e5fbe4c548972e4fdfba",
+      "review": "Small copyedit; attribution, may/cannot diagnostic limits and the who/when question remain intact.",
+      "tested_meaning_preserved": true
+    },
+    {
+      "case_id": "medical-attributed-uncertainty",
+      "writer": "claude-sonnet-5",
+      "condition": "scoped-full",
+      "result_sha256": "c54b20e11dbe3731efedf2ad94d1c5023bcc1bf1966f53577f2879faea4466ae",
+      "review": "Small copyedit; attribution, may/cannot diagnostic limits and the who/when question remain intact.",
+      "tested_meaning_preserved": true
+    },
+    {
+      "case_id": "press-supported-quote",
+      "writer": "claude-sonnet-5",
+      "condition": "reference-full",
+      "result_sha256": "6e0dbfdb1c62a29c006d18889d2bfb4df9320983a583d39942b199b337056b9f",
+      "review": "Unrequested assessment preamble precedes the unchanged news item; no facts or quote words in the item were altered.",
+      "tested_meaning_preserved": true
+    },
+    {
+      "case_id": "press-supported-quote",
+      "writer": "claude-sonnet-5",
+      "condition": "scoped-full",
+      "result_sha256": "1a7e375c16fc6c9205e0fafb9e67396a99b1462bef91dbfdd01c464eceaa45db",
+      "review": "Unrequested assessment preamble precedes the unchanged news item; no facts or quote words in the item were altered.",
+      "tested_meaning_preserved": true
+    }
+  ],
+  "unchanged_exact_matches": 12,
+  "limitations": [
+    "The four mismatch texts were inspected directly; this is not a general safety certification.",
+    "Both recipes remain at 6/8 exact text matches; the scoped change did not fix no-op artifact delivery."
+  ]
+}

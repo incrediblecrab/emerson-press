@@ -85,7 +85,7 @@ The [evaluation workflow](evals/README.md) uses original supplied-fact cases, fr
 
 The [model-only tuning pilot](evals/synthetic/README.md) retains its actual responses, failed judgments and negative findings. Its full-versus-task-contract comparison used repository instructions in both conditions; it did not test repository use against an untreated draft. The [newsroom study](evals/newsroom/README.md) uses a `bare-task` control and explicit assessment of noticeable generic prose, not factuality alone.
 
-The modern newsroom tuning result is mixed and judge-dependent; it does not establish an overall gain or slop elimination. A separate [scoped-accuracy revision pilot](evals/newsroom/scope-revision-design.json) tests more natural handling of source limits while protecting necessary warnings and quoted wording. Earlier results must not be attributed to this revised payload.
+The modern newsroom tuning result is mixed and judge-dependent; it does not establish an overall gain or slop elimination. A separate [scoped-accuracy revision pilot](evals/newsroom/README.md#source-checking-and-the-scoped-revision) preserved the tested warnings but did not establish better prose than the earlier recipe. Earlier results must not be attributed to the revised payload.
 
 No powered or human-reviewed editorial-superiority result is established. A compact default must not be promoted on authoring checks or invented scores.
 

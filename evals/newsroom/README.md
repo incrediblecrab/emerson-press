@@ -186,8 +186,50 @@ against this scoped revision and a bare control. It plans 24 drafts from four
 already-seen newsroom families, plus 16 warning, quotation, voice and grammar
 regression responses. Both judges assess the newsroom writing. The current full
 recipe is therefore **not the same payload** as the earlier full-recipe archives;
-the revision has no measured improvement yet and is not a default-promotion or
-powered-efficacy result.
+the revision must not inherit their results or be presented as a default-promotion
+or powered-efficacy result.
+
+All 40 planned responses are now captured in
+`artifacts/scope-revision-writing.jsonl.xz`. Both full-recipe conditions matched the
+exact requested regression text in 6/8 replies. The four mismatches preserve the
+tested meaning and medical warning, but include small medical copyedits or an
+unrequested preamble before an otherwise unchanged news item. The
+[text comparison](artifacts/scope-revision-regression-summary.json) and
+[separate review](artifacts/scope-revision-regression-review.json) retain that
+distinction. This revision did not fix no-op artifact delivery; its newsroom
+results also do not establish a quality gain.
+
+All 80 planned judgments were captured. The simpler preference schema accepted
+32/32 responses; the pointwise schema accepted 45/48. The three rejected responses
+had duplicate or unexpected JSON fields and remain in the
+[assessment archive](artifacts/scope-revision-assessments.jsonl.xz) and
+[summary](artifacts/scope-revision-assessment-summary.json).
+
+| Scoped full compared with | Scoped wins | Ties | Other recipe wins |
+|---|---:|---:|---:|
+| Earlier full recipe | 6 | 3 | 7 |
+| Bare prompt | 8 | 2 | 6 |
+
+Each row contains 16 judgments on four already-seen story families, with two
+writers and two judges. The judges agreed on only 2/8 writer-case comparisons of
+the two full revisions and 4/8 scoped-versus-bare comparisons. Neither the small
+bare-control advantage nor the slight loss against the earlier recipe is a
+powered estimate. The clearer source-use obligations are retained without
+claiming that this pilot proved better writing.
+
+The pointwise labels were not uniformly favorable either: scoped full received
+two salient ratings, while the earlier full recipe and bare control received one
+each, among 16 planned ratings per condition. One scoped and two reference
+assessments were invalid. These are repeated model ratings, not independent
+article-level incidence or proof of a treatment effect.
+
+[Direct checks of objective claims](artifacts/scope-revision-assessment-caveats.json)
+also caught two roughly 750-word allegations about responses containing 607 and
+649 whitespace-separated words **including their headlines**. A claimed holdout
+subtraction was not established by a record describing sale inquiries rather
+than completed purchases. Raw judgments remain unchanged. Genuine concerns,
+including a county called a city and a hurricane date conflated with a program's
+age, must not be dismissed because other flags were mistaken.
 
 ## Grading the prose, not its supposed author
 
