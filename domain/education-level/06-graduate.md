@@ -3,10 +3,10 @@ id: domain.education-level.graduate
 layer: domain
 sublayer: education-level
 kind: ladder
-version: 1.2.0
+version: 1.3.0
 status: active
-budget: 1154
-tokens: 1154
+budget: 1057
+tokens: 1057
 stage: masters
 evidence_rung: 5
 evidence:
@@ -15,9 +15,9 @@ evidence:
 
 # Education: Graduate
 
-Reader is in a master's program: fluent in the field, past coursework or working through it, not yet a peer authority. The defining move is positioning — locating a claim against what the field already holds, in a way a specialist could check. The thesis is the characteristic piece of work, and a committee is the characteristic audience.
+An optional preset for an explicitly requested master's thesis, research report or related scholarly task. A master's student or graduate reader is not necessarily expert in this subject. For ordinary help or an introductory explanation, follow the actual task and reader needs without imposing a thesis structure.
 
-Swales' three moves describe the shape. Establish the territory, establish the niche by naming what is missing or contested, then occupy that niche. Most weak graduate writing is missing the second move entirely.
+For a research introduction, one useful house outline establishes the topic, identifies the question or gap and explains the work's response. This is not a universal sequence or a requirement that every assignment discover something new. The AP evidence link supports mechanics, not a claim that this research-writing outline is a publisher requirement.
 
 ## Detect
 
@@ -28,7 +28,7 @@ Swales' three moves describe the shape. Establish the territory, establish the n
 - Method or evidence-handling glossed, so a reader cannot reconstruct how a claim was produced.
 - Literature cited as an undifferentiated list rather than grouped by position, method, or period.
 - No engagement with counterevidence or a competing explanation of the same data.
-- Hedges stacked, redundant, or attached to uncontested background facts. That is insecurity, not calibration.
+- Hedges stacked, redundant, or attached to uncontested background facts, obscuring which claims are actually uncertain.
 
 ### Over-reach
 
@@ -41,15 +41,15 @@ Swales' three moves describe the shape. Establish the territory, establish the n
 
 ### Either way
 
-- The gap asserted rather than shown. Nobody is quoted holding the position being corrected.
+- A gap asserted beyond the scope of the literature actually reviewed.
 - Hedging uniform rather than calibrated, so a reader cannot tell which claims the writer would defend.
 - False balance: an unsupported claim given equal footing with a well-evidenced one in the name of fairness.
 
 ## Write
 
-- Establish the territory, name the niche, occupy it. Say plainly what the field holds, where it falls short, and what you are adding.
-- Show the gap with citations. A gap nobody can see is not a gap.
-- State the contribution in one sentence a specialist in the subfield could check.
+- For research writing, locate the question and the work's response in the literature actually reviewed. A synthesis, replication or null result can be a contribution; do not invent novelty.
+- Support a claimed gap with the supplied review. A limited reading list does not establish that nobody has studied a topic.
+- State the contribution or research question clearly enough for the intended audience to check.
 - Make evidence-handling visible enough that a reader can evaluate the claim rather than trust it.
 - Group sources by position or method, not by publication order. Show where they agree and where they split.
 - Calibrate hedges to what the design actually supports. Reserve boosters for claims your evidence carries directly; hedge inference that goes past it.
@@ -62,46 +62,68 @@ Swales' three moves describe the shape. Establish the territory, establish the n
 
 ## Mechanics
 
-The writer is fluent throughout. What remains is quantitative discipline:
+Do not infer fluency from credentials. Follow the selected genre/manual and apply these checks when the material calls for them:
 
-- Margin of error, confidence interval, and p-value stated and interpreted, not gestured at.
+- Supplied margins of error, confidence intervals and p-values stated and interpreted appropriately, not added to qualitative work as decoration.
 - Relative risk distinguished from absolute risk.
 - Percentage change distinguished from percentage-point change.
 - Study design named and weighted: experimental, observational, modeled, single study, meta-analysis.
-- Correlation not reported in causal grammar.
-- A baseline supplied for every figure that carries an argument.
+- Causal language matched to what the design supports.
+- A denominator or comparator supplied when needed to interpret the figure; unknown values remain unknown.
 - Citation apparatus consistent with one style family throughout, per the `citation/` module in force.
 
 ## Evidence
 
-Rung 5. The writer quantifies methodology and uncertainty rather than describing them, wherever the underlying work produced the numbers. Where it did not, name the limitation in words and say why no number stands behind it. An interval, a power calculation, or an error term invented to satisfy this rung is a fabricated figure, and the prohibition on fabricated figures outranks this requirement every time. The writer can state what a design licenses and what it does not, and can say how much weight a conclusion bears given how it was produced.
+The legacy `evidence_rung: 5` marks attention to how a research claim was produced and what it supports. Report numerical uncertainty when the underlying work supplies it and it is relevant. Qualitative work can explain evidence and limitations in words without apologizing for lacking an interval. Never invent a power calculation, uncertainty estimate, replication or design detail to satisfy this preset.
 
-Read this rung against the evidence floor of the `domain/` module beside it, and follow whichever is higher. A tier changes register. It never lowers the standard of proof a domain requires.
+The task and domain set the applicable safeguards. A reader preset changes support and presentation, never the truth standard or the work that actually took place.
 
 ## Boundaries
 
-Below, undergraduate enters an existing conversation and takes a defensible position in it. Here the writer must name a specific gap in a defined literature and warrant an original contribution to closing it. Uncertainty stops being something read out of other people's work and becomes something the writer reports about their own: interval, design, and the limit of what either supports. Source handling moves from an illustrative range of texts to command of a specific sub-literature, grouped by position and method.
+Research-writing requirements follow the assignment, not the author's degree. Do not require a literature gap, original study or quantitative estimate for a coursework summary, patient explanation or ordinary instruction.
 
-The ladder does not end here. Above, post-graduate work puts the claim into the record, where it has to survive readers who want it to fail and has to be reproducible from the text alone. A thesis can lean on a committee that read the same sources and can ask a follow-up question. A published contribution has neither, so everything the argument rests on has to be on the page.
+The doctoral preset adds checks for substantial scholarly submissions when appropriate. Traceability, critical review and honest limitations also matter in earlier work. Reporting must respect ethical, privacy and access limits rather than promise reproduction from prose alone.
 
 ## Examples
 
+These independent synthetic study and literature records supply the facts. They are not claims about the state of an actual field.
+
+**A local literature gap rather than a universal claim**
+
+**Supplied facts:** The three fictional corpus studies reviewed for this paper use English data and report a relation between input frequency and vocabulary growth. The proposed paper examines Finnish. No exhaustive review of language-acquisition research is available.
+
 Before: There has been a lot of research on how children acquire language. This paper looks at how children learn language and what factors are involved.
 
-After: Research on child language acquisition has established that input frequency predicts vocabulary growth. What remains untested is whether this holds for morphologically complex languages, since the corpus studies establishing the frequency account draw almost entirely on English. This paper tests the account against Finnish.
+After: The three corpus studies reviewed here use English data. This paper examines whether their reported relation between input frequency and vocabulary growth also appears in Finnish.
+
+**A contribution without erasing an existing role**
+
+**Supplied facts:** Two fictional papers reviewed here analyze remittances as household income. The new case records also show expected remittances being used as collateral. The task is to describe that additional credit role, not claim that income and collateral are mutually exclusive.
 
 Before: Many scholars have written about migration. Smith discusses labor flows. Chen examines policy. This study looks at migration too.
 
-After: Work on labor migration has treated remittances as household income. That framing cannot account for the cases here, where remittances functioned as collateral. Reading them as credit rather than income changes which policy levers appear available.
+After: The two papers reviewed here analyze remittances as household income. In these case records, expected remittances also serve as collateral. This paper examines that credit role alongside their contribution to income.
+
+**A finding scoped to its study**
+
+**Supplied facts:** A fictional randomized study includes 212 students at four schools, all with existing advising infrastructure. Persistence is six percentage points higher in the intervention group. The observed difference is larger for first-generation students, but the subgroup estimates are imprecise. Other districts were not studied.
 
 Before: This groundbreaking study definitively proves that the intervention works and should be adopted widely.
 
-After: In this sample of 212 students across four schools, the intervention raised persistence by six percentage points. The effect concentrated in first-generation students, and the sample cannot tell us whether it holds in districts without existing advising infrastructure.
+After: In this randomized study of 212 students at four schools, persistence was six percentage points higher in the intervention group. The observed difference was larger for first-generation students, but the subgroup estimates were imprecise. The study does not establish whether the result holds in districts without existing advising infrastructure.
+
+**Uncertainty without an invented replication**
+
+**Supplied facts:** The reported difference is 0.08 standard deviations, with a 95% confidence interval from -0.04 to 0.20. No replication or Section 6 result has been supplied.
 
 Before: It is possible that there may be some potential indication that the results could perhaps suggest an effect.
 
-After: The effect is small and the confidence interval crosses zero. I read it as suggestive rather than conclusive; the replication in Section 6 is what the argument actually rests on.
+After: The estimated difference is 0.08 standard deviations (95% confidence interval, -0.04 to 0.20). The interval is compatible with a small negative difference, no difference or a positive difference; the estimate is not precise enough to distinguish them.
+
+**An observed difference without causal promotion**
+
+**Supplied facts:** Outcomes in the program group are 0.3 standard deviations higher than in the comparison group. Schools opted in; assignment was not random, and the analysis does not isolate a program effect from selection.
 
 Before: The treatment group showed improved outcomes, demonstrating that the program causes better performance.
 
-After: The treatment group outperformed the comparison group by 0.3 standard deviations. Assignment was not random — schools opted in — so selection plausibly explains part of the gap, and the design cannot separate the two.
+After: The program group outperformed the comparison group by 0.3 standard deviations. Schools opted in, so the difference could reflect selection as well as a program effect. This design does not separate them.

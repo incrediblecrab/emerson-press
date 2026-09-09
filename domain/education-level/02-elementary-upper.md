@@ -3,10 +3,10 @@ id: domain.education-level.elementary-upper
 layer: domain
 sublayer: education-level
 kind: ladder
-version: 1.1.0
+version: 1.2.0
 status: active
-budget: 840
-tokens: 840
+budget: 785
+tokens: 785
 grades: 4-5
 wida_clusters: [4-5]
 evidence_rung: 1
@@ -17,7 +17,7 @@ evidence:
 
 # Education: Upper Elementary
 
-Reader is in grades 4 and 5. Relative clauses and a wider tense range arrive here, and so does the first real handling of evidence. Earn an abstraction with an example rather than assuming it: name the concrete thing, then name what it is an instance of.
+An optional classroom preset for grades 4 and 5, adjusted to the reader's actual familiarity and support needs. Connect abstractions to examples and make evidence relationships visible. Neither syntax nor the ability to name a source suddenly begins at this grade band.
 
 ## Detect
 
@@ -32,10 +32,10 @@ Reader is in grades 4 and 5. Relative clauses and a wider tense range arrive her
 ### Over-reach
 
 - Heavy abstract nominalized subjects carrying the sentence: `the significance of the relationship`, `the implementation of the policy`. Light nominalization that condenses a prior clause — `The creek floods every spring` becoming `that flooding` in the sentence after it — is the on-band move here. The over-reach is when the abstraction becomes the subject and the doer disappears.
-- More than one embedded clause per sentence.
+- Embedded clauses that make the sentence hard for this reader to follow.
 - A term used before it is defined because it sounds academic.
 - Abstract nouns standing alone with nothing under them: significance, perspective, relationship, impact.
-- Hedges a ten-year-old would not say aloud: `it could be argued that`.
+- Indirect hedges that obscure the actual uncertainty: `it could be argued that`.
 
 ### Either way
 
@@ -45,55 +45,77 @@ Reader is in grades 4 and 5. Relative clauses and a wider tense range arrive her
 
 ## Write
 
-- Assume school vocabulary is available, but define each new term fast and in context, then reuse it without redefining.
+- Check which vocabulary the task and reader make familiar. Define unfamiliar terms in context, then reuse them consistently.
 - Give each paragraph one job: set up, describe, explain, prove, close.
 - Lead with the concrete noun. Name the abstraction after the example, not before it.
 - Use connectors that show the actual relationship: later, because, unlike, this shows, as a result.
 - For inform and explain, group facts by kind, by part and whole, by sequence, or by cause.
 - For argument, name the claim, give reasons, and tie each reason to its evidence in a sentence of its own.
 - For narrative, show goals and feelings through action, dialogue, and sensory detail rather than announcing them.
-- One dependent clause per sentence is plenty. Two is a rewrite.
+- Keep useful dependent clauses when the connections are clear. Split a sentence to improve understanding, not to satisfy a clause quota.
 - Big words are fine here as long as you can say what they mean in your own words. If you cannot, use a smaller one.
 
 ## Mechanics
 
-What a writer should reliably control by the end of this band:
+Useful teaching checks, subject to the assignment and selected publication style:
 
 - Terminal punctuation chosen by what the sentence is doing.
 - Capital letters on proper nouns.
 - Days of the week capitalized and spelled out in running text.
 - Possessive `'s` on a singular noun; bare apostrophe on a regular plural.
-- Numbers one through nine spelled out; 10 and up in figures. This threshold sits under most of the number rules that arrive later.
+- Numbers with clear units and relationships, formatted according to the selected genre or venue.
 
-Not yet: semicolons, dashes, quotation-mark nesting. The serial comma is not a band question at all — it is a house-style decision and belongs to the domain in force.
+Semicolons, dashes and nested quotations are available when they help and can be explained. Publication mechanics, including serial commas, belong to the selected genre/manual rather than the reader's grade.
 
 ## Evidence
 
-Rung 1. A claim carries at least one concrete reason, and the reason has to come from outside the writer: something observed, counted, measured, or read, not something preferred. The writer does not yet name that source. Naming comes in the next band, and weighing it later than that.
+The legacy `evidence_rung: 1` marks practice connecting factual claims to observations, measurements or reading. Distinguish those claims from honestly stated preferences. Name a source and explain a relevant credibility limit in language the reader can understand; do not suppress attribution until a later band.
 
-Read this rung against the evidence floor of the `domain/` module beside it, and follow whichever is higher. A tier changes register. It never lowers the standard of proof a domain requires.
+Keep the selected domain's safeguards. This practice focus is not a research protocol or permission to lower accuracy.
 
 ## Boundaries
 
-Below, lower elementary works in simple and compound sentences and takes at most one dependent clause, and treats a reason as the end of the argument. Here a reason must connect to evidence, and paragraphs take on distinct jobs. Above, middle school adds the counterclaim and the named source: any fact the writer could not have observed gets a voice attached to it.
+Use this preset for classroom scaffolding, not to label every reader of this age. Other presets vary the emphasis on structure and evidence; they do not reserve sources, relative clauses or counterarguments for particular credentials.
 
 ## Examples
 
+These independent synthetic briefs provide the lesson facts or fictional scene details.
+
+**Explaining a process without changing it**
+
+**Supplied facts:** The lesson explains that plants use light energy to make sugar from water and carbon dioxide, a gas in the air. The process is photosynthesis; sunlight supplies energy, not the material of the sugar.
+
 Before: Photosynthesis is a biological process that demonstrates energy conversion in plants.
 
-After: Plants make food from sunlight. This process is called photosynthesis. It shows how plants change light energy into stored sugar.
+After: Plants use light energy to make sugar from water and carbon dioxide, a gas in the air. This process is called photosynthesis.
+
+**A supported proposal rather than an engineering promise**
+
+**Supplied facts:** After rain, puddles cover the park's gravel path and walkers step onto the grass. The assignment asks for a proposed improvement. No raised-path design or predicted effect has been evaluated.
 
 Before: The park should be improved because it is important.
 
-After: The city should fix the park path. After rain, puddles cover the gravel, so walkers step into the grass. A raised path would keep people moving and protect the lawn.
+After: The city should repair the park path. After rain, puddles cover the gravel, so walkers step into the grass. A repair that prevents puddles could help keep walkers on the path.
+
+**An association without invented fieldwork**
+
+**Supplied facts:** In the supplied observational records, plants at rainier sites tended to grow taller. The record gives no duration, identifies no student researchers and does not isolate rainfall from other factors.
 
 Before: The data indicates a correlation between precipitation levels and observed plant growth outcomes.
 
-After: We measured the plants for six weeks. The ones that got more rain grew taller. This suggests that rain helped them grow.
+After: In these records, plants at rainier sites tended to grow taller. That pattern alone does not show what caused the growth.
+
+**Grouping facts without adding biology**
+
+**Supplied facts:** The lesson states that sharks are fish, live in the ocean, have fins and sharp teeth, and can grow large. It supplies no account of cartilage, speed or tooth replacement.
 
 Before: Sharks are fish. Sharks have fins. Some sharks are big. Sharks live in the ocean. Sharks have sharp teeth.
 
-After: Sharks are fish, but they are built differently from most fish. Their skeletons are cartilage, not bone, which makes them lighter and faster. Their teeth grow in rows and fall out constantly, so a shark never runs short.
+After: Sharks are fish that live in the ocean. They have fins and sharp teeth. Some grow large.
+
+**Using supplied fictional action**
+
+**Supplied facts:** In the author's fictional scene, Ana reads a letter twice, folds it, pockets it without speaking and does not eat at dinner. The author wants these actions to convey her distress.
 
 Before: The protagonist experienced significant emotional distress.
 

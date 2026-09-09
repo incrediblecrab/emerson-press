@@ -1,236 +1,84 @@
 # emerson-press
 
-Style modules that keep LLM prose from reading like LLM prose.
+Writing instructions for useful, specific prose that preserves the facts and the writer's intended voice.
 
-## How to use
+The goal is better writing, not concealed AI involvement. A fluent fabrication fails. A good existing passage may need no change. Familiar words, formal language, em dashes and three-item lists are not defects by themselves.
 
-Load one module from each axis you need and put them in the context alongside your draft or your drafting instruction. There is no runtime and nothing to install — the modules are the artifact.
+## Use the instructions
 
-**1. Always load `core/`.** All six, or the ones that bear on the job. They are the rules that hold regardless of who is reading or what is being written.
+The Markdown files are the product. You do not need to install anything to use them.
 
-**2. Add one `domain/` module** for the genre. This sets the mechanics — which style manual applies — and the evidence floor.
+Start with the [editorial task contract](prompts/task.md). State whether you want a draft, edit or review, what the reader needs, the medium, and which facts or sources are available. A reader's age or degree is not a substitute for knowing their familiarity with the subject.
 
-**3. Add one `domain/education-level/` module** only when you are writing at, or for, a schooling level. This sets register and calibration. Skip it and the reader is an adult at work, which is what the genre modules already assume.
+For a full-reference prompt, load the contract, the six `core/` modules and only the relevant specialized modules. Omit frontmatter and `## Examples` unless you need particular examples. The optional assembler below handles those exclusions.
 
-**4. Add one `citation/` module** only if the piece carries formal citations. Omit it and the piece simply has none.
+| Material | What to select |
+| --- | --- |
+| `core/` | Accuracy, restraint, voice, anti-slop, formatting and rhythm |
+| `domain/` | One primary genre: press, non-fiction, fiction, technical, marketing, legal, medical or general |
+| `citation/` | A requested citation style: MLA 9, APA 7, Chicago 18, IEEE, AMA 11 or Bluebook 22 |
+| `domain/education-level/` | An optional classroom or academic-task preset, not a label imposed on every reader with those credentials |
+| `user-interface/` | One task-appropriate medium, applications or website, plus relevant accessibility, Apple or chart guidance; chart guidance can also stand alone |
+| `sources/` | Maintenance evidence for authors of the modules; never load these dossiers alongside a draft |
 
-**5. Add `user-interface/`** only when the text ships inside a product rather than standing on its own. Load one medium module — `applications` or `website` — and stack overlays on top of it: `accessibility`, `charts`, `apple-hig`.
+For a news article, select `domain/press.md`. For a patient handout, select `domain/medical.md` and describe the actual reader rather than choosing a grade as a proxy. A product error uses `domain/technical.md`, `user-interface/applications.md` and `user-interface/accessibility.md`.
 
-Skip `## Examples` unless you want before-and-after pairs; they are the largest part of a module and are separable for that reason.
+Healthcare marketing keeps marketing as its primary genre and adds the medical module's `## Safeguards` section. Legal safeguards can be added in the same way. These sections protect substantive claims without importing a different document's citation format.
 
-Never load `sources/` alongside a draft. Those are the evidence behind the modules, for the person authoring or revising one.
+## Which rule controls?
 
-Where two loaded modules disagree, later wins: `core < domain < citation < domain/education-level < user-interface`. The one exception is the evidence floor, which never falls — a change of register is not a change in the standard of proof.
+The selected genre and explicit venue requirements control publication mechanics. Citation modules control bibliographic rendering where formal citations apply. Reader guidance controls explanation and scaffolding. Interface overlays control their named surfaces. Relevant medical and legal safeguards are additive.
 
-`core/` never varies and always loads, so it belongs wherever the tool keeps standing instructions: a project instruction field, a rules file, a system message. At 7,397 tokens that is the whole persistent cost. The other four axes change from draft to draft and belong in the request itself, which adds 2,054 for a genre alone and 8,696 with all four loaded at their largest. Name the slot rather than the product when you write this down for a team, because the slots outlive the tools. The precedence order survives the split intact, since `core/` ranks lowest and arrives first.
+None of those choices permits invented facts, altered quotation meaning, fabricated verification or removal of required disclosure. Core stylistic advice is a default, not a reason to erase a deliberate voice.
 
-If you cannot load files at all, `quick-guide.md` is the whole standard compressed into one pasteable file: `core/`, the narrative discipline, the calibration rule, and the evidence behind them. It is deliberately self-contained and refers to nothing in this repository, so it stays valid pasted into any prompt anywhere.
+Put compatible instructions together in a host-supported instruction block. Host rules still apply. A later user request does not automatically override a conflicting system instruction; if standing instructions are used, they must explicitly delegate the style choices allowed in the request.
 
-### Worked examples
+## Compact guide
 
-A news feature for a general readership: `core/` + `domain/press.md`.
+[`quick-guide.md`](quick-guide.md) is a generated, self-contained candidate built from the task contract and the core operating sections. It contains no coding-agent policy or changing research statistics.
 
-An undergraduate research paper in the humanities: `core/` + `domain/non-fiction.md` + `domain/education-level/05-undergraduate.md` + `citation/mla9.md`.
+**The compact candidate has not earned a claim of better writing.** Full-reference packs remain the assembler's default. Use the compact guide when you want to try a smaller instruction set, and compare its behavior rather than assuming fewer tokens are better.
 
-A dissertation chapter: `core/` + `domain/non-fiction.md` + `domain/education-level/07-post-graduate.md` + `citation/chicago18.md`. The genre module pins Chicago; the tier never picks a manual.
+Detailed diagnostics and examples remain in the modules. An example's supplied-facts packet is part of the example, not optional context that can be dropped while keeping its improved output.
 
-A patient handout: `core/` + `domain/medical.md` + `domain/education-level/04-high-school.md`. The tier sets the vocabulary; `medical`'s rung-5 floor still governs the estimate.
+## Optional author tools
 
-Error messages in a mobile app: `core/` + `domain/technical.md` + `user-interface/applications.md` + `user-interface/accessibility.md`.
+Python 3.10 or later is required only for the author tools:
 
-A landing page: `core/` + `domain/marketing.md` + `user-interface/website.md`. `marketing` owns whether the claim is true; `website` owns the page it sits on.
-
-## Layers
-
-```
-core/           voice, anti-slop, restraint, accuracy, formatting, rhythm
-domain/         press (AP), non-fiction (Chicago), fiction (Chicago),
-                technical (house), marketing (AP), legal (Bluebook),
-                medical (AMA), general (house)
-domain/education-level/
-                01-elementary-lower, 02-elementary-upper,
-                03-middle-school, 04-high-school,
-                05-undergraduate, 06-graduate, 07-post-graduate
-citation/       mla9, apa7, chicago18, ieee, ama11, bluebook22
-user-interface/ accessibility, apple-hig, applications, website, charts
-sources/        ap-stylebook, wida-curriculum, signs-of-ai-writing,
-                field-guide-to-ai-slop, ai-slop-research,
-                antislop-banlists, stop-slop, kill-ai-slop, apple-hig
+```sh
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements-dev.txt
+.venv/bin/python -c 'import tiktoken; tiktoken.get_encoding("o200k_base")'
 ```
 
-These are axes you mix rather than a tree you descend. The one nesting is `domain/education-level/`, which sits inside `domain/` because it overrides a reader the genre modules otherwise assume. Load a genre module by itself and you are writing for an adult at work.
+The last command fetches the public tokenizer data once; subsequent local checks use its cache. No model credentials are needed.
 
-`sources/` is not an axis. It holds the unbudgeted evidence behind the modules — read when authoring or revising one, never loaded alongside a draft. Its house conventions are therefore outside the module rules, and Title Case headings run through all nine dossiers for that reason. A convention that would be a tell in a loaded module is only a convention in a file no model reads.
+Build a full-reference press pack and its manifest:
 
-Citation is optional — omit it and the piece has no formal citations. So is `user-interface/`, which applies only when the text ships inside a product rather than standing on its own as a document.
+```sh
+.venv/bin/python -m scripts.build --profile press --mode draft \
+  --output dist/press.md --manifest dist/press.json
+```
 
-Precedence, later wins: `core < domain < citation < domain/education-level < user-interface`
+Try the same selection with `--variant compact`, using a different output path. Exports refuse to overwrite existing artifacts. The manifest records actual assembled token counts, source hashes and selected examples; it is not a quality score.
 
-## Conventions
+Profiles also cover general writing, technical documentation, marketing websites, healthcare marketing, patient handouts, Apple applications and explicitly requested graduate research papers. For a custom selection, use repeated `--module` arguments instead of `--profile`:
 
-- Each module has `## Detect` (tells to flag) and `## Write` (what to do instead), so it serves both drafting and review.
-- `## Examples` holds before/after pairs and is loaded only when needed.
-- `domain/` and `domain/education-level/` share a skeleton past `## Detect` and `## Write`: `## Mechanics`, `## Evidence` and `## Boundaries`, with `## Formats` on the genre modules only. In a genre module those carry the style manual, the evidence floor, what the module does not cover, and the sub-genres. In a tier they carry what a writer should reliably control by that level, the rung on the sourcing ladder, and what changes at the tier below and above.
-- `domain/education-level/` frontmatter carries `layer: domain` with `sublayer: education-level`, and `kind: ladder`. K-12 tiers carry `grades` and `wida_clusters`; the three above them carry `stage`. The filename number is the rung, so a build step can order the ladder without parsing prose.
-- Modules cite their evidence once, mechanically. `evidence:` is a list of paths into `sources/`, and every dossier carries the reciprocal `consumers:` list, so the link can be checked from either end. The prose citation — the work, the edition, and what was taken from it — lives in the dossier rather than being restated in the frontmatter of every module that draws on it. A module carries `evidence:` exactly when a dossier claims it as a consumer; `citation/` and two `domain/` modules — `general` and `legal` — carry none, because they were drafted from per-style and per-domain research passes rather than from a standing dossier.
-- Say a thing once, at the length it takes. `budget` and `tokens` both count the body — not the frontmatter, not `## Examples` — and both record what a module measures rather than a ceiling it must fit. They are there so a change in size is visible in a diff, not to ration anything. A module gets shorter when a rule is redundant or unclear, never because a number said so.
-- Counts are `o200k_base`, over the body with the frontmatter and any `## Examples` section removed, whitespace-trimmed. The recorded `tokens` field is a claim about the file and goes stale silently, so recount after any editing pass rather than trusting it. Every count was recomputed at the close of the August 2026 review; the method is confirmed by `mla9`, the one module that pass left untouched, which reproduces its recorded figure exactly. Every other module had drifted, most upward, so a pass that edits widely and does not recount will leave the whole field wrong rather than one entry. `chicago18` is the caution against reading a matching number as an untouched file: its body changed and its count landed on 1,102 again by coincidence.
-- `status` records whether a module is expected to change, not whether it is finished. `active` means shipped and not slated for revision; `draft` means complete in scope but still expected to move before its next version — `core/`, `citation/` and `user-interface/` because the layers around them are still settling, `domain/` because it is over budget and compression is queued. Both values describe complete modules.
-- American spelling and punctuation throughout, including inside `sources/`. The two style manuals this repo pins are American, and a module that mixes `catalogue` with `catalog` has already failed the consistency it asks a writer for. Quoted titles keep the spelling of the work being cited.
-- Every layer is authored full. Getting the calibration wrong compactly helps nobody, and an early pass that held `domain/` to a 400-token stub proved it: what the limit cut was the material that made the modules worth loading.
-- `citation/` makes the case most sharply: a citation rule compressed past the point of being checkable is worse than no rule at all.
-- Citation modules carry an `edition` field, and the filename pins the edition wherever the style numbers one. `ieee` is the exception: the IEEE Reference Guide is a live document that carries no edition number. When a style ships a new edition, add a module rather than editing the old one in place.
-- `user-interface/` modules carry `kind: medium` or `kind: overlay`, a `medium` field, and a `## Surfaces` section holding the per-element rules for that medium, the way `domain/` carries `## Formats`, plus a `## Boundaries` section naming what the module does not cover. A medium module is loaded alone; overlays load on top of one.
-- `evidence_floor` is an integer on the same 0-to-6 ladder `domain/education-level/` runs, or `none` where the ladder does not apply. Only `domain/fiction.md` takes `none`.
-- State every rule in original wording rather than lifting a source's phrasing. This is an authoring standard before it is anything else: a rule you have restated is a rule you have understood, and one you have only copied is not. Short factual tokens stay as they are — reference codes, proper names, and the handful of style formulas that go imprecise the moment they are reworded. `raw-data/` holds the page-cited working extraction the dossiers were built from; it is listed in `.gitignore`, so a clone will not have it, and neither are the source texts themselves. It is a restatement rather than a transcript — its files carry their own frontmatter, their own scope notes, and rules already rewritten as imperative bullets — so it settles no question about a source in either direction. A phrase absent from it is not thereby original, and a phrase present in it is not thereby lifted; both readings mistake the paraphrase for the primary, and one of them has already produced a false attestation of originality here. Only the source settles a source question: the single confirmed lift in this repository turned up against the publisher's own PDF, not against the extraction.
+```sh
+.venv/bin/python -m scripts.build --mode edit \
+  --module domain/non-fiction.md --module citation/mla9.md
+```
 
-## Domain
+Use `--safeguard medical` or `--safeguard legal` for applicable mixed-domain claims. Add a particular example with `--example core/accuracy.md#causation-from-correlation`; selectors use the slug of a standalone bold example heading. Incompatible selections and unknown examples fail explicitly.
 
-Genre, not subject. The module answers what a piece is obliged to do, which is a different question from who reads it. `domain/education-level/` sets register; the genre module sets the obligation, and the two move independently — a patient handout and a journal paper can share a subject and share nothing else.
+## Evidence and evaluation
 
-| module | mechanics | evidence floor | formats |
-| --- | --- | --- | --- |
-| `press` | AP | 3, attributed in the sentence | news, feature, opinion |
-| `non-fiction` | Chicago | 4, source interrogated | essay, memoir, biography and history, criticism, literary journalism |
-| `technical` | house | 4, source is executable | reference, guide, README, changelog |
-| `marketing` | AP | 4, and 5 for health, safety, efficacy or environmental claims | landing page, product, campaign, release |
-| `fiction` | Chicago | none | short story, scene |
-| `legal` | Bluebook | 5, plus continued validity | memo, brief, client letter, contract |
-| `medical` | AMA | 5 | clinical, patient-facing, public guidance |
-| `general` | house | 3 | blog, email, internal document |
+The AP dossier distinguishes its 56th-edition basis from [public 58th-edition updates](https://www.ap.org/media-center/press-releases/2026/new-ap-stylebook-features-expanded-artificial-intelligence-chapter/), released May 27, 2026. AP's [July 23, 2026 newsroom AI update](https://www.ap.org/the-definitive-source/announcements/ap-updates-newsroom-standards-for-artificial-intelligence/) describes approved assistance with human review and a disclosure framework. That organizational policy is separate from choosing AP punctuation. A complete entry-level review of the licensed 58th edition remains outstanding.
 
-**house** in the mechanics column means no external style manual: `core/formatting.md`'s defaults, plus whatever mechanics the module states for itself. It is a real setting rather than an absence — it names the manual that does *not* apply. The four `user-interface/` modules carrying `mechanics: house` take it in the same sense.
+Source dossiers identify their evidence type, version, checked date and verification limits. A practitioner observation is not a controlled experiment. A corpus frequency is not a quality score. A source absent from a search is not proved nonexistent.
 
-Three groupings, carried in frontmatter as `kind`. The **editorial** genres — press, non-fiction, fiction — are governed by craft and by a discipline's own conventions. The **regulated** ones — legal, medical, marketing — are governed by somebody with enforcement power, and their rules are not style preferences that a confident writer may override. The **functional** ones — technical, general — are governed only by whether the reader can act.
+The [evaluation workflow](evals/README.md) uses original supplied-fact cases, frozen original instructions and real response records. The [rubric](evals/rubric.md) requires fidelity, useful content and respect for intentional voice. It includes no-op cases and treats human preference separately from prompt size.
 
-That middle group is the reason the layer is not just a tone selector. In marketing an overclaim draws a regulator; in medicine it can cost a reader their health; in law an unvalidated citation is a misrepresentation to a court. `core/voice.md` says commit, and `legal` is the standing exception: a hedge is the product there, and the module asks only that it name the fact that would change the answer.
+No comparative model or human-review results are claimed by this revision. Model choice, execution budget and human review must be settled before a release comparison. A compact default must not be promoted on authoring checks or invented scores.
 
-The evidence floors run on the same ladder `domain/education-level/` uses, though the genre modules stop at rung 5 — rung 6 belongs to the doctoral tier alone, because no genre can require that a claim enter the scholarly record. They are floors rather than settings. Read the floor against the rung of whatever tier loads beside it and follow whichever is higher. Writing plainly for a non-specialist changes register and never licenses a lower standard of proof.
-
-`fiction` is the deliberate outlier. Its floor is `none`, and it inverts `core/formatting.md` and most of the essay habits at once — no thesis, no takeaway, no summary. It is the hardest module in the repo for a model to satisfy, because slop cannot stop itself explaining its own subtext. `non-fiction` sits directly beside it and shares nearly the whole craft — scene, summary, psychic distance, what a reader learns and when. One thing separates them: here the writer is answerable for what the sentence asserts, which is why the same techniques arrive with a floor of 4. That floor is argued rather than assigned. Not 3, because `press` buys its lower floor with a deadline and a single pass and a book has years. Not 5, because rung 5 quantifies uncertainty against a study design, and a memoir has no design while a biography's uncertainty is archival. A piece that does make a live empirical claim carries rung 5 on that claim alone, which is both stricter and easier to enforce than raising the whole module.
-
-## Education level
-
-A subfolder of `domain/` rather than an axis of its own. Load one of these only when you are writing at, or for, a schooling level. Load none and the reader is an adult at work, which is what every genre module already assumes and where most writing lands.
-
-Pick the tier you are actually writing at. Each module catches miscalibration in both directions — writing below the level, and writing above it. The second is the common one: a high schooler reaching for dissertation register reads worse, not better. The master's and doctoral tiers divide on who is reading rather than on how hard the work is: a master's writer argues to a committee that read the same sources and can be asked a follow-up question, a doctoral writer to a field that is not assembled and not obliged to be generous.
-
-| module | reader | evidence rung | anchor |
-| --- | --- | --- | --- |
-| `01-elementary-lower` | K-3 | 0. reason, not yet a source | WIDA ELD 2020 |
-| `02-elementary-upper` | 4-5 | 1. claim carries a reason | WIDA ELD 2020 |
-| `03-middle-school` | 6-8 | 2. source is named | WIDA ELD 2020 |
-| `04-high-school` | 9-12 | 3. source is traceable and characterized | WIDA ELD 2020 |
-| `05-undergraduate` | undergraduate | 4. source is interrogated | AAC&U VALUE, CWPA 3.0/4.0 |
-| `06-graduate` | master's | 5. uncertainty is quantified | Swales CARS |
-| `07-post-graduate` | doctoral | 6. the claim enters the record — it must survive adversarial review and be reproducible from what you wrote | Hyland stance, Toulmin warrant |
-
-The filenames number the rungs because the ladder only makes sense read upward. WIDA stops at grade 12, so the three tiers above it use writing-studies anchors instead. The evidence column is a single ladder running the whole height of the repo: each rung adds one demand about where a claim comes from. Rungs 0 through 4 teach a writer to consume provenance. Rung 5 is the hinge, where the writer starts producing it about their own work. Rung 6 is where that work becomes the thing a rung-4 reader interrogates and a rung-5 reader quantifies, which is why the ladder stops there — rung 6 hands the claim back to rung 0. Reaching for a rung you have not done the work for is the clearest form of over-reach, and it is easier to check than tone.
-
-Writing above your tier is not itself a fault, and these modules should never push a strong writer down to the mean. The fault is register without control — terms the writer cannot define, complexity that does no work, gravitas borrowed to sound credible. Detection tools that flag "above-expected register" get this wrong constantly and misfire on capable students. The test is ownership, not difficulty.
-
-Register calibration lives here. House style choices — the serial comma, for instance — live in the genre module, because those vary by publication rather than by reader.
-
-## Citation
-
-Pick the style the venue actually requires. The module then does two jobs: it states that style's rules, and it names the neighboring styles' rules that get mistaken for them.
-
-| style | field | in-text system | edition |
-| --- | --- | --- | --- |
-| `mla9` | humanities, literature, languages | author-page | 9th (2021) |
-| `apa7` | psychology, education, social sciences | author-date | 7th (2019) |
-| `chicago18` | history, arts, publishing | notes *or* author-date | 18th (2024) |
-| `ieee` | engineering, computer science | bracketed numeral | Reference Guide, 2025 |
-| `ama11` | medicine, health sciences | superscript numeral | 11th (2020) |
-| `bluebook22` | law | citation sentences, footnotes | 22nd (2025) |
-
-The failure these modules are built against is not ignorance of a style. It is blending — a citation that is three-quarters APA with an MLA container and an IEEE bracket. Models blend because the styles overlap heavily and diverge on small, arbitrary details, which is exactly the shape of thing a model averages away.
-
-So the divergences are load-bearing, and each module names the ones that touch it. The DOI is the sharpest: APA, MLA and Chicago all take the resolver form `https://doi.org/10.xxxx`, IEEE takes a bare `doi: 10.xxxx` with a space, and AMA takes a bare `doi:10.xxxx` with none. One identifier, three renderings, no reasoning available from first principles.
-
-Generative-AI attribution diverges the same way and is newer, so it is worse. APA credits the company that built the tool, Chicago credits the tool itself, MLA credits nobody and makes the tool a container, and Bluebook credits the person who wrote the prompt. AMA names the tool and model but pushes the admission into the methods or acknowledgments, and IEEE goes further and declines to give a citation form at all, asking only that the use be disclosed. A module that invents a form here is worse than one that says the style is silent.
-
-## Interface
-
-Load this only when the text ships inside a product. A blog post has readers; an interface has users, and they did not come to read. Every word is a toll on the way to what they came for, which inverts most of what the other axes assume.
-
-The axis is cut by medium, not by widget, because the same element takes different copy in different places. An error in an app names the next action; an error on a website is a 404 that offers the two pages the reader probably wanted. Cutting by widget would have produced one `errors` module hedging across both.
-
-Two modules are media in the strict sense, and three are overlays that load on top of one. Frontmatter carries `kind: medium` or `kind: overlay`, so a build step can tell the two apart without parsing prose.
-
-**Media** — pick exactly one.
-
-| module | medium | covers |
-| --- | --- | --- |
-| `applications` | in-product, any platform | labels, forms, errors, alerts, empty states, progress, onboarding, notifications, settings |
-| `website` | pages a stranger lands on | landing copy, navigation, titles, link text, forms, 404s, consent, docs |
-
-**Overlays** — add any that apply.
-
-| module | applies when | covers |
-| --- | --- | --- |
-| `accessibility` | the work ships to real users | labels, hints, alt text, headings, captions, announcements |
-| `apple-hig` | the platform is Apple's | capitalization, terminal punctuation, ellipsis semantics, `Cancel`/`OK`, default position |
-| `charts` | the product displays data | titles, axes and units, legends, annotations, tooltips, alt text |
-
-So the common loads are `applications` + `accessibility`, `website` + `accessibility`, and on Apple `applications` + `accessibility` + `apple-hig`. Add `charts` to any of them. Never all five.
-
-The two overlays that can disagree with a medium module say so themselves. `apple-hig` wins over `applications` on mechanics and on nothing else — Apple's conventions are mostly arbitrary and entirely load-bearing: title case on a button is a coin flip that landed decades ago, while a trailing ellipsis is a promise readers have learned to read. Breaking the first makes an app look foreign. Breaking the second makes it lie. Behavior — when to interrupt, when to ask, what to name a thing — stays with `applications` even on Apple platforms. `accessibility` decides what must be announced; the medium module decides the wording.
-
-One precedence note, because this axis wins last. `user-interface` governs the attention economy — the reader did not come to read, so every word is a toll. It does not govern register, which stays with the genre module and whatever `domain/education-level/` tier loads beside it. A children's app keeps its warmth and a peer tool keeps its terms of art. What these modules strip is unearned brand enthusiasm, not tone the situation has earned.
-
-Two of the sources behind this axis are prescriptive skill files rather than studies, and both are rejected in part. `stop-slop` bans em dashes, adverbs, three-item lists and question-word openers outright; `core/restraint.md` refuses those bans and the refusal holds here. What survives is the phrase taxonomy and the observation that generated marketing copy claims agency it does not have. `kill-ai-slop` is the more useful of the two because it is the only source in the repo written about interfaces, and its central claim — that decoration is a signal, and a badge or an ordinal or an icon grid usually marks text nobody decided on — is the backbone of `website`.
-
-`charts` has the thinnest external anchor, and on inspection it has none. Apple's guidance covers chart accessibility and little of the writing, so the module names no outside authority at all and rests on measurement discipline: unit at the number, denominator with the percent, date on everything, and no trend claimed from two points. Its `evidence:` list carries the two dossiers it actually draws from and claims nothing further, which is the correct posture and not a gap. A relevant standard exists and this repository has not read it: ISO 24896:2026, *Notation for business reporting*, published June 2026, the first international standard to set design requirements for the visual notation of business reports — charts, tables and text elements — from the working group behind the ISO 24495 plain-language series and led by the IBCS Association. It is named here and not in the module, because an unread standard is not a citation but a hook for invention: a model meeting that title three lines above a list of axis and unit rules will take it as their authority and elaborate requirements the text may never have contained. Reaching the text and writing a dossier would let `charts.md` claim it in `evidence:` with specific requirements attached. No dossier is being built this pass, and the reason is worth keeping: iso.org refuses automated fetch and the co-developing International Plain Language Federation publishes only numbers, titles, scopes and dates, so a dossier would hold nothing the two sentences above do not, while taking on a `consumers:` obligation for text nobody here has read. The ISO citations stay in module bodies, which is how `domain/medical.md` carries ICMJE. Whoever obtains the texts can build the dossier the same day. Until then the module stands on measurement discipline, which needs no external warrant.
-
-## Status
-
-Authored one at a time. `core/` is complete across all six — voice, anti-slop, restraint, accuracy, formatting, rhythm — and was re-authored full at 1.1.0 rather than held to the original budgets, on the same reasoning the education ladder used: getting the calibration wrong compactly helps nobody. The layer roughly quintupled. A later review argued that `core/` is the highest-leverage place to cut, because it is the only layer that always loads. That argument lost, since the cost of loading a longer module is nothing next to the cost of a rule that no longer says enough to follow. Each module now carries an `evidence:` list naming the files in `sources/` it was built from. Their bodies do repeat phrasing from `sources/`, because those modules exist to name banned constructions and shared research findings, which have to be quoted exactly to be detected. `domain/marketing.md` and `user-interface/website.md` stand on the same footing.
-
-The `core/` evidence base landed at the same time: `ap-stylebook` from a 56-chunk split of the print edition, verified to rebuild all 1,224 pages byte-identical, plus `signs-of-ai-writing` and `field-guide-to-ai-slop`. Where those disagree with the prescriptive skill files, the cited study wins. `restraint` is the module that decides those conflicts, and it is the reason this repo refuses the unconditional bans the competing instructions impose — em dashes, adverbs, three-item lists, question-word openers.
-
-`ai-slop-research` was added last and is different in kind from the rest of `sources/`: it records measurement rather than practice, which is what lets it settle disputes between the others. It was re-authored at 2.0.0 from the full texts, appendices included, after the first pass had been built from abstracts — which corrected three citation errors and surfaced the structural finding below. The paper computes slop as an over-representation ratio against a human baseline, with the measured extreme at 85,513x. The two-thousand-pattern figure everyone quotes is a per-run pipeline quota — 1,000 single words, 500 bigrams and 500 trigrams — and 480 of those entries occur in the human corpus zero times, so their ratio has no denominator at all; the lists the project actually released and froze are smaller, at 1,000 words, 200 bigrams and 200 trigrams, which is the object anyone linking the repository is really pointing at. Contextual suppression at four-tenths strength suppresses 90% of them in ordinary writing while still permitting them when a prompt asks, whereas removing the trainer's safeguard buys 98% suppression at the cost of dropping writing quality from 67.8 to 19.6 — which is the empirical case against unconditional bans, and the reason this repo refuses them. Every one of those patterns was measured on creative writing, which the paper states and which limits how far the lists transfer to functional prose. And a matched-control study of 25 million forum comments found that the features which genuinely separate machine prose from human prose do not predict which human gets accused of writing like a machine; in the same data, stylistic-tell callouts like the em-dash complaint are the least reliable accusation tier measured. That is why no module here is framed as evading detection. Much of accusation is social gatekeeping that never reads closely, so no revision reaches it, and writing well does not need the excuse.
-
-`antislop-banlists` is a companion to it and the only note in `sources/` whose every figure was computed here rather than read off a page. The Antislop project ships its human baseline — 6.11 billion characters — next to its findings, so the released lists can be checked against the corpus that produced them, and almost nobody does it. The check is unflattering to anyone using those lists as prohibitions. Eight of the ten most frequent bigrams in human creative writing are on the anti-slop list, `could see` and `shook head` at the top of both; 96% of the released slop bigrams are ordinary common English, and the highest-ranked slop trigram is the single most common trigram humans write. Only 15% of the n-grams have no human rate at all, and that minority — narrating resolve, decorating scenery with participles — is the only part safe to treat as a flat ban. More than half the word list never occurs in the human corpus's common bigrams at all, and most of that is invented fantasy proper nouns and borrowed franchise vocabulary, including the name of the subreddit the corpus was scraped from, which is a list absorbing its own collection method. Coverage is also thinner than the count suggests: 74% of the trigrams merely extend a listed bigram, and one invented stem consumes twelve of the thousand word slots. Across the 38 profiled models slop correlates with repetition at +0.83 and with vocabulary complexity at +0.01 and length at +0.05, which kills the two folk theories that slop means ornate diction or padding. Within one model family it declines monotonically from 1B to 405B. Across those 38 profiles the spread is 3.4x, which reads as evidence that there is no single machine voice to write against — but that is only half the picture, and `ai-slop-research` corrects it from the appendices the earlier note had not read: `flickered` appears on 98.5% of 67 models' lists. There is a shared core across essentially every model with model-specific tails around it, so a list built from one model is parochial at its edges and close to universal at its center. Either way the tells have a shelf life.
-
-`domain/education-level/` is complete across all seven tiers, authored full and unbudgeted. The ladder started as a top-level `audience/` layer of seven modules and reached its present shape in three moves. The seventh module described a working adult, which every genre module already assumes, so it went and the remaining six moved under `domain/`. Then `academia` left `domain/` to become `07-post-graduate`, on the reasoning that a doctoral writer occupies a schooling level rather than a genre, and that the undergraduate and graduate tiers were already carrying most of what the module said. That left a genre-shaped hole, since long-form true prose is not written only by academics, and `non-fiction` fills it, inheriting the Chicago pin `academia` held — a tier never sets the style manual and a genre does. The ladder gained a rung in the same move and now runs 0 to 6.
-
-`citation/` is complete across all six styles, authored full against the editions current as of August 2026: MLA 9, APA 7, Chicago 18, AMA 11, Bluebook 22, and the 2025 IEEE Reference Guide. `bluebook22` is the longest at 1,686, roughly two-thirds again the size of `mla9`, which is what a style with signals, pincites and cross-references costs to state correctly. Every rule was drafted from a per-style research pass, re-audited against it, and then re-verified a third time in August 2026; the passes caught roughly two dozen errors between them, which is the argument for doing citation work this way rather than from recall. `mla9` came through the last audit without a single edit, so its 1.0.0 records a clean pass rather than a skipped one. The abbreviations make the sharpest case for working this way: six library guides agree that IEEE shortens section, theorem and algorithm to `Sec.`, `Th.` and `Alg.`, the module has `Sect.`, `Thm.` and `Algorithm`, and the IEEE Reference Guide confirms the module on all three. Six guides agreeing is one source with six mirrors. Correcting the module against them would have produced a confident diff, six citations, and three new errors in the one module that had none.
-
-`domain/` is complete across all eight genre modules. Seven were re-authored full at 2.0.0 after a first pass that hit the stub's 400-token budget and was the wrong artifact for it — the same correction `core/` and the education ladder already made — and `non-fiction` was authored full at 1.0.0 into the gap `academia`'s departure left. The eight modules run 20,675 tokens combined, 2,054 to 2,912 each; compression is the next task there. The `budget` field moved from 400 to the measured size in the same pass: 400 predated the layer having a `## Formats` section, which carries two to five sub-genres and between a tenth and a quarter of each module's body. Once that section existed the ceiling was abandoned rather than raised, so `budget` here records what each module measures, as it does in every other layer. Whether `domain/` should carry a target at all is still open. Cross-module repetition was measured rather than estimated: across all 28 pairs of module bodies, 27 eight-word sequences appeared in more than one file before the pass and 20 after, with two families that had spanned three files each now spanning none. Sentence lengths across the layer run 1 to 54 words over 1,359 sentences, median 13, standard deviation 8.9, with 242 at five words or under and 85 at thirty or over — split on terminal punctuation, with frontmatter, headings and fenced code removed. The split rule belongs with the figure: an earlier revision reported a 75-word maximum on a different one.
-
-What the compressed pass cost is the argument for the convention. It dropped datelines and wire conventions that `sources/ap-stylebook.md` explicitly assigns to `press`, the Bluebook signal grammar, the Diátaxis mode error, and the identity-first exception in `medical` — each a rule the shorter module had no room to state and no way to state partially. Only one domain module loads at a time, so a combined set is roughly 11,000 tokens rather than the whole layer's total.
-
-`marketing` shares 12 distinct five-word sequences with the dossiers in its own `evidence:` list, all of them the named constructions it exists to ban — *say goodbye to X*, *unlock the power of X* — which have to be quoted exactly to be detected, and which `user-interface/website.md` quotes on the same footing. `core/anti-slop.md` is by a wide margin the largest case in the repository at 107, and legitimately so: naming banned constructions is the whole of its function, the negative parallelism of *not just X, but Y* among them. Counts here are distinct five-word sequences shared between a module body and its own evidence, which is a measure anyone can rerun. Earlier revisions counted "places" without defining the term, and three attempts to reproduce those figures gave three different answers — the module bodies had not changed, the measure had. `press` names the eight states AP never abbreviates, which is a rule that cannot be stated without naming them.
-
-Five domain decisions each cut against a core rule or a layer boundary. `legal` keeps hedging: *likely* and *a court would probably* are the product there, not slop, and the module asks only that the hedge name the fact that would change it. `medical` treats overstated certainty as a safety defect rather than a style one, which is why it demands absolute risk beside relative and a red-flag route to care in anything patient-facing — and it refuses blanket person-first language, because the autistic and Deaf communities largely prefer identity-first and a rule that overrides a stated preference has failed at the thing person-first language was invented to do. `fiction` sets aside `core/formatting.md`'s structural apparatus — headings, lists, tables, which narrative does not use — and inverts the essay habits `core/` otherwise assumes: no thesis, no takeaway, no summary. Its single hardest test is that slop cannot stop itself explaining its own subtext. `non-fiction` cuts its line at answerability rather than at technique, which is why compression is permitted and a composite character is not: collapsing four visits into one afternoon changes the shape and not the truth, while a composite asserts a person who did not exist. `marketing` was rebuilt around substantiation once `user-interface/website.md` took the page surface: that module owns the hero, the kicker and the stat row, this one owns whether the claim is true, in every medium. Its organizing fact is that marketing is the only genre where the evidence must exist before publication as a matter of law and where the reader never sees it — and its organizing argument is that puffery is non-actionable precisely because no reasonable consumer relies on it, which is the law's way of saying the claim cannot be checked.
-
-Every tier in the ladder states the precedence nuance and the regulated `domain/` modules repeat it. It is stated in each rather than once, because only one tier and one genre module load at a time and neither can assume the other is present. What a tier wins is register: a patient handout gets shorter sentences and plainer words, and the same rung-5 floor on what it may claim. The genre side has to say it too, and for a structural reason — a tier claiming that the module beside it outranks it on obligation is arguing against its own authority, so the claim carries only from the genre. `domain/non-fiction.md` is where that statement belongs.
-
-`user-interface/` is complete across all five modules, authored full for 1.0.0. Nothing here loads all five at once: two are media and you pick one, three are overlays and you add what applies. `applications` is the longest at 1,702, because it carries nine surfaces and a product has more places to put a sentence than a page does.
-
-Its evidence base is three dossiers written for it: `apple-hig`, from about 150 pages of the guidelines read for text guidance, plus `stop-slop` and `kill-ai-slop`. Three modules repeat phrasing from `sources/`, on the same footing as `domain/marketing.md`: `website` at 36 shared five-word sequences and `applications` at 15, on the same measure, all of them the invented stat rows and stock openers those modules exist to ban, which have to be quoted exactly to be detected. `apple-hig` repeats one sentence of button mechanics from its own dossier — the rule is four words long in any phrasing that is still correct.
-
-Three decisions produced this shape. The axis is cut by medium rather than by widget, which was the second attempt — a first pass produced twelve surface-named modules, and every one of them ended up hedging between an app and a web page. A later review found the true seam is what the reader has committed to rather than the technology they arrived by, which is why the logged-in half of a website is `applications`; the medium labels are kept because they are what a writer reaches for, and each module's `## Boundaries` states the commitment test outright. And `accessibility` sits alongside the media rather than inside them, because the copy it governs is the only copy some readers get, and folding it into `applications` would have made it optional in exactly the projects that skip it already.
-
-The Apple guidelines are documentation for a platform, not a style manual, so `apple-hig` states the conventions and `sources/apple-hig.md` records where they are inferred rather than sourced. Two gaps: Apple says almost nothing about empty states, and its accessibility guidance covers what to label without giving the wording.
-
-Verified current as of August 2026: WIDA ELD 2020 remains the standing edition, and the Consortium now runs to 42 states, territories and federal agencies — New York joined as the 42nd and begins ACCESS testing in 2026-2027. Massachusetts and New Jersey are both members, New Jersey since 2005. CWPA approved Outcomes Statement 4.0 on March 4, 2026, and `domain/education-level/05-undergraduate.md` now carries the split in its own body: 3.0 is operative until a program says otherwise, 4.0 is the direction of travel, and the two do not map one for one. The one pin that is knowingly stale is AP: this repo was built from the 56th edition, and the 58th, 2026-2028, was released in May 2026. It expands the artificial-intelligence chapter and adds *AI agent*, *AI slop* and *vibe coding* — entries that bear on `core/anti-slop.md` — and closes *healthcare* to one word. Reading the 58th against `sources/ap-stylebook.md`, `domain/press.md` and the seven `domain/education-level/` tiers is the largest outstanding task in the repository. Until that happens, `domain/press.md` carries the pin and the two known changes in its own body, because `sources/` never loads alongside a draft and a caveat nobody sees is not a caveat.
-
-Three citation findings each reverse something a model is likely to assert confidently. IEEE abolished the bracketed range — `[1]-[4]` is now written `[1], [2], [3], [4]`. Chicago 18 cut the author threshold in a note to two, so three authors already take `et al.`, and it retired the 3-em dash for repeated names. APA revised its generative-AI formats in September 2025, adding a `[Generative AI chat]` descriptor and superseding the 2023 ChatGPT guidance still in wide circulation.
-
-Bluebook 22 carries one open question, narrowed but not closed in August 2026. Law library guides at BYU, Richmond and Georgetown, plus TypeLaw, agree that rule 18.2.1(d) *requires* an archival link or an "on file" parenthetical for every internet citation, where the 21st edition merely encouraged it — and they read it as reaching every internet source, not only volatile ones. Six independent guides keyed to the 22nd edition say "requires" or "must"; one BYU post says "should," which is most likely a softened paraphrase but cannot be excluded as the rule's actual word. The rule text is subscription-walled and has never been read directly here. `bluebook22.md` states the requirement and marks the on-file statement as a fallback rather than a co-equal option; confirm against the manual before relying on it in a filing.
-
-## Refresh
-
-Re-verify this repository monthly. Most of what it cites does not move, and checking everything every month is how a review becomes a ritual that stops catching things. The August 2026 pass produced the split below. Every pin it could reach a primary source for held, several of them to the day; the items that had moved are corrected in place.
-
-Check every month, because these moved within the last year or move on no schedule at all. The **AP Stylebook** edition and its year span — AP publishes in late May of even years, the 58th covers 2026-2028, and this is the pin that went stale. The **Apple Style Guide**, reissued each June, and the OS generation each September. **arXiv preprint versions**: read the submission-history block, not just the abstract, because `2603.27249` gained two versions and a new title in one quarter. **Wikipedia:Signs of AI writing**, edited about six times a day. The **IEEE Reference Guide**, which is a live document with no change log. **Generative-AI citation guidance in every style**, the fastest-moving category here. **WIDA consortium membership**. **FTC Green Guides** and the Part 465 rule. **ICMJE Recommendations**, whose AI section is the volatile part. **WCAG 3's** draft status. And the two prescriptive skill files, which are active repositories where a single commit changes a tell count.
-
-Check annually, or when something announces itself. Case law and the actual-malice doctrine. ABA Model Rule numbering. The Plain Writing Act. WCAG 2.2 success criteria. The Framework for Success in Postsecondary Writing and its habits of mind. STROBE 2007, PRISMA 2020, SPIRIT 2025, and CONSORT 2025, which replaced the 2010 statement in April 2025 with 30 items — seven new, three revised, one dropped. Pin the year even when it is old: STROBE 2007 is current, and writing the year is what lets a future reader who meets a STROBE 2027 see at a glance that this line has gone stale. The **ISO 24495 plain-language series** as a series rather than any one part: Part 1 from 2023 still governs the general rules, Part 2 on legal communication landed in August 2025 and Part 3 on science writing in May 2026, ISO 24896 on business-reporting notation followed in June 2026, and further parts are drafting. The 1984 FTC substantiation statement. AAC&U VALUE dimensions. The frozen Antislop banlist files. And the edition *numbers* of MLA 9, APA 7, Chicago 18 and AMA 11 — the editions are stable even while their AI guidance is not.
-
-Write every check against a version, not a name. Both items this repository missed had that shape: one was scoped to a part number and one to a guideline's title, so each reported itself current while a two-part standards expansion and a full revision went past underneath it. A check that cannot fail is the same as no check. Set each cadence from the source's measured rate for the same reason. The monthly slot for *Signs of AI writing* rested on an impression of a few edits a week; the page takes about six a day, so a month between passes is roughly 170 revisions, which is how it retired a live tell and grew seven sections before anyone here noticed.
-
-Two cautions about the sources themselves. A style manual behind a subscription wall has never been read directly here; where a rule rests on secondary guides, the module says so, and that hedge is not decoration. And when a source corrects itself, correct the correction rather than overwriting it — `sources/ai-slop-research.md` carries three provenance corrections and one correction of a correction, which is the honest shape of a file whose subject is accuracy.
-
-Four working lessons came out of the same pass, recorded because several people edit this repository at once. Read a file back before reporting an edit as done: one paragraph here was written, reported, and then deliberately cut later in the same pass, and it was the report closing the item that stopped anyone looking. Where an edit is only correct once a file you do not own changes too, do not make it — describe it as a coupled pair and let whoever holds both sequence them. The `non-fiction` precedence closer was removed alongside a recommendation that would have made removing it safe, the recommendation was not acted on, and for a while the README pointed at a rule that did not exist. Report against the tree as it stands rather than the tree as you found it, since two findings this pass had already been fixed by another hand before they were filed. And before reporting a lapse in one file, check whether it is the convention in every other file of its layer: the Title Case headings in `sources/` are house style across all nine dossiers, `sources/` never loads beside a draft, and one grep would have shown both. Most of these are a single shape — a rule the reviewer had stated correctly and then did not apply to the case in hand — and in each instance a sweep caught what judgment had already passed over. Once you have stated a rule, run it across the whole file rather than the passage that prompted it.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for source maintenance, generated artifacts and regression checks. Copyrighted working texts in `raw-data/` must remain untracked and out of prompt exports. Existing file-specific attribution and license notices still apply; no blanket license is inferred from them.

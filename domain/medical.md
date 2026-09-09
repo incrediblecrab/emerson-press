@@ -2,10 +2,10 @@
 id: domain.medical
 layer: domain
 kind: regulated
-version: 2.1.0
+version: 2.2.0
 status: draft
-budget: 2912
-tokens: 2912
+budget: 2870
+tokens: 2870
 mechanics: ama
 evidence_floor: 5
 evidence:
@@ -14,33 +14,33 @@ evidence:
 
 # Domain: Medical
 
-Clinical documentation, research reporting, patient education, public guidance. Pairs with `citation/ama11.md`.
+Clinical documentation, research reporting, patient education and public guidance. Use `citation/ama11.md` when the venue requests AMA references, not merely because the subject is health. A patient handout may use prose attribution, formal references or both.
 
 Overstated certainty is a safety defect here, not a stylistic one. In press, an overclaim damages credibility. In marketing, it draws a regulator. In medicine, someone stops a medication, or does not go to the emergency department, or agrees to a procedure they would have declined with the real numbers. The prose is part of the intervention, and it can hurt the reader the way a wrong dose can.
 
-The most common way it happens is not a lie. It is a relative risk reported without its base. *Cuts your risk in half* is true of a drop from two in ten thousand to one in ten thousand, and it is the same sentence a writer would use for a drop from forty percent to twenty. Those two facts should not share a sentence, and the fix costs eleven words: give the absolute numbers, in natural frequencies, on a common denominator. Gigerenzer's research is unambiguous that clinicians and patients both reason better from *3 in 1,000* than from *0.3%* — and the finding holds for the clinicians, which is the part that should end the argument.
+A relative reduction can conceal very different absolute changes: halving a risk from 2 in 10,000 to 1 in 10,000 is not the same benefit as reducing it from 40% to 20%. Report the available absolute rates over the same period and on a common denominator. Natural frequencies can make a comparison easier to follow; no universal superiority claim or permission to invent a baseline follows.
 
-Person-first language — *a person with epilepsy* rather than *an epileptic* — was a genuine advance, and applying it blindly has become its own failure. Much of the autistic community prefers *autistic person*, and much of the Deaf community prefers *Deaf person*, on the ground that the trait is identity rather than affliction. The AMA manual acknowledges this. A style rule that hard-codes person-first everywhere writes over the stated preference of the people it claims to respect, which was the thing person-first language was invented to stop.
+Respect stated language preferences rather than applying person-first or identity-first by reflex. *Autistic person*, *Deaf person* and *person with epilepsy* can each be appropriate in context. An individual's preference controls writing about that person; a group's practices may vary. Do not infer a population-wide preference from a few participants.
 
 ## Detect
 
 ### Certainty and causation
 
-- Efficacy stated flatly: *this treatment works, X cures Y, safe and effective* with no population, no effect size, and no interval.
-- Relative risk with no absolute baseline. The single most common numerical distortion in health writing.
+- Efficacy stated more broadly or confidently than the applicable evidence supports: *this treatment works, X cures Y, safe and effective*.
+- Relative risk presented as enough to judge benefit when the relevant absolute baseline is missing.
 - Causal verbs on observational data — *causes*, *prevents*, *leads to* — where the design supports only association.
 - Statistical significance read as clinical importance. A p-value below .05 in a large trial can describe a difference no patient would notice.
 - A single study framed as settled, or a preprint cited without noting that it has not been peer reviewed.
 - Mechanism reported as outcome: the drug lowers the marker, therefore it helps the patient. Many do not.
 - Surrogate endpoints substituted for the endpoint anyone cares about.
-- Screening described by five-year survival, which rises from earlier detection alone. Lead time, length bias, and overdiagnosis all inflate it. Mortality is the honest number.
-- Absent uncertainty. Confidence intervals dropped, limitations section missing, generalizability unstated.
+- Screening benefit inferred from survival after diagnosis alone, without considering lead time, selection, overdiagnosis, mortality or harms.
+- Relevant uncertainty omitted or overstated. Do not demand an interval for a claim that the underlying work does not quantify.
 
 ### Safety mechanics
 
-- ISMP error-prone forms: `QD` and `QOD`, `U` for units, `IU`, `MS` and `MSO4` and `MgSO4`, `cc`, `µg`, and drug-name abbreviations.
+- Error-prone medication-order forms such as `QD`, `U` or ambiguous drug abbreviations. Use the applicable safety standard; do not expand an ambiguous order by guessing the drug.
 - A trailing zero — `1.0 mg`, read as ten — or a naked lead decimal — `.5 mg`, read as five. Both have killed people.
-- Dose without route, frequency, or duration.
+- An actionable medication instruction missing required drug, dose, route, timing or other necessary order details.
 - Look-alike sound-alike drug names without the disambiguating form.
 - Numbers whose denominators shift between sentences, so the reader has to convert to compare.
 
@@ -55,37 +55,37 @@ Person-first language — *a person with epilepsy* rather than *an epileptic* �
 
 ## Write
 
-Give the absolute numbers. If a treatment moves an outcome from 2 in 1,000 to 1 in 1,000, write that, then give the relative figure if it helps. Keep the denominator constant across every comparison in the passage.
+Give available absolute risks with matching populations, periods and denominators; add relative change when useful. If only a relative figure is supplied, request the baseline or disclose that the absolute effect cannot be established from the record. Do not generate plausible rates to satisfy this instruction.
 
-Report design before result. *In a randomized trial of 4,200 adults over 60 with prior cardiac events* is not throat-clearing; it is the boundary of the claim, and the reader needs it before the effect size, not after.
+Give the relevant design and population with a research result, early enough to constrain its interpretation. Use only supplied or verified design details; do not create an age range, sample or prior condition for a more convincing opening.
 
-Attach the interval to the estimate, and say what the interval means: the range consistent with the data, not the range of possible truths.
+Retain a supplied, relevant uncertainty interval and identify its type and level. Interpret it under the study's assumptions; do not invent an interval or present it as all possible values. Qualitative observations and individual reports can state their limits in words.
 
 Say *associated with* when the design supports association. The discipline costs nothing and it is the difference between reporting a study and overselling it.
 
 Name the population the finding does not cover. Trials in adults do not transfer to children; trials in one ancestry group may not transfer; a six-month endpoint says nothing about year five.
 
-Write *we do not know* when that is the state of the evidence, and say what would resolve it. Uncertainty stated plainly is more trustworthy than false confidence, and patients handle it better than the literature once assumed.
+State what is unknown and, where known, what evidence could help resolve it. Do not invent a future test, accessible record or reassuring outcome.
 
 Follow the community's stated preference on identity. *Autistic person*, *Deaf person*, *person with diabetes*, *person with schizophrenia*. When writing about an individual, use theirs. When writing about a group whose preference is contested, say so once rather than picking silently.
 
-Describe behavior without judging it. *Took the medication three days a week* rather than *non-compliant*. *Did not respond to treatment* rather than *failed treatment* — the treatment failed the patient, and the sentence should say so in that direction.
+Describe documented behavior without judging it. Use a recorded frequency instead of *non-compliant* only when that frequency is known. Clarify what *failed treatment* means — response, adverse effects, access or something else — rather than inventing a clinical explanation.
 
-Give the patient the action and the threshold. What to do, how much, how often, for how long, and the specific signs that mean call now.
+For patient instructions, communicate the authorized action, timing and escalation signs clearly. If essential clinical details are missing or ambiguous, flag the material for qualified clinical review rather than completing an order or creating a treatment plan.
 
 ## Mechanics
 
-AMA style, restated. `citation/ama11.md` carries the full form.
+Use the venue's requested clinical or publication convention. `citation/ama11.md` handles AMA references where formal citations apply; its source dossier records verification limits.
 
 - Numbered citations in order of appearance, superscript, outside terminal punctuation.
-- Superscript numerals are the manuscript form. Patient-facing and public-guidance text attributes in prose instead — name the study, the journal and the year in the sentence — because a superscript points at a reference list the reader will not be given.
+- Superscripts suit a manuscript using AMA references. Do not impose them on a handout lacking a reference list, or remove a supplied accessible reference list merely because the audience includes patients. Use enough source identification for this document's purpose.
 - Journal titles abbreviated per the NLM Catalog. Up to six authors listed; beyond that, the first three and *et al.*
-- Conventional units, with SI units in parentheses; give the conversion factor at first mention.
-- A leading zero on every dose or measurement below one — 0.5 mg, never .5 mg — and never a trailing zero after a whole number. No leading zero on a statistic that cannot exceed 1: *P* = .04, not *P* = 0.04.
-- Doses written out — units, not `U`; daily, not `QD`; micrograms as `mcg`.
+- Use the units required by the clinical setting or venue. Convert only from a supported value with a verified factor; preserve meaningful precision.
+- In medication instructions, use a leading zero below one and avoid an unnecessary trailing zero on a whole dose. Do not erase meaningful trailing-zero precision from laboratory or measurement results. Statistical notation follows the selected manual.
+- Avoid error-prone dose abbreviations under the applicable medication-safety policy. This does not authorize guessing an ambiguous medication, route or schedule.
 - Generic drug names, with the brand in parentheses on first mention if it matters.
-- Trial registration number and funding source disclosed. ICMJE authorship criteria checked against each name on the paper.
-- The reporting guideline that matches the design, cited by version: CONSORT 2025 for trials, SPIRIT 2025 for trial protocols, PRISMA 2020 for systematic reviews, STROBE 2007 for observational studies. CONSORT 2025 replaced the 2010 statement in April 2025 and adds an open-science item, so a paper checked against the older list is checked against a superseded one.
+- Report real registration, funding, authorship and disclosure information under the venue's requirements. Never claim an authorship or checklist review occurred unless it did.
+- Choose the reporting guideline appropriate to the design, such as CONSORT, SPIRIT, PRISMA or STROBE, and verify the version adopted by the venue. Naming a checklist does not prove that the study satisfies it.
 
 ## Formats
 
@@ -109,15 +109,15 @@ State the limitation a reviewer would raise. Naming your own weakness reads as c
 
 ### Patient-facing
 
-Plain language, roughly eighth-grade reading level, and an eighth-grade reading level is not a simplification of the content — it is a translation of it. The numbers stay true. ISO 24495-3:2026 draws the line this section depends on: writing about a scientific subject for readers outside the field is its own task, with its own standards, and distinct from writing aimed at experts inside it.
+Use the actual patient's familiarity, language and access needs, not an automatic eighth-grade proxy. The numbers and clinical distinctions stay true. IPLF's public [May 12, 2026 announcement](https://www.iplfederation.org/press-release-part-3/) describes ISO science-writing guidance for relevant, understandable and usable communication without sacrificing accuracy. That public scope is not a claim that the full normative standard was read.
 
 Lead with what to do. Structure follows the reader's questions: what this is, what it means for me, what I do now, when I call someone.
 
-One idea per paragraph, short sentences, no Latin, every retained term defined in the sentence that introduces it. Natural frequencies, common denominators, absolute numbers.
+Keep instructions manageable, explain unfamiliar terms and use common denominators where a numerical comparison needs them. Retain a familiar medical term when it is the clearest name for the condition or action.
 
 A plainer word is only a translation when it denotes the same thing. *High blood pressure* stands in for *hypertension* safely. *Heart attack* does not stand in for *cardiac arrest* — those are different events with different treatments, and swapping one for the other is a clinical error wearing the costume of plain language.
 
-Name the red flags explicitly and separately, with a threshold and a destination. *Call 911 if the chest pain lasts more than a few minutes or comes with sweating or shortness of breath* — not *seek care if symptoms worsen*.
+Name the clinician-approved red flags and escalation route clearly, with any relevant threshold and local contact information. Do not invent a symptom threshold, emergency number for an unknown location or reassurance that changes when someone should seek care.
 
 Say who this does not apply to, and send them somewhere.
 
@@ -133,11 +133,11 @@ Safe-messaging conventions apply to suicide and self-harm: no method detail, no 
 
 ## Evidence
 
-Rung 5 for any clinical claim, tied with `legal` for the highest floor in this directory: uncertainty given a number — the interval on the estimate, the design that licenses it, and the population it covers. The sources that can carry that are a peer-reviewed study, a systematic review, or a guideline from a body that publishes its methodology. Preprints are labeled. Press releases about studies are not studies.
+The legacy `evidence_floor: 5` means careful, claim-appropriate support, not numerical uncertainty on every sentence. Attribute a patient report or chart observation as such. Support general treatment claims with appropriate current clinical evidence or guidance; identify design, population and endpoint when interpreting research. Label preprints, and do not treat a press release as the underlying study.
 
-Rung 5 is also a floor rather than a ceiling here, because a study can be real, peer reviewed, correctly cited, and still not support the sentence built on it. Design, population, endpoint, and effect size all have to match the claim. The citation being valid is necessary and nowhere near sufficient.
+A real, correctly cited study can still fail to support the sentence built on it. Design, population, endpoint, estimated effect and relevant limitations must fit the claim.
 
-The floor stands where the reader is a patient with no clinical training at all. A handout gets shorter sentences and the same interval, the same denominator, the same statement of who the finding does not cover. A `domain/education-level/` tier sets the words. Rung 5 sets what may be said with them.
+Patient communication keeps the same truth standard while selecting the details needed for the decision. Preserve meaningful uncertainty and denominators; do not force an irrelevant or unavailable interval into a handout. Reader support never creates evidence or clinical expertise.
 
 ## Boundaries
 
@@ -149,42 +149,71 @@ Against `non-fiction`. Science writing, illness memoir and the history of a tria
 
 Against `legal`. Both are regulated and both treat overstatement as a professional failure rather than a stylistic one. The difference that matters at the boundary is the reader's next move: a client can ask a follow-up question inside a continuing relationship, while a patient may act on a handout alone. Where the two meet — informed consent, an adverse-event notice, a capacity assessment — `legal` owns what the document must contain and this module owns how the risk is stated.
 
-With `domain/education-level/`. The default reader is an adult, and the split that matters — a colleague for the clinical note, a patient for the handout — is set by format rather than by tier. Load a tier when the reader is a student or a child, and it will shorten the sentences and simplify the words. It will not move the estimate. A handout that overstates certainty to sound reassuring has failed at the thing it was for.
+With `domain/education-level/`. Choose optional classroom presets only for an appropriate educational task. Age or credentials alone do not establish a patient's knowledge. Describe the actual reader and format; neither permits a changed estimate or unsupported reassurance.
+
+## Safeguards
+
+- Preserve clinical meaning, populations, outcomes, units, denominators and relevant uncertainty. Do not turn a marker change, association or isolated study into an established patient benefit.
+- Give relevant absolute risks when available over matching periods and denominators. If a baseline, interval or design detail is missing, request or qualify it rather than inventing it.
+- Keep observations, patient reports, inferences and general recommendations distinct. Do not fabricate patient history, adherence, test results or reasons for behavior.
+- Preserve authorized medication and escalation instructions. Flag ambiguous drugs, units, doses, routes or timing for qualified clinical review; a copyedit cannot safely complete an unknown order.
+- Respect privacy and stated language preferences. Do not add identifying details or infer a group's preference from an individual.
+- These safeguards apply to relevant claims in press, marketing or other genres without importing AMA citation format or asserting that a medical review has occurred.
 
 ## Examples
 
+These are synthetic evidence records and editing exercises, not treatment recommendations or verified reports of real studies.
+
 **Relative risk with no floor under it**
+
+**Supplied facts:** A fictional randomized comparison reports one-year stroke rates of 2 in 100 on the older drug and 1 in 100 on the new drug among adults over 65 with atrial fibrillation. Serious-bleeding rates are 5 and 7 in 1,000, respectively, over that year. No uncertainty interval or individual treatment recommendation is supplied.
 
 > The new drug cuts your risk of stroke in half.
 
-> Among adults over 65 with atrial fibrillation, about 2 in 100 had a stroke each year on the older drug and about 1 in 100 on the new one. That is one stroke prevented for every 100 people treated for a year. Serious bleeding rose from about 1 in 200 to about 1 in 150.
+> In this trial of adults over 65 with atrial fibrillation, the one-year stroke rate was 20 in 1,000 on the older drug and 10 in 1,000 on the new one. Serious bleeding occurred at rates of 5 and 7 in 1,000, respectively.
+
+*Review note: the supplied summary lacks uncertainty estimates; these rates are not an individual prescribing recommendation.*
 
 **Association promoted to cause**
 
+**Supplied facts:** A fictional observational cohort reports less chronic liver disease among coffee drinkers than nondrinkers. The supplied summary does not isolate coffee from other group differences or provide sample size, follow-up duration or a quantified effect.
+
 > Coffee prevents liver disease.
 
-> In a UK Biobank cohort of 494,585 adults followed for a median of about 11 years, coffee drinkers had a lower rate of chronic liver disease than non-drinkers (Kennedy et al., *BMC Public Health*, 2021). The study was observational and cannot establish cause; coffee drinkers differed from non-drinkers in ways the analysis could only partly adjust for.
+> Coffee drinkers had a lower rate of chronic liver disease in this observational cohort. The comparison does not establish that coffee prevented disease; other differences between the groups could contribute.
 
 **Screening measured by the flattering number**
 
+**Supplied facts:** The supplied comparison gives five-year survival after diagnosis of 92% for screen-detected cases and 61% for cases detected after symptoms. Earlier diagnosis and detection of tumors that would not cause harm can affect this measure. No mortality comparison or quantified overdiagnosis estimate is supplied.
+
 > Five-year survival for screen-detected cases is 92%, compared with 61% for cases found after symptoms. Screening works.
 
-> Screening finds cancers earlier, which lengthens the interval between diagnosis and death whether or not it postpones the death. It also finds tumors that would never have caused harm. Both effects raise five-year survival without saving anyone. The trials that tracked deaths found the screened group's breast-cancer mortality about 20% lower (Marmot et al., *Lancet*, 2012). How much overdiagnosis comes with that benefit is genuinely contested: the same panel put it near 3 overdiagnosed cancers per death prevented, the Cochrane review closer to 10, and the 2024 USPSTF modeling closer to 2. Give the range and name the source rather than picking the flattering end.
+> Five-year survival after diagnosis is 92% for screen-detected cases and 61% for cases detected after symptoms. That comparison alone does not show that screening reduces deaths. Earlier diagnosis can lengthen measured survival without postponing death, and detecting tumors that would not cause harm can also raise the survival rate. Mortality and harms require separate evidence.
 
 **A dose written dangerously**
 
+**Supplied facts:** These are incomplete synthetic order fragments, not instructions to administer medication. The first drug is unnamed; the insulin formulation and route are missing; the last abbreviation is ambiguous and lacks dose, route and timing details. No authorized corrected order is supplied.
+
 > Give 1.0 mg IV, U 10 insulin QD, MSO4 prn.
 
-> Give 1 mg intravenously. Give 10 units of insulin daily. Give morphine sulfate as needed — dose, route, and interval specified.
+> Clarification required before these fragments can be used as medication instructions. Confirm each drug, dose, route and schedule against an authorized order; do not guess what "MSO4" means.
+
+*Notation-only observations: an unnecessary trailing zero can be removed, and "units" and "daily" avoid the ambiguous abbreviations. Those edits do not complete the orders.*
 
 **Person-first applied over a stated preference**
 
+**Supplied facts:** Participants in this fictional interview record request the terms autistic people and Deaf people. They report barriers in services designed around hearing, non-autistic norms. No estimate of a whole community's preferences is supplied.
+
 > Individuals with autism and individuals with deafness often report difficulties with services designed for individuals without those conditions.
 
-> Autistic people and Deaf people often report that services designed around hearing, non-autistic norms do not fit them. Both communities largely prefer identity-first language; this piece follows that preference.
+> The autistic and Deaf participants interviewed for this piece said services designed around hearing, non-autistic norms did not fit them. This piece follows their requested identity-first language.
 
 **Blame in the chart**
 
+**Supplied facts:** The synthetic chart contains the labels below and a patient report of no alcohol use. It gives no insulin frequency, cost barrier, reason for the metformin label, treatment duration or HbA1c target.
+
 > Patient is non-compliant with insulin and denies alcohol use. Failed metformin.
 
-> Patient reports taking insulin about three days a week and describes the cost as the main barrier. Reports no alcohol use. Metformin did not bring HbA1c below target after four months.
+> Patient reports no alcohol use.
+
+*Clarification required: document actual insulin use and relevant barriers rather than "non-compliant." Establish whether "failed metformin" means limited response, adverse effects or another issue. The source does not support adding a frequency, cost explanation or test result.*

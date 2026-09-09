@@ -1,0 +1,212 @@
+{
+  "schema_version": 1,
+  "revision": "3ddd4e5ddea42afbeda05eefffd3669dbb86c8fc",
+  "tokenizer": "o200k_base",
+  "core_order": [
+    "core/accuracy.md",
+    "core/restraint.md",
+    "core/voice.md",
+    "core/anti-slop.md",
+    "core/formatting.md",
+    "core/rhythm.md"
+  ],
+  "scope": "Original modules and quick guide; no behavioral results",
+  "files": {
+    "citation/ama11.md": {
+      "sha256": "cac6f8720e9dbb0df44083c69e18894aea989837731c4f6da23dc7f655a5178e",
+      "body_sha256": "8008ab691483e7ec7d00bb30e13ec1e5f9a9785cfba960bf4806edbbe29e1db5",
+      "full_file_tokens": 1668,
+      "body_tokens": 1006
+    },
+    "citation/apa7.md": {
+      "sha256": "1f0ed3997354bad10ffd54e2cf1aea03a5e56b608615fa96b46ab83dc050e334",
+      "body_sha256": "de41e9f50799106b71b48aa8aa02354e8431d35b9f12f271aa46517c2220c85f",
+      "full_file_tokens": 1740,
+      "body_tokens": 1096
+    },
+    "citation/bluebook22.md": {
+      "sha256": "f039c8e3bcb7993b4ac5239c9f2045f9231828260ad1c60f76da4e1b3c251306",
+      "body_sha256": "14da260083887bc2d5e2c1b009371c124eba55bcffac2821351881b3fb486236",
+      "full_file_tokens": 2239,
+      "body_tokens": 1686
+    },
+    "citation/chicago18.md": {
+      "sha256": "367d51775548ade88945c2e597c31472f8a3f78ba2d1163d893786025f4626cf",
+      "body_sha256": "311890288837c06115d80c2ac99b29e8d59c975a7a87d8f5a6b580a325155541",
+      "full_file_tokens": 1704,
+      "body_tokens": 1102
+    },
+    "citation/ieee.md": {
+      "sha256": "1f771d8307b359f90c3ee80af9188b9a97418dcbadeef8a312a43128a2b938b9",
+      "body_sha256": "3a05016202ff7d3649548facd8816aa3954c0d7086bc1254d9f437099db15681",
+      "full_file_tokens": 1844,
+      "body_tokens": 1261
+    },
+    "citation/mla9.md": {
+      "sha256": "5a4c876b5525ac0f5dc8e04f43fa3268b6a3dcb82fc01b7da3df3fc7245d2206",
+      "body_sha256": "4b32c1449f930ebeacf997b90e947023de133620d162cfac3fdf399f8e5ae8b9",
+      "full_file_tokens": 1562,
+      "body_tokens": 1025
+    },
+    "core/accuracy.md": {
+      "sha256": "054b749fab3348d3a92db742d651482b7b2ac122610a891551f14a8822f8ca55",
+      "body_sha256": "ee50d76815e9c9626f4a76ba0120b179082cff111654e5fcc0131a2cd4f68276",
+      "full_file_tokens": 1641,
+      "body_tokens": 1026
+    },
+    "core/anti-slop.md": {
+      "sha256": "17a20cafa14f6b5e1306d4a7a4a21627a922424f91b9fd7ca327e23ec2d290fa",
+      "body_sha256": "3e3e0126414de64bb7d37d233bd7d3b9f350dab7f7686595c528bd64de76b5f7",
+      "full_file_tokens": 2777,
+      "body_tokens": 2161
+    },
+    "core/formatting.md": {
+      "sha256": "413bfb7b14dc66ad87a5d788740643f70984de426b1d0eca0a56c64ad0ae5b48",
+      "body_sha256": "fb85ff029e7fd539c46a75007ffed15620931fcbb0fd9f42f1464e89dd064da7",
+      "full_file_tokens": 1302,
+      "body_tokens": 847
+    },
+    "core/restraint.md": {
+      "sha256": "b585d70c1a7afaa5be18141c4dfccbfe65704368af0c3bea391294645b270285",
+      "body_sha256": "94d83c13045094e70712dcb6a41a192025ae4aa4d686404d3b2f9eb1de29da90",
+      "full_file_tokens": 1965,
+      "body_tokens": 1598
+    },
+    "core/rhythm.md": {
+      "sha256": "a86e37f6bb56bbed33dfdff6d47bd8363c194c20ad0591f2e6db8e07f06fd65d",
+      "body_sha256": "6f56e8ed2274ea7c931edaeacfb314c4eb2979f2a4208d733826c1e32d692ebb",
+      "full_file_tokens": 1001,
+      "body_tokens": 560
+    },
+    "core/voice.md": {
+      "sha256": "0090d9948cf378280f761372ed953e32820c201fcd894f66d408e5aca984337c",
+      "body_sha256": "6acfe3756122e16c08cdd0f948c4c1496a1a1ae67ccd103722588704096f0c97",
+      "full_file_tokens": 1706,
+      "body_tokens": 1205
+    },
+    "domain/education-level/01-elementary-lower.md": {
+      "sha256": "4b1823ef2b8ecd33a622569d6cf3412b9e9f1dccb5f1524a6c8f52fb2ed72c87",
+      "body_sha256": "45fe8e29e6f6737f5e57d90d80e6e8ce5a31939d90a18ddab8bc7e50ad3a9941",
+      "full_file_tokens": 1369,
+      "body_tokens": 1028
+    },
+    "domain/education-level/02-elementary-upper.md": {
+      "sha256": "a12e5bb2e35d26a472c0aa807170a0c06f10b4e6cf49a2f6076cfc8737a1d25c",
+      "body_sha256": "da7981fd06fc7ff43060416da2a02dc7c90001cc2e8071d0f2053c74beabeee0",
+      "full_file_tokens": 1183,
+      "body_tokens": 840
+    },
+    "domain/education-level/03-middle-school.md": {
+      "sha256": "28e6714c54d53d6191750baebd8eb2ad24e1df6ec6f1819c0cfd6ff96cbf22b2",
+      "body_sha256": "c339e46b3247419a9b5a0a3f9be09c48e76904d95bb792730a2805ab5459e329",
+      "full_file_tokens": 1368,
+      "body_tokens": 1011
+    },
+    "domain/education-level/04-high-school.md": {
+      "sha256": "828bd50ecabe422381f1d53691b3f537ccbb80188f2ef8a73aa81759c148efde",
+      "body_sha256": "ace7b990a3ffbf55ccb751f40f884a7c65eba204b6d949bbc3b0ed7c2f9956d8",
+      "full_file_tokens": 1638,
+      "body_tokens": 1195
+    },
+    "domain/education-level/05-undergraduate.md": {
+      "sha256": "758a9cd2c3158c4829a2c8547d9ce743db401620aa0cde3721c921c26b07db72",
+      "body_sha256": "d11f6268c86f2a82d83f079d0cea1b0de2a6a4f07a3c1c75c16648ba5fb56737",
+      "full_file_tokens": 1921,
+      "body_tokens": 1423
+    },
+    "domain/education-level/06-graduate.md": {
+      "sha256": "8cc31d290014e3faa96ad45f2882a57dc0b3b8ac6905409b3b58a5a650f09fc0",
+      "body_sha256": "679ee821aba1e22abcb5106925f945cec7007515fa65b62ba054bfdc40ffe537",
+      "full_file_tokens": 1570,
+      "body_tokens": 1154
+    },
+    "domain/education-level/07-post-graduate.md": {
+      "sha256": "d12f210693c1131e566b27fc2e8e7d4a29cc374035801167416444c9c3a21acf",
+      "body_sha256": "898ab6ea38c8c99de5e011af253871261c413266cd28786b6479427b4b9b92c8",
+      "full_file_tokens": 3066,
+      "body_tokens": 2383
+    },
+    "domain/fiction.md": {
+      "sha256": "3b2e0d4344a0f7926a0f407bb1b8781aad6f7ea66ab46af5f3fcbaa96d44033e",
+      "body_sha256": "a0f189ff291603af0bddbbee5966978c3039e6447cd875126521e5cd348226b5",
+      "full_file_tokens": 2961,
+      "body_tokens": 2396
+    },
+    "domain/general.md": {
+      "sha256": "2a9dde8b9ad682445fea28b70fc508a9ea7c2c01e3006fa6edff9f623ae30162",
+      "body_sha256": "7d4dd3feaec981c2a8ee56dde291d11bca8d55464b341ff204457e00e19edc01",
+      "full_file_tokens": 2569,
+      "body_tokens": 2054
+    },
+    "domain/legal.md": {
+      "sha256": "17b03e69315d287e1b5f246e405241c6792c51d4fc2e4f4a5fcf4f5d71a67f36",
+      "body_sha256": "0b80d15fe0287f29b26d0411fa86dc8e6303f42576f21eb2c49e5e184e5c78ad",
+      "full_file_tokens": 3385,
+      "body_tokens": 2621
+    },
+    "domain/marketing.md": {
+      "sha256": "79bfed3ff334659271d93a4f4ce3810f6c98e2393d62645572a05c1e2a109747",
+      "body_sha256": "27fffc47253b4f42ac34c283ca41a4b46c9c8816e33a2fdfa23ae6b93f429efd",
+      "full_file_tokens": 3040,
+      "body_tokens": 2539
+    },
+    "domain/medical.md": {
+      "sha256": "9f05f888287a13a64cdba11689ea724b42e6ccffaf4f71521767907ae170df05",
+      "body_sha256": "6e16d5fe41875b80f1f1ef5b22bc35bdf0dd01fb801481ead99c02f580ec5d40",
+      "full_file_tokens": 3538,
+      "body_tokens": 2912
+    },
+    "domain/non-fiction.md": {
+      "sha256": "b160d1d17f84fb576181b8b4dfb4fd6f251f0dc18702c4071299b36ce22bfb91",
+      "body_sha256": "26083128ed5247178300099e311aaea5fb77295bb77b2142ab87e8c38918a082",
+      "full_file_tokens": 3435,
+      "body_tokens": 2774
+    },
+    "domain/press.md": {
+      "sha256": "b4a876482b0f038a6b04a5a8da94ee764966052e02940395e96f297d3254faa3",
+      "body_sha256": "700c4b5c74aa25863a8e0edd03d4a99ca05fb48add3526ba900f0989f8a03348",
+      "full_file_tokens": 3355,
+      "body_tokens": 2848
+    },
+    "domain/technical.md": {
+      "sha256": "d8b9a6d82d8cf3529ba0ecf31c3aaea07289b798a02f3fc417645ae4ed008bea",
+      "body_sha256": "8337b09c5a9c271f380038beca89bfd58e90c76c255d5a591fa9ca9a981e9f4f",
+      "full_file_tokens": 3128,
+      "body_tokens": 2531
+    },
+    "user-interface/accessibility.md": {
+      "sha256": "578a1c31466a50883f3f0d4a6b721dc3efdca4877cc9e2a5463a0ce0f66421ad",
+      "body_sha256": "9ebc66a59861fb63dc6cccf77cc223d81bb07bbd33068f2710cbcdddaa23c89a",
+      "full_file_tokens": 1716,
+      "body_tokens": 1218
+    },
+    "user-interface/apple-hig.md": {
+      "sha256": "67ea72fdcd9da750c0345fef97610ead2e7e8b93ff493aa3c7962a78bba9d07f",
+      "body_sha256": "2c255ffd25f6c6d5cdbb17956de71381aa8ea60595cda1e8c2ff161a6378a63f",
+      "full_file_tokens": 1697,
+      "body_tokens": 1268
+    },
+    "user-interface/applications.md": {
+      "sha256": "7e55fa32927c2cbbedc1d868022d0e8d0058013647545720b9470aa26f31f795",
+      "body_sha256": "efbaa548e1feb6aa8e95667251f333e24b67142268dce2ec65ef848b68143369",
+      "full_file_tokens": 2229,
+      "body_tokens": 1715
+    },
+    "user-interface/charts.md": {
+      "sha256": "fb84915140cc50ae32af73b0b2c9504b6d3d2bb225c5c1ec26587b45d1f46955",
+      "body_sha256": "9f9f70f2fb178e977812bbabe4fe7f1e9c3cf4d0c80620df43ad21caabdc1b05",
+      "full_file_tokens": 1653,
+      "body_tokens": 1150
+    },
+    "user-interface/website.md": {
+      "sha256": "ea234d3b64d03bcc83d3dfbd469b92bf38f4e4a3b13cfdaa45c687eacb603de0",
+      "body_sha256": "74c6f0b632b54727dbb15750b84aace4eb93f964ab6785b4a89d8c69b5fa1c08",
+      "full_file_tokens": 1974,
+      "body_tokens": 1378
+    }
+  },
+  "quick_guide": {
+    "sha256": "dc86dcd9cf71bb205804500c83276ef28b414670bfa6887d9f1b60a1b3e2ad91",
+    "tokens": 6694
+  }
+}

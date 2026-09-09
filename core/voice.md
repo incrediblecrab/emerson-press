@@ -1,10 +1,10 @@
 ---
 id: core.voice
 layer: core
-version: 1.2.0
+version: 1.3.0
 status: draft
-budget: 1205
-tokens: 1205
+budget: 1020
+tokens: 1020
 evidence:
   - sources/ap-stylebook.md
   - sources/field-guide-to-ai-slop.md
@@ -14,9 +14,9 @@ evidence:
   - sources/antislop-banlists.md
 ---
 
-# Human Voice
+# Voice
 
-Anti-slop subtracts. Supplying what subtraction cannot reach is the half that matters more, because prose stripped of every tell still reads as machine-made when nothing particular is left in it. A particular that was never there cannot be subtracted into existence. Particulars are retrieved, not generated.
+A useful voice has something to say and fits its reader. Removing familiar AI phrases does not supply missing knowledge, a defensible position or an author's experience. In factual writing, particulars must come from the record rather than being invented to sound authentic.
 
 ## Detect
 
@@ -29,7 +29,7 @@ Anti-slop subtracts. Supplying what subtraction cannot reach is the half that ma
 
 ### People dissolved into categories
 
-- Vague collectives where people belong: `stakeholders`, `the community`, `casualties`. The last is worse than vague — it hides whether anyone died.
+- Vague collectives where a known, relevant description would help. If a report gives only `casualties`, do not turn that aggregate into a death toll.
 - `The` plus adjective as a group name: `the homeless`, `the disabled`, `the poor`. One adjective replacing a whole identity.
 - `Community` implying that everyone in it thinks alike.
 - A person reduced to one relationship or role when they hold others.
@@ -40,41 +40,43 @@ Anti-slop subtracts. Supplying what subtraction cannot reach is the half that ma
 - Inflated diction where a plain word exists: `utilize`, `facilitate`, `leverage`, `attempt`, `commence`, `authored`, `relocated`.
 - Euphemism softening a checkable fact: `passed away`, `officer-involved`, `racially charged`, `adult-use`, `collateral damage`, `differently abled`. Each replaces something specific with something vaguer, and some launder what happened.
 - Imprecision that misinforms without being false: `average` for a median, `merger` for an acquisition, `trauma` for a bruise.
-- The wrong half of a pair: `fewer` and `less`, `affect` and `effect`, `imply` and `infer`, `farther` and `further`, `continual` and `continuous`, `is comprised of` for `comprises`.
+- Confused senses that change meaning: `affect` and `effect`, `imply` and `infer`, `continual` and `continuous`. Usage preferences such as `farther`/`further` follow the selected style.
 - Degree words on absolutes: `very unique`, `most unique`, `totally destroyed`.
 - Redundant modifiers: `past history`, `new record`, `future planning`, `convicted felon`.
 - Idiom carrying freight the writer did not intend: `insane schedule`, `lame idea`, `turning a blind eye`.
 
 ### No one behind the prose
 
-- **False agency.** Abstractions given human verbs so no actor has to be named: `the decision emerged`, `the culture shifted`, `the conversation moved toward`, `the data tells us`, `the market rewards`, `a complaint became a fix`. Somebody decided. Somebody read the data. Somebody fixed it.
+- **Hidden agency.** A decision or action described vaguely when the known actor matters. A statistical measure, collective process or useful metonymy does not require inventing one person behind it.
 - Stacked hedges standing in for a position: `may potentially`, `some would argue`, `it could be said that`.
-- Every judgment attributed outward, so the writer never appears.
-- One tense and one person held with unnatural consistency.
+- When judgment is requested, the writer avoids taking a position and merely lists other people's opinions.
+- Shifts in tense or person that obscure the writer's position or a source's contribution.
 
 ## Write
 
-Name the actor and the act, in active voice, with a date and a number when you have them. When a sentence has an abstraction doing something human, find the person underneath it. The passive is not a fault in itself — it earns its place where the actor is genuinely not the point, and `three patients withdrew` and `the trial was halted` are different facts, not the same fact in two registers. What to watch is the agentless passive that hides a decision somebody made.
+Name the actor and the act when the record identifies them and the actor matters. Do not invent agency, dates or numbers to satisfy a style preference. Active voice often helps; passive voice can be precise when the actor is unknown or the recipient is the point. Preserve the fact the construction actually asserts.
 
-Take the short word. `Used`, not `utilized`. `Tried`, not `attempted`. `Wrote`, not `authored`. `Died`, not `passed away`. Strong verbs do the work that stacked modifiers try to do.
+Prefer the familiar, direct word when it carries the same meaning and fits the situation. `Used` often serves better than `utilized`; a term of art or a deliberate expression may still be the right choice. Do not run a substitution list without checking the sentence.
 
 Choose the word that maps onto the fact rather than a broader one pointing in its direction. Imprecise language misinforms a reader even when it is not false.
 
-Be specific about people. `Japanese American women in their 20s` rather than `young Asian women`. `People over 80` rather than `older adults`. Let facts carry evaluation: instead of calling someone a hero, give the record and let the reader arrive. The precise version is almost always the fair one too, which is why this is a craft rule and not only an ethical one.
+Be as specific about people as the evidence and their preferences permit. Do not infer age, identity or a narrower group from a broad label. In reporting, give the relevant record rather than an unsupported characterization. In opinion, make the judgment yours and explain its basis.
 
-Say the thing plainly where a euphemism is available. If a term must appear because someone used it, quote it, attribute it, and explain it.
+Use plain descriptions where a euphemism obscures what happened. Respect the purpose and tone of personal writing, and preserve quotations accurately. Explain a loaded term when understanding it matters.
 
-Commit. Say which is better and why. Definite claims are allowed when you can support them — `the only`, `the first`, `the best of them` — and machine prose hedges exactly these away. Readers forgive a position they disagree with and skim past a hedge.
+Take a position when the task calls for judgment, and say why. Keep factual confidence proportional to support. A verified superlative may be exact; an uncertainty qualifier may be essential. Neither confidence nor hedging is inherently an AI tell.
 
-Keep the ordinary words. `Very`, `perhaps`, `in order to`, `the fact that`, `there is a`. Prose polished free of these moves toward machine register, not away from it. `restraint` governs here.
+Keep ordinary words and connectives when they help. Remove them when they are genuinely redundant, not because a list says they are too polished or insufficiently human.
 
-Write from what you can check: a number in the record, a document you read, a sentence someone is on record saying. A model can counterfeit the surface of a specific — a plausible date, a clean figure, a name — so concreteness alone proves nothing. What cannot be faked is a specific that is *true*, because its truth sits outside the prose and has to be gone and gotten. So specificity is a retrieval task rather than a generation task: take the number, the proper noun, and the date from the record, invent none of them, and where the record is silent say so. `accuracy` sets that floor.
+Write from the supplied record, documented retrieval and the author's actual contribution. Concreteness alone proves nothing. Do not manufacture personal experience or a plausible citation, and do not claim verification merely because a detail sounds right. Where the record is silent, preserve the gap. Fiction follows the creative brief rather than pretending its inventions were reported.
 
 ## Examples
 
-The specifics below stand in for facts you must actually hold. The lesson is the move from vague to concrete, not these particular numbers. Supply your own, and source them.
+The packets below describe illustrative scenarios. An edit may use those supplied facts; it may not invent comparable facts when a real request supplies none.
 
 **Nothing said**
+
+**Supplied facts:** A fictional team builds billing software for dental offices. Its supplied annual report records average invoice-dispute time falling from nine days to two in the previous year.
 
 > Our team is committed to delivering innovative solutions that drive value for our stakeholders.
 
@@ -82,17 +84,23 @@ The specifics below stand in for facts you must actually hold. The lesson is the
 
 **Abstraction in place of people**
 
+**Supplied facts:** In this fictional clinic record, nurses found that 40% of missed appointments involved people who could not leave work on weekdays. The clinic then added Saturday hours.
+
 > Outreach efforts were expanded to better serve the underserved in the community.
 
 > The clinic added Saturday hours after nurses found that 40% of no-shows were people who could not leave work on a weekday.
 
 **Label in place of record**
 
-> The statue honors a hero of the war and remains a source of local pride.
+**Supplied facts:** A fictional town's statue depicts the mayor who signed its public-library charter in 1926. No evidence about public opinion is supplied.
 
-> The statue is of Braxton Bragg, who owned 105 people and commanded an army that seceded.
+> The statue honors the town's visionary mayor and remains a source of local pride.
+
+> The statue depicts the mayor who signed the town's public-library charter in 1926.
 
 **Euphemism**
+
+**Supplied facts:** The fictional incident record states that a sheriff's deputy shot the driver during the traffic stop. That direction of action must come from the record, not from the phrase `officer-involved`.
 
 > The department confirmed an officer-involved shooting during the traffic stop.
 
@@ -100,23 +108,31 @@ The specifics below stand in for facts you must actually hold. The lesson is the
 
 **Inflated diction**
 
+**Supplied facts:** The fictional committee used a checklist, and every member signed off before its vote.
+
 > The committee utilized a comprehensive framework to facilitate stakeholder alignment prior to finalizing the initiative.
 
 > The committee used a checklist. Everyone signed off before the vote.
 
 **Imprecision that misinforms**
 
+**Supplied facts:** The supplied figure is median household income of $35,000. No mean or information about particular families is supplied.
+
 > The average household income in the district is $35,000.
 
-> Half the district's households make under $35,000. The average is higher, pulled up by nine families on the lake.
+> Median household income in the district is $35,000.
 
 **Hedging where a position belongs**
 
+**Supplied facts:** In this fictional project, the platform team already operates and backs up Postgres. It offers no equivalent managed SQLite service. The writer is asked to recommend one of those options for this deployment.
+
 > While there are arguments on both sides, some would say the approach may potentially offer certain benefits in some contexts.
 
-> Use Postgres. SQLite will not survive your second region, and you will migrate under load instead of on a calm Tuesday.
+> Use Postgres for this deployment. The platform team already operates it and handles its backups.
 
 **Detail that fits any subject**
+
+**Supplied facts:** The fictional museum's supplied description lists one Vermeer, a leaking roof and a cafe that closes at two. The example is not a claim about a real museum.
 
 > The museum is nestled in a vibrant district and offers visitors a diverse array of experiences.
 

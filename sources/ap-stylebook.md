@@ -1,13 +1,22 @@
 ---
 id: sources.ap-stylebook
 layer: sources
-version: 1.2.0
+version: 1.3.0
 status: active
 budget: none
+evidence_kind: publisher-guidance
+checked_on: 2026-09-08
+verification_status: partial
+source_version: "56th edition (2022-2024) print basis, with selected public 58th-edition and newsroom updates through 2026-09-08; no full 57th/58th entry audit"
+source_urls:
+  - https://www.ap.org/media-center/press-releases/2026/new-ap-stylebook-features-expanded-artificial-intelligence-chapter/
+  - https://www.ap.org/the-definitive-source/announcements/ap-updates-newsroom-standards-for-artificial-intelligence/
+  - https://www.apstylebook.com/blog_posts/19
+verification_note: "The public-update ledger uses primary AP announcements independently checked in the 2026-09-08 research artifact, including primary-page publication dates. Inherited 56th-edition page references were not re-audited in this refresh. The full paywalled 58th edition and operational policy details remain unverified; extraction omissions do not establish source silence."
 source:
   title: "The Associated Press Stylebook and Briefing on Media Law"
   edition: "56th edition, 2022-2024"
-  superseded_by: "57th edition, 2024-2026, and 58th edition, 2026-2028, released May 2026; neither read against this dossier"
+  superseded_by: "57th edition, 2024-2026, and 58th edition, 2026-2028, released May 27, 2026; selected public updates recorded below, full entry audits outstanding"
   publisher: "The Associated Press"
   year: 2022
   extent: "1,224 pp."
@@ -30,29 +39,37 @@ consumers:
   - domain/press.md
 ---
 
-# Source: AP Stylebook, 56th Edition
+# Source: AP Stylebook — 56th-Edition Basis and Public Updates
 
 Evidence base for `core/`, and for the AP mechanics that `domain/` and the `domain/education-level/` ladder draw on. Unbudgeted by design: nothing here is loaded into a prompt alongside a draft. This is what you read when you author or revise a core module, so the module itself can stay short and still be defensible.
 
-This dossier restates every rule below in original wording and quotes nothing. Bare lists — clichés, jargon terms, redundant constructions — appear as lists, because a list of flagged words is a finding rather than prose. Page numbers refer to the print pagination of the 56th edition.
+This dossier uses original restatements, not source-text transcription. Short usage examples illustrate the inherited notes; they are not a replacement for the manual. Page references are retained from the 56th-edition notes; their mapping to print pages was not rechecked here, and they do not locate entries in the current online edition.
 
-AP publishes on a two-year cycle, and this dossier is two editions behind. Two editions have shipped since the 56th and neither has been read against anything here.
+The detailed basis remains the 56th edition. Neither the full 57th nor the full 58th edition has been audited against these notes. Public announcements establish the limited updates below; they do not verify every older entry by implication.
 
-The 57th, 2024-2026, is the one to read first, and not because it is older. It added the artificial-intelligence chapter, along with a criminal-justice chapter the 56th does not have. An unread chapter on how to write about artificial intelligence is the single most relevant gap in this dossier's coverage, given what every other file in `sources/` is about, and nothing below reflects a word of it.
+## Public-Update Ledger
 
-The 58th, 2026-2028, published in late May 2026, expands that chapter and adds entries for *AI agent*, *AI slop* and *vibe coding*, which bear directly on `core/anti-slop.md`. It also closes *healthcare* to one word.
+| Primary publication | Publicly established update | Limit on reuse |
+| --- | --- | --- |
+| [58th-edition release, May 27, 2026](https://www.ap.org/media-center/press-releases/2026/new-ap-stylebook-features-expanded-artificial-intelligence-chapter/) | Confirms the 58th edition, an expanded AI chapter, entries for *AI agent*, *AI slop* and *vibe coding*, and *healthcare* as one word. AP copy avoids *vibe coding* outside quotations. | A release announcement is not the full chapter or a complete change list. Do not invent entry definitions or infer unread clauses. The full 58th-edition audit remains outstanding. |
+| [Newsroom AI standards update, July 23, 2026](https://www.ap.org/the-definitive-source/announcements/ap-updates-newsroom-standards-for-artificial-intelligence/) | Permits specified assistive uses with journalist review before publication; retains human sourcing, verification and accountability. Adds coding-assistant guidance and standards for disclosure of material generative-AI contributions. | This is AP staff policy, not a universal condition of choosing AP spelling or punctuation. The public announcement does not expose every operational disclosure rule. |
+| [AP guidance on reporting about AI](https://www.apstylebook.com/blog_posts/19), publication date not independently established; checked September 8, 2026 | Avoid anthropomorphizing systems or assigning them gendered pronouns; examine training-data bias and present-day effects; check developer claims rather than merely repeat them. | Public guidance summary, not verification of the complete paid AI chapter. Reporting *about* AI is distinct from permission to use AI in production. |
 
-Treat every rule below as the 56th edition's, and re-verify against the 58th before relying on any of them for current wire style.
+The session artifact `public-standards-research.json` records confirmation of the two announcements' publication dates from primary-page JSON-LD. July 26 is a republication date, not the date of AP's newsroom update.
+
+Do not carry forward a blanket prohibition on AI-assisted publishable content from the older 2023 policy as AP's current position. Equally, the new announcement is not permission for unattended publication or unverified sourcing. A non-AP writer follows the applicable venue's AI policy; selecting AP mechanics alone does not adopt AP's organizational workflow.
+
+Except where this ledger states a public update, treat the detailed notes below as historical 56th-edition guidance and recheck high-risk mechanics before claiming current wire-style compliance.
 
 ## Why This Source
 
-AP is the only widely used style guide that justifies its rules almost entirely by their effect on a reader, and that describes its own purpose as a working compromise rather than a standard of correctness. That makes it unusually well suited to a system that has to explain *why* a sentence should change.
+AP supplies reader-oriented editorial guidance and treats many style decisions as working conventions. That is useful when explaining why a sentence should change, but it does not make AP the sole authority on clarity or independent experimental evidence for prompt efficacy.
 
-It also has the largest usage section of any general guide in English, and that section is where the craft material lives: the redundancies, the euphemisms, the precision pairs. Most style guides tell you where the comma goes. AP tells you that `officer-involved` is doing work for someone.
+Its usage material supplies concrete checks for redundancy, euphemism and precision. The relevant question is whether a formulation conceals or misstates a fact, not how this guide ranks against other manuals.
 
 ### The repurposing caveat
 
-AP is a newsroom guide. Roughly half of it is journalism mechanics — datelines, wire conventions, sports agate, media law — that `core/` has no business importing. Those belong to `domain/press.md`.
+AP is a newsroom guide. Journalism mechanics — datelines, wire conventions, sports agate and media law — should not become general writing rules merely because they appear in it. Those require their own domain context.
 
 What `core/` takes is the craft layer underneath: the reasoning about clarity, precision, plain language, and reader attention, which AP applies to news but which is not about news. This dossier marks a newsroom-specific rule where one appears and hands it to `domain/`.
 
@@ -78,19 +95,19 @@ The densest passage of general writing craft in the book, from the accessibility
 6. When a sentence accumulates punctuation, split it into two — or three.
 7. Do not stack modifiers.
 
-Point 6 is the operational core of `core/rhythm.md`. Punctuation density is treated as a *symptom* of overload, so the response is decomposition rather than repunctuation.
+Point 6 suggests a useful check for `core/rhythm.md`: punctuation density can be a symptom of overload. These accessibility-oriented recommendations are not proof that every long sentence or sentence containing related ideas needs splitting.
 
 ## Sentence Construction
 
 ### The tangled sentence
 
-Judge every mark by whether it helps a reader grasp the intended meaning, and cut any mark not doing that work. When a sentence has started collecting commas, semicolons, and dashes, rebuild it from scratch into shorter ones rather than keep patching its punctuation. The construction went wrong at some earlier point, and no arrangement of marks recovers it. [[p. 565]]
+Judge every mark by whether it helps a reader grasp the intended meaning. When nested clauses or punctuation obscure the thought, try rebuilding into shorter sentences rather than repeatedly patching the marks. A punctuation count alone does not establish that the construction is broken. [[p. 565]]
 
 AP illustrates with two real unfixed sentences — nested clauses, appositives, stacked nationality and place detail — presented purely as cautionary specimens, with no corrected version offered. [[p. 565-566]]
 
 ### Parentheses as a symptom
 
-The pull toward parentheses signals that a sentence is becoming contorted. The fix is to rewrite it. If genuinely incidental material must stay, commas or a pair of dashes usually serve better. [[p. 579]]
+In the inherited guidance, accumulating parenthetical material is a reason to consider rewriting. [[p. 579]] It is not proof that every parenthesis is a defect; technical notation, citation styles and genuinely incidental information can require or benefit from parentheses.
 
 ### Modifier stacking
 
@@ -102,9 +119,9 @@ A modifier must attach logically to a specific word in the sentence: the real su
 
 ### Voice
 
-AP issues no blanket rule about voice, and then prescribes active verbs in every place it addresses the question. The business chapter says to describe profit movement with active verbs — *rose*, *fell* — rather than the passive *were up* or *were down*. [[p. 586-587]] The same chapter says to quote stock prices with active verbs. [[p. 490]] The accessibility manifesto asks for strong verbs in short sentences. [[p. 613]] And `comprise` is restricted to the active voice with a direct object, which rules out `is comprised of` as an error rather than a variant. [[p. 115]] Four separate chapters reach for the active verb; none of them reaches for the passive. Read the pattern rather than the missing headline rule, and treat that reading as this dossier's inference rather than AP's sentence.
+The selected 56th-edition notes favor direct verbs in several contexts. The business material recommends *rose* and *fell* rather than *were up* or *were down*; those latter constructions are not grammatical passives. [[p. 586-587]] The stock-price and accessibility notes likewise favor active or strong verbs. [[p. 490, 613]] The historical `comprise` entry prescribes active use with a direct object. [[p. 115]] These examples support a house preference for naming the action when useful, not a claim that AP bans passive voice or that no other AP entry permits it.
 
-One entry shows what the passive is actually for, and it is the sharpest thing in the book on the subject. Write that a person `drowned`. Write that a person `was drowned` only when somebody else held them under. [[p. 174]] The passive there is not a softening and not a register choice. It changes the fact the sentence asserts, because it asserts an agent. That is the test worth carrying: a passive earns its place when the recipient genuinely is what the sentence is about, and fails the moment its job is to keep an actor out of the sentence.
+The historical drowning entry distinguishes `drowned` from `was drowned` when another person caused the drowning. [[p. 174]] The useful test is factual: changing the construction can change the agency being asserted. Passive voice can also be appropriate when the recipient matters or the actor is unknown. Do not invent an actor merely to make a sentence active.
 
 `core/voice.md` states the positive rule — name the actor and the act — and this is the evidence under it.
 
@@ -118,11 +135,11 @@ That last rule generalizes past journalism, and `core/rhythm.md` uses it: when a
 
 ## Lists and Series
 
-The most direct answer AP gives to the machine habit of reaching for a bulleted list, and the passage `core/formatting.md` should stand on.
+Historical AP list guidance relevant to `core/formatting.md`. It is a publishing convention, not evidence about the frequency or cause of lists in model output.
 
 **Construction.** Mark each item with a dash by house default; a bullet character is an accepted alternative. Put one space between the mark and the item's first word. Capitalize the first word of every item. End each item with a period rather than a semicolon, whether the item runs as a full sentence or as a fragment. Lead into the list with a short introductory phrase or sentence instead of dropping items in unframed. [[p. 315]]
 
-**Parallelism, which is the rule that matters here.** Hold every item to the same part of speech, the same grammatical voice, the same verb tense, and the same sentence type. A list built entirely of short verbless phrases is equally acceptable, provided every item follows that same phrase-only pattern. [[p. 315]] A three-item list assembled for cadence fails this test almost immediately, because items reached for by rhythm rarely match in form. Parallelism is a checkable property, so it catches the failure that "avoid triads" only gestures at.
+**Parallelism.** Hold comparable items to a consistent grammatical form. A list built entirely of short verbless phrases is also acceptable. [[p. 315]] Parallelism checks form, not substance: a perfectly parallel triad can still say little. Let the material determine the number of items; do not delete a real third item to avoid a stylistic pattern.
 
 **The serial comma is conditional, and flattening it is the common error.** In a simple series, separate items with commas and skip the one before the final conjunction — unless dropping it leaves the grouping genuinely ambiguous, in which case keep it, or better, rewrite so the grouping does not depend on a comma at all. [[p. 570]] Add the comma before the final conjunction when a listed item already contains a conjunction of its own, or when the series is built from longer parallel clauses rather than single words. [[p. 571]] When items run long or already carry internal commas, switch the separators to semicolons, including before the final `and`. [[pp. 583-584]] "AP never uses the Oxford comma" overstates a rule AP states as a clarity call.
 
@@ -142,20 +159,20 @@ One related usage entry belongs here. `Claim` as a verb signals the writer's own
 
 ### The general argument
 
-AP does not supply a master list. It makes an argument. [[p. 103]] Restated: clichés are used constantly because they are easy, and that ease is exactly the problem. A cliché tells the reader nothing new is being said, which lets attention slide off the page.
+The selected cliché entry argues for wording specific to the situation rather than familiar language that adds little information. [[p. 103]] This is an editorial rationale, not a measured rule that every familiar phrase loses a reader.
 
-AP does not prescribe avoidance. It prescribes substitution: find wording original and specific to the situation in front of you, so the reader keeps paying attention. The entry leans into cliché itself before pivoting, apparently on purpose.
+The useful house application is constructive: supply the particular fact or relationship that a stock phrase leaves unstated. Do not infer the absence of other AP guidance from this selected entry.
 
 ### The health and science list
 
-AP names these as clichés common to science and medical writing and says to cut them from prose and from inside a quote alike. [[p. 646]] They are regrouped here by the kind of claim each one smuggles in; the source neither orders them this way nor stops where this list stops:
+The inherited notes flag these clichés in science and medical writing. [[p. 646]] They are regrouped here by the kind of claim they can obscure; this is an illustrative review list, not a prohibition on discussing or quoting the terms:
 
 - Overstated breakthrough: `holy grail`, `game changing`, `paradigm shift`, `sea change`, `cutting edge`
 - False decisiveness: `silver bullet`, `smoking gun`, `wake-up call`
 - Borrowed drama: `perfect storm`, `sci-fi`
 - Managerial filler: `outside the box`, `low-hanging fruit`, `tip of the iceberg`
 
-The instruction to avoid them even in quotation is the notable part: AP treats this as a reader-facing clarity problem, so a cliché is not redeemed by someone having said it.
+Avoid letting a quoted cliché stand in for a factual explanation. Do not silently remove words from a quotation and present the altered wording as verbatim: quotation integrity still governs. When appropriate, paraphrase faithfully or choose a different quotation.
 
 ### Sports
 
@@ -178,9 +195,9 @@ AP defines jargon as the specialized vocabulary of a profession or group. The ru
 
 The reasoning is sharper than the rule. [[p. 103]] Jargon exists as insider shorthand, but it also functions as in-group code and as a way to soften or spin a fact rather than state it. AP's illustrations run from a clinician's term for a symptom set, to a business term for pre-decision research, to a military term for accidental civilian killing — that last one a euphemism wearing a term of art. The same entry treats cliché as the same failure: it signals the reader to stop paying attention rather than engaging them. The writer's job is to translate and to dig for the real meaning.
 
-### The plain-language table
+### Plain-language checks
 
-Science and medical jargon with AP's recommended replacements. [[p. 646]] Ordered here by how readily the word slips into a draft, not alphabetically as in the source:
+House applications of the 56th-edition plain-language advice. [[p. 646]] These are checks for accurate explanation, not automatic replacements or newly verified 58th-edition entries:
 
 | Jargon | Write instead |
 | --- | --- |
@@ -188,10 +205,10 @@ Science and medical jargon with AP's recommended replacements. [[p. 646]] Ordere
 | `prevalence` | say how common it is |
 | `efficacy` | how well it works, or does not |
 | `proportion` | share |
-| `clinical trials`, `trials` | studies, research |
+| `clinical trials`, `trials` | explain the study type when the distinction matters |
 | `literature` | earlier studies |
-| `clinician` | doctor |
-| `pathogen` | germs |
+| `clinician` | name the actual clinical role when relevant; not every clinician is a doctor |
+| `pathogen` | explain the disease-causing agent in terms the intended reader understands |
 
 With a critical caveat. If you are not certain a plain synonym is accurate, ask rather than guess: `high blood pressure` safely replaces `hypertension`, but `heart attack` cannot replace `cardiac arrest`, because those are different events. Substituting a plainer term that denotes something else is not simplification. It is an error. [[p. 646]]
 
@@ -230,7 +247,7 @@ The synthesized principle, and the one `core/voice.md` carries: **a euphemism ha
 
 ## Redundancy
 
-AP states no single maxim about cutting needless words. It enforces the principle across dozens of entries.
+The inherited usage entries illustrate a recurring check for needless repetition; this is not a claim that the complete manual lacks a general maxim.
 
 The nearest general statements: `here` is usually redundant in a datelined lead because the dateline already carries the location [[p. 253]]; `of` is unnecessary after `half` [[p. 245]]; `last` before a named day or month is unnecessary because tense already carries it [[p. 306]]; and the sports chapter's craft section pairs its instruction against stock metaphor with one against exaggeration, describing a play or an outcome in literal terms instead. [[p. 742]]
 
@@ -277,7 +294,7 @@ The pattern across all of them: a word restating something the sentence already 
 
 ### Absolutes
 
-`unique` means one of a kind and takes no degree modifier — not `very unique`, `most unique`, `rather unique`. [[p. 522]] `demolish` and `destroy` are complete actions, so nothing is partially demolished and `totally destroyed` is redundant rather than merely emphatic. [[p. 155]]
+The 56th-edition notes prescribe unmodified `unique` and treat `demolish` and `destroy` as complete actions, making intensifiers redundant in that usage. [[p. 522, 155]] These are recorded style conventions, not proof that partial damage cannot occur. Describe the actual extent accurately rather than forcing a fact into an absolute.
 
 ### The governing principle
 
@@ -320,7 +337,7 @@ For `core/accuracy.md`. The data journalism chapter is a discipline of honesty a
 - **Percent change is not percentage-point change.** Ten percent to thirteen percent is a three-point rise and roughly a thirty percent relative increase. The two figures are not interchangeable, and the second is the one a reader hears. [[p. 620]]
 - **Do not compute percent change from a small base.** Report the raw counts. [[p. 620]]
 - **Name the measure.** Say whether a figure is the mean, the median, or the mode instead of letting `average` default to the mean by assumption. The mean skews under outliers; the median resists them. [[p. 621]]
-- **Never average averages** across groups of different sizes. [[p. 621]]
+- **Do not average subgroup means as if unequal groups had equal size.** Use the appropriate weighting when an overall mean is the intended measure. [[p. 621]]
 - **Correlation is not causation.** Look for the mechanism linking two variables, and consider a hidden third factor or plain chance, before implying one produced the other. [[p. 621-622]]
 - **Round.** Every digit supplied signals that every digit matters. [[p. 622]]
 - **Limit digit density** — roughly eight to ten digits in a paragraph — and convert an unwieldy figure into a fraction or ratio to cut the count. [[p. 622]]
@@ -336,7 +353,7 @@ For `core/accuracy.md`, from the social media chapter. [[p. 647-656]] The princi
 
 - Material found online meets the same evidentiary bar as anything else.
 - Trace to the original source rather than a reposter, then ask the creator when and why they captured it.
-- Reverse image search is named the gold standard, both to find the original and to catch old material recirculated as new.
+- Use reverse image search to help find an original and detect recirculated material; a match or a failed search is not sufficient verification by itself.
 - Cross-reference against independent trusted sources.
 - Confirm claimed place and time with contextual detail — signage, plates, uniforms, language, weather, vegetation, lighting.
 - A verification badge is a signal, not proof; accounts get compromised.
@@ -360,21 +377,21 @@ For `core/accuracy.md`, from the social media chapter. [[p. 647-656]] The princi
 
 Left to `domain/press.md`: datelines, wire conventions, anonymous-sourcing procedure, sports agate, media law, chart construction, and every entry that is about publishing rather than writing.
 
-## What AP Does Not Cover
+## Support Not Established by This Dossier
 
-Recorded because `core/anti-slop.md` names this dossier in its `evidence:` list, and a reader is entitled to know which of its rules AP is not behind.
+An omission from the inherited extraction is not evidence that AP has no guidance on a subject. These are limits on what this dossier can support, especially with the newer AI chapter not fully audited.
 
-**Meta commentary.** AP says nothing about prose that announces itself — no entry on throat-clearing openers, on a section that describes what the section will do, on `it's important to note`, or on any of the chat-register leakage the AI-writing sources catalog. The nearest thing in the book is the instruction to lead a list with a short introductory phrase [[p. 315]], which points the other way. The ban on meta commentary rests on `sources/signs-of-ai-writing.md` and `sources/stop-slop.md` alone, and any module that implies AP supports it is overstating its evidence.
+**Meta commentary.** The selected notes do not establish an AP-wide ban on throat-clearing, section previews or assistant-register phrases. AP's recorded list guidance includes a brief introduction. [[p. 315]] Other dossiers offer diagnostic ideas; neither they nor this limited AP record justify deleting useful signposting unconditionally.
 
-**Cadence and sentence-length variation.** AP asks for short sentences and one idea per sentence [[p. 613]] and never asks for variety between them. The metrical-flatness argument in `core/rhythm.md` comes from `sources/field-guide-to-ai-slop.md`, not from here.
+**Cadence and sentence-length variation.** The recorded short-sentence guidance [[p. 613]] does not establish that AP rejects variation or that machine prose is universally flat. Reader-oriented rhythm advice remains an editorial application, not a measurement supplied by this manual.
 
-**Paragraph and document architecture.** Beyond list mechanics, the book has no general theory of how a piece is built. The inverted pyramid lives in the news-writing material and belongs to `domain/press.md`.
+**Document architecture.** No comprehensive theory of paragraph or document structure was verified for this refresh. Newsroom structures should be evaluated in their genre, not imported as universal rules from an incomplete extraction.
 
 ## Chunk Map
 
-Working extraction lives outside the repository, in the session workspace: 56 semantic chunks with `[[page N]]` markers, verified to rebuild all 1,224 pages byte-identical. That verification was run in the session workspace and is not reproducible from this repository, which holds no copy of the source text.
+The earlier dossier records an external working extraction of 56 semantic chunks with `[[page N]]` markers and a page-reconstruction check. That historical check was not rerun here and is not reproducible from this repository, which holds no copy of the source text. The map is retained as provenance, not proof of current edition coverage.
 
-A second, unrelated extraction under `raw-data/ap-stylebook-data/` was found in the working tree during review — restated rather than verbatim, but far more extensive than this note. It is now covered by `.gitignore`. Neither extraction may be committed.
+The earlier review also recorded a separate extraction under `raw-data/ap-stylebook-data/` and its exclusion from version control. Neither extraction may be committed. This refresh did not inspect or change raw-data or either extraction.
 
 | Chunk | Covers |
 | --- | --- |

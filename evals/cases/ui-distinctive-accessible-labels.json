@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "ui-distinctive-accessible-labels",
+  "split": "tuning",
+  "operation": "edit",
+  "task": "Copyedit this accessible website download block only if an actual problem needs repair. The button names must distinguish the resources when encountered outside their visual grouping. Their length is deliberate, and each visible label is also its accessible name. Preserve the useful names rather than imposing a short-label quota; return the block unchanged if it already works.",
+  "input": "Button label and accessible name: Download the plain-text transcript for the Harbor Routes workshop\nButton label and accessible name: Download the large-print handout for the Harbor Routes workshop\nHelper text: Both files are free to download. No sign-in is needed.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional workshop is named Harbor Routes."},
+    {"id": "f2", "text": "One download is the workshop's plain-text transcript."},
+    {"id": "f3", "text": "The other download is the workshop's large-print handout."},
+    {"id": "f4", "text": "Both files are free to download."},
+    {"id": "f5", "text": "No sign-in is needed for either download."},
+    {"id": "f6", "text": "Each button's visible label is also its accessible name."}
+  ],
+  "modules": ["domain/general.md", "user-interface/website.md", "user-interface/accessibility.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f6"],
+    "forbidden_additions": [
+      "Identical Download or Click here labels that erase the resource distinction.",
+      "An icon-only action or hover-only identification of the files.",
+      "A PDF format, login requirement, price, or download size not supplied."
+    ],
+    "preserve": [
+      "The distinctive long labels including format, resource type, and workshop name.",
+      "The match between each visible label and its accessible name.",
+      "The existing task-oriented block without cosmetic shortening."
+    ],
+    "expected_action": "no_change"
+  }
+}

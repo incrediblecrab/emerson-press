@@ -1,11 +1,12 @@
 ---
 id: user-interface.charts
 layer: user-interface
-version: 1.0.1
+version: 1.1.0
 status: draft
-budget: 1150
-tokens: 1150
+budget: 1243
+tokens: 1243
 kind: overlay
+standalone: true
 medium: data
 mechanics: house
 elements: [chart title, axis label, unit, legend, annotation, tooltip, caption, alt text, empty state, dashboard tile]
@@ -16,23 +17,23 @@ evidence:
 
 # Interface: Charts
 
-Every chart is an argument, and the text is where a writer states that argument or hides it. A number with no unit, an axis that starts above zero, a smoothed line over four data points: each is a claim about the world made without saying so.
+A chart may support a finding or let a reader explore data. Its words should make the measure and limits intelligible, not supply a conclusion the data cannot support.
 
-Covers the words around data — titles, axes, legends, annotations, tooltips, captions, and the sentence a reader hears when they cannot see the picture. Loads on top of a medium module, never instead of one.
+Covers the words around data — titles, axes, legends, annotations, tooltips, captions, and the sentence a reader hears when they cannot see the picture. Use the relevant medium for an interface, or use this module alone for a report figure.
 
 ## Detect
 
-- **A title that names the variables instead of the finding.** *Revenue by Month.* The reader has to derive the point the chart was drawn to make.
+- **A title that hides an intended finding.** *Revenue by Month* is suitable for exploration, but may under-explain a chart presented to support a specific conclusion.
 - Or the opposite: a headline conclusion the data does not support — *Explosive growth* over three quarters of noise.
 - **Missing units.** A y-axis reading `0, 50, 100` with no dollars, percent, count, or scale. `1.2M` with no currency. Percent of what, unstated.
-- **No time frame, no source, no as-of date.** A number without a date is a rumor.
+- **Missing measurement context.** A time-varying figure needs its relevant period and source; a refresh-sensitive figure may also need an as-of date.
 - **Percent change and percentage points confused**: 4% to 6% is two percentage points, not two percent, and not a 2% rise.
 - A truncated y-axis with no note. A dual axis chosen so two lines cross.
 - **Legend entries that are column names** — `rev_usd_net`, `Series 1`.
 - Series ordered alphabetically or by database order rather than by value.
 - **Decimals the measurement cannot support.** *48.3721% of respondents*, from a sample of 210.
-- Rounded numbers stated as exact: *approximately 10,000 users* where the real figure is 9,847 and available.
-- **Trend language over too few points.** *Rising*, *accelerating*, *plateauing* for three observations.
+- Rounded numbers stated as exact: *10,000 users* when the recorded count is 9,847. *About 10,000* may be an appropriate honest summary.
+- **Long-run trend or acceleration claims from an inadequate series.** A difference between observed dates does not by itself establish a continuing trend.
 - Correlation stated as cause. *Because* where only *alongside* is supported.
 - **Chartjunk carrying words**: 3-D bars, gradients, an icon per bar, a gridline for every unit, a label repeating every value already on the axis.
 - Interpolation across a gap in collection, unmarked.
@@ -45,17 +46,17 @@ Title the finding, in a sentence a reader could repeat: *Signups doubled after t
 
 Put the unit where the number is. `Revenue (USD, millions)`. `Response time (ms, p95)`. Say what the denominator is every time you write a percent.
 
-Date everything. Time frame in the title or subtitle, source and as-of date in the caption or footnote.
+Identify the relevant period, source and, where needed, as-of date in the title, caption or associated description. Ask for missing context rather than inventing it; static quantities do not need a fabricated refresh date.
 
-Start a bar axis at zero, because bar length is the encoding. A line chart may crop — say so in the axis label or a note.
+Flag a misleading encoding as a design issue, not something a stronger headline fixes. A bar's length normally needs a zero baseline; a line chart can use a restricted range when clearly shown. Explain relevant breaks or limits without implying that copy has changed the chart.
 
 Name series the way the reader names them, and order them by value, by category order, or by the last point on a line, so the legend matches what the eye sees.
 
-Round to the precision you actually have, and use the exact number when you have it. State the sample size next to any rate derived from one.
+Match precision to the measurement and the reader's task. Use an exact count where useful; mark a rounded approximation honestly. State a known sample size or denominator when needed to interpret a rate. Never add a sample, confidence interval, population claim or sampling assumption that the evidence does not supply.
 
 Describe change with the shape you can defend. Two points give a difference, not a trend. Say *rose* only if it did, and say by how much and over what.
 
-Annotate the event, not the shape. A dated label on the week the outage happened explains the dip; an arrow reading *drop* does not.
+Annotate a relevant documented event, not merely the shape. An outage label may supply context for a dip, but coincident timing alone does not establish its cause.
 
 Write the alt text as the finding, the range, and the outlier if there is one, not as a description of the drawing. Name the chart type first, because the encoding carries meaning here — this is the one place `accessibility`'s ban on opening with the medium does not apply. Give the underlying table to anything that cannot render the picture.
 
@@ -71,25 +72,33 @@ Write the alt text as the finding, the range, and the outlier if there is one, n
 
 ## Boundaries
 
-Text attached to a data display, wherever it appears: a dashboard tile, a report figure, a chart on a landing page. The surrounding medium still governs — load this on top of `applications.md` or `website.md`, not instead of one.
+Text attached to a data display, wherever it appears: a dashboard tile, a report figure, a chart on a landing page. For an interface, the selected `applications.md` or `website.md` module governs its surrounding surface. A report figure can load this module without either medium; its genre and citation requirements still apply.
 
-Encoding choices — which mark, which scale, which color — are outside this module. It governs only the words: the title, the labels, the units, the annotation, the alt text. Statistical claims in running prose are `core/accuracy.md`.
+Implementing encodings — marks, scales and colors — is outside this module. Flag dependencies that affect whether the text is truthful, but do not silently redesign the figure while claiming to copyedit it. Statistical claims in running prose are `core/accuracy.md`.
 
 ## Examples
 
+These are independent synthetic data records. No sample, interval, event, source or table may be inferred merely because a caption would benefit from one.
+
 **Title names the axes, not the finding**
+
+**Supplied facts:** Twelve weekly product-analytics observations run from April 20 to July 6, 2026. Weekly active users rise from 4,600 to 9,200. The record is current as of July 6; no cause for the change is established.
 
 > Weekly Active Users by Week
 
-> Weekly active users doubled after the free tier launched in March *n = 12 weeks. Source: product analytics, as of Jul 6, 2026.*
+> Weekly active users doubled from April 20 to July 6, 2026. *12 weekly observations. Source: product analytics, as of July 6, 2026.*
 
 **Number with no unit or denominator**
 
+**Supplied facts:** Reported trial-to-paid conversion is 4.2% for Q1 2026 and 6.1% for Q2, each rounded to one decimal place. Denominators are 1,204 and 1,377 trials started in those quarters, respectively.
+
 > Conversion: 4.2 → 6.1 (+2%)
 
-> Trial-to-paid conversion (% of trials started) rose from 4.2% to 6.1% between Q1 and Q2 — 1.9 percentage points, or a 45% relative increase. Q1 n = 1,204; Q2 n = 1,377.
+> Trial-to-paid conversion (% of trials started) rose from 4.2% in Q1 2026 to 6.1% in Q2 — about 1.9 percentage points, or about a 45% relative increase based on the rounded rates. Q1 n = 1,204; Q2 n = 1,377.
 
 **Trend language over two points**
+
+**Supplied facts:** The supplied support record contains 412 tickets in May and 380 in June. It provides no longer series or forecast.
 
 > Support volume is trending sharply downward.
 
@@ -97,17 +106,23 @@ Encoding choices — which mark, which scale, which color — are outside this m
 
 **Precision the sample cannot support**
 
+**Supplied facts:** 101 of 210 respondents preferred the new layout. No sampling design, population inference or uncertainty interval has been supplied. The reported count supports correcting the percentage.
+
 > 48.3721% of respondents preferred the new layout.
 
-> 48% of respondents preferred the new layout (101 of 210, ±7 points).
+> 48% of respondents preferred the new layout (101 of 210).
 
 **Legend from the schema**
 
-> Series 1 &nbsp; Series 2 &nbsp; rev_usd_net
+**Supplied facts:** The three series count accounts on the Free, Pro and Enterprise plans, in that order. Their internal column names are free_accounts, pro_accounts and enterprise_accounts.
+
+> free_accounts &nbsp; pro_accounts &nbsp; enterprise_accounts
 
 > Free &nbsp; Pro &nbsp; Enterprise
 
 **Annotation describing the shape**
+
+**Supplied facts:** The incident record gives an API outage on March 14 from 06:00 to 11:20 UTC. It does not establish whether that event caused the plotted decline.
 
 > ↓ Big drop here!
 
@@ -115,11 +130,15 @@ Encoding choices — which mark, which scale, which color — are outside this m
 
 **Alt text describing the drawing**
 
+**Supplied facts:** The supplied line chart covers January–July 2026, rises from 4,100 to 9,200 weekly active users, has its steepest gain in the two weeks after a March free-tier launch and is flat through June. An accompanying data table follows the figure. Timing does not establish causation.
+
 > A line chart with a blue line showing data over time.
 
 > Line chart. Weekly active users, Jan–Jul 2026, rising from 4,100 to 9,200, with the steepest gain in the two weeks after the free tier launched in March and a flat stretch through June. Table follows.
 
 **One empty message for four causes**
+
+**Supplied facts:** The query succeeded but no sessions match the active filters. Available records run from January 1 to July 6, 2026. Clear filters is an available action.
 
 > No data
 

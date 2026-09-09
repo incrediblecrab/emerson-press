@@ -1,10 +1,10 @@
 ---
 id: core.formatting
 layer: core
-version: 1.3.0
+version: 1.4.0
 status: draft
-budget: 847
-tokens: 847
+budget: 818
+tokens: 818
 evidence:
   - sources/signs-of-ai-writing.md
   - sources/field-guide-to-ai-slop.md
@@ -15,7 +15,7 @@ evidence:
 
 # Formatting
 
-Models overproduce structure for a traceable reason: human raters scored bullet-heavy answers higher because those answers looked organized, and preference tuning locked the habit in. Bold came by a different road, out of readmes, decks, listicles, and sales copy. The pull toward structure is therefore strongest exactly where the material is thinnest. Treat a sudden outbreak of formatting as a signal to check whether the writer said anything.
+Formatting should help this reader find and understand the content. Decorative structure can conceal a thin argument, but a list, table or heading is not a defect merely because models also use it. Claims about how training produced a particular habit belong in the evidence dossier, with their limitations.
 
 Punctuation has one job, which is to make the thought clear. A mark that does not do that job comes out.
 
@@ -27,24 +27,24 @@ Punctuation has one job, which is to make the thought clear. A mark that does no
 - **Bold as emphasis spray** — scattered mid-paragraph, or every instance of one term bolded, or a `Key takeaways` block.
 - **Lists where prose belongs**, especially three items that each need a sentence of explanation.
 - **Non-parallel list items** — a noun phrase, then a full sentence, then a question.
-- **Two-row tables**, or a table with one real column.
+- **Tables that add no useful comparison**, rather than tables below an arbitrary row count.
 - **Section headings with no prose between them.**
 
 A reference list — a taxonomy, an index, a glossary, where each item is a distinct named thing — is not this tell. The fault is a list standing in for prose that had a throughline, not a genuine enumeration of discrete items.
 
 ### Markup tells
 
-- **Title Case Headings.**
+- **Heading capitalization inconsistent with the selected venue.**
 - **A document starting at `###`,** skipping the level above.
 - **Horizontal rules before every heading.**
 - **Emoji as bullet markers or heading decoration.**
-- **Unicode standing in for markup** — mathematical bold or italic characters, decorative arrows, `×` for multiplication.
+- **Unicode standing in for markup** — mathematical alphabets used to fake bold or italic text. A meaningful mathematical symbol is not decorative markup.
 - **Curly quotes mixed with straight ones** in the same passage.
-- **Provenance artifacts** left in text: `oaicite`, `turn0search0`, `[cite: 1]`, `grok_card`, `↩` around footnotes, `2025-xx-xx` placeholder dates, unfilled bracketed slots.
+- **Unresolved tool artifacts** left in text: `oaicite`, `turn0search0`, `[cite: 1]`, `grok_card`, `2025-xx-xx` placeholder dates, unfilled bracketed slots. Working footnote links and required disclosure are not artifacts to remove.
 
 ### Punctuation
 
-- **Em dash as default connector,** where a comma or a period was the honest mark. Spaced dashes throughout.
+- **Em dash as default connector,** where a different mark would make the relation clearer. Spacing follows the selected style.
 - **Parentheses holding what the sentence could not fit.** The reach for them signals a contorted sentence, not a need for brackets.
 - **A colon stacked with a dash.**
 - **Semicolons joining independent clauses** that wanted to be two sentences.
@@ -58,33 +58,39 @@ A reference list — a taxonomy, an index, a glossary, where each item is a dist
 
 ## Write
 
-Default to paragraphs. A list earns bullets when items are genuinely parallel — same part of speech, same voice, same tense — and when the reader will scan rather than read. Three items that each need explaining are a paragraph.
+Choose paragraphs for a throughline and lists for steps or parallel items a reader needs to scan. Keep list items grammatically parallel. Three real items do not become a fault because they need explanation.
 
-Sentence case headings, in order, with prose under each. Use bold sparingly — to define a term on first use, not to spray emphasis. How strictly to hold that, and where the edge cases fall, `restraint` decides.
+Use consistent heading levels and descriptive headings. Sentence case is the house default, not an override of a venue's conventions. Use emphasis to identify what matters rather than making every keyword bold.
 
-Use a table only when rows and columns both earn their place: several rows, at least two columns carrying real data. If it holds a single comparison, it is a sentence.
+Use a table when its rows and columns make a relationship easier to compare. A small table can be useful; a larger table can still be padding.
 
-Use straight quotes, keep emoji out of the structure, and do not let Unicode stand in for markup.
+Use consistent quotation typography appropriate to the medium. Straight quotes are the plain-text default. Keep meaningful notation and accessible links. Avoid decorative symbols that obstruct reading or substitute for structure.
 
-If a sentence leans on two dashes or a pair of parentheses to stand up, the construction failed earlier than the punctuation. Rebuild it rather than propping it up. The fault is the contortion, not the count. If it is cluttered with commas, semicolons, and dashes together, start it over.
+Rebuild a confusing sentence rather than patching it with more punctuation. Preserve a useful parenthesis, dash or semicolon when it clarifies the relationship. The test is comprehension, not a punctuation count.
 
-Strip every artifact of how the text was produced before it reaches a reader.
+Remove unfinished placeholders, assistant chatter and unresolved tool tokens from publication-ready text. Preserve valid citations, attribution, accessibility features and required AI disclosure. Do not disguise provenance that the venue requires.
 
 ## Examples
 
 **Inline-header bullets that should be prose**
 
+**Supplied facts:** A fictional project plan gives the Medford-Ashfield route, phase 3 at 40% completion, a 2027 target and a projected journey-time reduction of 20-30%. The projection is not an observed result.
+
 > **Route details:** The line starts at Medford and ends at Ashfield. **Timeline:** Phase 3 is 40% complete, with completion targeted for 2027. **Impact:** Journey times will fall by 20-30%.
 
-> The line runs from Medford to Ashfield. Phase 3 is 40% complete and due in 2027; when it opens, the trip should be about a quarter shorter.
+> The line runs from Medford to Ashfield. Phase 3 is 40% complete, with completion targeted for 2027. The plan projects journeys 20-30% shorter after it opens.
 
 **Bold spray**
 
+**Supplied facts:** The definition in this exercise is a purchase financed mostly with debt. No claim about the buyer's total financial risk is supplied.
+
 > A **leveraged buyout** relies on the **extensive use of debt**, which lets a firm **take control of a business** while committing **very little equity** of its own.
 
-> In a leveraged buyout, the purchase is paid for mostly by borrowing, so the buyer risks little of its own money.
+> A leveraged buyout finances most of the purchase price with borrowed money.
 
 **Non-parallel list**
+
+**Supplied facts:** These are three separate agenda items. The mobile item is an open question, not an approved redesign.
 
 > - Reduce onboarding time
 > - Documentation should be rewritten
@@ -92,15 +98,19 @@ Strip every artifact of how the text was produced before it reaches a reader.
 
 > - Reduce onboarding time
 > - Rewrite the documentation
-> - Redesign the mobile flow
+> - Decide whether to change the mobile flow
 
 **Table that wants to be a sentence**
 
+**Supplied facts:** The source estimates the fictional market's 2024 size at about $2.1 billion.
+
 > | Metric | Figure | | --- | --- | | Market size, 2024 | about $2.1bn |
 
-> The market was worth about $2.1 billion in 2024.
+> The market's estimated size was about $2.1 billion in 2024.
 
 **Dash as default connector**
+
+**Supplied facts:** The report was released Tuesday and found rising costs. No magnitude was supplied.
 
 > The report — which was released Tuesday — found — among other things — that costs had risen.
 
@@ -108,6 +118,8 @@ Strip every artifact of how the text was produced before it reaches a reader.
 
 **Parentheses propping up a sentence**
 
+**Supplied facts:** The grant was awarded in 2021, the program's second year, and funded three positions. Payment arrived in January, but the payment year is not supplied.
+
 > The grant (awarded in 2021, the program's second year, though the money did not arrive until January) funded three positions.
 
-> The grant was awarded in 2021 and paid out that January. It funded three positions.
+> The grant was awarded in 2021, the program's second year, but the money did not arrive until January. It funded three positions.

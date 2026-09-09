@@ -1,0 +1,5 @@
+name: general
+description: Ordinary documents for an adult reader; specify task familiarity in the request.
+modules:
+  - domain/general.md
+safeguards: []

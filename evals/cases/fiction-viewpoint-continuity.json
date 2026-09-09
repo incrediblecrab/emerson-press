@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "id": "fiction-viewpoint-continuity",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Edit this fictional scene to maintain a close third-person viewpoint limited to Jori. Repair the unsupported access to Sen's thoughts and the unestablished boat outcome without inventing a replacement action, sound, or revelation. Keep the quiet nighttime scene, its established objects, and Jori's wait for dawn.",
+  "input": "Jori set the unlit lantern on the windowsill. Moonlight silvered the empty quay. Behind the bolted door, Sen was delighted that the boat had escaped. Jori waited for dawn.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The creative brief restricts the scene to what Jori can perceive or know."},
+    {"id": "f2", "text": "Jori places an unlit lantern on the windowsill."},
+    {"id": "f3", "text": "The quay is empty under moonlight."},
+    {"id": "f4", "text": "Sen is behind a bolted door."},
+    {"id": "f5", "text": "Jori cannot see or hear Sen through the door."},
+    {"id": "f6", "text": "Jori waits for dawn."},
+    {"id": "f7", "text": "The brief does not establish the boat's whereabouts."}
+  ],
+  "modules": ["domain/fiction.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f2", "f3", "f4", "f6"],
+    "forbidden_additions": [
+      "Sen's private thoughts or emotional state presented as known to Jori.",
+      "Confirmation that the boat escaped, sank, or remained nearby.",
+      "A newly invented sound, gesture, visitor, or message used to patch the viewpoint problem."
+    ],
+    "preserve": [
+      "The unlit lantern, empty moonlit quay, and bolted door.",
+      "Close third-person narration rather than a switch to omniscience.",
+      "The unresolved wait for dawn."
+    ],
+    "expected_action": "edit"
+  }
+}

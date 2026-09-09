@@ -1,9 +1,16 @@
 ---
 id: sources.signs-of-ai-writing
 layer: sources
-version: 1.4.0
+version: 1.5.0
 status: active
 budget: none
+evidence_kind: community
+checked_on: 2026-09-08
+verification_status: historical
+source_version: "Dossier's recorded Wikipedia page pass of 2026-08-23, following retrieval on 2026-08-09; no immutable revision ID was retained"
+source_urls:
+  - https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing
+verification_note: "This refresh reassesses the inherited community observations and their limits; it does not certify the live page, every linked study, historical counts or detector performance. Model-era labels are unpinned historical reports. Editorial diagnostics are not authorship tests or independently validated prompt interventions."
 source:
   title: "Wikipedia:Signs of AI writing"
   url: "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing"
@@ -29,51 +36,51 @@ consumers:
 
 Evidence base for `core/anti-slop.md` and, secondarily, for every other module in `core/`. Unbudgeted by design: nothing here is loaded into a prompt alongside a draft. This is what you read when you author or revise a core module, so the module itself can stay short and still be defensible.
 
-This dossier restates every rule and observation in original wording. The bracketed term lists appear as lists, because a list of flagged words is a finding rather than prose. Wikipedia's internal shortcuts (`WP:AIVOCAB`, `WP:SUPERFICIAL`, `WP:AICONNECT`) appear as-is because they are identifiers.
+This dossier uses original restatements and selected phrase examples, not source-text transcription. The examples illustrate the community taxonomy rather than measured prohibitions. Wikipedia's internal shortcuts (`WP:AIVOCAB`, `WP:SUPERFICIAL`, `WP:AICONNECT`) appear as-is because they are identifiers.
 
-Checked against the live page on August 23, 2026, and brought current: one tell moved to `## Historical Tells`, one restored there that had been carried as live, seven sections added, three headings re-titled.
+The previous dossier recorded a page check on August 23, 2026. Its revision ID was not preserved. That date describes the historical reading, not current coverage; this September refresh corrects the interpretation without claiming a new live-page audit.
 
 ## Why This Source
 
-Almost everything written about "AI writing style" is either marketing or vibes. This page is neither. It is a maintained, adversarial, heavily cited field record kept by people who read suspected machine text all day and who are accountable to each other for false positives. It names roughly sixty distinct tells, dates them by model era, links each to the study or the diff that established it, and — crucially — keeps a list of the tells that turned out not to work.
+This is a community-maintained catalog of observations, examples, linked research and cautions from Wikipedia editing. It is useful for generating review questions, especially where unsupported claims or assistant artifacts enter encyclopedia prose. A community example or repeated practitioner observation is not itself an independently verified experiment.
 
-That last part is what makes it usable. A source that only tells you what AI writing looks like will push you into overcorrection. This one tells you where the evidence is thin, which is what lets `core/restraint.md` exist at all.
+Its false-positive cautions matter as much as its pattern inventory. Judge an edit by the reader-facing problem it fixes; agreement with another anti-slop checklist does not establish empirical authority.
 
 ### The repurposing caveat
 
-The page exists to help Wikipedia editors *detect* machine text so they can remove it. `emerson-press` uses it backwards: as a specification of what to not-write. Two consequences follow.
+The page concerns suspected AI writing in Wikipedia's editing context. `emerson-press` takes candidate editorial checks, not an authorship classifier or a specification to avoid every listed form.
 
 - A detection tell is not automatically a writing rule. Some tells are about provenance artifacts (`utm_source=chatgpt.com`, unfilled placeholder dates) and belong to `core/accuracy.md` as hygiene, not to voice.
 - Wikipedia's house register is encyclopedic and deliberately flat. Some of what it flags as promotional would be fine in an essay. Read the mechanism, not the verdict, and let the `domain/` module decide register.
-- The page moves faster than a dossier does. It took 78 revisions in the fourteen days to August 23, 2026 — about six a day, so roughly 170 between monthly passes. Two of the tells below have already changed tense once. Re-read the live section index before trusting any tense in this file, and treat a month-old pass as stale rather than merely dated.
+- The page and the models change. The former revision-count extrapolation was not a version pin and is retired. A future update needs an identifiable page revision and separately checked primary support for empirical claims.
 
 ## The Governing Caveat
 
 Take this before anything else, because it constrains how every tell below may be used.
 
-Detection does not work well. Automated detectors beat chance but carry error rates too high to act on, and they are defeated by paraphrase, by markup changes, and by models they were not trained against. Humans are worse: a 2025 study put untrained human discrimination at roughly chance. Heavy LLM users reach about ninety percent, which still means one false accusation in ten.
+Detection performance depends on the model, population, task, class balance and decision threshold. The studies linked by the historical page were not independently re-audited here, so no detector or human-accuracy benchmark is carried as currently verified.
 
-Two further complications. Human prose is drifting toward machine prose through ordinary exposure, measurably so since 2024, including in speech. And writers now actively edit around these tells to avoid suspicion, which corrupts the signal further.
+The former inference from **90% overall accuracy to a 10% false-accusation rate was invalid**. Overall accuracy combines correct decisions across classes. A false-positive rate needs the number of human texts wrongly flagged divided by all human texts; the fraction of accusations that are false has yet another denominator. Neither follows from overall accuracy without the confusion matrix and relevant population.
 
-The operational conclusion for `emerson-press`: **the tells are a guide to what to avoid writing, never a test to apply to finished text.** A module may say "do not write X." No module may say "text containing X was machine-made." This is the whole justification for `core/restraint.md`.
+Human imitation, editing practices and model changes can further shift the comparison. **Use these observations to inspect meaning and usefulness, never to accuse an author.** Even a cluster of stylistic cues does not justify deleting sound prose. A useful module says what to check and when to retain a construction, not merely what words to ban.
 
-## The Root Mechanism
+## A Useful Diagnosis, Not a Single Proven Cause
 
-Everything downstream follows from one property. A language model predicts the likeliest continuation, so it regresses to the mean of its training data. Specific, rare, load-bearing facts are statistically uncommon; generic approving description is statistically everywhere. So the specific gets swapped for the general, and — because the training corpus describes notable subjects in flattering terms — the general arrives pre-inflated.
+Language-model generation depends on training, post-training, prompts, retrieved context and decoding choices; it is not invariably greedy selection of the likeliest continuation. This community page does not establish that one mechanism explains all the patterns below. See `ai-slop-research.md` for scoped lexical research, including the mixed causal evidence about RLHF.
 
-Wikipedia's formulation of the net effect is the single most useful idea in the document: the subject becomes **less specific and more exaggerated at the same time**. Volume rises as resolution drops. An inventor of one particular coupling mechanism becomes a titan of industry.
+The transferable editorial diagnosis is that a revision can become **less specific and more exaggerated at the same time**. For example, replacing a verifiable description of an invention with general praise loses information while overstating importance. That failure can occur in human or generated prose.
 
-This is why anti-slop cannot be a banned-word list. The words are symptoms. The disease is the trade of detail for approval, and it will simply route around any list of forbidden vocabulary. Every rule in `core/anti-slop.md` should be traceable to this mechanism.
+Test for lost information and unsupported evaluation. Do not turn that test into a theory of all models, a guarantee that specificity defeats detection, or an inventory of forbidden vocabulary.
 
 ## Content Tells
 
 ### Inflated significance, legacy, and broader trends
 
-The most reliable content tell. The model attaches claims about importance to material that does not carry any, situating an ordinary fact inside a sweeping arc.
+A useful content check: does the draft attach importance to an ordinary fact without evidence? No comparative reliability ranking was verified for this refresh.
 
 Flagged constructions: `stands as`, `serves as`, `is a testament to`, `is a reminder of`, `played a crucial/pivotal/vital/significant/key role`, `a key moment`, `underscores its importance`, `highlights its significance`, `reflects broader`, `symbolizing its ongoing/enduring/lasting`, `contributing to the`, `setting the stage for`, `marking a shift`, `represents a shift`, `key turning point`, `evolving landscape`, `focal point`, `indelible mark`, `deeply rooted`.
 
-Characteristic behaviors worth knowing beyond the word list:
+Behaviors described in the historical page account, not universal model properties:
 
 - It fires on genuinely mundane subjects — etymology sections, population figures, a bus route.
 - It sometimes hedges first and then does it anyway, conceding that a subject is minor before explaining its broader significance.
@@ -86,21 +93,21 @@ Register drifts toward travel brochure or press release even when the prompt ask
 
 Flagged: `boasts a`, `vibrant`, `rich`, `profound`, `enhancing`, `showcasing`, `exemplifies`, `commitment to`, `natural beauty`, `nestled`, `in the heart of`, `groundbreaking`, `renowned`, `featuring`, `diverse array`.
 
-Two era notes: older models were flatly superlative, newer ones are subtly positive and avoid obvious words like `best`, which makes the tell harder but not absent. And anything the model can construe as cultural heritage triggers repeated reminders of its importance.
+The inherited page account distinguished conspicuous superlatives in some older output from subtler positivity in some later output, including heritage topics. These are model-era observations, not a verified description of every newer system.
 
 ### Superficial analysis
 
-A structural tell rather than a lexical one, and the one most worth teaching. The model appends an interpretive flourish to a factual sentence, usually as a trailing present participle, so a fact looks analyzed when the sentence has only complimented it.
+A structural check rather than a lexical one: an appended interpretive flourish, including a trailing participial clause, can make a factual sentence appear analyzed without adding an explanation.
 
 Flagged endings: `highlighting ...`, `underscoring ...`, `emphasizing ...`, `ensuring ...`, `reflecting ...`, `symbolizing ...`, `contributing to ...`, `cultivating ...`, `fostering ...`, `encompassing ...`, `enhancing ...`, `valuable insights`, `align with`, `resonate with`.
 
-Retrieval-capable models make this worse by pinning the invented analysis to a real named person, who did not say it.
+A retrieved source can be wrongly credited with an interpretation it does not support. Verify that the cited source actually makes the attributed point; retrieval alone does not guarantee entailment.
 
 The test that generalizes: delete the trailing participial clause. If nothing was lost, it was ornament. This belongs in `core/anti-slop.md` as a procedure, not as a word list, because the procedure survives vocabulary drift.
 
 ### Vague attribution and overgeneralized opinion
 
-The model hangs a claim on an unnamed authority and inflates the number of people who hold it.
+Check for a claim attached to an unnamed authority or attributed to more people than the sourcing establishes.
 
 Flagged: `industry reports`, `observers have cited`, `experts argue`, `some critics argue`, `several sources`, `several publications`, and `such as` placed before a list that is in fact exhaustive.
 
@@ -108,11 +115,11 @@ The distinct failures: presenting one source's view as consensus; referring to `
 
 ### Canned emphasis on notability, attribution, and media coverage
 
-The model argues for the subject's importance by cataloging where it was covered and what tier those outlets occupy. Common in models from 2025 on.
+The historical page account describes encyclopedia-style drafts cataloging coverage and outlet prestige instead of explaining the subject. Its attribution to some 2025-era output is not a current cross-model prevalence finding.
 
 Flagged: `independent coverage`, `local/regional/national media outlets`, `trade publications`, `music/business/tech outlets`, `profiled in`, `written by a leading expert`, `active social media presence`.
 
-The `maintains an active social media presence` formula is idiosyncratic enough to be near-diagnostic. Note also that models asked for encyclopedia prose will echo the platform's own policy vocabulary back at it — a general lesson: machine text tends to recite the criteria it is being judged against.
+The `maintains an active social media presence` formula may be empty when no relevant activity is described. It is not near-proof of authorship. Likewise, reciting a platform's notability criteria is no substitute for supplying relevant sourced facts.
 
 ### Outline-like conclusions about challenges and prospects
 
@@ -128,37 +135,31 @@ When the title is a description rather than a name, the opening sentence defines
 
 ### Section headings of the form "X and Y"
 
-Upstream's example is `Awards and recognition`, described as nearly ubiquitous in machine-written articles, with bare `Recognition` close behind. The paired-noun heading is the general shape and the source says it is common but not exclusive to machine text.
+The historical account flags headings such as `Awards and recognition`. No prevalence estimate or authorship accuracy was verified here; this is an ordinary heading form.
 
-The diagnosis links it to two tells already above: the pull toward legacy and broader trends, and the vague gesture at a subject's coverage or recognition. A paired heading is easy to fill without knowing anything, because whatever the section contains can be filed under one noun or the other.
+The useful question is whether the section contains substantive information or only gestures at prestige and coverage.
 
-For `core/formatting.md`: a heading should name what is under it. If a section needs two nouns joined by `and` to describe itself, either it holds two sections or it holds nothing definite.
+For `core/formatting.md`: a heading should name what is under it. Two related nouns can accurately label a useful section; split or rename it only if its contents warrant that change.
 
 ## Language and Grammar Tells
 
 ### High density of AI vocabulary
 
-The strongest single lexical signal, with two critical qualifications: the words co-occur, so density matters far more than any individual hit; and the set drifts by model generation.
+The historical page cataloged recurring vocabulary. Co-occurrence may warrant closer reading, but this dossier establishes neither a validated density threshold nor a strongest lexical signal.
 
-The current pooled list: `additionally` (especially sentence-initial), `align with`, `boasts` (meaning has), `bolstered`, `crucial`, `deep dive`, `delve`, `emphasizing`, `enduring`, `enhance`, `fostering`, `garner`, `highlight` (verb), `interplay`, `intricate`, `intricacies`, `key` (adjective), `landscape` (abstract), `meticulous`, `meticulously`, `pivotal`, `robust`, `showcase`, `tapestry` (abstract), `testament`, `underscore` (verb), `valuable`, `vibrant`.
+The historical pooled inventory included `delve`, abstract uses of `landscape` and `tapestry`, and evaluative uses of `pivotal`, `robust` and `vibrant`. These are examples, not a word-ban list; many uses are ordinary and precise.
 
-By era, which is useful for knowing what still matters:
-
-- **2023 to mid-2024** — `additionally`, `boasts`, `bolstered`, `crucial`, `delve`, `emphasizing`, `enduring`, `garner`, `intricate`, `interplay`, `key`, `landscape`, `meticulous`, `pivotal`, `underscore`, `tapestry`, `testament`, `valuable`, `vibrant`.
-- **Mid-2024 to mid-2025** — `align with`, `bolstered`, `crucial`, `emphasizing`, `enhance`, `enduring`, `fostering`, `highlighting`, `pivotal`, `showcasing`, `underscore`, `vibrant`.
-- **Mid-2025 on** — `emphasizing`, `enhance`, `highlighting`, `showcasing`, plus the notability-and-coverage vocabulary above.
-
-Model-specific: Grok favors pseudo-scientific diction — `causal`, `empirical`, `correlate` — and still overuses `underscore`.
+The earlier dossier assigned examples to 2023-24, 2024-25 and 2025-26 periods and included Grok-specific scientific diction. Without model snapshots, prompts and comparison corpora, these remain historical observations, not a current vocabulary classifier. Scientific terms can be exactly right in scientific prose.
 
 Two constraints the source states explicitly and that a module must honor. Read the list literally: a word being overused does not implicate its synonyms. And context governs — `underscore` as a typographic mark or as film music is not the tell.
 
 ### Avoidance of basic copulatives
 
-The model replaces `is` and `are` with weightier substitutes. Measured as an over-ten-percent drop in `is`/`are` across academic writing in 2023, with no prior trend, and reproduced experimentally: ask a model to revise a sentence and the copula count falls.
+The page describes copyedits that replace `is` and `are` with weightier substitutes. The earlier precise claim about an academic-writing decline was not independently verified in this refresh and is retired as quantitative support.
 
 Flagged substitutes: `serves as`, `stands as`, `marks`, `functions as`, `operates as`, `represents`, `boasts`, `features`, `maintains`, `offers`, `refers to`.
 
-Two refinements. Several of these are marketing verbs standing in for `has`. And newer output builds longer detours — `ventured into politics as a candidate` for `was a candidate`, `began his career as` for `was`. The tell shows up most clearly in machine copyedits, which "improve" plain sentences into padded ones.
+Some substitutions may pad a relation that `is` or `has` expresses adequately. Others add real meaning: beginning a career is not identical to holding a role. Compare the actual claim before simplifying, and do not treat the historical copyediting examples as a statement about all newer output.
 
 For `core/voice.md` this inverts cleanly into a positive rule: let the verb be `is` when the relation is `is`.
 
@@ -166,13 +167,13 @@ For `core/voice.md` this inverts cleanly into a positive rule: let the verb be `
 
 Shortcuts `WP:AICONNECT` and `WP:AIASSOCIATION`. Words to watch: `in connection with`, `in connection to`, `connected with`, `connected to`, `in association with`, `associated with`.
 
-Newer models reach for an indirect construction when they need to assert that two things are related, abstracting the relation away instead of naming it. The plain alternatives are the small prepositions — `of`, `for`, `by` — or a verb that says what the relation actually is: `working with`, `used for`, `caused by`, `funded by`. The source notes it often arrives compounded with promotional vocabulary, as in `widely associated`, and that indirection alone convicts nobody; density and company are what matter.
+An indirect construction can obscure a known relationship. Where the evidence permits, name the relation with a precise verb or preposition, such as `working with`, `used for` or `funded by`. Neither indirection alone nor its co-occurrence with promotional language proves authorship.
 
 For `core/anti-slop.md` the rule states cleanly and needs no detection framing: when two things are related, name the relation. Ownership, employment, funding, authorship, membership, cause — each of those has a word, and once you have picked one, `of`, `for` or `by` will usually carry it.
 
 The exception is not decoration, and any module taking this rule must carry it. Sometimes an unexplained association is exactly the finding. An epidemiologist writing that a diet is `associated with` an outcome has chosen the precise phrase, because the direction of causation is unknown and asserting one would be false. There the vague-looking construction is the accurate one and `core/accuracy.md` requires it. The fault is the phrase standing where a nameable relation belongs, not the phrase itself. Banned outright, the rule would trade a vague sentence for a false one, which is the failure `core/restraint.md` exists to prevent.
 
-Note what this one is not. Unlike most of the page it is attributed to *newer* models, which makes it the live counterpart to the elegant-variation tell that moved into `## Historical Tells` in the same fortnight. See the note at the head of that section: this pair is the evidence for it.
+The earlier dossier recorded this as a newer-model observation while elegant variation was reclassified as historical. Without pinned comparisons, that page change establishes neither a causal explanation nor a universal change in model behavior.
 
 ### Negative parallelism
 
@@ -180,41 +181,41 @@ Three shapes, all common, all stereotyped:
 
 - `not just X, but Y` / `not only X but also Y` / `it's not just X, it's Y`
 - `not X, but Y` / `it's not X, it's Y` / `no X, no Y, just Z`
-- `X rather than Y` — the reversal. Unlike the two above it, this one negates nothing and asserts nothing false, so it is a frequency finding and not a fault: Grok output carries it at a notably high rate. Watch the rate, never the presence. `core/anti-slop.md` exempts the construction outright and `core/voice.md` builds on that exemption, and both are right to. Read this bullet as a reason to count occurrences in a draft that seems to lean on it, not as a reason to ban it.
+- `X rather than Y` — a contrast that may be precise or misleading depending on the facts. The historical Grok frequency observation does not make the form a fault.
 
-The rhetorical move in the first two shapes is to stage a correction of a misconception the reader never held, which manufactures the feel of insight without adding a fact. It also appears across sentence boundaries, which makes a single-sentence check insufficient.
+These forms can stage an unnecessary correction and manufacture the appearance of insight. They can also express a real correction, contrast or addition. Inspect the claim, including across sentence boundaries, rather than rejecting its grammatical shape.
 
-Humans use it too, especially in myth-busting registers, so it is a tell of frequency and reflex, not of presence.
+Human writers use these forms, including in myth-busting and technical contrasts. Review repetitive use for its effect on meaning, not as an authorship signal.
 
 ### Rule of three
 
-Overuse of triads, from three stacked adjectives to three parallel phrases. The source's diagnosis is the important part: the model reaches for a triad to make a superficial analysis look comprehensive. Three items feel like a survey. This belongs to `core/rhythm.md` as much as to anti-slop, because it is a cadence problem.
+A reflexive triad can make a thin account sound complete, from stacked adjectives to parallel phrases. Check whether each item contributes. A set with three real members is not a defect, and reducing it to two can change the facts.
 
 ## Style and Markup Tells
 
-These belong mostly to `core/formatting.md`.
+These are historical review prompts for `core/formatting.md`, not universal defects. Wikipedia's page conventions do not automatically govern Markdown, a slide deck or an accessible application.
 
 - **Title Case In Headings.** Capitalizing every significant word in section headings.
-- **Boldface as emphasis spray.** Bolding every instance of a chosen term, or bolding key-takeaway phrases mid-paragraph. Inherited from readmes, decks, listicles, and sales copy.
+- **Boldface as emphasis spray.** Check whether highlighted terms actually help a reader find important information.
 - **Inline-header vertical lists.** The signature shape: bullet, bold label, colon, explanatory sentence. Often with a non-standard bullet character (`•`, `-`, `–`, `#`, an emoji) or hand-numbered items.
-- **Em dashes.** Used more than in comparable non-professional human text, in slots where a comma, colon, or parentheses would serve, and typically spaced. The formulaic use is to punch up a clause or stage a parallelism. Weak alone; meaningful in combination. Also unstable as a signal: vendors have suppressed it, and a July 2026 study found only Claude exceeding professional human rates while ChatGPT fell below them.
+- **Em dashes.** Check whether the pause or interruption serves the sentence. The prior model-ranking and vendor-suppression claims were not independently verified here. Presence, spacing or a cluster of dashes is not an authorship test.
 - **Emoji as structure.** Emoji prefixed to headings or bullets.
 - **Needless small tables** for material that should be prose.
 - **Curly quotes and apostrophes**, sometimes mixed inconsistently with straight ones in a single passage. Weak on its own — Chicago style, Word, and macOS all produce them.
 - **Skipped heading levels**, typically starting at level three.
-- **Overuse of level 1 headings.** The top level is effectively reserved for the title, so a document whose body sections start at level 1 is usually a Markdown structure converted without adjustment.
-- **A title heading repeating the document's own title**, placed above everything else. The model does not assume the title already exists, so it writes one.
-- **Headings that contain only other headings**, with no text of their own between them. An outline promoted to a document without being written.
+- **Heading hierarchy.** Follow the destination's structure; level 1 is not universally forbidden in a document body.
+- **A duplicate title heading.** Remove it if the publishing system already supplies the title; a standalone document may need one.
+- **Headings that contain only other headings.** Check for missing explanation, but do not add filler to a useful hierarchical outline.
 - **Thematic breaks between sections**, a Markdown habit.
 
 ## Chat-Register Leakage
 
-Assistant-to-user speech that survives into the document. Distinct from the other tells because it is unambiguous when present.
+Assistant-to-user speech can be the wrong register for a finished article. It is not unambiguous authorship evidence: it can be quoted, copied, templated or deliberately addressed to a reader.
 
 - **Collaborative filler** — `I hope this helps`, `Of course!`, `Certainly!`, `You're absolutely right!`, `Would you like ...`, `is there anything else`, `let me know`, `more detailed breakdown`, `here is a ...`.
 - **Meta-narration of structure** — announcing what a section will do before doing it.
 - **Placeholder text** left unfilled: bracketed slots, `2025-xx-xx` dates.
-- **Over-itemized change descriptions.** A summary of one's own edit that names the exact parameters, fields and templates touched, reproduces their markup, and calls out having added `inline citations` or `internal links`. The granularity is the tell: a person describes what changed, and a model inventories it. Where the analogue is a commit message, a changelog entry, or a cover note, `core/voice.md` gets the rule — say what changed and why, not which fields you visited.
+- **Over-itemized change descriptions.** In an ordinary summary, explain what changed and why instead of inventorying every field visited. Retain exact parameters or markup when a changelog, audit or technical handoff needs them; granularity does not identify an author.
 
 ## Knowledge-Gap Speculation
 
@@ -230,85 +231,81 @@ For `core/accuracy.md`: report absence of evidence as a failed search, say where
 
 For `core/accuracy.md`.
 
-- **Dead links on arrival** — several 404s or nonexistent domains in new text, with nothing in the Internet Archive, suggesting the URL never existed.
+- **Dead links on arrival.** Investigate broken URLs and missing archive records; a moved page, access barrier or incomplete archive can explain a failed lookup. Absence from an archive does not prove fabrication.
 - **Invalid ISBN checksums and unresolvable DOIs.**
-- **Valid DOIs pointing at unrelated papers** — the most dangerous variant, because the identifier resolves. The source's worked example includes a paper attributed to an author three decades dead at the purported date.
-- **Book citations without page numbers**, which are unfalsifiable by construction; and citations with page numbers where the pages do not support the claim. Risk rises for general or frequently cited books, and when no URL is given.
+- **Valid DOIs pointing at unrelated papers.** Resolution can conceal an identity or relevance error; inspect the actual paper instead of stopping at a successful lookup.
+- **Missing or inaccurate locators.** Check the cited passage in the cited edition. Whole-work references can legitimately lack a page, and unpaginated works may have other locators. Neither a missing page nor a missing URL makes a reference inherently unfalsifiable. See `citation-authority.md` for mechanics and unresolved style-specific rules.
 - **Provenance parameters in URLs** — `utm_source=chatgpt.com`, `utm_source=openai`, `utm_source=copilot.com`, `referrer=grok.com`.
 - **Reference-syntax errors** — named references defined but never cited, reused references with broken syntax, the `↩` character around footnotes.
-- **Vendor leakage markers inside the markup**, each specific to a product: fragments such as `contentReference`, `oaicite`, `turn0search0` and `attributableIndex` from ChatGPT, bracketed `cite:` spans from Gemini, card and citation-render fragments from Grok, lenticular brackets from DeepSeek, upload paths from Perplexity. The page keeps a per-vendor inventory of these, and gives one of them a second life: `turn0search0` is used as an HTML anchor on the section that documents it. The joke is also the evidence, and it is worth noticing that the most mechanical class of tell is the one nobody has to argue about.
+- **Unrendered tool markers.** Fragments such as `contentReference`, `oaicite` or `turn0search0` may need conversion into usable references. Product syntax changes, and a person can copy it; repair the artifact without inferring authorship of the whole document.
 
-The generalizable rule: a citation that cannot be checked is not a citation. Page numbers and resolvable identifiers are what make a claim falsifiable.
+Verify both bibliographic identity and support for the claim. A resolving DOI can identify the wrong paper; a valid citation may require a library or a different edition to check. Report the verification limit instead of either certifying or accusing from appearance.
 
 ## Historical Tells
 
-Largely gone from current models, retained because they still surface in older text and because they show where the failure modes were.
+Patterns recorded as historical by the earlier page pass, not certified absent from current models.
 
-**Read this section as the dossier's own expiry notice.** Most of what this page calls a tell is a fact about decoding, not about machines as such: a sampling penalty, a token limit, a refusal layer, a training-time habit. Change how the text is generated and the tell goes with it, which is why a list of tells is a dated artifact rather than a taxonomy. August 2026 supplied both halves of the demonstration inside two weeks — elegant variation retired because decoders stopped penalizing repetition, and vague connection added because newer models had started abstracting relations away. Neither move was about writing getting better or worse. So distrust the tense of every entry here before you distrust its content, and distrust the lexical entries above before the structural ones, because a word list tracks a model generation and a structural failure tracks the absence of something to say.
+**Model-era observations need version pins.** Training, instructions, task and decoding can all change output. A page's decision to reclassify an indicator is not an experiment isolating which cause changed, and structural patterns are not immune to model or genre differences.
 
 - **Didactic disclaimers** — `it's important to note`, `it's crucial to note`, `worth noting`, `may vary`. Advice to an imagined reader about safety or jurisdiction.
 - **Section summaries** — `In summary`, `In conclusion`, `Overall`, plus restating the paragraph's point at its end.
 - **Procedural self-narration in a change note** — announcing that information was `preserved`, `retained`, or that mistakes were `avoided`, and similar statements about the process rather than the result.
 - **Abrupt truncation** at a token limit.
 - **Stale default access dates** in citations.
-- **Prompt refusals** — `as an AI language model`, `as a large language model`, `I cannot offer medical advice, but I can ...`. The model declined the request as written, apologized, and offered a nearby request instead. Outright refusals of this shape have become rare.
-- **Elegant variation**, retired upstream on August 19, 2026 and re-tensed there to the past. Take the source's caveat first, because with the tell retired it is the load-bearing half of the entry: several educational traditions teach students never to repeat a word, so this heuristic fired hardest on writers who had been taught to write that way, and on non-native English writers in particular. It was weak evidence against them while it was evidence at all, and it is none now. The pattern it named — one referent accumulating synonyms down a paragraph until the prose reads as thesaurus churn — was measured against pre-2023 Wikipedia and against generated imitations of it, and is no longer characteristic of current output.
+- **Prompt refusals** — formulaic statements about being an AI or offering a nearby alternative. Their prevalence depends on the product and task; no current rate was verified here.
+- **Elegant variation.** The previous dossier recorded upstream reclassification on August 19, 2026; the exact page revision remains unpinned. Repeatedly renaming one referent can confuse a reader, but it also has a long human history, including learned writing practices. No universal current-model prevalence or false-positive rate is established here.
 
-**Why it expired, stated so it cannot be re-read as taste.** Older decoders applied a repetition penalty at sampling time: a token's probability was reduced arithmetically because that token had already appeared. The operand was a count of tokens. No judgment about style entered anywhere, and the model held no view that repetition was a fault — the penalty would have fired identically on a text where repeating the word was the right call. Its effect on prose was secondhand: a name already used was cheaper to avoid than to repeat, so the referent picked up synonyms. Current models sample without that penalty, so there is no longer a mechanism to produce the pattern, and the pattern no longer indicates machine authorship. Kept here because it explains why text of that era reads as it does.
+**Decoding is a possible contributor, not the only mechanism.** Some repetition penalties can discourage reuse of tokens and encourage alternatives. This does not show that every older model used such a penalty, that all current models omit it, or that prompts and learned style cannot produce synonym variation without it. The earlier categorical causal story is withdrawn.
 
-**Where it went in `core/`, and why it went to two places.** The fault is retained in `core/anti-slop.md` on reader grounds alone — a single referent renamed at each mention until a reader cannot tell whether a second organization has entered the paragraph — and it is listed among the non-tells in `core/restraint.md`, beside missing citations, as a fault with a long pre-model history that convicts nobody. Both are correct and they are not in tension: the same pattern can be worth fixing and worthless as evidence, and keeping those two judgments in separate modules is what stops a style rule from hardening into an accusation. What must not survive anywhere is the inference from thesaurus churn to machine authorship.
+For module authors, keep the two judgments separate: preserve stable terms where reference would otherwise become unclear, and do not use synonym variation to determine authorship.
 
-The source dates `In conclusion` as a machine tell, but it remains a real writing weakness, so `core/rhythm.md` should keep it on craft grounds rather than detection grounds.
+A conclusion or summary can help readers. Revise it when it merely repeats material without a useful synthesis, not because a particular transition appears.
 
 ## Bias in Generated Content
 
-Added upstream in August 2026 and new territory for this dossier, which had carried no account of slanted content as distinct from slanted style.
+The historical dossier repeated August 2026 press coverage about political bias, including Stu Woo in the *Wall Street Journal* and a *Fortune* report. The underlying experiments, specific language comparisons and proposed causes were not independently verified here; they are not carried as established model-wide findings.
 
-The finding is that large American frontier models carry a pro-authoritarian slant on some prompts. The page gives two causes: training on the whole internet without excluding state propaganda on political subjects, and vendors citing the safety of users who live under authoritarian governments. Three specifics follow. Responses in Chinese run more authoritarian than responses in English. Models criticize governments in freer countries more readily than repressive ones, sometimes on stated safety grounds. Both are reported as measured, not inferred. Sourced to Stu Woo in the *Wall Street Journal*, August 14, 2026, and to *Fortune*, August 13, 2026.
+The house application is narrower: check whether political claims are supported and fairly contextualized, including in translation. A citation's existence does not establish the interpretation attached to it. The community account is not authority for a predetermined conclusion about a government or a model.
 
-For `core/accuracy.md` this is a verification obligation rather than a style rule, and it is sharper than the general one. The failure is not a fabricated citation, which a checker can catch, but a defensible-looking claim tilted by the corpus underneath it. Political and governmental subject matter therefore needs its sourcing checked against the claim's direction, not only against its existence. It also bears on translated or multilingual work, where the same question can return differently shaded answers in two languages.
+## Ordinary Constructions Worth Preserving
 
-`core/` should not restate this as a writing rule. Nothing here tells a writer what to do with a sentence.
-
-## Signs of Human Writing
-
-The inverse list, and the most directly useful section for `core/voice.md`. These are constructions that machine text avoids because it is reaching for a formal register, and that human writers use freely.
+The page's inverse list supplies useful reminders for `core/voice.md`, not a human-authorship test:
 
 - **Plain copulatives** — `there is a`, `it has a`.
 - **Short plain verbs over stiff or euphemistic ones** — `wrote` over `authored`, `moved` over `relocated`, `used` over `utilized`, `tried` over `attempted`, `died` over `passed away`.
-- **Definite and superlative statements** where they are true — `one of the best`, `is the only`, `was the first`. Machine text hedges these away.
+- **Definite and superlative statements** when the evidence supports their scope. Neither unnecessary hedging nor unjustified certainty improves accuracy.
 - **Hedges and intensifiers used naturally** — `very`, `perhaps`, `tends to`.
 - **Ordinary wordy connectives in isolation** — `as a result of`, `in order to`, `all of the`, `a part of`, `the fact that`.
 
-The last two points matter more than they look. A model trained to sound polished strips exactly these, so systematically removing every `very` and every `in order to` moves prose toward machine register, not away from it.
+Keep a hedge when it states real uncertainty and a connective when it clarifies a relationship. Their presence or removal does not establish whether prose is human or generated.
 
 ## Non-Tells
 
-The overcorrection list. The source documents each of these as ineffective, and treating them as tells produces false positives.
+These features have ordinary human uses and are not adequate grounds for an authorship conclusion:
 
 - **Perfect grammar.** Many humans write cleanly.
-- **Mixed casual and formal register.** Indicates a technical writer, a young writer, playfulness, neurodivergence, or several hands on one document.
-- **Bland or robotic prose.** Machine output has specific traits, and generic dullness is not one of them; the output skews verbose and positive rather than flat.
-- **Fancy, academic, or formal prose.** The correlation is with *specific overused words*, and does not generalize to elevated diction.
-- **Transition words in isolation.** Only a few are actually overused. Many style guides accept sentence-initial connectives, and essayistic human writing uses them constantly.
-- **Unsourced content.** Predates the models by decades, and modern models cite constantly — badly, but constantly.
+- **Mixed casual and formal register.** Can reflect context, voice or collaborative editing; it does not establish a writer's identity or background.
+- **Bland or robotic prose.** Dullness is a quality judgment, not evidence of a particular production method.
+- **Fancy, academic, or formal prose.** A genre or learned register is not a machine fingerprint.
+- **Transition words in isolation.** A connective can clarify an argument; its use is not an authorship test.
+- **Unsourced content.** Has a long pre-model history. Generated writing can have references or lack them; check the actual sourcing.
 
-The source also warns explicitly that false accusations drive people away and poison a community, and it names Dunning-Kruger and confirmation bias as the failure modes of the accuser. `core/restraint.md` inherits this whole section.
+The community account warns that false accusations can harm participation. Retain that caution without diagnosing an individual accuser or claiming a measured harm rate.
 
 ## What This Means for `core/`
 
-1. **Anti-slop is a mechanism rule, not a word list.** Ban the trade of specificity for approval. Word lists date within eighteen months; the mechanism has not changed.
-2. **The strongest single procedure is deletion-testing trailing clauses.** It catches superficial analysis, undue significance, and puffery at once, and needs no vocabulary.
-3. **Restraint is load-bearing and evidence-backed.** The non-tells and the human-writing list mean that overcorrection is a real, documented failure mode, not a hypothetical one.
-4. **Formatting tells are cheap to fix and cheap to state.** Heading case, bold spray, bullet-bold-colon lists, emoji, curly quotes.
-5. **Accuracy owns the citation and knowledge-gap material.** Unverifiable citations and speculation-after-disclaimer are accuracy failures.
-6. **Never let a module claim detection.** Every tell is written as "do not write this," never as "this proves a machine wrote it."
+1. **Check information, not just vocabulary.** Restore supported detail and remove unsupported evaluation.
+2. **Try deletion-testing trailing clauses.** Keep them when they add a real consequence, qualification or explanation. This is an editorial procedure, not a measured best-performing prompt.
+3. **Preserve legitimate variation.** Ordinary punctuation, formality, repetition and uncertainty can serve the reader.
+4. **Choose formatting for the task and destination.** A checklist is not a reason to remove useful headings, emphasis, lists or accessible structure.
+5. **Accuracy owns citation and knowledge-gap checks.** Distinguish a failed lookup from source absence, and an unchecked claim from a disproven one.
+6. **Do not claim detection or prompt efficacy.** State the reader-facing reason for an edit and the conditions for retaining the original.
 
 ## Chunk Map
 
-Working extraction lives outside the repository, in the session workspace, split by section.
+The earlier dossier records an external working extraction split by section. This map is historical provenance only; the extraction and its counts were not revalidated in this refresh.
 
-The line ranges below index that extraction and not the wikitext. They were labeled "source lines" and are not: the page ran 1,665 lines of wikitext on the retrieval date against the extraction's 1,179, and the ranges do not scale onto the wikitext by any constant, so the extraction was evidently taken from a rendered or converted form. The ranges remain internally consistent and locate a section within the extraction. They cannot be used to cite the page, and no claim in this dossier rests on them. Re-deriving them against wikitext is not possible from inside the repository, because the extraction lives outside it.
+These ranges index the historical extraction, not an immutable Wikipedia revision. Their former label as source lines was incorrect. They are not primary citation locators, and no current empirical claim rests on them.
 
 | Chunk | Section | Extraction lines |
 | --- | --- | --- |

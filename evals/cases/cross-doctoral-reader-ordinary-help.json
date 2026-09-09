@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "cross-doctoral-reader-ordinary-help",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Lightly copyedit this everyday support reply for a reader with a doctorate in robotics who is new to the building's room-booking system. The reader needs instructions, not an argument, thesis, research gap, or literature review. This is not an academic task. Return the reply unchanged if it already explains the supplied workflow clearly.",
+  "input": "To reserve the shared room, open the booking page and choose an available slot. Add your meeting title, then select Save. You can change the booking from My reservations.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional building's shared room is reserved through its booking page."},
+    {"id": "f2", "text": "The user chooses an available slot."},
+    {"id": "f3", "text": "The user adds a meeting title."},
+    {"id": "f4", "text": "Selecting Save creates the booking."},
+    {"id": "f5", "text": "My reservations allows the user to change the booking."}
+  ],
+  "modules": ["domain/general.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5"],
+    "forbidden_additions": [
+      "A required thesis, counterargument, research question, or scholarly reference.",
+      "Unprovided approval steps, fees, eligibility rules, or application installation.",
+      "An assumption that a doctorate implies familiarity with this booking system."
+    ],
+    "preserve": [
+      "The direct procedural answer and its existing order.",
+      "The supplied Save and My reservations interface labels.",
+      "The clean reply without academic expansion or cosmetic rewriting."
+    ],
+    "expected_action": "no_change"
+  }
+}

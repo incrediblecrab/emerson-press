@@ -1,6 +1,9 @@
 dist/
 .DS_Store
 node_modules/
+.venv/
+__pycache__/
+evals/runs/
 
 # Working extraction from copyrighted sources (AP Stylebook, WIDA standards).
 # Restated, page-cited, and far more extensive than the published notes in

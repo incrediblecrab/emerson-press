@@ -1,10 +1,10 @@
 ---
 id: user-interface.applications
 layer: user-interface
-version: 1.0.1
+version: 1.1.0
 status: draft
-budget: 1715
-tokens: 1715
+budget: 1873
+tokens: 1873
 kind: medium
 medium: app
 mechanics: house
@@ -28,7 +28,7 @@ Platform-neutral house rules. For Apple platforms, load `user-interface/apple-hi
 - **The reader in the third person** — *the user can*, *players are able to* — or `we` doing the reader's work.
 - Apology inflation: *Oops, uh-oh, sorry about that.* A joke on a surface the reader crosses every day.
 - **Synonym churn.** *Delete*, *Remove*, *Trash*, and *Discard* for one action. *Workspace*, *team*, and *organization* for one container.
-- Internal vocabulary escaping: *entity, tenant, endpoint, payload, job.*
+- Internal vocabulary unexplained to this reader: *entity, tenant, endpoint, payload, job.* Keep terms an expert reader actually uses.
 - Widget names in guiding copy: *dismiss the modal*, *the button in the popover.* Platform verb mismatch: *click* on a phone.
 - `(s)` and slashes standing in for a plural the writer would not choose.
 - Register drift between surfaces — jokes in the empty state, legalese in the error, marketing in a settings footer.
@@ -40,9 +40,9 @@ Address the person: *you*, *your*. Keep *we* for the company doing something the
 
 One voice, many tones. Tone belongs to the situation, not the brand: a failed payment and a finished workout do not sound alike.
 
-Say the specific thing. *Opens in under a second* survives translation, truncation, and a skeptical reader. *Blazing fast* survives none of them.
+Say the specific thing you can support. *Opens in under a second* needs an applicable measurement; do not invent one to replace *blazing fast*. When performance evidence is missing, describe a known function or omit the claim.
 
-One name per thing and one verb per action, decided once and written down. Use the reader's noun, not the schema's — they have *files*, not *objects*. Name the thing, never the control.
+One name per thing and one verb per action, decided once and written down. Use the reader's noun, not an unexplained schema label. Keep *objects* when that is the product concept the reader knows; do not rename a distinct concept *files* merely to sound simpler. Name the thing or action rather than an irrelevant widget.
 
 Define a term the first time it appears on a screen, because the reader did not necessarily arrive from the previous one.
 
@@ -52,17 +52,17 @@ Write about people first and disability second, unless the community has said ot
 
 ## Surfaces
 
-**Labels and actions.** Name the result, verb first, in one or two words. Reserve `OK` for an alert that informs and offers no choice; anywhere there is a decision, the button carries the verb from the title. `Cancel` is the word for abandoning an action, and it is never the default. Hold one capitalization convention per element type. No terminal period. A trailing ellipsis means more input is needed before anything happens. A menu command that flips a state is named for the action it will perform — *Turn HDR Off* when HDR is on. A badge is a status claim; delete it if the interface looks identical once the claim expires.
+**Labels and actions.** Name the result, usually verb first. Prefer a short label, but retain the words that distinguish actions or explain a consequential choice. Reserve `OK` for an alert that informs and offers no choice; anywhere there is a decision, the button names the action. `Cancel` means abandoning an action without proceeding. Follow the platform/component's safe-default policy; a safe alternative or no default may be appropriate. Do not preselect an irreversible action merely to make the flow faster. Hold one capitalization convention per element type. No terminal period. Where the platform uses this convention, a trailing ellipsis means more input is needed before the command completes. A menu command that flips a state names the action it will perform — *Turn HDR Off* when HDR is on. A badge is a status claim; remove it when that claim no longer applies.
 
-**Forms.** Every field gets a persistent label; the placeholder shows format (`name@example.com`), never the question. State the requirement before the attempt, not in an error after it. Validate when the answer is complete. Write the fix, not the fault, beside the field. Accept what the reader types and normalize it yourself. Mark the smaller set — if most fields are required, mark the optional ones. Prefill what you know; never prefill a password.
+**Forms.** Every field gets a persistent label; the placeholder shows format (`name@example.com`), never the question. State the requirement before the attempt, not in an error after it. Validate when the answer is complete. Write the fix, not the fault, beside the field. Accept supported formats; normalize only where doing so preserves meaning and the product actually supports it. Mark the smaller set — if most fields are required, mark the optional ones. Use appropriate known defaults without exposing sensitive information.
 
-**Errors.** Three jobs: what happened, what it means here, what to do next. Lead in the past tense and in the reader's terms. Name what was kept and what was lost. Give the next action as a button, or say who can fix it and roughly when. Keep the code, after the sentence. No blame, no stack trace, no *Something went wrong*. An error many readers will hit is not a copy problem.
+**Errors.** Three jobs: what happened, what it means here, what to do next. Lead in the past tense and in the reader's terms. Name what was kept and what was lost when known; make an unknown save or sync state explicit rather than promising safety. Give the next action as a button, or say who can fix it. Give a timeframe only when supported. Keep a useful diagnostic code after the sentence, not an irrelevant stack trace. Repeated failures may require a product fix, not just new wording.
 
-**Alerts and permissions.** Interrupt only for a decision, or for loss that is unexpected and irreversible. Title the consequence, not the question: *Delete 14 photos?* Add one line only if it carries a fact the title cannot. Do not confirm an expected, undoable action. Style an action as destructive when the loss is the surprise, not when it is the point. Ask for a permission where the feature is used, and say what the reader gets for it.
+**Alerts and permissions.** Interrupt for a necessary decision or a consequential, unexpected loss. Title the consequence: *Delete 14 photos?* Add detail when it changes the decision, including scope, reversibility and a known recovery period. Do not routinely confirm an expected, undoable action. Destructive behavior, destructive styling and keyboard defaults are separate choices governed by the target component; wording must accurately describe the result. Ask for a permission where the feature is used, and say what the reader gets for it.
 
 **Empty states.** Four different screens: nothing yet, nothing matching, nothing left, nothing available. Write only the one you are in. *Nothing yet* names what will appear and gives the action that makes it appear. *Nothing matching* echoes the query and the active filters and offers the widening move. *Nothing left* is a plain confirmation. *Nothing available* is a failure — write it as an error. Put nothing permanent on a screen designed to disappear.
 
-**Status and progress.** Name the object and the stage. *Loading*, *Please wait*, and *Authenticating* are true of every wait and informative about none. Give a proportion only when you can track it honestly, and prefer counts — *4 of 12 files*. Change the button while its action runs. Offer `Cancel`, and `Pause` as well when stopping would throw away work. When a process stalls, replace the status with what happened. Distinguish offline from failed. Confirm silently where the result is already visible.
+**Status and progress.** Name the object and the stage when those details help. Give a proportion or duration only when it can be tracked honestly, and prefer counts when available — *4 of 12 files*. Change the button while its action runs. Offer `Cancel` or `Pause` when supported and useful; do not promise controls or saved progress the product lacks. When a process stalls, replace the status with what happened. Distinguish offline from failed. Confirm silently where the result is already visible.
 
 **Onboarding.** Get the reader to one real result, then stop. Teach by letting them do the thing, undoably, on their own data. Ship defaults so setup is optional. Defer every permission to the moment it is needed. Keep a tip to a sentence or two, with the action at the front. Explain your own product's ideas, not the platform's. Make the tour skippable and findable afterwards.
 
@@ -72,13 +72,19 @@ Write about people first and disability second, unless the community has said ot
 
 ## Boundaries
 
-Product surfaces, whatever the platform: a native app, a desktop client, or the logged-in half of a website. The visitor-facing half is `website.md`. Register stays with the genre module, and with whatever `domain/education-level/` tier loads beside it — a children's app keeps its warmth, a peer tool keeps its terms of art. What this module strips is unearned enthusiasm, not earned tone.
+Working product surfaces, whatever the platform or authentication state: a native app, a desktop client, anonymous checkout, a booking form or a dashboard. Informational and persuasive pages use `website.md`, even when access requires sign-in. Route by the reader's task, not the login boundary. Register stays with the genre and actual reader needs; optional classroom presets do not override them. A children's app keeps its warmth, a peer tool keeps its terms of art. What this module strips is unearned enthusiasm, not earned tone.
+
+Validation timing, focus, recovery, permissions and available controls are product dependencies. Flag a missing implementation separately; rewriting copy does not establish that the behavior exists.
 
 Long-form product writing — release notes, help articles, in-app guides — is `domain/technical.md`. Email and other messages that arrive outside the product are neither this module nor `website.md`; use `domain/` until this axis claims them. Conversational surfaces — an assistant's replies, a chat agent's refusals — are not covered here either: they are read rather than scanned, so the attention economy this module assumes does not hold.
 
 ## Examples
 
+These are independent synthetic product records. The supplied facts, not a desire for more vivid copy, authorize the details in each revision.
+
 **Onboarding that tours instead of starting**
+
+**Supplied facts:** Kestrel is a fictional notes product. This onboarding screen can open a first note; actions in that exercise are undoable, and a Skip control is available.
 
 > Welcome to Kestrel! Let's take a quick tour of everything you can do. &nbsp; (1 of 7)
 
@@ -86,11 +92,15 @@ Long-form product writing — release notes, help articles, in-app guides — is
 
 **An alert that hides the decision**
 
+**Supplied facts:** This confirmation concerns 14 photos. Deletion also removes them from the person's other devices, an effect that may be unexpected; Recently Deleted allows recovery for 30 days. Cancel and Delete are the available actions.
+
 > Are you sure? &nbsp; [ Cancel ] [ OK ]
 
 > Delete 14 photos? &nbsp; They'll be removed from all your devices. You can restore them from Recently Deleted for 30 days. &nbsp; [ Cancel ] [ Delete ]
 
 **Requirement revealed by failure**
+
+**Supplied facts:** This fictional product requires passwords of at least 12 characters including a number. The example communicates that existing requirement; it is not a recommended password-policy specification.
 
 > Password [ •••••••• ] ⚠ Invalid password.
 
@@ -98,23 +108,31 @@ Long-form product writing — release notes, help articles, in-app guides — is
 
 **Loss unaccounted for**
 
+**Supplied facts:** Sync stopped after 40 of 212 notes. Those 40 reached the other devices; the remainder are retained locally only. Retry is available.
+
 > Sync failed.
 
 > Sync stopped after 40 of 212 notes. The 40 are up to date on your other devices; the rest are still only on this one. &nbsp; [ Retry ]
 
 **One message for four empty states**
 
+**Supplied facts:** No invoices have been created. The list displays invoices when they are created, and the product provides an action to create the first one.
+
 > No data.
 
-> No invoices yet. Invoices appear here after a client pays. &nbsp; [ Create your first invoice ]
+> No invoices yet. Invoices appear here when you create them. &nbsp; [ Create your first invoice ]
 
 **Vague status**
 
+**Supplied facts:** The product is loading 212 notes from iCloud. No reliable duration estimate is available.
+
 > Loading…
 
-> Loading 212 notes from iCloud. About 20 seconds.
+> Loading 212 notes from iCloud.
 
 **A notification that points instead of tells**
+
+**Supplied facts:** In this synthetic event, Dana Osei approved the reader's Tuesday request for Editor access to "Q3 forecast." This information is appropriate for the permitted notification preview.
 
 > Kestrel: You have a new notification. Open the app to view it.
 
@@ -122,12 +140,16 @@ Long-form product writing — release notes, help articles, in-app guides — is
 
 **Setting named for its mechanism**
 
+**Supplied facts:** The setting lets Kestrel check for new notes while the app is closed. The product team reports that enabling it uses more battery.
+
 > Enable background fetch daemon
 
 > Update in the background Kestrel checks for new notes while it's closed. Uses more battery.
 
 **Synonym churn**
 
+**Supplied facts:** The action moves a file to a recoverable Trash folder; it does not permanently delete it. Menu, confirmation, action label and status must describe that same outcome.
+
 > Menu: *Remove.* Confirmation: *Delete this file?* Button: *Discard.* Toast: *Moved to Trash.*
 
-> Menu: *Delete.* Confirmation: *Delete this file?* Button: *Delete.* Toast: *File deleted.*
+> Menu: *Move to Trash.* Confirmation: *Move this file to the Trash?* Button: *Move to Trash.* Toast: *Moved to Trash.*

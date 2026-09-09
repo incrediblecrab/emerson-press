@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "technical-terms-em-dash",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Copyedit this API-maintainer note only where comprehension or correctness would improve. Readers already know parser terminology. Reentrant, delimiter token, regular expression, and escaped delimiters are necessary terms, not ornament. Keep the useful em-dash contrast and return the passage unchanged if it already explains the supplied design accurately.",
+  "input": "The parser is reentrant: each invocation keeps its own state. It accepts a delimiter token—not a regular expression—and leaves escaped delimiters inside the field.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional parser is reentrant."},
+    {"id": "f2", "text": "Each invocation keeps its own state."},
+    {"id": "f3", "text": "The parser accepts a delimiter token."},
+    {"id": "f4", "text": "The parser does not accept a regular expression as its delimiter specification."},
+    {"id": "f5", "text": "Escaped delimiters remain inside the field."}
+  ],
+  "modules": ["domain/technical.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5"],
+    "forbidden_additions": [
+      "Shared mutable parser state or regular-expression delimiter support.",
+      "Removal or splitting of escaped delimiters.",
+      "An unsupported throughput, thread-safety, or test-execution claim."
+    ],
+    "preserve": [
+      "The legitimate specialist vocabulary and its concise local explanation.",
+      "The em-dash contrast between a token and a regular expression.",
+      "The already effective wording."
+    ],
+    "expected_action": "no_change"
+  }
+}

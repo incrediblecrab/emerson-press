@@ -1,9 +1,16 @@
 ---
 id: sources.field-guide-to-ai-slop
 layer: sources
-version: 1.1.0
+version: 1.2.0
 status: active
 budget: none
+evidence_kind: practitioner
+checked_on: 2026-09-08
+verification_status: partial
+source_version: "Charlie Guo article published 2025-10-22; public publication metadata checked, no immutable revision pin; remaining full-piece notes inherited"
+source_urls:
+  - https://www.ignorance.ai/p/the-field-guide-to-ai-slop
+verification_note: "The public page's title, byline, publication date and opening were checked. The remaining account is an original reassessment of the inherited dossier, not a fresh full-source audit. Secondary prevalence figures, detector claims and causal explanations were not independently verified and are not empirical support."
 source:
   title: "The Field Guide to AI Slop"
   subtitle: "And what it's doing to human writing."
@@ -23,37 +30,37 @@ consumers:
 
 # Source: The Field Guide to AI Slop
 
-Companion evidence to `sources/signs-of-ai-writing.md`. Unbudgeted by design. Where the Wikipedia page is a committee's adversarial checklist, this is one practicing long-form writer's account of what slop feels like from the inside — including what it is doing to his own prose. It supplies three things the Wikipedia page does not: a causal story for why models overproduce lists, the best available treatment of monotony, and the positive prescription that `core/voice.md` is built on.
+Companion to `sources/signs-of-ai-writing.md`. Unbudgeted by design. This is one long-form writer's account of reading and revising prose around perceived AI habits. It contributes useful questions about monotony, empty explanation and loss of specificity. It is practitioner interpretation, not a controlled experiment or a validated detector.
 
 This dossier restates the piece in original wording throughout. Short flagged phrases appear as flagged phrases, because the phrase is the finding.
 
 ## Why This Source
 
-The Wikipedia page tells you what machine text looks like to a reviewer hunting it. This tells you what it feels like to a reader who was not hunting anything — the moment halfway through a paragraph when you realize nothing has been said. That reader's experience is what `core/` is actually trying to prevent, and it is not reducible to a list of tells.
+Where the Wikipedia account emphasizes reviewing suspected AI text, this essay emphasizes the reader's experience of fluent prose with little substance. That difference supplies useful editorial questions without establishing a better detection method.
 
-It is also honest about the cost of the whole enterprise in a way the detection literature is not. The author uses these tools himself, is self-conscious about his own em dashes, and argues that the tells are degrading as fast as they are documented.
+The author describes using these tools, becoming self-conscious about his punctuation, and worrying that avoidance changes his own voice. That account illustrates a possible cost of overcorrection without measuring how common it is.
 
 ### Scale
 
-Context for why this matters, as reported in the piece: an SEO firm's data suggested AI-written articles overtook human-written ones during 2024, with the rate later settling near even; a separate ongoing study put roughly seventeen percent of top-20 Google results as machine-generated; workplace surveys put regular AI use at forty percent or more of workers, concentrated in search, ideation, and email.
+The article links SEO estimates, search-result classifications and workplace surveys. Those secondary figures were not independently validated here, involve different denominators, and are not retained as prevalence evidence for writing instructions.
 
 ## The Red Herrings
 
 The author opens with what *not* to treat as evidence. Called yellow flags — worth noticing, never damning alone. This section is the reason `core/restraint.md` cites this source.
 
-- **Elevated vocabulary.** `delve`, `unpack`, `ascertain`, `multifaceted`. Plenty of professionals write this way. A consultant writing `ascertain the root cause` is a consultant.
-- **Absence of typos.** Spell-check and Grammarly are ubiquitous. Clean copy stopped being a signal.
-- **Absence of contractions.** Often just light editing, or a habit of someone who learned English as a second language.
+- **Elevated vocabulary.** Professional or learned registers can explain such diction; a single phrase establishes neither occupation nor authorship.
+- **Absence of typos.** Careful writing and editing tools can produce clean copy without generative drafting.
+- **Absence of contractions.** Can reflect formality, editing or a learned convention. Do not infer a writer's language background from it.
 
-Note the direct conflict with a naive reading of the Wikipedia vocabulary list. Both sources actually agree: density and co-occurrence are the signal, never a single elevated word. A module must not turn this into a banned-word list.
+These cautions are consistent with the Wikipedia dossier's false-positive concerns, but agreement between accounts is not independent validation. Repetition or co-occurrence can invite closer reading; neither establishes authorship or a threshold for banning a word.
 
 ## Stylistic Tics
 
 ### Em dashes
 
-The most belabored tell, and the author treats it with appropriate hedging. His argument for it: outside professional columnists, few people reach for an em dash in daily writing. His evidence is a Reddit analysis of the top thousand posts across several technology and startup subreddits, showing the share of comments containing an em dash roughly tripling over a year — a hard thing to explain by any other cause, though correlation is not causation.
+The author discusses an apparent rise in em-dash use in selected Reddit communities. That secondary comparison was not independently audited here. Even if replicated, a change in punctuation frequency would not isolate a cause or determine the author of an individual comment.
 
-He also predicts vendors will train the habit out, which has since happened. Treat frequency, not presence, and never treat it alone.
+His prediction that vendors might suppress the habit is not confirmation that they all have. For editing, choose a mark that carries the intended relationship or pause; do not optimize a punctuation count to imply human authorship.
 
 ### Rhetorical reflexes
 
@@ -65,39 +72,39 @@ Parallelism is a legitimate device. The problem is reflexive deployment where it
 - **Mid-sentence questions** — a question mark used as a drum hit. `The solution? It's simpler than you think.` `But now?`
 - **Vapid openers and transitions** — `As technology continues to evolve`, `In today's fast-paced world`, `At the end of the day`.
 
-The threshold he states is the useful part: any one instance is forgivable in the right context; repetition is what breaks authenticity.
+The useful check is whether repetition displaces meaning. A real contrast, a three-member set or a well-placed question should survive that check. No frequency threshold for authenticity was measured.
 
 ### Arbitrary formatting
 
-Bold that does not mark emphasis — words are heavy for no recoverable reason. And, more distinctively, Unicode used to fake formatting: mathematical alphanumeric characters standing in for bold or italic, plus decorative Unicode arrows and multiplication signs dropped into running text. He rates the Unicode habit as close to exclusively machine-made.
+Check bolding that conveys no useful emphasis and Unicode characters used as decorative substitutes for ordinary text. The author's near-exclusive machine-attribution claim is not established here; humans and publishing tools also produce such formatting. The editorial question is whether it improves meaning, navigation and accessibility.
 
 ## Structural Patterns
 
 ### Lists and emoji
 
-The causal claim here is this source's most valuable contribution, and it does not appear in the Wikipedia page. Models overproduce bulleted lists because of how their tuning ran: human raters reward answers that look organized, bullets look organized, so raters scored bullet-heavy answers higher and training drove the habit in. The list habit is not a quirk of style. It is a trained preference for the appearance of structure.
+The author proposes that preference tuning rewards the appearance of organization and can favor bullets. This is a causal hypothesis in an essay, not evidence isolating how particular training runs produced their formatting. It should not be attributed to all models or used as a measured explanation of their behavior.
 
-That matters for `core/formatting.md`, because it means the pull toward bullets will be strongest exactly when the material is thin — when there is an appearance of organization to manufacture.
+For `core/formatting.md`, inspect whether a list helps comparison, sequence or scanning. The essay does not establish that bullets occur most often when content is thin, and an informative list does not need conversion into prose.
 
-Layered on top: emoji-led bullets in professional contexts, which almost no one does unprompted. He observes this more in GPT-4o than in later or earlier models, and rarely in Claude.
+The inherited notes describe the author's GPT-4o/Claude observations about emoji-led bullets in the article's 2025 context. They are not a current cross-provider benchmark or proof that a person would not choose that format.
 
 ### Monotony
 
-The best treatment of rhythm in either source, and the backbone of `core/rhythm.md`.
+An editorial check relevant to `core/rhythm.md`, rather than a comparative measurement.
 
-Machine prose is metrically flat. Sentences run to similar lengths. Paragraphs repeat a shape. The cadence never varies, so there is no emphasis — when every sentence is weighted equally, nothing is weighted. The piece invokes the well-known Gary Provost passage on sentence variety to make the point. That passage is quoted material, so this dossier leaves it where it is; the underlying principle stands on its own and several traditions reach it separately: vary length deliberately, because contrast is what creates stress.
+Some passages repeat sentence lengths and paragraph shapes in ways that obscure emphasis. Inspect the actual passage: vary the construction when it clarifies a distinction or changes emphasis, not to simulate a statistical signature. This does not establish that machine prose is universally flat. The article invokes Gary Provost's sentence-variety passage; that copyrighted passage is not reproduced here.
 
-A second observation, rarer and worth keeping: machines hold tense and person fixed with unnatural consistency. Human writers drift between second and third person, slip into first for an aside, shift tense to mark a change in footing. Models settle into one and hold it. This is a rhythm tell that operates above the sentence, and no word list will catch it.
+The author also comments on consistency of tense and person. Consistency is often desirable in instructions, technical accounts and narratives. Do not introduce arbitrary shifts to make writing appear human; change tense or perspective only when the meaning calls for it.
 
 ## Uncanny Content
 
 ### Generic analogies
 
-Machine metaphors land in the right conceptual neighborhood without being thought through. His generated examples for a ukulele post — fingers taught to dance again, chords as puzzle pieces clicking into place, first strums as a toddler's babble, an instrument as a mirror for learning — are all serviceable and all inert.
+The author criticizes analogies in his generated ukulele example as familiar but uninformative. That is a judgment about examples, not a finding that all machine-generated metaphors lack meaning.
 
-The diagnosis is precise and worth carrying into `core/voice.md` intact as a rule: human figures of speech are either **highly specific**, drawn from something the writer actually experienced, or **culturally resonant**, drawn from a shared reference. Machine figures are merely *plausible*. They gesture at meaning without arriving.
+Two useful tests for `core/voice.md` are whether a comparison explains a specific relationship and whether a shared reference is appropriate for the reader. These are not an exhaustive taxonomy of human metaphors or a boundary machines cannot cross.
 
-This gives an actionable test. For any comparison, ask which of the two sources it draws on. If neither, cut it.
+Keep a comparison when it earns its space by explaining or expressing something relevant. Revise or omit a merely decorative analogy; do not invent personal experience to make it seem authentic.
 
 ### Filler
 
@@ -106,43 +113,43 @@ He names filler the worst of the tells, and the one least open to measurement. T
 - Reaching the middle of a piece and being unable to say what the author is claiming. Individual sentences parse; there is no throughline.
 - Noticing that four sentences delivered what one sentence held. The other three did not merely add nothing — they diluted the one that mattered.
 
-His summary formulation is the sharpest line in either source and the thing `core/anti-slop.md` should be organized around: **surface polish with nothing underneath is the signature.** A human can write with good grammar and communicate badly, but a human is unlikely to sustain prose that looks and sounds correct right up until it is examined. That specific pairing is the tell.
+The transferable diagnosis is fluent prose that delivers little information. Humans can produce that failure too. Test whether the paragraph makes a recoverable claim, explains it and earns its length; surface polish does not settle either quality or authorship.
 
 ## Pattern Matching Has Limits
 
 The section that makes this source honest, and that `core/restraint.md` draws on directly.
 
-Good human writers use every device listed above. Prestige long-form journalism was in the training data; the models learned this style *from* that writing. Em dashes, parallelism, rhetorical flourish — none are inherently bad.
+Human writers use these devices, and models can reproduce familiar human conventions. This dossier does not identify any particular model's training corpus. Em dashes, parallelism and rhetorical flourish are not inherently bad.
 
-The stated difference is intention and rate. A good writer deploys an em dash when that particular pause is wanted. A model scatters them. The device is not the problem; indiscriminate use is.
+For an editor, purpose and repetition are worth inspecting. Intent cannot reliably be inferred from the punctuation itself, and generated text can use a device appropriately.
 
-On detectors, he is blunter than the Wikipedia page: they do not work, they misfire far too often in the false-positive direction, they have flagged students' original work, they have put writers under accusations they did not earn, and on his reckoning they cause more harm than they prevent. He adds that a few minutes of deliberate prompting defeats any of them.
+The author strongly criticizes detectors and describes false-accusation harms. This essay does not establish error rates, a universal cost-benefit conclusion or that a few minutes of prompting defeats every detector. Retain the caution against accusation, not the unsupported performance guarantee.
 
-And he notes the recursive problem: documenting these tells feeds them back into the next generation of training, which trains the tells away.
+He proposes a feedback loop in which public discussion influences both writers and later model development. Its scale and causal effect were not measured in this source.
 
 ## The Feedback Loop
 
-The framing idea, by way of Churchill on architecture — we shape our buildings, and then they shape us. We built the models on human writing; they learned our rhythms and devices; and now, trying to distinguish ourselves, we are giving up constructions we once used freely, because association with the machines has tainted them.
+The essay asks whether trying to avoid AI-associated forms changes a writer's own choices. Its evidence here is personal reflection and reader response, not a population-level measurement of cultural or training feedback.
 
 He gives the concrete cost from his own practice: he now avoids constructions he used freely before, is self-conscious about clunky metaphors, and worries that the tools he uses for ideation and editing leave fingerprints anyway. One commenter reports the same — reaching for commas where an em dash would be better, purely to avoid suspicion.
 
-The conclusion, and the reason `core/restraint.md` is a module rather than a footnote: each turn of this loop narrows the space of writing that reads as authentically human. **Avoidance is itself a style, and it is converging.** A style system that only subtracts makes this worse.
+The house lesson for `core/restraint.md` is that repeated avoidance can itself become a formula. This is a reason to preserve meaningful choices, not a measured claim that all human writing is converging.
 
 ## The Prescription
 
 His stated defense is not stylistic at all, and it is the positive claim that `core/voice.md` is built on.
 
-Do not primarily manage style and structure. **Cultivate specificity.** Write from particular knowledge and tangible experience. Develop a point of view and hold to it. These are what models still fail to imitate convincingly.
+Prioritize supported, task-specific information and an appropriate point of view over surface camouflage. Use actual knowledge and experience where relevant, without fabricating facts or autobiographical detail.
 
-This closes the loop with the Wikipedia page's root mechanism. If machine prose fails by trading specific detail for generic approval, then specificity is not one defense among several. It is the only one that cannot be trained around, because it requires having been somewhere.
+Specificity is a reader-facing goal, not an exclusive human capability, a sole defense against suspicion or a guarantee about future models. The Wikipedia page offers a related editorial diagnosis; the two accounts do not experimentally validate each other.
 
 He closes with the caution that belongs on every module in `core/`: having all the tells does not mean a human did not write it.
 
 ## What This Source Adds Beyond Wikipedia
 
-1. **A causal account of the list habit** — preference tuning rewarded the appearance of structure. Predicts bullets will spike where content is thinnest.
-2. **Monotony as a first-class failure**, including fixed tense and person, which no lexical check detects.
-3. **The specific-or-resonant test for figurative language**, which turns a vague instinct about bad metaphors into something checkable.
-4. **"Surface polish with nothing underneath"** as the unifying definition of slop.
-5. **The convergence argument** — avoidance is a style, and mere subtraction accelerates the problem it is trying to escape.
-6. **A stronger red-herring list** than the detection literature, from someone who bears the cost of false positives.
+1. Inspect lists for a useful organizing purpose, without treating the proposed tuning explanation as established.
+2. Review monotony in the actual passage; preserve consistent tense and person where they help.
+3. Test whether figurative language clarifies or expresses something specific.
+4. Check the information beneath fluent presentation.
+5. Consider the cost of formulaic avoidance before revising a sound sentence.
+6. Keep false-positive cautions beside diagnostic ideas. These are practitioner checks, not evidence of measured prompt efficacy.

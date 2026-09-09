@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "legal-scope-no-expansion",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Copyedit this clean fictional contract clause only for an actual language problem. The reader is an administrator comparing versions, so do not add protections, negotiate terms, or change the form of agreement required. Return it unchanged if no correction is needed. No legal opinion is requested.",
+  "input": "The parties may extend the review period by written agreement. Silence does not constitute approval. This clause does not change the payment schedule.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The parties may extend the review period by written agreement."},
+    {"id": "f2", "text": "Silence does not constitute approval under this fictional clause."},
+    {"id": "f3", "text": "The clause does not change the payment schedule."}
+  ],
+  "modules": ["domain/legal.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3"],
+    "forbidden_additions": [
+      "An automatic extension or a new response deadline.",
+      "A signature requirement substituted for written agreement.",
+      "An implied-approval rule, payment change, governing-law term, or enforceability claim."
+    ],
+    "preserve": [
+      "Permission to extend only by written agreement.",
+      "The express rejection of approval by silence.",
+      "The existing wording without substantive or cosmetic expansion."
+    ],
+    "expected_action": "no_change"
+  }
+}

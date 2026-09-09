@@ -3,10 +3,10 @@ id: domain.education-level.high-school
 layer: domain
 sublayer: education-level
 kind: ladder
-version: 1.1.0
+version: 1.2.0
 status: active
-budget: 1195
-tokens: 1195
+budget: 911
+tokens: 911
 grades: 9-12
 wida_clusters: [9-12]
 evidence_rung: 3
@@ -17,9 +17,9 @@ evidence:
 
 # Education: High School
 
-Reader is in grades 9 through 12. The move that defines the band is the warrant: the sentence saying out loud why this evidence supports this claim. WIDA frames the same skill as using reasoning or theory to connect evidence with the claim it supports, building a neutral stance by keeping the wording off both poles, and judging in advance what evidence a given audience will require.
+An optional classroom preset for grades 9 through 12. A useful practice focus is the warrant: explaining why evidence supports a claim. That skill is not exclusive to this age group, and this reader's subject knowledge and assignment determine how much explanation is needed.
 
-This is also the band where over-reach does the most damage, because the register a student reaches for — the graduate seminar, the journal article — is finally close enough to imitate.
+Keep the requested genre and voice. More formal prose is not automatically more advanced, and a clear explanation need not imitate a graduate seminar or journal article.
 
 ## Detect
 
@@ -28,7 +28,7 @@ This is also the band where over-reach does the most damage, because the registe
 - One claim per paragraph, with no development inside it.
 - Sources summarized but not weighed. No sense of which is stronger.
 - Terms explained as though new to a reader who has had them for years.
-- No counterclaim, limit, or trade-off anywhere.
+- A consequential limit or genuine competing explanation left unaddressed in an argument that needs it.
 - Plot summary or process description standing in for analysis.
 
 ### Over-reach
@@ -38,79 +38,92 @@ This is also the band where over-reach does the most damage, because the registe
 - Borrowed authority: `the scholarship suggests`, `it is widely accepted that`, with no scholarship behind it.
 - Methodology language the piece has no method for — confidence intervals, effect sizes, or significance claims imported as decoration.
 - Hedging everything into mush so no claim can be wrong.
-- A voice that could belong to anyone. No trace of a particular person having read a particular thing.
+- Analysis so generic that it does not engage the supplied material. Do not repair it by inventing personal reading or research.
 
 ### Either way
 
 - Evidence sits beside the claim with no sentence linking them.
 - Vague abstractions where a precise term exists: thing, idea, impact, aspect, factor.
-- Stance either absent or absolute. Neither reads as considered.
+- A judgment stronger than its support, or no judgment where the assignment explicitly requires one.
 - Every paragraph the same length and shape, each opening the same way.
 - A source named but not characterized, so credibility cannot be judged.
 
 ## Write
 
 - Assume the reader follows complex plots, multiple perspectives, and discipline terms when cued.
-- Write formal but direct prose: precise nouns, varied sentence length, clear connectors, passive voice only when the actor is genuinely not the point.
+- Match the requested formality. Use precise nouns and clear connections, preserving purposeful voice and a passive whose focus is useful.
 - Define a key concept once, then use the term.
 - State the warrant. Name the cause, contrast, condition, uncertainty, or significance that ties the evidence to the claim.
-- Give the opposing view its best case, then answer it.
-- Reach a neutral stance by keeping the wording off both poles rather than by hedging everything.
+- Address genuine competing views fairly when relevant; do not manufacture opposition to a settled fact.
+- Calibrate the stance to the evidence and the task. A supported conclusion need not occupy a midpoint between opposing views.
 - Say enough about a source that a reader could judge whether to trust it: who, role, why they would know.
 - Match evidence to what this particular audience needs convinced.
-- Vary paragraph shape. Uniformity reads as machine-made even when it is not.
+- Let paragraph shape follow its job. Keep useful regularity; variation is not an authorship test.
 - Write above grade level whenever you can define the hard word and it earns its place. Cut it when it is there for effect.
 
 ## Mechanics
 
-What a writer should reliably control by the end of this band, on top of everything below:
+The selected genre/manual controls publication mechanics, not the student's grade. Teaching can focus on:
 
-- Essential and nonessential clauses: `that` for a clause the sentence cannot lose, no commas; `which` for one it can, commas both sides. `who` for people.
-- Semicolon linking two related independent clauses, and separating list items that already contain commas.
-- Colon before a quotation running more than one sentence; comma before a short one.
-- Dash for an abrupt pivot or a phrase whose own list needs commas — not as a general-purpose connector.
-- Ellipsis built from three periods with a space on each side and set like a short standalone word, never opening or closing a quotation, and never changing what the speaker meant.
-- Question marks, exclamation points, semicolons, and colons inside the quotation marks only when they belong to the quoted words.
-- Quotes nested by alternating double and single marks.
-- Partial quotes that the speaker could actually have said in that combination.
-- Percent sign closed up to the figure; going from 10% to 13% is a rise of three percentage points, not of three percent. That distinction changes the claim.
-- A number opening a sentence gets spelled out; a calendar year is the exception.
-- Decades as `1990s`, no apostrophe.
-- Titles capitalized directly before a name, lowercase when set off by commas.
-- `claimed` and its relatives reserved for genuine, matched doubt.
-- Collective nouns; `who` and `whom`; `lay` and `lie`.
-- Purposeful passive, distinguishable from habitual passive.
+- Essential versus nonessential information, using punctuation without changing which people or things a sentence refers to. Follow the manual's `that`/`which` preference rather than declaring one universal grammar rule.
+- Semicolons, colons, dashes and parentheses where they clarify the intended relationship.
+- Quotation boundaries, permissible omissions and added clarification under the selected citation style. Never assemble a quotation that changes the speaker's meaning.
+- Percentage change versus percentage-point change: 10% to 13% is three percentage points, or a 30% relative rise.
+- Neutral attribution and the evidence needed to justify a verb that signals doubt.
+- Purposeful active or passive voice and consistent names for the same concepts.
 
 ## Evidence
 
-Rung 3. A claim points to a specific traceable origin — a named official, a document, a dataset — with enough identifying detail that a reader could in principle check it, and with enough said about that origin (who they are, why they would know) that a reader can judge how much to trust it. Naming was rung 2; characterizing is the increment here.
+The legacy `evidence_rung: 3` emphasizes traceable sources and explaining their relevance and limits. These practices are available at any age. Include the identifying details needed to check a consequential claim without adding formal apparatus to a task that does not require it.
 
-Reaching for rung 4 or 5 without the underlying work is the characteristic over-reach of this band: methodology jargon and hedged confidence intervals wrapped around a three-source paper. Sitting below rung 3, with unsourced claims dressed as fact, is the opposite failure and just as common.
+Do not import confidence intervals, methods or findings that the underlying work does not provide. A qualitative or literary argument need not acquire numerical uncertainty to sound rigorous.
 
-Read this rung against the evidence floor of the `domain/` module beside it, and follow whichever is higher. A tier changes register. It never lowers the standard of proof a domain requires.
+The task sets the appropriate evidence form; the selected domain's safeguards remain intact. Simpler language never lowers accuracy.
 
 ## Boundaries
 
-Below, middle school names a source and answers a counterclaim. Here the writer must characterize the source well enough for a reader to judge it, and must state the link between evidence and claim rather than implying it. Above, undergraduate asks the writer to put sources in conversation with one another and to press each one — funding, sample, scope — and to follow a disciplinary genre rather than a general school essay form.
+Use this preset for an appropriate classroom task, not automatically for every reader in high school. Source comparison, analysis and counterargument depend on the assignment. Neither a younger nor an older reader is barred from any of them.
 
 ## Examples
 
+These examples use independent supplied records. The named literary example uses the plot notes specified below, not invented quotations.
+
+**Separating a policy finding from a different claim**
+
+**Supplied facts:** A fictional policy analysis concludes that moving enforcement to local offices reduced workers' bargaining power because employers had more influence there. Supporters said the change would improve administrative efficiency. Wage records show uneven gains; those records do not by themselves test administrative efficiency.
+
 Before: The policy changed things for workers. It was bad in many ways.
 
-After: The policy reduced workers' bargaining power because it shifted enforcement to local offices, where employers had more influence. Supporters claimed it improved efficiency, but wage records show the gains were uneven.
+After: The policy reduced workers' bargaining power by shifting enforcement to local offices where employers had more influence. Supporters said the change would improve administrative efficiency. Wage records show uneven gains, but do not establish whether administration became more efficient.
+
+**Explaining a supplied fictional motive**
+
+**Supplied facts:** In the author's scene, Maya has long suspected that her family values obedience over honesty. An argument confirms that suspicion; she leaves in anger. The task asks for an interpretation of those supplied details.
 
 Before: The character is mad and leaves because nobody understands her.
 
 After: Maya leaves after the argument because the scene confirms a suspicion she has carried for years: her family values obedience more than honesty. Her anger explains the timing. The suspicion explains the decision.
 
+**An argument scoped to two schools**
+
+**Supplied facts:** The assignment compares two fictional schools whose handbooks encourage responsibility but whose attendance rules leave students no choice over arrival times. No claim about every school is supported.
+
 Before: This paper interrogates the epistemological frameworks undergirding contemporary discourses of adolescent agency within institutional structures.
 
-After: Schools say they want students to take responsibility, then design rules that leave almost nothing to decide. This tension shows up clearly in how schools handle attendance.
+After: The two schools ask students to take responsibility but give them no choice over arrival times. This essay examines that tension in their attendance rules.
+
+**Reporting the evidence that actually exists**
+
+**Supplied facts:** A fictional district report records a higher algebra pass rate for program participants than for nonparticipants. It does not describe assignment to the program or provide a p-value, effect size or uncertainty interval.
 
 Before: Studies have shown a statistically significant relationship between the independent variable and student outcomes (p < .05), suggesting a robust effect size across the sampled population.
 
-After: The district's own report found that students in the new program passed algebra at a higher rate than those who were not. The report does not say how students were assigned to the program, so the gap may reflect who enrolled rather than what the program did.
+After: The district's report found a higher algebra pass rate among program participants. It does not explain how students were assigned, so the gap may reflect who enrolled rather than demonstrate a program effect.
+
+**A literary reading that respects the plot**
+
+**Supplied facts:** In the supplied notes on Animal Farm, a storm destroys the first windmill and Napoleon blames Snowball. Later, Frederick's men really attack and destroy the rebuilt windmill. The task asks for analysis, not a new plot account.
 
 Before: Orwell uses symbolism in the novel. The windmill is a symbol. This shows the theme of the book.
 
-After: The windmill is destroyed twice, and each time the animals are handed an explanation that names an enemy rather than a flaw: Snowball after the storm, Frederick's men after the battle. The object matters less than the explanations attached to it, which is how the novel shows propaganda working. The animals rebuild both times and never learn why it fell.
+After: The windmill's first destruction gives Napoleon a chance to blame Snowball for storm damage. The later attack by Frederick's men is different: the enemy really destroys it. A reading about propaganda must distinguish the fabricated accusation from the attack rather than treating both explanations as interchangeable.

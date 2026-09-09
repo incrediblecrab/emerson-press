@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "non-fiction-memoir-visits",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Edit this synthetic memoir paragraph against the narrator's supplied record. Preserve first person and the gradual discovery of the workroom across separate visits. Correct contradictions in chronology and emotional development without inventing dates, dialogue, or experiences. Briefly disclose the consequential chronology correction in a separate editorial note.",
+  "input": "I learned the workroom in one afternoon. On my first visit, the benches were empty. On my second visit, a caretaker showed me the latch. By my third visit, I knew which door stuck. I have never felt so instantly at home.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional narrator made three separate visits to the workroom across three weeks."},
+    {"id": "f2", "text": "The benches were empty on the first visit."},
+    {"id": "f3", "text": "A caretaker showed the narrator the latch on the second visit."},
+    {"id": "f4", "text": "By the third visit, the narrator knew which door stuck."},
+    {"id": "f5", "text": "The narrator's feeling of familiarity developed gradually rather than immediately."}
+  ],
+  "modules": ["domain/non-fiction.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5"],
+    "forbidden_additions": [
+      "All three visits compressed into one afternoon or one continuous encounter.",
+      "A claim of instant familiarity retained as factual.",
+      "Invented visit dates, caretaker dialogue, biographical details, or additional visits."
+    ],
+    "preserve": [
+      "Three distinct visits and their order across three weeks.",
+      "The narrator's first-person perspective and gradual emotional development.",
+      "An editorial correction note separate from the memoir prose."
+    ],
+    "expected_action": "edit"
+  }
+}

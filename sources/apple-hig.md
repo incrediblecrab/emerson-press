@@ -1,15 +1,27 @@
 ---
 id: sources.apple-hig
 layer: sources
-version: 1.3.0
+version: 1.4.0
 status: active
 budget: none
+evidence_kind: publisher-guidance
+checked_on: 2026-09-08
+verification_status: partial
+source_version: "Historical June 2026 notes without an immutable snapshot; live Writing, Alerts, Buttons and Menus checked September 8, 2026"
+source_urls:
+  - https://developer.apple.com/design/human-interface-guidelines/writing
+  - https://developer.apple.com/design/human-interface-guidelines/alerts
+  - https://developer.apple.com/design/human-interface-guidelines/buttons
+  - https://developer.apple.com/design/human-interface-guidelines/menus
+  - https://www.w3.org/WAI/WCAG2/supplemental/patterns/o3p01-clear-words/
+  - https://www.w3.org/WAI/WCAG2/supplemental/about/
+verification_note: "Current checks cover the four named Apple pages and public W3C supplemental guidance, not the whole HIG, all OS versions, or a product accessibility assessment. Other surface notes remain historical paraphrases or identified house guidance."
 source:
   title: "Apple Human Interface Guidelines"
   publisher: "Apple Inc."
   year: 2026
-  extent: "Foundations, patterns, components, inputs; ~150 pages read for text guidance"
-  baseline: "The June 2026 revision, written to the OS 27 generation then in beta; reviewed 2026-08-09"
+  extent: "Historical foundations/patterns/component notes; original coverage count not independently reproduced"
+  baseline: "Prior notes described a June 2026 baseline reviewed August 9, 2026; September checks are limited to the named live pages"
   license: "Copyrighted. Rules restated in original wording; no guideline text reproduced."
 consumers:
   - user-interface/accessibility.md
@@ -27,21 +39,38 @@ This dossier restates every rule in original wording. Apple's HIG is copyrighted
 
 ## Why This Source
 
-Nothing else covers this ground with this much specificity.
+The HIG gives useful component-specific guidance for writing during a task. It is publisher guidance, not a controlled experiment showing that this repository's prompts improve writing.
 
-The interface-writing literature is mostly conference talks and agency blog posts, and it repeats itself: be clear, be concise, be human. The HIG is the only widely available document that goes down to the level that actually decides copy — whether an alert title takes a period, when an ellipsis is required, what a button in an informational alert may be called, what the placeholder does when the field is not empty. Those are the decisions a writer gets wrong, and they are decisions a general style guide cannot reach because they depend on the component.
+The useful detail includes alert-title punctuation, menu ellipses, action labels and error placement. Other platform and accessibility sources also address interface text; no claim of unique coverage is made here.
 
-Apple also enforces it, shipping tens of thousands of strings under it and reviewing third-party apps against parts of it. The rules have therefore met real products at scale rather than only an argument in a post. That is a different kind of evidence from a taxonomy of tells, and it is the kind `user-interface/` needs: not *this reads as machine-made*, but *this fails*.
+Published guidance and shipped interfaces are different evidence. A product convention observed in an app is not automatically a documented requirement, and neither proves that all third-party apps follow it.
 
-And it carries the one thing the anti-slop sources have no theory of at all — what interface text is *for*. Its framing is that the words are part of the experience, read by someone in the middle of doing something else, on a device whose size and setting change what can be said. Prose sources assume a reader who chose to read.
+Its task-centered framing transfers usefully: wording belongs to a situation, device and reader. The transfer beyond Apple remains an editorial choice, not a reason to impose Apple mechanics everywhere.
+
+## September 2026 verification ledger
+
+The HTML pages use JavaScript; their public DocC JSON under `https://developer.apple.com/tutorials/data/design/human-interface-guidelines/` was read for `writing.json`, `alerts.json`, `buttons.json` and `menus.json`.
+
+| Location | Verified support | Limit |
+| --- | --- | --- |
+| Writing, voice/tone and language-pattern paragraphs | Actual audience, situational tone, consistent vocabulary and per-element capitalization choices; component-specific exceptions control | No universal casing rule for every control follows |
+| Alerts, Content | Complete-sentence titles use sentence-style capitalization and punctuation; fragments use title style without terminal punctuation | Applies to alert titles, not every heading |
+| Alerts, Buttons | A default is trailing in a row or first in a stack; Cancel is not the alert default; no default is appropriate when readers should consider the alert | A physical right-hand position is not universal |
+| Alerts, Buttons | Deliberately requested Empty Trash can be confirmed with Return without destructive styling; include Cancel with a destructive choice | Default behavior and destructive styling are distinct |
+| Buttons, primary-role guidance | Do not give a destructive action the primary role | Do not conflate the general button role with every alert's keyboard default |
+| Menus, labels | Generally prefer title-style capitalization; use an ellipsis for an action requiring further input or choices | The page allows established game-writing differences |
+| Buttons, macOS push buttons | An ellipsis signals opening another window, view or app for further input | A component/platform-specific convention |
+| W3C, clear-words pattern and supplemental-guidance status | Reader-oriented language support; supplemental guidance is not required for WCAG conformance | This is not a product conformance finding |
+
+Older page-level claims below have not all been independently rechecked. Treat their named limits as part of the evidence rather than upgrading the entire dossier to current verification.
 
 ### The repurposing caveat
 
 The HIG is a platform specification for Apple operating systems. It exists so that third-party apps feel like the system they run on. `emerson-press` uses it for something wider: writing interface text anywhere. Four consequences follow, and the third is the one that causes real errors.
 
-- **Platform guidance is not text guidance.** Most of the document is layout, color, symbols, and API surface. Only the writing rules transfer, and whoever built this file threw out roughly nine-tenths of what they read.
+- **Platform guidance is not all text guidance.** Layout, symbols, roles and APIs need implementation knowledge. Copy can flag a dependency without proving it is implemented.
 
-- **Some rules are conventions, not truths.** Apple capitalizes button and menu labels in title case. Material Design uses sentence case. Neither is correct; each is a house convention held consistently, which is the part that matters. `user-interface/applications.md` therefore states the rule as *hold one convention per element type*, and `user-interface/apple-hig.md` carries Apple's answer as the worked example. Anywhere the HIG's answer is arbitrary-but-consistent, the module must say so rather than export Apple's answer as law.
+- **Some rules are conventions, not truths.** The current Writing page permits app-appropriate per-element choices, while Alerts and Menus provide more specific guidance. `user-interface/applications.md` keeps consistent house mechanics; the Apple overlay applies the relevant component exception rather than exporting one answer as universal law.
 
 - **Some rules are load-bearing and look arbitrary.** The ellipsis on a menu item means more input is required before anything happens. `Cancel` always names the control that abandons the action. These are not typography preferences; they are a vocabulary the reader has already learned, and breaking them costs comprehension rather than polish. Distinguishing this category from the previous one is most of the work of reading this source.
 
@@ -57,17 +86,17 @@ On alert copy specifically: be direct, neutral, and approachable; do not be obli
 
 On humor: subjective, hard to translate, and it wears out. The stated risks are confusing people who do not get it, irritating people who meet it repeatedly, and insulting people who read it differently. The third is the one that matters for a surface the reader cannot avoid.
 
-On register generally: an academic tone welcomes only readers with a lot of education. Plain language is framed as an inclusion requirement, not a simplification.
+On register generally: use words familiar to the actual audience and support accessibility and localization. Credentials do not establish familiarity; necessary specialist terms can be the clearest words for an expert task.
 
 ## What It Says About Consistency
 
-The strongest section, and the one with no equivalent in any prose source, because prose has no equivalent problem. A reader meets a paragraph once. A reader meets a product's word for *delete* a thousand times.
+Consistency matters when people repeat tasks and learn a product's vocabulary. Use the same term for the same action without renaming genuinely different concepts for surface uniformity.
 
 The stated practice is to build language patterns and reuse them: decide title case or sentence case per element type and hold it; decide first person or second — *My Favorites* or *Your Saved Items* — and never ship both; decide `Continue` or `Next` for a multi-step flow, hold it, and change the word at the end so the last step reads differently.
 
 Vocabulary must match the platform: do not say *click* on a touch device or *tap* on a desktop.
 
-Never name the widget in copy that guides. Guidance that mentions the popover should describe the button instead. When directing someone to a control, use the control's exact title, without quotation marks around it.
+Prefer the action and the control's exact name to irrelevant widget jargon. A technical explanation can name a component when the reader needs that concept.
 
 Define specialized terms or drop them. Replace colloquial expressions, and the stated reason is not brevity: some idioms carry exclusionary histories that the writer may not know, and the plain sentence also translates better.
 
@@ -75,37 +104,37 @@ Define specialized terms or drop them. Replace colloquial expressions, and the s
 
 Condensed. The modules carry the detail.
 
-**Alerts.** They interrupt; do not use one merely to inform. Do not alert at launch — show cached or placeholder content and a quiet label instead. Do not warn about data loss the reader intended and can undo; warn when loss is unexpected and irreversible. A title that says only *Error*, or that recites an error number, conveys nothing; the title should say what happened, in what context, and why. Title in a complete sentence takes sentence case and punctuation; a fragment takes title case and no period. Buttons are one or two words, title case, no period, and name the result. `OK` is acceptable only in a purely informational alert; on anything consequential the reader cannot tell whether it means *proceed* or *understood*. Use the specific verb instead. `Cancel` always titles the button that abandons the action, always accompanies a destructive one, and is never the default. Destructive styling is for an action the reader did not deliberately choose; emptying the trash on purpose is not styled as a warning.
+**Alerts — currently checked.** Avoid interrupting for common undoable actions; uncommon irreversible actions can need confirmation. Use an informative title with the documented sentence/fragment casing. Prefer concise action labels without sacrificing a necessary distinction; `OK` belongs to purely informational alerts. Cancel abandons the action and accompanies a destructive choice, but is not the alert default. The verified Buttons section explicitly permits no default and distinguishes a deliberate destructive action from destructive styling. Follow the ledger rather than a blanket ban on every destructive default.
 
-**Errors and validation.** An error goes in an alert, never a notification. Validate at the moment that helps: an email address when focus leaves the field, a new password before focus leaves it. Give feedback the instant a problem is detectable, so it can be fixed in place. When a command cannot run, say why.
+**Errors and validation.** The current Writing page recommends placing an error close to the problem, avoiding blame and explaining how to fix it. It does not require every error to become an alert. Validation timing and focus need product implementation, not just a new sentence.
 
-**Forms.** Placeholder text disappears on the first keystroke, so a field that needs a name needs a separate label as well. A placeholder can show format by example or describe the content. Prefill sensible defaults; never prefill a password. Offer a choice instead of demanding typed text. Do not assume a number, currency, or date format — presentation is locale-dependent.
+**Forms — historical notes.** Persistent labels and format hints serve different purposes. Use appropriate known defaults, supported choices and locale-aware presentation. Do not confuse secure password autofill with publishing a secret in a form; current platform/autofill rules need their own check.
 
-**Empty and loading.** If nothing appears while content loads, the reader reads the blank as a failure; show placeholder content and replace it. Say that content is loading and roughly how long. Reasonable defaults let someone start without configuring anything.
+**Empty and loading — historical notes and house application.** Give useful loading state rather than an unexplained blank. Report a duration only if supported. Defaults can reduce unnecessary setup; they must still suit the task.
 
-**Status and progress.** Vague words such as *loading* and *authenticating* add nothing; name the task. Pacing that runs to ninety percent in five seconds and takes five minutes for the rest reads as deceptive. A refresh control's title should carry information about the content, not explain how to refresh. Offer `Cancel`; offer `Pause` as well when interrupting would cost work. When a process halts, explain what happened and what can be done.
+**Status and progress — historical notes and house application.** Name the task when that helps. Report progress honestly; do not invent an estimate or a Cancel/Pause control. When a process halts, explain the known state and available next action.
 
-**Onboarding and help.** Teach by letting someone safely do the thing. Context-specific tips beat a single upfront flow. Keep a tip to one or two sentences, action-oriented, never promotional. Do not explain standard components. Keep licensing out of onboarding. Ask for permission where the function is used, unless the product cannot function without it, in which case say what the reader gets. Let people use the product before asking for a rating. Put no text on a launch screen, because it never gets localized.
+**Onboarding and help — historical notes.** Prefer safe, relevant practice and concise contextual tips. Explain unfamiliar prerequisites when the actual reader needs them. Defer avoidable interruptions, but retain legally or operationally required information. Permission, launch-screen and rating behavior need current component guidance rather than a blanket copy rule.
 
-**Notifications.** Provide the information, not an instruction to go and find it; the reader will not remember an instruction after dismissing it. Never send the same notification twice. Keep sensitive content out of previews. The title is brief with no ending punctuation; the body is a complete sentence, punctuated, never truncated by hand. Do not put the app's name in the copy — the system already shows it. Action labels are short, title case, and name the result. Choose the interruption level honestly: the top level is for health and safety. Marketing requires explicit opt-in and is never time-sensitive. Badges count things waiting, not scores or prices.
+**Notifications — historical notes.** Deliver useful information, avoid pointless duplication and protect preview privacy. Use the target component's title/body and action-label conventions. Do not repeat an app name the system already supplies. Check current permission and interruption-level requirements before describing a notification as urgent or compliant.
 
-**Settings.** Fewer settings is better; a long list is harder to search than a short one. Do not restate a systemwide setting inside the product — it implies the system's own setting might not apply. Do not ask for something detectable. Describe what a setting does when it is on, and let the off state be inferred. To send someone to a setting, link to it rather than describing where it lives.
+**Settings.** The currently checked Writing page recommends practical labels and a useful explanation of the on state. The broader historical preference for fewer settings is not a reason to remove a needed control or infer unsupported system behavior.
 
-**Accessibility.** Label every interface element; unlabeled controls break VoiceOver, Voice Control, Switch Control, and Full Keyboard Access alike. Provide text equivalents for audio and video — captions, subtitles, audio descriptions, transcripts are distinct things, not synonyms. For an action that is hard to undo, confirm twice in the Assistive Access context. Write about disability people-first, and never use a disability to name a bad quality.
+**Accessibility — partial coverage.** Meaningful controls need accessible names; decorative elements need not be announced. Describe what each media alternative actually supplies, rather than assuming every service uses the same terminology. Assistive Access has component-specific behavior that needs separate verification; the prior exact confirmation count is not carried forward as a universal rule. Respect community language preferences and do not turn disability into a pejorative.
 
-**Inclusive language.** Rewrite around gendered singular pronouns rather than stacking them; the plural subject is both more inclusive and easier to localize into languages with gendered pronouns. Where gender must be collected, offer non-binary, self-describe, and decline options. Avoid prompts that assume a shared background — the worked example replaces security questions about college subjects and first cars with questions anyone can answer.
+**Inclusive language — partial coverage.** The current Writing page recommends accessible, localizable language and avoidance of unnecessary gendered terminology. Preserve a known person's pronouns and meaningful distinctions. Broader collection and identity-design choices need their own policy and reader context rather than inference from a writing preference.
 
 ## Where It Is Thin
 
 Named so the modules do not pretend to a citation they do not have.
 
-- **Empty states get one sentence.** The zero-result screen, the filtered-to-nothing screen, and the you-finished-everything screen are not distinguished anywhere. The four-way split under `## Surfaces` in `user-interface/applications.md` is built from the loading and alert guidance plus practice, and it is the weakest-sourced passage in the axis.
-- **No VoiceOver label formula.** The document repeats that elements must be labeled and defers the *how* to a separate page outside the mined set. Alt-text construction, hint phrasing, and announcement etiquette are not specified.
+- **The four-way empty-state taxonomy is house guidance.** The retained source notes did not establish it as an Apple taxonomy. That limited coverage does not show that Apple never distinguishes these states.
+- **No complete accessibility specification was checked.** Current label, hint, alternative-text and announcement guidance needs the relevant component and accessibility sources, not an inference from missing notes.
 - **Little on error-message construction.** There is a strong rule about what an alert title must not be, and much less about what the body should contain. The what-happened / what-it-means / what-now shape in the errors passage of `user-interface/applications.md` is inferred from the alert-title rule and the password example, not stated.
-- **Nothing on the ampersand.** The mined set has no line on `&` against *and*, in body text or anywhere else. The rule in `user-interface/apple-hig.md` — spell *and* in body text, allow `&` only where space is tight and the element already uses it — is an inference. Its second half stands on the mined *hold one convention per element type* principle recorded under `### The repurposing caveat`, which is real. Its first half, the *and*-by-default, does not: nothing here establishes which of the two Apple treats as unmarked. Read the whole rule as sound interface practice rather than as Apple's word, and do not cite this file for it.
-- **Nothing about string concatenation or plural rules**, despite an otherwise careful localization thread. The length and format warnings are there; the assembly problem is not.
-- **Nothing explicit on default button position.** The trailing-default convention in `user-interface/apple-hig.md` is read off shipped system alerts and off the `Cancel`-is-never-the-default rule, not stated in the mined set.
-- **No account of tone under failure at scale** — outages, data loss, billing. The register guidance assumes recoverable situations.
+- **The ampersand preference is house style.** The reviewed subset does not establish the overlay's *and*-by-default preference as a HIG rule. This does not assert that all Apple publications lack guidance on ampersands.
+- **String assembly and plural rules need separate developer guidance.** Their absence from the retained notes is not absence from Apple documentation.
+- **The old default-position uncertainty is resolved for Alerts.** Its current Buttons section explicitly distinguishes rows and stacks and permits no default. It does not establish one physical position for every Apple control.
+- **Broader incident communication remains outside this check.** Do not claim that Apple lacks such guidance merely because outages or billing incidents were not independently reviewed here.
 
 ## What `user-interface/` Takes
 

@@ -1,0 +1,5 @@
+name: press
+description: Reporting with AP mechanics, attribution and an explicit evidence record.
+modules:
+  - domain/press.md
+safeguards: []

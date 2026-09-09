@@ -1,10 +1,10 @@
 ---
 id: core.anti-slop
 layer: core
-version: 1.3.0
+version: 1.4.0
 status: draft
-budget: 2161
-tokens: 2161
+budget: 2125
+tokens: 2125
 evidence:
   - sources/signs-of-ai-writing.md
   - sources/field-guide-to-ai-slop.md
@@ -16,11 +16,11 @@ evidence:
 
 # Anti-Slop
 
-One mechanism produces nearly all of this. A model predicts likely words, and specific facts are rare while approving generalities are everywhere. So the model trades detail for praise, and the prose comes out less specific and more emphatic at once. Volume rises as resolution drops.
+Fluent prose can still be unsupported, repetitive or irrelevant. These diagnostics identify ways a passage may fail its reader; they do not identify its author or establish a single cause for every failure.
 
-The trade leaves a countable trace. Profiling work that compares model output against a human baseline finds some phrasings running more than a thousand times more often on the machine side. That ratio is the thing a reader notices — not any single word, which is why no list of forbidden words survives contact with the next model.
+Research can measure overrepresentation within a particular corpus. That is not a universal bad-word inventory or evidence that removing a pattern improves this document. The source dossiers preserve the distinction between measured frequencies, practitioner observations and house choices.
 
-Read what follows as symptoms. The disease is that trade, and it routes around any vocabulary you forbid.
+Inspect the function of a construction before changing it. A clean pass through a phrase list is not proof that the writing has substance.
 
 ## Detect
 
@@ -65,19 +65,19 @@ Read what follows as symptoms. The disease is that trade, and it routes around a
 
 ### Cliche and jargon
 
-- **Borrowed shorthand.** `paradigm shift`, `perfect storm`, `holy grail`, `game changing`, `smoking gun`, `sea change`, `cutting edge`, `wake-up call`, `silver bullet`, `low-hanging fruit`, `tip of the iceberg`. A cliche signals that nothing specific is being said, and attention slides off the page.
+- **Borrowed shorthand.** `paradigm shift`, `perfect storm`, `holy grail`, `game changing`, `smoking gun`, `sea change`, `cutting edge`, `wake-up call`, `silver bullet`, `low-hanging fruit`, `tip of the iceberg`, when the phrase replaces a needed fact or explanation.
 - **Jargon as camouflage.** Specialist vocabulary standing in for a fact the writer has not established, or softening one they would rather not state plainly.
 - **Redundancy.** A word restating what the sentence already carries: `past history`, `new record`, `totally destroyed`, `future planning`, `convicted felon`, `ATM machine`, `HIV virus`, `civil lawsuit`. Degree words on absolutes belong here too — `very unique`.
 
 ### Vocabulary
 
-Density convicts, never a single word. These co-occur, so several in one paragraph is the signal: `delve`, `crucial`, `pivotal`, `robust`, `tapestry`, `landscape`, `showcase`, `intricate`, `interplay`, `meticulous`, `underscore`, `testament`, `garner`, `bolster`, `foster`, `enhance`, `align with`, `vibrant`, `enduring`, `deep dive`, and `additionally` opening a sentence.
+These words recur in published discussions of generated prose: `delve`, `crucial`, `pivotal`, `robust`, `tapestry`, `landscape`, `showcase`, `intricate`, `interplay`, `meticulous`, `underscore`, `testament`, `garner`, `bolster`, `foster`, `enhance`, `align with`, `vibrant`, `enduring`, `deep dive`, and sentence-initial `additionally`. Neither an occurrence nor a cluster is a verdict. Ask whether the words are accurate and useful here.
 
 Read this literally. A synonym of a flagged word is not flagged, and context governs — an underscore can be a typographic mark.
 
 ## Write
 
-**Substitution test.** If a clause stays true with a different company, town, or person dropped into it, it says nothing about this one. Cut it.
+**Substitution test.** In a claim meant to distinguish a subject, try replacing its name. If the claim still offers only generic approval, replace it with supported information or cut it. Do not apply this as a ban on useful general explanations, definitions or instructions.
 
 **Deletion test.** Remove every trailing participle. If nothing was lost, it was ornament. This single procedure catches significance inflation, superficial analysis, and puffery at once, and it keeps working after the vocabulary shifts.
 
@@ -85,21 +85,23 @@ Name a thing once and keep that name. Repetition is not a fault. It is how a rea
 
 Let `is` be `is`. Reach for a heavier verb only when the relation is heavier than identity.
 
-State the fact and stop. Significance is the reader's to draw, and a fact strong enough to matter does not need to be told that it matters.
+State a fact without automatically attaching praise or a claim of historical importance. When explanation or analysis is requested, give the actual relationship and its evidentiary basis rather than omitting interpretation altogether.
 
-Attribute to someone nameable or not at all. Count sources before characterizing them: if one person said it, write that one person said it. When you did not find something, say where you looked and stop — do not follow a disclaimer with a guess.
+Attribute contested claims to an identifiable source, or a sufficiently described source where justified anonymity is permitted. Count sources before characterizing them: one person's view is not a consensus. When you did not find something, say where you looked and stop — do not follow a disclaimer with a guess.
 
-Test every comparison for where it draws from. Figures of speech that work are either specific — rooted in something the writer actually observed — or culturally resonant, drawn from a shared reference. A comparison that is neither is merely plausible. Cut it.
+Test a comparison for what it helps the reader understand and where the mapping breaks down. Preserve a useful analogy or deliberate figure of speech. Cut decorative comparisons that add no understanding or imply a false mechanism.
 
-Prefer the number, the proper noun, the date, the quoted phrase — each drawn from a source, never minted to fill a slot. A model can imitate the look of a specific. What it cannot manufacture is one that survives being checked. That is the defense that lasts, which is why specificity and verification are one instruction. `accuracy` owns the check.
+Use a number, name, date or quotation when it is relevant and supported. Do not mint one to fill a specificity slot, and do not falsely claim that it was verified. Preserve uncertainty and the author's actual position. `accuracy` owns the check.
 
 Remember who pays. Slop is cheap to write and expensive to read, and the bill goes to someone downstream who never agreed to it — the reviewer, the maintainer, the next person who needs the answer. That is the reason to cut a hollow paragraph, and it holds whether or not anyone suspects a machine wrote it.
 
 ## Examples
 
-The specifics below stand in for facts you must actually hold. The lesson is the move from vague to concrete, not these particular numbers. Supply your own, and source them.
+These are illustrative supplied-record exercises. Without the packet, the accepted edit cannot add its details.
 
 **Significance inflation**
+
+**Supplied facts:** A fictional bureau opened in 1974; records supplied for the exercise say three neighboring counties adopted its filing system within five years.
 
 > Founded in 1974, the bureau represented a pivotal step in the modernization of municipal recordkeeping, reflecting a broader shift toward local autonomy.
 
@@ -107,11 +109,15 @@ The specifics below stand in for facts you must actually hold. The lesson is the
 
 **Brochure register and copula avoidance**
 
+**Supplied facts:** The fictional gallery is the association's exhibition space and has four rooms.
+
 > Nestled in the heart of the valley, the gallery serves as the association's exhibition arm and boasts four separate spaces.
 
 > The gallery is the association's exhibition space. It has four rooms.
 
 **Tacked-on participle**
+
+**Supplied facts:** The supplied fictional census count is 56,998 residents in 2008. It says nothing about cultural significance.
 
 > The population reached 56,998 in the 2008 census, creating a lively community and further enhancing its significance as a cultural hub.
 
@@ -119,11 +125,15 @@ The specifics below stand in for facts you must actually hold. The lesson is the
 
 **Negative parallelism with a formula closer**
 
+**Supplied facts:** The author's supplied note says, "I still can't play barre chords." The example edits that author's account; it does not invent an experience for the assistant.
+
 > In the end, learning an instrument isn't really about the notes — it's about rediscovering the courage to be a beginner.
 
 > I still can't play barre chords.
 
 **Vague attribution**
+
+**Supplied facts:** In the fictional hearing record, one economist testified and called the policy a signal to markets. No other panelist addressed it.
 
 > Experts argue the policy has been widely interpreted as a signal to markets.
 
@@ -131,11 +141,15 @@ The specifics below stand in for facts you must actually hold. The lesson is the
 
 **Speculation after a disclaimer**
 
+**Supplied facts:** The fictional source-check record covers the museum archive and two published interviews; none contains the artist's work before 1979. It does not establish absence from every possible source.
+
 > While specific details about her early career are not widely documented, she likely developed her interest in ceramics during this period, which would prove formative.
 
 > Her work before 1979 does not appear in the museum's archive or in either published interview.
 
 **Credential recital**
+
+**Supplied facts:** In this fictional exercise, the supplied records establish a March profile in Ceramics Monthly and 1,900 Instagram followers. They do not establish industry standing.
 
 > The firm has been profiled in leading trade publications and maintains an active presence across major social platforms, reflecting its standing in the industry.
 
@@ -143,12 +157,16 @@ The specifics below stand in for facts you must actually hold. The lesson is the
 
 **Dilution**
 
+**Supplied facts:** The fictional committee discussed the proposal Tuesday and did not vote. Discussion is not evidence that every member expressed a view.
+
 > The committee met on Tuesday to discuss the proposal. During this meeting, members had the opportunity to review the various elements of the plan and share their perspectives. A range of viewpoints was expressed throughout the course of the discussion. Ultimately, no formal decision was reached at this time.
 
 > The committee discussed the proposal Tuesday and did not vote.
 
 **Generic figure of speech**
 
+**Supplied facts:** The author's supplied account says much of their research time is spent waiting for collaborators to reply by email. It does not describe all research.
+
 > Building a research practice is like tending a garden: it requires patience, consistent care, and a willingness to let things grow at their own pace.
 
-> Building a research practice is mostly waiting on other people's email.
+> Much of my research time goes to waiting for other people's email.

@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "general-borrow-box-guide",
+  "split": "tuning",
+  "operation": "draft",
+  "task": "Draft a brief notice for first-time users of a fictional apartment building's shared tool box. Use a heading and numbered steps. Make the same-day return deadline easy to find, and distinguish returning an undamaged tool from reporting damage. Use only the supplied service rules.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The shared tool cabinet is in the lounge."},
+    {"id": "f2", "text": "The front desk holds the cabinet key."},
+    {"id": "f3", "text": "A borrower records their first name and the borrowed item in the paper log."},
+    {"id": "f4", "text": "An undamaged tool must be returned to the cabinet before the lounge closes on the day it was borrowed."},
+    {"id": "f5", "text": "The lounge closes at 8 p.m."},
+    {"id": "f6", "text": "A damaged tool must be taken directly to the front desk."}
+  ],
+  "modules": ["domain/general.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f6"],
+    "forbidden_additions": [
+      "A deposit, borrowing charge, or online registration requirement.",
+      "Permission to keep a tool overnight.",
+      "Instructions for residents to repair a damaged tool themselves."
+    ],
+    "preserve": [
+      "The return deadline is before closing on the borrowing day.",
+      "Damage reporting goes to the front desk rather than back into the cabinet."
+    ],
+    "expected_action": "draft"
+  }
+}

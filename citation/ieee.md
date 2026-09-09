@@ -1,42 +1,45 @@
 ---
 id: citation.ieee
 layer: citation
-version: 1.0.2
+version: 1.1.0
 status: draft
-budget: 1261
-tokens: 1261
-edition: IEEE Reference Guide, V 3.28.2025 (live Author Center Google Doc checked Aug. 9, 2026); IEEE Editorial Style Manual for Authors
+budget: 1133
+tokens: 1133
+edition: "IEEE living reference guidance, revision unpinned; earlier V 3.28.2025 note not independently reverified"
+evidence:
+  - sources/citation-authority.md
 ---
 
 # Citation: IEEE
 
+Use this adapter where the venue requests formal IEEE references. Follow its specified guide revision and local rules; the living guide's redirected document was not audited in this review. The patterns below are a working baseline, not certification of every current clause. Preserve source identity, type and supplied fields, and flag gaps instead of filling them with plausible metadata.
+
 ## Detect
 
-- **Range compression in brackets.** `[1]-[4]` and `[1]–[4]`. The current Reference Guide abolished the dash form. Every number gets its own brackets: `[1], [2], [3], [4]`.
-- **Numbers sharing a bracket.** `[1, 2, 3]`. A comma inside the bracket introduces a *locator*, not another source.
-- **Stacked brackets.** `[1][2][3]` with no separator.
+- **Citation grouping inconsistent with the verified venue rule.** Range compression and bracket grouping remain unresolved in the current-guide audit. Do not declare a supported range obsolete on that basis.
+- **An ambiguous citation group or locator.** This adapter's working examples use separate brackets for sources and a comma inside a bracket for a locator; check the venue before changing another accepted form.
 - **Alphabetical reference list.** IEEE orders by first appearance, and the numbering is the ordering — there is nothing else to sort by.
 - **A source renumbered on later mention.** One number per source, for the life of the document.
 - **Surname-first authors.** IEEE leads with initials: `A. B. Nakamura`.
 - **Superscripts or parentheses.** `¹` or `(1)`. IEEE brackets, on the line.
 - **Bracket outside the punctuation.** `... under drift. [1]` The bracket precedes the period.
-- **Spelled-out journal titles.** IEEE abbreviates: `IEEE Trans. Signal Process.`
+- **An invented journal abbreviation.** Use the established abbreviation, such as `IEEE Trans. Signal Process.`, rather than guessing for an unfamiliar title.
 - **`https://doi.org/` in a reference.** That is APA, MLA, and Chicago form. IEEE takes a bare `doi: 10.xxxx/yyyy`.
-- **A period after a URL.** URLs never take one; everything else does.
+- **URL punctuation inconsistent with the selected reference model.** The working online pattern below leaves the URL without a terminal period.
 - **An online source with no `[Online]. Available:`.**
 - **A conference paper, standard, patent, dataset, software package, report, preprint, or website forced into the journal-article template.**
 - **`ibid.` or `op. cit.`** Numbered citation has no use for either.
-- **An invented format for AI output.** IEEE publishes no citation form for generative AI — only a disclosure requirement.
+- **An invented AI citation or use disclosure.** Failed retrieval does not establish that IEEE has no citation format, and a reference entry does not prove what assistance occurred.
 
 ## Write
 
 Number sources by order of first appearance and reuse that number every time the source recurs. The reference list is that same sequence, so ordering it is not a separate decision.
 
-IEEE serves the Reference Guide as a living Author Center Google Doc. As checked on Aug. 9, 2026, the live guide still displays `V 3.28.2025`; treat that as a checked live stamp, not as a stable edition name.
+The Author Center reference-guide URL redirected to a hosted Google document during this review. Its revision and detailed clauses were not independently checked. Verify the actual guide and venue instructions for disputed rules instead of repeating an old live-document date as a pinned current edition.
 
-Put the bracket where the support lands, inside the sentence punctuation: `... under drift [1].` Both bare and anchored forms work — the Reference Guide treats brackets as nouns, so `[1] shows` is not an error, and a preposition may anchor them, `in [1]`, `according to [1]`. An author's name may not: the Editorial Style Manual directs `In Smith [1]` to be changed to `in [1]` unless the name is integral to the sentence. Avoid `reference [1]` outright; the Style Manual rules it out rather than merely omitting it.
+Put the bracket where the support lands, inside the sentence punctuation: `... under drift [1].` Constructions such as `in [1]` can avoid redundant citation wording. Preserve an author's name when it is integral to the sentence or attribution; do not delete meaningful attribution merely to make the brackets stand alone.
 
-Cite several sources as separate brackets in a comma series: `[1], [2], [3]`. Do not compress and do not combine. A comma *inside* a bracket introduces a locator: `[3, pp. 5–10]`, `[3, Fig. 1]`, `[3, eq. (2)]`, `[3, Sect. 4.5]`, `[3, Ch. 2, pp. 5–10]`, `[3, Thm. 1]`, `[3, Lemma 2]`, `[3, Algorithm 5]`, `[3, Appendix I]`. Those nine are the guide's whole list, and its capitalization is uneven on purpose — `pp.` and `eq.` lowercase, the rest capitalized, `Algorithm` never shortened. Leave all of it as the guide has it; the `Sec.`, `Th.` and `Alg.` that circulate in secondary guides are not IEEE's forms. Page spans inside a locator take an en dash.
+The working group format here is `[1], [2], [3]`; it is not evidence that the current guide abolished range compression. Keep a venue-approved alternative. Locator examples include `[3, pp. 5–10]` and `[3, Fig. 1]`, using actual pages or figure identifiers. Exact section, equation and other locator labels depend on the applicable rule; no exhaustive list was verified here. Do not invent a source location to satisfy the format.
 
 In the list: initials before surname; article title in quotation marks and sentence case; journal or conference title abbreviated and italic in title case; then volume, number, pages, abbreviated month, year. Name up to six authors; at seven or more, give the first author and `et al.` In running text use `et al.` from three names.
 
@@ -45,15 +48,19 @@ In the list: initials before surname; article title in quotation marks and sente
     pp. xxx–xxx, Abbrev. Mon. year, doi: 10.xxxx/yyyy.
 ```
 
-Where a journal numbers articles instead of paginating, replace the page range with `Art. no. xxx`. Use `to be published` for accepted work — never `to appear in`, which the guide rules out — and the early-access form for material published ahead of an issue. Keep whichever of `thesis` or `dissertation` the author used; the guide forbids changing it to match an assumed convention for the degree level.
+Where a journal numbers articles instead of paginating, use its actual article number rather than invented pages. Distinguish accepted-but-unpublished work from published early-access material and use the venue's corresponding form. Keep the supplied `thesis` or `dissertation` source type; do not change it to match an assumed degree convention.
 
-Do not force non-journal sources into the journal pattern. Conference proceedings use the paper title, `in` the abbreviated conference name, year, pages, and DOI if supplied. Presented-only conference papers use `presented at`. Standards start with the standard title and number. Patents lead with the inventor and the patent title in quotation marks, then the patent number and the date; only the online form inverts this, leading with the invention name, then `by` and the inventor. Technical reports use `Rep. no.` when there is one. Datasets give author, date, dataset title, source, and DOI or URL. Software/code should identify authors, software name, repository or location, version, release date, and persistent identifier when available. arXiv preprints use the year and arXiv number.
+Do not force non-journal sources into the journal pattern. Conference proceedings use the paper title, `in` the actual conference name, year, pages and DOI when supplied; a presented-only paper is a different type. Standards, patents, technical reports, datasets, software and preprints need their own identifying fields. Keep actual standard or patent numbers, issuing bodies, versions, dates, repositories and persistent identifiers. Never infer a conference or journal identity from a DOI's shape or invent an abbreviation for an unknown container.
 
-Close online sources with `Accessed: Mar. 2, 2026. [Online]. Available:` and the URL. Nothing follows the URL — no period. A DOI, when it ends the reference, does take one.
+For the working online-reference model, use `Accessed: [actual access date]. [Online]. Available:` followed by the URL without a terminal period. Omit or flag unknown fields as the applicable model allows; do not supply today's date as evidence of a visit. A DOI at the end of the working journal model takes a period.
+
+Check the actual IEEE venue's AI-use, disclosure and citation policy. No universal current AI-reference form was verified here, which is not proof that none exists. Describe only recorded assistance; do not invent a model, a section drafted, source checking or an acknowledgment placement.
 
 ## Examples
 
-**Range compression, abolished in the current guide**
+**Grouping under an explicit venue rule**
+
+**Supplied facts:** Synthetic references 1, 2 and 3 support the statement. This exercise's venue explicitly requests separate brackets. The edit does not claim that all IEEE venues forbid compressed ranges.
 
 > Several groups report this [1]-[3].
 
@@ -61,11 +68,15 @@ Close online sources with `Accessed: Mar. 2, 2026. [Online]. Available:` and the
 
 **Numbers sharing a bracket**
 
+**Supplied facts:** Synthetic references 2, 5 and 9 are trials supporting the stated effect. The venue requests separate source brackets, not a grouped form.
+
 > Later trials confirmed the effect [2, 5, 9].
 
 > Later trials confirmed the effect [2], [5], [9].
 
 **Renumbering a source already cited**
+
+**Supplied facts:** Both mentions identify the same fictional report, first assigned number 2. Its supplied contents include the confirmation and drift figure. Number 5 was an accidental renumbering, not a different source.
 
 > ... confirmed in [2]. The same report gives the drift figure in [5].
 
@@ -73,11 +84,17 @@ Close online sources with `Accessed: Mar. 2, 2026. [Online]. Available:` and the
 
 **Author order, journal abbreviation, DOI form**
 
+**Supplied facts:** The illustrative record supplies author Akira B. Nakamura, the title, journal, year and DOI shown, and the established journal abbreviation `IEEE Trans. Signal Process.` No volume, issue, page range or month is supplied. The fictional article and DOI are not a claim of an actual publication.
+
 > [1] Nakamura, Akira B., "Sparse recovery under drift," *IEEE Transactions on Signal Processing*, 2023. https://doi.org/10.1109/TSP.2023.0000
 
-> [1] A. B. Nakamura, "Sparse recovery under drift," *IEEE Trans. Signal Process.*, vol. 71, no. 4, pp. 210–219, Apr. 2023, doi: 10.1109/TSP.2023.0000.
+> [1] A. B. Nakamura, "Sparse recovery under drift," *IEEE Trans. Signal Process.*, 2023, doi: 10.1109/TSP.2023.0000.
+
+Review note: verify the missing publication fields before treating this as a complete reference. They cannot be supplied by formatting alone.
 
 **Bracket position against the period**
+
+**Supplied facts:** Synthetic source 4 supports the exact statement that the estimator diverges above 40 dB. Only bracket placement is being edited; no new threshold or test result is inferred.
 
 > The estimator diverges above 40 dB. [4]
 
@@ -85,18 +102,26 @@ Close online sources with `Accessed: Mar. 2, 2026. [Online]. Available:` and the
 
 **Locator inside the bracket**
 
+**Supplied facts:** The requested locations in synthetic source 3 are page 7 and figure 1. The venue accepts the locator forms used below.
+
 > See page 7 of [3] and figure 1 of [3].
 
 > See [3, p. 7] and [3, Fig. 1].
 
-**Conference paper, not a journal article**
+**Source type is not inferred from a DOI**
+
+**Supplied facts:** The record explicitly identifies this fictional work as a journal article with the author, title, journal, year and DOI below. It supplies no proceedings title, conference record or page range.
 
 > [2] B. L. Ortega, "Clock drift in field radios," *Journal of Signal Networking*, 2026, doi: 10.1109/NET.2026.0002.
 
-> [2] B. L. Ortega, "Clock drift in field radios," in *Proc. IEEE Int. Conf. Netw. Protocols*, 2026, pp. 44–49, doi: 10.1109/NET.2026.0002.
+> [2] B. L. Ortega, "Clock drift in field radios," *Journal of Signal Networking*, 2026, doi: 10.1109/NET.2026.0002.
 
-**Generative AI.** IEEE has no citation format for AI output. Disclose the use in the acknowledgments; do not build a reference entry for it.
+Review note: preserve the journal identity and verify the remaining fields and abbreviation. The DOI's appearance does not justify turning the source into a conference paper.
+
+**Generative AI without a usage record**
+
+**Supplied facts:** The proposed entry supplies only ChatGPT, OpenAI, 2025 and the tool URL. There is no record of which model was used, what it did, which section it affected or the venue's required disclosure format.
 
 > [7] ChatGPT, OpenAI, 2025. [Online]. Available: https://chat.openai.com
 
-> The authors used a large language model to draft portions of Section III. (in the acknowledgments; no reference entry)
+> Disclosure incomplete: confirm the actual assistance and the applicable venue policy. This entry does not establish that any section was drafted by the tool or that an acknowledgment is the required form.

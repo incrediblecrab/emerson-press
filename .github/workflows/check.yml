@@ -1,0 +1,31 @@
+name: Authoring checks
+
+on:
+  pull_request:
+  push:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+          cache-dependency-path: requirements-dev.txt
+      - name: Install author dependencies
+        run: |
+          python -m pip install -r requirements-dev.txt
+          python -c 'import tiktoken; tiktoken.get_encoding("o200k_base")'
+      - name: Check source and generated invariants
+        run: python -m scripts.check
+      - name: Validate evaluation cases
+        run: python -m scripts.evaluate validate
+      - name: Run regression tests
+        run: python -m unittest discover -s tests

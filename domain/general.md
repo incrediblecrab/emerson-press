@@ -2,10 +2,10 @@
 id: domain.general
 layer: domain
 kind: functional
-version: 2.1.0
+version: 2.2.0
 status: draft
-budget: 2054
-tokens: 2054
+budget: 1780
+tokens: 1780
 mechanics: house
 evidence_floor: 3
 ---
@@ -14,13 +14,13 @@ evidence_floor: 3
 
 The default. Blog posts, short essays, internal documents, email — everything with no professional register of its own.
 
-Every other module in this directory writes for a captive reader. The judge has to read the brief. The reviewer has to read the paper. The clinician has to read the note, and the person locked out of their account has to read the troubleshooting page. Those genres can afford a slow opening because the reader cannot leave.
+Write for the reader's actual purpose and attention. An internal decision, an email request and a reflective post need different structures; other professional genres also benefit from clear openings.
 
-General prose has no captive reader. Nothing bad happens to anyone who stops. A reader free to leave is why the claim goes in the first line, why the page has to survive being scanned rather than read, why an email carries one ask, and why the throat-clearing opener has to go. It also explains why this is the hardest domain to write well and the easiest to write adequately, and why the beige machine register — smooth, competent, about nothing in particular — collects here first. When no genre supplies the constraints, the writer has to.
+For a functional document, make the point or request easy to find. For a narrative or exploratory piece, an opening can build deliberately. No universal claim about captive readers or which genre is hardest is needed to make either choice.
 
 General becomes generic. A module invoked as a fallback tends to produce prose with the texture of a fallback — the transitional phrases, the balanced both-sides paragraph, the conclusion that restates the introduction. `core/` catches those constructions sentence by sentence. This module supplies the thing that prevents them upstream, which is a piece that is about something in particular.
 
-The rule is that specificity has to come from the subject, because the genre supplies none. `non-fiction` gets rigor from its apparatus, `legal` from its authority, `medical` from its numbers. General prose gets it from names, dates, figures, and the particular case — or it does not get it at all.
+Specificity must come from the available subject matter, not a quota for names, dates or figures. A useful general explanation can be rigorous without invented statistics or a named anecdote.
 
 ## Detect
 
@@ -34,8 +34,8 @@ The rule is that specificity has to come from the subject, because the genre sup
 ### Emptiness
 
 - Paragraphs that survive deletion with nothing lost.
-- Claims with no name, number, or date anywhere near them.
-- Both-sides balance that reaches no view. Weighing is fine; refusing to land after weighing is not.
+- Claims too vague for their purpose, not merely claims lacking a name or number.
+- A comparison that evades a requested recommendation. A neutral overview or honestly inconclusive result is legitimate.
 - Advice at a level of abstraction that fits any situation and helps in none.
 - A conclusion that restates the introduction in different words.
 - Section headings that could sit above any content — *Key Takeaways*, *Final Thoughts*, *Understanding the Basics*.
@@ -52,30 +52,30 @@ The rule is that specificity has to come from the subject, because the genre sup
 
 ## Write
 
-Start on the subject. The first sentence carries information; the second carries the reason the reader should keep going. Everything before that is warm-up, and warm-up belongs in a draft rather than a piece.
+Start with material that serves the purpose. Remove ceremonial warm-up, but keep context, courtesy or a deliberate scene when it helps the reader.
 
 Have a point, and put it near the front. If the piece has no point, that is diagnostic rather than a formatting problem, and no amount of structure fixes it.
 
 Front-load. Readers on screens scan before they read and often decide inside the first line of a paragraph. Put the substantive claim in that line and the support after it, in the paragraph as well as the piece.
 
-Reach for the concrete. A name, a number, a date, a case. This is the whole technique, and it works because abstraction is what the machine register defaults to and specificity is what it cannot fake.
+Use relevant, supported details where they clarify. Do not create a name, figure, date, experience or mechanism because concrete prose sounds more credible. Explain an unknown or write without the missing detail.
 
-Take a position where the material supports one, and say so plainly. Balanced consideration followed by a view is honest. Balanced consideration followed by nothing is evasion dressed as fairness.
+Give a supported position when the task asks for one. Preserve a neutral explanation, a real trade-off or an inconclusive result when that is the honest answer.
 
-Write to a length the argument earns. Then cut what the argument does not need — which usually includes the transitional sentences, the second example, and the summary paragraph at the end.
+Write to the length the purpose earns. Cut repetition, but retain a transition, second example or summary when it helps the reader understand or act.
 
-In anything that asks for action, put the ask first, name the owner, and give a date. One ask per message. If there are three, send three messages or number them and say so at the top.
+Make action requests visible, with known owners and deadlines. Do not invent either. Group related requests when that reduces coordination cost; separate or clearly number unrelated ones.
 
 ## Mechanics
 
-House mechanics — no external manual and no citation system. That is the point of the domain, and it is not a license to be vague about where things came from.
+House mechanics unless the task names a venue or manual. Use a citation adapter when formal references are requested; otherwise provide appropriate prose attribution and links.
 
 - Attribute in the sentence: *a 2024 Pew survey found*, *according to the company's annual report*. Enough for a reader to check.
 - Link where the medium supports links, to the source rather than to coverage of it.
-- Numbers with their base and their date. *A third of customers* means nothing without the denominator and the year.
+- Numbers with the denominator, period and comparison needed for their meaning. Request missing context rather than supplying it speculatively.
 - Headings that describe their section, in the reader's words rather than the organization's.
 - Short paragraphs, because the medium is usually a screen. Lists where the content is genuinely a list, prose where it is not.
-- No external style manual; `core/formatting.md` governs, and this module adds nothing to it.
+- `core/formatting.md` supplies defaults; explicit venue requirements control within their scope.
 
 ## Formats
 
@@ -97,7 +97,7 @@ Subject line states the request and any deadline. *Approve Q3 budget by Friday* 
 
 First line contains the ask. Context after. Recipients who need only the ask can act; recipients who need the reasoning can read on.
 
-One ask per email. A message containing three requests will get one answered.
+Prefer a clear primary ask. Related requests can share an email; make each required response easy to identify rather than predicting that readers will answer only one.
 
 Name the owner and the date. *Someone should look at this soon* commits nobody to nothing.
 
@@ -115,31 +115,37 @@ Say what is uncertain rather than smoothing it, because the reader is a colleagu
 
 ## Evidence
 
-Rung 3. A named, checkable source in the sentence. General writing does not need peer review, and it does not get to invent.
+The legacy `evidence_floor: 3` emphasizes checkable support appropriate to the claim. An opinion, a supplied workplace fact and a research claim need different handling. General writing does not automatically require peer review or a formal reference list, and it does not get to invent.
 
 The floor is lower than the regulated domains and it is not zero, because the failure this repository exists to prevent shows up here as confidently delivered specifics that are not true. The move that makes general prose good — reach for the concrete number — is the same move that produces a fabricated statistic when the number is not to hand. The discipline is that the concrete detail must be real. Where it is not available, write the sentence without it.
 
-Rung 3 is the lowest floor in this directory and it is still a floor. Loading a `domain/education-level/` tier beside this module changes who the sentence is pitched at, never whether the number in it is real.
+An optional classroom preset does not lower accuracy or require new research merely because of the reader's credentials.
 
 ## Boundaries
 
 Against the specialized domains. This module applies when no other does. If the piece is a health explainer, `medical` governs the numbers; if it documents software, `technical` governs; if it reports the news, `press` governs attribution and structure; if it sells something, `marketing` and its substantiation rules apply. General is the residue, not an override, and a writer who invokes it to escape a stricter domain's obligations has chosen the wrong module.
 
-Against `non-fiction`. The nearest boundary and the easiest to get wrong, because both cover prose with no institution behind it. Length and expectation separate them. A short piece a reader skims for what they need is this module. An essay someone chose, will finish, and might reread is `non-fiction`, and it takes Chicago and a rung-4 floor with it.
+Against `non-fiction`. Choose by purpose and reading experience rather than length alone. A developed narrative or critical essay may fit that module; a practical update or explanation often fits this one.
 
-Against `core/`. The closest relationship in the repository, and the reason the boundary needs stating. `core/` bans constructions; this module supplies positive shape — front-loading, the one-ask rule, the demand for a point. On a piece with no other domain, they are nearly the whole instruction set, and `core/restraint.md` still governs: neither module bans a construction that is earning its place.
+With `core/`. Core provides accuracy, restraint and style defaults, not a universal banlist. This module adds task structure. Neither justifies changing facts or deleting a construction that earns its place.
 
-With `domain/education-level/`. This module and no tier is the pairing most at risk of the beige register, because an adult reader at work and a genre defined as the residue supply almost no friction between them. Loading a tier adds constraints and helps a little. The real correction is the one this module already asks for: specificity from the subject.
+With `domain/education-level/`. Describe the reader's familiarity and support needs directly. Use a preset for an appropriate classroom task, not as a generic cure for weak prose or an assumed measure of the reader.
 
 ## Examples
 
+These independent synthetic briefs supply the facts and the requested editing operation.
+
 **Circling before starting**
+
+**Supplied facts:** The requested post recommends putting a memo's decision first and its explanation afterward. No reading-time measurement or estimate of how long a rewrite takes has been supplied.
 
 > In today's rapidly evolving digital landscape, organizations of all sizes are increasingly recognizing the importance of effective communication. This post will explore some key considerations.
 
-> Most internal memos get skimmed in under fifteen seconds. Writing the decision in the first line rather than the fourth paragraph is the entire fix, and it takes about a minute.
+> Put the decision in the first line of the memo, then explain the reason.
 
 **A paragraph that survives its own deletion**
+
+**Supplied facts:** The surrounding document already introduces the analysis. The quoted paragraph adds no specific condition or qualification. The task asks for a review recommendation.
 
 > It's important to note that there are many factors to consider when approaching this topic, and different organizations may find that different approaches work better for them depending on their specific circumstances and needs.
 
@@ -147,23 +153,29 @@ With `domain/education-level/`. This module and no tier is the pairing most at r
 
 **Balance with nothing at the end of it**
 
+**Supplied facts:** The fictional team's members report quieter conditions for focused work at home and missing informal handoffs. The author is asked to recommend how to retain remote work while addressing those handoffs. No comparative productivity study or pattern across other teams is supplied.
+
 > There are advantages and disadvantages to remote work. Some studies show increased productivity while others show decreased collaboration. Ultimately, each organization must decide what works best for them.
 
-> Remote work suits deep individual work and hurts the unplanned conversations that produce new projects. Teams that shipped well remotely tended to have written decision records and scheduled the overlap; teams that struggled relied on hallway context nobody replaced. If your work depends on the hallway, replace it deliberately before removing it.
+> This team reports quieter conditions for focused work at home, but informal handoffs are being missed. I recommend keeping remote work while adding scheduled handoffs and written decision records.
 
 **An email with the ask underneath the context**
+
+**Supplied facts:** The team must choose a vendor by Thursday, October 8, 2026. Vendor A costs $40,000 and takes eight weeks; Vendor B costs $65,000, takes three weeks and includes migration support. The requested reply is A or B. No attachment or linked comparison document is supplied.
 
 > Subject: Following up
 >
 > Hi team, hope you're all doing well. I wanted to circle back on the conversation we had last month regarding the vendor situation. As you know, we've been evaluating several options and there have been a number of developments since then. Anyway, it would be great to get your thoughts at some point.
 
-> Subject: Vendor decision — need your pick by Thursday
+> Subject: Vendor decision — choose A or B by October 8
 >
-> Choose Vendor A or Vendor B by Thursday, October 9. Reply to this thread with one word.
+> Choose Vendor A or Vendor B by Thursday, October 8, 2026. Reply A or B.
 >
-> A costs $40k and takes eight weeks. B costs $65k, takes three, and includes migration support. Full comparison in the linked doc.
+> A costs $40,000 and takes eight weeks. B costs $65,000, takes three weeks and includes migration support.
 
 **A conclusion doing nothing**
+
+**Supplied facts:** The previous paragraph already states the supported conclusion. The task asks whether this additional generic summary contributes anything; no reader-support need for it is identified.
 
 > In conclusion, as we have seen, there are many important considerations when it comes to writing well. By keeping these principles in mind, writers can improve their craft and better serve their readers.
 

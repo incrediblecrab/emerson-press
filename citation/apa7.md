@@ -1,21 +1,25 @@
 ---
 id: citation.apa7
 layer: citation
-version: 1.0.1
+version: 1.1.0
 status: draft
-budget: 1096
-tokens: 1096
-edition: 7th (Oct. 2019; current as of Aug. 2026); AI reference formats revised Sept. 2025
+budget: 1242
+tokens: 1242
+edition: "7th (2019) working baseline; September 2025 AI formats not independently verified"
+evidence:
+  - sources/citation-authority.md
 ---
 
 # Citation: APA 7
+
+Apply this adapter to formal APA citations when requested, subject to the venue's adopted edition and local requirements. Preserve source identity, source type and known fields; expose missing metadata instead of completing it by inference. The source dossier distinguishes the working print baseline from unverified living guidance. Correct formatting does not establish retrieval or factual support.
 
 ## Detect
 
 - **A publisher's city.** `New York, NY: Basic Books`. The 7th edition dropped publication place entirely.
 - **`Retrieved from` before an ordinary URL.** Retrieval dates are for mutable pages; an undated but stable source takes `(n.d.)`, not a retrieval formula.
 - **A bare `doi:` prefix.** APA takes the resolver form, `https://doi.org/10.xxxx`. The bare form belongs to AMA (`doi:10.xxxx`, no space) and IEEE (`doi: 10.xxxx`, with one) — and those two differ from each other, so a bare prefix is never a safe default.
-- **`&` in running prose**, or `and` inside a parenthetical citation. The ampersand lives only inside parentheses and in the reference list.
+- **`&` joining cited authors in running prose**, or `and` joining them inside a parenthetical citation. This does not authorize changing an ampersand in a quotation, source title or official name.
 - **All authors named in text for a three-author work.** APA uses `et al.` from three authors, and from the *first* citation — there is no name-them-once-then-abbreviate step.
 - **`et al.` for a two-author work.** Two authors are always both named.
 - **A period after `et`.** Only `al.` takes one.
@@ -25,12 +29,12 @@ edition: 7th (Oct. 2019; current as of Aug. 2026); AI reference formats revised 
 - **A hyphen in a page range.** APA sets number ranges with an en dash: `225–250`.
 - **Multiple works in one parenthetical out of alphabetical order.**
 - **`personal communication` in the reference list.** It is cited in text only.
-- **ChatGPT as the author.** For generative AI, the company is the author; the tool or model is the source element.
+- **An AI entry built from an unverified template.** Establish whether the citation concerns software, a particular output or another source type; do not infer current rules from another publisher.
 - **A citation to AI search.** If AI only helped find sources, cite the sources actually used, not the search interface.
 
 ## Write
 
-Author and date, always: `(Ali, 2024)` parenthetically, `Ali (2024)` narratively. Add a page or paragraph for a quotation: `(Ali, 2024, p. 42)`. Three or more authors take `et al.` from first mention. Where that collapses two different works to the same form, name as many authors as it takes to tell them apart.
+Use author-date citations: `(Ali, 2024)` parenthetically, `Ali (2024)` narratively. Use the manual's applicable missing-author or missing-date form when needed, not a fabricated person or year. Add an available locator for a quotation: `(Ali, 2024, p. 42)`. Do not invent pagination. Three or more authors take `et al.` from first mention. Where that collapses two different works to the same form, name as many authors as it takes to tell them apart.
 
 ```
 Author, A. A. (Year). Title of work in sentence case. Journal Name in Title
@@ -43,19 +47,21 @@ Head the list `References`. Alphabetize by first author's surname; hanging inden
 
 In the reference list, sentence case for the titles of articles, chapters, books and reports: capitalize the first word, the first word after a colon, and proper nouns only. Title case for the periodical's own name. In running text the rule inverts — a title mentioned in a sentence takes title case. Italicize the volume number with the journal name; leave the issue number roman inside parentheses.
 
-Give a DOI whenever one exists, in resolver form, with no terminal period — a period risks being read as part of the link. Where there is no DOI, give the URL. Add a retrieval date only for content designed to change: a wiki, a live feed, a page that is rewritten in place. A missing publication date does not by itself call for one; that case takes `(n.d.)` instead.
+Give an established DOI in resolver form, with no terminal period. Use a URL where the source-specific model calls for one and a relevant address is available; a print source without a DOI or URL does not become a website. Add an actual retrieval date for content designed to change when the applicable model requires it. A missing publication date does not by itself establish mutability; use `(n.d.)` for an undated source rather than inventing a year or visit.
 
 Block a quotation of forty words or more: indent it, drop the quotation marks, and put the citation after the final period.
 
-Cite personal communications — interviews, emails, unrecorded lectures — in text alone: `(A. Ali, personal communication, August 14, 2025)`. They never enter the reference list, because the reader cannot retrieve them.
+Cite non-retrievable personal communications from people in text alone: `(A. Ali, personal communication, August 14, 2025)`. A published interview or recorded lecture is a different source type. Do not automatically classify a private AI exchange as personal communication merely because it lacks a public link.
 
-For education-policy staples, preserve the source type in brackets: data sets use `[Data set]`; dissertations and theses name the institution and database when retrievable; conference papers, technical reports, standards, and agency reports name the sponsoring body. When the agency and publisher are the same, do not repeat it as publisher. For a source known only through another source, cite `as cited in` in text and list only the work actually read.
+For education-policy staples, choose source-specific fields: data sets use `[Data set]`; dissertations and theses identify the actual institution and retrievable source; conference papers, technical reports, standards and agency reports retain their real sponsoring or issuing body where applicable. Do not add a bracketed source-type label to every entry. When an agency is both author and publisher, do not repeat it as publisher. For a source known only through another source, cite `as cited in` in text and list only the work actually read.
 
-For generative AI, current APA guidance puts the company in the author slot. Date a shareable conversation, give it a short descriptive title, and mark it `[Generative AI chat]`; mark the tool itself, when you cite it generally, `[Large language model]`. A private or non-retrievable exchange is a personal communication. AI used only as a search engine, or as routine software assistance, normally gets no reference entry; cite the underlying sources.
+The September 2025 AI citation formats were not verified in this review. Do not impose a purported current `[Generative AI chat]` format, a private-chat rule or a share-link requirement on that basis. Check the actual APA guidance and venue policy for the source being cited. Preserve the recorded tool, provider, model, date and link without inventing missing fields. Citation does not replace required assistance disclosure; AI-assisted discovery does not justify citing underlying sources that nobody consulted.
 
 ## Examples
 
 **Publisher location and the old retrieval formula**
+
+**Supplied facts:** The fictional 2024 book is by Nadia Ali, published by Winslow Press in New York, with the stable online address shown. The task requests the working APA 7 book form; no retrieval date is supplied or needed for this stable source.
 
 > Ali, N. (2024). *The unreliable archive*. New York, NY: Winslow Press. Retrieved from https://example.org/archive
 
@@ -63,11 +69,15 @@ For generative AI, current APA guidance puts the company in the author slot. Dat
 
 **Ampersand on the wrong side of the parenthesis**
 
+**Supplied facts:** The synthetic work is by Ali and Moreau, dated 2024, and supports the two statements as drafted. Only the author-citation punctuation is at issue.
+
 > Ali & Moreau (2024) found the opposite, and the effect held (Ali and Moreau, 2024).
 
 > Ali and Moreau (2024) found the opposite, and the effect held (Ali & Moreau, 2024).
 
 **Naming three authors in full**
+
+**Supplied facts:** Ali, Moreau and Okonkwo wrote the fictional 2024 work in that order and reported unresolved provenance. No other cited work creates an ambiguous short form.
 
 > Ali, Moreau, and Okonkwo (2024) reported that the provenance was unresolved.
 
@@ -75,23 +85,31 @@ For generative AI, current APA guidance puts the company in the author slot. Dat
 
 **Title case in a reference-list entry**
 
+**Supplied facts:** The fictional source has exactly the authors, journal, year, volume, issue and pages shown. Its article title contains no proper noun. Change title capitalization, not bibliographic fields.
+
 > Ali, N., Moreau, C., & Okonkwo, I. (2024). The Provenance Of Municipal Archives. *Winslow Quarterly, 12*(3), 225–250.
 
 > Ali, N., Moreau, C., & Okonkwo, I. (2024). The provenance of municipal archives. *Winslow Quarterly, 12*(3), 225–250.
 
 **DOI form**
 
+**Supplied facts:** The supplied illustrative DOI is `10.1234/wq.2024.12`. The ellipsis stands for an unchanged reference prefix; no source lookup or additional metadata is implied.
+
 > ... *Winslow Quarterly, 12*(3), 225–250. doi:10.1234/wq.2024.12
 
 > ... *Winslow Quarterly, 12*(3), 225–250. https://doi.org/10.1234/wq.2024.12
 
-**Generative AI.** APA revised this in September 2025. The company that made the tool takes the author position — not the tool itself, which is the common error. A specific conversation is `[Generative AI chat]`, titled and dated, with a shareable link; the tool cited generally is `[Large language model]`. Where the exchange cannot be shared, it is a personal communication instead, cited in text only.
+**Generative AI with an unverified link and format**
+
+**Supplied facts:** The record names ChatGPT, OpenAI, the topic and August 14, 2025, but supplies no actual conversation URL or model. The URL below is an unverified placeholder. Review the entry; the proposed 2025 APA source-type format has not been established.
 
 > ChatGPT. (2025, August 14). *Provenance of the Winslow archive* [Generative AI chat]. OpenAI. https://chatgpt.com/share/abcd-1234
 
-> OpenAI. (2025, August 14). *Provenance of the Winslow archive* [Generative AI chat]. ChatGPT. https://chatgpt.com/share/abcd-1234
+> Citation incomplete: retain the recorded tool, provider, topic and date, but remove the placeholder URL. Confirm the source type and applicable APA/venue format before completing the entry.
 
 **The tool itself rather than one session**
+
+**Supplied facts:** This formatting exercise explicitly supplies a venue's software-style template: provider as author, supplied release year, italicized tool name, `[Large language model]`, then tool URL. The record gives OpenAI, ChatGPT, 2025 and `https://chatgpt.com`; it does not identify a conversation or model version. This demonstrates the supplied template, not verification of a current APA AI update.
 
 > ChatGPT. (2025). *OpenAI* [Large language model]. https://chatgpt.com
 

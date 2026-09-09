@@ -2,12 +2,12 @@
 id: domain.press
 layer: domain
 kind: editorial
-version: 2.1.0
+version: 2.2.0
 status: draft
-budget: 2848
-tokens: 2848
+budget: 2499
+tokens: 2499
 mechanics: ap
-edition: AP Stylebook 56th (2022-2024); 57th (2024-2026) and 58th (2026-2028) not yet read in
+edition: "AP Stylebook 56th (2022-2024) basis; selected public 58th-edition updates (2026), not a full migration"
 evidence_floor: 3
 evidence:
   - sources/ap-stylebook.md
@@ -15,15 +15,17 @@ evidence:
 
 # Domain: Press
 
-Reporting for publication. AP mechanics, attribution carried in the text, no reference list.
+Reporting for publication. AP mechanics by default, with visible attribution appropriate to the outlet. Follow an explicit venue's requirements for source links, notes or a reference list.
 
-Every mechanical rule here is the AP Stylebook's 56th edition, 2022-2024. Two editions have shipped since and neither has been read against this module: the 57th, 2024-2026, which added an artificial-intelligence chapter and a criminal-justice chapter the 56th does not have, and the 58th, 2026-2028, published in late May 2026. Two changes the 58th carries land inside this scope — it closes *healthcare* to one word, and it expands the artificial-intelligence chapter with entries for *AI agent*, *AI slop* and *vibe coding*. Treat the pin as two editions stale and re-verify before filing to a wire.
+The mechanical foundation remains the 56th edition, not a completed review of editions 57 and 58. AP's public 58th-edition announcement, published May 27, 2026, confirms *healthcare* as one word and AI agent, AI slop and vibe coding entries; it advises avoiding *vibe coding* outside quotations. These public updates are incorporated without claiming that the licensed chapter or every current entry was checked. Verify the applicable entry before filing to a wire.
+
+AP's July 23, 2026 AI newsroom update permits specified assistance with human review and establishes material-use disclosure standards. Its organizational policy is not automatically binding on every writer who chooses AP punctuation. Follow the actual outlet's policy, protect sources and never claim reporting or verification that did not occur.
 
 The mechanics of journalism exist to make a claim checkable by a stranger. That is the whole of it. A dateline says where the reporter stood. Attribution says who is answerable for a fact. A second reference by last name says this is a person we have already identified and you can scroll up. None of it is etiquette, and none of it is decoration.
 
-This matters for machine prose in a specific way. Strip the apparatus and the sentences still read well — that is the danger. An unsourced paragraph and a reported one are indistinguishable at the level of the sentence and distinguishable instantly at the level of the page, because the reported one keeps naming people who could be called. Fluency is not reporting. A model writes the shape of a news story fluently and supplies the sourcing last, if at all, which produces copy that survives a read and fails a fact-check.
+Fluency is not reporting. A polished account can still lack sources, and realistic-looking attribution can itself be fabricated. Check the actual record rather than treating either smooth prose or visible apparatus as proof of verification.
 
-The characteristic corruption of the domain is the press release. PR prose is engineered to survive being pasted into a news hole: pre-formatted, pre-quoted, pre-framed, with the interested party's account of events sitting in the position the reporter's should occupy. A good deal of AP style is an immune response to this. When copy carries *leading provider*, *is pleased to announce*, or a quotation no human said aloud, the release has won.
+A press release is an interested party's account, not independent verification. Attribute it accordingly and check consequential claims. Written statements can supply legitimate quotations; the problem is invented or misleadingly presented wording, not whether it was spoken aloud.
 
 ## Detect
 
@@ -41,8 +43,8 @@ The characteristic corruption of the domain is the press release. PR prose is en
 - Anonymity granted with no reason the reader can weigh, and no account of what the source would know.
 - Attribution verbs that return a verdict: *admitted, conceded, revealed, slammed, blasted.* *Explained* is the quiet one — it certifies the statement as true.
 - One attribution stretched across a run of paragraphs, so the reader loses track of whose account they are in.
-- A quotation with no speaker within the sentence.
-- Documents cited without saying who wrote them, when, or how they were obtained.
+- A quotation whose speaker or source is unclear.
+- Documents lacking material source context; do not invent authorship, dates or acquisition details.
 
 ### Mechanics
 
@@ -56,31 +58,31 @@ The characteristic corruption of the domain is the press release. PR prose is en
 
 - False balance. Two sides quoted as equals when the evidence is not equal. Fairness is a claim about accuracy, not about column inches.
 - A percentage-point change reported as a percent change, or a percent change computed off a base too small to carry it.
-- A number with no comparison — no prior period, no benchmark, no per-capita adjustment across groups of different sizes.
+- A comparison lacking the denominator, period or benchmark needed to interpret it. An absolute count does not always need a historical baseline.
 - A chart with a truncated bar axis, circles scaled by radius, or an outlier dropped without saying so.
-- First person, or a judgment, outside the opinion page.
+- Personal opinion presented as neutral reporting. Supported fact-checking and properly framed first-person reporting are not automatically opinion.
 - A correction folded silently into the text instead of run as a corrective.
 - Identifying detail about a private person, a minor, or a victim that the story does not need.
 
 ## Write
 
-Lede: the newest consequential fact, one sentence, under about 30 words, subject first. If you cannot write it, you have not decided what the story is.
+For a straight-news lede, foreground the newest consequential fact. About 30 words is a house target, not a ceiling that permits cutting a material qualifier. Features and opinion use the structures appropriate to those formats.
 
-Attribute anything a reader could dispute, once, at the end of the sentence, with *said*. Name the person and give the reader a reason to credit them — what they saw, what they hold, what their job is.
+Make the origin of consequential claims clear. Use *said* as a neutral default for reported statements; documents and data may need different attribution. Place attribution where the reader can follow it, repeating it when needed. Supply only known names, roles and bases of knowledge.
 
 Anonymity requires a stated reason and a stated basis. *A person who read the memo, granted anonymity because they were not authorized to discuss it*, tells the reader both what the source knows and why the name is missing. *A source familiar with the matter* tells them nothing and should not run.
 
-Weigh sides by evidence, not by headcount. Where the evidence is lopsided, say so and show the count. Balance that misrepresents the state of knowledge is an accuracy failure wearing fairness as a costume.
+Weigh claims by evidence, not by headcount. Explain why support differs; a source count alone does not decide the question. Balance that misrepresents the evidence is an accuracy failure.
 
-Give every number something to sit against — the same figure last year, a comparable jurisdiction, a per-capita rate — and make sure the units and the collection method genuinely match before setting them side by side. Round to what the method supports, and say when a change is in points rather than percent.
+Give a figure the context it needs, using known comparators, periods and denominators. Match units and methods before comparing. If the record lacks a needed baseline, request or flag it rather than inventing one. Round honestly and distinguish percentage points from percent change.
 
-Correct in public. A corrective runs as its own item, says what was wrong, and says what is right. Quietly editing the page is how a newsroom loses the only thing it sells.
+Follow the outlet's policy for correcting material published errors, clearly distinguishing the wrong claim from the correction. A wire corrective may be a separate item; a routine prepublication copyedit is not automatically a public correction.
 
 ## Mechanics
 
 AP, restated. These are the entries that distinguish the domain, not a full style guide.
 
-**Datelines.** City in capitals, then the AP state or country form, then an em dash, then the copy: `MEDFORD, Ore. — The city council voted...` A dateline is a factual claim that a reporter was there; if nobody was, there is no dateline. About 30 large domestic cities stand alone without a state, and a longer list — roughly 40 — of foreign cities stands alone without a country. AP state forms are traditional abbreviations, not postal codes — *Ore.*, *Calif.*, *Pa.* Eight states are never abbreviated: Alaska, Hawaii, Idaho, Iowa, Maine, Ohio, Texas, Utah.
+**Datelines.** City in capitals, the applicable AP state or country form, an em dash, then the copy: `MEDFORD, Ore. — The city council voted...` A dateline asserts reporting presence; do not add one merely because an event happened there. Check the current standalone-city list rather than inferring it from city size. AP dateline state forms are not postal codes. Running-text state names and dateline forms are different conventions.
 
 **Numbers.** Spell out one through nine, numerals from 10. Always numerals for ages, dimensions, addresses, money, and percentages, with `%` closed up to the numeral. A number that begins a sentence is written out, years excepted — or better, recast so it does not begin there.
 
@@ -94,9 +96,9 @@ AP, restated. These are the entries that distinguish the domain, not a full styl
 
 **Charts.** Bar axes start at zero. Circles are scaled by area, not radius. No decorative third dimension. An outlier comes out only with a stated reason, in the caption.
 
-**Sports agate.** Agate is the tabular matter that runs under a game story — box scores, standings, line scores, transactions — and it is set by convention so a reader can find a number without reading a sentence. Winner first in a line score, home team second in a matchup, records in parentheses after the team. Each sport sets its own columns: baseball and basketball standings run W-L-Pct-GB, and the football and soccer sets differ. Times are figures, with a colon between minutes and seconds and a decimal point before the fraction of a second — `3:26.1` in agate, written out as three minutes, 26.1 seconds on first mention in the story. Abbreviations are the sport's own and are not expanded on later mention. Agate carries no attribution because the league's official scoring is the source; when a figure is disputed or unofficial, it leaves agate and moves into the story where it can be attributed.
+**Sports agate.** Box scores, standings and line scores follow sport- and outlet-specific templates. Preserve the official record, units and meaningful team order; do not impose a generic winner-first rule. Baseball and basketball standings often use W-L-Pct-GB, while other competitions use different columns. Verify the applicable template and distinguish official from provisional or disputed figures. Table form does not establish a source by itself.
 
-**Media law.** Libel is a false statement of fact, published, that damages reputation. On a matter of public concern the plaintiff must prove falsity, which is why sourcing is a legal posture and not only an editorial one. Public officials and public figures must additionally show actual malice — knowledge of falsity or reckless disregard for the truth. A private figure need show only the fault standard the state sets, often negligence, so the actual-malice shield does not reach most subjects a local desk writes about. Fair and accurate reports of official proceedings carry privilege; a lift from a court filing does not carry privilege into a paraphrase that goes further than the filing did.
+**Media law.** This is U.S.-oriented caution, not a jurisdiction-free legal test. Defamation questions involve factual falsity, publication, fault, harm and applicable defenses; standards for public and private figures differ. Actual malice concerns knowledge of falsity or reckless disregard, not mere dislike. Privileges depend on the jurisdiction and accurate treatment of the record. A court filing can report an allegation without establishing that allegation as true. Seek appropriate legal review for consequential uncertainty.
 
 ## Formats
 
@@ -122,9 +124,9 @@ Labeled as opinion, in a place the reader sees before the argument starts.
 
 ## Evidence
 
-Rung 3, carried in prose: every claim traceable to a named origin the reader can weigh, without a formal apparatus. Journalism's version of the rung is stricter than the general-audience version in one respect — the origin must be named in the sentence, not gestured at, because the reader has no bibliography to fall back on.
+The legacy `evidence_floor: 3` emphasizes traceable reporting, not a lower truth standard than other genres. Give enough source context for the reader to distinguish observation, documents, attribution and inference. Formal apparatus and anonymity rules follow the outlet and task.
 
-Investigative and data work runs at rung 4 or 5 in practice: the reporter describes the method, publishes the denominator, and hands over enough of the source data that a stranger can rerun the analysis and get the same answer.
+Investigative and data reporting may need methods, denominators and reproducible analysis. Explain legitimate privacy, source-protection or access limits rather than promising unrestricted data release.
 
 The floor does not move when the reader changes. A story written for a general readership names its sources exactly as one written for a trade audience does. A tier can simplify the sentence around an attribution. It cannot remove the attribution.
 
@@ -132,17 +134,21 @@ The floor does not move when the reader changes. A story written for a general r
 
 Against `marketing`. The nearest domain and the most dangerous, because the surface prose is similar and the obligations are inverted. Marketing copy advocates for an interested party and is regulated on whether its claims can be substantiated. Press copy is accountable to a reader who has no stake. When a press piece adopts the release's framing, the failure is not stylistic.
 
-Against `non-fiction`. Both are reported and answerable; the apparatus differs. Non-fiction cites in notes and can afford a reader who will chase a reference. Press prose has one pass to carry the source inside the sentence. The overlap is the long feature, which belongs to `non-fiction` the moment it acquires notes and a Chicago pin.
+Against `non-fiction`. Both are answerable for claims. Select the primary genre by the publication task, not solely by the presence of notes or the length of a feature. An outlet can require source notes without making its journalism cease to be reporting.
 
-Against `general`. A blog post may open with the writer. A news story may not.
+Against `general`. A personal blog and a straight-news report usually have different framing needs. Do not turn that distinction into a ban on an outlet's explicitly requested first-person reporting.
 
 Against `medical`. Health and science reporting. This module owns attribution, structure, and the reporting craft; `medical` owns the numbers — absolute risk alongside relative, the ban on hyping a single study, the distinction between a finding in mice and a finding in people. A desk that wants a stronger headline does not get one from this module.
 
-With `domain/education-level/`. Nothing loaded from it means an adult reader who is not a specialist, which is the reader press has always assumed and the reason attribution has to survive without a bibliography. A trade publication written for peers may use the field's terms unglossed. A school paper written with a K-12 tier loaded gets a smaller vocabulary. Neither one relaxes the sourcing.
+With `domain/education-level/`. Describe the actual readership; optional classroom presets are not age-based vocabulary ceilings. A trade audience may know specialist terms, while another reader needs support. Neither changes the sourcing obligations.
 
 ## Examples
 
+These independent synthetic reporting records supply the facts. An edit does not create an interview, dateline or attempted verification.
+
 **Buried lede**
+
+**Supplied facts:** At Tuesday's meeting, the school board voted to close Lincoln Elementary in June and move its 210 students to Garfield.
 
 > In a move that follows months of deliberation among board members and comes amid a broader shift in the district's approach to facilities planning, officials announced a decision Tuesday evening.
 
@@ -150,11 +156,15 @@ With `domain/education-level/`. Nothing loaded from it means an adult reader who
 
 **Attribution that names nobody**
 
+**Supplied facts:** Two people involved in the negotiation said the sale should close by March. The outlet granted anonymity because the terms are not final. No completed sale is established.
+
 > Sources say the deal is expected to close soon.
 
 > Two people involved in the negotiation said the sale should close by March. Both were granted anonymity because the terms are not final.
 
 **Verdict verbs**
+
+**Supplied facts:** The mayor said the shortfall had grown to $4.2 million and blamed the council for delaying a vote. The record contains no admission of wrongdoing.
 
 > The mayor admitted the shortfall had grown, then slammed the council for its inaction.
 
@@ -162,11 +172,15 @@ With `domain/education-level/`. Nothing loaded from it means an adult reader who
 
 **False balance**
 
+**Supplied facts:** The fictional State Water Board's published readings show falling reservoir levels at 11 of 12 gauges and an unchanged reading at the other. A well owner disputes the readings but has supplied no data. No equal body of contrary scientific evidence is recorded.
+
 > Some scientists say the reservoir is shrinking, while others disagree.
 
-> Eleven of the twelve gauges the state monitors show the reservoir falling. One well owner disputes the readings and has not published his data.
+> The State Water Board's readings show falling reservoir levels at 11 of 12 gauges; the other is unchanged. A well owner disputes the readings but has supplied no data.
 
 **Percent versus percentage point**
+
+**Supplied facts:** Reported support is 41% in March and 44% in June. The task is to correct the change calculation; no claim of statistical significance is supplied.
 
 > Support for the levy rose 3% between March and June, from 41% to 44%.
 
@@ -174,12 +188,16 @@ With `domain/education-level/`. Nothing loaded from it means an adult reader who
 
 **AP mechanics against Chicago**
 
+**Supplied facts:** The committee met in Portland, Oregon, on September 3 at noon and reviewed The Long Field, three proposals and 12 amendments. The record does not establish that a reporter was present in Portland.
+
 > On September 3rd, the committee reviewed *The Long Field*, three proposals, and twelve amendments at 12:00 p.m. in Portland, OR.
 
-> PORTLAND, Ore. — On Sept. 3, the committee reviewed "The Long Field," three proposals and 12 amendments at noon.
+> On Sept. 3, the committee reviewed "The Long Field," three proposals and 12 amendments at noon in Portland, Oregon.
 
 **Release language surviving into copy**
 
+**Supplied facts:** Acme is a fictional freight brokerage with about 400 employees. Its Tuesday announcement says it will handle shipping for Bellweather Foods beginning in October. The announcement omits the contract value; no follow-up request or refusal to comment is recorded.
+
 > Acme, a leading provider of innovative logistics solutions, is pleased to announce a strategic partnership that will revolutionize regional freight.
 
-> Acme, a freight brokerage with about 400 employees, said Tuesday it will handle shipping for Bellweather Foods starting in October. Neither company would say what the contract is worth.
+> Acme, a freight brokerage with about 400 employees, said Tuesday it will handle shipping for Bellweather Foods starting in October. The announcement does not state the contract's value.

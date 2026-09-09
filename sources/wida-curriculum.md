@@ -1,9 +1,20 @@
 ---
 id: sources.wida-curriculum
 layer: sources
-version: 1.3.0
+version: 1.4.0
 status: active
 budget: none
+evidence_kind: publisher-guidance
+checked_on: 2026-09-08
+verification_status: partial
+source_version: "2020 ELD Framework page notes; public framework overview and supplemental reader-guidance scope checked September 8, 2026"
+source_urls:
+  - https://wida.wisc.edu/teach/standards/eld
+  - https://www.w3.org/WAI/WCAG2/supplemental/patterns/o3p01-clear-words/
+  - https://www.w3.org/WAI/WCAG2/supplemental/about/
+  - https://www.iplfederation.org/press-release-part-3/
+  - https://www.iplfederation.org/iso-standard/
+verification_note: "The live WIDA overview confirms K-12 classroom scope, four components and nonlinear development. Detailed printed-page mappings below are retained historical notes, not a fresh verification of all 393 pages or a validated reader-level model. W3C/IPLF checks concern public scope, not conformance testing or unread normative clauses."
 source:
   title: "WIDA English Language Development Standards Framework, 2020 Edition"
   subtitle: "Kindergarten–Grade 12"
@@ -27,9 +38,17 @@ This dossier states every rule in original wording. Reference codes (`ELD-LA.4-5
 
 ## Why This Source
 
-Most readability tools measure the wrong thing. Flesch-Kincaid counts syllables and sentence length, so it rates `The cat sat on the mat because of the sun` as harder than `Aggregate demand fell`. Lexile does the same with word frequency. Neither can tell you what a twelve-year-old can actually track across a paragraph.
+Formulaic readability measures capture limited text features; they do not establish what an individual reader understands. WIDA adds a useful vocabulary for describing organization, clause relationships and word-level precision. This repository has not measured whether its WIDA-inspired presets outperform another readability approach.
 
-WIDA does. It describes what changes in language as students move through school, at three levels — how a whole text is organized, how sentences combine clauses, how words carry precision — and it does so per grade band, with worked examples. That is a calibration spine for the `domain/education-level/` ladder, and there is no comparable public document.
+The framework concerns multilingual learners' classroom language development. Using it to adjust prose written to a reader is a house adaptation, not a validated inference about an individual's reading ability or the only available approach.
+
+### Verification and reader-guidance scope
+
+On September 8, 2026, the [public WIDA overview](https://wida.wisc.edu/teach/standards/eld), especially its Proficiency Level Descriptors section, confirmed that language development is not a linear process and pointed readers to pages 31–34 of the 2020 framework. Its four-component overview does not verify every page-level paraphrase below.
+
+The detailed grade/mode mappings retain printed-page locators from the earlier dossier. They require checking against the 2020 framework before being promoted into a new externally attributed requirement. In particular, this dossier does not license clause-count ceilings, mandatory counterclaims or delayed attribution.
+
+[W3C's clear-words guidance](https://www.w3.org/WAI/WCAG2/supplemental/patterns/o3p01-clear-words/) concerns actual language and access needs; its [status page](https://www.w3.org/WAI/WCAG2/supplemental/about/) says this supplemental material is not required for WCAG conformance. IPLF's [May 12, 2026 science-writing announcement](https://www.iplfederation.org/press-release-part-3/) emphasizes relevance, findability, understanding and use without sacrificing accuracy. Its [scope explanation](https://www.iplfederation.org/iso-standard/) distinguishes science communication from specialist scientific papers. These public summaries do not establish unread ISO clauses.
 
 ### The repurposing caveat
 
@@ -37,8 +56,8 @@ WIDA describes the language development of multilingual learners in K-12 classro
 
 `emerson-press` uses it for something adjacent but different: calibrating prose written *to* a reader at a given level. Two consequences follow.
 
-- WIDA's progressions are evidence about what language does as complexity rises. Treat them as that. Do not treat a grade band as a score to hit.
-- The proficiency levels (PL1-PL6) describe a *learner's* development, not a *text's* difficulty. They are useful to an education module as a map of how complexity gets built up, not as a target. An education module writes to a grade-band profile, never to a proficiency level.
+- WIDA's descriptions concern classroom language development. They are not a score to hit or proof that a specific reader cannot follow a feature.
+- The proficiency levels (PL1-PL6) describe contextual performances, not a text's difficulty or a permanent person-label. The education modules are optional task scaffolds, not proficiency classifications.
 
 Beyond grade 12 WIDA has nothing to say. The three tiers above it — `05-undergraduate.md`, `06-graduate.md`, `07-post-graduate.md` — are sourced elsewhere. So is the working-adult register, which is now the unmarked default rather than a module: load a `domain/` genre module with nothing from `domain/education-level/` beside it and you are writing for an adult at work.
 
@@ -57,7 +76,7 @@ Four nested components, broad to narrow. [[p. 25]]
 
 The four domains collapse into two modes. **Interpretive** covers listening, reading, and viewing. **Expressive** covers speaking, writing, and representing. Viewing and representing are in there deliberately: diagrams, labels, and layout count as language. [[p. 30-31]]
 
-For `emerson-press`, the expressive expectations matter most — they describe constructing a text. The interpretive ones tell you what a reader at that band can extract, which is what an education module is really calibrating against. Interpretive descriptors sit consistently one step ahead of expressive descriptors at the same level, so comprehension outpaces production at every band.
+Expressive expectations concern producing language; interpretive expectations concern receiving it. Neither alone validates a prompt for a particular reader. The retained mappings below vary by band and mode and do not support a uniform one-step offset between comprehension and production.
 
 ### Reference codes
 
@@ -87,7 +106,7 @@ Choosing among everyday, cross-disciplinary, and technical registers, and using 
 
 ### Why five criteria beats one number
 
-Density and grammatical complexity move independently, and they trade off. Science writing runs lexically dense and grammatically simple. Literary writing runs grammatically complex and lexically sparse. Spoken language is more grammatically intricate than written language. [[p. 256]] A single readability score cannot represent that; five criteria can, and it is why `domain/education-level/` modules flag over-reach and under-reach separately.
+Density and clause complexity are distinct features. The prior notes on page 256 discuss differences across registers; they do not establish universal rankings of all science, literary, spoken and written language. The house use of several criteria is a way to inspect different burdens, not a measured guarantee of comprehension.
 
 ## Key Language Uses
 
@@ -149,7 +168,7 @@ A noun group is a noun plus what modifies it. Academic prose is hard largely bec
 
 The progression is legible, and this instance is built for this dossier rather than taken from the framework: `kite` → `the kite` → `the torn kite` → `the torn, bright kite` → `the torn, bright, hand-stitched paper kite that snagged on the fence`.
 
-Lexical density rises with the count of content words inside the group. [[p. 257]] This is the single most reliable knob for calibration, and the one LLM prose over-turns by default.
+The notes on page 257 connect lexical density with information packed into groups. Inspecting that packing can reveal a reader burden, but no evidence here establishes it as the single most reliable calibration control or a universal model failure.
 
 ### Nominalization
 
@@ -158,9 +177,9 @@ Turning an event or quality into a thing: `evaporate` → `evaporation`, `persec
 Two effects, and they pull opposite ways.
 
 - It condenses. `The glacier is retreating` becomes `this retreat`, and the next sentence can build on it. (Invented here; WIDA's own worked case is not reproduced.)
-- It deletes the actor. `Mistakes were made` has a cousin in every nominalization: emphasis lands on the result and whoever caused it disappears.
+- It can omit an actor, but need not: *the council's decision* retains one. Inspect whether agency is needed and supplied rather than treating every nominalization as evasion.
 
-WIDA describes the passive voice in exactly the same terms and for the same reasons — it makes the recipient the subject, which keeps attention on a result, avoids pinning blame, or leaves the actor unnamed. [[p. 258]] The two devices are one habit with two grammatical forms, and a module that flags agentless passives without flagging actor-deleting nominalizations has caught half the failure.
+The passive-voice notes describe choices about emphasis and agency. [[p. 258]] Passive voice and nominalization are different grammatical devices, not evidence of one authorial motive. Both can be useful; an unknown actor must not be invented to replace either.
 
 Useful to `core/voice.md` and `core/accuracy.md`: neither device is a defect, and each is a trade. Flag it when the actor matters and has vanished.
 
@@ -170,11 +189,11 @@ English written prose builds by putting known information at the front of a sent
 
 > Waves along this coast **erode** the cliff face every winter. That **erosion** is what pushed the lighthouse inland twice.
 
-This is the mechanism behind prose that flows, and its absence is why list-shaped LLM paragraphs feel like they do not connect. Resist attaching a single proficiency level to it — where it lands moves sharply across bands and modes, as the caution below shows. What holds everywhere is that prose which never uses it reads flat regardless of vocabulary.
+This is one useful cohesion pattern, illustrated here with invented sentences. It is not the only way prose connects, and its absence does not identify AI authorship. Do not attach a single universal proficiency level to it; the retained band/mode mappings differ.
 
 ## Grade-Band Profiles
 
-Each profile gives the developmental snapshot, which Key Language Uses carry the load, and the language features WIDA actually names at that band. Features are cumulative — each band assumes everything below it.
+Each profile summarizes retained notes about selected classroom expectations. The features are not onset ages, hard ceilings or guarantees of what an individual reader can do. **House scaffold** paragraphs below are editorial adaptations, not WIDA requirements.
 
 ### Kindergarten [[p. 43-62]]
 
@@ -182,7 +201,7 @@ Each profile gives the developmental snapshot, which Key Language Uses carry the
 
 **Prominent uses.** Language arts: Narrate, Inform. Mathematics: Inform. Science: Inform, Explain. Social studies: Inform. No Argue expectations outside the social-and-instructional standard.
 
-**What the reader can do.** Identify key details, characters, settings, and major events. Identify a main topic. Ask and answer questions about unfamiliar words and about described attributes. Determine what a text is about.
+**Interpretive goals in the retained notes.** Identify key details, characters, settings, and major events. Identify a main topic. Ask and answer questions about unfamiliar words and about described attributes. Determine what a text is about.
 
 **Discourse.** Pictures, words, and a title carry the topic. Pronouns and renaming reference one entity across a short text (`the girl = she = Nancy`). Connectors establish sequence: `then`, `after`, `and`.
 
@@ -190,7 +209,7 @@ Each profile gives the developmental snapshot, which Key Language Uses carry the
 
 **Word/phrase.** Nouns to label. Verbs for action, feeling, and behavior. Prepositional phrases for where. Adjectives for one added detail. Relating verbs `be` and `have` to define or classify. Sequential signals `first`, `second`, `then`, `last`.
 
-**Calibration.** One idea per sentence. Name the topic and keep naming it. Anchor every abstraction to something observable.
+**House scaffold.** Make the topic and its connections visible. Use concrete examples when helpful; keep a multi-clause sentence when the reader can follow its relationship.
 
 ### Grade 1 [[p. 63-84]]
 
@@ -198,7 +217,7 @@ Each profile gives the developmental snapshot, which Key Language Uses carry the
 
 **Prominent uses.** Adds Argue in social studies. Language arts still Narrate and Inform.
 
-**What the reader can do.** Identify a central message from key details. See how a character's attributes and actions contribute to an event. Notice words that suggest feeling or appeal to the senses. Define a topic, not just name it.
+**Interpretive goals in the retained notes.** Identify a central message from key details. See how a character's attributes and actions contribute to an event. Notice words that suggest feeling or appeal to the senses. Define a topic, not just name it.
 
 **New at this band.**
 
@@ -213,7 +232,7 @@ Each profile gives the developmental snapshot, which Key Language Uses carry the
 - Declarative statements that present a conclusion.
 - A summary statement that restates the position.
 
-**Calibration.** Two clauses maximum, joined by one connector. A claim can now carry one reason. Technical vocabulary works when the sentence defines it on the spot.
+**House scaffold.** Make reasons and conditional relationships explicit. Define an unfamiliar technical term where useful. Split a sentence when comprehension improves, not because it crosses a numerical clause limit.
 
 ### Grades 2-3 [[p. 85-106]]
 
@@ -221,7 +240,7 @@ Each profile gives the developmental snapshot, which Key Language Uses carry the
 
 **Prominent uses.** Language arts: Narrate, Inform. Mathematics, science, and social studies all shift to Explain and Argue. This is the band where explanation and argument arrive across the curriculum.
 
-**What the reader can do.** Identify a central message and a main idea. Distinguish literal from nonliteral language. Describe relationships between a series of events, ideas, or procedural steps.
+**Interpretive goals in the retained notes.** Identify a central message and a main idea. Distinguish literal from nonliteral language. Describe relationships between a series of events, ideas, or procedural steps.
 
 **New at this band.**
 
@@ -238,7 +257,7 @@ Each profile gives the developmental snapshot, which Key Language Uses carry the
 - Statements that disagree or counter a claim.
 - Evaluative language to judge behavior or summarize an event.
 
-**Calibration.** Coherence across a multi-paragraph text is now the goal, not just within a sentence. Abstraction works when concrete instances have built it first. Neutral register becomes a distinct choice.
+**House scaffold.** Practice coherence across paragraphs and connect unfamiliar abstractions to examples. Choose a neutral register when the task needs it, not as a ban on other voices.
 
 ### Grades 4-5 [[p. 107-140]]
 
@@ -246,7 +265,7 @@ Each profile gives the developmental snapshot, which Key Language Uses carry the
 
 **Prominent uses.** Language arts adds Argue to Narrate and Inform — all three. Mathematics, science, and social studies: Explain and Argue.
 
-**What the reader can do.** Identify a theme from details. Analyze how characters develop across event sequences. Handle figurative language including metaphor and simile. Summarize main ideas. Evaluate the impact of word choice. Analyze competing points of view on the same event. Evaluate how details, reasons, and evidence support a point.
+**Interpretive goals in the retained notes.** Identify a theme from details. Analyze how characters develop across event sequences. Handle figurative language including metaphor and simile. Summarize main ideas. Evaluate the impact of word choice. Analyze competing points of view on the same event. Evaluate how details, reasons, and evidence support a point.
 
 **New at this band.**
 
@@ -264,15 +283,15 @@ Each profile gives the developmental snapshot, which Key Language Uses carry the
 - Connectors signaling an alternative view: `one way`, `another way`, `on the other hand`.
 - Summary statements that reiterate or call for a response.
 
-**Calibration.** One embedded clause per sentence, not two. Stance is now explicit — objective, evaluative, or personal — and should be consistent within a piece. An actual sentence must link the evidence to the claim.
+**House scaffold.** Make stance and evidence relationships explicit. Keep useful embedded clauses when comprehensible; there is no one-clause ceiling. Name sources and discuss relevant credibility questions at an accessible level.
 
 ### Grades 6-8 [[p. 141-178]]
 
-**Snapshot.** Counterclaims arrive. So does the ability to adjust the strength of a statement rather than only its content.
+**Snapshot.** The retained argument tasks emphasize counterclaims and calibrated strength. They do not establish that these abilities first appear in this band or that every task requires opposition.
 
 **Prominent uses.** Language arts: Narrate, Inform, Argue. Mathematics, science, social studies: Explain and Argue.
 
-**What the reader can do.** Track a theme developing over a whole text. Analyze how a character develops in relation to events or dialogue. Evaluate the impact of word choice on meaning and tone. Summarize a central idea distinct from prior belief. Analyze how an author handles conflicting evidence. Evaluate the relevance and sufficiency of evidence and the validity of reasoning.
+**Interpretive goals in the retained notes.** Track a theme developing over a whole text. Analyze how a character develops in relation to events or dialogue. Evaluate the impact of word choice on meaning and tone. Summarize a central idea distinct from prior belief. Analyze how an author handles conflicting evidence. Evaluate the relevance and sufficiency of evidence and the validity of reasoning.
 
 **New at this band.**
 
@@ -290,7 +309,7 @@ Each profile gives the developmental snapshot, which Key Language Uses carry the
 - Pace control in narrative; tension and suspense.
 - Summary statements that restate a claim or call for action.
 
-**Calibration.** Two layers of clause nesting is the ceiling. A claim without a counterclaim reads as under-reach at this band. Technical terms are fine when cued. Stacked nominalization is the characteristic over-reach.
+**House scaffold.** Explain genuine competing views when relevant, without inventing opposition to a settled fact. Support needed terminology and simplify burdensome nesting according to the reader, not a two-layer ceiling.
 
 ### Grades 9-12 [[p. 179-216]]
 
@@ -298,7 +317,7 @@ Each profile gives the developmental snapshot, which Key Language Uses carry the
 
 **Prominent uses.** Same distribution as 6-8, with a marked rise in what Argue demands.
 
-**What the reader can do.** Track themes across a text. Analyze how authorial choices about character relate to setting, sequence, and context. Evaluate the impact of word choice on meaning, tone, and explicit versus implicit point of view. Summarize central ideas of primary and secondary sources. Analyze rhetoric used to advance a purpose. Evaluate and corroborate relevance and sufficiency of evidence and validity of reasoning.
+**Interpretive goals in the retained notes.** Track themes across a text. Analyze how authorial choices about character relate to setting, sequence, and context. Evaluate the impact of word choice on meaning, tone, and explicit versus implicit point of view. Summarize central ideas of primary and secondary sources. Analyze rhetoric used to advance a purpose. Evaluate and corroborate relevance and sufficiency of evidence and validity of reasoning.
 
 **New at this band.**
 
@@ -314,7 +333,7 @@ Each profile gives the developmental snapshot, which Key Language Uses carry the
 - Anticipating what evidence a given audience will require.
 - Wording pitched away from either pole, so a claim reads as considered rather than partisan.
 
-**Calibration.** This band's characteristic failure is dissertation cosplay — field jargon without context, stacked nominalizations, borrowed authority. Its other failure is hedging everything into mush. WIDA's framing is useful here, restated: the goal is a neutral stance reached by keeping the wording off both poles, not by refusing to claim anything.
+**House scaffold.** Explain warrants, examine relevant sources and calibrate conclusions. Avoid borrowed authority and decorative method language. Neutrality does not require a midpoint between claims or suppression of a supported judgment.
 
 ## The Six-Level Continuum
 
@@ -322,7 +341,7 @@ Six proficiency levels, each cumulative — level 4 contains everything through 
 
 One caution belongs beside that and gets dropped constantly: **this is not a strict ladder.** How a learner actually moves depends on how familiar the topic, the audience, and the situation are, so a path through the levels can wander rather than climb evenly. [[p. 33-34]] A writer reaching for a rung is describing a text, not a trajectory.
 
-Read the following as the shape of how complexity gets built, not as targets. This is the expressive continuum for grades 9-12, which is what writing calibration cares about most. [[p. 351-352]]
+Read the following as a retained summary of the grades 9-12 expressive table, not a reading-level target or a fresh transcription check. [[p. 351-352]] It does not establish that production descriptors are the best predictor of reader comprehension.
 
 | Criterion | L1 | L2 | L3 | L4 | L5 | L6 |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -334,9 +353,9 @@ Read the following as the shape of how complexity gets built, not as targets. Th
 
 Four things worth carrying into `core/`:
 
-- **Genre-specific organization arrives before complex sentences do.** Genre shape is settled at level 3; compound-and-complex sentences arrive at level 4. Knowing the shape of the thing precedes being able to build long sentences. Prose that has sentence machinery but no genre shape is inverted, and that is exactly the failure mode of generated text.
+- **Organization and sentence complexity are separate criteria.** Their placement in this table does not establish a universal psychological sequence or a mechanism of generated-text failure.
 - **Nominalization is a level-4 move** in this table. It is not sophistication by default. It is a specific tool for condensing given information so a sentence can carry new information.
-- **Level 6 is defined by flexibility, not by maximum complexity.** The top of the scale is choosing the simple sentence when the simple sentence is right. This is the single most useful thing WIDA contributes to `core/restraint.md`.
+- **Flexibility is not maximum complexity.** A simple sentence can be an appropriate advanced choice. This supports an editorial analogy, not a measured claim about this prompt library.
 - **The levels are re-scaled per band and per mode, not absolute.** WIDA prints a separate table for every grade band in each of the two modes, and a feature moves between columns across them. Given/new is the sharpest case, and it descends one step per band inside the expressive tables: level 5 at grades 2-3 [[p. 341]], level 4 at grades 4-5 [[p. 343-344]], level 3 at grades 6-8 [[p. 347-348]], level 2 at grades 9-12 [[p. 351-352]]. In the interpretive tables it sits at level 5 for grades 6-8 [[p. 345-346]] and level 4 for grades 9-12 [[p. 349-350]], and it does not appear in the grades 4-5 interpretive cohesion row at all [[p. 342]]. So a level number means nothing without its band and its mode, and the ordering of features within one table matters more than the number attached to any of them.
 
 ## Social and Instructional Language
@@ -399,10 +418,10 @@ Terms WIDA uses precisely, worth using the same way in module prose. All of thes
 
 | Module | WIDA bands | What it draws |
 | --- | --- | --- |
-| `domain/education-level/01-elementary-lower.md` | K, 1, 2-3 | One-idea sentences; concrete anchors; sequence and cause words; opinion with one reason |
-| `domain/education-level/02-elementary-upper.md` | 4-5 | One embedded clause; explicit stance; evidence linked to claim by a sentence; hedging arrives |
-| `domain/education-level/03-middle-school.md` | 6-8 | Counterclaims; graduation of intensity; two-layer nesting ceiling; nominalization as condensing |
-| `domain/education-level/04-high-school.md` | 9-12 | Warrants; refutation; pace control; neutral stance via wording kept off both poles |
+| `domain/education-level/01-elementary-lower.md` | K, 1, 2-3 | Concrete anchors; explicit sequence and reasons; source naming when useful |
+| `domain/education-level/02-elementary-upper.md` | 4-5 | Clear stance and evidence relationships; supported unfamiliar terms; no clause ceiling |
+| `domain/education-level/03-middle-school.md` | 6-8 | Genuine competing views where relevant; calibrated claims; source evaluation without a nesting quota |
+| `domain/education-level/04-high-school.md` | 9-12 | Warrants; relevant source comparison; purposeful pace and evidence-calibrated stance |
 | `core/rhythm.md` | continuum | Sentence-type variety as a deliberate effect, not a metric |
 | `core/formatting.md` | discourse organization | Headings and visuals as language; genre-specific organizational patterns |
 | `core/voice.md` | word/phrase, verb types | Doing verbs over relating verbs; nominalization deleting the actor |
@@ -411,7 +430,7 @@ Terms WIDA uses precisely, worth using the same way in module prose. All of thes
 
 The last three rows are available rather than drawn. `voice`, `restraint` and `accuracy` reach the same conclusions from the anti-slop evidence and cite that instead, so this dossier does not claim them in `consumers:` and they do not carry it in `evidence:`. They are listed because a future revision of any of the three should read these bands before restating the rule from scratch.
 
-The three tiers above grade 12 — `05-undergraduate.md`, `06-graduate.md`, `07-post-graduate.md` — are outside this source. `05-undergraduate.md` cites the AAC&U VALUE rubric for written communication and the CWPA Outcomes Statement instead; `06-graduate.md` and `07-post-graduate.md` rest on the AP dossier and, for 07, on the slop research. No tier in the ladder cites ISO 24495-1 or plain-language guidance, and none should: that anchor served the working-adult register, which is no longer a module at all. An adult at work is what a `domain/` genre module assumes when nothing from `domain/education-level/` loads beside it. The anchor moved down a layer with the register rather than lapsing with the module: `domain/legal.md` now cites ISO 24495-2:2025 on legal communication and `domain/medical.md` cites ISO 24495-3:2026 on science writing for non-specialists. Both sit in the module bodies as bare number, title and date. Neither is backed by a dossier here and neither should be, because nobody has read the standards' text.
+The three academic presets above grade 12 are outside WIDA's scope. Their research-writing checks are identified as house guidance; an AP link supports mechanics, not a university's assignment requirements. Reader-oriented plain-language principles can be useful at any educational stage. Public ISO summaries can inform a scope discussion without pretending that the normative text was read, and science communication must not be conflated with specialist research-paper requirements.
 
 ## What This Source Does Not License
 
@@ -425,4 +444,4 @@ WIDA states its own limits, and they transfer cleanly.
 
 One further limit is this repo's rather than WIDA's: do not cite a proficiency level for a grade-band rule. If a feature appears at both a grade band and a PL, cite the grade band. The PL is a different axis and not a target.
 
-The `emerson-press` translation: a grade band describes what a reader can track, not a ceiling on what they may be told. An education module adjusts the machinery of the prose — clause depth, noun-group density, connector explicitness — and never the ambition of the content.
+The `emerson-press` translation is a house hypothesis about scaffolding, not a validated measure of what a reader can track. Adjust density, clause relationships and explicit support to the actual reader. Never make a grade label a ceiling on sources, syntax, ideas or the standard of truth.

@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "citation-mla-missing-container",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Prepare the known parts of this fictional source for an MLA works-cited list in a teaching anthology. Identify missing date and container information in an editorial note rather than inventing it. A URL does not change the source from a journal article into a standalone web essay. No source retrieval is authorized.",
+  "input": "Public Reading Workshop. \"Ways of Naming a Shelf.\" Journal article, date not supplied. https://example.org/essays/naming-a-shelf.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional corporate author is Public Reading Workshop."},
+    {"id": "f2", "text": "The article's title is Ways of Naming a Shelf."},
+    {"id": "f3", "text": "The source is a journal article."},
+    {"id": "f4", "text": "The supplied URL is https://example.org/essays/naming-a-shelf."},
+    {"id": "f5", "text": "The publication date is not supplied."},
+    {"id": "f6", "text": "The journal's title and publication locators are not supplied."}
+  ],
+  "modules": ["domain/non-fiction.md", "citation/mla9.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "An estimated publication year, invented journal title, volume, issue, pages, or DOI.",
+      "A retrieval date, archive URL, or claim that the URL was accessed.",
+      "A standalone website or proceedings container substituted for the journal article."
+    ],
+    "preserve": [
+      "The known author, article title, source type, and URL.",
+      "Missing information presented as a limitation rather than completed from plausibility.",
+      "Reference mechanics applied only to the reference."
+    ],
+    "expected_action": "flag_missing_evidence"
+  }
+}

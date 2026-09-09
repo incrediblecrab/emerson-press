@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "cross-source-correction-note",
+  "split": "tuning",
+  "operation": "edit",
+  "task": "Edit this short logistics note for a classroom assistant, using the supplied exact worksheet quantities. This is ordinary staff help, not a student academic assignment. Correct the arithmetic against its identified basis and briefly disclose the correction outside the note. Do not invent measurements, statistical uncertainty, or a claim that an outside system was checked.",
+  "input": "For the worksheet, each tray holds 6 cards. With 4 trays, the class will need 10 cards in total.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The worksheet defines 4 trays."},
+    {"id": "f2", "text": "Each tray is to contain 6 cards."},
+    {"id": "f3", "text": "The required total is 24 cards, calculated as 4 multiplied by 6."},
+    {"id": "f4", "text": "These are exact planned quantities in a synthetic exercise, not sample estimates."}
+  ],
+  "modules": ["domain/general.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3"],
+    "forbidden_additions": [
+      "The incorrect total of 10 retained as the required quantity.",
+      "Additional trays, spare-card allowances, or a different per-tray quantity.",
+      "A confidence interval, measured benchmark, or claimed outside verification."
+    ],
+    "preserve": [
+      "Cards and trays as distinct units and multiplication as the identified correction basis.",
+      "Exact planned quantities rather than observed sample results.",
+      "The corrected note separated from its brief change disclosure."
+    ],
+    "expected_action": "edit"
+  }
+}

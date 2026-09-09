@@ -1,28 +1,32 @@
 ---
 id: citation.chicago18
 layer: citation
-version: 1.0.1
+version: 1.1.0
 status: draft
-budget: 1102
-tokens: 1102
+budget: 1316
+tokens: 1316
 edition: 18th (Sept. 2024)
+evidence:
+  - sources/citation-authority.md
 ---
 
 # Citation: Chicago 18
 
+Use this adapter where formal Chicago citations are requested, subject to the venue's selected system and adopted rules. Preserve source identity and supplied bibliographic fields; incomplete records stay visibly incomplete. Selected public guidance was checked, not every rule in the full manual. The source dossier identifies that scope; formatting alone does not establish retrieval or support.
+
 ## Detect
 
 - **The two systems mixed.** Notes-bibliography and author-date are alternatives, not a menu. A superscript note beside a `(Ali 2024)` parenthetical means the document has not chosen.
-- **A place of publication.** `Chicago: Winslow Press, 2024`. The 18th edition dropped it. Books published before 1900 are the exception, and there the place stands in for the publisher.
-- **A 3-em dash for a repeated author.** The 18th edition reversed this: the name is now repeated in full in every entry.
-- **Seventeenth-edition author counts.** The thresholds all moved. A bibliography now lists up to six and truncates to the first three; a note or an author-date parenthetical lists up to two and truncates to the first one.
+- **A modern book citation called incomplete solely because it lacks a publication place.** Place is no longer required; its presence is not automatically an error.
+- **A repeated-author convention changed without checking the venue.** This adapter prefers repeated names for readability, not automatic rejection of every dash-form entry.
+- **Author counts copied from a different edition or citation context.** The public journal-article guidance names up to six in a bibliography and up to two in a note or author-date in-text citation.
 - **Three authors spelled out in a note.** That was the old rule. Three is already `et al.` territory.
-- **`Ibid.`** Not forbidden, but no longer the preferred form — a shortened note does the work. Flag it as dated practice, not as an error.
+- **`Ibid.` with an unclear referent.** A shortened note is a useful default, but an unambiguous, venue-accepted `Ibid.` is not itself an error.
 - **A full note repeated** where a shortened note belongs.
-- **An access date on a dated source**, or on anything carrying a DOI.
+- **An invented access date**, or a claim that a source was consulted when it was not.
 - **A bare `doi:` prefix.** Chicago takes `https://doi.org/`.
 - **A missing final period after a URL or DOI.** Chicago's examples close the citation with ordinary terminal punctuation.
-- **A page range demanded on a chapter in an edited book.** The 18th edition made it optional in the bibliography, so its absence is no longer a gap. Journal articles still require one.
+- **A page range demanded on a chapter in an edited book.** It is no longer required in a bibliography; a journal article normally gives its whole page range or article identifier when applicable.
 - **`headline style` or `sentence style`.** Renamed to title case and sentence case.
 - **A four-letter preposition capitalized in a title.** The cutoff moved: five letters and up now capitalize.
 - **A periodical's official `The` mishandled.** In running text, keep and capitalize it when it is part of the masthead; in citations, it may be omitted.
@@ -33,34 +37,38 @@ edition: 18th (Sept. 2024)
 
 Choose a system first. Notes-bibliography suits history, literature and the arts: a superscript numeral in the text, a note carrying the citation, and usually a bibliography behind it. Author-date suits the sciences and social sciences: `(Ali 2024, 42)` in the text against a reference list.
 
-In the notes system the first note gives the source in full and every note after it is short — author's surname, shortened title, page.
+In the ordinary notes system, give a full first citation and shortened later notes — author's surname, shortened title and relevant locator. Follow a venue's explicitly different arrangement.
 
 ```
 1. Firstname Lastname, Title of Book (Publisher, Year), page.
 2. Lastname, Shortened Title, page.
 ```
 
-Note form and bibliography form differ in punctuation, not in content. Notes run on commas with the publication facts in parentheses; bibliography entries break on periods and drop the parentheses. The bibliography inverts the first author's name for alphabetizing and leaves the rest in normal order.
+Notes and bibliography entries identify the same source but can differ in author counts and locator scope as well as punctuation. A journal-article note points to the cited pages; its bibliography entry normally gives the whole article's page range or article identifier. Notes run on commas with the publication facts in parentheses; bibliography entries break on periods and drop the parentheses. Invert a Western-order first author's name for alphabetizing, but preserve names whose convention already places the family name first.
 
 ```
 Lastname, Firstname. Title of Book. Publisher, Year.
 ```
 
-Count authors by context. A bibliography or reference list names up to six; at seven or more it gives the first three and `et al.` A note or an author-date parenthetical names up to two; at three or more it gives the first and `et al.` These numbers all changed in the 18th edition — the old bibliography rule ran to ten.
+Count authors by context. The public journal-article models name up to six in the bibliography or reference list; at seven or more they give the first three and `et al.` A note or author-date in-text citation names up to two; at three or more it gives the first and `et al.` Check the relevant entry for unusual source types and exceptions.
 
-Give the publisher and the year. No city for modern books. For books published before 1900, the place may replace the publisher: `New York, 1851`. Use title case for English titles, capitalizing prepositions of five letters or more; italics for whole works and quotation marks for parts. In running text, keep an official leading `The` in a periodical title; in citations it may be omitted. Website names now usually italicize where the site belongs to a category that would italicize in print.
+Give the publisher and year for an ordinary modern book; publication place is not required, rather than categorically forbidden. For books published before 1900, consult the applicable place-instead-of-publisher model. Use title case for English titles, italics for whole works and quotation marks for parts. The working title-case convention here capitalizes prepositions of five letters or more; check the adopted rule before enforcing an exception. In running text, preserve a periodical's official leading `The`; source-specific citation models may omit it.
 
-Prefer a DOI in resolver form, then a stable URL, and close the citation with a final period. Add an access date only where the source carries no date of publication or revision.
+For a source consulted online, prefer an established DOI in resolver form or another appropriate stable URL, and close the citation with a final period. The public web-page model calls for an actual access date when no publication or revision date is given. A venue may impose additional requirements. Do not invent any date or archive link.
 
-Block prose of roughly a hundred words or more, or five lines and up, and verse of two lines and up: indented, no quotation marks, citation after the final punctuation.
+Use block quotation treatment for longer extracts when the applicable manual or venue calls for it. The word and line thresholds were not verified in this review; do not present a single universal cutoff as established. Preserve the quoted text and apply the selected system's citation placement.
 
-Repeat an author's name in consecutive bibliography entries. The 3-em dash that stood in for it through the 17th edition is no longer preferred.
+Prefer repeating an author's name in consecutive bibliography entries as this adapter's accessible working default. If the venue adopts a dash convention, follow it; this preference is not a reason to label every older bibliography wrong.
 
 For self-published books, use `published by the author` in bibliography form and `pub. by author` in a note. For archival and manuscript material, lead with the item and date, then name the collection, box or folder when useful, and repository; do not pretend it is a published book. For translations, editions, reprints, multivolume works, dissertations, interviews, scores, recordings and exhibition catalogs, choose the matching Chicago model before smoothing the prose.
 
+For AI output, establish what was generated, by which tool, when, and whether a real retrievable record exists. Current AI-specific details were not verified from the full manual here; do not import APA or MLA's author/container rules as Chicago's. Check the applicable citation and disclosure policy, and do not invent a share URL or make a private exchange public without permission.
+
 ## Examples
 
-**Place of publication, dropped in the 18th edition**
+**Optional publication place**
+
+**Supplied facts:** This fictional modern book has the author, title, publisher, city and year shown. The venue requests the shorter public Chicago 18 book model. Omitting the city meets that request; a city is not inherently false or forbidden.
 
 > Ali, Nadia. *The Unreliable Archive*. Chicago: Winslow Press, 2024.
 
@@ -68,17 +76,23 @@ For self-published books, use `published by the author` in bibliography form and
 
 **Author count in a note — the threshold is now two**
 
+**Supplied facts:** The fictional book has the three named authors in that order, the publisher and year shown, and a cited passage on page 42. For this exercise the venue explicitly applies the first-author-plus-`et al.` note form.
+
 > 1. Nadia Ali, Claire Moreau, and Ifeoma Okonkwo, *The Unreliable Archive* (Winslow Press, 2024), 42.
 
 > 1. Nadia Ali et al., *The Unreliable Archive* (Winslow Press, 2024), 42.
 
 **A repeated full note**
 
+**Supplied facts:** Notes 4 and 5 refer to the same fictional book by Nadia Ali. Page 42 and page 96 are both supplied locators, and no other work makes the shortened title ambiguous.
+
 > 4. Nadia Ali, *The Unreliable Archive* (Winslow Press, 2024), 42. 5. Nadia Ali, *The Unreliable Archive* (Winslow Press, 2024), 96.
 
 > 4. Nadia Ali, *The Unreliable Archive* (Winslow Press, 2024), 42. 5. Ali, *Unreliable Archive*, 96.
 
-**The 3-em dash, retired**
+**Repeating an author's name**
+
+**Supplied facts:** Nadia Ali wrote both fictional books, with the titles, publisher and dates shown. The task requests this adapter's repeated-name preference while preserving the supplied entry order.
 
 > Ali, Nadia. *The Unreliable Archive*. Winslow Press, 2024. ———. *Provenance and Its Discontents*. Winslow Press, 2019.
 
@@ -86,12 +100,16 @@ For self-published books, use `published by the author` in bibliography form and
 
 **Title case cutoff**
 
+**Supplied facts:** These are fictional English titles, not quoted typography or titles in another language. The exercise explicitly requests the working convention that lowercases the four-letter preposition `with` and capitalizes the five-letter preposition `about`.
+
 > *A Season With the Cartographers* and *Notes about the Winslow Archive*
 
 > *A Season with the Cartographers* and *Notes About the Winslow Archive*
 
-**Generative AI.** Chicago credits the tool itself in the author position — unlike APA, which credits the company, and MLA, which makes the tool a container. Prefer a note. Chicago permits a bibliography entry only where a publicly shareable link to the exchange exists; without one the output is personal communication and stays in the note. The company follows the prompt and precedes the date. Crediting the company as author is APA's move, and in Chicago it costs the company its own slot before the date.
+**Generative AI with an unverified public record**
+
+**Supplied facts:** The record supplies ChatGPT, OpenAI, the quoted prompt and August 14, 2025. The URL below is a placeholder, not an actual share link. No permission to publish the conversation or source text establishing the current Chicago AI format is supplied.
 
 > 1. OpenAI, response to "Describe the provenance of the Winslow archive," August 14, 2025, https://chatgpt.com/share/abcd-1234.
 
-> 1. ChatGPT, response to "Describe the provenance of the Winslow archive," OpenAI, August 14, 2025, https://chatgpt.com/share/abcd-1234.
+> Citation incomplete: remove the placeholder URL and preserve the known tool, provider, prompt and date in the editing record. Confirm the applicable Chicago/venue treatment before completing the citation; do not manufacture a publicly retrievable exchange.
