@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "technical-ui-chart-summary-draft",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "Draft the Volunteer Engagement section of a fictional community organization's annual report web page. Introduce the accompanying bar chart, describe the quarterly distribution with all four values, note the goal-attainment fact, and provide context about volunteer and project counts. Do not attribute quarterly variation or goal attainment to specific causes not in the facts. Target 300–450 words.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "The section heading is Volunteer Engagement and it appears in the 2023 Annual Report of Riverside Commons."
+    },
+    {
+      "id": "f2",
+      "text": "Quarterly volunteer hours: Q1 840, Q2 1,120, Q3 1,350, Q4 1,040."
+    },
+    {
+      "id": "f3",
+      "text": "The 2023 total is 4,350 volunteer hours."
+    },
+    {
+      "id": "f4",
+      "text": "312 individual volunteers contributed hours in 2023."
+    },
+    {
+      "id": "f5",
+      "text": "Volunteers completed 88 distinct projects across the four quarters."
+    },
+    {
+      "id": "f6",
+      "text": "The organisation's stated goal for 2023 was 4,000 volunteer hours."
+    },
+    {
+      "id": "f7",
+      "text": "The actual total of 4,350 hours exceeded the goal by 350 hours."
+    },
+    {
+      "id": "f8",
+      "text": "Q3 was the highest quarter; the report does not attribute this to any specific cause."
+    },
+    {
+      "id": "f9",
+      "text": "No comparison to prior years is available in the supplied data."
+    },
+    {
+      "id": "f10",
+      "text": "The bar chart is embedded in the annual report web page, not a printed document."
+    }
+  ],
+  "modules": [
+    "domain/general.md",
+    "user-interface/website.md",
+    "user-interface/charts.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f7",
+      "f8"
+    ],
+    "forbidden_additions": [
+      "A year-over-year comparison not in the supplied data.",
+      "A stated reason for Q3 peak or goal attainment not in the facts.",
+      "A projected volunteer figure."
+    ],
+    "preserve": [
+      "All four quarterly hour counts.",
+      "4,350 total hours from 312 volunteers across 88 projects.",
+      "Goal 4,000 hours; actual 4,350; exceeded by 350.",
+      "Q3 as highest quarter without attributed cause.",
+      "Descriptive section that introduces the chart without invented interpretation."
+    ],
+    "expected_action": "draft"
+  }
+}

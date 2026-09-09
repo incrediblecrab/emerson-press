@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "public-general-winter-greeting",
+  "split": "tuning",
+  "operation": "edit",
+  "task": "Copyedit this fictional garden association's end-of-season letter only if an actual error needs attention. Its gentle formality and seasonal metaphor are deliberate. Keep the informative details, the thanks, and the existing length; do not modernise the voice or rearrange good prose merely to make a change.",
+  "input": "Dear neighbours,\n\nThe beds now rest, and our last workday before the winter closure is complete. The tools have been washed, the seed trays dried, and the shed put in order. Thank you to everyone who helped with that quiet work. The gate will remain closed until spring. We will post the reopening date when it has been agreed and send members the plan for next season.\n\nWith thanks,\nThe garden committee",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional garden's final workday before winter closure is complete."},
+    {"id": "f2", "text": "The tools have been washed."},
+    {"id": "f3", "text": "The seed trays have been dried."},
+    {"id": "f4", "text": "The shed has been put in order."},
+    {"id": "f5", "text": "The gate will remain closed until spring."},
+    {"id": "f6", "text": "The committee will post the reopening date once it has been agreed."},
+    {"id": "f7", "text": "The committee will send members the plan for next season."}
+  ],
+  "modules": ["domain/general.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f6", "f7"],
+    "forbidden_additions": [
+      "A fixed reopening date, year-round access, or an unprovided workday total.",
+      "Claims about record productivity, harvest size, or every member's participation."
+    ],
+    "preserve": [
+      "The deliberate seasonal metaphor and courteous communal voice.",
+      "The unfinished status of choosing a reopening date.",
+      "The already effective letter without cosmetic rewriting."
+    ],
+    "expected_action": "no_change"
+  }
+}

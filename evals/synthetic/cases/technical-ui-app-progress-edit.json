@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "technical-ui-app-progress-edit",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Edit this progress indicator label and its accessible label so they accurately describe the upload operation and provide a meaningful description. The current accessible label is too generic; replace it with one that describes the specific operation per the supplied facts.",
+  "input": "Visible text: \"Processing... please wait.\"\nAccessible label: \"Loading\"",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The operation is uploading a file to the server."},
+    {"id": "f2", "text": "The progress indicator shows upload progress as a percentage."},
+    {"id": "f3", "text": "The accessible label must describe the uploading operation, not say only Loading."},
+    {"id": "f4", "text": "The upload percentage is shown numerically in the visible UI."}
+  ],
+  "modules": ["domain/general.md", "user-interface/applications.md", "user-interface/accessibility.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "A generic Loading accessible label when facts require an upload-specific description.",
+      "A Processing visible label when the operation is specifically uploading.",
+      "An invented file name or file size."
+    ],
+    "preserve": [
+      "Uploading as the specific operation in both visible and accessible text.",
+      "Percentage progress described as visible.",
+      "A specific accessible label for the upload operation."
+    ],
+    "expected_action": "edit"
+  }
+}

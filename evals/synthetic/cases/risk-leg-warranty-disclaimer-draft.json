@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "risk-leg-warranty-disclaimer-draft",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "Draft a warranty-disclaimer clause for a fictional software-licensing agreement using the supplied facts. Do not add warranty exceptions, jurisdiction-specific limitations, or licensee-name references not in the facts.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional licensor is Sorvex Technologies Inc."},
+    {"id": "f2", "text": "The software is provided as-is, without warranty of any kind."},
+    {"id": "f3", "text": "Sorvex expressly disclaims all implied warranties, including merchantability and fitness for a particular purpose."},
+    {"id": "f4", "text": "The disclaimer applies to the extent permitted by applicable law."}
+  ],
+  "modules": ["domain/legal.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "A list of jurisdictions where the disclaimer is or is not valid.",
+      "A remedy for breach of an excluded warranty.",
+      "The licensee's name or any licensee-specific term."
+    ],
+    "preserve": [
+      "The as-is formulation.",
+      "The disclaimer of implied merchantability and fitness for a particular purpose.",
+      "The to-the-extent-permitted-by-applicable-law qualifier."
+    ],
+    "expected_action": "draft"
+  }
+}

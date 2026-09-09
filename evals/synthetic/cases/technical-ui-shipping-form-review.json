@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "id": "technical-ui-shipping-form-review",
+  "split": "held_out",
+  "operation": "review",
+  "task": "Review this shipping address form header and instruction for accuracy. The instruction claims all fields are required; the supplied facts include optional fields. Identify the inaccuracy.",
+  "input": "Shipping Details — All fields below are required. Please complete the full form before proceeding.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "Full name is a required field."},
+    {"id": "f2", "text": "Address line 1 is a required field."},
+    {"id": "f3", "text": "City is a required field."},
+    {"id": "f4", "text": "Country is a required field."},
+    {"id": "f5", "text": "Postal code is a required field."},
+    {"id": "f6", "text": "Address line 2 is optional."},
+    {"id": "f7", "text": "Phone number is optional."},
+    {"id": "f8", "text": "An asterisk marks required fields in the visual design."}
+  ],
+  "modules": ["domain/general.md", "user-interface/website.md", "user-interface/accessibility.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f6", "f7"],
+    "forbidden_additions": [
+      "Acceptance of 'all fields required' when address line 2 and phone are optional.",
+      "An invented required field not in the supplied facts."
+    ],
+    "preserve": [
+      "Identification that address line 2 and phone number are optional.",
+      "The inaccuracy in the 'all fields required' instruction.",
+      "The asterisk-marks-required-fields convention as the appropriate alternative."
+    ],
+    "expected_action": "review"
+  }
+}

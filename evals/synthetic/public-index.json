@@ -1,0 +1,461 @@
+{
+  "schema_version": 1,
+  "area": "public",
+  "cases": [
+    {
+      "case_id": "public-general-rehearsal-relocation",
+      "path": "evals/synthetic/cases/public-general-rehearsal-relocation.json",
+      "family_id": "public-rehearsal-location-and-equipment",
+      "topic": "A rehearsal move with unchanged hours and different equipment needs",
+      "independence_note": "Standalone logistics packet: a changed room affects entrance and instruments but not the session time. No other case reuses this rehearsal or draft."
+    },
+    {
+      "case_id": "public-general-credit-apology",
+      "path": "evals/synthetic/cases/public-general-credit-apology.json",
+      "family_id": "public-partner-credit-apology",
+      "topic": "Responsibility for an omitted partner credit and an incomplete repair",
+      "independence_note": "Independent relationship-repair scenario distinguishes a corrected digital programme from unchanged distributed print copies; it is not a variant of the pattern-adaptation credit case."
+    },
+    {
+      "case_id": "public-general-decision-record",
+      "path": "evals/synthetic/cases/public-general-decision-record.json",
+      "family_id": "public-trial-resolution-minutes",
+      "topic": "Long-form minutes, 300–420 words: a voted trial, operating plan, unresolved concerns, and further authority",
+      "independence_note": "Uses its own complete secretary record, dissent count, trial cap, and continuation condition. Expanded in place with session dates, service scope, recruitment, expense rules, anonymous logging, and a review meeting to support a substantive full minutes section. The family is unchanged; the partial-recording news case has a different packet and a missing rather than known outcome."
+    },
+    {
+      "case_id": "public-general-observer-invitation",
+      "path": "evals/synthetic/cases/public-general-observer-invitation.json",
+      "family_id": "public-observation-without-participation",
+      "topic": "A social invitation that genuinely permits watching without joining",
+      "independence_note": "Independently composed invitation with observer choice and concrete sensory arrangements, not a renamed attendance notice or a consent-use scenario."
+    },
+    {
+      "case_id": "public-general-careful-decline",
+      "path": "evals/synthetic/cases/public-general-careful-decline.json",
+      "family_id": "public-capacity-based-partnership-refusal",
+      "topic": "A courteous definite refusal without a future commitment",
+      "independence_note": "Standalone clean correspondence protects the distinction between capacity and merit; no other case shares its invitation, reply, or commitment boundary."
+    },
+    {
+      "case_id": "public-general-fundraiser-accounts",
+      "path": "evals/synthetic/cases/public-general-fundraiser-accounts.json",
+      "family_id": "public-cash-pledge-and-earmark-reconciliation",
+      "topic": "Long-form treasurer's update, 300–430 words: cash, pledges, noncash help, reservations, and pending choices",
+      "independence_note": "Independent multi-category accounting record with exact arithmetic. The fuller source ledger and extended draft cover ticket receipts, donations, itemised costs, noncash contributions, purchase conditions, member oversight, and the account's cutoff and scope. This remains one family and does not reuse the refund-processing packet or membership stock-and-flow table."
+    },
+    {
+      "case_id": "public-general-venue-access-inquiry",
+      "path": "evals/synthetic/cases/public-general-venue-access-inquiry.json",
+      "family_id": "public-prebooking-access-questions",
+      "topic": "Requesting venue information before making a booking",
+      "independence_note": "A separate precommitment inquiry distinguishes unknown venue features from materials supplied by the group; no existing service or inspection is assumed."
+    },
+    {
+      "case_id": "public-general-materials-exhibit-guide",
+      "path": "evals/synthetic/cases/public-general-materials-exhibit-guide.json",
+      "family_id": "public-materials-comparison-orientation",
+      "topic": "Explaining a nonchronological exhibition route and touch symbols",
+      "independence_note": "Independently specified curatorial arrangement combines a comparison rationale with replica-handling rules, rather than adapting another procedural notice."
+    },
+    {
+      "case_id": "public-general-winter-greeting",
+      "path": "evals/synthetic/cases/public-general-winter-greeting.json",
+      "family_id": "public-seasonal-committee-letter",
+      "topic": "A formal seasonal thank-you with an undecided reopening date",
+      "independence_note": "Original clean communal letter has its own completed-work record and future communication commitment; its seasonal voice is not copied from another case."
+    },
+    {
+      "case_id": "public-general-kit-proof-review",
+      "path": "evals/synthetic/cases/public-general-kit-proof-review.json",
+      "family_id": "public-packing-list-diagram-reconciliation",
+      "topic": "Reconciling craft-kit contents, diagram letters, and functions",
+      "independence_note": "Standalone three-way specification comparison concerns component identity and assembly roles, not merely another numerical copy correction."
+    },
+    {
+      "case_id": "public-general-plot-draw-explainer",
+      "path": "evals/synthetic/cases/public-general-plot-draw-explainer.json",
+      "family_id": "public-priority-group-then-draw",
+      "topic": "Priority eligibility followed by a conditional allocation draw",
+      "independence_note": "This independent process packet separates eligibility, random order, and vacancies; no other case reuses its allocation mechanism."
+    },
+    {
+      "case_id": "public-general-book-drive-boundaries",
+      "path": "evals/synthetic/cases/public-general-book-drive-boundaries.json",
+      "family_id": "public-used-book-acceptance-criteria",
+      "topic": "Respectful acceptance criteria for complete, legible used books",
+      "independence_note": "Original donation notice protects annotations as acceptable while excluding damage and limiting collection hours; it is not a changed-noun version of a storage notice."
+    },
+    {
+      "case_id": "public-general-speaker-title-handoff",
+      "path": "evals/synthetic/cases/public-general-speaker-title-handoff.json",
+      "family_id": "public-topic-title-approval-handoff",
+      "topic": "A confirmed lecture topic and an unapproved working title",
+      "independence_note": "Separate handoff record gives different approval states to related content fields and a specific next action; no other case shares the lecture or working title."
+    },
+    {
+      "case_id": "public-general-lighting-mediation",
+      "path": "evals/synthetic/cases/public-general-lighting-mediation.json",
+      "family_id": "public-competing-lighting-needs",
+      "topic": "Acknowledging two practical needs while proposing a conditional trial",
+      "independence_note": "Independent mediation packet contains two actual supplied positions and an unavailable-resource condition, unlike a template that invents an opposing view."
+    },
+    {
+      "case_id": "public-general-translation-layout-note",
+      "path": "evals/synthetic/cases/public-general-translation-layout-note.json",
+      "family_id": "public-communicative-versus-visual-equivalence",
+      "topic": "Why equivalent leaflet instructions need not occupy equal space",
+      "independence_note": "Original clean explanatory note relies on a supplied comparison record and a specific layout difference; it shares no leaflet text or source packet with another scenario."
+    },
+    {
+      "case_id": "public-general-refund-status-review",
+      "path": "evals/synthetic/cases/public-general-refund-status-review.json",
+      "family_id": "public-refund-submission-versus-receipt",
+      "topic": "A submitted payment batch is not confirmation of received refunds",
+      "independence_note": "Standalone workflow-status review concerns missing completion evidence and avoiding duplicate customer requests, not the fundraiser's cash arithmetic."
+    },
+    {
+      "case_id": "public-general-story-recording-invitation",
+      "path": "evals/synthetic/cases/public-general-story-recording-invitation.json",
+      "family_id": "public-separable-story-use-permissions",
+      "topic": "Long-form participation guide, 350–500 words: contribution routes, session logistics, clip approval, and deletion",
+      "independence_note": "Original participation packet has several separate permissions and a pre-finalisation withholding point. Added concrete session, submission, review, event, and retention arrangements justify a complete pre-event guide rather than an inflated short invitation. The family remains unchanged and no other invitation shares its consent structure."
+    },
+    {
+      "case_id": "public-general-object-label-review",
+      "path": "evals/synthetic/cases/public-general-object-label-review.json",
+      "family_id": "public-loan-restoration-and-undated-object",
+      "topic": "A loaned object with original material, replacement hinges, and unknown age",
+      "independence_note": "Independent label review combines ownership, component history, and missing dating evidence from two records; it does not reuse the conservator's map-dating argument."
+    },
+    {
+      "case_id": "public-general-recipient-roles",
+      "path": "evals/synthetic/cases/public-general-recipient-roles.json",
+      "family_id": "public-three-recipient-action-routing",
+      "topic": "Routing different opening-event submissions to the correct roles",
+      "independence_note": "Standalone action-routing email has three different recipients and no central approval stage; it is not derived from the single-recipient proof letter."
+    },
+    {
+      "case_id": "public-general-proof-cover-letter",
+      "path": "evals/synthetic/cases/public-general-proof-cover-letter.json",
+      "family_id": "public-layout-review-not-print-authorisation",
+      "topic": "A clean formal letter defining the scope of a layout proof",
+      "independence_note": "Original no-change review separates text approval, layout checking, and print authorisation. Its source document and requested deliverable differ from the speaker-title handoff."
+    },
+    {
+      "case_id": "public-general-time-capsule-welcome",
+      "path": "evals/synthetic/cases/public-general-time-capsule-welcome.json",
+      "family_id": "public-ceremony-with-unknown-contents",
+      "topic": "A ceremonial welcome grounded in an inscription rather than invented contents",
+      "independence_note": "Independent spoken occasion uses a sealed-object record, known inscription, and future cataloguing process; no other case shares the ceremony or its evidence."
+    },
+    {
+      "case_id": "public-general-fold-pattern-credit",
+      "path": "evals/synthetic/cases/public-general-fold-pattern-credit.json",
+      "family_id": "public-original-design-and-limited-adaptation",
+      "topic": "Crediting an adapted design without enlarging permission",
+      "independence_note": "Standalone authorship-and-permission relationship distinguishes original design, specific modifications, and approved use; it is substantively different from apologising for an omitted event credit."
+    },
+    {
+      "case_id": "public-general-deadline-date-rollover",
+      "path": "evals/synthetic/cases/public-general-deadline-date-rollover.json",
+      "family_id": "public-single-deadline-two-calendar-dates",
+      "topic": "One registration instant represented across a fixed-offset date rollover",
+      "independence_note": "Independent clock-conversion packet tests one instant rather than multiple grace periods, with its own verified dates and form URL."
+    },
+    {
+      "case_id": "public-general-lost-property-greeting",
+      "path": "evals/synthetic/cases/public-general-lost-property-greeting.json",
+      "family_id": "public-voicemail-versus-staffed-session",
+      "topic": "A spoken lost-property greeting with limited volunteer availability",
+      "independence_note": "Original audio-first service message distinguishes voicemail availability, message review, and item recovery; no other case shares its service workflow."
+    },
+    {
+      "case_id": "public-general-firm-appeal-review",
+      "path": "evals/synthetic/cases/public-general-firm-appeal-review.json",
+      "family_id": "public-missed-reply-versus-inferred-intent",
+      "topic": "Preserving a firm complaint while removing an unsupported motive",
+      "independence_note": "Independent first-person appeal uses a dated acknowledgement and exact promise; it is not a recasting of an organisational apology or a news causation claim."
+    },
+    {
+      "case_id": "public-general-coat-rail-notice",
+      "path": "evals/synthetic/cases/public-general-coat-rail-notice.json",
+      "family_id": "public-wet-dry-storage-distinction",
+      "topic": "A clean entrance notice explaining separate coat-storage arrangements",
+      "independence_note": "Original no-change notice preserves physical handling reasons and an unsupervised-storage limitation; it does not share the book drive's acceptance process."
+    },
+    {
+      "case_id": "public-general-skill-exchange-explainer",
+      "path": "evals/synthetic/cases/public-general-skill-exchange-explainer.json",
+      "family_id": "public-network-reciprocity-without-debt",
+      "topic": "Long-form orientation article, 350–500 words: network reciprocity, first meetings, boundaries, and unsuitable matches",
+      "independence_note": "Independent conceptual explanation defines a network relationship and a coordinator's limited role. Its richer onboarding packet supplies an expressly illustrative exchange, introduction and meeting steps, material-cost rules, consent, exit options, and excluded activities. The family is unchanged rather than split into multiple variants."
+    },
+    {
+      "case_id": "public-press-transit-recommendation",
+      "path": "evals/synthetic/cases/public-press-transit-recommendation.json",
+      "family_id": "public-advisory-transit-vote",
+      "topic": "Long-form passenger news explainer, 350–500 words: departure gaps, stated reasons, access concerns, and approval",
+      "independence_note": "Standalone passenger-news packet combines a known vote, current service, and a separate approval authority. Current and proposed departure lists, a supplied access comment, staffing requirements, consultation details, and public-notice rules support the longer treatment. No new family or related cosmetic variant is introduced."
+    },
+    {
+      "case_id": "public-press-tender-not-award",
+      "path": "evals/synthetic/cases/public-press-tender-not-award.json",
+      "family_id": "public-bid-invitation-not-contract-award",
+      "topic": "Invited construction bids and a price ceiling, not a selected builder",
+      "independence_note": "Independent procurement notice distinguishes a bid stage, maximum proposal price, and unknown construction timing without reusing another project's records."
+    },
+    {
+      "case_id": "public-press-quayside-demonstration",
+      "path": "evals/synthetic/cases/public-press-quayside-demonstration.json",
+      "family_id": "public-protest-multisource-attribution",
+      "topic": "Reporting a demonstration from a proposal, photo record, and campaign statement",
+      "independence_note": "Original multi-source news brief separates pictured evidence, attributed opposition, proposed restrictions, and a documented unanswered request for comment."
+    },
+    {
+      "case_id": "public-press-poll-entry-units",
+      "path": "evals/synthetic/cases/public-press-poll-entry-units.json",
+      "family_id": "public-repeatable-poll-entries",
+      "topic": "Entry totals do not establish unique voters or a community mandate",
+      "independence_note": "Independent nonbinding poll log has repeated-entry uncertainty, unlike the membership table's known denominators and time periods; no counts or draft are shared."
+    },
+    {
+      "case_id": "public-press-order-before-endorsement",
+      "path": "evals/synthetic/cases/public-press-order-before-endorsement.json",
+      "family_id": "public-project-order-before-venue-vote",
+      "topic": "A dated order preceding a later endorsement of its display location",
+      "independence_note": "Standalone three-event documentary chronology answers a causal question about a specific vote; it is not a renamed procurement-stage correction."
+    },
+    {
+      "case_id": "public-press-unopposed-chair",
+      "path": "evals/synthetic/cases/public-press-unopposed-chair.json",
+      "family_id": "public-uncontested-confirmation-without-ballot",
+      "topic": "An uncontested appointment that does not establish unanimous support",
+      "independence_note": "Original clean procedure story uses an explicit no-ballot rule and a sourced qualification; it shares no electorate or decision record with other voting scenarios."
+    },
+    {
+      "case_id": "public-press-four-day-rota-trial",
+      "path": "evals/synthetic/cases/public-press-four-day-rota-trial.json",
+      "family_id": "public-rota-trial-hours-and-coverage",
+      "topic": "A four-day trial with unchanged weekly hours and two supplied viewpoints",
+      "independence_note": "Independent workplace memo and statements distinguish days, hours, permanence, and support coverage; they are not variants of the repair-cafe trial minutes."
+    },
+    {
+      "case_id": "public-press-paused-sales-quotation",
+      "path": "evals/synthetic/cases/public-press-paused-sales-quotation.json",
+      "family_id": "public-negation-in-festival-transcript",
+      "topic": "A quotation reversing the distinction between paused sales and cancellation",
+      "independence_note": "Standalone transcript correction centres on an omitted negation and unchanged venue bookings; it does not reuse another quotation or event."
+    },
+    {
+      "case_id": "public-press-power-cut-cause-review",
+      "path": "evals/synthetic/cases/public-press-power-cut-cause-review.json",
+      "family_id": "public-restoration-witness-and-unknown-cause",
+      "topic": "A restoration update and witness observation without causal or injury evidence",
+      "independence_note": "Independent incident packet separates operational status, sensory testimony, technical cause, and an absent injury report rather than duplicating a single missing-evidence template."
+    },
+    {
+      "case_id": "public-press-bridge-caption-correction",
+      "path": "evals/synthetic/cases/public-press-bridge-caption-correction.json",
+      "family_id": "public-limited-caption-name-erratum",
+      "topic": "Publishing a precise bridge-name correction without retracting correct directions",
+      "independence_note": "Original correction notice starts from an identified published error and a bounded correction record; it is not an ordinary news rewrite with renamed landmarks."
+    },
+    {
+      "case_id": "public-press-weaving-feature",
+      "path": "evals/synthetic/cases/public-press-weaving-feature.json",
+      "family_id": "public-observed-craft-feature",
+      "topic": "A clean descriptive feature grounded in an observed demonstration and quotation",
+      "independence_note": "Independent scene record supports a complete feature paragraph, including action and speech; no other case reuses the demonstration, narrator access, or craft process."
+    },
+    {
+      "case_id": "public-press-partial-meeting-recording",
+      "path": "evals/synthetic/cases/public-press-partial-meeting-recording.json",
+      "family_id": "public-recording-ends-before-decision",
+      "topic": "A discussion clip cannot establish the unrecorded vote or future agenda",
+      "independence_note": "Standalone incomplete-recording problem differs from cases with complete minutes or explicit no-ballot rules; the clip, motion, and unsupported outcome are independently authored."
+    },
+    {
+      "case_id": "public-press-school-bell-pilot",
+      "path": "evals/synthetic/cases/public-press-school-bell-pilot.json",
+      "family_id": "public-bell-versus-door-and-lesson-times",
+      "topic": "A first-bell pilot with unchanged classroom access and lesson start",
+      "independence_note": "Independent family-facing timetable packet distinguishes three events and an attributed intention, not an advisory service vote or time-zone conversion."
+    },
+    {
+      "case_id": "public-press-membership-stock-and-flow",
+      "path": "evals/synthetic/cases/public-press-membership-stock-and-flow.json",
+      "family_id": "public-membership-snapshot-versus-renewals",
+      "topic": "An active-membership percentage mislabelled as a quarterly renewal rate",
+      "independence_note": "Standalone defined-status snapshot and renewal flow have incompatible measurement roles; this is not a numerical variant of the clean year-end growth comparison."
+    },
+    {
+      "case_id": "public-press-embargo-status-review",
+      "path": "evals/synthetic/cases/public-press-embargo-status-review.json",
+      "family_id": "public-advance-copy-versus-public-release",
+      "topic": "Advance newsroom receipt does not waive a supplied embargo",
+      "independence_note": "Independent release-header conflict tests publication authority and timing, unlike a reader-facing registration deadline or missing source outcome."
+    },
+    {
+      "case_id": "public-press-annual-membership-review",
+      "path": "evals/synthetic/cases/public-press-annual-membership-review.json",
+      "family_id": "public-clean-year-end-member-comparison",
+      "topic": "A correct membership comparison that does not claim attendance or volunteer capacity",
+      "independence_note": "Original positive review uses two comparable year-end counts and a treasurer's qualification; it shares neither source data nor the stock-flow defect of the quarterly table case."
+    },
+    {
+      "case_id": "public-press-amplification-and-opinion",
+      "path": "evals/synthetic/cases/public-press-amplification-and-opinion.json",
+      "family_id": "public-house-rule-versus-attributed-impact",
+      "topic": "A limited amplification rule and an organiser's attributed criticism",
+      "independence_note": "Standalone rule-and-reaction packet protects a legitimate interpretation while correcting its speaker and literal scope; it is distinct from transcript-negation repair."
+    },
+    {
+      "case_id": "public-press-map-dating-boundary",
+      "path": "evals/synthetic/cases/public-press-map-dating-boundary.json",
+      "family_id": "public-reused-paper-date-bound",
+      "topic": "Long-form heritage feature, 350–500 words: revising a catalogue date while preserving evidentiary limits",
+      "independence_note": "Independent material-sequence argument explains why one date constrains another. The expanded packet adds the old annotation's weak basis, unmapped feature dates, documented inspection limits, a correction trail, and a two-sided display plan. This remains the same family and does not share the loaned object's provenance or restoration packet."
+    },
+    {
+      "case_id": "public-press-capacity-not-flow",
+      "path": "evals/synthetic/cases/public-press-capacity-not-flow.json",
+      "family_id": "public-designed-storage-not-daily-saving",
+      "topic": "Tank capacity, daily collection, and environmental savings as different quantities",
+      "independence_note": "Standalone design-note correction combines a unit-scale error with an uninstalled system and absent baseline; no other case shares its engineering specification."
+    },
+    {
+      "case_id": "public-press-quiet-obituary",
+      "path": "evals/synthetic/cases/public-press-quiet-obituary.json",
+      "family_id": "public-sourced-private-remembrance-notice",
+      "topic": "A restrained fictional obituary without invented cause, age, or public service",
+      "independence_note": "Original clean obituary has a distinct remembrance-programme source, quotation, and privacy boundary; all people and biographical facts are invented for this one case."
+    },
+    {
+      "case_id": "public-press-rehearsal-video-preview",
+      "path": "evals/synthetic/cases/public-press-rehearsal-video-preview.json",
+      "family_id": "public-limited-recording-arts-interpretation",
+      "topic": "An arts preview grounded in a rehearsal excerpt rather than full attendance",
+      "independence_note": "Independent critical-writing packet permits bounded interpretation of documented staging and a director statement, unlike either live craft reporting or a missing meeting vote."
+    },
+    {
+      "case_id": "public-press-syndicated-source-credit",
+      "path": "evals/synthetic/cases/public-press-syndicated-source-credit.json",
+      "family_id": "public-adapted-report-not-local-investigation",
+      "topic": "Long-form adapted news feature, 350–500 words: source credit, route disambiguation, and separate correction formats",
+      "independence_note": "Standalone publication-origin relationship includes an adaptation permission and a forthcoming correction. The extended source and draft give distinct endpoints, guide sections, page references, route codes, a publisher quotation, and separate PDF and print plans. These support preserving a useful explanatory feature within the existing family."
+    },
+    {
+      "case_id": "public-press-captioned-performances",
+      "path": "evals/synthetic/cases/public-press-captioned-performances.json",
+      "family_id": "public-performance-specific-caption-explanation",
+      "topic": "A clear programme-based explanation of two captioned performances",
+      "independence_note": "Original clean access-information article distinguishes performance scope, shared display, and unlisted translation; its source and reader question are unique within this shard."
+    },
+    {
+      "case_id": "public-fiction-memory-market-bargain",
+      "path": "evals/synthetic/cases/public-fiction-memory-market-bargain.json",
+      "family_id": "public-memory-currency-negotiation",
+      "topic": "Long-form fantasy scene, 350–550 words: a demonstrated compass, rejected offer, protected memory, and closing pressure",
+      "independence_note": "Independent world-building brief permits original dialogue, gesture, sensory detail, and a demonstration memory. Additional bounded plot beats give the scene room to develop without padding its description or changing its unresolved outcome. It remains one family and shares no world or plot with the river fable."
+    },
+    {
+      "case_id": "public-fiction-distant-town-narrator",
+      "path": "evals/synthetic/cases/public-fiction-distant-town-narrator.json",
+      "family_id": "public-omniscient-collective-time-summary",
+      "topic": "Long-form no-change story, roughly 300–400 words: a waiting custom becomes a shared inheritance",
+      "independence_note": "Original clean panoramic narration authorises private knowledge and temporal compression. The completed longer story adds distinct carrier, baker, repairer, and successor episodes with full supporting facts, retaining a genuine no-change control rather than imposing a cut for length. Its family remains separate from the nested-parcel narrator."
+    },
+    {
+      "case_id": "public-fiction-unbroken-wax",
+      "path": "evals/synthetic/cases/public-fiction-unbroken-wax.json",
+      "family_id": "public-seal-continuity-and-delayed-reveal",
+      "topic": "A jar that must remain sealed until its established opening",
+      "independence_note": "Standalone physical-continuity edit protects a first reveal and one object's state across a journey; it is not a variant of the parcel narrator or timetable flashback."
+    },
+    {
+      "case_id": "public-fiction-contrasting-dialogue-voices",
+      "path": "evals/synthetic/cases/public-fiction-contrasting-dialogue-voices.json",
+      "family_id": "public-two-registers-one-shared-action",
+      "topic": "Restoring distinct formal and conversational voices without changing the plot",
+      "independence_note": "Independent dialogue-revision task fixes one line and one practical outcome while permitting register changes; no other case shares these characters or exchange."
+    },
+    {
+      "case_id": "public-fiction-fair-clue-review",
+      "path": "evals/synthetic/cases/public-fiction-fair-clue-review.json",
+      "family_id": "public-visible-clue-not-mystery-solution",
+      "topic": "A plausible opening clue without unearned certainty about a mover or hiding place",
+      "independence_note": "Standalone mystery-opening brief protects fair inference and an unsolved investigation; it does not reuse the unanswered job offer's emotional decision or ending."
+    },
+    {
+      "case_id": "public-fiction-withheld-news-letter",
+      "path": "evals/synthetic/cases/public-fiction-withheld-news-letter.json",
+      "family_id": "public-epistolary-affection-and-withholding",
+      "topic": "A character's formal letter lets objects imply an undisclosed missed journey",
+      "independence_note": "Original clean epistolary passage uses a fictional sender's deliberate withholding, not factual deception in public correspondence or the late narrator's self-justification."
+    },
+    {
+      "case_id": "public-fiction-river-answer",
+      "path": "evals/synthetic/cases/public-fiction-river-answer.json",
+      "family_id": "public-nonverbal-river-fable",
+      "topic": "A river answers through downstream objects without speech or a compulsory moral",
+      "independence_note": "Independent read-aloud fable has nonverbal agency and physical movement limits; it shares no currency, negotiation, or characters with the fantasy-market brief."
+    },
+    {
+      "case_id": "public-fiction-marked-flashback",
+      "path": "evals/synthetic/cases/public-fiction-marked-flashback.json",
+      "family_id": "public-present-past-present-timetable-memory",
+      "topic": "An intentional flashback with an explicit tense plan",
+      "independence_note": "Standalone temporal-editing problem preserves an earlier gift inside a present scene; it is not a variant of simultaneous actions or nonfiction event sequencing."
+    },
+    {
+      "case_id": "public-fiction-bureaucratic-refrain",
+      "path": "evals/synthetic/cases/public-fiction-bureaucratic-refrain.json",
+      "family_id": "public-comic-refrain-and-backward-clock",
+      "topic": "Purposeful repeated dialogue in an absurd waiting room",
+      "independence_note": "Original clean comic scene uses a repeated response and backward clock as world rules, not the duplicated dialogue that needs differentiated voices elsewhere."
+    },
+    {
+      "case_id": "public-fiction-wordless-stage-review",
+      "path": "evals/synthetic/cases/public-fiction-wordless-stage-review.json",
+      "family_id": "public-private-backstory-versus-playable-action",
+      "topic": "Making a wordless stage sketch perceptible with limited materials",
+      "independence_note": "Independent performance-medium review concerns an uncommunicated promise and a restricted prop set; it is not derived from the press preview's recorded production."
+    },
+    {
+      "case_id": "public-fiction-unsettled-reunion",
+      "path": "evals/synthetic/cases/public-fiction-unsettled-reunion.json",
+      "family_id": "public-former-collaborators-unresolved-encounter",
+      "topic": "A returned pencil and an unexplained break in a creative partnership",
+      "independence_note": "Standalone scene-generation brief permits subtext around a known shared history while withholding cause and reconciliation; no existing dialogue or plot packet is reused."
+    },
+    {
+      "case_id": "public-fiction-self-serving-narrator",
+      "path": "evals/synthetic/cases/public-fiction-self-serving-narrator.json",
+      "family_id": "public-intentional-unreliability-with-clock-evidence",
+      "topic": "A late narrator's self-justification without an external diagnosis",
+      "independence_note": "Independent first-person edit deliberately preserves a false character claim alongside contrary evidence; its timing and narrative contract differ from all factual correction cases."
+    },
+    {
+      "case_id": "public-fiction-intrusive-storyteller",
+      "path": "evals/synthetic/cases/public-fiction-intrusive-storyteller.json",
+      "family_id": "public-comic-reader-address-and-nested-parcel",
+      "topic": "A knowing storyteller's direct address within the fiction",
+      "independence_note": "Original clean narration uses local comic intervention and an unopened nested parcel; it does not share the sealed-jar continuity defect or panoramic town history."
+    },
+    {
+      "case_id": "public-fiction-simultaneous-preparations",
+      "path": "evals/synthetic/cases/public-fiction-simultaneous-preparations.json",
+      "family_id": "public-parallel-actors-in-separated-spaces",
+      "topic": "Intercut banner-folding and bell-ringing without losing simultaneity",
+      "independence_note": "Independent composition brief controls overlapping actions, separate actors, and continued work; it is not a renamed flashback or sequential delivery scene."
+    },
+    {
+      "case_id": "public-fiction-unanswered-offer-review",
+      "path": "evals/synthetic/cases/public-fiction-unanswered-offer-review.json",
+      "family_id": "public-open-choice-without-imposed-lesson",
+      "topic": "An unanswered offer whose uncertainty must not become a moralised decision",
+      "independence_note": "Standalone ending review protects a character's mixed values and unresolved choice, rather than the evidence-limited deduction of the mystery opening."
+    }
+  ]
+}

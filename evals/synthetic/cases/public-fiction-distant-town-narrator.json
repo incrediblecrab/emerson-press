@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "public-fiction-distant-town-narrator",
+  "split": "tuning",
+  "operation": "edit",
+  "task": "Copyedit this finished longer fictional story, roughly 300–400 words, only if a real language or continuity problem needs repair. The brief explicitly permits an omniscient narrator, collective history, and access to private motives. Preserve the distinct episodes that show a waiting custom becoming an inheritance, rather than treating length itself as a defect. Do not force a close viewpoint, replace temporal compression with fully dramatised scenes, or add a moral. Return the story unchanged if it already works.",
+  "input": "At first the town blamed the clock. By the second winter, people had learned to gather before the hour and wait. Only the keeper knew why the tower rang a minute late: he liked the square best in the pause before the bells. He never said so. When asked, he took off his spectacles and spoke of old gears, though there was nothing wrong with them.\n\nThe baker used the interval to shake flour from her sleeves. A carrier, who was new to the town, spent it looking from his watch to the dial and back again. For a week he complained to anyone who would listen. Then he began bringing a folding stool. He set it beside the baker's basket, and she saved him the heel of the first loaf. Neither called this an improvement in the clock.\n\nOnce, the council sent a repairer. She climbed the tower, examined the clean teeth of the wheels and came down carrying the key she had been given. The keeper had asked her not to alter the setting. \"It keeps time,\" she told the councillors. \"You have chosen when to ring it.\" They entered a note in the ledger and did not ask her back.\n\nChildren grew into apprentices; apprentices took shops of their own. The baker's daughter inherited the oven and the carrier's stool. When the keeper could no longer manage the stairs, his successor found a pencilled instruction inside the case: leave the hand where it is. She obeyed it. She had been one of the children who waited in the square and saw no reason to make them hurry now.\n\nThe brass plate beside the tower door lost a letter, then another. Strangers occasionally asked whose name had been there. No one could answer with confidence, although everyone could explain where to stand out of the rain. The minute remained. Long after the keeper's name had faded from the brass plate, the town still kept that small appointment with silence.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional town's tower clock rings one minute late."},
+    {"id": "f2", "text": "By the second winter, people gather before the hour and wait."},
+    {"id": "f3", "text": "The keeper deliberately keeps the clock late because he likes the quiet pause before the bells."},
+    {"id": "f4", "text": "The keeper does not disclose his motive to the townspeople."},
+    {"id": "f5", "text": "The passage spans years in which children become apprentices and apprentices acquire shops."},
+    {"id": "f6", "text": "The waiting custom survives after the keeper's name fades from the brass plate."},
+    {"id": "f7", "text": "The clock's gears work correctly; the one-minute offset is a deliberate setting rather than a mechanical fault."},
+    {"id": "f8", "text": "When asked about the clock, the keeper takes off his spectacles and speaks of old gears instead of disclosing his motive."},
+    {"id": "f9", "text": "The baker shakes flour from her sleeves while waiting in the square."},
+    {"id": "f10", "text": "A carrier new to town compares his watch with the tower dial and complains for a week."},
+    {"id": "f11", "text": "The carrier then brings a folding stool and places it beside the baker's basket."},
+    {"id": "f12", "text": "The baker saves the heel of the first loaf for the carrier."},
+    {"id": "f13", "text": "The council sends a repairer who examines the clock's clean wheels and returns with the supplied key without changing the setting."},
+    {"id": "f14", "text": "The keeper asks the repairer not to alter the setting."},
+    {"id": "f15", "text": "The repairer tells the councillors exactly: \"It keeps time.\""},
+    {"id": "f16", "text": "The repairer also tells them exactly: \"You have chosen when to ring it.\""},
+    {"id": "f17", "text": "The councillors enter a note in their ledger and do not ask the repairer back."},
+    {"id": "f18", "text": "The baker's daughter later inherits the oven and the carrier's stool."},
+    {"id": "f19", "text": "The keeper's successor takes over when he can no longer manage the tower stairs."},
+    {"id": "f20", "text": "The pencilled instruction inside the clock case reads exactly: \"leave the hand where it is\"."},
+    {"id": "f21", "text": "The successor obeys the instruction; she waited in the square as a child and sees no reason to make people hurry now."},
+    {"id": "f22", "text": "The keeper's name wears away from the plate, and the townspeople can no longer identify it confidently when strangers ask."},
+    {"id": "f23", "text": "The townspeople still know where to shelter from rain in the square."}
+  ],
+  "modules": ["domain/fiction.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f6", "f7", "f8", "f9", "f10", "f11", "f12", "f13", "f14", "f15", "f16", "f17", "f18", "f19", "f20", "f21", "f22", "f23"],
+    "forbidden_additions": [
+      "A public confession by the keeper or a repaired clock.",
+      "A new protagonist whose close viewpoint replaces the authorised omniscient narration.",
+      "Invented historical verification or a literal explanation that erases the final metaphor.",
+      "A mechanical fault, an altered setting, or a claim that the repairer disclosed the keeper's private reason.",
+      "Removal of the baker, carrier, repairer, or successor episodes solely to make the story shorter.",
+      "An appended universal lesson about patience or punctuality."
+    ],
+    "preserve": [
+      "Purposeful narrative distance and compression across years.",
+      "The narrator's authorised knowledge of a private motive.",
+      "The distinctive, already effective wording.",
+      "The sequence from complaint to shared routine, formal inspection, and inherited custom.",
+      "The distinction between accurate mechanical operation and the deliberate offset.",
+      "The complete long-form story, including the exact supplied speech and written instruction, without cosmetic rewriting."
+    ],
+    "expected_action": "no_change"
+  }
+}

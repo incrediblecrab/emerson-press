@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "scholarly-nf-composite-interview-quote",
+  "split": "held_out",
+  "operation": "review",
+  "task": "Review this fictional oral-history exhibit draft in 85–120 words. Identify the consequential quotation and attribution problem and explain an evidence-preserving remedy, without rewriting the entire exhibit. Keep any quoted source words exact and separate comments from the draft. The two interviews must not become one person's invented utterance. Also assess the draft's collective inference without adding new interviews or motives.",
+  "input": "Dela Morn summed up the evening: “I stayed because the lamps were warm, but I left before the talk began.” Her words show that every volunteer regretted coming and felt unsafe in the hall.",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "In one supplied interview, Dela Morn says exactly “I stayed because the lamps were warm.”"
+    },
+    {
+      "id": "f2",
+      "text": "In a separate supplied interview about the evening, Oren Felt says exactly “I left before the talk began.”"
+    },
+    {
+      "id": "f3",
+      "text": "Neither supplied speaker says they regretted attending or felt unsafe."
+    },
+    {
+      "id": "f4",
+      "text": "The packet contains no interviews or other evidence establishing every volunteer's reaction."
+    }
+  ],
+  "modules": ["domain/non-fiction.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "A single-speaker composite quotation retained or silently reconstructed",
+      "Invented regret, unsafe conditions, or unanimous volunteer sentiment",
+      "New interviews, explanations of either speaker's motives, or invented corroboration"
+    ],
+    "preserve": [
+      "I stayed because the lamps were warm.",
+      "I left before the talk began.",
+      "Dela Morn and Oren Felt remain separate speakers",
+      "Review notes explain the consequential remedy rather than only optional phrasing"
+    ],
+    "expected_action": "review"
+  }
+}

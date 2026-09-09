@@ -1,0 +1,82 @@
+{
+  "schema_version": 1,
+  "id": "technical-howto-rotate-key-draft",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "Draft a how-to guide for rotating an API key in a fictional developer portal. Cover the preparation step (identifying services using the current key), the rotation procedure, the 48-hour update window, the consequence of missing the deadline, and how to verify rotation in the audit log. Do not imply the old key is invalidated immediately or that missed services recover automatically. Target 350–500 words.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "Rotating an API key generates a new key immediately."
+    },
+    {
+      "id": "f2",
+      "text": "The old key remains valid for 48 hours after rotation."
+    },
+    {
+      "id": "f3",
+      "text": "Both the old and new keys can be used simultaneously during the 48-hour grace period."
+    },
+    {
+      "id": "f4",
+      "text": "Rotation cannot be undone."
+    },
+    {
+      "id": "f5",
+      "text": "The new key value is displayed only once immediately after rotation and cannot be retrieved again from the portal."
+    },
+    {
+      "id": "f6",
+      "text": "To rotate, the developer navigates to Settings > API Keys > Rotate."
+    },
+    {
+      "id": "f7",
+      "text": "Before rotating, the developer should identify every service or integration that uses the current key."
+    },
+    {
+      "id": "f8",
+      "text": "Each identified service must be updated with the new key before the 48-hour grace period expires."
+    },
+    {
+      "id": "f9",
+      "text": "After the grace period ends, the old key is permanently invalidated and any service still using it begins receiving 401 errors."
+    },
+    {
+      "id": "f10",
+      "text": "Rotation events are recorded in the audit log at Settings > Security > Audit Log, with a timestamp."
+    }
+  ],
+  "modules": [
+    "domain/technical.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f7",
+      "f8",
+      "f9",
+      "f10"
+    ],
+    "forbidden_additions": [
+      "A claim that the old key is invalidated immediately on rotation.",
+      "An invented recovery path for a service that misses the 48-hour window.",
+      "A way to retrieve the new key after the display is dismissed."
+    ],
+    "preserve": [
+      "Preparation step: identify all services using the current key.",
+      "48-hour simultaneous-use window and mandatory update deadline.",
+      "One-time key display and irreversibility.",
+      "401 errors for services that miss the deadline.",
+      "Audit log verification at Settings > Security > Audit Log."
+    ],
+    "expected_action": "draft"
+  }
+}

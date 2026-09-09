@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "risk-mkt-description-grammar",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Correct grammar and punctuation in this fictional product description for an HR-onboarding tool. Do not add feature claims, outcome data, or benchmarks not in the text.",
+  "input": "PeopleAxis help HR teams manage onboarding task for new employees. Each task can be assigned to a owner and tracked in a shared dashboard. Reminder are sent automatically when a task is overdue.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "PeopleAxis helps HR teams manage onboarding tasks for new employees."},
+    {"id": "f2", "text": "Each task can be assigned to an owner and tracked in a shared dashboard."},
+    {"id": "f3", "text": "Reminders are sent automatically when a task is overdue."}
+  ],
+  "modules": ["domain/marketing.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3"],
+    "forbidden_additions": [
+      "An outcome claim such as reduced time-to-productivity.",
+      "A cost-per-hire or turnover comparison.",
+      "A competitor feature comparison."
+    ],
+    "preserve": [
+      "The onboarding-task management function.",
+      "The owner-assignment and shared-dashboard feature.",
+      "The automatic overdue reminder."
+    ],
+    "expected_action": "edit"
+  }
+}

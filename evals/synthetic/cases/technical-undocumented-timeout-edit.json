@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "technical-undocumented-timeout-edit",
+  "split": "tuning",
+  "operation": "edit",
+  "task": "Copyedit this SDK client reference paragraph. The connection timeout is documented in the supplied packet; the read timeout default is not. Remove or bracket the undocumented read timeout default while preserving the documented connection timeout and the fact that a configurable read_timeout parameter exists.",
+  "input": "The client waits up to 30 seconds for a connection before timing out. The default read timeout is 60 seconds.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The connection timeout is 30 seconds (documented in the supplied reference)."},
+    {"id": "f2", "text": "The client has a configurable read timeout whose parameter name is read_timeout."},
+    {"id": "f3", "text": "The read timeout default is not stated in the supplied reference packet."}
+  ],
+  "modules": ["domain/technical.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3"],
+    "forbidden_additions": [
+      "Retention of 60 seconds as a stated default for read timeout.",
+      "An invented read timeout value different from 60 seconds."
+    ],
+    "preserve": [
+      "Connection timeout of 30 seconds from the documented fact.",
+      "Acknowledgment that a configurable read_timeout parameter exists.",
+      "An honest gap note where the read timeout default is undocumented."
+    ],
+    "expected_action": "edit"
+  }
+}

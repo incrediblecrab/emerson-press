@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "public-fiction-unanswered-offer-review",
+  "split": "held_out",
+  "operation": "review",
+  "task": "Review this fictional ending against its brief in about 60–110 words. Identify the consequential change to the character's decision state and the imposed lesson. Suggest a remedy that keeps the intended uncertainty, without claiming that all fiction must end ambiguously or that a moral is always a defect.",
+  "input": "Nell left the offer beneath the seed catalogue. She had not yet decided whether to go. Then she wrote her acceptance, certain that leaving was the only brave choice. Everyone must eventually learn that staying is merely fear in a familiar coat.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional offer would require Nell to move to another town."},
+    {"id": "f2", "text": "Nell is attached to her garden and curious about the new work."},
+    {"id": "f3", "text": "The brief ends with the offer unanswered beneath a seed catalogue."},
+    {"id": "f4", "text": "Nell has not decided whether to accept."},
+    {"id": "f5", "text": "The brief does not assign either staying or leaving a universal moral value."}
+  ],
+  "modules": ["domain/fiction.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f2", "f3", "f4", "f5"],
+    "forbidden_additions": [
+      "An accepted or rejected offer presented as the required ending.",
+      "A universal lesson equating staying with cowardice or leaving with courage.",
+      "A new reason for the decision or a rule that all stories must avoid resolution."
+    ],
+    "preserve": [
+      "Nell's mixed attachment and curiosity.",
+      "An unanswered offer and unresolved choice at this story's stopping point.",
+      "Review notes grounded in the particular brief rather than a universal style prohibition."
+    ],
+    "expected_action": "review"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "public-press-quiet-obituary",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Copyedit this obituary notice about an entirely fictional person only if a meaningful correction is needed. Preserve its restrained warmth, source attribution, and private-service boundary. The source does not give an age or cause of death. Return the notice unchanged if it is already accurate and suitable for a community newspaper.",
+  "input": "Edrin Vale, a bellmaker who led open workshops at Brass Lane Workshop, has died, according to the family's remembrance programme. The programme records the death on Monday but gives no cause. \"He made time for the slow question,\" it says. The family remembrance will be private. The notice does not announce a public service.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "Edrin Vale is an invented person who worked as a bellmaker."},
+    {"id": "f2", "text": "In the fictional record, Vale led open workshops at Brass Lane Workshop."},
+    {"id": "f3", "text": "The family's remembrance programme records Vale's death on Monday."},
+    {"id": "f4", "text": "The programme gives no age or cause of death."},
+    {"id": "f5", "text": "The programme includes exactly: \"He made time for the slow question.\""},
+    {"id": "f6", "text": "The family remembrance will be private and no public service is announced."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f6"],
+    "forbidden_additions": [
+      "An invented age, illness, cause of death, relative, or biographical anecdote.",
+      "An invitation to attend the private remembrance or a fabricated public-service arrangement.",
+      "A claim of personal acquaintance or an interview with the family."
+    ],
+    "preserve": [
+      "The sourced notice's restrained warmth and exact quotation.",
+      "The distinction between announced facts and details not provided.",
+      "The private-service boundary and existing wording."
+    ],
+    "expected_action": "no_change"
+  }
+}

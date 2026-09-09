@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "risk-mkt-formal-prose",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Copyedit this fictional regulatory-filing preamble for an investment research product. Return it unchanged if the formal prose is already correct and the deliberate caution is preserved. Do not simplify the register or remove any disclaimer element.",
+  "input": "This document is prepared solely for informational purposes. It does not constitute an offer, solicitation, or recommendation to purchase or sell any financial instrument. Recipients should conduct their own due diligence.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The document is prepared for informational purposes only."},
+    {"id": "f2", "text": "It does not constitute an offer, solicitation, or recommendation."},
+    {"id": "f3", "text": "Recipients are advised to conduct their own due diligence."}
+  ],
+  "modules": ["domain/marketing.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3"],
+    "forbidden_additions": [
+      "A regulatory citation or named jurisdiction.",
+      "A specific financial instrument or issuer name.",
+      "A simplification that removes any element of the disclaimer."
+    ],
+    "preserve": [
+      "The informational-only scope.",
+      "The explicit enumeration of what the document does not constitute.",
+      "The due-diligence instruction and the deliberately formal register."
+    ],
+    "expected_action": "no_change"
+  }
+}

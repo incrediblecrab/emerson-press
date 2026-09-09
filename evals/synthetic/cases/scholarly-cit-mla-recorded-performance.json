@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "scholarly-cit-mla-recorded-performance",
+  "split": "tuning",
+  "operation": "edit",
+  "task": "Edit this 55–85-word performance analysis and MLA 9 entry. The consulted source is a recorded staging, not a printed play. Preserve the exact spoken line, character, performer, and time span. Venue form: Italicized Title. Written by Writer, directed by Director, performance by Performer, Studio, production year. Italicized Host, upload date as day month year, URL. Use the short-title locator (*A Bench* 00:04:10–00:04:25). Treat the empty place as a feature of this performance; do not attribute a personal belief to the writer.",
+  "input": "Osa Pell declares a personal belief that every visitor should be excluded: “Leave the spare place empty.” The printed play proves this on page 47, and every staging must mean the same thing (Pell 47).\n\nPell, Osa. A Bench Facing Inland. Vale Books, 2024, p. 47.",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "Recording record: A Bench Facing Inland; written by Osa Pell; directed by Nilo Fran; performance by Ada Oren; Aven Court Studio; production year 2023."
+    },
+    {
+      "id": "f2",
+      "text": "The recording was uploaded to Vale Rehearsal Shelf on May 16, 2024, at https://example.org/performance/bench-inland."
+    },
+    {
+      "id": "f3",
+      "text": "At 00:04:10–00:04:25, Ada Oren as the Keeper says exactly “Leave the spare place empty.” and gestures to the unoccupied place on the bench."
+    },
+    {
+      "id": "f4",
+      "text": "The packet supplies no printed-play edition, page numbers, statement of Pell's personal beliefs, or evidence about other stagings."
+    }
+  ],
+  "modules": [
+    "domain/non-fiction.md",
+    "citation/mla9.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "A printed edition, page 47 locator, or invented publisher",
+      "An assertion of the writer's personal belief or the meaning of every staging",
+      "A conflation of production year 2023 with upload year 2024"
+    ],
+    "preserve": [
+      "Leave the spare place empty.",
+      "00:04:10–00:04:25",
+      "Ada Oren performs the Keeper; Osa Pell wrote the work",
+      "The supplied recording, host, and URL rather than a fabricated print source"
+    ],
+    "expected_action": "edit"
+  }
+}

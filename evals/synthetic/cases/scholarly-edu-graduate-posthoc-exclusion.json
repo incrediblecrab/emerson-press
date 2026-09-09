@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "id": "scholarly-edu-graduate-posthoc-exclusion",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Edit this graduate-seminar methods disclosure into a complete 350–500-word account of the study context, written plan, actual decisions, two reported estimates, and remaining limits. Readers know a regression slope and sensitivity analysis but are new to this decision log. Preserve the protocol quotation, record identifiers, dates, and units. Explain the difference between reporting a post hoc analysis honestly and pretending it was the planned confirmatory analysis; do not condemn every post hoc analysis as unusable. Correct the unsupported independence, error, significance, causality, extrapolation, and public-availability assertions using the packet. You are editing a disclosure, not running an analysis, verifying source forms yourself, or inventing a new study.",
+  "input": "We studied 29 visitor windows to determine the causal effect of keeping a studio open longer. Each window represents an independent population, so there is no need to consider that the observations came from only three studios. The studios' local choices about opening hours cannot affect the comparison. We can also add the window counts to obtain the number of different people reached, because repeat attendance is not relevant to the design.\n\nOur protocol dated February 4, 2025 says, “Retain every logged window in the primary analysis.” In practice, this included a preregistered rule to delete records that would weaken the result. R8 and R11 were removed before the analyst inspected the outcome plot. Their six-hour durations and low visitor counts prove that the records were measurement errors. Deleting them from the original data was a routine correction rather than an analytical choice requiring disclosure.\n\nThe resulting 27-record analysis gave a slope of 0.7 visitors per additional opening hour. This demonstrates that extending opening times causes additional visits and that the effect is statistically significant. The orientation of the line also proves that a 12-hour session will perform as predicted, even though the observed sessions ranged from two to six hours. Staffing can be treated as identical because its details were not included in the results supplied to readers.\n\nThere was no reason to run a sensitivity analysis after the faulty records had been removed. The all-record slope of 0.4 visitors per additional opening hour is merely an obsolete draft and should not appear beside the larger estimate. Reporting both would create doubt about a result that was confirmatory from the outset. Readers need the final number, not the sequence by which it was selected.\n\nFor reproducibility, we have published the full data and code in an open repository and checked every source form ourselves. The underlying 29-record file no longer exists, because the two invalid rows were permanently discarded. These steps establish both the reliability and the general applicability of the result. No additional qualification about the studios, the observed duration range, or the exclusion decision is needed.",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "The protocol dated February 4, 2025 specified no record exclusions and says exactly “Retain every logged window in the primary analysis.” No external preregistration record is supplied."
+    },
+    {
+      "id": "f2",
+      "text": "The February 19, 2025 analysis log says R8 and R11 were excluded after the analyst inspected the data."
+    },
+    {
+      "id": "f3",
+      "text": "The resulting 27-record slope was 0.7 visitors per additional opening hour."
+    },
+    {
+      "id": "f4",
+      "text": "The logged sensitivity analysis retained all 29 records and gave a slope of 0.4 visitors per additional opening hour."
+    },
+    {
+      "id": "f5",
+      "text": "The log does not identify R8 or R11 as measurement errors and supplies no causal design, standard errors, or significance tests."
+    },
+    {
+      "id": "f6",
+      "text": "The 29 rows describe visitor windows at three studios, with some studios contributing multiple windows. A row counts visitors within that window; the same person may appear in another window, and cross-window identities were not recorded."
+    },
+    {
+      "id": "f7",
+      "text": "Local staff chose the opening durations rather than receiving random assignments. The observed durations range from two to six hours, and complete staffing records are not supplied."
+    },
+    {
+      "id": "f8",
+      "text": "R8 and R11 are six-hour windows with relatively low visitor counts. An accompanying data note says their saved values match their source forms; it does not label them invalid observations."
+    },
+    {
+      "id": "f9",
+      "text": "The February 19 log records the sequence as viewing the outcome plot, excluding R8 and R11, fitting the 27-record subset, and then fitting all 29 records as a sensitivity check."
+    },
+    {
+      "id": "f10",
+      "text": "The log states that the original 29-record data were retained unchanged; the exclusion affected a derived analysis subset only."
+    },
+    {
+      "id": "f11",
+      "text": "The supplied material consists of the protocol, decision log, data note, and reported slopes. It provides no public-repository address or confirmation of a data or code release, and the editor has performed no independent source-form check."
+    }
+  ],
+  "modules": [
+    "domain/non-fiction.md",
+    "domain/education-level/06-graduate.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f6", "f7", "f8", "f9", "f10", "f11"],
+    "forbidden_additions": [
+      "Preregistered or pre-inspection status for the exclusions",
+      "Invented measurement faults, significance, or a causal effect",
+      "A claim that no sensitivity analysis was performed or that all post hoc analysis is inherently invalid",
+      "Independence, distinct-person totals, or equal staffing inferred without the needed records",
+      "A validated prediction for 12-hour sessions outside the observed range",
+      "Permanent deletion of the original records or an invented public data/code release",
+      "A claim that the editor reran analyses or personally checked source forms"
+    ],
+    "preserve": [
+      "R8 and R11 were excluded after inspection",
+      "27 records with slope 0.7 and 29 records with slope 0.4",
+      "Visitors per additional opening hour",
+      "The protocol date precedes the recorded analysis decision",
+      "Retain every logged window in the primary analysis.",
+      "Viewing, excluding, fitting the subset, and fitting all records remain in their documented order",
+      "Three studios and an observed duration range of two to six hours",
+      "The original data remain intact, and the smaller slope remains a reported result",
+      "The disclosure explains a defensible reporting boundary without manufacturing a confirmatory design"
+    ],
+    "expected_action": "edit"
+  }
+}

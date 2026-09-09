@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "public-press-unopposed-chair",
+  "split": "tuning",
+  "operation": "edit",
+  "task": "Copyedit this fictional society-news report only if there is a meaningful error. All people and organisations are invented. The distinction between an uncontested appointment and a unanimous vote matters to readers. Preserve the formal procedural language and return the report unchanged if it already works.",
+  "input": "Lenna Vey will become chair of the Paper Lantern Society following Sunday's members' meeting. Vey was the sole nominee. Under the society's rules, an uncontested nomination is confirmed without a ballot. No vote was taken. \"Unopposed does not mean that we counted unanimous support,\" the secretary said in the meeting note. The new chair's term begins at the next committee meeting.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Lenna Vey was the sole nominee for chair of the Paper Lantern Society."},
+    {"id": "f2", "text": "Sunday's members' meeting confirmed the uncontested nomination."},
+    {"id": "f3", "text": "The society's supplied rules confirm an uncontested nomination without a ballot."},
+    {"id": "f4", "text": "No vote was taken."},
+    {"id": "f5", "text": "The meeting note quotes the secretary exactly: \"Unopposed does not mean that we counted unanimous support.\""},
+    {"id": "f6", "text": "The chair's term begins at the next committee meeting."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f6"],
+    "forbidden_additions": [
+      "A unanimous vote, a vote total, or a claim that every member supported the nominee.",
+      "A fabricated opponent, controversy, biography, or start date.",
+      "A legal rule about elections substituted for the society's supplied procedure."
+    ],
+    "preserve": [
+      "Uncontested confirmation distinguished from measured unanimity.",
+      "The secretary's exact meaning and attribution.",
+      "The already clear report without cosmetic rewriting."
+    ],
+    "expected_action": "no_change"
+  }
+}

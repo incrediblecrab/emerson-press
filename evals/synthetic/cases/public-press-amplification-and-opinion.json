@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "public-press-amplification-and-opinion",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Edit this fictional hall-news report in about 80–120 words. Correct the scope of the house rule and the quotation's attribution while retaining the organiser's legitimate criticism as an attributed interpretation. Do not erase disagreement merely because the formal wording is narrower, or turn a house rule into a statement about current law.",
+  "input": "The Maple Hall committee has banned all music. \"For amplified bands, that amounts to a ban,\" the committee admitted. The decision ends every acoustic and amplified performance at the venue, although organisers say that is unreasonable.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Maple Hall committee's house rule prohibits amplified music after 8 p.m."},
+    {"id": "f2", "text": "Acoustic performances remain permitted after 8 p.m."},
+    {"id": "f3", "text": "The rule does not prohibit amplified music before 8 p.m."},
+    {"id": "f4", "text": "An organiser whose amplified event uses a later slot said exactly: \"For amplified bands, that amounts to a ban.\""},
+    {"id": "f5", "text": "The quoted criticism came from the organiser, not the committee."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5"],
+    "forbidden_additions": [
+      "A ban on all music or on amplified music at every hour.",
+      "The organiser's criticism attributed to the committee as an admission.",
+      "An invented cancelled event, legal restriction, or official response."
+    ],
+    "preserve": [
+      "The rule's time and amplification limits.",
+      "The organiser's criticism as a source-supported interpretation, not an independent statement of the rule.",
+      "The quotation's wording and speaker relationship."
+    ],
+    "expected_action": "edit"
+  }
+}

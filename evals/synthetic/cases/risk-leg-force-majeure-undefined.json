@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "risk-leg-force-majeure-undefined",
+  "split": "held_out",
+  "operation": "review",
+  "task": "Review this fictional force-majeure clause for completeness. Identify the undefined term and explain what is missing before the clause can be relied upon.",
+  "input": "Neither party shall be liable for failure to perform its obligations where such failure results from a Force Majeure Event.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The clause uses the term Force Majeure Event without defining it in the supplied text."},
+    {"id": "f2", "text": "The packet does not supply a definitions schedule or cross-reference for Force Majeure Event."},
+    {"id": "f3", "text": "The clause does not specify a notification requirement for a party invoking force majeure."}
+  ],
+  "modules": ["domain/legal.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3"],
+    "forbidden_additions": [
+      "An invented definition of Force Majeure Event.",
+      "Examples drawn from legislation or case law.",
+      "A claim about how courts typically interpret the term."
+    ],
+    "preserve": [
+      "The identification of the missing definition as the primary gap.",
+      "The separate observation about the absent notification requirement.",
+      "The absence of a recommended definition."
+    ],
+    "expected_action": "flag_missing_evidence"
+  }
+}

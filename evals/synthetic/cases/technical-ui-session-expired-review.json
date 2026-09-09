@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "technical-ui-session-expired-review",
+  "split": "held_out",
+  "operation": "review",
+  "task": "Review this session-expired message for accuracy. The message implies an account security risk where none occurred. Identify the overstatement and the missing information about unsaved input.",
+  "input": "Session expired. Your account may be at risk. Sign in immediately.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The session ended because the inactivity timeout of 30 minutes was reached."},
+    {"id": "f2", "text": "No account compromise occurred; the session expired normally."},
+    {"id": "f3", "text": "Any unsaved form input has been lost."},
+    {"id": "f4", "text": "The user must sign in again to continue."}
+  ],
+  "modules": ["domain/general.md", "user-interface/website.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "Acceptance of the security-risk claim when no compromise occurred.",
+      "Acceptance of the 'sign in immediately' urgency framing for a routine timeout."
+    ],
+    "preserve": [
+      "Inactivity timeout of 30 minutes as the actual cause.",
+      "No security incident.",
+      "Sign-in required to continue.",
+      "Unsaved input was lost as a consequence the message omits."
+    ],
+    "expected_action": "review"
+  }
+}

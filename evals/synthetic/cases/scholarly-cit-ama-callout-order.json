@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "id": "scholarly-cit-ama-callout-order",
+  "split": "tuning",
+  "operation": "draft",
+  "task": "Draft a 350–450-word implementation-and-evidence memo, plus references, for staff considering the fictional route-card workflow. Readers know their service desk but are new to these cards. Explain the guide's procedure, interpret the pilot's return and marking counts, discuss the reading assistance without inferring who returned a card, and distinguish a workflow record from a measure of completed visits. Begin with the guide, introduce the article second, and return to the guide's practical boundaries near the end. Do not invent a rollout, staffing promise, or improved outcome. Use AMA 11 numbering in order of first mention and reuse each work's number. This venue represents superscripts as [1], after sentence punctuation. Journal format: Author initials. Article title. Journal abbreviation. Year;volume(issue):pages. Book format: Author initials. Book title. Publisher; year. Use the supplied journal abbreviation. The word range applies to the memo, not its references; no retrieval is authorized.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "Bram Olt's guide says route cards go in the box beside the desk, whose label is exactly “Cards only”."
+    },
+    {
+      "id": "f2",
+      "text": "The pilot article reports 18 returned route cards among 24 people given a card at one service desk."
+    },
+    {
+      "id": "f3",
+      "text": "The pilot did not compare alternative box locations or establish what caused people to return cards."
+    },
+    {
+      "id": "f4",
+      "text": "Book record: Bram Olt; Desk routes; Celandine Office Press; 2023."
+    },
+    {
+      "id": "f5",
+      "text": "Journal-article record: Ivo Nemm and Ada Trel, in that order; Route-card returns at a service desk; J Desk Process; 2024; volume 7; issue 2; pages 44–49. No DOI is supplied."
+    },
+    {
+      "id": "f6",
+      "text": "Olt's guide gives each card three named stops—welcome table, materials counter, and exit desk—in visit order. Visitors may mark a box beside each stop they reach."
+    },
+    {
+      "id": "f7",
+      "text": "The guide asks staff to explain the next stop and offer to read the room names aloud. Assistance is available on request; the card is not a reading assessment."
+    },
+    {
+      "id": "f8",
+      "text": "The guide says not to put names or personal questions on the cards. Questions needing a reply go to a desk assistant, not into the anonymous return box."
+    },
+    {
+      "id": "f9",
+      "text": "The pilot used the same three-stop card and a fixed box beside the exit desk in two afternoon sessions. Twelve cards were handed out in each session, and nine were returned in each."
+    },
+    {
+      "id": "f10",
+      "text": "Of the 18 returned cards, 12 had all three stops marked and six left at least one stop unmarked. No follow-up established which stops those visitors actually reached."
+    },
+    {
+      "id": "f11",
+      "text": "Staff offered reading assistance in both sessions and tallied eight visitors accepting it. Anonymous cards were not linked to that tally, so the article cannot compare return rates by assistance use."
+    },
+    {
+      "id": "f12",
+      "text": "The article records no reasons for the six unreturned cards, visit durations, satisfaction measurements, or individual staff-performance measures. Its counts describe this workflow trial, not completed itineraries or service quality."
+    }
+  ],
+  "modules": [
+    "domain/non-fiction.md",
+    "citation/ama11.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f6", "f7", "f8", "f9", "f10", "f11", "f12"],
+    "forbidden_additions": [
+      "A claim that the box location caused the observed returns",
+      "A new reference number for the guide's second appearance",
+      "A fabricated DOI, journal abbreviation, or source-verification claim",
+      "Completed or missed stops inferred solely from the marking of anonymous cards",
+      "Return rates attributed to reading-assistance use without linked records",
+      "Invented satisfaction, staffing savings, implementation decisions, or reasons for nonreturn"
+    ],
+    "preserve": [
+      "Cards only",
+      "The guide is a book and the pilot report is a journal article",
+      "18 returned cards among 24 recipients",
+      "Guide first, article second, guide again",
+      "Two sessions each had 12 cards handed out and nine returned",
+      "12 returned cards were fully marked and six were not",
+      "Personal questions go to a desk assistant rather than into the anonymous box",
+      "A sustained comparison of prescribed procedure, recorded behavior, and evidentiary limits"
+    ],
+    "expected_action": "draft"
+  }
+}

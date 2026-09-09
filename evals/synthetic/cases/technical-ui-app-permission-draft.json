@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "technical-ui-app-permission-draft",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "Draft a permission request message for a fictional macOS application that needs access to the user's Documents folder to open and save project files. State the purpose clearly and accurately; do not overstate what the access is used for or claim the user has no alternative.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The application requests access to the user's Documents folder."},
+    {"id": "f2", "text": "Access is needed to open and save project files stored in Documents."},
+    {"id": "f3", "text": "The application does not read files outside of project folders the user explicitly opens."},
+    {"id": "f4", "text": "The request appears the first time the user tries to open a project in their Documents folder."},
+    {"id": "f5", "text": "The user can deny access and use a different folder location instead."}
+  ],
+  "modules": ["domain/general.md", "user-interface/applications.md", "user-interface/apple-hig.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f5"],
+    "forbidden_additions": [
+      "A claim that access is for any purpose beyond opening and saving project files.",
+      "A claim that the user has no alternative to granting access.",
+      "An invented telemetry or backup purpose."
+    ],
+    "preserve": [
+      "Documents folder access purpose: open and save project files only.",
+      "Limited scope: only explicitly opened project folders.",
+      "User can deny access and use a different folder."
+    ],
+    "expected_action": "draft"
+  }
+}

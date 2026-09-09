@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "technical-ui-empty-results-draft",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "Draft an empty-state heading, brief explanation, and one or two next-step suggestions for a fictional book catalogue when a search returns no matching titles. Do not suggest sign-in as a solution; no titles are hidden behind a sign-in wall for this search type.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The search returned no matching titles for the user's query."},
+    {"id": "f2", "text": "The user can try different search terms."},
+    {"id": "f3", "text": "The user can clear any active filters to broaden the search."},
+    {"id": "f4", "text": "No titles are hidden behind a sign-in wall for this search type."},
+    {"id": "f5", "text": "The full catalogue is browsable without an account."}
+  ],
+  "modules": ["domain/general.md", "user-interface/website.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3"],
+    "forbidden_additions": [
+      "A sign-in prompt or account upsell as a recovery suggestion.",
+      "A claim that titles are hidden.",
+      "An invented technical error message."
+    ],
+    "preserve": [
+      "No results for the query.",
+      "Clear filters and try different terms as the recovery actions.",
+      "Open catalogue framing without account requirement."
+    ],
+    "expected_action": "draft"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "technical-ui-app-tooltip-edit",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Edit this toolbar button tooltip to describe what activating the button does rather than repeating its label. The current tooltip duplicates the label verbatim. Use only the supplied facts about the share sheet's options.",
+  "input": "Button label: Share\nTooltip: Share",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The Share button opens a share sheet with options to copy a link, send via email, or export to a specified application."},
+    {"id": "f2", "text": "The tooltip should describe what activating the button does, not repeat the label."},
+    {"id": "f3", "text": "The link that can be copied is a link to the current document."}
+  ],
+  "modules": ["domain/general.md", "user-interface/applications.md", "user-interface/accessibility.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3"],
+    "forbidden_additions": [
+      "A tooltip that only repeats Share.",
+      "An invented sharing option not from the supplied facts.",
+      "Automatic sending not supported by the share sheet."
+    ],
+    "preserve": [
+      "Opens share sheet.",
+      "Copy link to current document.",
+      "Send via email or export options.",
+      "A descriptive tooltip that does not duplicate the label."
+    ],
+    "expected_action": "edit"
+  }
+}

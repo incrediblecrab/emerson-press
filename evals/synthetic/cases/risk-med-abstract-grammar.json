@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "risk-med-abstract-grammar",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Lightly copyedit this research-abstract excerpt from a fictional clinical exercise. Return it unchanged if it is already grammatically clear and the stated uncertainty is properly attributed to the authors.",
+  "input": "Participants in the intervention group reported fewer episodes of the target symptom over the eight-week follow-up period. The authors note that the study was not powered to detect differences in clinical outcomes.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The abstract describes a fictional clinical exercise with an intervention group."},
+    {"id": "f2", "text": "Participants in the intervention group self-reported fewer episodes of the target symptom over eight weeks."},
+    {"id": "f3", "text": "The authors note that the study was not powered to detect differences in clinical outcomes."}
+  ],
+  "modules": ["domain/medical.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3"],
+    "forbidden_additions": [
+      "A clinical outcome conclusion attributed to the intervention.",
+      "A power calculation or statistical threshold not in the abstract."
+    ],
+    "preserve": [
+      "The self-report attribution for the symptom episodes.",
+      "The authors' own caveat about study power.",
+      "The eight-week follow-up period."
+    ],
+    "expected_action": "no_change"
+  }
+}

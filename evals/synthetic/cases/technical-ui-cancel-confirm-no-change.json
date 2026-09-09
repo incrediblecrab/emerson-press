@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "technical-ui-cancel-confirm-no-change",
+  "split": "held_out",
+  "operation": "review",
+  "task": "Review this subscription cancellation confirmation. Return it unchanged if the copy accurately conveys all three supplied facts without overstating or understating consequences.",
+  "input": "Your subscription has been cancelled. You will retain access until the end of your current billing period on 15 October 2025. No further charges will be made.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The subscription has been cancelled."},
+    {"id": "f2", "text": "Access continues through the end of the current billing period: 15 October 2025."},
+    {"id": "f3", "text": "No further charges will be made after cancellation."}
+  ],
+  "modules": ["domain/general.md", "user-interface/website.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3"],
+    "forbidden_additions": [
+      "An invented data retention period or account deletion timeline.",
+      "A claim of immediate access loss.",
+      "Additional conditions not present in the supplied facts."
+    ],
+    "preserve": [
+      "Cancelled subscription status.",
+      "15 October 2025 as the access end date.",
+      "No further charges after cancellation."
+    ],
+    "expected_action": "no_change"
+  }
+}

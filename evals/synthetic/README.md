@@ -23,6 +23,19 @@ fixture does not create an independent observation. The newsroom recipe, grading
 criteria, independent reporting-packet families and statistical plan must be
 frozen before the primary held-out run.
 
+Known regression-family overlap is resolved before model generation. ClinicFlow
+and TaskHaven variants stay together in tuning rather than straddling splits;
+the technical destructive-dialog variant stays with its original tuning family.
+These corrections change the original per-shard split targets. Use the current
+case files and family indices, not the originally requested counts, and do not
+equate case totals with independent held-out families.
+
+The completed broad regression corpus contains 260 cases: 44 tuning and 216
+held-out labels, with 85 drafts, 116 edits, 59 reviews and 60 no-change cases.
+All 26 optional modules are covered. Its indices declare 247 family IDs; that
+count is not proof of independence or a substitute for the newsroom sample.
+These are authored fixtures, not 260 measured writing outcomes.
+
 ## Live response capture
 
 Live execution is optional and incurs Copilot usage. It requires Python 3.11 or
@@ -134,5 +147,5 @@ The four dialog responses also returned an edit, but extra process narration and
 unsupported keyboard-detail inferences still occurred. No compact-mode promotion,
 powered superiority claim or human-release decision follows from these pilots.
 
-Ten-minute checkpoints use ordinary Git commits and pushes. They do not dispatch
+Thirty-minute checkpoints use ordinary Git commits and pushes. They do not dispatch
 GitHub Actions; the authoring workflow is manual-only.

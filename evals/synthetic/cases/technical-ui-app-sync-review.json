@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "technical-ui-app-sync-review",
+  "split": "held_out",
+  "operation": "review",
+  "task": "Review this sync status label and accessible description for accuracy and completeness against the supplied facts. The current copy does not include the last sync time, which the facts require.",
+  "input": "Sync status: Up to date\nAccessible description: Everything is synced",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The last sync completed at 14:22 today."},
+    {"id": "f2", "text": "There are no pending local changes."},
+    {"id": "f3", "text": "The sync status display must include when the last sync occurred."},
+    {"id": "f4", "text": "The accessible description must communicate both sync completion and timing."}
+  ],
+  "modules": ["domain/general.md", "user-interface/applications.md", "user-interface/accessibility.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f3", "f4"],
+    "forbidden_additions": [
+      "Acceptance of status without last-sync time when the facts require it.",
+      "An invented sync time different from 14:22.",
+      "Acceptance of an accessible description that lacks timing."
+    ],
+    "preserve": [
+      "Up-to-date status as accurate.",
+      "Last sync at 14:22 today as a required addition.",
+      "Timing required in the accessible description."
+    ],
+    "expected_action": "review"
+  }
+}

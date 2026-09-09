@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "scholarly-edu-postgrad-unbounded-domain",
+  "split": "tuning",
+  "operation": "draft",
+  "task": "Draft an 80–110-word explanatory margin note for a post-graduate interdisciplinary methods workshop. The reader has a doctorate in linguistics, knows the order of real numbers, and is new to the bounded-domain condition in this mathematical guarantee. Explain the term using the supplied definition, then use the counterexample to show why closed alone does not give the guarantee. Do not infer mathematics familiarity from the credential or manufacture a research gap. A short, correct explanation is the requested scholarly contribution here.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "The exercise states that a continuous real-valued function on a nonempty closed bounded subset of the real numbers attains a minimum."
+    },
+    {
+      "id": "f2",
+      "text": "Bounded means that all points of the domain lie between some finite lower and upper bounds."
+    },
+    {
+      "id": "f3",
+      "text": "The full real line is closed but is not bounded."
+    },
+    {
+      "id": "f4",
+      "text": "For f(x) = x on the full real line, every chosen x has a smaller value at x − 1, so this continuous function has no minimum."
+    },
+    {
+      "id": "f5",
+      "text": "The counterexample shows that closed alone is insufficient for the stated guarantee; it does not say that every function on an unbounded domain lacks a minimum."
+    }
+  ],
+  "modules": [
+    "domain/general.md",
+    "domain/education-level/07-post-graduate.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5"],
+    "forbidden_additions": [
+      "A claim that the real line is bounded or that f(x) = x attains a minimum there",
+      "A claim that no function on any unbounded domain can have a minimum",
+      "A fabricated novelty claim, research gap, or source citation"
+    ],
+    "preserve": [
+      "Nonempty, closed, and bounded are the supplied domain conditions",
+      "For every x, x − 1 gives a smaller value of f",
+      "Failure of a universal guarantee is not failure for every possible function",
+      "Support is based on the reader's stated topic familiarity"
+    ],
+    "expected_action": "draft"
+  }
+}

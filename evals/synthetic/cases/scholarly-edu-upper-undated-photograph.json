@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "scholarly-edu-upper-undated-photograph",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "Draft a 65–95-word explanation for an upper-elementary history display about these two fictional objects. The class can read dates but is learning why a date on one object cannot automatically date another. Explain what label each object can receive and why the photograph's position on a timeline remains unsettled. The packet descriptions are the only evidence. Do not invent an event identification from the lanterns or retrieve historical images.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "A printed ticket names the Sunreed Lantern Fair and bears the date March 14, 1932."
+    },
+    {
+      "id": "f2",
+      "text": "A separate photograph shows a crowd carrying lanterns; it has no caption or date."
+    },
+    {
+      "id": "f3",
+      "text": "Nothing in the packet links the photograph to the fair named on the ticket."
+    },
+    {
+      "id": "f4",
+      "text": "The ticket can be labeled with its printed event and date; the photograph's event and date remain unknown."
+    }
+  ],
+  "modules": [
+    "domain/non-fiction.md",
+    "domain/education-level/02-elementary-upper.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "A claim that the photograph shows the Sunreed Lantern Fair",
+      "An invented photograph date or definite order between the two objects",
+      "A claim of image retrieval or external historical verification"
+    ],
+    "preserve": [
+      "March 14, 1932 dates the ticket's event",
+      "The photograph's date and event are not established",
+      "An explanation based on source relationships rather than assumed learner competence"
+    ],
+    "expected_action": "draft"
+  }
+}

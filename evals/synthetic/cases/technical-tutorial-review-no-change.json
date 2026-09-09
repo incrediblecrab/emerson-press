@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "technical-tutorial-review-no-change",
+  "split": "held_out",
+  "operation": "review",
+  "task": "Review this tutorial prerequisites section for accuracy against the supplied prerequisite facts. Return it unchanged if all three prerequisites are correctly stated and no unsupported requirement is added.",
+  "input": "Before starting, ensure you have Go 1.21 or later installed and a valid API token from the developer portal. You do not need a local database for this tutorial.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "Go 1.21 or later is required to follow this tutorial."},
+    {"id": "f2", "text": "A valid API token from the developer portal is required."},
+    {"id": "f3", "text": "The tutorial uses an in-memory store and does not require a local database installation."}
+  ],
+  "modules": ["domain/technical.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3"],
+    "forbidden_additions": [
+      "An invented prerequisite not in the supplied facts.",
+      "An incorrect Go version requirement.",
+      "A claim that a local database is required."
+    ],
+    "preserve": [
+      "Go 1.21 or later.",
+      "Developer portal token as a required credential.",
+      "No local database installation needed."
+    ],
+    "expected_action": "no_change"
+  }
+}

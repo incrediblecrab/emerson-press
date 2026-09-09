@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "risk-med-screening-draft",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "Draft a fact-sheet section for a fictional public-health programme describing which age groups are invited to participate in a routine screening initiative. Do not add eligibility exclusions, referral instructions, or clinical outcomes not supplied.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional programme is the Westfield Community Screening Initiative."},
+    {"id": "f2", "text": "The initiative invites adults aged 45 to 70 to participate."},
+    {"id": "f3", "text": "Participation is voluntary."},
+    {"id": "f4", "text": "Participants are notified of their results within six weeks of attending."},
+    {"id": "f5", "text": "The programme fact sheet does not specify clinical eligibility exclusions."}
+  ],
+  "modules": ["domain/medical.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "Clinical eligibility exclusions not in the facts.",
+      "A referral pathway or follow-up care description.",
+      "A diagnostic outcome or detection-rate claim."
+    ],
+    "preserve": [
+      "The 45-to-70 age range for invitation.",
+      "The voluntary nature of participation.",
+      "The six-week result-notification period."
+    ],
+    "expected_action": "draft"
+  }
+}

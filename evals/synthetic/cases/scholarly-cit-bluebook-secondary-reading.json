@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "id": "scholarly-cit-bluebook-secondary-reading",
+  "split": "held_out",
+  "operation": "review",
+  "task": "Review this long-form seminar explainer, intended as a 330–450-word reading note including footnotes, and return the whole passage unchanged if it is already faithful and useful. Readers are new to separating a commentator's argument, a dissent, and a holding. The venue's Bluebook 22 full form is Author, Italicized Article Title, volume Journal Abbreviation first page, pinpoint (year). Footnote 1 supplies the full citation; later notes use Varo, supra note 1, at pinpoint. Markdown italics, superscript note markers, and the supplied Brine L. Rev. abbreviation are accepted. Preserve the source's hypothetical examples, quotation, meaningful qualifications, and sustained formal voice. Do not compress a sound explanation merely because its distinctions recur, and do not turn it into advice about current law.",
+  "input": "Varo reads the dissent as an argument about notice: an opportunity to respond matters separately from the existence of a mailing record. This is the article author's characterization of the dissent, not a holding we can attribute to the court. The distinction fixes the level at which this seminar note proceeds. We are examining how a commentator understands an argument, not treating the commentator's account as the court's own words.¹\n\nTiming sharpens that distinction. Varo imagines an envelope dispatched on the afternoon before a meeting, with no recorded time of receipt. Dispatch alone cannot tell the reader how much time the recipient had to prepare a response. As Varo puts it, “An available route is not a record of arrival.” The example concerns the evidence needed to assess an opportunity; it does not establish that a particular recipient read, ignored, or even received the envelope.²\n\nThe article next uses a hypothetical dispatch log to separate an administrative act from its destination. A row showing an envelope sent is evidence of dispatch. It is not an acknowledgment by the addressee. That difference matters when a summary moves from “the office sent notices” to “everyone had notice”: the second statement needs support that the hypothetical log does not supply. Varo's example does not establish that delivery failed, either. An absent acknowledgment leaves a question open rather than answering it in the opposite direction.³\n\nVaro also discusses allowing an oral question at a later meeting. That possibility could offer a further opportunity to respond; it would not retroactively establish when the earlier envelope arrived. The article presents it as a proposal to consider, not an adopted remedy. Its attraction as an argument does not change the dissent's status or turn Varo's reading into a majority holding.⁴\n\nFor our handout, the useful discipline is to label each level: the author's reading, the dissent's argument, and any majority disposition actually established by a source. Here the underlying opinions and receipt records are not supplied. This note can explain the article's distinctions without claiming to have checked those materials or stating a rule for an actual jurisdiction.\n\n1. Tess Varo, *The Margin of a Vote*, 6 Brine L. Rev. 11, 18 (2021).\n2. Varo, supra note 1, at 19–20.\n3. Varo, supra note 1, at 21–22.\n4. Varo, supra note 1, at 23–24.",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "Fictional law-review article: Tess Varo; The Margin of a Vote; volume 6 of Brine L. Rev.; first page 11; 2021."
+    },
+    {
+      "id": "f2",
+      "text": "At page 18, Varo interprets a dissent as an argument about notice."
+    },
+    {
+      "id": "f3",
+      "text": "The packet supports Varo's characterization as an attributed interpretation, not as a majority holding or a statement about real law."
+    },
+    {
+      "id": "f4",
+      "text": "On pages 19–20, Varo gives a hypothetical envelope dispatched the afternoon before a meeting, with no recorded receipt time, to distinguish dispatch from an opportunity to prepare a response."
+    },
+    {
+      "id": "f5",
+      "text": "On page 20, Varo writes exactly “An available route is not a record of arrival.”"
+    },
+    {
+      "id": "f6",
+      "text": "On pages 21–22, a hypothetical dispatch log records envelopes sent but contains no addressees' acknowledgments. Varo treats it as evidence of dispatch, not proof of either receipt or failed delivery."
+    },
+    {
+      "id": "f7",
+      "text": "On pages 23–24, Varo considers allowing an oral question at a later meeting as an additional opportunity to respond. The article neither reports adoption of that proposal nor treats it as proof of when an earlier envelope arrived."
+    },
+    {
+      "id": "f8",
+      "text": "The seminar's supplied reading procedure distinguishes the article author's interpretation, the dissent's argument, and any majority disposition established by a source."
+    },
+    {
+      "id": "f9",
+      "text": "The packet supplies article excerpts through page 24, but no underlying opinions or actual dispatch or receipt records."
+    }
+  ],
+  "modules": [
+    "domain/legal.md",
+    "citation/bluebook22.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f6", "f7", "f8", "f9"],
+    "forbidden_additions": [
+      "A case citation replacing the law-review article",
+      "An assertion that the dissent or article establishes binding law",
+      "A real jurisdiction, later authority, or claim of current-law verification",
+      "A hypothetical envelope or dispatch log presented as a verified case event",
+      "Actual receipt, nonreceipt, or reading inferred from dispatch alone",
+      "An adopted later-meeting remedy not reported by the article"
+    ],
+    "preserve": [
+      "6 Brine L. Rev. 11, 18 (2021)",
+      "Tess Varo and The Margin of a Vote",
+      "The article author's reading of a dissent is not a majority holding",
+      "The existing formal but comprehensible wording",
+      "An available route is not a record of arrival.",
+      "Footnote 1's full citation and the later notes' pinpoints 19–20, 21–22, and 23–24",
+      "The difference between missing acknowledgment and proven failed delivery",
+      "The longer explanation's progression from timing through documentary evidence to interpretive status"
+    ],
+    "expected_action": "no_change"
+  }
+}

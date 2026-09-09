@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "technical-ui-app-context-menu-draft",
+  "split": "tuning",
+  "operation": "draft",
+  "task": "Draft the item labels for a right-click context menu in a fictional macOS document management application. The menu appears on a selected document. Use only the supplied action facts and preserve the supplied order and labeling conventions.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "Open opens the document in the default editor."},
+    {"id": "f2", "text": "Rename lets the user rename the document inline."},
+    {"id": "f3", "text": "Move to Folder… opens a folder-picker sheet (ellipsis indicates a follow-up sheet)."},
+    {"id": "f4", "text": "Duplicate creates a copy of the document in the same folder."},
+    {"id": "f5", "text": "Move to Trash moves the document to the system Trash; this is not a permanent deletion."},
+    {"id": "f6", "text": "The items appear in this order: Open, Rename, Move to Folder…, Duplicate, Move to Trash."}
+  ],
+  "modules": ["domain/general.md", "user-interface/applications.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f6"],
+    "forbidden_additions": [
+      "An invented menu item not from the supplied facts.",
+      "A reordering of the six items.",
+      "Delete Permanently as a label when the fact specifies Move to Trash."
+    ],
+    "preserve": [
+      "All six items in the supplied order.",
+      "Ellipsis in Move to Folder… indicating a follow-up sheet.",
+      "Move to Trash as distinct from permanent deletion."
+    ],
+    "expected_action": "draft"
+  }
+}

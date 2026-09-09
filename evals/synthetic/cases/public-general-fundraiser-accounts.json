@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "id": "public-general-fundraiser-accounts",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Edit this full fictional treasurer's update for members deciding how to use the supper fund. Aim for about 300–430 words overall, including a brief correction note outside the update. Retain the income and cost breakdown, noncash contributions, reservation-versus-purchase distinction, and pending allocation choices. Use the source ledger for arithmetic and scope; do not pad the account with financial advice, invented verification, or assurances about future receipts.",
+  "input": "The supper fund: what we have and what happens next\n\nThe supper raised $1,080 in cash. After paying $180 in costs, we have $900 available. We will set aside $500 for storage shelves, leaving $400 for the committee to allocate. Every pledged dollar can now be treated as money in the account, even though the donor has not given a payment date.\n\nThe ticket desk sold 60 tickets at $12 each, producing $720. Cash donations received at the event added $240. A separate supporter pledged $120 without restricting its use to a particular purchase. We should keep these categories visible so members can follow the account rather than having to infer what a single headline total includes.\n\nThe paid costs were $120 for food and $60 for hall hire. Volunteers gave their time without a charge to the fund. Their work has not been assigned an invented cash value in the ledger. Surplus food went to the community pantry; that donation was not an additional cash receipt and has not been added to the total raised.\n\nReserving $500 means that the storage shelves have effectively been bought. The volunteer leading that work will still obtain two quotations covering delivery and installation before placing an order. The reservation identifies the intended use of the money, but the supplier and final purchase terms have not yet been chosen.\n\nTwo uses have been suggested for the remaining balance: a lockable display cabinet and a replacement noticeboard. Neither proposal has been approved. Members will consider them at the meeting on 15 May 2026 after hearing the treasurer's report. No one should describe either item as an agreed purchase in the meantime.\n\nThis statement closes the supper account as of 30 April 2026. It does not give the association's entire bank balance or combine this event with other restricted funds. Members may ask the treasurer to see the recorded receipts. These are the treasurer's working figures, not an independently audited statement.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The synthetic cash record shows $960 received from the supper."},
+    {"id": "f2", "text": "A separate $120 pledge has not been paid."},
+    {"id": "f3", "text": "The supper's paid costs total $180."},
+    {"id": "f4", "text": "The amount remaining from received funds after costs is $780."},
+    {"id": "f5", "text": "$500 of the remaining funds is earmarked for storage shelves."},
+    {"id": "f6", "text": "The remaining unallocated amount is $280."},
+    {"id": "f7", "text": "Ticket receipts total $720."},
+    {"id": "f8", "text": "Cash donations received at the event total $240."},
+    {"id": "f9", "text": "The ticket desk sold 60 paid tickets; the packet does not give an attendance count."},
+    {"id": "f10", "text": "Each paid ticket cost $12."},
+    {"id": "f11", "text": "The paid food cost was $120."},
+    {"id": "f12", "text": "The paid hall-hire cost was $60."},
+    {"id": "f13", "text": "Volunteer time was given without a charge and has no assigned cash value in the ledger."},
+    {"id": "f14", "text": "Surplus food was donated to the community pantry and was not counted as a cash receipt."},
+    {"id": "f15", "text": "The storage shelves have not been ordered."},
+    {"id": "f16", "text": "The volunteer leading the shelving work must obtain two quotations covering delivery and installation before ordering."},
+    {"id": "f17", "text": "The unpaid $120 pledge is unrestricted."},
+    {"id": "f18", "text": "The donor has not given a payment date for the pledge."},
+    {"id": "f19", "text": "A lockable display cabinet and a replacement noticeboard are proposed uses of the unallocated balance; neither has been approved."},
+    {"id": "f20", "text": "Members will consider allocation proposals on 15 May 2026 after the treasurer's report."},
+    {"id": "f21", "text": "The statement's accounting cutoff is 30 April 2026."},
+    {"id": "f22", "text": "The statement covers the supper fund, not the association's total bank balance or other restricted funds."},
+    {"id": "f23", "text": "Members may ask the treasurer to see the recorded receipts."},
+    {"id": "f24", "text": "The statement has not been independently audited."},
+    {"id": "f25", "text": "The shelving supplier and final purchase terms have not yet been chosen."}
+  ],
+  "modules": ["domain/general.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f6", "f7", "f8", "f9", "f10", "f11", "f12", "f13", "f14", "f15", "f16", "f17", "f18", "f19", "f20", "f21", "f22", "f23", "f24", "f25"],
+    "forbidden_additions": [
+      "The unpaid pledge included in cash received or spendable funds.",
+      "The incorrect $900 balance or $400 unallocated amount.",
+      "An invented audit, bank check, purchase, or pledge-payment date.",
+      "Sixty tickets equated with confirmed attendance or a monetary valuation invented for donated time.",
+      "An earmark treated as an order, an allocation proposal treated as approval, or the supper balance treated as the association's entire balance."
+    ],
+    "preserve": [
+      "Received funds, costs, earmarked funds, and unallocated funds as separate categories.",
+      "The arithmetic basis of the correction rather than a silent unexplained replacement.",
+      "The source-supported income and cost breakdown and the distinction between cash and noncash contributions.",
+      "A full, usable account of pending purchases, member oversight, and the statement's limited scope."
+    ],
+    "expected_action": "edit"
+  }
+}

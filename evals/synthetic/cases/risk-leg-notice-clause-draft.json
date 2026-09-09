@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "risk-leg-notice-clause-draft",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "Draft a notice clause for a fictional distribution agreement using the supplied facts. Do not add delivery methods, deemed-receipt rules, or email-notice provisions not supplied.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional distribution agreement is between Fenwick Products Ltd. and Dalton Retail Corp."},
+    {"id": "f2", "text": "All notices under the agreement must be in writing."},
+    {"id": "f3", "text": "Notices must be delivered to the address listed in Schedule A of the agreement."},
+    {"id": "f4", "text": "The facts do not specify permitted delivery methods."}
+  ],
+  "modules": ["domain/legal.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3"],
+    "forbidden_additions": [
+      "A specified delivery method such as courier, registered post, or email.",
+      "A deemed-receipt rule triggered by a defined period after sending.",
+      "An address for either party."
+    ],
+    "preserve": [
+      "The writing requirement for all notices.",
+      "The reference to Schedule A as the source of delivery addresses.",
+      "The absence of specified delivery methods."
+    ],
+    "expected_action": "draft"
+  }
+}

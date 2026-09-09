@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "risk-leg-ip-ownership",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Copyedit this fictional IP-ownership clause. Return it unchanged if it is already grammatically correct and the ownership assignment is clearly stated.",
+  "input": "All deliverables created by the Supplier under this Agreement shall be owned by the Client upon full payment of all applicable fees.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "Deliverables are owned by the Client upon full payment."},
+    {"id": "f2", "text": "The condition for ownership transfer is full payment of all applicable fees."}
+  ],
+  "modules": ["domain/legal.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2"],
+    "forbidden_additions": [
+      "A licence-back to the Supplier.",
+      "A definition of deliverables or pre-existing IP carve-out.",
+      "An escrow or step-in-right provision."
+    ],
+    "preserve": [
+      "The full-payment condition for ownership transfer.",
+      "The assignment to the Client.",
+      "The unchanged wording without substantive expansion."
+    ],
+    "expected_action": "no_change"
+  }
+}

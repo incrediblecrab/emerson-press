@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "technical-ui-chart-tooltip-edit",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Edit this interactive bar chart tooltip template. The current template omits the y-axis unit and uses a non-standard format for the value. Correct the format and add the unit per the supplied facts.",
+  "input": "Tooltip template: \"[Category]: [value]\"",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The x-axis categories are months named January through December."},
+    {"id": "f2", "text": "The y-axis unit is number of orders."},
+    {"id": "f3", "text": "The tooltip must show the month name, the value, and the unit."},
+    {"id": "f4", "text": "The format documented for this chart library is: \"{month}: {value} orders\"."}
+  ],
+  "modules": ["domain/general.md", "user-interface/applications.md", "user-interface/charts.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "Omission of the unit from the tooltip.",
+      "A non-standard format not matching the documented pattern.",
+      "An invented field not from the supplied facts."
+    ],
+    "preserve": [
+      "\"{month}: {value} orders\" as the documented format.",
+      "Orders as the unit.",
+      "Month name as the category identifier."
+    ],
+    "expected_action": "edit"
+  }
+}

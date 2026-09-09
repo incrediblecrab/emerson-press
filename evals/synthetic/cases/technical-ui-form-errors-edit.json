@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "technical-ui-form-errors-edit",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Edit these inline form error messages. The current messages are vague and blame the user. Rewrite them to be specific, actionable, and non-blaming using only the supplied facts about what each error actually means.",
+  "input": "Error: Bad email address. Error: You forgot to check the box.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The email field error occurs when the supplied value does not match email address format."},
+    {"id": "f2", "text": "The checkbox error occurs when the terms of service checkbox is unchecked at submission."},
+    {"id": "f3", "text": "The terms of service checkbox must be checked to submit the form."}
+  ],
+  "modules": ["domain/general.md", "user-interface/website.md", "user-interface/accessibility.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3"],
+    "forbidden_additions": [
+      "Blame phrasing such as you forgot, bad, or wrong.",
+      "A vague error message without an actionable description.",
+      "An invented policy or field requirement not from the supplied facts."
+    ],
+    "preserve": [
+      "Email format mismatch as the specific error cause.",
+      "Terms of service acceptance required to submit.",
+      "Non-blaming, specific, actionable descriptions."
+    ],
+    "expected_action": "edit"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "risk-med-hedged-summary",
+  "split": "tuning",
+  "operation": "review",
+  "task": "Review this fictional clinical-communication summary for appropriate hedging of uncertainty. Return no-change feedback if the summary correctly distinguishes patient-reported symptoms from confirmed findings and avoids overstatement.",
+  "input": "Mrs. Patel reports increased fatigue over the past month. No clinical finding in the current notes confirms the cause. The next appointment is scheduled for 4 November 2025.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "Mrs. Patel is a fictional patient in a clinical communication exercise."},
+    {"id": "f2", "text": "She reports increased fatigue over the past month."},
+    {"id": "f3", "text": "No clinical finding in the supplied notes confirms the cause of the fatigue."},
+    {"id": "f4", "text": "The next appointment is scheduled for 4 November 2025."}
+  ],
+  "modules": ["domain/medical.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "A diagnosis or clinical explanation for the fatigue.",
+      "A medication or investigation recommendation.",
+      "An invented prior finding or test result."
+    ],
+    "preserve": [
+      "The patient-report attribution for fatigue.",
+      "The explicit statement that the cause is not confirmed by current clinical findings.",
+      "The 4 November 2025 appointment date."
+    ],
+    "expected_action": "no_change"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "risk-leg-termination-grammar",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Correct the grammar errors in this fictional for-convenience termination clause. Do not change the notice period, the triggering events, or the payment consequence on termination.",
+  "input": "Either party may terminates this Agreement for convenience upon 60 days written notice. Upon termination, the Client shall pay for all services rendered up to and include the termination date.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "Either party may terminate the agreement for convenience upon 60 days' written notice."},
+    {"id": "f2", "text": "Upon termination, the client pays for all services rendered up to and including the termination date."}
+  ],
+  "modules": ["domain/legal.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2"],
+    "forbidden_additions": [
+      "A new triggering event for termination.",
+      "A post-termination restriction such as a non-compete.",
+      "A different notice period."
+    ],
+    "preserve": [
+      "The 60-day written notice period.",
+      "The for-convenience termination right for both parties.",
+      "The payment obligation through the termination date."
+    ],
+    "expected_action": "edit"
+  }
+}

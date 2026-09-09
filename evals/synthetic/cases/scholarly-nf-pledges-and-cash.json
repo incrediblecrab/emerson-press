@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "id": "scholarly-nf-pledges-and-cash",
+  "split": "tuning",
+  "operation": "draft",
+  "task": "Draft a 350–450-word annual-report section for the fictional Wrenfold Sound Museum's packing fund, using the quarter-end ledger and project notes. Explain pledges, receipts, spending, cash remaining, and the separately recorded noncash contributions. Connect the financial account to the completed case work without treating fit checks as conservation or playability tests. Distinguish agreed next steps from an uncosted completion forecast. The section should give trustees and public readers an accountable picture of progress, not a fundraising appeal, transaction, or generic celebration of impact. Make the arithmetic traceable, preserve the reporting period, and keep a restrained institutional voice. No price for donated materials, wage valuation, payment guarantee, or exhibition outcome may be invented.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "For January 1 through March 31, 2025, the packing-fund ledger records $3,600 in total monetary pledges."
+    },
+    {
+      "id": "f2",
+      "text": "Of those pledges, $2,400 was received in cash and $1,200 remained unpaid at the period's end."
+    },
+    {
+      "id": "f3",
+      "text": "The fund began the period with no cash, and its only recorded spending was $950 for packing materials."
+    },
+    {
+      "id": "f4",
+      "text": "The closing cash balance was $1,450: $2,400 received minus $950 spent."
+    },
+    {
+      "id": "f5",
+      "text": "The ledger supplies no payment date or guarantee for the unpaid pledges."
+    },
+    {
+      "id": "f6",
+      "text": "The $950 spending consists of $650 for sheet materials and $300 for custom supports; both amounts are already included in the recorded total, not additional expenses."
+    },
+    {
+      "id": "f7",
+      "text": "The project is making reusable packing cases for 12 instruments. By March 31, eight cases had passed a fit check and four were awaiting instrument measurements from a lender."
+    },
+    {
+      "id": "f8",
+      "text": "A fit check confirms that the case and supports match the intended instrument. It is not a test of the instrument's playability, a completed conservation treatment, or confirmation that an exhibition is ready."
+    },
+    {
+      "id": "f9",
+      "text": "Volunteers recorded 18 hours assembling cases during the quarter. The ledger assigns no monetary value to those hours, and paid staff hours are not supplied."
+    },
+    {
+      "id": "f10",
+      "text": "A donor supplied four rolls of cushioning paper. They are recorded as materials received, outside both the $3,600 monetary pledges and the $2,400 cash receipts."
+    },
+    {
+      "id": "f11",
+      "text": "No financial valuation of the donated paper is provided."
+    },
+    {
+      "id": "f12",
+      "text": "The board plans to keep the $1,450 balance in the packing fund. The packet provides no cost estimate for finishing the remaining four cases, so the balance does not establish a surplus or fully funded completion."
+    },
+    {
+      "id": "f13",
+      "text": "The board's recorded next steps are to reconcile outstanding pledges and arrange access to measure the lender's instruments before preparing a completion estimate. No access date or completion date has been agreed."
+    }
+  ],
+  "modules": ["domain/non-fiction.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f6", "f7", "f8", "f9", "f10", "f11", "f12", "f13"],
+    "forbidden_additions": [
+      "An assertion that all $3,600 was received or that $2,650 remains as cash",
+      "A guaranteed payment date for the unpaid pledges",
+      "Unrecorded spending, unrestricted-fund status, or quantified visitor benefits",
+      "The $650 and $300 subtotals counted again on top of the $950 spending",
+      "An invented price or wage valuation added to the cash account",
+      "A fit check described as verified playability, completed conservation, or exhibition readiness",
+      "A surplus, fully funded completion, agreed access date, or completion date unsupported by the project notes"
+    ],
+    "preserve": [
+      "$3,600 pledged, $2,400 received, and $1,200 unpaid",
+      "$950 spent and a $1,450 closing cash balance",
+      "Pledges and received funds are not interchangeable",
+      "The report is factual institutional non-fiction, not an appeal",
+      "January 1 through March 31, 2025",
+      "$650 plus $300 comprises, rather than supplements, the $950 total",
+      "Eight of 12 cases passed fit checks; four await measurements",
+      "18 volunteer hours and four donated paper rolls remain noncash records without invented valuations",
+      "Recorded next steps remain distinct from an agreed completion timetable"
+    ],
+    "expected_action": "draft"
+  }
+}

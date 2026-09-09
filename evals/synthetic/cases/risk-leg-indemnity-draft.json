@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "id": "risk-leg-indemnity-draft",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "Draft an indemnity section for a fictional services agreement comprising three sub-clauses: (a) mutual indemnity obligations, (b) notice of claims, and (c) cooperation in defence. Use only the supplied facts. Do not add indemnity caps, claim-handling procedures beyond what is supplied, or carve-outs not in the facts.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "The fictional services agreement is between Carven Group Inc. and Westfield Consulting LLC."
+    },
+    {
+      "id": "f2",
+      "text": "Each party agrees to indemnify, defend, and hold harmless the other party against losses, damages, and reasonable legal costs arising from its own gross negligence or wilful misconduct."
+    },
+    {
+      "id": "f3",
+      "text": "The indemnity obligation does not extend to losses caused by the indemnified party's own negligence or wilful misconduct."
+    },
+    {
+      "id": "f4",
+      "text": "A party seeking indemnification must give written notice to the indemnifying party as soon as reasonably practicable after becoming aware of a claim, and in any event within 30 days."
+    },
+    {
+      "id": "f5",
+      "text": "Failure to give timely notice does not discharge the indemnifying party's obligation except to the extent it is materially prejudiced by the delay."
+    },
+    {
+      "id": "f6",
+      "text": "The indemnified party must cooperate reasonably with the indemnifying party in the defence or settlement of any claim, at the indemnifying party's reasonable cost."
+    },
+    {
+      "id": "f7",
+      "text": "The indemnifying party may not settle a claim in a manner that imposes obligations on the indemnified party without the indemnified party's written consent."
+    },
+    {
+      "id": "f8",
+      "text": "The facts do not include a cap on indemnity amounts."
+    }
+  ],
+  "modules": [
+    "domain/legal.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f7"
+    ],
+    "forbidden_additions": [
+      "An indemnity cap or aggregate limit not in the facts.",
+      "An IP-specific, data-breach, or regulatory-fine carve-out.",
+      "A claim-handling escrow or insurance-requirement provision."
+    ],
+    "preserve": [
+      "The mutual structure: both parties may be indemnified and indemnifying.",
+      "The 30-day notice window and the prejudice-based carve-out for late notice.",
+      "The cooperation obligation and the prohibition on settling without the indemnified party's written consent.",
+      "The three-clause structure: mutual indemnity, notice, cooperation."
+    ],
+    "expected_action": "draft"
+  }
+}

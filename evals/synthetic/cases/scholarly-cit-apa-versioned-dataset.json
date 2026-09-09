@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "scholarly-cit-apa-versioned-dataset",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "Write a 60–90-word data-use note and one APA 7 reference for the supplied fictional versioned dataset. Explain why version 2 should not be added to version 1 as though it were another observation period. Cite it as (Bex & Onsi, 2024). Venue reference mechanics: Authors' surnames and initials. (Year). Italicized dataset title (Version number) [Data set]. Publisher. URL. Cite the dataset actually used, not a nonexistent journal article. The supplied URL identifies version 2; no DOI, retrieval date, or archive is available or needed.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "Dataset record: Omi Bex and Ralo Onsi; Footpath puddle counts; version 2; 2024; Heronfold Observatory; https://example.org/data/footpath-puddles/v2."
+    },
+    {
+      "id": "f2",
+      "text": "Version 2 contains the same 16 observation rows as version 1."
+    },
+    {
+      "id": "f3",
+      "text": "Version 2 corrects the path-name column in four rows; it adds no observations and changes no puddle counts."
+    },
+    {
+      "id": "f4",
+      "text": "The current classroom analysis uses version 2 only."
+    }
+  ],
+  "modules": [
+    "domain/non-fiction.md",
+    "citation/apa7.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "A claim that the two versions supply 32 independent observations",
+      "A journal or conference identity for the dataset",
+      "An invented DOI, archive, retrieval date, or later version"
+    ],
+    "preserve": [
+      "Version 2",
+      "[Data set]",
+      "https://example.org/data/footpath-puddles/v2",
+      "Only path names changed; counts and observation rows did not"
+    ],
+    "expected_action": "draft"
+  }
+}

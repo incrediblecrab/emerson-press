@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "technical-ui-app-loading-draft",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "Draft a loading screen heading, accessible status message, and brief caption for a fictional application restoring a large workspace. Explain what is happening without implying the process has stalled. Do not supply an estimated time or a cancel action because neither is available.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The application is restoring a workspace saved in the previous session."},
+    {"id": "f2", "text": "The restoration process reads project files from the local disk."},
+    {"id": "f3", "text": "Restoration time depends on workspace size; no estimated time is available to the application."},
+    {"id": "f4", "text": "The process cannot be cancelled once started."},
+    {"id": "f5", "text": "The loading indicator is an indeterminate spinner with no percentage."}
+  ],
+  "modules": ["domain/general.md", "user-interface/applications.md", "user-interface/accessibility.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5"],
+    "forbidden_additions": [
+      "An estimated time or progress percentage when none is available.",
+      "A cancel action when cancellation is not supported.",
+      "Language that implies the process has stalled."
+    ],
+    "preserve": [
+      "Restoring previous workspace as the described operation.",
+      "Variable duration with no ETA.",
+      "Indeterminate spinner: no percentage.",
+      "Cannot be cancelled."
+    ],
+    "expected_action": "draft"
+  }
+}

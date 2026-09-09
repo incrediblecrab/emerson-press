@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "public-press-school-bell-pilot",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "Draft an 80–120-word school-news brief for families in a fictional district. Distinguish the first bell from classroom opening and lesson start. Attribute the intended purpose without presenting it as a measured improvement. This is ordinary news, not an academic assignment for a particular education level.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "Juniper Yard School will trial a first bell at 8:50 a.m. instead of 8:40 a.m."},
+    {"id": "f2", "text": "The trial runs for two weeks beginning Monday 2 November 2026."},
+    {"id": "f3", "text": "Classrooms will still open at 8:30 a.m."},
+    {"id": "f4", "text": "Lessons will still begin at 9 a.m."},
+    {"id": "f5", "text": "The principal's letter says exactly: \"The change is intended to spread arrivals more evenly.\""},
+    {"id": "f6", "text": "The letter contains no trial results."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5"],
+    "forbidden_additions": [
+      "A later lesson start, later classroom opening, or permanent timetable change.",
+      "Measured reductions in congestion or a claim that the trial has succeeded.",
+      "Unprovided transport changes, attendance rules, or parent reactions."
+    ],
+    "preserve": [
+      "Three different timetable events with their correct times.",
+      "An intention attributed to the principal rather than an established result.",
+      "The trial's duration and verified starting weekday."
+    ],
+    "expected_action": "draft"
+  }
+}

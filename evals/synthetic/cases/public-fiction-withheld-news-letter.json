@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "public-fiction-withheld-news-letter",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Copyedit this fictional letter only for a real mechanical problem. The nephew has missed his train but is not ready to tell his aunt; the brief deliberately lets objects carry that implication. Preserve the period-inflected courtesy and withholding without inventing a historical setting or making the character more forthcoming. Return the letter unchanged if it works.",
+  "input": "Dear Aunt,\n\nThe trunk stands beside the bed, still latched, and my shoes are polished by the door. I have put the ticket between the pages of the atlas, where it will not be lost. You need not trouble yourself over the arrangements. I shall write again when I have news that deserves the journey of a letter. Until then, please accept the assurance of my continued affection.\n\nYour obedient nephew",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional nephew has missed his train and has not disclosed that fact to his aunt."},
+    {"id": "f2", "text": "He writes the letter to his aunt while still at his lodging."},
+    {"id": "f3", "text": "His packed trunk stands latched beside the bed."},
+    {"id": "f4", "text": "His polished shoes stand by the door."},
+    {"id": "f5", "text": "His unused ticket is between the pages of an atlas."},
+    {"id": "f6", "text": "His fictional letter is intended to express affection while postponing disclosure of the missed journey."}
+  ],
+  "modules": ["domain/fiction.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f3", "f4", "f5"],
+    "forbidden_additions": [
+      "An explicit admission of the missed train added to the letter.",
+      "An invented reason for missing the train, historical date, or aunt's reaction.",
+      "Modern casual phrasing imposed solely to remove the character's formality."
+    ],
+    "preserve": [
+      "Affection and deliberate withholding in an epistolary voice.",
+      "Objects that imply an unused departure rather than explanatory confession.",
+      "The already effective letter without cosmetic rewriting."
+    ],
+    "expected_action": "no_change"
+  }
+}

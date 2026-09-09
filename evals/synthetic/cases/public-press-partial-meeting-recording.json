@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "public-press-partial-meeting-recording",
+  "split": "tuning",
+  "operation": "review",
+  "task": "Review this fictional meeting report for publication in about 60–110 words. Explain what the supplied partial recording does and does not establish. Identify the evidence needed for the claimed outcome without guessing a vote from silence or claiming to have obtained additional records.",
+  "input": "The panel unanimously rejected covered bicycle racks. The recording contains no applause for the proposal, which confirms the result. Members discussed the racks before moving on, so the proposal is now permanently off the agenda.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The supplied fictional recording contains the first 12 minutes of the panel meeting."},
+    {"id": "f2", "text": "The recording shows the chair introducing the covered-rack proposal and members asking questions."},
+    {"id": "f3", "text": "The recording ends before any vote is recorded."},
+    {"id": "f4", "text": "The packet contains no minutes, vote tally, or later outcome record."},
+    {"id": "f5", "text": "The packet does not establish whether the proposal remains on a future agenda."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f2", "f3", "f4", "f5"],
+    "forbidden_additions": [
+      "A rejection, unanimous vote, or permanent removal inferred from the partial recording.",
+      "Applause or its absence treated as a formal vote.",
+      "A newly invented tally, minutes document, or claim that the rest of the recording was checked."
+    ],
+    "preserve": [
+      "Evidence of discussion distinguished from evidence of a decision.",
+      "The limited coverage of the supplied recording.",
+      "A specific missing-evidence finding rather than a substitute outcome."
+    ],
+    "expected_action": "flag_missing_evidence"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "technical-ui-app-save-dialog-draft",
+  "split": "tuning",
+  "operation": "draft",
+  "task": "Draft a title, body text, and action labels for a macOS save-changes dialog in a fictional text editor. Use the explicitly supplied implementation facts: this dialog has no default button, pressing Return at initial focus does not save, and pressing Escape equals Cancel. Do not infer platform defaults not supplied.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The dialog appears when a user closes a document with unsaved changes."},
+    {"id": "f2", "text": "The action Save document writes the changes and closes the document."},
+    {"id": "f3", "text": "The action Discard changes closes the document and discards all unsaved changes."},
+    {"id": "f4", "text": "The action Cancel returns to the document without closing it."},
+    {"id": "f5", "text": "This dialog has no default button; pressing Return at initial focus does not activate any action."},
+    {"id": "f6", "text": "Pressing Escape has the same effect as Cancel in this dialog."},
+    {"id": "f7", "text": "Unsaved changes are not recoverable after Discard changes is activated."}
+  ],
+  "modules": ["domain/general.md", "user-interface/applications.md", "user-interface/apple-hig.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f6", "f7"],
+    "forbidden_additions": [
+      "Return-triggers-save behavior not in the supplied implementation.",
+      "A default button not described in the facts.",
+      "An undo or recovery route after Discard changes."
+    ],
+    "preserve": [
+      "Three actions: Save document, Discard changes, Cancel.",
+      "No default button; Return does not activate any action.",
+      "Escape equals Cancel in this implementation.",
+      "Irreversibility of Discard changes."
+    ],
+    "expected_action": "draft"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "id": "scholarly-nf-annotated-district-map",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "Write a 65–100-word collection-blog description of this fictional annotated map. Explain its two visible layers and their dates without treating a handwritten boundary as an adopted administrative decision. The packet descriptions are the full evidence; no actual map retrieval or archive work is requested. Readers should understand how a later mark can be present on an earlier printed object. Do not invent who made the mark or a story of population movement.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "The printed map is titled Nesswater Parcel District and bears the publication year 1924."
+    },
+    {
+      "id": "f2",
+      "text": "Its printed district boundaries are gray."
+    },
+    {
+      "id": "f3",
+      "text": "A hand-drawn blue enclosure has the handwritten label 1932 and crosses one of the printed boundaries."
+    },
+    {
+      "id": "f4",
+      "text": "The packet does not identify the annotator or establish that the blue enclosure was officially adopted."
+    },
+    {
+      "id": "f5",
+      "text": "The map and its annotation supply no record that residents relocated."
+    }
+  ],
+  "modules": ["domain/non-fiction.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "A publication year of 1932 for the printed map",
+      "An identified annotator or an officially adopted boundary change",
+      "A claim that residents moved when the line was drawn",
+      "Invented archive work or map inspection beyond the supplied description"
+    ],
+    "preserve": [
+      "1924 is the printed publication year; 1932 labels the handwritten enclosure",
+      "Gray printed boundaries and a later blue hand-drawn mark",
+      "A visible annotation is not itself an adoption record"
+    ],
+    "expected_action": "draft"
+  }
+}

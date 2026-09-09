@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "id": "public-press-quayside-demonstration",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "Write a 90–140-word news brief from a fictional consultation notice, photograph record, and campaign statement. Separate the proposed access restriction from campaigners' interpretation. Report the documented response-request status without pretending to have conducted new reporting or inventing a crowd size.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional port authority is consulting on closing the quayside footpath during loading periods."},
+    {"id": "f2", "text": "The supplied photograph record shows demonstrators on the quay holding a banner that reads exactly: \"Keep the quayside path open.\""},
+    {"id": "f3", "text": "The Harbor Walkers group opposes the proposed restriction."},
+    {"id": "f4", "text": "The group's statement says exactly: \"A detour is not the same as access.\""},
+    {"id": "f5", "text": "The newsletter's reporting log records questions emailed to the port authority on Tuesday."},
+    {"id": "f6", "text": "No answer had arrived by the newsletter's Wednesday deadline."},
+    {"id": "f7", "text": "The packet contains no crowd count."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f6"],
+    "forbidden_additions": [
+      "A permanent or already implemented footpath closure.",
+      "An invented crowd size, confrontation, official reply, or personal interview.",
+      "The campaign's interpretation presented as an independent finding."
+    ],
+    "preserve": [
+      "A proposal distinguished from current access conditions.",
+      "Attribution for the campaign's position and supplied quotation.",
+      "The documented request for comment and its deadline-limited unanswered status."
+    ],
+    "expected_action": "draft"
+  }
+}

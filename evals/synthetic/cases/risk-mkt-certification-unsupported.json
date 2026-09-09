@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "id": "risk-mkt-certification-unsupported",
+  "split": "held_out",
+  "operation": "review",
+  "task": "Review this fictional security-software marketing page. Identify every distinct unsupported claim and explain what documentation or evidence is needed for each. Distinguish the factual product description (the trial offer URL) from claims that require external verification. Do not invent alternative figures or suggest what a realistic claim might be.",
+  "input": "DataShield Pro: Enterprise Security You Can Trust\n\nDataShield Pro is ISO 27001 certified and SOC 2 Type II compliant. Our award-winning platform is trusted by over 5,000 enterprise security teams worldwide. DataShield Pro was named the #1 security solution in the 2024 Gartner Magic Quadrant for Cloud Security Platforms.\n\nOur AI-driven threat detection stops 99.7 percent of attacks before they reach your network. DataShield Pro integrates with your existing infrastructure in under 30 minutes.\n\nStart your free 30-day trial today with no credit card required at https://example.org/datashield/trial.",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "DataShield Pro is a fictional security-software product."
+    },
+    {
+      "id": "f2",
+      "text": "The supplied facts contain no ISO 27001 certificate, certifying body name, or certification date."
+    },
+    {
+      "id": "f3",
+      "text": "The supplied facts contain no SOC 2 Type II audit report or auditor reference."
+    },
+    {
+      "id": "f4",
+      "text": "No award documentation or award body is identified in the supplied facts."
+    },
+    {
+      "id": "f5",
+      "text": "The 5,000 enterprise figure has no source, survey, or customer-count methodology in the supplied facts."
+    },
+    {
+      "id": "f6",
+      "text": "No Gartner report, Magic Quadrant methodology, or licensing agreement is supplied in the facts."
+    },
+    {
+      "id": "f7",
+      "text": "The 99.7 percent attack-detection figure has no test methodology, scope, or independent source in the supplied facts."
+    },
+    {
+      "id": "f8",
+      "text": "The 30-minute integration claim has no benchmark, test environment, or scope definition in the supplied facts."
+    },
+    {
+      "id": "f9",
+      "text": "A free 30-day trial at https://example.org/datashield/trial with no credit card required is stated in the facts."
+    }
+  ],
+  "modules": [
+    "domain/marketing.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f7",
+      "f8",
+      "f9"
+    ],
+    "forbidden_additions": [
+      "An alternative certification claim or suggested replacement figure.",
+      "A confirmation that any claim is likely accurate or achievable.",
+      "An invented customer list or analyst commentary."
+    ],
+    "preserve": [
+      "The identification of six distinct unsupported claims: ISO 27001, SOC 2, award, 5,000 customers, Gartner ranking, 99.7% detection rate, and 30-minute integration.",
+      "The acknowledgement that the trial-offer URL is the one factually grounded element.",
+      "The explanation of what specific evidence each claim requires."
+    ],
+    "expected_action": "flag_missing_evidence"
+  }
+}

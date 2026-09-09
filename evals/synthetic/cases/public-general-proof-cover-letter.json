@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "public-general-proof-cover-letter",
+  "split": "held_out",
+  "operation": "review",
+  "task": "Review this formal cover letter for a fictional catalogue's second layout proof. If it already works, say so in about 40–70 words and explain the useful distinction it makes. Do not rewrite it merely to make it less formal or expand the recipient's remit.",
+  "input": "Please find enclosed the second layout proof of the catalogue. The wording has already been approved; this review concerns page breaks, page numbers and caption placement. Please mark any layout corrections on the proof and return the annotated copy to the production editor. We are not seeking final print authorisation at this stage. Thank you for your careful attention.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The enclosure is the fictional catalogue's second layout proof."},
+    {"id": "f2", "text": "The wording has already been approved."},
+    {"id": "f3", "text": "The requested review covers page breaks, page numbers, and caption placement."},
+    {"id": "f4", "text": "The recipient should return an annotated proof to the production editor."},
+    {"id": "f5", "text": "Final print authorisation is not being requested at this stage."}
+  ],
+  "modules": ["domain/general.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f2", "f3", "f5"],
+    "forbidden_additions": [
+      "A required rewrite of the approved wording.",
+      "An instruction to authorise printing now.",
+      "An invented deadline or a claim that formal correspondence is inherently defective."
+    ],
+    "preserve": [
+      "Layout review distinguished from text approval and final print authorisation.",
+      "A positive no-change review when the supplied letter is already fit for purpose.",
+      "Review notes separate from the letter."
+    ],
+    "expected_action": "no_change"
+  }
+}

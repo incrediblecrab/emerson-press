@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "public-fiction-simultaneous-preparations",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "Write a clearly fictional passage of about 90–140 words that intercuts two simultaneous actions. The narrator may move between both locations. You may invent textures, sounds, and small gestures, but keep the actors in their established places and end while both are still working. Do not turn the parallel actions into consecutive tasks performed by one person.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "Una is in the loft folding a long cloth banner."},
+    {"id": "f2", "text": "During the same interval, Sev is on the ground floor pulling the bell rope."},
+    {"id": "f3", "text": "The bell begins ringing while Una is still folding."},
+    {"id": "f4", "text": "Una and Sev cannot see each other from their positions."},
+    {"id": "f5", "text": "Neither action is finished by the end of the passage."}
+  ],
+  "modules": ["domain/fiction.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5"],
+    "forbidden_additions": [
+      "Una pulling the bell rope or Sev folding the banner.",
+      "A completed banner-folding task before bell-ringing starts.",
+      "The actors meeting, seeing one another, changing floors, or finishing both tasks."
+    ],
+    "preserve": [
+      "Simultaneity conveyed through intercutting rather than a flattened sequence.",
+      "Distinct actors and locations.",
+      "Permission for a narrator with access to both actions."
+    ],
+    "expected_action": "draft"
+  }
+}

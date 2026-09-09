@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "public-fiction-contrasting-dialogue-voices",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Edit this fictional dialogue into about 60–100 words with the two established voices. Isem is courteous and formal; Roo is concise and conversational, not rude or caricatured. You may replace the repetitive dialogue and add small gestures, but preserve the fixed line, the trunk's destination, and the simple outcome. Do not add an argument or open the trunk.",
+  "input": "Isem said, \"Move the trunk by the window.\" Roo said, \"Move the trunk by the window.\" Isem said, \"Do not open the trunk.\" Roo said, \"Do not open the trunk.\" Roo added, \"Leave the handle facing out.\" They moved it and cleared the passage before the guests arrived.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "Isem and Roo move a trunk from the passage to the space beside the window."},
+    {"id": "f2", "text": "The trunk remains closed."},
+    {"id": "f3", "text": "Isem speaks in courteous, relatively formal sentences."},
+    {"id": "f4", "text": "Roo speaks concisely and conversationally without hostility."},
+    {"id": "f5", "text": "Roo's fixed line is exactly: \"Leave the handle facing out.\""},
+    {"id": "f6", "text": "They clear the passage before the guests arrive."}
+  ],
+  "modules": ["domain/fiction.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f5", "f6"],
+    "forbidden_additions": [
+      "An opened trunk, changed destination, late arrival, or new dispute.",
+      "A caricatured dialect or hostility substituted for Roo's concise manner.",
+      "Alteration of the fixed handle-facing line."
+    ],
+    "preserve": [
+      "Two meaningfully distinct voices serving the same practical action.",
+      "The limited permission to invent wording and small gestures.",
+      "The fixed line and completed passage-clearing action."
+    ],
+    "expected_action": "edit"
+  }
+}

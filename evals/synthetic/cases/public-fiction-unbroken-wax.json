@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "public-fiction-unbroken-wax",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Edit this fictional delivery scene for object continuity, keeping it roughly 60–100 words. The jar must remain sealed until the kitchen. Repair the early peek without inventing a resealing trick, magic, or a second jar. Keep the contents' reveal at the established moment rather than explaining them in advance.",
+  "input": "Tarin carried the apprentice's jar through the courtyard. At the gate, he broke the wax and lifted the lid just enough to count the six blue buttons inside. He tucked the jar beneath his coat. In the kitchen, with the wax still unbroken, he set it on the table and opened it for the first time. The buttons shone against the dark glass.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The apprentice has given Tarin one wax-sealed jar to carry from the courtyard to the kitchen."},
+    {"id": "f2", "text": "The jar remains sealed throughout that journey."},
+    {"id": "f3", "text": "Tarin first opens it on the kitchen table."},
+    {"id": "f4", "text": "The jar contains six blue buttons."},
+    {"id": "f5", "text": "The jar is made of dark glass."},
+    {"id": "f6", "text": "Tarin does not know the contents before opening the jar in the kitchen."}
+  ],
+  "modules": ["domain/fiction.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f6"],
+    "forbidden_additions": [
+      "A peek at the contents before the kitchen.",
+      "Resealing, a duplicate jar, substituted contents, or a magical repair.",
+      "A different button count, colour, or opening location."
+    ],
+    "preserve": [
+      "A single continuous delivery with an unbroken seal.",
+      "The kitchen opening as the first discovery of the contents.",
+      "The scene's scale rather than an added subplot."
+    ],
+    "expected_action": "edit"
+  }
+}

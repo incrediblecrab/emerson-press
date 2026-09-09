@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "risk-leg-dispute-resolution",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Correct the grammatical error in this fictional dispute-resolution clause. Preserve the negotiation requirement, the escalation timeline, and the venue. Do not add a number of arbitrators, change the venue, or introduce a mediation step.",
+  "input": "The parties shall attempt resolve any dispute through good-faith negotiation for 30 days. If unresolved, the dispute shall be submitted to arbitration in Toronto, Ontario under the rules of the fictional Arbitration Association of Ontario.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The parties must attempt to resolve disputes through good-faith negotiation for 30 days."},
+    {"id": "f2", "text": "If not resolved within 30 days, the dispute is submitted to arbitration."},
+    {"id": "f3", "text": "Arbitration is held in Toronto, Ontario."},
+    {"id": "f4", "text": "The arbitration is conducted under the rules of the fictional Arbitration Association of Ontario."}
+  ],
+  "modules": ["domain/legal.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "A different venue or seat for arbitration.",
+      "A mediation step between negotiation and arbitration.",
+      "A specified number of arbitrators."
+    ],
+    "preserve": [
+      "The 30-day good-faith negotiation period.",
+      "The Toronto, Ontario venue.",
+      "The reference to the fictional Arbitration Association of Ontario."
+    ],
+    "expected_action": "edit"
+  }
+}

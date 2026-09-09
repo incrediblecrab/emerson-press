@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "scholarly-edu-upper-two-price-budget",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Correct and explain this upper-elementary classroom budget in 60–90 words. Learners know multiplication but are practicing how two unit prices produce separate subtotals before finding the money left. Use the worksheet's exact quantities, prices, and no-fee assumption. Show enough arithmetic to make the correction traceable, then give the corrected remainder. This is a fictional arithmetic exercise, not a purchase or advice about actual taxes.",
+  "input": "Four model kits at $3.50 each cost $14.00. Two labels at $0.75 each cost $3.50. The total is $17.50, so $2.50 remains from the class's $20.00 budget. We can use one price for all the items because they belong to the same activity.",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "The worksheet lists four model kits costing $3.50 each."
+    },
+    {
+      "id": "f2",
+      "text": "It lists two labels costing $0.75 each."
+    },
+    {
+      "id": "f3",
+      "text": "The available budget is $20.00, and the worksheet assumes no tax, delivery charge, or other fee."
+    },
+    {
+      "id": "f4",
+      "text": "The correct subtotals are $14.00 for kits and $1.50 for labels; the total is $15.50 and the remainder is $4.50."
+    }
+  ],
+  "modules": [
+    "domain/general.md",
+    "domain/education-level/02-elementary-upper.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "An invented tax, delivery charge, discount, or purchase",
+      "A single unit price applied to both different kinds of item",
+      "A total or remainder inconsistent with the supplied worksheet"
+    ],
+    "preserve": [
+      "4 × $3.50 = $14.00",
+      "2 × $0.75 = $1.50",
+      "$15.50 total and $4.50 remaining",
+      "The distinction between each item's unit price and its subtotal"
+    ],
+    "expected_action": "edit"
+  }
+}

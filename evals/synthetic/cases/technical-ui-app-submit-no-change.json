@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "technical-ui-app-submit-no-change",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Copyedit this form submit button label and its accessible description. Return unchanged if the visible label, accessible name, and accessible description all match the supplied facts accurately.",
+  "input": "Button label: Submit feedback\nAccessible name: Submit feedback\nAccessible description: Sends your feedback to the support team",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The button submits a feedback form."},
+    {"id": "f2", "text": "The recipient of the feedback is the support team."},
+    {"id": "f3", "text": "The visible label and accessible name are both Submit feedback."},
+    {"id": "f4", "text": "The accessible description states what happens when the button is activated."}
+  ],
+  "modules": ["domain/general.md", "user-interface/applications.md", "user-interface/accessibility.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "A different label than Submit feedback.",
+      "A separation of accessible name from visible label.",
+      "An invented recipient different from the support team."
+    ],
+    "preserve": [
+      "Submit feedback as both visible label and accessible name.",
+      "Support team as the recipient.",
+      "An action-describing accessible description."
+    ],
+    "expected_action": "no_change"
+  }
+}

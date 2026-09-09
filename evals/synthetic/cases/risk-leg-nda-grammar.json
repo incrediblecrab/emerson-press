@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "risk-leg-nda-grammar",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Correct grammar and punctuation in this fictional NDA confidentiality clause. Preserve all obligations and exceptions exactly. Do not add exceptions, definitions, or remedies not in the clause.",
+  "input": "Recipient agree to hold Discloser's Confidential Information in strict confidence. Recipient must not disclose them to any third party without Discloser's prior written consent. Exceptions: information that are already in the public domain.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The recipient agrees to hold the discloser's confidential information in strict confidence."},
+    {"id": "f2", "text": "Disclosure to a third party requires the discloser's prior written consent."},
+    {"id": "f3", "text": "Information already in the public domain is excepted from the confidentiality obligation."}
+  ],
+  "modules": ["domain/legal.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3"],
+    "forbidden_additions": [
+      "Additional exceptions to the confidentiality obligation not in the original.",
+      "A definition of Confidential Information.",
+      "A remedy for breach."
+    ],
+    "preserve": [
+      "The strict-confidence obligation.",
+      "The written-consent requirement for disclosure.",
+      "The public-domain exception."
+    ],
+    "expected_action": "edit"
+  }
+}

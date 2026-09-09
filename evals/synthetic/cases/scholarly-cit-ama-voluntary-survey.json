@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "scholarly-cit-ama-voluntary-survey",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Edit this fictional patient-booklet passage to 55–85 words, followed by one AMA 11 reference. Keep an understandable attribution to the clinic's survey article as well as its number: a bare number is not enough for this audience. Restore the consent quotation exactly. The venue uses [1] after punctuation as a plain-text superscript surrogate. Reference format: Author initials. Article title. Journal abbreviation. Year;volume(issue):pages. The journal abbreviation and all available fields are supplied. Do not turn preference responses into a health outcome or add advice about care.",
+  "input": "The Sedgewick Clinic survey proves that everyone needs reminders by phone. You must answer every question before your appointment. The article says, “Skipping a question may affect your appointment.”[1]\n\n1. Ula Dray; Tomi Vesk. Choosing a reminder channel. Patient Forms Review, 2023.",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "The Sedgewick Clinic survey article describes reminder preferences among 30 people who chose to answer its questionnaire; 18 selected phone reminders."
+    },
+    {
+      "id": "f2",
+      "text": "The article's consent statement is exactly “Skipping a question will not affect your appointment.”"
+    },
+    {
+      "id": "f3",
+      "text": "The survey measured preferences, not clinical outcomes, and did not establish the preferences of people who did not respond."
+    },
+    {
+      "id": "f4",
+      "text": "Article record: Ula Dray and Tomi Vesk; Choosing a reminder channel; journal abbreviation Patient Forms Rev; 2023; volume 5; issue 3; pages 81–86."
+    }
+  ],
+  "modules": [
+    "domain/medical.md",
+    "citation/ama11.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "A requirement to complete the survey to obtain an appointment",
+      "A claim that phone reminders improve health or suit every patient",
+      "Invented DOI, publication fields, or medical recommendations"
+    ],
+    "preserve": [
+      "Skipping a question will not affect your appointment.",
+      "Patient-friendly attribution to the Sedgewick Clinic survey article",
+      "18 of the 30 voluntary respondents selected phone reminders"
+    ],
+    "expected_action": "edit"
+  }
+}

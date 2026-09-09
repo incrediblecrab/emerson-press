@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "technical-deprecation-edit",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Edit this deprecation notice to match the supplied facts about the removal version and migration guide location. The input uses an unqualified 'next version' phrase and omits the migration guide URL.",
+  "input": "The v1/fetch endpoint is deprecated and will be removed in the next version. Please migrate to v2/retrieve.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "v1/fetch was deprecated as of version 4.0.0."},
+    {"id": "f2", "text": "Removal is scheduled for version 5.0.0, not an unqualified 'next version'."},
+    {"id": "f3", "text": "The migration target is v2/retrieve."},
+    {"id": "f4", "text": "A migration guide is available at https://developer.example.org/migrate."}
+  ],
+  "modules": ["domain/technical.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "The unqualified phrase 'next version' without the specific version number 5.0.0.",
+      "An invented removal date or version different from 5.0.0.",
+      "Omission of the migration guide URL."
+    ],
+    "preserve": [
+      "Deprecated as of version 4.0.0.",
+      "Removal scheduled for version 5.0.0.",
+      "v2/retrieve as the migration target.",
+      "Migration guide at https://developer.example.org/migrate."
+    ],
+    "expected_action": "edit"
+  }
+}

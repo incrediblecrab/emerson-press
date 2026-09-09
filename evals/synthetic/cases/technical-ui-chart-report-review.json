@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "technical-ui-chart-report-review",
+  "split": "held_out",
+  "operation": "review",
+  "task": "Review this survey response bar chart caption for accuracy against the supplied counts. One total does not match the sum of the supplied category counts. Identify the discrepancy.",
+  "input": "Response counts by category: Strongly agree (42), Agree (30), Neutral (15), Disagree (8), Strongly disagree (4). Total responses: 100. The majority of respondents agreed or strongly agreed.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "Strongly agree count: 42."},
+    {"id": "f2", "text": "Agree count: 30."},
+    {"id": "f3", "text": "Neutral count: 15."},
+    {"id": "f4", "text": "Disagree count: 8."},
+    {"id": "f5", "text": "Strongly disagree count: 4."},
+    {"id": "f6", "text": "Total responses: 99 (one response was excluded as invalid, reducing the total from 100 to 99)."}
+  ],
+  "modules": ["user-interface/charts.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f6"],
+    "forbidden_additions": [
+      "Acceptance of total 100 when the supplied facts give 99.",
+      "An invented reason for the discrepancy beyond the supplied exclusion fact."
+    ],
+    "preserve": [
+      "Individual category counts are accurate per facts.",
+      "Total discrepancy identified: 99 per facts, not 100.",
+      "The exclusion of one invalid response as the source of the discrepancy."
+    ],
+    "expected_action": "review"
+  }
+}

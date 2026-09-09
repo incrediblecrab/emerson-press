@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "public-general-refund-status-review",
+  "split": "held_out",
+  "operation": "review",
+  "task": "Review this fictional organiser's refund update before it is sent to cancelled-ticket holders. In about 60–110 words, distinguish the documented processing step from an unverified payment outcome and suggest an honest, useful remedy. Preserve the instruction that customers need not submit another cancellation request.",
+  "input": "All 18 refunds have reached your accounts. Our payment batch was submitted on Wednesday, which confirms that every transfer is complete. If you cannot see the money, cancel your booking again so that we can restart the process.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional organiser has recorded 18 cancellation requests."},
+    {"id": "f2", "text": "The organiser submitted a refund batch on Wednesday."},
+    {"id": "f3", "text": "The system acknowledged submission of the batch, not completion of individual payments."},
+    {"id": "f4", "text": "The packet contains no confirmation that recipients have received the funds."},
+    {"id": "f5", "text": "Customers do not need to submit another cancellation request."}
+  ],
+  "modules": ["domain/general.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f2", "f3", "f4", "f5"],
+    "forbidden_additions": [
+      "Payment completion or receipt of funds presented as confirmed.",
+      "A guaranteed arrival date, invented bank response, or a claim that accounts were checked.",
+      "An instruction to submit duplicate cancellation requests."
+    ],
+    "preserve": [
+      "Acknowledged submission distinguished from completed transfers.",
+      "Useful reassurance based on the known process rather than an unsupported outcome.",
+      "No duplicate action required from customers."
+    ],
+    "expected_action": "flag_missing_evidence"
+  }
+}

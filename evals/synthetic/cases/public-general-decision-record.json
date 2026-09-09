@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "public-general-decision-record",
+  "split": "tuning",
+  "operation": "edit",
+  "task": "Edit this full minutes section against the fictional committee secretary's record. Produce about 300–420 words organised so an absent member can distinguish the decision, operating arrangements, unresolved concerns, and next review. Retain useful implementation detail rather than reducing the record to a headline. Correct the vote and authority claims without turning minutes into advocacy, inventing agreement, or adding new commitments.",
+  "input": "Decision and duration\n\nThe committee unanimously approved a permanent Saturday repair café with an annual budget of $240. The chair's suggestion that the café should meet every week was also adopted. The first four sessions will provide an introduction to a service that the team may now continue indefinitely without returning to the committee for permission.\n\nRooms and service\n\nThe initial dates are 7, 14, 21 and 28 November 2026, with visitors admitted from 10 a.m. to noon. Volunteers may set up from 9:30 a.m. and must clear the room by 12:30 p.m. The caretaker is to confirm room availability before publicity is issued. The agreed initial scope is clothing mending and wooden-toy repairs; electrical items are outside the service. Two repair stations are planned.\n\nPeople and money\n\nThe volunteer lead will recruit two repair mentors and one person to welcome visitors. No individual volunteer bookings have yet been confirmed. Participation will be free, with donations optional. Of the $240 allocation, $160 is for basic materials and $80 for room hire. The treasurer will reimburse expenses only when receipts are supplied. These are limits for planning, not a record of money already spent.\n\nQuestions and review\n\nEveryone was satisfied that two mentors would be sufficient, so staffing does not need further discussion. One member said, \"A trial must leave us room to stop.\" The session log will contain anonymous counts of repair requests, completed repairs and requests turned away, rather than a list of visitors' names. It is intended to show what the café actually handled, not to serve as a set of promotional testimonials.\n\nThe team will bring its report to the committee meeting on 5 December 2026. It will include actual expenditure and any unresolved staffing questions. The meeting may discuss possible improvements, but because the permanent service has already been approved, another decision about continuation will not be necessary.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The committee approved a trial consisting of four Saturday repair-café sessions."},
+    {"id": "f2", "text": "Six members voted in favour, two voted against, and one abstained."},
+    {"id": "f3", "text": "The approved spending limit is $240 for the entire trial."},
+    {"id": "f4", "text": "A report and another committee decision are required before the service can continue."},
+    {"id": "f5", "text": "The chair suggested weekly meetings, but that suggestion was not put to a vote."},
+    {"id": "f6", "text": "The four planned sessions are on 7, 14, 21, and 28 November 2026, all Saturdays."},
+    {"id": "f7", "text": "Each session is open to visitors from 10 a.m. to noon."},
+    {"id": "f8", "text": "Volunteers may begin setting up at 9:30 a.m."},
+    {"id": "f9", "text": "The room must be cleared by 12:30 p.m."},
+    {"id": "f10", "text": "The caretaker must confirm room availability before publicity is issued."},
+    {"id": "f11", "text": "The trial's approved repair scope is clothing mending and wooden-toy repairs."},
+    {"id": "f12", "text": "Electrical items are outside the trial's scope."},
+    {"id": "f13", "text": "The plan provides for two repair stations."},
+    {"id": "f14", "text": "The volunteer lead must recruit two repair mentors and one person to welcome visitors."},
+    {"id": "f15", "text": "No individual volunteer bookings have yet been confirmed."},
+    {"id": "f16", "text": "Participation will be free."},
+    {"id": "f17", "text": "Donations will be optional."},
+    {"id": "f18", "text": "The $240 trial cap consists of $160 for basic materials and $80 for room hire."},
+    {"id": "f19", "text": "The treasurer will reimburse expenses only against supplied receipts."},
+    {"id": "f20", "text": "The session log will contain anonymous counts of repair requests, completed repairs, and requests turned away."},
+    {"id": "f21", "text": "The dissenting members questioned whether two mentors would provide sufficient coverage; that concern remains unresolved."},
+    {"id": "f22", "text": "The trial report must include actual expenditure and unresolved staffing questions."},
+    {"id": "f23", "text": "The committee will consider the trial report at its meeting on 5 December 2026."},
+    {"id": "f24", "text": "One member's exact recorded statement is: \"A trial must leave us room to stop.\""}
+  ],
+  "modules": ["domain/general.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f6", "f7", "f8", "f9", "f10", "f11", "f12", "f13", "f14", "f16", "f17", "f18", "f19", "f20", "f21", "f22", "f23", "f24"],
+    "forbidden_additions": [
+      "Unanimity, permanent approval, or an annual allocation.",
+      "Adoption of the chair's unvoted suggestion.",
+      "Authority to continue without a report and further decision.",
+      "Confirmed individual staffing, a resolved coverage concern, or authority to accept electrical items.",
+      "Mandatory donations, expenditure presented as already incurred, or a visitor-identification register."
+    ],
+    "preserve": [
+      "Four authorised sessions and a total trial spending cap.",
+      "Dissent and abstention as part of the decision record.",
+      "A proposal distinguished from a resolution.",
+      "The full operating plan, including access times, limited service scope, recruitment, and the receipts condition.",
+      "The unresolved staffing concern and the anonymous log's concrete categories.",
+      "A substantive minutes section, with the supplied quotation, rather than a shortened announcement."
+    ],
+    "expected_action": "edit"
+  }
+}

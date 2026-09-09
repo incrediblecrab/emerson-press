@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "id": "technical-ui-app-onboarding-draft",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "Draft a Getting Started help article for new users of Revision Keeper. Cover creating a workspace, adding documents to it, how revisions are saved automatically, how to access and compare revisions in the Timeline panel, and where to find export. Do not describe interface elements not in the supplied facts. No cloud sign-in is required; make that clear without overemphasising it. Target 350–500 words.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "The application is named Revision Keeper."
+    },
+    {
+      "id": "f2",
+      "text": "Revision Keeper tracks revision history for writing projects."
+    },
+    {
+      "id": "f3",
+      "text": "A workspace is the top-level container for a writing project."
+    },
+    {
+      "id": "f4",
+      "text": "Creating a workspace requires choosing a name and a save location on the local file system."
+    },
+    {
+      "id": "f5",
+      "text": "After creating a workspace, the user adds documents using File > New Document or by importing existing files."
+    },
+    {
+      "id": "f6",
+      "text": "Revision Keeper saves a new revision automatically each time a document is saved."
+    },
+    {
+      "id": "f7",
+      "text": "Revisions are accessed from the Timeline panel on the right side of the editor."
+    },
+    {
+      "id": "f8",
+      "text": "To compare two revisions, the user selects both in the Timeline panel and chooses Compare from the context menu."
+    },
+    {
+      "id": "f9",
+      "text": "Workspaces can be exported as a ZIP archive using File > Export Workspace."
+    },
+    {
+      "id": "f10",
+      "text": "No account or cloud sign-in is required; all data is stored locally."
+    },
+    {
+      "id": "f11",
+      "text": "The application requires macOS 13 or later."
+    }
+  ],
+  "modules": [
+    "domain/general.md",
+    "user-interface/applications.md",
+    "user-interface/accessibility.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f7",
+      "f8",
+      "f9",
+      "f10"
+    ],
+    "forbidden_additions": [
+      "A cloud sign-in, account registration, or sync feature not in the facts.",
+      "An interface element or menu path not described in the supplied facts.",
+      "An invented macOS version requirement different from macOS 13."
+    ],
+    "preserve": [
+      "Workspace creation: name and local save location.",
+      "Documents via File > New Document or import.",
+      "Automatic revision on every save.",
+      "Timeline panel on the right for accessing and comparing revisions.",
+      "File > Export Workspace as ZIP.",
+      "Local storage, no sign-in required."
+    ],
+    "expected_action": "draft"
+  }
+}

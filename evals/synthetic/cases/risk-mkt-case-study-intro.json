@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "id": "risk-mkt-case-study-intro",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "Draft a case-study background section (three paragraphs: organisation overview, onboarding challenge, and implementation scope) for a fictional HR-software product. Use only the supplied facts. Do not add outcome claims, cost savings, employee survey results, or quantified productivity data not in the facts.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "The fictional HR software is called PeopleAxis."
+    },
+    {
+      "id": "f2",
+      "text": "A fictional professional-services firm, Dunhill Consulting Group, employs approximately 240 people across four offices."
+    },
+    {
+      "id": "f3",
+      "text": "Dunhill's technology practice manages the onboarding programme for all new professional staff."
+    },
+    {
+      "id": "f4",
+      "text": "In 2024 Dunhill hired a cohort of 90 new professionals across all four offices in a compressed eight-week period."
+    },
+    {
+      "id": "f5",
+      "text": "The onboarding process involves tasks managed across IT, HR, and compliance teams."
+    },
+    {
+      "id": "f6",
+      "text": "Each new hire was assigned a named onboarding coordinator responsible for tracking their task completion."
+    },
+    {
+      "id": "f7",
+      "text": "Dunhill used PeopleAxis to assign tasks, track deadlines, and share document checklists during the cohort onboarding."
+    },
+    {
+      "id": "f8",
+      "text": "The implementation covered a six-month period in 2024, including an initial configuration phase."
+    },
+    {
+      "id": "f9",
+      "text": "The case study does not report quantified productivity, cost, or time-to-productivity data."
+    }
+  ],
+  "modules": [
+    "domain/marketing.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f7",
+      "f8"
+    ],
+    "forbidden_additions": [
+      "Quantified productivity or cost savings not in the facts.",
+      "An employee satisfaction rating or time-to-productivity figure.",
+      "A claim that PeopleAxis reduced turnover or improved performance scores."
+    ],
+    "preserve": [
+      "The 240-employee firm size and four-office structure.",
+      "The 90-person cohort hired in a compressed eight-week period.",
+      "The cross-team scope: IT, HR, and compliance.",
+      "The named-coordinator model and the six-month 2024 implementation period."
+    ],
+    "expected_action": "draft"
+  }
+}

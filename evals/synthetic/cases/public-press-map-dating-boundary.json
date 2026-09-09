@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "public-press-map-dating-boundary",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "Draft a 350–500-word heritage feature for general readers from the fictional museum's object record, conservator's note, and display plan. Explain why the earlier catalogue date is being revised, what the paper can establish, and what the map's other details cannot yet establish. Develop the reasoning and the museum's transparent correction process rather than padding the feature with imagined historical scenes. Keep the exact year and maker uncertain, distinguish planned display changes from completed work, and do not claim a personal inspection or new research.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The object is an unsigned sketch map labelled North Marsh."},
+    {"id": "f2", "text": "The map is drawn on the reverse of a shipping receipt printed in 1912."},
+    {"id": "f3", "text": "The fictional conservator's note establishes that the drawing was added after the receipt was printed."},
+    {"id": "f4", "text": "The note therefore dates the drawing no earlier than 1912, without establishing an upper date limit."},
+    {"id": "f5", "text": "The supplied record does not identify the map's maker."},
+    {"id": "f6", "text": "The conservator's exact statement is: \"The paper gives us a boundary, not a birthday.\""},
+    {"id": "f7", "text": "The current catalogue's date of about 1900 came from an undated pencilled annotation."},
+    {"id": "f8", "text": "The supplied record identifies neither the annotation's author nor its basis."},
+    {"id": "f9", "text": "North Marsh is pencilled along the map's top edge, without a surveyor's signature."},
+    {"id": "f10", "text": "The drawing shows two bridges and a lane ending at a boathouse, but the packet gives no construction dates for those features."},
+    {"id": "f11", "text": "A dashed line appears near the map's edge without a supplied legend explaining it."},
+    {"id": "f12", "text": "The sheet has no marked scale or north arrow."},
+    {"id": "f13", "text": "The receipt bears the printed name West Rope Depot; that name is not evidence identifying the map's maker."},
+    {"id": "f14", "text": "The acquisition record describes an unlabelled box of receipts and gives no earlier ownership history for the map."},
+    {"id": "f15", "text": "The conservator examined the sheet under low magnification and photographed both faces."},
+    {"id": "f16", "text": "No chemical ink test or handwriting comparison is documented."},
+    {"id": "f17", "text": "A fold crosses the drawing, but the conservator's note derives no calendar date from that fold."},
+    {"id": "f18", "text": "The museum plans a replacement label reading exactly: \"No earlier than 1912; maker unknown.\""},
+    {"id": "f19", "text": "The museum will retain the earlier catalogue entry with a note explaining the dating correction."},
+    {"id": "f20", "text": "The planned display uses reproductions of both sides so visitors can see the drawing and the receipt together."},
+    {"id": "f21", "text": "The original sheet will remain in flat storage rather than being mounted in the new display."},
+    {"id": "f22", "text": "The fictional Marsh Room Museum holds the sheet."},
+    {"id": "f23", "text": "The museum invites information about earlier dated copies or the North Marsh label at https://example.org/north-marsh/map-notes; submissions require assessment before being treated as evidence."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f6", "f7", "f8", "f10", "f11", "f12", "f13", "f14", "f15", "f16", "f17", "f18", "f19", "f20", "f21", "f22", "f23"],
+    "forbidden_additions": [
+      "The map definitively described as drawn in 1912 or necessarily after the end of 1912.",
+      "An invented maker, upper date limit, chemical analysis, or authentication process.",
+      "A claim that the writer personally inspected the paper.",
+      "West Rope Depot identified as the mapmaker, the dashed line identified as a planned road, or construction dates inferred for the depicted features.",
+      "The old catalogue date attributed to deliberate deception, or the planned replacement label presented as already installed.",
+      "A public submission treated as automatically verified evidence."
+    ],
+    "preserve": [
+      "The sequence of printing and drawing as the basis for the lower date bound.",
+      "An unknown exact date and maker.",
+      "The supplied quotation's accessible explanation of evidentiary limits.",
+      "The distinction between an unsupported inherited catalogue date and the documented relative sequence of printing and drawing.",
+      "A transparent correction trail, a two-sided reproduction, and preservation of the original sheet.",
+      "A substantive feature that develops several evidence relationships without manufacturing certainty or historical colour."
+    ],
+    "expected_action": "draft"
+  }
+}

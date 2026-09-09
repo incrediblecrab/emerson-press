@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "technical-ui-app-empty-state-edit",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Edit this empty-state message for a fictional document library. The current copy uses a deficit framing and omits the primary suggested action. Add a non-blaming explanation and both recovery actions, and replace the generic accessible description with one that includes the available actions.",
+  "input": "Visible text: \"You haven't added any documents yet.\"\nAccessible description: \"Empty list\"",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The library is empty because no documents have been added."},
+    {"id": "f2", "text": "The primary action to resolve the empty state is Create new document."},
+    {"id": "f3", "text": "The secondary action is Import existing file from disk."},
+    {"id": "f4", "text": "The accessible description must describe the empty state and the available actions, not only say Empty list."}
+  ],
+  "modules": ["domain/general.md", "user-interface/applications.md", "user-interface/accessibility.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "Blame or deficit framing in the visible copy.",
+      "Empty list as the complete accessible description.",
+      "Omission of the Create new document primary action."
+    ],
+    "preserve": [
+      "Empty library explained without blame.",
+      "Create new document as the primary action.",
+      "Import existing file as the secondary action.",
+      "Accessible description that includes both the state and available actions."
+    ],
+    "expected_action": "edit"
+  }
+}

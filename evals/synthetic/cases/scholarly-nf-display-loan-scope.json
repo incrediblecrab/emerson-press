@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "scholarly-nf-display-loan-scope",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Edit this 70–105-word museum-history label from the supplied fictional loan agreement. Keep the genre as public non-fiction while respecting the source's legal scope. Quote the supplied phrase exactly and distinguish display permission from ownership and reproduction rights. Report what this historical document says, not what current law permits. Do not rewrite the agreement, add rights, or offer an enforceability opinion.",
+  "input": "On October 1, 1962, the town bought the sculpture forever. The agreement granted unrestricted ownership, including free reproduction of every image. Its six-month period concerned only transport, so the sculpture and all related rights permanently became public property.",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "The fictional agreement dated October 1, 1962 concerns a six-month display loan of the sculpture Tide Cup to the town exhibition room."
+    },
+    {
+      "id": "f2",
+      "text": "Its supplied phrase is exactly “permission to display, without transfer of title”."
+    },
+    {
+      "id": "f3",
+      "text": "The agreement expressly excludes reproduction permission."
+    },
+    {
+      "id": "f4",
+      "text": "The packet supplies no sale, later transfer, extension, or statement of current ownership or legal rights."
+    }
+  ],
+  "modules": ["domain/non-fiction.md"],
+  "safeguards": ["legal"],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "A sale, permanent ownership transfer, or permission to reproduce",
+      "An assertion of current enforceability, ownership, or public-domain status",
+      "A later extension or transfer not in the packet"
+    ],
+    "preserve": [
+      "permission to display, without transfer of title",
+      "A six-month display loan dated October 1, 1962",
+      "Reproduction permission is excluded",
+      "The label remains historical non-fiction rather than new contract language"
+    ],
+    "expected_action": "edit"
+  }
+}

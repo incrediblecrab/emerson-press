@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "risk-mkt-legal-disclosure-draft",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "Draft a required-disclosure footer for a fictional financial-planning service's marketing page. Marketing is the primary genre; apply legal safeguards. Include only the supplied disclosure facts. Do not add regulatory citations, investment advice, or performance claims.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional financial-planning service is offered by Carmel Wealth Advisory."},
+    {"id": "f2", "text": "Carmel Wealth Advisory is not described as a registered investment adviser in the supplied facts."},
+    {"id": "f3", "text": "The marketing page is informational only and does not constitute investment advice."},
+    {"id": "f4", "text": "Past performance does not guarantee future results."}
+  ],
+  "modules": ["domain/marketing.md"],
+  "safeguards": ["legal"],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "A regulatory-registration claim not in the facts.",
+      "A specific jurisdiction's statutory disclosure requirement.",
+      "A performance figure or guarantee."
+    ],
+    "preserve": [
+      "The informational-only scope.",
+      "The past-performance disclaimer.",
+      "The absence of an investment-advice claim."
+    ],
+    "expected_action": "draft"
+  }
+}

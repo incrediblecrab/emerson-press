@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "technical-ui-chart-axis-edit",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Edit these chart axis labels. The y-axis label omits its unit and the x-axis label is too vague to identify the plotted interval. Correct both using only the supplied facts.",
+  "input": "x-axis label: Time\ny-axis label: Count",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The x-axis plots weeks numbered 1 through 26."},
+    {"id": "f2", "text": "The y-axis plots the number of support tickets resolved, in integer counts."},
+    {"id": "f3", "text": "The chart covers the first half of the fiscal year (weeks 1 through 26)."},
+    {"id": "f4", "text": "The time unit is weeks, not an unspecified time period."}
+  ],
+  "modules": ["user-interface/charts.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "An unspecified Time label when weeks is the documented unit.",
+      "Count without a unit description for the y-axis.",
+      "An axis extent different from weeks 1 through 26."
+    ],
+    "preserve": [
+      "Week (1–26) or an equivalent week-specific x-axis label.",
+      "Tickets resolved or an equivalent unit-specific y-axis label.",
+      "Unit clarity on both axes."
+    ],
+    "expected_action": "edit"
+  }
+}

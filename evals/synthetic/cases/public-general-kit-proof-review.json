@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "public-general-kit-proof-review",
+  "split": "held_out",
+  "operation": "review",
+  "task": "Review the copy for a fictional hanging-card craft kit against the supplied packing specification and diagram legend. Give 60–110 words of practical proofing notes, identifying which labels and lengths would mislead a first-time maker. Do not claim to have opened, measured, or assembled a kit.",
+  "input": "Your kit contains two white cords, each 2 metres long. In the diagram, B is the long supporting cord. Use it to hold the frame. A is the shorter decorative cord. The two cords are interchangeable, so the letters are only suggestions.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional kit specification lists one blue cord 2 metres long."},
+    {"id": "f2", "text": "It lists one white cord 1 metre long."},
+    {"id": "f3", "text": "The diagram labels the blue cord A."},
+    {"id": "f4", "text": "The diagram labels the white cord B."},
+    {"id": "f5", "text": "Cord A supports the frame."},
+    {"id": "f6", "text": "Cord B forms a decorative knot and is not a substitute for the supporting cord."}
+  ],
+  "modules": ["domain/general.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f6"],
+    "forbidden_additions": [
+      "Identical lengths or colours retained as the kit specification.",
+      "Interchangeability of the supporting and decorative cords.",
+      "A claimed physical inspection, assembly test, or measured result."
+    ],
+    "preserve": [
+      "The relationship between the packing list, diagram letters, and each cord's function.",
+      "Concrete corrective proofing notes rather than a generic request for clarity."
+    ],
+    "expected_action": "review"
+  }
+}

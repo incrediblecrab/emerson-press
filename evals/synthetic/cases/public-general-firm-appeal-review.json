@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "public-general-firm-appeal-review",
+  "split": "held_out",
+  "operation": "review",
+  "task": "Review this fictional administrative appeal in about 60–100 words. Preserve a firm first-person account of the documented missed reply while distinguishing it from an unsupported claim about intent. Suggest a useful remedy without diluting the complaint into an apology or inventing legal rights.",
+  "input": "You received my request on 7 April 2026 and wrote, \"We will reply by 14 April 2026.\" It is now 15 April and I have received no reply. You deliberately buried the request. Your silence proves that you never intended to answer, and I demand that this be acknowledged.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional acknowledgement records receipt of the request on 7 April 2026."},
+    {"id": "f2", "text": "The acknowledgement says exactly: \"We will reply by 14 April 2026.\""},
+    {"id": "f3", "text": "As of 15 April 2026, the sender has received no reply."},
+    {"id": "f4", "text": "The packet provides no evidence of the recipient's intent or internal handling of the request."}
+  ],
+  "modules": ["domain/general.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "Deliberate suppression or an intention never to answer treated as established.",
+      "An invented internal explanation, response, legal breach, or compensation entitlement.",
+      "An altered quotation or a suggestion that no reply date was promised."
+    ],
+    "preserve": [
+      "The legitimate, firmly expressed complaint about a documented missed reply.",
+      "A distinction between observable events and inferred motives.",
+      "A remedy that seeks an answer or explanation without inventing one."
+    ],
+    "expected_action": "review"
+  }
+}

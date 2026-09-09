@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "scholarly-edu-upper-survey-nonresponse",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Edit this upper-elementary report to 60–90 words. The learners can work with thirds but are new to survey nonresponse. Explain whose answers the fraction describes and what remains unknown. Keep the classroom counts rather than inventing a larger sample. Preferences do not establish anyone's reading ability or access needs. The aim is an understandable, evidence-faithful summary, not a formal statistical paper.",
+  "input": "Two-thirds of all 18 invited students preferred a map, so everyone else wanted audio. The six who did not answer must dislike both choices. The result proves that map users are stronger readers.",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "Eighteen students were invited to choose between a map guide and an audio guide."
+    },
+    {
+      "id": "f2",
+      "text": "Twelve responded: eight selected the map and four selected audio."
+    },
+    {
+      "id": "f3",
+      "text": "Six invited students did not respond, and their preferences are unknown."
+    },
+    {
+      "id": "f4",
+      "text": "Eight of the twelve respondents is two-thirds; the exercise collected no reading-assessment or accessibility information."
+    }
+  ],
+  "modules": [
+    "domain/non-fiction.md",
+    "domain/education-level/02-elementary-upper.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "A preference assigned to nonrespondents",
+      "A claim that two-thirds of all 18 invitees selected maps",
+      "An inference about reading competence or disability from a guide preference"
+    ],
+    "preserve": [
+      "18 invited, 12 responded, and six did not respond",
+      "Eight map choices and four audio choices among respondents",
+      "The fraction describes the respondents rather than every invitee"
+    ],
+    "expected_action": "edit"
+  }
+}

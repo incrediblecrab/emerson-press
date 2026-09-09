@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "id": "technical-field-types-no-change",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Copyedit this API reference field description. Return it unchanged if it accurately represents the types, requirements, and defaults from the supplied facts without adding unsupported constraints.",
+  "input": "The start_date field accepts an ISO 8601 date string (YYYY-MM-DD). It is required. The end_date field accepts an ISO 8601 date string; it is optional and defaults to the current date.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "start_date type: ISO 8601 date string in YYYY-MM-DD format; required."},
+    {"id": "f2", "text": "end_date type: ISO 8601 date string; optional; default is the current date at request time."}
+  ],
+  "modules": ["domain/technical.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2"],
+    "forbidden_additions": [
+      "An invented format specifier for end_date that differs from the supplied description.",
+      "A claim that start_date is optional.",
+      "An invented default for start_date."
+    ],
+    "preserve": [
+      "start_date required with ISO 8601 YYYY-MM-DD format.",
+      "end_date optional with current-date default.",
+      "The accurate existing wording."
+    ],
+    "expected_action": "no_change"
+  }
+}

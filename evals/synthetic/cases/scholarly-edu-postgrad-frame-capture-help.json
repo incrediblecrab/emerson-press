@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "id": "scholarly-edu-postgrad-frame-capture-help",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "Write a 320–450-word onboarding guide for a visiting postdoctoral fellow at fictional Umberwake Collections. The fellow has a doctorate in acoustics, is unfamiliar with this digital microfilm viewer, and needs keyboard-identifiable control names rather than directions based on color or position. Explain how to locate the target frame, orient and save a faithful image, handle a duplicate name or failed save, and finish without losing an unsaved capture. Use navigable headings and the supplied labels, not invented keyboard shortcuts. Distinguish frame identifiers from printed page numbers and a saved local file from a shared file. This is substantial ordinary equipment help, not a thesis, research plan, or literature review. Include only documented behavior and mark an unreadable source honestly rather than guessing its text.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "Pause reel stops playback before frame navigation or capture. Once the desired frame is displayed, Capture frame makes the capture."
+    },
+    {
+      "id": "f2",
+      "text": "Capture frame captures only the current frame, not the entire reel."
+    },
+    {
+      "id": "f3",
+      "text": "The user selects Preview to check the image, then Save image to save a local copy."
+    },
+    {
+      "id": "f4",
+      "text": "Finish session clears any unsaved capture; the image should be saved before that control is selected."
+    },
+    {
+      "id": "f5",
+      "text": "The viewer does not automatically send the saved image to the fellow's research group."
+    },
+    {
+      "id": "f6",
+      "text": "Reel UW-R14 is already loaded, its current frame counter reads 021, and the target is frame 027. The reel identifier and frame counter are selectable text, and all named controls are keyboard reachable."
+    },
+    {
+      "id": "f7",
+      "text": "While paused, Next frame and Previous frame move one frame at a time. A frame number is a viewer locator, not a printed page number; more than one frame may show the same printed page."
+    },
+    {
+      "id": "f8",
+      "text": "In Preview, Rotate clockwise turns the captured image by 90 degrees per use. Save image saves that orientation; the original reel image is unchanged."
+    },
+    {
+      "id": "f9",
+      "text": "Reset preview restores the current capture's original orientation. It does not navigate to another frame or recover an earlier capture."
+    },
+    {
+      "id": "f10",
+      "text": "Capturing another frame replaces the current unsaved capture. A user who wants both images must save the first before making the next capture."
+    },
+    {
+      "id": "f11",
+      "text": "Save image opens a file chooser and produces a PNG. The user chooses the folder; UW-R14_frame-027.png is the supplied suggested name for the target image."
+    },
+    {
+      "id": "f12",
+      "text": "If that filename already exists, the chooser offers Save another copy or Cancel. Save another copy creates a numbered filename and preserves the existing file."
+    },
+    {
+      "id": "f13",
+      "text": "A successful save shows Image saved locally with the saved path as text. A failed save shows Not saved and leaves the current preview available so the user can choose another folder and try Save image again."
+    },
+    {
+      "id": "f14",
+      "text": "Finish session clears the unsaved capture but does not delete already saved local files. No automatic sharing or backup is performed."
+    },
+    {
+      "id": "f15",
+      "text": "Rotation does not restore letters that are unreadable in the source frame. The research note should retain the reel and frame identifiers and mark unreadable wording as illegible rather than supplying a guessed transcription."
+    }
+  ],
+  "modules": [
+    "domain/general.md",
+    "domain/education-level/07-post-graduate.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f6", "f7", "f8", "f9", "f10", "f11", "f12", "f13", "f14", "f15"],
+    "forbidden_additions": [
+      "A whole-reel capture or automatic sharing with the research group",
+      "Instructions to finish before saving or a claim that unsaved captures remain available",
+      "Color-only or positional directions in place of the named controls",
+      "An academic essay substituted for the requested practical guide",
+      "Invented keyboard shortcuts, automatic backup, overwrite behavior, or deletion of saved local files",
+      "A guessed transcription or printed page number derived solely from the frame counter",
+      "A claim that rotation changes the original reel or recovers an earlier unsaved capture"
+    ],
+    "preserve": [
+      "Pause reel, Capture frame, Preview, Save image, Finish session",
+      "Save the local image before finishing",
+      "One frame rather than the whole reel",
+      "Help reflects the reader's workflow unfamiliarity, not an assumed competence from a doctorate",
+      "Reel UW-R14 and target frame 027",
+      "Next frame, Previous frame, Rotate clockwise, Reset preview, Save another copy, and Cancel",
+      "Image saved locally is confirmation; Not saved leaves the preview available for retry",
+      "UW-R14_frame-027.png",
+      "Frame identity, source legibility, and local-file status remain distinct"
+    ],
+    "expected_action": "draft"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "technical-partial-command-draft",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "Draft a CLI subcommand reference entry for forge build. One flag's accepted values are not documented in the supplied packet; leave an explicit placeholder note for that gap rather than inventing values. Document each supplied flag accurately.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The command is forge build."},
+    {"id": "f2", "text": "The --output flag accepts a path argument for the build output directory."},
+    {"id": "f3", "text": "The --output flag is optional; it defaults to the ./dist directory."},
+    {"id": "f4", "text": "The --mode flag accepts enumerated string values; the valid values are not present in the supplied packet."},
+    {"id": "f5", "text": "The --verbose flag is a boolean flag that enables detailed log output; its default is false."}
+  ],
+  "modules": ["domain/technical.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5"],
+    "forbidden_additions": [
+      "Invented values for --mode such as debug, release, or production.",
+      "A claim that --mode values are documented in the packet.",
+      "A claim that --output is required."
+    ],
+    "preserve": [
+      "An explicit placeholder or gap note for --mode values.",
+      "--verbose boolean default false.",
+      "--output optional with ./dist default."
+    ],
+    "expected_action": "draft"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "id": "scholarly-nf-transcription-alternative",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "Draft a 65–100-word editor's note for a local-history edition of an original fictional shore notebook. Explain the unresolved reading using the supplied diplomatic transcription exactly. The house convention c[?]ve marks one unclear letter; the bracketed question mark is editorial, not punctuation written by the diarist. Do not silently choose a reading or replace the uncertainty with an invented journey. Readers need to know what is unclear and why the map does not resolve it.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "The project's supplied transcription of Mera Lorn's notebook line is exactly “We reached the c[?]ve at noon.”"
+    },
+    {
+      "id": "f2",
+      "text": "Damage obscures the word's second letter; the transcriber cannot distinguish cave from cove."
+    },
+    {
+      "id": "f3",
+      "text": "A map in the same packet marks both a cave and a cove, so it does not settle the reading."
+    },
+    {
+      "id": "f4",
+      "text": "The question mark in brackets was supplied by the transcriber and was not written by Lorn."
+    }
+  ],
+  "modules": ["domain/non-fiction.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "A definite cave or cove destination",
+      "A claim that Lorn inserted a question mark or expressed uncertainty in that mark",
+      "An invented route, field visit, alternative manuscript, or newly resolved reading"
+    ],
+    "preserve": [
+      "We reached the c[?]ve at noon.",
+      "Cave and cove remain possible readings",
+      "Editorial notation is distinguished from the diarist's own writing",
+      "The map contains both features and cannot choose between them"
+    ],
+    "expected_action": "draft"
+  }
+}

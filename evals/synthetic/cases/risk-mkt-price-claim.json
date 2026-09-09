@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "risk-mkt-price-claim",
+  "split": "tuning",
+  "operation": "edit",
+  "task": "Copyedit this fictional product-pricing description. Return it unchanged if the price is accurately and clearly stated and no unsupported comparison is made.",
+  "input": "TaskHaven's standard plan costs $29 per user per month, billed annually.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "TaskHaven's standard plan is priced at $29 per user per month."},
+    {"id": "f2", "text": "Billing is on an annual basis."},
+    {"id": "f3", "text": "The supplied facts include no competitor price comparison."}
+  ],
+  "modules": ["domain/marketing.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2"],
+    "forbidden_additions": [
+      "A competitor price comparison.",
+      "A claim that the price is below the market average.",
+      "A promotional discount not in the facts."
+    ],
+    "preserve": [
+      "The $29 per-user monthly price.",
+      "The annual billing basis.",
+      "The absence of a comparative claim."
+    ],
+    "expected_action": "no_change"
+  }
+}

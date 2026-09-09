@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "id": "public-general-story-recording-invitation",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "Draft a 350–500-word invitation and participation guide for a fictional neighbourhood story project's pre-event mailing. Give readers enough information to choose a contribution route, understand a session, review a proposed clip, and follow the permission and deletion calendar. Use headings if they help people find those answers. Keep the welcome human and the instructions concrete rather than padding the guide with a general celebration of storytelling. This is not a legal waiver, and participation does not authorise internet publication or unlimited reuse.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "Participants may tell a story at a session or submit a written contribution."},
+    {"id": "f2", "text": "Making an audio recording is optional."},
+    {"id": "f3", "text": "Participants must approve any clip proposed for the hall's listening event."},
+    {"id": "f4", "text": "Participants may withhold a proposed clip before the programme is finalised on 1 May 2026."},
+    {"id": "f5", "text": "The project needs separate permission before publishing a recording on the internet."},
+    {"id": "f6", "text": "A person may contribute a story without agreeing to any public recording use."},
+    {"id": "f7", "text": "The fictional project is called We Remember the Hall and concerns everyday uses of North Hall."},
+    {"id": "f8", "text": "Sessions are on 11 April 2026, from 10–11:30 a.m. and from 2–3:30 p.m., at North Hall."},
+    {"id": "f9", "text": "A participant may attend one session; attending both is not required."},
+    {"id": "f10", "text": "Each session has eight places that can be booked through the hall desk."},
+    {"id": "f11", "text": "Drop-in attendance is possible only if places remain."},
+    {"id": "f12", "text": "Attendance is free."},
+    {"id": "f13", "text": "Each 90-minute session has a 10-minute introduction, 20 minutes of small-group conversation, and 60 minutes for optional individual recording or writing."},
+    {"id": "f14", "text": "Participants need not tell their story to the group before choosing an individual recording or written route."},
+    {"id": "f15", "text": "Participants may bring an object or photograph as a prompt and keep it with them; no object donation is requested."},
+    {"id": "f16", "text": "Written contributions may instead be left in a sealed envelope at the hall desk by 20 April 2026, with a suggested length of one page."},
+    {"id": "f17", "text": "The recording team may propose trimming a clip's beginning or end for length but may not rearrange the participant's words."},
+    {"id": "f18", "text": "A participant may choose first-name credit, a pseudonym, or no spoken credit for an approved clip."},
+    {"id": "f19", "text": "The proposed clip and credit are supplied for participant review before approval."},
+    {"id": "f20", "text": "Approval and questions can be handled on paper or through a conversation arranged with the project host at the hall desk."},
+    {"id": "f21", "text": "Approval permits consideration for the programme but does not guarantee that a clip will be selected."},
+    {"id": "f22", "text": "The listening event is at North Hall on 9 May 2026."},
+    {"id": "f23", "text": "No live broadcast or online publication is planned for the listening event."},
+    {"id": "f24", "text": "All raw recordings and approved clips will be deleted on 31 May 2026."}
+  ],
+  "modules": ["domain/general.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f6", "f7", "f8", "f9", "f10", "f11", "f12", "f13", "f14", "f15", "f16", "f17", "f18", "f19", "f20", "f21", "f22", "f23", "f24"],
+    "forbidden_additions": [
+      "Automatic recording, automatic clip approval, or internet-publication permission inferred from participation.",
+      "Unlimited reuse rights or a promise of withdrawal after every possible release.",
+      "Legal enforceability claims, an invented street address, or a claim that participants have already consented.",
+      "Guaranteed clip selection, mandatory group disclosure, compulsory object donation, or unlimited drop-in capacity.",
+      "Permission to rearrange a participant's words or retain recordings beyond the supplied deletion date."
+    ],
+    "preserve": [
+      "Independent choices about contributing, recording, event use, and online use.",
+      "The stated pre-finalisation opportunity to withhold a clip.",
+      "A welcoming invitation rather than a compulsory consent form.",
+      "Distinct session, written-submission, approval, event, and deletion dates.",
+      "A usable longer guide explaining practical choices, not a short promotional invitation with missing conditions."
+    ],
+    "expected_action": "draft"
+  }
+}

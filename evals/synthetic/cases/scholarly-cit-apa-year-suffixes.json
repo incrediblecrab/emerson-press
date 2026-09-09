@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "scholarly-cit-apa-year-suffixes",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Edit the 50–85-word explanation and two APA 7 references for this fictional facilities audit. The venue orders same-author, same-year works alphabetically by title and assigns a/b from that order, not from first mention in the prose. Keep each claim attached to the work that supports it. Format the corporate author, (year plus suffix), italicized report title, and URL; omit a publisher identical to the author. Both titles and URLs are complete. Do not use badge returns as a measure of attendance or interpret anonymous sensor events as identified people.",
+  "input": "Door sensors tell us who came to work (Cedarloom Audit Office, 2025a). The badge report shows that 80 percent of the staff attended, because 60 of the 75 issued badges were returned (Cedarloom Audit Office, 2025b).\n\nCedarloom Audit Office. (2025a). Door sensor limits. https://example.org/cedarloom/sensor-limits\nCedarloom Audit Office. (2025b). Badge returns. https://example.org/cedarloom/badge-returns",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "Cedarloom Audit Office published Badge returns in 2025 at https://example.org/cedarloom/badge-returns; author and publisher are the same office."
+    },
+    {
+      "id": "f2",
+      "text": "Badge returns records 60 returned badges out of 75 issued badges, a return rate of 80 percent."
+    },
+    {
+      "id": "f3",
+      "text": "Cedarloom Audit Office published Door sensor limits in 2025 at https://example.org/cedarloom/sensor-limits; author and publisher are the same office."
+    },
+    {
+      "id": "f4",
+      "text": "Door sensor limits says the sensor logs door-opening events without identifying people; the logs cannot supply individual attendance."
+    },
+    {
+      "id": "f5",
+      "text": "The badge report measures returned objects, not which staff members attended work."
+    }
+  ],
+  "modules": [
+    "domain/non-fiction.md",
+    "citation/apa7.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5"],
+    "forbidden_additions": [
+      "A claim that 80 percent is a staff-attendance rate",
+      "An assertion that anonymous door-opening events identify people",
+      "Suffix assignment based on order of first mention rather than supplied title order"
+    ],
+    "preserve": [
+      "Badge returns receives 2025a",
+      "Door sensor limits receives 2025b",
+      "60 out of 75 is an 80 percent badge-return rate",
+      "Both distinct report titles and supplied URLs"
+    ],
+    "expected_action": "edit"
+  }
+}

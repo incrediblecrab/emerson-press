@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "risk-leg-acceptance-criteria",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "Draft an acceptance-criteria clause for a fictional software-development agreement using the supplied facts. Do not add testing periods, payment-release triggers, or automatic acceptance rules not in the facts.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional agreement is between Orvant Software Ltd. and Crestfield Bank."},
+    {"id": "f2", "text": "Deliverables are deemed accepted when Crestfield confirms in writing that the deliverable meets the specifications in Annex B."},
+    {"id": "f3", "text": "If Crestfield identifies a defect, Orvant has the opportunity to remedy it."},
+    {"id": "f4", "text": "The facts do not specify a remedy period."}
+  ],
+  "modules": ["domain/legal.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3"],
+    "forbidden_additions": [
+      "A specific remedy period not in the facts.",
+      "An automatic acceptance rule triggered by the passage of time.",
+      "A payment milestone tied to acceptance."
+    ],
+    "preserve": [
+      "The written-confirmation requirement for acceptance.",
+      "The reference to Annex B specifications.",
+      "The opportunity to remedy a defect without specifying a period."
+    ],
+    "expected_action": "draft"
+  }
+}

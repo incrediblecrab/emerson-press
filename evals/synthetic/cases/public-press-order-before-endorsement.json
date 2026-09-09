@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "public-press-order-before-endorsement",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "Write an 80–120-word explanatory news brief answering whether a fictional committee's vote launched a gallery project. Use the dated records to establish the order of events and the limited subject of the vote. Report the new cabinet's arrival without inventing a motive for the earlier order.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "Anchor Gallery's order record shows that it ordered a mobile display cabinet on 5 May 2026."},
+    {"id": "f2", "text": "A committee voted on 9 May 2026 to endorse displaying the cabinet in the shared foyer."},
+    {"id": "f3", "text": "The cabinet arrived on 1 June 2026."},
+    {"id": "f4", "text": "The committee vote concerned the display location, not placing the order."},
+    {"id": "f5", "text": "The chair's exact statement in the supplied record is: \"We endorsed the venue, not the order.\""}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5"],
+    "forbidden_additions": [
+      "A claim that the 9 May vote caused or authorised the 5 May order.",
+      "An invented purchase price, funding source, delivery delay, or private motive.",
+      "A new interview or document search claimed by the writer."
+    ],
+    "preserve": [
+      "Order, endorsement, and arrival as three dated events with different functions.",
+      "The limited subject of the committee's vote.",
+      "The meaning and attribution of the chair's supplied statement."
+    ],
+    "expected_action": "draft"
+  }
+}

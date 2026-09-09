@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "risk-med-number-denominator",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Copyedit this patient-facing sentence from a fictional health communication exercise. The sentence gives an absolute count without a denominator. Revise it to include the supplied population size so the figure is interpretable. Do not add a percentage, a comparative claim, or an editorial comment.",
+  "input": "Twelve participants experienced the outcome.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "Twelve participants out of 240 enrolled in the fictional trial experienced the outcome."},
+    {"id": "f2", "text": "The outcome is not defined by name in the supplied packet."},
+    {"id": "f3", "text": "The figure appears in a fictional health communication exercise."}
+  ],
+  "modules": ["domain/medical.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1"],
+    "forbidden_additions": [
+      "A percentage not derived from the supplied numerator and denominator.",
+      "A comparison to a control group.",
+      "A clinical significance statement."
+    ],
+    "preserve": [
+      "The absolute count of twelve participants.",
+      "The denominator of 240.",
+      "The unnamed outcome label."
+    ],
+    "expected_action": "edit"
+  }
+}

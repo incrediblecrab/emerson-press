@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "id": "scholarly-cit-ama-correction-record",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Repair this 50–80-word annotated reading-list entry and its two AMA 11 references. Distinguish the original article from the separately published correction. The original article is reference 1 and its correction is reference 2. Venue mechanics: Author initials. Title. Journal abbreviation. Year;volume(issue):page range or single page. Preserve the correction's supplied title, including its bracketed notice. [1] and [2] are the venue's plain-text callouts, placed after punctuation. Do not silently replace the original publication year with the correction year or describe a correction as a retraction.",
+  "input": "The journal retracted the crate-counting paper after finding that its method was invalid.[1] The replacement appeared in 2025 under a new title.[2]\n\n1. Quill F, Em D. Counting nested crates. Stack Methods Q. 2025;9(1):12.\n2. Quill F, Em D. Better counting of nested crates. Stack Methods Q. 2025;9(1):12.",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "Original journal article: Fara Quill and Deni Em; Counting nested crates; Stack Methods Q; 2024; volume 8; issue 4; pages 110–117."
+    },
+    {
+      "id": "f2",
+      "text": "Separate correction: Fara Quill and Deni Em; Counting nested crates [correction]; Stack Methods Q; 2025; volume 9; issue 1; page 12."
+    },
+    {
+      "id": "f3",
+      "text": "The correction changes the label of Table 2's last column from outer crates to inner crates."
+    },
+    {
+      "id": "f4",
+      "text": "The notice says the recorded counts and the article's conclusion are unchanged; no retraction or replacement article is supplied."
+    }
+  ],
+  "modules": [
+    "domain/non-fiction.md",
+    "citation/ama11.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "A claim that the paper was retracted or replaced",
+      "A claim that the correction changed the data or established an invalid method",
+      "Invented notice titles, dates, DOI values, or editorial investigations"
+    ],
+    "preserve": [
+      "Counting nested crates [correction]",
+      "The original article remains a 2024 publication",
+      "The correction is a separate 2025 publication on page 12",
+      "Outer crates was the erroneous label; inner crates is the correction"
+    ],
+    "expected_action": "edit"
+  }
+}

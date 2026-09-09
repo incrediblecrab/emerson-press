@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "public-press-tender-not-award",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Edit this fictional community-news item against the procurement notice in about 70–110 words. Distinguish inviting bids from choosing a contractor, and a spending ceiling from money already spent. Keep the useful deadline and source link without inventing procurement law or checking the website.",
+  "input": "Willow Yard Association has hired a builder and spent $18,000 on a covered outdoor stage. Construction is guaranteed to start immediately. The winning company was selected through the association's new online notice, which closes on 18 June 2026.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional Willow Yard Association has invited bids to build a covered outdoor stage."},
+    {"id": "f2", "text": "The notice sets a maximum proposed contract price of $18,000."},
+    {"id": "f3", "text": "No contractor has been selected."},
+    {"id": "f4", "text": "Bids are due on 18 June 2026."},
+    {"id": "f5", "text": "The supplied notice URL is https://example.org/willow-yard/stage-bids."},
+    {"id": "f6", "text": "The notice gives no construction start date."}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f6"],
+    "forbidden_additions": [
+      "An awarded contract, selected builder, actual $18,000 expenditure, or immediate construction.",
+      "An invented bidder, legal compliance finding, or award procedure.",
+      "A claim that the notice URL was accessed or verified."
+    ],
+    "preserve": [
+      "An invitation and price ceiling rather than a completed purchase.",
+      "The bid deadline and supplied source identity."
+    ],
+    "expected_action": "edit"
+  }
+}

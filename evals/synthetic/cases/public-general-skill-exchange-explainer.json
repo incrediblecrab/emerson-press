@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "id": "public-general-skill-exchange-explainer",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "Write a 350–500-word orientation article for newcomers to a fictional skill-sharing circle. The reader thinks joining requires repaying the same person with an equivalent lesson. Explain network reciprocity, walk through a first introduction and meeting, and clarify boundaries and what happens when a match is not right. Use the supplied illustration as an illustration, not a reported success story. Develop the useful general explanation without turning it into a recruitment pitch, a contract, or a promise of professional expertise.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "Swap Circle members list skills they can share and things they would like help learning."},
+    {"id": "f2", "text": "A member who receives help need not repay the same person."},
+    {"id": "f3", "text": "Members may instead help someone else in the circle."},
+    {"id": "f4", "text": "The circle does not keep hour balances or monetary accounts."},
+    {"id": "f5", "text": "The coordinator introduces potential matches."},
+    {"id": "f6", "text": "Members agree on their own meeting arrangements."},
+    {"id": "f7", "text": "The coordinator does not certify members' qualifications."},
+    {"id": "f8", "text": "Offers may concern practical, creative, or organising skills."},
+    {"id": "f9", "text": "The coordinator's illustrative example is a member receiving help with paper folding and later helping a different member rehearse a short talk; it is not a reported exchange outcome."},
+    {"id": "f10", "text": "A newcomer may join to learn even if they have nothing to offer immediately."},
+    {"id": "f11", "text": "Joining the circle is free."},
+    {"id": "f12", "text": "The coordinator shares contact details for an introduction only after both people agree."},
+    {"id": "f13", "text": "Before suggesting a match, the coordinator asks what the learner hopes to do and what the other member is offering."},
+    {"id": "f14", "text": "The circle suggests a 20-minute introductory conversation before arranging a full learning session."},
+    {"id": "f15", "text": "The two members should agree the place, time, and needed materials before meeting."},
+    {"id": "f16", "text": "Any material expenses must be agreed beforehand, and the circle does not automatically reimburse them."},
+    {"id": "f17", "text": "Either person may stop an exchange without creating an hour debt."},
+    {"id": "f18", "text": "A member may decline an introduction without giving a reason."},
+    {"id": "f19", "text": "Agreeing to one activity does not commit a member to continuing help."},
+    {"id": "f20", "text": "A member may ask the coordinator for a different introduction if a proposed match is not suitable."},
+    {"id": "f21", "text": "The coordinator may pause further introductions while a conduct concern is reviewed."},
+    {"id": "f22", "text": "The circle's participation rules prohibit exchanges of passwords, financial-account access, or house keys."},
+    {"id": "f23", "text": "Clinical advice, legal representation, and licensed-trade jobs are outside the circle's activities."},
+    {"id": "f24", "text": "The circle does not guarantee that a requested match will be available."},
+    {"id": "f25", "text": "Members can update or remove their offers through the coordinator."}
+  ],
+  "modules": ["domain/general.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4", "f5", "f6", "f7", "f8", "f9", "f10", "f11", "f12", "f13", "f14", "f15", "f16", "f17", "f18", "f19", "f20", "f21", "f22", "f23", "f24", "f25"],
+    "forbidden_additions": [
+      "Mandatory direct repayment, equal-hour exchanges, or a points balance.",
+      "Verified professional qualifications or guaranteed teaching quality.",
+      "Coordinator-set appointments, an unprovided fee, or a contractual service guarantee.",
+      "The illustrative exchange presented as a verified participant result.",
+      "Automatic sharing of contact details, obligatory continuing help, or automatic reimbursement.",
+      "Permission to share account access or use the circle for the excluded professional services."
+    ],
+    "preserve": [
+      "Reciprocity across the group rather than a one-to-one debt.",
+      "Introductions distinguished from certification and scheduling.",
+      "A useful explanation for a newcomer without promotional exaggeration.",
+      "The practical first-meeting sequence and each member's ability to decline or stop.",
+      "The distinction between peer help, professional credentials, and a guaranteed match.",
+      "An orientation article with substantive process and boundaries rather than repeated generic reassurance."
+    ],
+    "expected_action": "draft"
+  }
+}

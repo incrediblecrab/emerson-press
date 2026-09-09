@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "scholarly-cit-apa-personal-communication",
+  "split": "tuning",
+  "operation": "edit",
+  "task": "Edit this 45–75-word museum-methods note using APA 7 treatment of the supplied fictional personal communication. Venue rule: cite an unrecoverable email in text as (A. Pell, personal communication, October 12, 2024), but do not put it in the reference list. Remove the draft's unsupported public-publication apparatus. Preserve the exact words of the email and distinguish the sender's proposed routing from an adopted museum policy. All names and the email are invented for this exercise; do not retrieve or imply access to a real mailbox.",
+  "input": "The museum's published newsletter established a permanent rule for every tour: “For the next trial, I would send groups through the east door” (Pell, 2024). This proves the route has already been adopted.\n\nPell, A. (2024). East-door tour policy. Museum Dispatch. https://example.org/newsletter/east-door-policy",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "Ari Pell sent the writer a personal email on October 12, 2024; it is not publicly recoverable and is not a newsletter."
+    },
+    {
+      "id": "f2",
+      "text": "The supplied email sentence is exactly “For the next trial, I would send groups through the east door”."
+    },
+    {
+      "id": "f3",
+      "text": "Pell proposed a route for the next trial; the packet contains no decision adopting it."
+    },
+    {
+      "id": "f4",
+      "text": "No publication title, public URL, or permanent museum routing policy is supplied."
+    }
+  ],
+  "modules": [
+    "domain/non-fiction.md",
+    "citation/apa7.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3"],
+    "forbidden_additions": [
+      "A reference-list entry or invented public source for the unrecoverable email",
+      "An assertion that the proposed route is an adopted or permanent policy",
+      "A claim that the editor opened a mailbox or checked the invented URL"
+    ],
+    "preserve": [
+      "For the next trial, I would send groups through the east door",
+      "A. Pell, personal communication, October 12, 2024",
+      "The conditional proposal rather than a completed institutional decision"
+    ],
+    "expected_action": "edit"
+  }
+}

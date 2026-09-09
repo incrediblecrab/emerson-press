@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "scholarly-edu-middle-two-changing-conditions",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Edit this middle-school lab-record explanation to 65–100 words. The class knows temperature, stirring, and elapsed time but is learning why changing two conditions prevents an isolated causal conclusion. Report the observations accurately without pretending the exercise measured uncertainty or held an unrecorded condition constant. This is an explanation of an already completed fictional demonstration, not instructions to perform an experiment.",
+  "input": "Cup B's sugar dissolved in 45 seconds, while cup A's took 90 seconds. This proves that warmer water alone always halves the dissolving time. Stirring made no difference, because both cups had the same sugar.",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "Each cup received an equal sugar cube."
+    },
+    {
+      "id": "f2",
+      "text": "Cup A started at 10 °C and was stirred once; its sugar dissolved in 90 seconds."
+    },
+    {
+      "id": "f3",
+      "text": "Cup B started at 30 °C and was stirred continuously; its sugar dissolved in 45 seconds."
+    },
+    {
+      "id": "f4",
+      "text": "Temperature and stirring both differed, so this comparison does not isolate either one's effect."
+    },
+    {
+      "id": "f5",
+      "text": "The record supplies only the starting temperatures and these two observations, not repeated trials or maintained-temperature measurements."
+    }
+  ],
+  "modules": [
+    "domain/non-fiction.md",
+    "domain/education-level/03-middle-school.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "An isolated effect of temperature or a conclusion that stirring did not matter",
+      "A universal halving of dissolving time",
+      "Invented repeated trials, confidence values, or constant-temperature monitoring"
+    ],
+    "preserve": [
+      "90 seconds in A and 45 seconds in B",
+      "Starting temperatures of 10 °C and 30 °C",
+      "Stirred once versus stirred continuously",
+      "The observation is real within the exercise but its causal interpretation is limited"
+    ],
+    "expected_action": "edit"
+  }
+}

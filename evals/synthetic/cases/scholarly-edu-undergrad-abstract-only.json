@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "id": "scholarly-edu-undergrad-abstract-only",
+  "split": "held_out",
+  "operation": "edit",
+  "task": "Edit this undergraduate source-appraisal note to 70–105 words. The writer has read only the supplied abstract, not the full article or appendix. Readers know abstracts but are practicing an honest account of what they have actually examined. Preserve the abstract's exact qualitative result and distinguish carrying experience from mechanical durability. Do not invent bibliography fields, ask for external retrieval, or turn a limit of the packet into an accusation that the study itself is invalid.",
+  "input": "I checked the full appendix and verified the strap's durability. The study of 14 people proves that the carrying strap will not break. Its users were fully satisfied, so no further question about the design remains.",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "The supplied abstract is for a fictional study titled Carrying a Folding Seat; the full article and appendix are not in the packet and were not read."
+    },
+    {
+      "id": "f2",
+      "text": "The abstract describes interviews with 14 people about carrying one prototype seat."
+    },
+    {
+      "id": "f3",
+      "text": "Its result sentence is exactly “Participants described the carrying strap as awkward.”"
+    },
+    {
+      "id": "f4",
+      "text": "The abstract reports no mechanical durability tests, breakage rates, or statement of universal satisfaction."
+    }
+  ],
+  "modules": [
+    "domain/non-fiction.md",
+    "domain/education-level/05-undergraduate.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3", "f4"],
+    "forbidden_additions": [
+      "A claim that the full article or appendix was read or checked",
+      "A durability guarantee, breakage rate, or universal user satisfaction",
+      "An accusation of study invalidity merely because the packet lacks the full text"
+    ],
+    "preserve": [
+      "Participants described the carrying strap as awkward.",
+      "Fourteen interviews concern carrying experience with one prototype",
+      "The writer's appraisal is limited to the abstract actually supplied"
+    ],
+    "expected_action": "edit"
+  }
+}

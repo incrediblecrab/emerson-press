@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "id": "public-press-annual-membership-review",
+  "split": "held_out",
+  "operation": "review",
+  "task": "Review this fictional association-news paragraph for a reader who has confused membership with attendance. If it already works, say so in about 40–80 words, explaining why the comparison and qualification are useful. Do not rewrite good copy or demand a stronger conclusion than the annual report supports.",
+  "input": "The Hill Path Association ended 2025 with 84 members, compared with 72 at the end of 2024, its annual report says. That is a rise of 12 members, not a count of visits. \"A larger membership does not necessarily mean more available volunteers,\" the treasurer writes. The report gives no attendance total.",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "The fictional annual report lists 84 members at the end of 2025."},
+    {"id": "f2", "text": "It lists 72 members at the end of 2024."},
+    {"id": "f3", "text": "The difference is 12 members."},
+    {"id": "f4", "text": "The report gives no attendance total."},
+    {"id": "f5", "text": "The report quotes the treasurer exactly: \"A larger membership does not necessarily mean more available volunteers.\""}
+  ],
+  "modules": ["domain/press.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f3", "f4"],
+    "forbidden_additions": [
+      "Members equated with visits, attendance, or available volunteers.",
+      "An invented cause of growth or an unsupported volunteer-capacity result.",
+      "A compulsory rewrite merely to remove the useful qualification."
+    ],
+    "preserve": [
+      "A like-for-like year-end membership comparison with correct subtraction.",
+      "The report's source attribution and the treasurer's qualified statement.",
+      "A no-change review of accurate, useful copy."
+    ],
+    "expected_action": "no_change"
+  }
+}

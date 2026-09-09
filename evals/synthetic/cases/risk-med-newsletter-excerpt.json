@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "id": "risk-med-newsletter-excerpt",
+  "split": "held_out",
+  "operation": "draft",
+  "task": "Draft a two-sentence newsletter excerpt for a fictional hospital's internal staff bulletin summarising the results of a completed handwashing audit. Attribute findings to the audit report; do not add regulatory penalties, infection rates, or compliance conclusions not supplied.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {"id": "f1", "text": "Northgate Hospital conducted a handwashing compliance audit across three wards in April 2025."},
+    {"id": "f2", "text": "The audit report found that observed compliance varied by ward and by shift."},
+    {"id": "f3", "text": "A follow-up training session is scheduled for 15 May 2025."},
+    {"id": "f4", "text": "The audit report's specific compliance percentages are confidential and are not reproduced in the bulletin."}
+  ],
+  "modules": ["domain/medical.md"],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3"],
+    "forbidden_additions": [
+      "Specific compliance percentages or ward names.",
+      "A regulatory penalty or enforcement action.",
+      "An infection-rate claim linked to compliance levels."
+    ],
+    "preserve": [
+      "The April 2025 audit context and the attribution of findings to the audit report.",
+      "The ward-and-shift variability observation without specific figures.",
+      "The 15 May 2025 training-session date."
+    ],
+    "expected_action": "draft"
+  }
+}

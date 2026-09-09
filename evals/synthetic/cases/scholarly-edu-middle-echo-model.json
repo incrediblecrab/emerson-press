@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "id": "scholarly-edu-middle-echo-model",
+  "split": "held_out",
+  "operation": "review",
+  "task": "Review this middle-school science explanation, returning it unchanged if it is already accurate and comprehensible. Readers know sound and wall but are new to the arrows in the classroom's reflection model. The final clause prevents a literal misunderstanding of the drawing. Do not strip that useful explanation, force a counterargument, or split every clause merely because the assignment has an education preset. No further experiment or formal reference is requested.",
+  "input": "An echo is a sound heard again after it reflects from a surface. In our model, the arrow leaving the wall marks the reflected sound, not a second speaker. Although the picture uses straight lines, the lines stand for the sound's path; they are not strings in the room.",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "In the lesson, an echo is sound heard again after reflection from a surface."
+    },
+    {
+      "id": "f2",
+      "text": "The classroom drawing uses an arrow pointing away from the wall to represent reflected sound."
+    },
+    {
+      "id": "f3",
+      "text": "The drawing's straight lines represent a sound path, not strings or a second sound-producing speaker."
+    }
+  ],
+  "modules": [
+    "domain/general.md",
+    "domain/education-level/03-middle-school.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": ["f1", "f2", "f3"],
+    "forbidden_additions": [
+      "A second speaker or physical strings not in the model",
+      "A new timing measurement, surface specification, or experiment",
+      "An unsupported claim that the explanation is too advanced solely because of its clauses"
+    ],
+    "preserve": [
+      "The distinction between a representation and physical objects",
+      "The explanation of the arrow leaving the wall",
+      "The meaningful although clause and existing short explanation"
+    ],
+    "expected_action": "no_change"
+  }
+}
