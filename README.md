@@ -1,8 +1,10 @@
 # emerson-press
 
-Writing instructions for useful, specific prose that preserves the facts and the writer's intended voice.
+Writing instructions for concrete, natural prose without generic AI-style filler.
 
-The goal is better writing, not concealed AI involvement. A fluent fabrication fails. A good existing passage may need no change. Familiar words, formal language, em dashes and three-item lists are not defects by themselves.
+The newsroom target is the specificity, editorial judgment and unforced voice associated with strong New York Times or Wall Street Journal writing. AP style supplies the mechanics; it is not the whole voice. The aim is better writing, not concealed AI involvement or copies of those publications' articles.
+
+A fluent fabrication fails. A good existing passage may need no change. Familiar words, formal language, em dashes and three-item lists are not defects by themselves.
 
 ## Use the instructions
 
@@ -79,6 +81,8 @@ Source dossiers identify their evidence type, version, checked date and verifica
 
 The [evaluation workflow](evals/README.md) uses original supplied-fact cases, frozen original instructions and real response records. The [rubric](evals/rubric.md) requires fidelity, useful content and respect for intentional voice. It includes no-op cases and treats human preference separately from prompt size.
 
-No comparative model or human-review results are claimed by this revision. Model choice, execution budget and human review must be settled before a release comparison. A compact default must not be promoted on authoring checks or invented scores.
+The [model-only tuning pilot](evals/synthetic/README.md) retains its actual responses, failed judgments and negative findings. Its full-versus-task-contract comparison used repository instructions in both conditions; it did not test repository use against an untreated draft. The primary newsroom study therefore needs a `bare-task` control and explicit assessment of noticeable generic prose, not factuality alone.
+
+No powered or human-reviewed editorial-superiority result is established. A compact default must not be promoted on authoring checks or invented scores.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for source maintenance, generated artifacts and regression checks. Copyrighted working texts in `raw-data/` must remain untracked and out of prompt exports. Existing file-specific attribution and license notices still apply; no blanket license is inferred from them.

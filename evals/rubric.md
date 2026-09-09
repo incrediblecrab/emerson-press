@@ -1,6 +1,25 @@
 # Editorial evaluation
 
-Judge the writing against its task and source packet. A polished fabrication fails; a useful plain answer can succeed. This rubric evaluates documents, not their authors.
+Judge the writing against its task and source packet. The central promise is useful, specific prose without conspicuous generic AI-style padding, not merely error-free output. Professional newsroom writing, including the strengths associated with The New York Times and The Wall Street Journal, is an editorial target: reporting-led structure, precise language, useful context and deliberate rhythm. It is not a request to copy their articles or a claim that an output meets their standards.
+
+AP style supplies house mechanics, not the whole voice or a substitute for editorial judgment. A polished fabrication still fails. This rubric evaluates documents, not their authors.
+
+## Noticeable generic writing
+
+Assess the effect of the language in context. A stock phrase, em dash, three-part list, technical term or long sentence is not inherently a defect. Identify passages that materially weaken the piece:
+
+| Test | Noticeable weakness | Desired result |
+| --- | --- | --- |
+| Reporting-led opening | Announces the topic's importance in reusable language before telling the news | Leads with a specific development, finding, tension or supported scene |
+| Information gain | Rephrases earlier points or adds paragraphs that contribute no fact, explanation or useful connection | Each paragraph advances the reader's understanding |
+| Specificity | Substitutes vague praise, abstractions or grand implications for the available actors and evidence | Names who did what, what changed, and which consequences the record supports |
+| Shape and progression | Imposes the same symmetrical template, signposting and recap regardless of the story | Organizes the material around this story's actual question and evidence |
+| Voice and rhythm | Sounds mechanically uniform, overdecorated or insistently conversational | Uses an appropriate, unforced voice and purposeful changes in pace |
+| Ending | Restates a generic lesson or forecasts significance without support | Ends on a supported consequence, unresolved question, telling detail or useful final fact |
+
+Distinguish an isolated minor edit from **salient slop**: generic framing, repetition or templating prominent enough to distract from the reporting or make the piece feel interchangeable. Record the relevant passages and explain their effect. Do not infer who wrote the text, assign an authorship probability or use a detector.
+
+For newsroom experiments, report editorial preference and the incidence of salient slop separately from factual and mechanical errors. A faithful answer can still be dull or generic; fluent prose can still fail fidelity. Missing or refused articles are task failures, not clean examples with no slop. AP mechanics must be checked against the applicable supplied or verified rules, not invented recollections of an unread manual.
 
 ## Fidelity gates
 

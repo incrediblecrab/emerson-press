@@ -4,6 +4,8 @@ This is an offline capture and **human-review** workflow, not an automatic writi
 judge. There are no model calls, automatic LLM judgments or benchmark scores
 shipped with it. `baseline.json` freezes original instruction hashes and token
 counts, **not behavioral results**. See [rubric.md](rubric.md) for human criteria.
+The optional [synthetic backtest](synthetic/README.md) captures real model responses
+and separately labeled automated judgments; it does not supply human attestations.
 
 Run from the repository root with the existing virtual environment:
 
@@ -71,6 +73,7 @@ Replace `CASE.json` with an actual case path, including any split subdirectory.
 
 | Variant | Instructions |
 | --- | --- |
+| `bare-task` | No repository contract, core, optional modules or safeguards; only the common task/data wrapper |
 | `task-only` | Operation-specific current task contract, without optional modules or safeguards |
 | `legacy-modules` | Frozen original core, then selected original module bodies, without today's task contract or examples |
 | `legacy-quick` | Exact original `quick-guide.md` at the frozen revision; optional modules are not appended |
@@ -81,8 +84,16 @@ Legacy variants verify the loaded file/body hashes against `baseline.json` and
 require its original Git object to be available. They **reject any standalone
 safeguard selection**: there is no invented historical mixed-domain configuration.
 This deliberately prevents a complete all-suite legacy comparison where cases
-require those safeguards. Task-only/legacy-quick omitted selections are recorded.
+require those safeguards. Bare-task/task-only/legacy-quick omitted selections are recorded.
 No variant loads source dossiers, raw-data or demonstration examples.
+
+`bare-task` is the no-repository-instructions control. It has an exactly empty
+instruction payload and an explicit empty manifest; the importer rejects a
+resealed control containing a contract, modules or misleading source metadata.
+It still uses the same model runtime and task/data wrapper as the other variants.
+`task-only` already uses this repository's task contract: a full-versus-task-only
+comparison measures the additional modules, not the effect of using the repository
+at all. Do not describe those two different comparisons as interchangeable.
 
 A request records the complete case, split, operation, exact `instructions`,
 serialized `input`, exact `prompt`, assembly manifest, case/prompt hashes and an
@@ -154,10 +165,11 @@ captured instruction text, not merely against another manifest.
 
 Private keys and reports label these pairs `matched-compression`. Comparisons
 involving an original legacy variant are instead `legacy-instruction-comparison`;
-their instruction sources and contracts intentionally differ. Task-only comparisons
-without legacy are `instruction-ablation`. A result against legacy/task-only is not
-evidence that compression preserved the corrected full rules. Labels stay out of
-reviewers' text files. Changed records, mappings or exported text are report errors.
+their instruction sources and contracts intentionally differ. A `bare-task` contrast
+without legacy is `repository-instruction-comparison`. Other task-only contrasts
+are `instruction-ablation`. None of these is evidence that compression preserved
+the corrected full rules. Labels stay out of reviewers' text files. Changed records,
+mappings or exported text are report errors.
 
 Write one JSON object per line to `evals/runs/judgments.jsonl`. Each judgment has
 exactly the following fields; do not generate a filled judgment using a model:

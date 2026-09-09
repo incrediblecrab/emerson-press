@@ -270,6 +270,91 @@ class EvaluationTests(unittest.TestCase):
                 self.assertNotIn("## Review", request["instructions"])
         self.assertEqual(evaluate.prepare(ROOT, case, "task-only")["manifest"]["modules"], [])
 
+    def test_bare_task_excludes_the_contract_and_all_modules(self):
+        case = toy_case(modules=["domain/general.md"])
+        case["safeguards"] = ["medical", "legal"]
+        for operation in ("draft", "edit", "review"):
+            with self.subTest(operation=operation):
+                case["operation"] = operation
+                case["checks"]["expected_action"] = operation
+                with patch.object(evaluate, "source_text", side_effect=AssertionError("loaded contract")):
+                    request = evaluate.prepare(ROOT, case, "bare-task")
+                self.assertEqual(request["instructions"], "")
+                self.assertEqual(request["manifest"]["tokens"], 0)
+                self.assertEqual(request["manifest"]["modules"], [])
+                self.assertEqual(request["manifest"]["repository_instructions"], "none")
+                self.assertEqual(request["manifest"]["omitted_optional_modules"], case["modules"])
+                self.assertEqual(request["manifest"]["omitted_safeguards"], case["safeguards"])
+                self.assertNotIn("contract_source_sha256", request["manifest"])
+                self.assertNotIn("## Shared contract", request["prompt"])
+                self.assertIn(case["task"], request["prompt"])
+                self.assertEqual(evaluate.parse_json(request["input"])["facts"], case["facts"])
+                self.assertNotIn("required_facts", request["prompt"])
+
+    def test_bare_task_rejects_resealed_instruction_or_manifest_contamination(self):
+        original = self.toy_request(variant="bare-task")
+        contaminated = deepcopy(original)
+        contaminated["instructions"] = "Synthetic repository instruction injected into the control.\n"
+        contaminated["prompt"] = evaluate.model_prompt(
+            contaminated["instructions"], contaminated["case"], contaminated["input"],
+        )
+        contaminated["prompt_sha256"] = digest(contaminated["prompt"])
+        contaminated["prompt_tokens"] = evaluate.token_count(contaminated["prompt"])
+        contaminated["manifest"]["sha256"] = digest(contaminated["instructions"])
+        contaminated["manifest"]["tokens"] = evaluate.token_count(contaminated["instructions"])
+        contaminated.pop("request_sha256")
+        contaminated = evaluate.seal(contaminated, "request_sha256")
+        with self.assertRaisesRegex(DocumentError, "bare-task must not contain"):
+            evaluate.validate_request(ROOT, contaminated)
+        contaminated = deepcopy(original)
+        contaminated["manifest"]["contract_source_sha256"] = "a" * 64
+        contaminated.pop("request_sha256")
+        contaminated = evaluate.seal(contaminated, "request_sha256")
+        with self.assertRaisesRegex(DocumentError, "bare-task manifest"):
+            evaluate.validate_request(ROOT, contaminated)
+
+    def test_bare_task_pairs_with_repo_guided_output_without_changing_old_contrasts(self):
+        bare, full = self.toy_result(variant="bare-task"), self.toy_result(variant="full")
+        self.assertEqual(evaluate.compatible(bare, full), evaluate.compatible(full, bare))
+        paths = self.folder / "bare.json", self.folder / "full.json"
+        for path, record in zip(paths, (bare, full)):
+            evaluate.write_json(path, record)
+        key = evaluate.blind(ROOT, *paths, self.folder / "bare-pair", 731)
+        self.assertEqual(key["comparison_kind"], "repository-instruction-comparison")
+        evaluate.read_pair(ROOT, self.folder / "bare-pair/key.json")
+        self.write_cases([toy_case()])
+        summary = evaluate.report(ROOT, self.judgments_path, "full", "bare-task", case_dir=self.case_dir)
+        self.assertEqual(summary["comparison_kind"], "repository-instruction-comparison")
+        self.assertEqual(summary["release_status"], "incomplete")
+        self.assertEqual(evaluate.comparison_kind("full", "task-only"), "instruction-ablation")
+        self.assertEqual(evaluate.comparison_kind("full", "compact"), "matched-compression")
+
+    def test_record_cli_rejects_contaminated_bare_control_with_valid_hashes(self):
+        request = self.toy_request(variant="bare-task")
+        request["instructions"] = "Synthetic instruction that does not belong in the untreated control.\n"
+        request["manifest"]["sha256"] = digest(request["instructions"])
+        request["manifest"]["tokens"] = evaluate.token_count(request["instructions"])
+        request["prompt"] = evaluate.model_prompt(request["instructions"], request["case"], request["input"])
+        request["prompt_sha256"] = digest(request["prompt"])
+        request["prompt_tokens"] = evaluate.token_count(request["prompt"])
+        request.pop("request_sha256")
+        request_path = self.folder / "contaminated-request.json"
+        evaluate.write_json(request_path, evaluate.seal(request, "request_sha256"))
+        response_path, settings_path = self.folder / "response.txt", self.folder / "settings.json"
+        evaluate.write_new(response_path, "Synthetic unit-test response, not a real model output.")
+        evaluate.write_json(settings_path, {})
+        output_path = self.folder / "must-not-exist.json"
+        errors = io.StringIO()
+        with redirect_stderr(errors):
+            code = evaluate.main([
+                "record", str(request_path), "--response", str(response_path),
+                "--model", "synthetic-test-model", "--family", "synthetic-test-family",
+                "--settings", str(settings_path), "--output", str(output_path),
+            ])
+        self.assertEqual(code, 2)
+        self.assertIn("bare-task must not contain repository instructions", errors.getvalue())
+        self.assertFalse(output_path.exists())
+
     def test_legacy_is_frozen_and_excludes_current_task_contract(self):
         case = toy_case(modules=["domain/general.md"])
 

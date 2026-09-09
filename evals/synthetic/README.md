@@ -4,10 +4,24 @@ This experiment uses original synthetic tasks, real model responses and explicit
 automated judgments. It is not a human editorial evaluation and cannot clear the
 human-release gate in `scripts.evaluate`.
 
-The primary comparison is full writing instructions versus the shared task
-contract alone. Tuning and held-out cases stay separate. Corrections may use tuning
-findings; held-out outputs must not be inspected to choose those corrections.
-Renaming a fixture does not create an independent observation.
+The primary target is noticeable generic AI-style prose: whether repository-guided
+writing has more of the specificity, structure, restraint and rhythm of strong
+newsroom work. AP supplies mechanics; factual fidelity remains a guardrail, not
+the sole outcome. The primary newsroom comparison requires a genuine `bare-task`
+control versus a repository-guided candidate using the same natural brief and
+substantial reporting packet.
+
+The archived pilot instead compared full modules with the shared task contract
+alone. **Both pilot conditions already used this repository.** That ablation does
+not measure repository use versus no repository use. The broader technical, UI,
+citation, medical and legal corpus is regression coverage, not by itself an
+adequate primary sample of newsroom prose.
+
+Tuning and held-out cases stay separate. Corrections may use tuning findings;
+held-out outputs must not be inspected to choose those corrections. Renaming a
+fixture does not create an independent observation. The newsroom recipe, grading
+criteria, independent reporting-packet families and statistical plan must be
+frozen before the primary held-out run.
 
 ## Live response capture
 

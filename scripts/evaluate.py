@@ -19,7 +19,7 @@ from scripts.modules import (
 )
 
 
-VARIANTS = ("task-only", "legacy-modules", "legacy-quick", "full", "compact")
+VARIANTS = ("bare-task", "task-only", "legacy-modules", "legacy-quick", "full", "compact")
 FAILURES = (
     "unsupported_claim", "changed_meaning", "source_identity",
     "invented_verification", "disclosure_or_privacy", "unsafe_action",
@@ -240,7 +240,11 @@ def instructions_for(root: Path, case: dict, variant: str) -> tuple[str, dict]:
         "modules": [], "examples": [], "tokenizer": "o200k_base",
         "evaluation_status": "not_evaluated",
     }
-    if variant == "task-only":
+    if variant == "bare-task":
+        text = ""
+        manifest.update(repository_instructions="none",
+                        omitted_optional_modules=case["modules"], omitted_safeguards=case["safeguards"])
+    elif variant == "task-only":
         contract_source = source_text(root, "prompts/task.md")
         contract = contract_source.strip()
         sections = section_ranges(contract)
@@ -386,7 +390,10 @@ def validate_request(root: Path, request: Any) -> dict:
     require(request["split"] == case["split"] and request["operation"] == case["operation"],
             "request case metadata mismatch")
     require(request["variant"] in VARIANTS, "unknown request variant")
-    nonempty(request["instructions"], "instructions")
+    if request["variant"] == "bare-task":
+        require(request["instructions"] == "", "bare-task must not contain repository instructions")
+    else:
+        nonempty(request["instructions"], "instructions")
     require(request["input"] == input_data(case), "input does not match the case")
     require(request["prompt"] == model_prompt(request["instructions"], case, request["input"]),
             "prompt does not match its exact instructions/task/input")
@@ -396,6 +403,10 @@ def validate_request(root: Path, request: Any) -> dict:
             "prompt token count mismatch")
     manifest = request["manifest"]
     require(isinstance(manifest, dict), "manifest must be an object")
+    if request["variant"] == "bare-task":
+        _, expected_manifest = instructions_for(root, case, "bare-task")
+        require(manifest == expected_manifest,
+                "bare-task manifest must describe an empty repository-instruction payload")
     require(manifest.get("sha256") == digest(request["instructions"]), "manifest instruction hash mismatch")
     require(manifest.get("variant") == request["variant"]
             and manifest.get("operation") == request["operation"], "manifest selection mismatch")
@@ -473,6 +484,8 @@ def comparison_kind(first_variant: str, second_variant: str) -> str:
         return "matched-compression"
     if first_variant.startswith("legacy-") or second_variant.startswith("legacy-"):
         return "legacy-instruction-comparison"
+    if "bare-task" in (first_variant, second_variant):
+        return "repository-instruction-comparison"
     return "instruction-ablation"
 
 
