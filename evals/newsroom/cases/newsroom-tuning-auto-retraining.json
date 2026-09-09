@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-tuning-auto-retraining",
+  "split": "tuning",
+  "operation": "draft",
+  "task": "For this synthetic writing exercise, use the fictional reporting notes to write a reported feature for a general newspaper audience. Write from this reporting snapshot as of April 9, 2025. Include a headline. Target 450 to 650 words. Follow AP style.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "Hartwell Works is a city-supported retraining program for former employees of the closed Keystone Motors assembly plant. Its April 2025 report supplies the enrollment, completion, employment and wage figures in these notes."
+    },
+    {
+      "id": "f2",
+      "text": "Keystone Motors closed the Hartwell plant on December 31, 2021, eliminating 2,800 direct jobs; economists estimated the closure cost the region an additional 1,400 supplier and service jobs."
+    },
+    {
+      "id": "f3",
+      "text": "Hartwell, a fictional city of approximately 43,000 residents in western Michigan, had built its economy around the plant for more than five decades."
+    },
+    {
+      "id": "f4",
+      "text": "The Hartwell Works program, a partnership among Hartwell Community College, fictional technology manufacturer Vertex Systems, and precision manufacturer Clearline Manufacturing, began accepting enrollees in March 2022."
+    },
+    {
+      "id": "f5",
+      "text": "By April 2025, approximately 1,100 of the plant's former workers had enrolled in Hartwell Works; 780 had completed a certification program — a completion rate of 71 percent."
+    },
+    {
+      "id": "f6",
+      "text": "Of the 780 certification completers, 499 found relevant employment within six months, approximately 64 percent."
+    },
+    {
+      "id": "f7",
+      "text": "The program has cost approximately $14.2 million, financed through Michigan Department of Labor and federal Workforce Innovation and Opportunity Act grants."
+    },
+    {
+      "id": "f8",
+      "text": "The average hourly wage in jobs obtained by Hartwell Works completers is $22.50; the average hourly wage at Keystone Motors before closure was $28.40 — a difference of $5.90 per hour."
+    },
+    {
+      "id": "f9",
+      "text": "Hartwell Mayor Sandra Alvarado said: \"Sixty-four percent would be a good graduation rate at a lot of colleges. For a workforce-crisis response, I do not know if it is enough.\""
+    },
+    {
+      "id": "f10",
+      "text": "James Petrov, 52, worked at Keystone for 19 years, earning $31 an hour; he completed the Hartwell Works CNC operator track in 2023 and was hired at Clearline Manufacturing at $23 an hour."
+    },
+    {
+      "id": "f11",
+      "text": "Petrov said: \"I am working. My house is paid for. But I will not make what I made at Keystone again.\""
+    },
+    {
+      "id": "f12",
+      "text": "Among Hartwell Works enrollees, 40 percent were over 50. Among certification completers over 50, the six-month relevant-employment rate was 51 percent, compared with approximately 64 percent among all completers."
+    },
+    {
+      "id": "f13",
+      "text": "Approximately 1,700 of the plant's 2,800 former workers did not enroll in Hartwell Works. Administrators estimate that about 400 of these non-enrollees left the Hartwell area, about 300 retired early, and the remaining approximately 1,000 are unemployed or in part-time work."
+    },
+    {
+      "id": "f14",
+      "text": "The information technology and computer-skills training tracks had a completion rate of 38 percent, compared with the program's overall 71 percent; administrators attributed the gap to the prior-skills deficit for workers with no computer background."
+    },
+    {
+      "id": "f15",
+      "text": "The 65-acre former Keystone plant site was demolished in 2023 and has been listed for sale at $8.5 million; it has attracted no buyers in 18 months."
+    },
+    {
+      "id": "f16",
+      "text": "Hartwell's combined property and income tax revenue fell 19 percent between 2021 and 2024, straining street maintenance and the fire department."
+    },
+    {
+      "id": "f17",
+      "text": "The manufacturing training tracks — CNC machining, industrial electrical, and welding — produced an 83 percent completion rate and a 72 percent placement rate."
+    },
+    {
+      "id": "f18",
+      "text": "Vertex Systems has hired 64 Hartwell Works completers; a Vertex spokeswoman described the arrangement as \"mutually beneficial\" but declined to say whether it offered wages comparable to Keystone."
+    },
+    {
+      "id": "f19",
+      "text": "The Michigan Department of Labor said Hartwell Works had the highest per-enrollee completion rate of any plant-closure response program it had funded in the past decade."
+    },
+    {
+      "id": "f20",
+      "text": "Alvarado said the city had applied for a federal Economic Adjustment Assistance grant to fund a three-year study of the Hartwell Works model and publish a replication guide for other communities."
+    },
+    {
+      "id": "f21",
+      "text": "Petrov said he had encouraged two former colleagues to enroll in the program, but both declined. He said of one: \"He was 58. He told me the math didn't work. I don't think he was wrong.\""
+    },
+    {
+      "id": "f22",
+      "text": "The Hartwell Works program has been renewed for an additional two years with continued state funding; program director Carmen Ruiz expects to enroll an additional 200 workers from other industries facing layoffs."
+    }
+  ],
+  "modules": [
+    "domain/press.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f2",
+      "f5",
+      "f6",
+      "f8",
+      "f9",
+      "f10",
+      "f11",
+      "f12",
+      "f14"
+    ],
+    "forbidden_additions": [
+      "Keystone Motors reopened the plant",
+      "Hartwell recovered its full employment base",
+      "the program was declared a national model by the federal government"
+    ],
+    "preserve": [
+      "Sixty-four percent would be a good graduation rate at a lot of colleges. For a workforce-crisis response, I do not know if it is enough.",
+      "I am working. My house is paid for. But I will not make what I made at Keystone again.",
+      "He was 58. He told me the math didn't work. I don't think he was wrong."
+    ],
+    "expected_action": "draft"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "area": "newsroom-tuning",
+  "cases": [
+    {
+      "case_id": "newsroom-tuning-council-rezone",
+      "path": "evals/newsroom/cases/newsroom-tuning-council-rezone.json",
+      "family_id": "fam-meridian-rezone",
+      "topic": "straight-news: city council rezones former rail yard for 1,200-unit mixed-use development",
+      "independence_note": "Distinct scenario: municipal zoning vote with infrastructure cost dispute. 20 facts, ~450-650 word target. No shared template with other cases."
+    },
+    {
+      "case_id": "newsroom-tuning-carbon-rules",
+      "path": "evals/newsroom/cases/newsroom-tuning-carbon-rules.json",
+      "family_id": "fam-ecsa-carbon-rules",
+      "topic": "straight-news: federal agency issues emergency clean-generation standard with 40% emission-cut mandate",
+      "independence_note": "Distinct scenario: federal rulemaking with immediate legal challenge. 20 facts, ~450-650 word target. No shared actors or setting with other cases."
+    },
+    {
+      "case_id": "newsroom-tuning-antitrust-suit",
+      "path": "evals/newsroom/cases/newsroom-tuning-antitrust-suit.json",
+      "family_id": "fam-harwick-nexum",
+      "topic": "straight-news: state AG files Sherman Act suit against mobile payment processor for exclusive dealing",
+      "independence_note": "Distinct scenario: state antitrust enforcement in digital payments market. 20 facts, ~450-650 word target. No shared actors with other cases."
+    },
+    {
+      "case_id": "newsroom-tuning-grocery-closures",
+      "path": "evals/newsroom/cases/newsroom-tuning-grocery-closures.json",
+      "family_id": "fam-vantage-closures",
+      "topic": "business: regional grocery chain closes 23 stores, 1,800 workers affected, WARN Act dispute",
+      "independence_note": "Distinct scenario: regional retail collapse with food-access and labor dimensions. 20 facts, ~450-650 word target. No shared actors with other cases."
+    },
+    {
+      "case_id": "newsroom-tuning-newspaper-acquisition",
+      "path": "evals/newsroom/cases/newsroom-tuning-newspaper-acquisition.json",
+      "family_id": "fam-broadreach-tribune",
+      "topic": "business: private equity firm acquires 14-paper regional newspaper group, cuts 22% of editorial staff",
+      "independence_note": "Distinct scenario: media industry consolidation with journalism viability stakes. 20 facts, ~450-650 word target. No shared actors with other cases."
+    },
+    {
+      "case_id": "newsroom-tuning-port-strike",
+      "path": "evals/newsroom/cases/newsroom-tuning-port-strike.json",
+      "family_id": "fam-calloway-strike",
+      "topic": "business/labor: day-3 dockworker strike at Port Calloway, $180M idle cargo, automation dispute",
+      "independence_note": "Distinct scenario: labor-management dispute with supply chain and automation dimensions. 20 facts, ~450-650 word target. No shared actors with other cases."
+    },
+    {
+      "case_id": "newsroom-tuning-municipal-bonds",
+      "path": "evals/newsroom/cases/newsroom-tuning-municipal-bonds.json",
+      "family_id": "fam-portfield-muni-bonds",
+      "topic": "explainer: municipal bond defaults at Portfield IL and Galena County TX, with a Chapter 9 filing by Portfield",
+      "independence_note": "Distinct scenario: financial explainer anchored to concurrent defaults. 22 facts, ~450-650 word target. LONGER-FORM: rich explainer with concept definition plus two live default cases."
+    },
+    {
+      "case_id": "newsroom-tuning-drone-corridors",
+      "path": "evals/newsroom/cases/newsroom-tuning-drone-corridors.json",
+      "family_id": "fam-fasc-drone-corridors",
+      "topic": "explainer: new federal urban drone corridor rule, BVLOS permission, privacy and noise gaps",
+      "independence_note": "Distinct scenario: regulatory explainer on airspace policy with competing commercial and civil-liberties perspectives. 22 facts, ~450-650 word target. LONGER-FORM: technical policy topic requiring concept-plus-context treatment."
+    },
+    {
+      "case_id": "newsroom-tuning-blood-supply",
+      "path": "evals/newsroom/cases/newsroom-tuning-blood-supply.json",
+      "family_id": "fam-nbrn-blood-shortage",
+      "topic": "explainer: O-negative blood shortage at Level 3 alert, summer donation patterns, hospital impacts",
+      "independence_note": "Distinct scenario: public health explainer on blood supply logistics with live shortage hook. 21 facts, ~450-650 word target. No shared actors or setting with other cases."
+    },
+    {
+      "case_id": "newsroom-tuning-managed-retreat",
+      "path": "evals/newsroom/cases/newsroom-tuning-managed-retreat.json",
+      "family_id": "fam-lowland-retreat",
+      "topic": "reported feature: six-year managed flood retreat in coastal NC county, 240 buyouts vs 112 holdouts",
+      "independence_note": "Distinct scenario: long-form feature on community-scale climate adaptation with competing values and unresolved tensions. 23 facts, ~450-650 word target. LONGER-FORM: feature requires balancing institutional data with individual human accounts."
+    },
+    {
+      "case_id": "newsroom-tuning-auto-retraining",
+      "path": "evals/newsroom/cases/newsroom-tuning-auto-retraining.json",
+      "family_id": "fam-hartwell-retraining",
+      "topic": "reported feature: plant-closure retraining program in Hartwell MI, mixed placement results, wage gap",
+      "independence_note": "Distinct scenario: post-industrial recovery feature with granular program data and worker-level narrative. 22 facts, ~450-650 word target. LONGER-FORM: rich data packet (completion/placement rates, wage gap, demographic breakdown) supports full feature treatment."
+    },
+    {
+      "case_id": "newsroom-tuning-foster-shortage",
+      "path": "evals/newsroom/cases/newsroom-tuning-foster-shortage.json",
+      "family_id": "fam-alcott-foster",
+      "topic": "reported feature: Alcott County TX foster care crisis, 83 children in non-licensed settings, state citation",
+      "independence_note": "Distinct scenario: public-systems accountability feature on child welfare capacity failure. 22 facts, ~450-650 word target. LONGER-FORM: multiple institutional and human sources required for full feature treatment."
+    }
+  ]
+}

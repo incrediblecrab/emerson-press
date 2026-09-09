@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-tuning-blood-supply",
+  "split": "tuning",
+  "operation": "draft",
+  "task": "For this synthetic writing exercise, use the fictional reporting notes to write a newspaper explainer for general readers. Write from this reporting snapshot as of July 15, 2025. Include a headline. Target 450 to 650 words. Follow AP style.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "The National Blood Reserve Network issued a Level 3 critical shortage alert for O-negative blood Tuesday, July 15, 2025 — its highest-level designation."
+    },
+    {
+      "id": "f2",
+      "text": "O-negative red blood cells are commonly used for emergency red-cell transfusions when a patient's blood type is unknown. This does not make every O-negative blood component universally compatible; clinical protocols and compatibility testing still apply."
+    },
+    {
+      "id": "f3",
+      "text": "The network's current supply of O-negative blood stands at 2.1 days' worth of inventory; the operational safety minimum is five days."
+    },
+    {
+      "id": "f4",
+      "text": "Network Chief Medical Officer Dr. Patricia Osei said: \"O-negative blood cannot be manufactured. When donations drop, there is no alternative.\""
+    },
+    {
+      "id": "f5",
+      "text": "Only people with O-negative blood — approximately 7 percent of the U.S. population — can donate blood that counts toward the O-negative supply."
+    },
+    {
+      "id": "f6",
+      "text": "In the network's 2022-2024 records, monthly summer donation totals were 15 to 25 percent below January totals in the same year, with all blood types combined. Staff attributed part of that pattern to workplaces, universities and schools suspending collection drives."
+    },
+    {
+      "id": "f7",
+      "text": "June 2025 O-negative donations were 18 percent below the January 2025 baseline, according to network data."
+    },
+    {
+      "id": "f8",
+      "text": "The network operates six regional collection centers; as of Tuesday, four of the six reported inventory below 40 percent of their operational target."
+    },
+    {
+      "id": "f9",
+      "text": "Fictional Calloway Medical Center announced Tuesday it had postponed 14 elective surgeries requiring blood transfusions; the hospital said emergency and urgent procedures would continue using existing stockpiles."
+    },
+    {
+      "id": "f10",
+      "text": "During a Level 3 shortage, the network activates emergency protocols including direct donor phone outreach and deployment of mobile collection units to high-traffic locations."
+    },
+    {
+      "id": "f11",
+      "text": "The network's last comparable shortage was a Level 2 alert in summer 2022; that shortage was resolved within four weeks following a coordinated donation drive."
+    },
+    {
+      "id": "f12",
+      "text": "The network estimates it needs approximately 1,200 additional O-negative units per week nationally to return to safe inventory levels."
+    },
+    {
+      "id": "f13",
+      "text": "The network's centers use a minimum interval of 56 days between whole-blood donations and screen donors for other eligibility requirements. A donor's O-negative type does not waive the waiting period or other screening."
+    },
+    {
+      "id": "f14",
+      "text": "In a survey commissioned by the network, 650 of 1,000 adult respondents said they believed they were eligible to donate but had never done so. These are respondents' beliefs, not clinical eligibility findings or an established percentage of all Americans."
+    },
+    {
+      "id": "f15",
+      "text": "Non-donors in the network's survey cited fear of needles, uncertainty about eligibility and concerns about donation safety among their reasons for not donating."
+    },
+    {
+      "id": "f16",
+      "text": "The network accepts donations at its regional centers and through mobile collection events; donors can schedule appointments at nbrn.example.org."
+    },
+    {
+      "id": "f17",
+      "text": "Calloway Medical Center said it would consider directed donations from relatives for some elective patients. The hospital estimated at least 48 hours for its processing, without guaranteeing availability then; related donors and their units still require eligibility, compatibility and safety screening."
+    },
+    {
+      "id": "f18",
+      "text": "The U.S. Food and Drug Administration sets standards for blood collection and storage but does not control national inventory levels; supply management falls to nonprofit blood collection organizations."
+    },
+    {
+      "id": "f19",
+      "text": "Under the storage methods described in the network's background sheet, its refrigerated red-cell units may be stored for up to 42 days. Its platelet products have shorter labeled storage periods and a separate inventory system."
+    },
+    {
+      "id": "f20",
+      "text": "Osei said the network expected to issue an appeal to regular donors by end of week and was working with major employers to organize workplace blood drives."
+    },
+    {
+      "id": "f21",
+      "text": "Trauma surgeons at several hospitals contacted by the network reported adjusting protocols to ration O-negative blood, using it only when no other compatible type is available."
+    }
+  ],
+  "modules": [
+    "domain/press.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f4",
+      "f5",
+      "f6",
+      "f7",
+      "f9",
+      "f12"
+    ],
+    "forbidden_additions": [
+      "readers should donate immediately regardless of blood type",
+      "O-negative blood can be synthesized in labs",
+      "the shortage was resolved by Tuesday evening"
+    ],
+    "preserve": [
+      "O-negative blood cannot be manufactured. When donations drop, there is no alternative."
+    ],
+    "expected_action": "draft"
+  }
+}

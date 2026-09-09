@@ -12,12 +12,30 @@ repository writing contract or modules. `task-only` adds the repository contract
 `full` and `compact` add their corresponding press recipes. A comparison against
 `task-only` alone cannot establish the effect of using the repository.
 
-The new primary corpus is being authored as 12 tuning stories and a target of
-220 held-out reporting-packet families. These are substantial news updates,
+The new corpus includes [12 tuning stories](tuning-index.json), with a target of
+220 held-out reporting-packet families still being authored. These are substantial news updates,
 explainers and reported features, not UI labels or citation exercises. A rich
 packet should support the requested length without padding; nonessential facts
 need not all appear in the story. Each case needs an explicit reporting snapshot
 date so a runtime's current date does not silently change the task.
+
+The 12 tuning packets contain 252 numbered fact entries across straight news,
+business/labor, explainers and reported features, with three cases in each group.
+Their briefs explicitly identify a fictional writing exercise; the source record
+is not real reporting, legal authority, medical advice or current market data.
+Before any writing generation, a source-quality review corrected worker totals,
+a strict placement threshold, combined-issuer attribution, budget/spending and
+denominator confusion, blood-component scope, and overbroad legal and regulatory
+claims. Unsupported general statistics were scoped to fictional source records.
+This is input cleanup, not evidence of a writing-model improvement.
+
+The [prospective tuning design](tuning-design.json) freezes those packets and
+plans 72 drafts: GPT-6 Astra and Claude Sonnet 5 each write under bare, full and
+compact instructions. It also fixes the opposite-family judges, all three paired
+contrasts and separate pointwise assessments. These current available models were
+selected before treatment outcomes; earlier mini/Haiku stress trials remain
+separate. This registration contains no results and does not authorize a
+held-out run or establish a statistically powered sample.
 
 Case count is not independent sample size. Reused events and templates must stay
 in the same family and split. Freeze the actual family map, candidate recipe,

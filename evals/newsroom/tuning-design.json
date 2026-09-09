@@ -1,0 +1,383 @@
+{
+  "schema_version": 1,
+  "kind": "prospective-newsroom-tuning-design",
+  "registered_at": "2026-09-09T05:48:05.248184+00:00",
+  "split": "tuning",
+  "variants": [
+    "bare-task",
+    "full",
+    "compact"
+  ],
+  "writers": {
+    "gpt-6-astra": "openai-gpt",
+    "claude-sonnet-5": "anthropic-claude"
+  },
+  "model_settings": {
+    "claude-sonnet-5": {
+      "client_mode": "empty",
+      "generation_seed": "service-default-uncontrolled",
+      "model_selection": "claude-sonnet-5",
+      "reasoning_effort": "low",
+      "runtime_version": "1.0.84-3",
+      "sdk_version": "1.0.13",
+      "session_options": {
+        "available_tools": [],
+        "enable_config_discovery": false,
+        "enable_file_hooks": false,
+        "enable_host_git_operations": false,
+        "enable_managed_settings": true,
+        "enable_session_store": false,
+        "enable_skills": false,
+        "excluded_tools": [
+          "builtin:*",
+          "mcp:*",
+          "custom:*"
+        ],
+        "infinite_sessions": {
+          "enabled": false
+        },
+        "memory": {
+          "enabled": false
+        },
+        "skip_custom_instructions": true,
+        "system_message": {
+          "content": "You are a text-only writing assistant. Carry out the supplied drafting, editing, or reviewing task. Tools, browsing, persistent memory and other agents are unavailable. Do not narrate or invent calls to them. Return the requested output.",
+          "mode": "customize",
+          "sections": {
+            "code_change_rules": {
+              "action": "remove"
+            },
+            "guidelines": {
+              "action": "remove"
+            },
+            "last_instructions": {
+              "action": "remove"
+            },
+            "preamble": {
+              "action": "remove"
+            },
+            "tone": {
+              "action": "remove"
+            },
+            "tool_efficiency": {
+              "action": "remove"
+            },
+            "tool_instructions": {
+              "action": "remove"
+            }
+          }
+        }
+      },
+      "system_message_config_sha256": "f11aacb9c176d02e2238aca236fc1fa3809c9c2d445fb96f8c4ff5d47188fe7f",
+      "system_prompt": "neutral writing role; runtime safety and policy sections retained",
+      "temperature": "service-default-uncontrolled",
+      "transport": "github-copilot-sdk",
+      "user_message_wrapper": "runtime current_datetime; effective message captured separately"
+    },
+    "gpt-6-astra": {
+      "client_mode": "empty",
+      "generation_seed": "service-default-uncontrolled",
+      "model_selection": "gpt-6-astra",
+      "reasoning_effort": "low",
+      "runtime_version": "1.0.84-3",
+      "sdk_version": "1.0.13",
+      "session_options": {
+        "available_tools": [],
+        "enable_config_discovery": false,
+        "enable_file_hooks": false,
+        "enable_host_git_operations": false,
+        "enable_managed_settings": true,
+        "enable_session_store": false,
+        "enable_skills": false,
+        "excluded_tools": [
+          "builtin:*",
+          "mcp:*",
+          "custom:*"
+        ],
+        "infinite_sessions": {
+          "enabled": false
+        },
+        "memory": {
+          "enabled": false
+        },
+        "skip_custom_instructions": true,
+        "system_message": {
+          "content": "You are a text-only writing assistant. Carry out the supplied drafting, editing, or reviewing task. Tools, browsing, persistent memory and other agents are unavailable. Do not narrate or invent calls to them. Return the requested output.",
+          "mode": "customize",
+          "sections": {
+            "code_change_rules": {
+              "action": "remove"
+            },
+            "guidelines": {
+              "action": "remove"
+            },
+            "last_instructions": {
+              "action": "remove"
+            },
+            "preamble": {
+              "action": "remove"
+            },
+            "tone": {
+              "action": "remove"
+            },
+            "tool_efficiency": {
+              "action": "remove"
+            },
+            "tool_instructions": {
+              "action": "remove"
+            }
+          }
+        }
+      },
+      "system_message_config_sha256": "f11aacb9c176d02e2238aca236fc1fa3809c9c2d445fb96f8c4ff5d47188fe7f",
+      "system_prompt": "neutral writing role; runtime safety and policy sections retained",
+      "temperature": "service-default-uncontrolled",
+      "transport": "github-copilot-sdk",
+      "user_message_wrapper": "runtime current_datetime; effective message captured separately"
+    }
+  },
+  "writer_selection": "Current available general-purpose models from two provider families, selected before treatment outcomes; older mini/Haiku trials remain separate stress evidence.",
+  "runtime_profile": "Unchanged normal individual-section writing customization; not the identity-group probe.",
+  "baseline": "bare-task",
+  "contrasts": [
+    [
+      "full",
+      "bare-task"
+    ],
+    [
+      "compact",
+      "bare-task"
+    ],
+    [
+      "full",
+      "compact"
+    ]
+  ],
+  "judges": {
+    "openai-gpt": "claude-sonnet-5",
+    "anthropic-claude": "gpt-6-astra"
+  },
+  "planned_writing_responses": 72,
+  "planned_paired_assessments": 72,
+  "maximum_pointwise_assessments": 72,
+  "order_seed": 731,
+  "concurrency": 4,
+  "timeout_seconds": 300,
+  "plan_sha256": "c1f052b6f68cc622b1a1abc21be2eeed94a8aa89596bb9643fa78b4296e444ae",
+  "source_index_sha256": "18da18b2ec312c3775e424acc48a1511de13088e85a47ec779f374e3949da24a",
+  "implementation_sha256": {
+    "preparation": "7a91f2547e32305ec620c6c334849c89449243139febe4519181b1303c048acf",
+    "paired_adapter": "10afcfe8bae49e81ea6ff94d56949283ffd91e465f96d02a553a98459d10af58",
+    "pointwise_adapter": "c95d4e3eb1334ba97f764ebcdc999ac49da93178ecb7d7ce7ed63890519161b5",
+    "paragraph_parser": "63b4af08679222e05ad05c0384ebe3cf644abfe932241f39e07b9ccbcf705eff",
+    "paired_prompt": "98ee3c206136cf62c8aa5645c7b93d9ed458b587250fc06a30fcc6856bd66363",
+    "pointwise_prompt": "2eebb41255b167edc3a744b14f25bf6c56c09475b5a09346524fe5792786582b",
+    "generation_runner": "132697045cb71c727331bce03562ae1ce2163b46376973b2ba3dac7c2d46c704"
+  },
+  "cases": [
+    {
+      "case_id": "newsroom-tuning-council-rezone",
+      "path": "evals/newsroom/cases/newsroom-tuning-council-rezone.json",
+      "family_id": "fam-meridian-rezone",
+      "file_sha256": "dcc01dda1f44d7852f1b8af03e1a98b8190ba76194746cc636a6c3a6337a4acd",
+      "case_sha256": "04f55f7ce470a8143f8c752806ed06b2d6f0e060f017da56d61ed728255c2ff6",
+      "requests": {
+        "bare-task": "91e3a1d8ccc28397db5ed8d3e66515488df84ea830ca4d0c7abad7704cd8c78c",
+        "full": "4dd70b13d3fd889ca7df5946052ff506eb418fb81990bb770e0ee94a523975b0",
+        "compact": "e5bd29d118831e7c10b3e4eb7ef513e778c1d0f828ac0fc1b17b5ee191dc66bd"
+      }
+    },
+    {
+      "case_id": "newsroom-tuning-carbon-rules",
+      "path": "evals/newsroom/cases/newsroom-tuning-carbon-rules.json",
+      "family_id": "fam-ecsa-carbon-rules",
+      "file_sha256": "9efd749c74a330bdd80f319fc2a00cb4a393d3978103296418ba9875287b86b6",
+      "case_sha256": "563cc645cb614e2e2dac83f5a2e99ee10411b72179f2b14a14a01aaf1bba007a",
+      "requests": {
+        "bare-task": "7f1baae4362c98f17dd30a0d5e7b45420f4105e7317e186b62a2ec9196b1443e",
+        "full": "195234a411bf0f7bebec13826b80ad8dfc207054fc28c7c8b075d4b0e3753f7c",
+        "compact": "ff6b871b307611a13afabe77b5cfc8b2ad128baf1aaf105e8eb608c49810cf2e"
+      }
+    },
+    {
+      "case_id": "newsroom-tuning-antitrust-suit",
+      "path": "evals/newsroom/cases/newsroom-tuning-antitrust-suit.json",
+      "family_id": "fam-harwick-nexum",
+      "file_sha256": "3c52d646e75f2dd064f1e9048f210e609735d6505fa366abdb915fb6ee18c098",
+      "case_sha256": "a11e0ceb82e7ecf02c9a8addf32a5cc2c395fafbd5dd2ed0d8a911d0e3d2c623",
+      "requests": {
+        "bare-task": "b13685eac7177845ec6f9b66231dfd1f3d2dd17d6ee634b05b29afa1b35128ba",
+        "full": "56edf1b225c060dc7b81947093fa66e20e18c1098ef7fc5479226a7cd319edd4",
+        "compact": "39dfa970fef2726dd24db7ef9b2f0ffba0e34f5fbafb8e9d72795fc1a9400d18"
+      }
+    },
+    {
+      "case_id": "newsroom-tuning-grocery-closures",
+      "path": "evals/newsroom/cases/newsroom-tuning-grocery-closures.json",
+      "family_id": "fam-vantage-closures",
+      "file_sha256": "c9334fbccbc5de3c90db548ac3d3d8fbebaa4de4210d530c5b36cd5ce7815ce3",
+      "case_sha256": "1331f264915a0dc19e02af36462eaac2de53f72ee1805836bb18816b822583d1",
+      "requests": {
+        "bare-task": "e79111a562d78bb1c1ae23560d856d0741527fa3d342ed6cc6ee4ce8f22c1366",
+        "full": "8df1f1c80075c122d73b01c427046bcbd9d959766050f52415a938fbb42379e0",
+        "compact": "f8d6f82188d850ed9afbffba050e7dbf58962f5475b7e192d917cee5a8beb38b"
+      }
+    },
+    {
+      "case_id": "newsroom-tuning-newspaper-acquisition",
+      "path": "evals/newsroom/cases/newsroom-tuning-newspaper-acquisition.json",
+      "family_id": "fam-broadreach-tribune",
+      "file_sha256": "58b670843d7d43c9fe20c25ef3483aac878545d5e0646886b98ec71093f17df2",
+      "case_sha256": "c0fef316bb3b8bc9da340f7e1cc1820a07b21c9088c9b49fed140c1c4266401b",
+      "requests": {
+        "bare-task": "b7f62e7c65aff66a71fef25bcdbd21ca51f2bdb3b26ccb6b511f8f80d6b509f7",
+        "full": "dd89be285112783ef5c6489164b5fb19dc565a64a37d395dd24575442122f27b",
+        "compact": "351b70b275b9da5211d94691ab31974a58e4870e735370329b1e38da46dc1dd5"
+      }
+    },
+    {
+      "case_id": "newsroom-tuning-port-strike",
+      "path": "evals/newsroom/cases/newsroom-tuning-port-strike.json",
+      "family_id": "fam-calloway-strike",
+      "file_sha256": "b79fc76c206e4fc6bc029a26f38547692f9b8aac67de72e890a94db096cbd51a",
+      "case_sha256": "a5de377cac1d99bbf9b0d36b92ba6b0af06b70b07bf4e741cf202e0017563bee",
+      "requests": {
+        "bare-task": "1697caec6bd00df192f74c2109807dd31fe090455d43fa0247507b05727a05cc",
+        "full": "df795ad314479f8afcbb10178d5dfbbb61c21317068dc14472e4d0c980cc1026",
+        "compact": "0ed213ee449f55f4306da26f8c366e7f91cfdfe4888807bd0b042441543d1b70"
+      }
+    },
+    {
+      "case_id": "newsroom-tuning-municipal-bonds",
+      "path": "evals/newsroom/cases/newsroom-tuning-municipal-bonds.json",
+      "family_id": "fam-portfield-muni-bonds",
+      "file_sha256": "69f56a7eef138cd3b67c0735b56bdcb5e04ac35ce1cd62d1ec8eb8541181d45c",
+      "case_sha256": "2b41d11566da0d29ae169f27cc1ec52e7bcc0ddda32c1cb1d4e078914b5eff6c",
+      "requests": {
+        "bare-task": "c380b1ce79d4aa9ecb3da084816c487f925a4a6413b5031741facfb8ef3a93b4",
+        "full": "995509c3089d9da1c07999514f506d08494786aee5622a44d84b743b0cad5032",
+        "compact": "6f3b843ef80fb6adebb5b7cdd6e1e9a55861cd4a8bc6bf38684ef1c1484208fe"
+      }
+    },
+    {
+      "case_id": "newsroom-tuning-drone-corridors",
+      "path": "evals/newsroom/cases/newsroom-tuning-drone-corridors.json",
+      "family_id": "fam-fasc-drone-corridors",
+      "file_sha256": "1c943ab368a41badd939b96b96708821f1edbd09cbe300b9a6d07da021a41015",
+      "case_sha256": "eac900dfeae8b5335312f3ba9e4fdea25bf8c796fc10d7fee9ccb21557fb16a7",
+      "requests": {
+        "bare-task": "25f37b566a823e516250dcaf869efe29a1261a0af8971b8ffcb3845ff4e6ec11",
+        "full": "0551481f01fcf593be18d8c4896e6848ca095210c742dc74084a330f780c0c89",
+        "compact": "0798d9987fa50d30815ad238536b7fe6dbbacf36311652bb4276aad1439e5201"
+      }
+    },
+    {
+      "case_id": "newsroom-tuning-blood-supply",
+      "path": "evals/newsroom/cases/newsroom-tuning-blood-supply.json",
+      "family_id": "fam-nbrn-blood-shortage",
+      "file_sha256": "7f9bf9e522239e24761af61cf8ef379b2c3d8ccd83ade5022b5ba99e65d82c1e",
+      "case_sha256": "b305eba4040657bda412a9269ae09abd75cefcb629b7ad870ab87949d352fac1",
+      "requests": {
+        "bare-task": "89a2d25e9a6269e5c5e9bbbea9a9d5060b5e526ee9cbda5ff7602ff57d505cd6",
+        "full": "02eb914d93ffd7b00025c563c6f2f6cb076dfda0009893da5e3ab07b9292c9c0",
+        "compact": "0e28d6673b104997ede70a572a05c5c41304b18e432d7a9fbab4714391a97e06"
+      }
+    },
+    {
+      "case_id": "newsroom-tuning-managed-retreat",
+      "path": "evals/newsroom/cases/newsroom-tuning-managed-retreat.json",
+      "family_id": "fam-lowland-retreat",
+      "file_sha256": "9293ca5d19881a0a7316de378b86f86bc9baf3a2366fa2bc32a83035fbda98a5",
+      "case_sha256": "0ca834df74f0b27a6bfebfb9ea08d62990e3318753369771c9a7ac4fb01ed5a8",
+      "requests": {
+        "bare-task": "533e5f35ea22d569c6b15a3ff9a168f5ca6c9e09c9b4fad2ce212070de62a451",
+        "full": "a3fd9368e5312b4b3a5c32ccb7dfef87a38d3554b07ba758bba100d4bb4687af",
+        "compact": "33bcf3511f92d01fcaf3cd38083ae7faca0ac49abac4cfc17dfff37f42a07dac"
+      }
+    },
+    {
+      "case_id": "newsroom-tuning-auto-retraining",
+      "path": "evals/newsroom/cases/newsroom-tuning-auto-retraining.json",
+      "family_id": "fam-hartwell-retraining",
+      "file_sha256": "2a08d7cd30ffd570be87935af2bd970da4f7960ad28ad6020c737ca6432e076c",
+      "case_sha256": "c45031f04b4d35d21204c858343de25aa9d6c558b8dc4a90b729bff9f36f60a3",
+      "requests": {
+        "bare-task": "a38bf5ae4d6ad7d2ef474f9e6c4f9f2ddba14f94e8d67f3a9a8431d248d5526b",
+        "full": "551ede445fd83bbc8861bed6be813e31f101f52eabe6e84d58b6238be8f88693",
+        "compact": "1665c136fb4fe413c005ed6ebcb26b29617206525fc3e25bf56b788e09cead0c"
+      }
+    },
+    {
+      "case_id": "newsroom-tuning-foster-shortage",
+      "path": "evals/newsroom/cases/newsroom-tuning-foster-shortage.json",
+      "family_id": "fam-alcott-foster",
+      "file_sha256": "befc5565285a274ce101756e480750acf348210c849b84192b4b031e0269eba6",
+      "case_sha256": "033182dd724cfb802a8d3f7a343a4bec17a993d50260163ebf812fa4044d9c89",
+      "requests": {
+        "bare-task": "ddbcf7f31d9b4c5bef7892f4a4ac0e4f19b196cfa61c4e44b98e7c3caade4e3f",
+        "full": "6eb784c50f7476840049d19053077767e1b7415967ab3be26e0ee4e7531f227a",
+        "compact": "115456245bc75a7b8f91b179af09e00663eddbc63583459ce61528b9c29e07d0"
+      }
+    }
+  ],
+  "input_review": {
+    "fact_entries": 252,
+    "fact_entries_range": [
+      20,
+      23
+    ],
+    "fact_words_range": [
+      382,
+      674
+    ],
+    "genre_counts": {
+      "straight-news": 3,
+      "business/labor": 3,
+      "explainer": 3,
+      "reported feature": 3
+    },
+    "declared_family_ids": 12,
+    "arithmetic_checks": {
+      "checks": [
+        "worker_partition",
+        "rounded_placement_rate",
+        "hourly_wage_difference",
+        "strict_whole_child_threshold",
+        "two_issuer_principal_total",
+        "store_count_partition",
+        "rounded_staff_cut_rate",
+        "rounded_revenue_multiple",
+        "public_speaker_partition",
+        "authorized_program_budget",
+        "explicit_weekdays"
+      ],
+      "weekday_date_pairs": 6
+    },
+    "corrections_before_generation": [
+      "Explicit fictional exercise in every common task brief; no treatment-only cue.",
+      "Worker partition, strict placement threshold, two-issuer principal and budget/expenditure distinctions.",
+      "Cohort denominators, credit-risk and medical inventory statistics scoped to fictional records.",
+      "Red-cell compatibility distinguished from all blood products; eligibility/storage described by scenario policies.",
+      "Legal allegations distinguished from court findings; WARN forum and applicability qualified.",
+      "Regulatory baselines, exceptions, timing and payload units clarified.",
+      "Removed supplied feature leads and unattributed universal expert rankings."
+    ],
+    "limits": [
+      "Twelve declared families and distinct packets are not proof of statistical independence.",
+      "Targeted arithmetic/source-quality review, not exhaustive clinical, legal or financial expert verification.",
+      "Public background checks had access failures; fictional statistics are not verified real-world measurements."
+    ]
+  },
+  "analysis_rules": [
+    "Report all planned writing and judgment attempts, including failures and unassessable outcomes.",
+    "Pairwise preference and pointwise salient-slop incidence are separate endpoints.",
+    "Do not pool the same article's pairwise slop labels into article-level incidence.",
+    "Report wins, ties and losses by contrast and writer; the independent-unit claim cannot exceed reporting families.",
+    "No efficacy p-value, powered superiority, human/editor approval or default promotion from this tuning cohort.",
+    "No favorable-result stopping or silent retry. A setup/schema repair must retain and label the original attempt.",
+    "No instruction or grading-prompt revision while this cohort is being captured and assessed."
+  ],
+  "human_reviews": 0,
+  "held_out_generation_authorized_by_this_design": false,
+  "design_sha256": "c990c6cd7b1d5d1c375105a562f342706a2ad991deb3547597021825578dfea1"
+}

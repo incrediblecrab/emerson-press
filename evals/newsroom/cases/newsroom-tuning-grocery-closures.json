@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "id": "newsroom-tuning-grocery-closures",
+  "split": "tuning",
+  "operation": "draft",
+  "task": "For this synthetic writing exercise, use the fictional reporting notes to write a business news story for a general newspaper audience. Write from this reporting snapshot as of April 24, 2025. Include a headline. Target 450 to 650 words. Follow AP style.",
+  "input": "",
+  "source_kind": "synthetic",
+  "facts": [
+    {
+      "id": "f1",
+      "text": "Vantage Market Group announced it will close 23 of its 87 supermarkets across Ohio, Indiana, Kentucky, and West Virginia, citing sustained financial losses and an inability to compete on price."
+    },
+    {
+      "id": "f2",
+      "text": "Vantage reported a net loss of $47 million in the fourth quarter of 2024, its third consecutive quarterly loss."
+    },
+    {
+      "id": "f3",
+      "text": "The 23 stores employ approximately 1,800 workers; about 1,100 are full-time employees."
+    },
+    {
+      "id": "f4",
+      "text": "Workers at 14 of the 23 closing stores are represented by United Food and Commercial Workers Local 880."
+    },
+    {
+      "id": "f5",
+      "text": "Local 880 president David Osei said: \"Our members are losing jobs right before summer, without the notice they are legally owed.\""
+    },
+    {
+      "id": "f6",
+      "text": "Osei said the union planned to file a federal court complaint seeking WARN Act remedies, alleging Vantage failed to give the required advance notice. No complaint had been filed as of the reporting snapshot."
+    },
+    {
+      "id": "f7",
+      "text": "Vantage CEO Gregory Patton said: \"We cannot ask our shareholders to fund losses indefinitely in markets where we no longer have a viable path to profitability.\""
+    },
+    {
+      "id": "f8",
+      "text": "Patton said the company lost market share in rural and small-city markets to Walmart, Aldi, and a Kroger subsidiary that has expanded aggressively in the region over the past four years."
+    },
+    {
+      "id": "f9",
+      "text": "Closures are scheduled to begin April 30, 2025, and conclude by June 15, 2025."
+    },
+    {
+      "id": "f10",
+      "text": "Two of the closing stores — one in Millfield, Ohio, and one in Dunning, Kentucky — are the only full-service grocery stores within 12 miles of their respective communities."
+    },
+    {
+      "id": "f11",
+      "text": "Local officials in Millfield and Dunning said they had not been notified before the announcement; Millfield Mayor Roger Callahan called the closure \"a gut punch to a town that's already struggling.\""
+    },
+    {
+      "id": "f12",
+      "text": "Vantage carries approximately $210 million in long-term debt; the company plans to sell or sublease its store properties to reduce the debt load."
+    },
+    {
+      "id": "f13",
+      "text": "WARN generally requires covered employers to give 60 days' advance written notice for qualifying plant closings or mass layoffs; coverage thresholds and exceptions matter. The union asserts that the affected stores qualify and no exception excuses shorter notice. The packet contains no court finding on coverage or liability."
+    },
+    {
+      "id": "f14",
+      "text": "Vantage reported revenue of $1.42 billion in fiscal year 2024, down from $1.61 billion in 2022."
+    },
+    {
+      "id": "f15",
+      "text": "Patton said the company expects to return to profitability with the remaining 64 stores by the end of fiscal year 2026, but did not provide specific projections."
+    },
+    {
+      "id": "f16",
+      "text": "Workers who spoke with reporters outside the Millfield store described learning of the closure through an all-hands meeting that morning; none said they had received written notice."
+    },
+    {
+      "id": "f17",
+      "text": "The company has not identified any buyers for the store properties."
+    },
+    {
+      "id": "f18",
+      "text": "Vantage was founded in 1978 and at its peak operated 140 stores across six states."
+    },
+    {
+      "id": "f19",
+      "text": "The packet supplies no collective agreement or company severance policy for the non-unionized stores. Interviewed workers at those stores said Thursday that they had received no severance information."
+    },
+    {
+      "id": "f20",
+      "text": "The company's stock fell 9.4 percent Thursday on news of the closures."
+    }
+  ],
+  "modules": [
+    "domain/press.md"
+  ],
+  "safeguards": [],
+  "checks": {
+    "required_facts": [
+      "f1",
+      "f2",
+      "f3",
+      "f5",
+      "f6",
+      "f7",
+      "f9",
+      "f10",
+      "f13"
+    ],
+    "forbidden_additions": [
+      "a buyer has been identified for the store properties",
+      "the union won its WARN Act case",
+      "Patton resigned"
+    ],
+    "preserve": [
+      "Our members are losing jobs right before summer, without the notice they are legally owed.",
+      "We cannot ask our shareholders to fund losses indefinitely in markets where we no longer have a viable path to profitability."
+    ],
+    "expected_action": "draft"
+  }
+}
