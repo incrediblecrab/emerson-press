@@ -13,16 +13,17 @@ from scripts.modules import CORE, DocumentError
 
 
 class FakeTransport:
-    def __init__(self, fail=False):
+    def __init__(self, fail=False, response="Synthetic unit-test response: three blue blocks."):
         self.settings = {"fixture-model": {"temperature": "uncontrolled"}}
         self.calls = 0
         self.fail = fail
+        self.response = response
 
     async def capture(self, model, prompt):
         self.calls += 1
         if self.fail:
             raise RuntimeError("Synthetic transport failure, not a real request.")
-        return {"response": "Synthetic unit-test response: three blue blocks."}
+        return {"response": self.response}
 
 
 class GenerationTests(unittest.TestCase):
@@ -158,6 +159,20 @@ class GenerationTests(unittest.TestCase):
         self.assertEqual(resumed["jobs"]["fixture-job"]["status"], "blocked")
         self.assertEqual(transport.calls, 1)
         self.assertTrue((output / "fixture-job/failure.json").exists())
+        self.assertFalse((output / "fixture-job/record.json").exists())
+
+    def test_completed_capture_survives_record_validation_failure(self):
+        plan, jobs = generate.load_jobs(self.root, self.root / "jobs.json")
+        transport = FakeTransport(response=" \n")
+        output = self.root / "run"
+        with redirect_stdout(io.StringIO()):
+            result = asyncio.run(generate.run_jobs(self.root, plan, jobs, output, transport))
+            resumed = asyncio.run(generate.run_jobs(self.root, plan, jobs, output, transport, resume=True))
+        self.assertEqual(result["jobs"]["fixture-job"]["error_type"], "DocumentError")
+        self.assertEqual(resumed["jobs"]["fixture-job"]["status"], "blocked")
+        self.assertEqual(transport.calls, 1)
+        self.assertTrue((output / "fixture-job/capture.json").exists())
+        self.assertEqual(evaluate.load_json(output / "fixture-job/capture.json"), {"response": " \n"})
         self.assertFalse((output / "fixture-job/record.json").exists())
 
 

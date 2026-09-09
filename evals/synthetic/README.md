@@ -76,6 +76,10 @@ not silently regenerated; three execution failures stop new requests. Any missin
 or failed job makes the generation summary incomplete. Neither successful capture
 nor the number of outputs says whether the writing is good.
 
+A returned capture is saved before response-record validation. If that later
+validation rejects the response, its returned data remain beside `failure.json`;
+the attempt is not regenerated. A transport failure may have no complete capture.
+
 ## Current experiment boundary
 
 The first pilot captured 64 responses using only the original 16 tuning cases with

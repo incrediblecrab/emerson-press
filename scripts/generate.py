@@ -276,11 +276,11 @@ async def run_jobs(
             evaluate.write_json(target / "request.json", request)
             try:
                 capture = await transport.capture(job["model"], request["prompt"])
+                evaluate.write_json(target / "capture.json", capture)
                 record = evaluate.record(
                     root, request, capture["response"], job["model"], job["family"],
                     transport.settings[job["model"]],
                 )
-                evaluate.write_json(target / "capture.json", capture)
                 evaluate.write_json(record_path, record)
                 results[name] = {"status": "captured", "record_sha256": record["result_sha256"]}
             except Exception as error:
