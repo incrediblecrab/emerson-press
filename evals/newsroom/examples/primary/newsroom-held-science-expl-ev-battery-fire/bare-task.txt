@@ -1,0 +1,23 @@
+**Why EV Batteries Catch Fire — And Why the Blazes Are Hard to Put Out**
+
+When an electric vehicle catches fire, the images tend to stick with people: flames that keep coming back, firefighters dousing a car for hours. But the science behind those fires — and how they compare to fires in gasoline-powered cars — is more nuanced than the viral videos suggest.
+
+Most EVs rely on lithium-ion batteries, which store energy through a chemical reaction between a lithium-containing cathode, a graphite anode and a liquid electrolyte, according to reporting notes on battery design. That liquid electrolyte is flammable, and it's central to understanding how these fires start and why they behave so differently from a fire under the hood of a gasoline car.
+
+The core danger is a process called thermal runaway. One battery cell overheats and transfers that heat to neighboring cells, each of which releases more heat in turn, until the whole pack ignites or ruptures. That chain reaction can be triggered by physical damage such as a collision or puncture, by overcharging, by manufacturing defects or by extreme external heat.
+
+Battery management systems are designed to prevent this by continuously monitoring voltage, temperature and current in each cell. But a failure or bypass of those systems is the most common pathway to thermal runaway, according to the notes. Fast charging adds another layer of risk: DC fast charging generates more heat in cells than slower AC charging and is more likely to trigger a runaway event if a cell already has a defect, which is why many manufacturers recommend limiting how often drivers fast-charge.
+
+Once a lithium-ion fire starts, it burns hot — sometimes exceeding 1,000 degrees Celsius — and releases toxic gases, including hydrogen fluoride, which is extremely hazardous. Because the fire can spread cell by cell, it can reignite repeatedly even after appearing extinguished, forcing firefighters to cool the battery continuously for hours to keep neighboring cells from reaching their own thermal threshold.
+
+"The fire itself is not necessarily more likely in an EV. The challenge is the duration and the chemical toxicity of the gases, which are different from a gasoline fire," said Dr. Tomás Lindgren, a vehicle safety engineer at the Northview Automotive Institute.
+
+That distinction matters for how the risk should be understood. Data from the National Automotive Safety Institute shows EVs have a lower fire rate per vehicle-mile traveled than gasoline vehicles, though EV fires take longer to extinguish once they occur. Lindgren said public perception of EV fire risk is disproportionate to the statistical rate: Gasoline vehicle fires number in the hundreds of thousands annually in the U.S., while EV fires are in the thousands.
+
+Still, the duration and toxicity issues have prompted new precautions. Fires involving EVs parked in garages have raised particular concern because flames can spread to a structure before responders arrive; some fire safety officials recommend not parking an EV in an enclosed garage if its battery has been damaged. Fire departments in major cities have developed EV-specific protocols, including sustained use of large volumes of water and, for smaller vehicles, immersion containers.
+
+The industry's response has focused less on eliminating the root chemistry and more on containment, Lindgren said, emphasizing cell-level isolation — design features meant to keep one failing cell from triggering its neighbors. Manufacturers are also shifting toward lithium iron phosphate, or LFP, battery chemistry, which is considered more thermally stable than nickel manganese cobalt chemistry, and researching fire-retardant electrolyte additives and ceramic separators to slow any propagation.
+
+Longer term, solid-state batteries — which replace the liquid electrolyte with a solid material — are considered inherently safer because they eliminate the flammable component, though they are not yet in commercial mass production.
+
+Regulators require abuse testing, including nail penetration, overcharge and thermal propagation tests, though third-party researcher access to that data varies by manufacturer. The National Automotive Safety Institute said it is also working with federal regulators to standardize post-crash battery inspection protocols for first responders.

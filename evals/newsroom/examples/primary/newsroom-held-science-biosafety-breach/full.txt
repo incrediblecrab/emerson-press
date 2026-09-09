@@ -1,0 +1,27 @@
+# Foxcroft suspends strain research after freezer containment failure
+
+The Foxcroft Institute for Infectious Disease Research has suspended work involving a modified Nipah virus strain after a freezer containment failure Jan. 15 put four researchers under precautionary health monitoring.
+
+The National Biocontainment Safety Board launched a review Jan. 16. Public health officials in the surrounding county said the institute notified them of the incident and they had no indication of any community exposure. The four researchers had shown no symptoms as of Jan. 16.
+
+The institute reported that a primary door seal on Freezer 14-C cracked during a scheduled maintenance inspection, releasing a controlled amount of vapor from the storage chamber. The freezer held samples of NiV-K3, a research strain derived from Nipah virus and used in vaccine studies.
+
+The institute considers NiV-K3 non-contagious to humans under its research protocols. That assessment applies to the modified research strain, not wild-type Nipah. All research involving NiV-K3 remains suspended pending the board’s review.
+
+“NiV-K3 is designed without the transmissibility factors present in wild-type Nipah. Our scientists are being monitored because it is the right protocol, not because we believe they are at risk,” said Dr. Felix Brandt, the lab’s director.
+
+The four researchers were in the lab when the seal failed and were placed under a 21-day health monitoring protocol as a precaution. The institute’s assessment of the strain and the researchers’ symptom status are separate from the board’s review, which began the day after the incident.
+
+Dr. Ana Costa, the institute’s biosafety officer, said the seal failure triggered an automatic air pressure reversal system. The system draws air inward through a secondary filtration cascade and activated within four seconds of the breach, Costa said.
+
+The facility operates at Biosafety Level 4, the highest containment level. Its approved suit-laboratory protocol includes positive-pressure protective suits, decontamination showers and dedicated air-handling systems. The institute has operated at that level since 2009.
+
+The institute reported the failure to the Centers for Disease Control and Prevention and the National Institutes of Health within two hours of detection, meeting the notification deadline in its incident response plan. A CDC spokeswoman said the agency was aware of the report and was coordinating with the biocontainment board.
+
+The nearest residential area is approximately 3.8 kilometers from the lab. County public health officials’ statement that they had no indication of community exposure was current as of the Jan. 16 reporting snapshot.
+
+Brandt said the freezer had been serviced 14 months earlier and was scheduled for its next maintenance inspection in two months. The institute’s account described the inspection during which the seal cracked as scheduled maintenance.
+
+Costa said the failure would prompt a review of all primary containment seals in the Biosafety Level 4 wing, which houses 22 freezer units.
+
+Brandt said the institute expects to issue a public report on the incident findings within 45 days after the board concludes its review.

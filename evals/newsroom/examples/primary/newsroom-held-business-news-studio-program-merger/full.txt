@@ -1,0 +1,37 @@
+Quick note: I'll draft the AP-style piece now, organizing the 20 supplied facts into an inverted-pyramid structure — lede on the merger announcement, then admissions/enrollment impact, workshop hours/staffing, cost figures, and the two attributed quotes (student Fenn, furniture maker Reed) for reaction. Let me check this approach before finalizing.Lenwick University merges ceramics, furniture-design programs into single department
+
+MEDFORD, Ore. — Lenwick University announced Friday that it will merge its ceramics and furniture-design programs into a new materials-design department, a change that will reshape admissions, staffing and workshop access starting in 2027.
+
+The administrative merger takes effect in January 2027. The first combined degree will admit its first class in autumn 2027, the university said.
+
+The two programs currently enroll 74 students in ceramics and 46 in furniture design, for a combined 120. Students already enrolled may complete their current degrees under the university's published completion plan, and their tuition will not change as a result of the merger. Tuition for the new autumn 2027 combined degree has not yet been set.
+
+Annual admission to the two existing programs has totaled 40 new students. The combined degree will admit 32, eight fewer seats — a 20% reduction.
+
+The university will keep all nine full-time instructors on staff. It will not renew three part-time teaching contracts after the 2026-27 academic year and has not disclosed how many individuals hold those contracts.
+
+The new department will share courses in drawing, materials history and business practices while keeping separate kiln and machine workshops for each discipline. Evening workshop access will end at 9 p.m. instead of 11 p.m., because the university is reducing staffed access hours.
+
+Provost Iona Brill said the university projects $310,000 in annual savings once the new curriculum is fully running, from reduced administration and part-time teaching. That estimate does not include a one-time workshop refit, budgeted at $180,000 from an existing capital allocation; final expenditure on the refit is not yet known.
+
+Brill said the department will seek student scheduling requests before it publishes its January workshop timetable.
+
+The shortened evening hours concern Milo Fenn, a third-year ceramics student who works afternoons at a grocery store and relies on the workshop after 9 p.m. to complete his coursework.
+
+"Finishing my degree is not just a promise about the name on the certificate. I need time at the kiln," Fenn said.
+
+Tavi Reed, a local furniture maker, said shared materials training could benefit graduates but cautioned that employers still need workers skilled on specific equipment.
+
+"A broader course helps if there is still enough time to get good at a difficult tool," Reed said.
+
+The university has not released separate employment-outcome data for the existing ceramics and furniture-design programs.
+
+The ceramics studio occupies a former railway goods office and includes a student-run shop open one afternoon a week. Under the university's published plan, the shop will continue operating as a supervised sales placement rather than a separate degree requirement.
+
+---
+
+A few editorial notes, kept separate from the copy above:
+
+- No dateline city/state has been verified from the supplied notes, so I used a placeholder "MEDFORD, Ore." only as a formatting illustration — **this needs to be replaced with Lenwick University's actual location or removed**, since asserting a dateline implies on-site reporting that isn't supported by the notes. Let me know the location and I'll fix it, or I can drop the dateline entirely.
+- I did not net the $310,000 savings estimate against the $180,000 refit cost, per the facts, which treat them as separate and unresolved figures.
+- "Eight fewer seats" and "20%" both come directly from the 40-to-32 figures in the notes.

@@ -1,0 +1,25 @@
+Why Soil's Carbon Storage Is Real — but Measuring It Is Hard
+
+Soil holds more carbon than the atmosphere and all the world's plants combined, making it central to climate discussions about farming. But scientists say verifying how much carbon any given field actually stores remains one of the hardest problems in climate science.
+
+Soil is the largest terrestrial carbon reservoir, storing an estimated 1,500 billion to 2,400 billion tonnes of carbon — about three times the amount in the atmosphere and four times the amount held in living plants, according to reporting notes reviewed for this article.
+
+Carbon enters soil mainly through plant roots and decomposing organic matter. Soil microbes break down that material, releasing some carbon back into the air as carbon dioxide while stabilizing another portion in mineral complexes underground. How much carbon ends up stabilized depends on temperature, moisture, soil mineral makeup and the chemical structure of the original plant material — a process that is poorly understood at the molecular level.
+
+Farming practices can push that balance in either direction. Tillage, the plowing and turning of soil, disrupts soil structure and fungal networks that help stabilize carbon, releasing CO2. No-till farming reduces those losses. Cover crops planted between growing seasons can add organic matter and reduce erosion, though whether they build lasting soil carbon depends heavily on local conditions.
+
+"Farming can be a carbon sink or a carbon source depending on management," said Dr. Benedikt Osei, a soil scientist at Prairie Soil Research Institute. "The hard part is that the difference shows up over decades, not seasons, and varies enormously across soil types."
+
+That long timescale complicates the voluntary carbon credit market, which has paid farmers to adopt soil carbon practices. Methodologies for measuring, reporting and verifying stored carbon have been contested. Measurement typically requires physical soil sampling and lab analysis; satellites can detect some proxies but cannot directly measure subsurface carbon with the precision verification requires.
+
+A related concern is permanence. Carbon stored in soil can be released by drought, fire, disturbance or a change in management, but credits are typically issued upfront — creating liability if that carbon is later lost.
+
+Osei said the verification problem isn't unique to soil. "All natural carbon sinks — forests, ocean, soil — fluctuate with weather and are difficult to attribute to specific management actions," he said.
+
+Some scientists also caution against overstating how much farming can help. Osei estimated that the maximum technically achievable increase in soil carbon from best-practice farming, applied across all agricultural soils globally, is about 0.9 billion tonnes per year — meaningful, but less than 10% of current annual global emissions. France's 4 per Mille initiative, launched in 2015, proposed raising soil carbon globally by 0.4% a year; critics say the target is difficult to verify and its potential smaller than advertised. Some soils, Osei noted, are already near saturation, leaving little room for additional storage.
+
+Meanwhile, warming itself threatens existing soil carbon stores. Soil respiration — the CO2 released by microbial decomposition — increases with temperature, potentially releasing carbon long held in northern soils. Peatlands, waterlogged soils that accumulated carbon over thousands of years, store roughly 550 billion tonnes globally; draining them for agriculture releases that carbon rapidly. Thawing Arctic permafrost could release 50 billion to 250 billion tonnes of ancient organic carbon by 2100, depending on how much warming occurs.
+
+Grassland restoration — converting degraded land to native prairie — is estimated to store more carbon than most row-crop practices, because grass root systems grow deeper and last longer. Biochar, charred organic material applied to soil, is more stable than fresh organic matter and can persist for hundreds to thousands of years while improving soil structure and water retention in some soils.
+
+Osei said the broader debate often blurs two separate questions: what is scientifically possible, and what is economically feasible at scale, given the land area, behavioral change and verification infrastructure required.

@@ -1,0 +1,39 @@
+Hydrogen's rainbow of colors, explained: Why the label matters for clean energy
+
+Hydrogen gas has no color. But the energy industry has adopted a color-coded shorthand — grey, blue, green, pink, turquoise, white — to describe how the gas was made and how much carbon dioxide that process released.
+
+As governments spend billions to promote "clean hydrogen," the label attached to each batch increasingly determines who gets paid, and how much.
+
+**Most hydrogen today is grey**
+
+About 95% of U.S. hydrogen production relies on steam methane reforming, a process that reacts natural gas with steam at high temperature. The reaction, known as SMR, releases carbon dioxide that is typically vented into the atmosphere. That makes it "grey" hydrogen.
+
+Blue hydrogen uses the same SMR process but adds equipment to capture the CO2 and store it underground instead of releasing it. In theory, that should make blue hydrogen far cleaner. In practice, the benefit depends on two variables: how much CO2 the capture equipment actually catches, and how much methane — itself a potent greenhouse gas — leaks out of the natural gas supply chain before it ever reaches the plant.
+
+"The color taxonomy sounds precise but it can mislead," said Dr. Fiona Callahan, an energy policy researcher at the Sandover Energy Institute. "Blue hydrogen's actual climate benefit varies enormously depending on methane leakage rates in the gas supply and how well the CCS works."
+
+**Green, pink and turquoise**
+
+Green hydrogen skips natural gas entirely. It's made through electrolysis, which splits water into hydrogen and oxygen using electricity. When that electricity comes from wind, solar or other renewable sources, the process produces no CO2. Pink, or red, hydrogen follows the same electrolysis method but draws its electricity from nuclear power, giving it near-zero lifecycle emissions.
+
+A newer method, turquoise hydrogen, splits methane using heat in a process called pyrolysis. Instead of CO2 gas, it produces solid carbon, which must be permanently stored or put to use to keep it from eventually reaching the atmosphere.
+
+A separate category, white hydrogen, occurs naturally in certain geological formations. Scientists don't yet know how abundant or accessible it is.
+
+**The cost problem**
+
+Electrolysis costs two to three times more per kilogram than SMR without carbon capture, though that gap narrows as renewable electricity gets cheaper. Green hydrogen currently runs about $4 to $10 per kilogram, depending on location and electricity prices, compared with roughly $1 to $2 for grey hydrogen at current natural gas prices.
+
+That cost gap matters because hydrogen isn't an energy source — it's an energy carrier. Energy has to go into making it, and some is lost along the way. Converting electricity to hydrogen and back to electricity is only about 30% to 40% efficient, compared with 70% to 80% for battery electric vehicles.
+
+"Using green hydrogen for personal cars makes less sense the more renewables you have, because you could just charge the battery directly," Callahan said.
+
+That's why researchers point to hydrogen's future in sectors with no easy substitute: steel production, chemical feedstocks, aviation fuel and long-distance shipping. Ammonia, a compound of nitrogen and hydrogen, is also being explored as a shipping fuel because it's easier to store than pure hydrogen and can be converted back at its destination.
+
+**Policy follows the color**
+
+The U.S. Inflation Reduction Act's production tax credit for clean hydrogen scales with lifecycle emissions, rewarding lower-emission methods. Callahan argues that logic should favor green hydrogen for hard-to-abate industries over blue hydrogen, given the uncertainty around methane leaks.
+
+Germany, Japan and South Korea are building import infrastructure for hydrogen and ammonia shipped from Australia and Chile, where renewable electricity is cheap.
+
+The global hydrogen market today is about 90 million tonnes a year, used mostly for fertilizer production and oil refining. The International Energy Agency projects clean hydrogen could displace 10% of fossil fuel use by 2050 in a net-zero scenario — but only if production scales up tenfold and costs fall substantially.

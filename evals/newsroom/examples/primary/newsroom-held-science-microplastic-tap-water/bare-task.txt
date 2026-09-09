@@ -1,0 +1,31 @@
+# Study finds microplastics in 89% of tap water samples from 1,200 U.S. homes
+
+Microplastic particles were detected in 89% of tap water samples collected from 1,200 households across 38 states, according to a study published Jan. 30 that points to widespread contamination but leaves unanswered questions about the effects on human health.
+
+The study, published in Environmental Science Reports, found concentrations ranging from 12 to 930 particles per liter, with a median of 74 particles per liter. Researchers collected samples in spring and autumn over a two-year period from 2022 to 2024.
+
+“Microplastics are in the water supply more broadly than previous spot surveys suggested,” said Dr. Yolanda Kimura of the National Freshwater Institute, the study’s lead researcher. “What we do not yet know is what, if any, health consequence follows from chronic low-level ingestion.”
+
+The United States has no regulatory limit for microplastics in drinking water. The Environmental Protection Agency, which has listed microplastics as a research priority since 2022, said it would review the findings through its ongoing research program. The agency expects to publish a risk assessment framework by 2027.
+
+Dr. Francis Lind, a toxicologist who was not affiliated with the study, said the health evidence remains inconclusive.
+
+“Animal studies suggest effects at high concentrations, but human epidemiological data is still limited,” Lind said. “That gap needs to close before we can establish a standard.”
+
+Researchers found no statistically significant difference in concentrations between water treated by large municipal systems and water from small community wells — a result the authors described as unexpected. Eleven sampled households used well water without municipal treatment, and all 11 had detectable microplastics.
+
+The highest individual reading, 930 particles per liter, came from a home connected to a large municipal system in the Northeast. The authors cautioned that it was an outlier and did not indicate systematically higher levels in that region.
+
+Samples with the highest concentrations came from homes with plastic plumbing supply lines installed after 2010. The study found a correlation, however, and did not establish a causal mechanism. The particles were predominantly polyethylene and polypropylene, consistent with plumbing and packaging sources.
+
+Kimura said the study used infrared spectroscopy to identify plastic polymer types. Earlier studies relied on visual identification, which may have undercounted smaller particles. The detection rate exceeded the 72% reported in a 2021 European study of tap water samples from eight countries.
+
+Laboratory testing found that reverse osmosis filters removed more than 95% of detected particles, while standard carbon-block filters removed about 60%. Bottled water was not included in the study; prior published research has found comparable or higher microplastic concentrations in bottled water.
+
+Lind said a public health research priority should be determining whether particles smaller than 1 micrometer, known as nanoplastics, can cross cellular barriers. Larger particles are likely excreted, Lind said.
+
+The American Water Works Association, a utility trade group, said its members were reviewing the study. Existing treatment processes were designed for known contaminants, not plastic particles, the group said.
+
+Congress has not passed legislation requiring microplastic monitoring or treatment standards. Two bills addressing the issue remain in committee.
+
+The National Freshwater Institute received funding from the EPA and two environmental foundations. No industry funding was disclosed.

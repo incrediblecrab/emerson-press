@@ -1,0 +1,31 @@
+**Startup Aims to Grab a Dead Satellite — If It Can Get Permission First**
+
+OrbClear Technologies believes it can catch a defunct satellite in orbit and drag it down to burn up in the atmosphere. Its bigger problem may be asking permission first.
+
+The 28-person startup, founded in 2020, has raised $34 million in seed and Series A funding and is targeting a first mission demonstration in 2027, CEO Diana Leung said. The plan: capture a specific 400-kilogram satellite that has been drifting, unused, in an 820-kilometer orbit since 2009.
+
+"We are not talking about cleaning up all of space," Leung said. "We are talking about proving that one capture is possible, on budget, on schedule. Everything else follows from that."
+
+OrbClear's spacecraft would deploy a resistive net around the target satellite, then fire a small thruster package to begin lowering both vehicles toward reentry, according to Leung.
+
+The engineering may not be the hardest part. International law treats a defunct satellite as the property of the nation that registered it, meaning OrbClear cannot remove the object without that owner's consent, said Kwame Asante, a space law professor at Pacific Ocean University.
+
+The satellite OrbClear wants is registered to a country that no longer exists as a political entity, Asante said. "Getting consent from a successor state for an orbital operation is not a solved legal question," he said.
+
+Leung said OrbClear has worked with international space law attorneys for 18 months and believes a workable consent pathway exists, though she acknowledged consent must be secured before launch. "We are not asking forgiveness," she said.
+
+A competing startup, TerraClear Inc., backed by a larger aerospace investor, is pursuing a different method: flying close to debris and nudging its orbit with a focused ion beam, without physical contact. TerraClear has completed ground testing and is targeting a demonstration mission in 2026.
+
+Leung said the ion beam approach sidesteps the consent problem for pushing an object to a lower orbit but cannot fully control the timing or trajectory of its eventual reentry. She described the two companies as aware of each other and in communication, not rivals in the usual startup sense. "If they succeed, it helps us," she said. "The market is the debris field, and there is plenty for everyone to work on."
+
+Asante said both approaches point to the same gap: the technology is moving faster than the international agreements needed to authorize its use. He said the industry will also need a liability regime — if a removal spacecraft damages a satellite during capture, it is unclear who would be legally responsible.
+
+OrbClear has proposed that the United Nations Committee on the Peaceful Uses of Outer Space develop a "removal consent certificate" framework. The proposal has been submitted but has not been scheduled for review.
+
+For revenue, OrbClear has letters of interest from three satellite operators willing to pay an annual monitoring fee to track their own defunct spacecraft, Leung said. She pointed to the European Space Agency's ClearSpace-1 mission, a government-backed effort attempting a similar capture, as evidence that private companies also need to show the market can support commercial debris removal.
+
+Leung, who came to the space industry from ocean cleanup engineering, said the two problems share a structure: "Large, diffuse, transboundary problem. No one entity owns the harm. Everyone owns the risk."
+
+She said the company's biggest risk is financial, not technical — a launch delay or a failed demonstration could exhaust its capital. Asante said the most optimistic outcome for the next decade is an agreement among major spacefaring nations on consent procedures for removing objects they can no longer use. That framework does not yet exist.
+
+Leung said she is counting on a successful demonstration to move the legal conversation forward. "Lawyers find solutions," she said, "when the engineering shows the solution is real."

@@ -1,0 +1,37 @@
+# DeepHeat reaches hot rock, but geothermal test still lies ahead
+
+For two years, rancher Tom Whitfield has watched DeepHeat Energy drill into the Great Basin. He initially opposed the geothermal project. After site visits and a meeting with the seismologist monitoring it, he agreed to a monitoring agreement.
+
+"I didn't understand it. Now I understand it more. I'm not convinced it's safe. But I'm willing to watch," said Whitfield, 63.
+
+DeepHeat's two test wells extend 4.8 and 5.3 kilometers underground. Both reached rock hotter than 200 degrees Celsius, enough for binary cycle electricity generation, according to CEO Grace Kim. Neither is connected to a surface power facility.
+
+The next test, planned for July, is whether fracturing the rock can create a connected reservoir for the enhanced geothermal project. Success would move DeepHeat toward a small power demonstration. The operation also brings questions about earthquake risk and water use that reaching hot rock alone cannot answer.
+
+"We have proven the heat is there. We have proven we can reach it. The next step — creating a reservoir by fracturing the rock — is where the project either works or it doesn't," Kim said.
+
+Founded by former oil field engineers in 2021, DeepHeat chose the site partly for its sparse population. The nearest town has 340 residents and is 14 kilometers away.
+
+Marco Bianchi, the seismologist who monitors project-induced seismic activity, said fracturing will proceed in incremental pressure stages, with monitoring at five surface stations and one downhole sensor. The protocol automatically stops fracturing if an event exceeds magnitude 2.0, he said. Below that threshold, operations continue with review.
+
+Bianchi described the protocol as conservative by industry standards. He said 14 months of baseline monitoring recorded no events above magnitude 1.5.
+
+A geothermal project in an Asian city triggered a magnitude 5.5 earthquake in 2017 and was halted after the event was linked to injection operations. Kim said DeepHeat studied that case and identified injection rate as the key controllable variable.
+
+"We have automated cutoffs. The human decision is whether to resume, not whether to stop," she said.
+
+Bianchi said the Great Basin site's geology is less seismically active than the Asian project's site.
+
+For Whitfield, the primary concern is water. The injection process uses water from a permitted well, and he wants independent verification that the project's use does not affect his livestock well.
+
+Bianchi said the wells occupy different geological strata and that contamination is not physically plausible given their depth difference. He offered monthly water quality testing at his own expense. That offer addresses water quality; Whitfield's concern extends to the effects of water use.
+
+If fracturing creates a connected reservoir, DeepHeat plans to connect the well pair to a 2-megawatt pilot turbine. Kim said a demonstration of that size would not itself be commercially significant.
+
+"It proves it works here. That's worth something. Commercial scale is twelve to twenty years away if we start now," she said.
+
+Kim tells investors that July's most likely outcome is partial success: a reservoir smaller than optimal. Bianchi said either result would be scientifically informative, testing whether the rock fractures as modeled.
+
+Whitfield plans to watch from his truck on a ridge overlooking the site.
+
+"I've watched them drill for two years. I'm going to watch this too. Whatever happens, I was there."

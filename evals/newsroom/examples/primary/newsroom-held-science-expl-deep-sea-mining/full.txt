@@ -1,0 +1,45 @@
+# Deep-sea mining promises battery metals but raises environmental questions
+
+Deep-sea mining would extract metals used in electric vehicles and energy storage from the ocean floor. The dispute is over what that extraction could destroy — and whether scientists know enough about deep-ocean ecosystems to assess the damage before commercial mining begins.
+
+As of May 15, 2025, the International Seabed Authority, which governs mineral rights in international waters, had issued exploration licenses but no commercial extraction license. More than 30 nations and over 700 marine scientists have called for a moratorium pending better environmental assessment.
+
+## What would be mined?
+
+Deep-sea mining means commercial extraction of mineral deposits from the seafloor, typically at depths exceeding 1,000 meters.
+
+The primary targets are polymetallic nodules: potato-sized rocks that form over millions of years on abyssal plains, broad stretches of deep-ocean floor. They contain manganese, nickel, cobalt and copper, metals used in rechargeable batteries for electric vehicles and grid storage.
+
+One area drawing interest is the Pacific Ocean's Clarion-Clipperton Zone. This abyssal plain covers 4.5 million square kilometers and contains an estimated 340 million metric tons of nickel and 290 million metric tons of copper, among other metals.
+
+Other deposits include seafloor massive sulfides near hydrothermal vents, which contain high concentrations of copper, zinc, gold and silver. Cobalt-rich ferromanganese crusts form on the flanks of underwater mountains called seamounts.
+
+## Why pursue metals underwater?
+
+Growing battery demand has made seabed reserves commercially attractive. Proponents argue that seabed mining would have a smaller land footprint than terrestrial mining and avoid some human rights and deforestation concerns associated with land-based extraction in developing countries.
+
+Nickel mining on land is concentrated in Indonesia, the Philippines and Russia. Cobalt mining is concentrated in the Democratic Republic of Congo, where labor standards and conflict financing have drawn international scrutiny.
+
+Those concerns do not settle the environmental comparison. Some battery manufacturers, including several major automakers, have publicly committed not to use deep-sea minerals, citing environmental uncertainty.
+
+## What could happen to marine life?
+
+Nodule collection machines would disturb surface sediment, generating plumes that can spread hundreds of kilometers and smother filter-feeding organisms. Discharges of fine sediment and processed water would also enter the water above mining operations, with largely unknown effects on mid-water species.
+
+Mining near hydrothermal vents would directly destroy habitat supporting distinctive food webs that depend on mineral-rich hot water.
+
+Marine biologist Elise Nakamura of Pacific Ocean Science Center said damage to abyssal ecosystems could persist far beyond the mining itself.
+
+"The abyssal plain looks like a desert but it is not. It is a slow ecosystem. Recovery from disturbance on these timescales is measured in centuries, not years."
+
+Opponents warn that poorly documented ecosystems could lose species before scientists discover them. Surveys in mining contract areas have already found hundreds of new species.
+
+## Why is regulation contentious?
+
+Nauru accelerated the regulatory debate in 2021 by invoking a rule requiring the seabed authority to complete a mining code within two years. The deadline passed without a finalized code.
+
+The unresolved question is how to judge environmental risk with limited evidence. Nakamura said the impact models required for permitting rely on limited baseline data because these areas have rarely been studied.
+
+"We are being asked to evaluate a risk we cannot fully quantify."
+
+She said available science cannot yet answer the authority's central question: whether the benefits provided by abyssal ecosystems outweigh the mineral value of the nodules.

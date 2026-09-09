@@ -1,0 +1,33 @@
+# Federal commission approves hydrogen pipeline to supply steel plants
+
+The Federal Pipeline Safety Commission on Thursday approved a construction permit for what would be the first U.S. hydrogen pipeline purpose-built to carry the gas as a primary energy source, connecting wind-powered hydrogen production with steel plants seeking to reduce coal use.
+
+Vantage Green Hydrogen plans to build the 210-kilometer, or roughly 130-mile, pipeline from an electrolysis facility in Sandover County to a steel manufacturing cluster in Portview. At full operation, it would carry 85,000 metric tons of hydrogen annually.
+
+The March 6 approval follows 26 months of work on inspection and material standards designed specifically for hydrogen, which poses different safety challenges than natural gas. Construction is expected to begin in late 2025 and take 28 months, with operations projected to start in early 2028.
+
+Hydrogen pipelines already operate in Europe and industrial clusters along the Gulf Coast. Those lines carry hydrogen as a byproduct of chemical processes, however, rather than as a primary energy carrier — the distinction behind the Vantage project's proposed U.S. first.
+
+The Portview steel cluster emits about 4.8 million metric tons of carbon dioxide annually from burning coal-derived coke. Switching to hydrogen would eliminate an estimated 3.2 million metric tons a year. At full capacity, the facilities would replace about 40% of their current coal fuel consumption with hydrogen.
+
+Vantage has a 15-year supply agreement with Portview Steel Holdings, the cluster's majority owner. The hydrogen production facility will split water using electricity from 1.4 gigawatts of dedicated wind generation at a Vantage-owned wind farm.
+
+“Hydrogen delivered by pipeline is the only way to decarbonize industrial heat at the scale these steel facilities need. Truck delivery simply cannot match the volumes,” Vantage CEO Luis Moreno said.
+
+Hydrogen burns without producing carbon dioxide, but transporting it requires specialized materials. Its small molecules can permeate and weaken ordinary steel, a phenomenon known as hydrogen embrittlement.
+
+Vantage's pipeline will use seamless austenitic stainless steel tubing rated for high-pressure hydrogen service, a specification that exceeds current natural gas pipeline standards.
+
+“We developed new inspection and material standards for this permit because existing pipeline regulations were written for natural gas. That work took 26 months,” commission Chair Sara Osei said.
+
+Three pipeline safety advocacy groups participated in the rulemaking and secured requirements for real-time leak detection sensors at 1-kilometer intervals and automatic pressure shutoff valves at 5-kilometer intervals.
+
+The permit also requires full pressure tests before the pipeline enters service, public release of the results and an emergency response training exercise with local fire departments at least once a year.
+
+Those preparations address hazards specific to hydrogen: It is more flammable than natural gas and burns with an invisible flame, creating distinct challenges for firefighters.
+
+The environmental review found no significant impacts to protected wetlands or aquifers along the route. Three minor reroutes were required to avoid sensitive habitat.
+
+Land access negotiations are not complete. Five landowners along the right of way objected during permitting; three have settled easement agreements, while two cases remain in negotiation.
+
+Analysts said the permit could open the way for similar applications. At least three other dedicated hydrogen pipeline proposals are in the pre-application stage.

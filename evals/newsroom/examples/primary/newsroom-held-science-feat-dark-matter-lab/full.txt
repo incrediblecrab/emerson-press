@@ -1,0 +1,25 @@
+**A Mile Underground, Physicists Chase a Signal That Refuses to Appear**
+
+RIDGELINE MINE — Nearly 2 kilometers beneath the surface, in tunnels that once yielded silver, a team of physicists is spending years looking for something and, so far, finding nothing. They say that's the point.
+
+The Apex Dark Matter Observatory has operated in the former mine since it was converted to scientific use in 2019. At the center of the facility sits 3.2 tonnes of liquid xenon, chilled to minus 93 degrees Celsius. If a dark matter particle struck the xenon, it would produce a flash of ultraviolet light and a faint ionization signal, picked up by photomultiplier tubes surrounding the tank. The 1.9 kilometers of rock overhead cut the flux of cosmic rays reaching the detector by more than a millionfold, removing most of the background noise that would otherwise swamp such a signal at the surface.
+
+In 31 months of operation, Apex has recorded no such signal. Physicist Yuki Tanaka, 38, who has led the detector team for four years, calls the result scientifically productive.
+
+"Every day we run without a signal, we rule out more of the parameter space," Tanaka said. "We're not finding nothing. We're finding that dark matter, if it's there, is not what those models said. That's real knowledge."
+
+Apex's sensitivity surpasses that of any previous detector of its kind, according to Tanaka. She said the accumulated null results have already constrained the leading theoretical models — those predicting dark matter made of weakly interacting massive particles, or WIMPs — so severely that if a planned next-generation detector, 40 times as sensitive, also comes up empty, theorists may need to abandon the assumption that dark matter interacts through the weak nuclear force. Construction on that successor detector is set to begin in 2027, if funding is secured. Apex's current phase is funded through 2027 by the Department of Energy and four international partner agencies, and its data is shared in real time with the 18 universities across six countries that make up the collaboration.
+
+Two of Tanaka's graduate students, Nadia Holloway and Ben Tran, are both in their fifth year on the project and both said they are prepared for a dissertation built on absence rather than discovery.
+
+"The question is real," Holloway said. "Is dark matter made of the particles our models said? If Apex says no, that is the answer. Science needs the no." She said she would rather find something but intends to produce "the most precise null result possible," adding, "That's the job we signed up for."
+
+Tanaka said persuading students and funding agencies that a null result counts as success is the hardest part of running the experiment. "We live in a culture that rewards discovery," she said. "I'm asking my graduate students to do excellent science and possibly find nothing." She said she would be satisfied if the experiment eliminates the last viable WIMP parameter space even without a detection: "Closing a door that physics has been knocking on for 40 years is not failure. It's the field saying: look somewhere else."
+
+Keeping the xenon cold falls to Brendan O'Brien, 52, a maintenance technician who has worked underground for 22 years, first in silver mining and now in physics. He services the cryogenic system, which has caused four unplanned shutdowns since Apex began operating, each lasting less than 18 hours.
+
+"I don't understand the physics. I understand the system," O'Brien said. "If the temperature drifts, Dr. Tanaka doesn't get her data. That's my job. Drift is not allowed."
+
+O'Brien said his work is hard to explain at family gatherings. "I work in a mine. But I'm not mining anything. I'm keeping cold something that's looking for something nobody has ever seen. People look at me like I'm pulling their leg," he said. He added that the physicists and the former miners share one trait: patience with things that don't yield quickly.
+
+For Tanaka, the isolation underground has its own value. "No email down here. No cell signal," she said. "Just the detector and the question."

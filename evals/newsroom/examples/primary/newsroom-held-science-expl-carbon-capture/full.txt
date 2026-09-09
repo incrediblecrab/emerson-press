@@ -1,0 +1,27 @@
+**What Is Carbon Capture, and Why Is It Controversial?**
+
+As governments look for ways to slow climate change, one technology keeps coming up: carbon capture and storage, or CCS. It refers to a set of technologies that remove carbon dioxide from industrial emissions or the atmosphere and then compress and store the gas underground, according to reporting notes reviewed for this article.
+
+**How does it work?**
+
+There are two main approaches. The first, known as point-source capture, installs equipment at smokestacks — power plants, steel mills, cement factories — to remove CO2 before it enters the atmosphere. The captured gas is typically 90% or more pure CO2. The most common method uses chemical compounds called amine solvents, which absorb CO2 from flue gas. The solvent is then heated to release the CO2, which is compressed and sent to a storage site.
+
+The second approach, direct air capture, or DAC, pulls CO2 directly from ambient air rather than from concentrated industrial emissions. Because CO2 makes up only about 420 parts per million of the atmosphere — far less concentrated than flue gas — DAC requires much more energy and costs far more. Point-source capture runs $50 to $150 per metric ton of CO2, while DAC costs $300 to $1,000 per ton.
+
+Once captured, the CO2 is compressed and injected into geological formations, usually depleted oil and gas reservoirs or deep saline aquifers more than a kilometer underground. At that depth, pressure keeps the CO2 in a "supercritical" state, where it behaves as a dense fluid rather than a gas. It cannot escape unless the rock layer sealing it in is breached, and well-chosen sites are considered geologically stable for thousands of years.
+
+A related method, bioenergy with carbon capture and storage, or BECCS, grows biomass that absorbs CO2, then burns that biomass for energy while capturing the exhaust. In theory, the process produces net-negative emissions.
+
+**Why is it controversial?**
+
+Supporters point to a practical case: some industries, including cement and steel production, have no readily available alternative to combustion. The Intergovernmental Panel on Climate Change has concluded that meeting the 1.5 degrees Celsius warming target almost certainly requires some carbon removal from the atmosphere, in addition to cutting emissions.
+
+But critics argue the technology hasn't been proven at the scale that would matter — billions of tons removed per year — and note a history of cost overruns and delays at large capture facilities. Capturing CO2 from a power plant's exhaust also carries an energy penalty, requiring 15% to 25% more energy input per unit of electricity generated, which raises fuel use and cost.
+
+Some critics also object to enhanced oil recovery, a practice in which injected CO2 pushes more oil out of depleted reservoirs. They argue it subsidizes oil production rather than removing carbon from the system. Separately, monitoring whether stored CO2 stays underground requires long-term seismic and geochemical tracking, and liability for stored CO2 over geological time scales remains an unresolved legal question in most jurisdictions. No large-scale storage site has experienced a confirmed breach, though leakage from a poorly chosen or poorly sealed site could gradually reduce the climate benefit. Ocean storage of CO2 has been proposed but is not practiced; it would acidify local seawater and is banned under international ocean-dumping treaties.
+
+Naomi Castillo, a carbon economist at Westfield University, said the debate often conflates different technologies. "CCS has a legitimate engineering role in sectors like cement and steel where there is no practical alternative to combustion," she said. "The controversy is around using it to justify continued fossil fuel use in sectors where cleaner alternatives exist."
+
+Castillo said the engineering hurdles are surmountable, but the economic ones are not, absent a carbon price or subsidy that makes capture cost-competitive with simply emitting. In the United States, the federal government offers tax credits of $85 per ton for geological storage and $60 per ton for CO2 used in industrial processes. That credit, known as 45Q, has drawn investment toward large-scale CCS projects, with at least a dozen major facilities under development in North America.
+
+Castillo said a realistic accounting of the technology's role in climate policy must separate proven point-source capture from more aspirational claims about direct air capture at scale.

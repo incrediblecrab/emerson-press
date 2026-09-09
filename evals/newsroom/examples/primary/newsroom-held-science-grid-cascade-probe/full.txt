@@ -1,0 +1,31 @@
+# Investigation opens into grid failure that left 3.4 million customers without power
+
+The National Grid Reliability Office opened a formal investigation July 8 into a cascading grid failure that cut power to 3.4 million customers across four states June 29.
+
+Preliminary findings indicate that a high-voltage transmission line owned by Stonegate Power tripped near Millbrook Junction after contact with overgrown vegetation in 95-degree heat. The company acknowledged that inspections in the affected corridor were four months overdue.
+
+The investigation will examine why the failure spread, whether regulators knew about Stonegate's failure to meet vegetation management requirements and whether existing penalties are sufficient to deter future lapses. The inquiry is expected to take six to nine months.
+
+The outage, the region's largest since 2011, lasted an average of seven hours. Some rural areas were without electricity for up to 18 hours.
+
+Three deaths have been tentatively attributed to the outage, including those of two people whose home medical equipment lost power. Investigators have not confirmed that the outage caused the deaths.
+
+The preliminary findings describe a failure that spread faster than operators could intervene manually. The initial transmission line trip caused a rapid drop in grid frequency, triggering automatic protective relays at 14 neighboring substations to disconnect within 90 seconds. The resulting imbalance between electricity generation and demand spread the outage from a single zone across the multistate region.
+
+Grid frequency in North America is maintained at 60 hertz. Deviations of as little as 0.5 hertz can trigger automatic equipment disconnections.
+
+"Automatic protection systems did exactly what they were designed to do — they protected equipment. What we're examining is why the cascade wasn't contained earlier in the sequence," said Clara Osei, director of the National Grid Reliability Office.
+
+Stonegate Vice President Martin Lund acknowledged that the company's last vegetation management inspections in the corridor took place 22 months before the incident, exceeding the required 18-month interval. Stonegate said the corridor had been listed for an earlier inspection that was delayed by winter weather.
+
+Stonegate is the largest utility in the affected region, operating 8,400 kilometers of transmission lines across five states.
+
+Emergency generators at 12 hospitals in the affected area activated automatically. One hospital reported a brief generator startup failure; generator operation was restored within six minutes.
+
+Operators manually restarted generation sources in sequence to avoid a second cascade. Power was restored to most urban customers within four hours, though restoration took longer elsewhere.
+
+Economic losses exceeded $200 million, according to a preliminary industry estimate. That estimate includes spoiled food, lost productivity and emergency response costs.
+
+The reliability office can impose fines of up to $1 million per day per violation. It also has authority to require utilities to submit corrective action plans within 60 days of a formal investigation finding.
+
+Federal law prohibits utilities from passing investigation-related fines directly to ratepayers, though legal interpretations of that rule have varied.

@@ -1,0 +1,33 @@
+Carbon Capture: The Technology at the Center of the Climate Fight
+
+Explained: What it is, how it works and why scientists disagree over its role
+
+As governments and industries race to cut greenhouse gas emissions, one technology keeps surfacing in the debate: carbon capture and storage, or CCS. Supporters call it essential. Critics call it a distraction. As of this month, here's what the science and the arguments actually say.
+
+**What is carbon capture?**
+
+Carbon capture and storage refers to a set of technologies that remove carbon dioxide from industrial emissions — or from the atmosphere itself — then compress and store the gas underground, according to reporting notes on the subject.
+
+There are two main approaches. The first, called point-source capture, installs equipment at smokestacks — power plants, steel mills, cement factories — to remove CO2 before it escapes into the air. The captured gas is typically 90% or more pure carbon dioxide.
+
+The second approach, direct air capture, or DAC, pulls CO2 straight from ambient air rather than concentrated industrial exhaust. Because CO2 makes up only about 420 parts per million of the atmosphere — far less concentrated than flue gas — DAC requires significantly more energy and money to run.
+
+**How does it work?**
+
+The most common industrial method uses chemical compounds called amine solvents, which absorb CO2 from flue gas. The solvent is then heated to release the captured CO2, which is compressed and piped to a storage site.
+
+Once compressed, the CO2 is injected more than a kilometer underground into geological formations — typically depleted oil and gas reservoirs or deep saline aquifers. At that depth, pressure keeps the CO2 in a "supercritical" state, meaning it behaves like a dense fluid rather than a gas. It cannot escape unless the rock layer sealing it in is breached. Well-chosen sites are considered geologically stable for thousands of years, and no large-scale storage site has experienced a confirmed breach.
+
+**Why the controversy?**
+
+The technology carries real costs. Capturing CO2 from a power plant's exhaust requires 15% to 25% more energy input per unit of electricity generated, raising fuel use and expense. Point-source capture currently costs $50 to $150 per tonne of CO2, while direct air capture costs $300 to $1,000 per tonne.
+
+Critics also note that CCS has never been demonstrated at the scale — billions of tonnes per year — that would be needed to meaningfully affect global emissions, and large facilities have a history of cost overruns and delays. Some also object to a related practice, enhanced oil recovery, in which injected CO2 is used to push more oil out of depleted reservoirs — a use critics say subsidizes oil production rather than genuinely removing carbon.
+
+Legal questions remain unresolved as well. Monitoring whether stored CO2 stays underground requires long-term seismic and geochemical tracking, and liability for that CO2 over geological time scales has not been settled in most jurisdictions.
+
+Dr. Naomi Castillo, a carbon economist at Westfield University, said CCS has a legitimate role in industries such as cement and steel, "where there is no practical alternative to combustion." But she said the debate centers on using the technology to justify continued fossil fuel use in sectors where cleaner options already exist. She added that the engineering hurdles are solvable, but the economics are not — not without a carbon price or subsidy that makes capture cost-competitive with simply emitting.
+
+In the U.S., the government offers tax credits of $85 per tonne for geological storage and $60 per tonne for CO2 used industrially, credits that have spurred at least a dozen major CCS projects now under development in North America.
+
+The United Nations' Intergovernmental Panel on Climate Change has concluded that meeting the 1.5-degree Celsius warming target almost certainly requires some carbon removal in addition to emissions cuts — leaving CCS, for now, a contested but likely unavoidable piece of the climate puzzle.

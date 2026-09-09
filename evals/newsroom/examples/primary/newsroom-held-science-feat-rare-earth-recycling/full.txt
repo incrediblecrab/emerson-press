@@ -1,0 +1,33 @@
+Draft ready. Quick note before delivering: I'm treating this as a straight-news feature, AP style, drawing only on the listed facts/quotes, with attribution kept close given how many quotes cluster in a short piece.
+
+---
+
+**Lab Chases a Cleaner Way to Mine Old EV Motors for Rare Earths**
+
+A university lab says it has found a way to pull valuable rare earth metals out of discarded electric vehicle motors without the high heat and toxic byproducts of conventional mining — though it's still short of matching the efficiency of processing virgin ore.
+
+The Materials Recovery Lab at Westfield University has developed a process that recovers neodymium and dysprosium from scrapped EV motors at 78% efficiency, compared with roughly 90% for processing freshly mined ore. Closing that 12-percentage-point gap is the lab's main technical challenge, said Dr. Priya Sundaram, the lab's director.
+
+The process relies on an ionic liquid solvent that selectively dissolves rare earth elements out of magnet material, avoiding the high-temperature roasting step used in traditional processing, Sundaram said.
+
+"The chemistry is not new," she said. "What we've done is make it scalable at room temperature. That changes the energy economics substantially."
+
+Much of the lab's progress traces to work by Tomás Vargas, 27, a graduate student who spent three years refining the step that lets the solvent be reused instead of discarded after each batch. Early attempts failed because the solvent absorbed impurities from the magnet alloy that degraded its ability to selectively extract the metals, Vargas said. The team tested 14 regeneration approaches before finding one that restored 96% of the solvent's original selectivity.
+
+"Science is the fourteen failures," Vargas said. "The paper is the one success. The fourteen failures took three years."
+
+The lab currently processes about 200 kilograms of magnet material a week in its pilot setup. A commercial-scale operation would need to handle tons per day, according to the lab. Westfield's technology licensing office is in discussions with two undisclosed industrial partners about investing in a pilot plant, though no agreement has been signed.
+
+Sundaram said the immediate obstacle isn't technology but supply: There aren't yet enough end-of-life EV motors available in concentrated volumes to feed a commercial facility. Most EV motors now in service were built after 2017, and with typical vehicle lifetimes of 12 to 15 years, large volumes of retired motors are not expected to enter the waste stream until roughly 2030 to 2032.
+
+A Department of Energy report estimated that recovering half the rare earths in end-of-life EV motors by 2040 could supply 15% of projected U.S. demand for neodymium — a meaningful but not transformative share, according to the report.
+
+The economics remain tied to volatile primary-market prices: When rare earth oxide prices fall, the recycling margin can disappear; when prices rise, the process becomes profitable. Sundaram said she is designing the process to be profitable at the current price of $65 per kilogram for neodymium oxide, but wants it viable down to $50 to be commercially durable. Two automotive companies have pledged to send decommissioned test vehicles to the lab to help maintain feedstock during the pilot phase.
+
+Sundaram said the field of rare earth recycling is still dominated by small startups with limited capital, and that scaling the technology will require industrial partners with existing chemical processing infrastructure. She said the lab's broader contribution may be less about its specific process than about proving that room-temperature ionic liquid extraction works at all — a foundation other researchers can build on.
+
+Unlike conventional ore processing, which must manage thorium and uranium co-extracted with rare earths, the lab's process produces less wastewater and no radioactive byproduct streams, Sundaram said.
+
+Vargas, who plans to defend his dissertation this year, has accepted a research position at a company developing urban mining processes. He said his motivation was supply chain security rather than environmental concern.
+
+"If rare earths are a national security issue, then recycling them is a national security project," he said. "That's how I think about the three years."

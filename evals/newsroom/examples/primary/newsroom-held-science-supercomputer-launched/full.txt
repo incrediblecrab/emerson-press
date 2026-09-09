@@ -1,0 +1,29 @@
+# Clearwater launches world's fastest publicly accessible supercomputer
+
+Clearwater National Laboratory began operating Helios-2 on May 8, a $3.7 billion computing system that is the world's fastest publicly accessible supercomputer, with research applications ranging from climate modeling to biology.
+
+The system in Sandover, New Mexico, is rated at 4.8 exaflops, nearly three times faster than the previous U.S. national laboratory record holder. An exaflop is one quintillion mathematical operations per second.
+
+Half of Helios-2's computing time is reserved for unclassified open-science projects selected through competitive peer review. The other half is allocated to Department of Energy mission programs, including classified work modeling nuclear stockpile performance.
+
+China's Taishan-3, rated at 5.2 exaflops, is faster but is not publicly accessible. Clearwater plans to begin accepting allocation requests from international researchers in September, laboratory director Chioma Bankole said.
+
+“Helios-2 allows us to simulate physical processes at a resolution and timescale that was simply impossible before. Climate, materials, biology — the questions we can now ask have changed,” Bankole said.
+
+The first allocated projects include a global climate model running at 1-kilometer atmospheric resolution, a protein folding study of membrane-bound receptors and a simulation of turbulence in fusion plasma. Seven university research teams that used Clearwater's previous-generation system have already received Helios-2 allocations.
+
+Demand for open-science computing time exceeds what the laboratory can provide. Bankole said those allocations were oversubscribed by a factor of six, with requests totaling 28 exaflop-hours against 4.8 exaflop-hours available for awards in the first year.
+
+The Department of Energy said Helios-2 was essential for modeling nuclear stockpile performance. That work falls within the classified half of the system's computing time, separate from the unclassified research allocations.
+
+Helios-2 uses 9,400 next-generation accelerator chips developed by Tessera Systems under a $2.1 billion contract with the Department of Energy. The total $3.7 billion project cost includes facility construction, computing hardware and a 10-year maintenance contract.
+
+Tessera Systems CEO Marcus Webb said the contract accelerated the company's chip development roadmap by approximately 18 months. Bankole said Clearwater trained a 240-person operations staff specifically for Helios-2 over the past two years.
+
+The system occupies a 12,000-square-meter facility and draws up to 42 megawatts of power at peak load, equivalent to the consumption of approximately 35,000 U.S. households. Clearwater will source all of its power from renewables under a long-term purchase agreement.
+
+Direct liquid cooling serves the processor nodes. The system requires approximately 440,000 liters of deionized water a day for cooling, with the laboratory recycling water through a closed-loop system. Waste heat will supply a geothermal heat loop that warms adjacent laboratory buildings.
+
+Helios-2 will be included in the November edition of the TOP500 list, which ranks the world's fastest supercomputers twice a year.
+
+Clearwater's previous record holder, Helios-1, was decommissioned to make room for the new system. Its processors are being refurbished for use in regional university computing clusters.

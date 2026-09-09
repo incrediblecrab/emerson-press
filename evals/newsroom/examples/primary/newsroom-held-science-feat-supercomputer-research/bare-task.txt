@@ -1,0 +1,41 @@
+# Supercomputer speeds scientific discovery, but new bottlenecks emerge
+
+For climate modeler Agnes Kowalski, the difference between six weeks and 14 months is more than time saved. It is the difference between refining a simulation and finishing one she says is already obsolete.
+
+Her team used Prism-1, a 1.9-exaflop supercomputer at the Sandover Research Center, to run a global atmospheric model at 3-kilometer resolution for the first time. At that scale, the model can simulate individual thunderstorms rather than average cloud cover.
+
+“At three kilometers, we see the storm. We see where it intensifies and where it dissipates. That changes what we can tell a flood forecaster,” Kowalski said.
+
+The run took six weeks. On the previous-generation system, she said, it would have taken 14 months.
+
+“Fourteen months means the simulation is obsolete before you finish it. Six weeks means you can iterate.”
+
+After 18 months of open-science allocations, Prism-1 has served 140 research groups across 22 countries. Its speed is expanding the questions scientists can pursue, from atmospheric behavior to potential treatments for Parkinson’s disease. But faster calculations are also exposing limits elsewhere: laboratory capacity, data storage, electricity costs and access to the machine itself.
+
+Drug discovery researcher Rahul Sen used Prism-1 to model interactions between 4.2 million candidate compounds and a protein implicated in Parkinson’s disease. Six days of computing narrowed the list to 14 compounds for experimental follow-up.
+
+“The experimental team has already tested three and found one that produces the binding profile we were hoping for. It’s a lead. It’s not a drug. But it’s a real lead,” Sen said.
+
+Now, he said, simulations produce candidates faster than biochemistry laboratories can test them.
+
+“Compute has outrun the bench. That’s a new problem. It’s a good problem.”
+
+Sen cautioned that the lead would not become a drug in his professional lifetime, saying drug development takes 15 to 20 years. His team’s next application, meanwhile, will seek time to screen 50 million compounds.
+
+The climate research is already finding uses outside the center. Kowalski said two regional water utilities that participated as research stakeholders are using the model’s output to update drought risk assessments.
+
+Yuna Park, a computational science researcher at Clearview Institute, said Prism-1’s impact is visible in six papers published in 2024 and 2025. Work that would have required a decade of computing time on previous systems was produced in months, she said.
+
+Moving the resulting data poses another challenge. System administrator Grace Tran said the center had to develop new infrastructure because high-resolution simulations generate output too large for conventional storage and transfer systems.
+
+“A single climate run produces 600 terabytes. That’s not a file you email to a colleague,” Tran said.
+
+Power is the system’s main limitation, she said. Prism-1 draws 36 megawatts during peak computation, with annual electricity costs of approximately $9 million at the center’s renewable energy rate.
+
+Open-science users pay no computing fee, but access is competitive. The most recent peer review cycle accepted 28% of applications. Kowalski’s team, which received the largest single allocation in the first year, spent three months preparing its application, including a detailed computing efficiency plan.
+
+Park said the democratization of high-performance computing remains partial: Most qualifying teams do not receive allocations, and smaller institutions lack resources to build the expertise needed for competitive applications.
+
+The center is planning Prism-2 for 2029 and has submitted a design study to the Department of Energy. Yet greater computing capacity does not remove the need for scientific judgment, Kowalski said.
+
+“The machine does the arithmetic. The scientists still have to know what to ask.”

@@ -1,0 +1,19 @@
+**Same electricity use, smaller bill: how a laundromat cut its power costs without using less power**
+
+MEDFORD — Arden Wash used exactly 5,000 kilowatt-hours of electricity in May and again in June, according to bills from Cobalt Municipal Power. Yet the laundromat's total electricity charges dropped from $1,160 to $1,025 — a $135 difference. The bills, reviewed as of July 15, show the answer lies not in how much power the business used, but in when it used it.
+
+Cobalt's commercial tariff charges a flat $20 a month, 12 cents per kilowatt-hour of energy used, and $9 for each kilowatt of "billed peak demand." The energy charge came to $600 in both months, since usage was identical. But billed peak demand fell from 60 kilowatts in May to 45 in June, cutting that portion of the bill from $540 to $405. The totals exclude separately itemized taxes, which were not part of the comparison.
+
+Kilowatt-hours measure electricity accumulated over an entire month. Billed kilowatts measure something different: the rate of use during a single peak stretch. Under Cobalt's tariff, that peak is defined as the highest 15-minute average load recorded on a weekday between 4 and 7 p.m. during the billing period.
+
+"The bill remembers the busiest quarter-hour, even after the machines have gone quiet," said Oren Quill, a utility analyst who reviewed the tariff structure. A short burst of heavy demand — several large dryers running at once, for instance — can set a charge that applies to every day in the month, even if that same equipment runs at low demand the rest of the time.
+
+Arden Wash owner Mara Selt said she installed timers this spring to stagger the start of several large dryers rather than switching them on together. The bills show lower peak demand after the change, though they do not isolate every other factor that could have shifted between months, including weather, customer volume or how machines were used.
+
+Spreading out machine starts does not reduce the total electricity a load requires to dry, Selt and Quill both said. It changes only the shape of demand over time — trimming the highest 15-minute spike without eliminating the energy behind it.
+
+The tradeoff is not free for customers. "The meter rewards spreading things out," Selt said. "A customer may need to be finished before the bus leaves." She said some patrons prefer to start several loads at once because they have limited time at the laundromat, self-service and staffed since 2008 in the same storefront.
+
+Cobalt's residential rate structure does not include a demand charge, meaning the strategy applies only to commercial customers like Arden Wash. The utility can show a business its past interval data, Quill said, but does not guarantee that avoiding one month's peak will produce the same result the next.
+
+Selt said the lower bill has not changed her rent, which includes no automatic reduction tied to utility costs. The bills also do not show whether shifting the timing of the same energy use produced any change in carbon emissions.

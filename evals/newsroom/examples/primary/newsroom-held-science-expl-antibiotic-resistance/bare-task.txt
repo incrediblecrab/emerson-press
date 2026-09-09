@@ -1,0 +1,33 @@
+Superbugs Outpacing Science: Why New Antibiotics Are So Rare
+
+Drug-resistant bacteria are killing an estimated 1.27 million people worldwide each year — and contributing to nearly 5 million more deaths — even as the pipeline of new antibiotics to fight them remains dangerously thin, according to a 2022 Lancet study and infectious disease researchers.
+
+The problem, experts say, comes down to two intertwined crises: bacteria are evolving faster than drugmakers can keep up, and the business of making new antibiotics simply doesn't pay.
+
+**How resistance develops**
+
+Antibiotic resistance is a natural evolutionary process. Bacteria evolve mechanisms to survive a drug's attack — pumping the antibiotic out of the cell, chemically neutralizing it, or altering the very target the drug is designed to hit. This happens with or without human interference.
+
+But overuse and misuse of antibiotics — in people and in agriculture — speeds it up dramatically by creating selection pressure that favors the bacteria that survive treatment. Compounding the problem, a single resistant bacterium doesn't just pass its survival traits to its own offspring. Through a process called horizontal gene transfer, it can hand off resistance genes to entirely unrelated bacterial species.
+
+Some bacteria are especially hard to treat. Gram-negative organisms — including E. coli, Klebsiella and Pseudomonas — have an outer membrane that acts as a second barrier, blocking many antibiotics from reaching their target. Carbapenems, a class of drugs considered a last resort against gram-negative infections, are losing ground to carbapenem-resistant organisms, which the World Health Organization ranks among the most critical public health threats. The WHO's priority pathogen list includes carbapenem-resistant Acinetobacter baumannii in its highest tier.
+
+Six species, known as the ESKAPE pathogens — Enterococcus, Staphylococcus aureus, Klebsiella, Acinetobacter, Pseudomonas and Enterobacter — account for most drug-resistant infections in hospitals.
+
+**A shrinking pipeline**
+
+"We have been relying on modifications of existing antibiotic classes for decades," said Dr. Victor Ogede, an infectious disease researcher at Northgate University. "Truly new mechanisms of action are extraordinarily rare and take 10 to 15 years to develop."
+
+That lag time means the drugs needed to fight infections in 2040 would need to start development now, Ogede said.
+
+Yet the economics discourage exactly that investment. New antibiotics are meant to be used sparingly, to preserve their effectiveness, and are typically taken for only a short course — unlike drugs for chronic conditions that generate steady, long-term revenue. They also compete with older generic antibiotics that can cost pennies per dose. As a result, several large pharmaceutical companies have abandoned antibiotic research altogether, and small biotech firms developing new drugs often run out of money before reaching the market.
+
+Some governments are experimenting with fixes. The United Kingdom is piloting "pull incentives" — market rewards paid when a drug is approved and used, rather than tied to sales volume — and similar legislation has been proposed in the United States.
+
+**Other drivers and defenses**
+
+Agricultural use of antibiotics, particularly as growth promoters in livestock, has significantly fueled global resistance; the European Union has banned that practice, and the U.S. has restricted it. Stewardship rules also vary widely worldwide — some countries require prescriptions, while others sell antibiotics over the counter without restriction.
+
+Surveillance gaps make the picture worse. Ogede said tracking which drugs are failing in hospitals remains inadequate in low- and middle-income countries, where most resistant-infection deaths occur. He added that climate change could compound the crisis by expanding the range of resistant organisms and increasing outbreaks that drive antibiotic use.
+
+In the meantime, doctors are leaning on existing tools: rapid diagnostic tests that identify a bacteria's resistance profile within hours rather than days, allowing more targeted prescribing, and hospital infection-control measures such as hand hygiene and patient isolation — still considered the most evidence-based defense against spread. Experimental approaches, including bacteriophage therapy using viruses that kill specific bacteria, remain unapproved in most countries and limited to compassionate-use cases where standard treatment has failed.

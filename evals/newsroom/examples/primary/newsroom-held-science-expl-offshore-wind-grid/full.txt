@@ -1,0 +1,37 @@
+# Why getting offshore wind power to the grid is so difficult
+
+Building an offshore wind farm is only part of getting its electricity to homes and businesses. The undersea cables, offshore substations and onshore grid upgrades needed to carry that power can cost as much as the turbines themselves.
+
+As of May 28, 2025, those connections remain a constraint on offshore wind development. Equipment shortages, transmission permits and disagreements over costs can delay the delivery of clean electricity even when the turbines are ready.
+
+"The hardest part is not the cable. It is convincing communities, regulators, and grid operators across multiple jurisdictions to agree on who pays for what and where the cables come ashore," said Lena Korhonen, a grid integration engineer at Atlantic Grid Institute.
+
+## Why is the equipment so expensive?
+
+Offshore wind farms generate electricity miles from shore. Moving it over long undersea distances requires equipment beyond the turbines and their foundations.
+
+For cable routes longer than about 60 kilometers, or roughly 37 miles, high-voltage direct current cables lose less energy than alternating current cables. But using direct current requires converter stations at both ends: one converts the turbines' alternating current to direct current, and the other converts it back for the onshore grid. Each station costs hundreds of millions of dollars.
+
+Buying and installing the cables presents another obstacle. Copper and steel price increases, along with high demand, have pushed up cable costs. Some offshore projects have been delayed or canceled partly because of cable procurement challenges. Demand for specialized installation vessels has also exceeded supply as offshore wind development has accelerated globally.
+
+Floating turbines, which allow development in deeper water, add another technical requirement: cables must flex as their platforms move.
+
+## What happens when the cable reaches land?
+
+Reaching shore does not mean reaching a grid ready to accept the electricity.
+
+Coastal substations are often built to serve existing electricity demand. They may need upgrades or replacements to handle large amounts of offshore generation. Transmission lines must then carry that power from the landing point to places where it can be used, potentially crossing populated areas and requiring rights-of-way.
+
+Permitting those lines is often slower than building the offshore project. In some cases, transmission delays have left wind farms waiting years to deliver full power.
+
+Korhonen said the U.S. interconnection queue, the list of projects awaiting studies to determine how they can connect to the grid, is a major bottleneck, with multiyear waits common. Separate state procurement programs in the Northeast also fragment demand and make regional grid planning difficult, she said.
+
+## How can the grid use the power reliably?
+
+Wind output changes with the weather. The grid must accommodate those changes through storage, backup generation or connections to larger areas where wind may be available when local conditions are calm.
+
+Offshore wind farms must also meet technical standards, including staying connected during grid disturbances and providing reactive power support. Meeting those requirements adds inverter technology and cost.
+
+Sharing infrastructure can reduce some construction needs. A meshed offshore grid connects multiple wind farms before bringing their electricity ashore, reducing the number of cable landings. Several European countries are developing such a network in the North Sea, but it requires international agreements on capacity allocation and cost sharing.
+
+For clean energy, the consequence is practical: more turbines cannot deliver their full benefit without enough grid capacity to carry and accommodate their output. Delays in building those connections can mean years of waiting for the electricity they were built to supply.

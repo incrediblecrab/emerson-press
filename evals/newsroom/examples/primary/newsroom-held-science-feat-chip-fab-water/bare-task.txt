@@ -1,0 +1,39 @@
+# Arizona chip plant raises a desert question: Who gets the water?
+
+For 38 years, Jack Dunbar has farmed 3,200 acres in Arizona’s Sonoran Valley. In 2022, his water allocation was cut 18% to help meet downstream Colorado River commitments. Over the past three years, he has reduced his alfalfa acreage by 600 acres.
+
+Now, Nexus Semiconductor is building a chip factory in the valley that will consume up to 14 million liters of ultra-pure water a day at full production.
+
+“I gave up water so the valley could survive. Now they're giving it to a chip factory. That's a choice somebody made. Nobody asked me,” said Dunbar, 64.
+
+Nexus broke ground in January on a project state economic development officials say represents $6.8 billion in direct investment. The facility promises 2,400 jobs with wages averaging $78,000 a year, in a county where median household income is $48,000. The figures measure different things — individual wages and household income — but illustrate the scale of the economic opportunity.
+
+They also sharpen a debate about allocating scarce water in a valley that averages 28 centimeters of rainfall annually and depends on Colorado River allocations reduced three times since 2019.
+
+State officials say the plant could anchor a semiconductor cluster and attract more companies. They describe water as a solvable engineering problem, not a reason to forgo investment.
+
+Nexus’s state water allocation is contingent on achieving 80% recycling efficiency within two years of full production, a target the company says the facility is designed to meet.
+
+Sofia Reyes, Nexus’s water management director, said the facility’s closed-loop ultra-pure water system recycles 83% of water used in chip rinsing. The remainder evaporates or is treated to municipal discharge standards. That chip-rinsing figure describes a specific process, rather than establishing the plant’s overall recycling performance.
+
+“We are not a conventional industrial water user. Our economic output per liter of water consumed is higher than virtually any other use, including agriculture. That comparison matters in a scarcity context,” Reyes said.
+
+Reyes said proximity to semiconductor supply chain partners in Phoenix helped determine the location. Water was a known risk that Nexus engineers said they could manage.
+
+Mira Espinoza, a water policy researcher at Sonoran University, said the economic-value argument is real but incomplete. It leaves out the cultural and food security value of agricultural water rights that predate the facility, she said.
+
+“The state is betting that new industrial users will be more efficient than legacy agriculture. Historically, that bet has sometimes not paid off,” Espinoza said.
+
+She called the recycling target technically achievable but operationally challenging, noting that chip facilities often run below target efficiency during ramp-up and maintenance.
+
+The permit requires quarterly water use reporting and allows regulators to reduce Nexus’s allocation if recycling efficiency falls below 75%. It does not specify what happens to the facility if regulators impose that reduction.
+
+A state water official said the recycling requirement is stricter than any previously applied to an Arizona industrial user. The official declined to comment on enforcement precedent.
+
+Nexus has also agreed to fund restoration of 4,200 acre-feet of Colorado River flows through a conservation-purchase program. The supplied agreement figure has no stated time frame, limiting comparison with projected daily plant consumption.
+
+Dunbar says he is not opposed to semiconductor manufacturing in principle, but questions its place in the desert Southwest. He is studying whether drip-irrigated specialty crops could work on some of his land, a transition he calls expensive and uncertain. Two neighbors have sold to residential developers in the past year.
+
+For Espinoza, those choices are inseparable from the engineering.
+
+“Scarcity is not only a technical problem. It is a question of who gets less.”

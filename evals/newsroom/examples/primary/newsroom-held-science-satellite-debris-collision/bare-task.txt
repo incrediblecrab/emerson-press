@@ -1,0 +1,27 @@
+Debris From Old Rocket Destroys Communications Satellite, Raising Alarm Over Crowded Orbit
+
+A defunct rocket stage that had circled Earth for 18 years slammed into an active communications satellite Tuesday, destroying the spacecraft and scattering thousands of pieces of debris in a busy orbital corridor, officials said.
+
+The collision occurred June 11 at an altitude of 780 kilometers, when the abandoned upper stage of a Protek-9 rocket, launched in 2006, struck Orion-7, a satellite operated by Transcontinental Communications Corp. (TCC), according to U.S. Space Surveillance Coordinator Dr. James Folau.
+
+Folau estimated the impact created about 230 trackable fragments and roughly 4,000 smaller pieces too small to track. He said the resulting debris cloud poses an elevated collision risk for satellites operating between 750 and 820 kilometers for the next two to five years, until it disperses.
+
+Orion-7, operational since 2018, served as a backup relay for TCC's North Atlantic broadband network. The company said its loss cuts regional network capacity by 8%.
+
+"We have service continuity from our active constellation, but the margin for outages in the North Atlantic corridor has narrowed significantly," TCC CEO Nora Chang said. "We are accelerating a replacement satellite launch."
+
+That replacement is not expected to launch before 2027, though TCC has arranged a lease with a partner operator to help cover the interim capacity gap, the company said. TCC operates 18 satellites across multiple orbital regimes, and Orion-7 was its oldest active asset. The company estimates its financial exposure from the loss at $210 million, covering replacement costs and lost revenue; its insurance claim has not yet been resolved.
+
+At least 14 satellites operated by four companies orbit in the affected altitude band. Their operators received conjunction alerts within six hours of the collision. The European Space Agency said it was adjusting the orbits of two research satellites in the band as a precaution.
+
+Experts said the collision was not predicted. Space situational awareness analysts said the conjunction-warning system had not flagged the Protek-9 stage and Orion-7 as a risk pair in the 72 hours before impact. Folau said the miss underscores the limits of current tracking systems, which struggle to detect and monitor objects smaller than 10 centimeters in diameter.
+
+The Protek-9 stage had no active maneuvering capability and had not been expected to decay from orbit for at least another decade. No organization has claimed ownership responsibility for the object, and its country of registration is not public record. Debris from the stage is expected to take 80 to 120 years to fall back into the atmosphere and burn up.
+
+Folau said the incident is the fourth confirmed satellite-on-debris collision since 2009, when a defunct military satellite and an active commercial spacecraft collided at high speed in low Earth orbit, creating what was then the largest debris field in orbital history.
+
+The collision has renewed attention on the absence of any international mechanism to compel satellite operators to remove defunct spacecraft and rocket stages from orbit. Current U.S. guidelines recommend that satellites in low Earth orbit be deorbited within five years of the end of their missions, but the guidelines are voluntary and not legally binding.
+
+An international working group has been drafting voluntary deorbit guidelines since 2021, but no binding treaty governing space debris currently exists.
+
+With thousands of active and defunct objects sharing increasingly crowded orbital lanes, officials said Tuesday's collision is likely to intensify calls for stronger tracking systems and clearer international rules on removing space junk — even as the immediate debris field continues to threaten satellites passing through the affected band in the years ahead.

@@ -1,0 +1,29 @@
+Drafting an AP-style explainer using only the supplied facts, aiming for 450–650 words with one headline.# Explainer: Why New Antibiotics Aren't Keeping Pace With Resistant Bacteria
+
+Bacteria that no longer respond to standard antibiotics kill an estimated 1.27 million people worldwide each year and are a contributing factor in 4.95 million deaths, according to a 2022 study published in The Lancet. Scientists say the trend has outrun the supply of new drugs — and the reasons are both biological and economic.
+
+**How resistance develops**
+
+Antibiotic resistance is a natural evolutionary process. When bacteria are exposed to a drug, most die, but any that carry a survival mechanism can multiply while competitors are wiped out. Those mechanisms include pumping the antibiotic back out of the cell, breaking it down chemically, or altering the molecular target the drug is designed to attack.
+
+The process happens with or without human action, but overuse and misuse of antibiotics — in people and in agriculture — speeds it up by creating selection pressure that favors resistant strains. A single resistant bacterium can also pass its resistance genes to entirely unrelated species through a process called horizontal gene transfer, spreading the trait far beyond its original host.
+
+Gram-negative bacteria, a group that includes E. coli, Klebsiella and Pseudomonas, are especially hard to treat because an outer membrane acts as a second barrier that blocks many drugs from reaching their target. Carbapenem antibiotics are considered a last resort against these infections, but the World Health Organization has classified carbapenem-resistant organisms — including Acinetobacter baumannii — as a critical threat. Along with Enterococcus, Staphylococcus aureus and Enterobacter, these bacteria make up what researchers call the ESKAPE pathogens, responsible for most drug-resistant infections in hospitals.
+
+Agricultural use of antibiotics as livestock growth promoters has also driven resistance globally. The European Union has banned that practice, and the United States has restricted it, though prescription rules still vary widely by country; some nations sell antibiotics over the counter without restriction.
+
+**Why so few new drugs are coming**
+
+"We have been relying on modifications of existing antibiotic classes for decades," said Dr. Victor Ogede, an infectious disease researcher at Northgate University. "Truly new mechanisms of action are extraordinarily rare and take 10 to 15 years to develop."
+
+The economics work against new antibiotics from the start. Unlike drugs taken daily for chronic conditions, new antibiotics are used sparingly to preserve their effectiveness and taken only for short courses — limiting sales volume. They also compete with older generic drugs that cost cents per dose. Several large pharmaceutical companies have exited antibiotic research altogether, concluding the expected return does not justify development costs, and small companies developing promising compounds often cannot stay afloat long enough to reach market.
+
+Some governments are testing a different approach: pull incentives, which pay a reward when a new antibiotic is approved and used rather than tying revenue to sales volume. Such programs are being piloted in the United Kingdom and proposed in U.S. legislation. Ogede said resistance surveillance — tracking which drugs are failing in hospitals — remains inadequate in low- and middle-income countries, where most deaths from resistant infections occur, and that climate change may worsen the problem by expanding the range of resistant organisms and increasing outbreaks that drive antibiotic use.
+
+Because of the long development timeline, Ogede said, drugs needed by 2040 would need to enter development now.
+
+**What's working now**
+
+Absent a wave of new drugs, hospitals are leaning on tools already in hand. Infection control measures — hand hygiene, isolating infected patients and targeted prescribing — remain the most evidence-based way to slow the spread of resistant organisms, and rapid diagnostic tests that identify a bacterial species and its resistance profile within hours, rather than days, let doctors prescribe the right drug sooner instead of defaulting to broad-spectrum antibiotics.
+
+Bacteriophage therapy, which uses viruses that target specific bacteria, is being used in compassionate-use cases when antibiotics have failed, though it is not an approved treatment in most countries.

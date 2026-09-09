@@ -1,0 +1,31 @@
+**What Is Dark Matter? Scientists Are Still Chasing an Invisible Universe**
+
+Most of the universe's mass appears to be invisible, and scientists still don't know what it's made of.
+
+That substance is called dark matter — a name given to unseen mass that astronomers have inferred only through its gravitational effects. Its physical nature has never been established, even after nearly a century of searching.
+
+**How scientists know it's there**
+
+The idea traces to the 1930s, when astronomers surveying the velocities of galaxies inside galaxy clusters found the galaxies moving too fast to be held together by the gravity of visible matter alone. Something unseen had to be supplying extra gravitational pull.
+
+Stronger evidence has followed. In spiral galaxies, stars near the outer edge orbit at nearly the same speed as stars close to the center — a pattern called a rotation curve. Under the gravity of visible matter alone, outer stars should orbit much more slowly. The observed speeds require far more mass than telescopes can see.
+
+Space-based measurements of the cosmic microwave background, the faint afterglow of the Big Bang, have let scientists calculate the universe's composition with precision: About 27% of its total energy and mass is dark matter, and just 5% is ordinary matter — the atoms that make up stars, planets and people. The remaining 68% is dark energy, an even more mysterious component that drives the universe's expansion. Together, the three form what physicists call the standard cosmological model.
+
+Additional support comes from gravitational lensing, in which the light of distant galaxies bends as it passes intervening mass. Maps built from that bending match what the standard model predicts. Computer simulations built on the same model also reproduce the large-scale structure of the universe, including the filaments and voids that separate galaxy clusters.
+
+"We know dark matter is there with the same confidence we know the floor is there when we step on it," said Dr. Anya Reinholt, a physicist at the Sandover Physics Institute. "We cannot see it. We feel the effect."
+
+**Why it's so hard to detect**
+
+Leading candidates include WIMPs — weakly interacting massive particles, theorized to interact with ordinary matter through gravity and the weak nuclear force but not through electromagnetism, which is why they wouldn't emit or reflect light. Despite decades of searching, no WIMP has been directly detected. Large underground detectors, including the Xenon-1T and LUX-ZEPLIN experiments, use liquid xenon that would flash light and produce a tiny electrical signal if a dark matter particle collided with it. The detectors sit deep underground, shielded by lead, water and rock, to block cosmic rays that could mimic a real signal. As of 2025, no detector has recorded a confirmed dark matter signal; each null result narrows the range of possible particle properties without ruling out dark matter altogether.
+
+Other candidates include axions, extremely light hypothetical particles; sterile neutrinos, a theorized heavier sibling of known neutrinos; and primordial black holes left from the early universe. Space telescopes have also searched, without confirmed success, for gamma rays that WIMPs might produce if they collided and annihilated each other.
+
+A rival approach, known as modified Newtonian dynamics, or MOND, adjusts the equations of gravity instead of adding unseen mass. It can fit some galaxy rotation data, Reinholt said, but not all cluster observations — including the Bullet Cluster, where mass detected through gravitational lensing is separated from most of the hot, X-ray-emitting gas, a mismatch MOND struggles to explain.
+
+The repeated null results, Reinholt said, have pushed theorists toward lighter, more weakly interacting particles — sometimes called dark photons or fuzzy dark matter — that today's detectors aren't built to find.
+
+The Apex Dark Matter Observatory is planning an upgraded xenon detector meant to be 40 times as sensitive as its current instrument, with construction expected to begin in 2027 if funding is secured.
+
+Reinholt said the field has reached an important juncture: Either dark matter turns up in the next generation of experiments, or physicists will need to rethink either their detector strategy or the assumptions behind the standard model itself.

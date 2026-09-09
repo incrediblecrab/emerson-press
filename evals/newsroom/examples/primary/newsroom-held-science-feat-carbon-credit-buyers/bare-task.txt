@@ -1,0 +1,39 @@
+# Mangrove credit audit puts corporate carbon-neutral claims under scrutiny
+
+Lighthouse Shipping Group bought 420,000 carbon credits to support its claims of carbon neutrality in 2022 and 2023. Now it has pledged to replace them after an audit found that the mangrove forests behind the credits had been legally protected for years before the program began issuing them.
+
+The finding has raised questions not only about the Coastal Mangrove Carbon Alliance, which sold the credits, but also about how closely corporate buyers examined the environmental promises they used to market themselves.
+
+Between 2018 and 2024, the alliance issued 1.8 million credits representing claimed carbon sequestration in Tambela Province’s mangrove forests. Sold for $18 to $45 each, the credits generated an estimated $54 million in revenue. A VCMIO audit found that the forests claimed as protected had already been covered by national conservation law since 2011.
+
+The distinction matters because the dispute is not about whether mangroves store carbon. It is about whether the program provided protection that would not otherwise have existed.
+
+Ruth Nkosi, a carbon market transparency advocate at the International Carbon Accountability Center, said the underlying science of mangrove carbon sequestration is sound. She described the fraud as being in the “additionality” claim — the assertion that protection was newly provided — rather than in the forests’ ability to store carbon.
+
+For Lighthouse, the audit has exposed a gap between buying verification and establishing what that verification covered.
+
+Marcus Ferreira, the maritime company’s sustainability director, said Lighthouse conducted due diligence through its certification vendor and was not told about the mangroves’ legal protection.
+
+“We paid for verified carbon reduction. We now know the verification was inadequate. We’re responsible for the money we spent. We are not responsible for a fraud we had no way to detect,” Ferreira said.
+
+An investigative journalism team that reviewed Lighthouse’s original due diligence records, however, found no evidence that the company asked whether the forests were independently protected before enrollment in the program.
+
+“The buyers’ defense is ‘we were defrauded.’ But due diligence in this market has been aspirational, not operational. Most buyers never asked the hard questions,” Nkosi said.
+
+She said the case illustrates a structural problem: Entities paid to certify credits have a financial relationship with sellers, not buyers.
+
+Lighthouse has committed to buying replacement credits from a VCMIO-verified program and excluding the disputed credits from its emissions claims. Ferreira said the company began reviewing all its credit purchases internally in July and will buy no new voluntary credits until that review is complete.
+
+Its 2022 annual report included a graphic labeling the company “carbon neutral.” Lighthouse has removed that designation from its website pending the review. Ferreira declined to quantify replacement costs, and the company has not disclosed whether it will pursue legal recourse.
+
+Securities analysts said reputational risks for companies that prominently marketed carbon neutrality using disputed credits may exceed replacement costs.
+
+Other buyers are challenging the audit. Four companies have disputed its finding, and two have hired independent auditors to examine their purchases.
+
+The alliance’s founder, Paulo Avila, has not responded to media inquiries since the audit’s release. The company’s website went offline in July.
+
+VCMIO is examining at least six similar mangrove and forest protection programs in Tambela Province; Avila’s was the largest. It says buyers demonstrating good-faith due diligence may receive time to replace disputed credits, but it has not published that standard.
+
+New mandatory standards planned for early 2026 will require developers to document what would have happened without their projects, rather than simply claim additional protection.
+
+“The question is whether the response is serious reform or the appearance of it,” Nkosi said.

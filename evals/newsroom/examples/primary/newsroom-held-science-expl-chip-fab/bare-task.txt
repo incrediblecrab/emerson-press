@@ -1,0 +1,43 @@
+# Why building chip factories takes more than billions of dollars
+
+The challenge of spreading semiconductor production across more countries is not simply finding money for new factories. It is reproducing an intricate network of equipment, materials, infrastructure and expertise that takes years to build.
+
+As of March 25, 2025, Taiwan Semiconductor Manufacturing Co. and Samsung together manufacture the vast majority of the world’s most advanced chips. TSMC alone produces about 90% of chips below 5 nanometers.
+
+That concentration, especially in Taiwan, poses a risk to global supply chains. A military, seismic or operational disruption could affect supplies of chips used in electronics, vehicles, medical devices and defense systems. But reducing that dependence is far harder than constructing buildings elsewhere.
+
+## Why is production so concentrated?
+
+The barriers to entering advanced chip manufacturing are enormous — and remain high even after a factory opens.
+
+A leading-edge fabrication plant, or fab, costs $15 billion to $25 billion and takes three to five years to construct and commission. Staying competitive then requires continuous investment in equipment and processes to keep pace with Moore’s Law, the observation that transistor density doubles roughly every two years.
+
+The equipment itself comes from a highly concentrated supply chain. Only one company, ASML of the Netherlands, produces the extreme ultraviolet lithography machines used to print the smallest chip features. Each costs approximately $200 million.
+
+Expertise is another barrier. James Ren, a semiconductor engineer at Pacific Technology Institute, said the accumulated knowledge of thousands of engineers takes a decade or more to develop and cannot be transferred quickly.
+
+Together, those demands make established manufacturing operations difficult to replicate.
+
+“A leading-edge fab is not a building that makes things. It is a precision instrument at the scale of a city block. It cannot simply be moved or replicated by following a recipe,” Ren said.
+
+## What makes a new factory so difficult?
+
+Advanced fabs manufacture transistor features measured in nanometers. A nanometer is one-billionth of a meter, roughly 10 atomic diameters. Working at that scale requires ultra-pure chemicals and water, vibration-controlled floors and cleanroom air cleaner than that in any hospital operating room.
+
+The supporting infrastructure is substantial. A large fab uses 10 million to 20 million liters of ultra-pure water daily, making water infrastructure particularly important in arid locations. A leading-edge plant draws 150 to 300 megawatts of electricity, comparable to a small city.
+
+Qualified workers are not readily available everywhere. Training takes years. TSMC reported difficulty finding enough qualified technicians for its Arizona fab and extended training to bring workers up to its standards.
+
+Geography also presents risks that engineering must address. Taiwan is near the Pacific Ring of Fire. TSMC fabs have seismic isolation systems and have maintained operations through major earthquakes, but seismic risk remains.
+
+## Can government funding solve the problem?
+
+The U.S. CHIPS and Science Act, passed in 2022, allocated $52 billion to encourage domestic semiconductor manufacturing. Several companies announced new fab projects using the funding.
+
+Ren said that investment addresses capital costs, but not workforce and supply chain challenges. New U.S. fabs will still depend on imported chemicals and equipment.
+
+No single country produces all the raw materials chipmaking requires, including gallium, germanium, neon gas and dozens of specialized chemicals. Moving fabrication therefore does not eliminate international dependence.
+
+Nor does every application require the most advanced technology. Fabs producing chips at 28 nanometers or larger, used in automobiles and industrial equipment, cost $3 billion to $5 billion and are more broadly buildable. The 2021 chip shortage affected these chips as much as leading-edge ones.
+
+Diversifying production means more than adding cutting-edge factories: It requires workers, utilities and dependable supplies across multiple kinds of chips.

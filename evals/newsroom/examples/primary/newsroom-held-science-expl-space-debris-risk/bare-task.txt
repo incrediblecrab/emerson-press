@@ -1,0 +1,45 @@
+# Space debris threatens satellites as cleanup efforts struggle to catch up
+
+Space debris is already forcing spacecraft to dodge potential collisions, and the danger extends well beyond the largest objects visible to tracking networks. Even a fragment about the size of a centimeter can disable a satellite at orbital speed.
+
+As of June 18, 2024, efforts to control the problem include tighter disposal deadlines, collision warnings and experimental cleanup technology. But removing dangerous objects remains an emerging capability, while satellite launches and new debris continue to add to the challenge.
+
+## How serious is the threat?
+
+Low Earth orbit, roughly 200 to 2,000 kilometers above Earth, contains approximately 27,000 tracked pieces of debris larger than 10 centimeters and an estimated 100 million pieces smaller than 1 centimeter.
+
+Much of that material consists of defunct satellites, spent rocket stages and fragments from breakups and collisions. Several antisatellite weapons tests over the past two decades have each added thousands of tracked fragments.
+
+Size alone does not indicate the danger. A 1-centimeter fragment traveling at orbital speed carries enough kinetic energy to disable a satellite. A 10-centimeter piece can destroy one.
+
+Larger collisions can generate thousands of fragments, raising the prospect of a self-sustaining cascade: Each collision produces enough debris to cause further collisions. Researchers have described that risk since the late 1970s. Such a cascade could make a particular orbital altitude unusable; it does not mean all of space would become inaccessible at once.
+
+“We are in a race between the debris generation rate and our ability to develop norms and technology to control it. Right now, the debris is winning,” said Amara Solis, a space policy researcher at Westfield Space Policy Center.
+
+## How are spacecraft protected?
+
+The International Space Station maneuvers approximately three times a year to avoid tracked debris. Astronauts have also sheltered in attached spacecraft during several predicted close encounters.
+
+Tracking is still dominated by the U.S. military’s Space Surveillance Network. Thousands of warnings about predicted close approaches are issued annually, and satellite operators typically respond when the estimated collision probability exceeds 1 in 10,000.
+
+But debris smaller than 10 centimeters cannot currently be tracked individually from the ground. For that material, spacecraft rely on statistical risk assessments rather than warnings about specific objects.
+
+The station and some military satellites also use Whipple shields, double-hull structures designed to fragment small incoming debris before it reaches the main hull. That protection adds weight and cost.
+
+## Can the debris be cleared?
+
+Atmospheric drag helps, but altitude matters. Debris below 600 kilometers reenters the atmosphere within years, while objects above 800 kilometers can remain for centuries.
+
+The Federal Communications Commission and some international bodies now require low-orbit satellites to deorbit within five years after their missions end. Compliance and enforcement remain inconsistent.
+
+Active removal would send spacecraft to capture and deorbit defunct objects. Japanese company Astroscale has demonstrated the approach at small scale, but no commercial removal of a large object has been completed.
+
+The European Space Agency’s ClearSpace-1 mission is planned for launch in 2026 to grapple and deorbit a 113-kilogram rocket adapter left in orbit in 2013. Another proposed technique, ion beam shepherding, would slow debris without touching it. It has been tested in laboratory simulations, not in orbit.
+
+## What remains unresolved?
+
+Large constellations, including those operated by Orbitex, have added thousands of satellites since 2019, expanding the collision surface in low Earth orbit.
+
+Proposals to make operators pay into debris removal funds have not been adopted by any country. Solis warned that expanding commercial and national activity complicates efforts to establish enforceable international rules.
+
+“Every new actor in space makes the governance problem harder to solve,” she said.

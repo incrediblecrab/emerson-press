@@ -1,0 +1,31 @@
+# Investigation opens into four-state outage that left 3.4 million customers without power
+
+The National Grid Reliability Office opened a formal investigation July 8 into a cascading grid failure that cut power to 3.4 million customers across four states, examining how an apparent vegetation maintenance lapse escalated into the region’s largest outage since 2011.
+
+The June 29 outage lasted an average of seven hours, with some rural areas without electricity for up to 18 hours. Three deaths have been tentatively attributed to the outage, including two people whose home medical equipment lost power, but investigators have not confirmed causation.
+
+Preliminary findings indicate that a high-voltage transmission line owned by Stonegate Power tripped near Millbrook Junction after contacting overgrown vegetation in 95-degree heat.
+
+Stonegate Vice President Martin Lund acknowledged that vegetation management inspections in the affected corridor were last conducted 22 months before the incident, exceeding the required 18-month interval. The utility did not dispute the gap but said the corridor had been listed for an earlier inspection that was delayed by winter weather.
+
+The investigation will examine whether regulators knew of Stonegate’s failure to meet vegetation management requirements and whether existing penalties are sufficient to deter future lapses.
+
+Investigators also will examine why the grid’s protective systems did not contain the failure before it spread.
+
+“Automatic protection systems did exactly what they were designed to do — they protected equipment. What we’re examining is why the cascade wasn’t contained earlier in the sequence,” said Clara Osei, director of the National Grid Reliability Office.
+
+The initial line trip caused a rapid drop in grid frequency, triggering automatic protective relays at 14 neighboring substations to disconnect within 90 seconds, according to preliminary findings. The resulting imbalance between electricity generation and demand spread the outage from a single zone across a multistate region faster than operators could intervene manually.
+
+Grid frequency in North America is maintained at 60 hertz. Deviations of as little as 0.5 hertz can trigger automatic equipment disconnections.
+
+To restore service, operators manually restarted generation sources in sequence to avoid a second cascade. Most urban customers had power back within four hours, though restoration took substantially longer in some rural areas.
+
+Emergency generators at 12 hospitals in the affected area activated automatically. One hospital reported a brief generator startup failure that was resolved within six minutes.
+
+Economic losses, including spoiled food, lost productivity and emergency response costs, exceed $200 million, according to a preliminary industry estimate.
+
+Stonegate is the region’s largest utility, operating about 5,200 miles of transmission lines across five states. Industry analysts said vegetation management was responsible for more than a third of all major transmission outages over the past decade.
+
+The investigation is expected to take six to nine months. The reliability office can impose fines of up to $1 million per day per violation and require utilities to submit corrective action plans within 60 days of a formal investigation finding.
+
+Federal law prohibits utilities from passing investigation-related fines directly to ratepayers, though legal interpretations of that rule have varied.

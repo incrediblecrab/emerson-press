@@ -1,0 +1,49 @@
+# Deep-sea mining promises battery metals, but environmental risks divide nations
+
+Deep-sea mining could open a new source of metals used in electric vehicles and electricity storage. It would also disturb ocean ecosystems that scientists have barely documented and that may take centuries to recover.
+
+As of May 15, 2025, the debate centers on whether demand for those minerals justifies commercial extraction before researchers can adequately assess the environmental costs. More than 30 nations and over 700 marine scientists have called for a moratorium pending better environmental assessment.
+
+## What is deep-sea mining?
+
+Deep-sea mining is the commercial extraction of mineral deposits from the ocean floor, typically at depths greater than 1,000 meters, or about 3,300 feet.
+
+Its primary targets are polymetallic nodules: potato-sized rocks containing manganese, nickel, cobalt and copper. They form over millions of years on abyssal plains.
+
+One major area of interest is the Clarion-Clipperton Zone in the Pacific Ocean. The abyssal plain covers about 1.7 million square miles and contains an estimated 340 million metric tons of nickel and 290 million metric tons of copper, among other metals.
+
+Other targets include seafloor massive sulfide deposits near hydrothermal vents, which contain high concentrations of copper, zinc, gold and silver. Cobalt-rich ferromanganese crusts also form on the flanks of underwater mountains called seamounts.
+
+## Why are the minerals valuable?
+
+Metals found in seabed deposits are used in rechargeable batteries for electric vehicles and grid storage. Growing demand has made those reserves commercially attractive.
+
+Proponents argue that seabed mining would have a smaller land footprint than terrestrial mining and avoid some human rights and deforestation concerns associated with extraction on land.
+
+Terrestrial nickel mining is concentrated in Indonesia, the Philippines and Russia. Cobalt mining is concentrated in the Democratic Republic of Congo, where labor standards and conflict financing have drawn international scrutiny.
+
+Recycling metals from retired electric vehicles could eventually reduce demand for newly mined material. But a recycling industry large enough to meet projected demand remains at least a decade away.
+
+## What are the environmental concerns?
+
+Collecting nodules would disturb surface sediment, generating plumes that can spread hundreds of kilometers and smother filter-feeding organisms. Discharges of fine sediment and processed water would also enter the water above mining operations, with largely unknown effects on mid-water species.
+
+Mining near hydrothermal vents would directly destroy habitat supporting unusual food webs that depend on mineral-rich hot water.
+
+“The abyssal plain looks like a desert but it is not. It is a slow ecosystem. Recovery from disturbance on these timescales is measured in centuries, not years,” said Elise Nakamura, a marine biologist at Pacific Ocean Science Center.
+
+Opponents warn that species could disappear before scientists discover them. Surveys in mining contract areas have already found hundreds of new species.
+
+Nakamura said permitting models rely on limited baseline data because the areas have rarely been studied. “We are being asked to evaluate a risk we cannot fully quantify.”
+
+## Who decides whether mining can proceed?
+
+The International Seabed Authority, an intergovernmental body governing mineral rights in international waters, has issued exploration licenses but no commercial extraction license.
+
+Nauru accelerated the process in 2021 by invoking a rule requiring the authority to complete a mining code within two years. That deadline passed without a finalized code.
+
+The authority is funded partly by royalties from exploration licenses, creating a potential conflict between its roles as promoter and regulator.
+
+Some battery manufacturers, including several major automakers, have committed not to use deep-sea minerals because of environmental uncertainty.
+
+For Nakamura, the unresolved question is whether the ecological services provided by abyssal plains outweigh the nodules’ mineral value. Available science, she said, cannot yet answer it.

@@ -1,0 +1,39 @@
+# Why a 20% assessment increase can mean a 4% rise in city taxes
+
+A 20% increase in a home's taxable assessment does not necessarily mean a 20% increase in its city property-tax bill. In Aldercove's example, a lower tax rate limits the increase to 4%.
+
+The city sent new property assessments in August alongside a council-approved reduction in the city tax rate for the next billing year. The rate falls from $1.50 to $1.30 per $100 of taxable assessed value.
+
+Those two changes work in opposite directions: A higher taxable value increases the amount subject to tax, while a lower rate reduces the charge for each $100 of that value. The resulting city bill depends on both.
+
+"The assessment and the rate are two parts of one multiplication, set through different decisions," finance director Oren Fenn said.
+
+## How the calculation works
+
+The city's supplied example starts with a home whose taxable assessment rises from $200,000 to $240,000. That is a $40,000 increase, or 20%.
+
+At the old assessment and rate, dividing $200,000 by 100 and multiplying by $1.50 produces a city charge of $3,000. At the new assessment and rate, dividing $240,000 by 100 and multiplying by $1.30 produces a charge of $3,120.
+
+The difference is $120. Dividing that increase by the old $3,000 charge gives a 4% increase in the city tax bill, rather than 20%.
+
+The values in that calculation are taxable assessments after applicable adjustments. They are not estimates of cash a homeowner has received.
+
+For homeowner Tera Moss, that distinction matters. She said her wages did not rise when her home's assessed value did.
+
+"The house may have a bigger number on paper, but I still pay the bill from the same paycheck," Moss said.
+
+## What the example does not show
+
+The $3,000-to-$3,120 comparison covers only the city charge. County and school charges appear separately, and those authorities have not all finalized their rates as of Aug. 31. The example therefore is not a complete forecast of the owner's combined property-tax bill.
+
+The city assessor also says assessment changes vary by property. The 20% increase is an example, not an increase assigned to every owner. The reporting record provides no estimate of how many households will receive a lower combined bill.
+
+Aldercove conducts a full assessment review every four years rather than valuing every property from a new sale each year. Assessments estimate property values; the elected council sets the city tax rate through its budget process.
+
+A lower rate also does not mean the city will collect less overall. The city budget calls for a larger total levy — the amount raised through the tax — because the aggregate taxable base has grown. Some of that growth comes from newly completed buildings, not solely from higher values on existing homes.
+
+## What owners can check
+
+The city's account calculator uses the adopted city rate and labels other authorities' unfinished charges as unavailable. It can help owners calculate the city portion, but it cannot yet provide all the charges needed for a combined-bill forecast.
+
+Owners questioning their valuation can consult the review process explained in the assessor's notice. That process addresses valuation; it does not itself change the tax rate adopted by the council.

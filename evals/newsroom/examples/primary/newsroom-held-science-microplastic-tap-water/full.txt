@@ -1,0 +1,33 @@
+# Study finds microplastics in 89% of tap water samples from 1,200 U.S. households
+
+Microplastic particles were found in 89% of tap water samples collected from 1,200 households across 38 states, according to a study published Jan. 30, 2025, in Environmental Science Reports.
+
+The study documented widespread detection but did not establish what the findings mean for human health. Concentrations ranged from 12 to 930 particles per liter, with a median of 74 particles per liter.
+
+The United States has no regulatory limit for microplastics in drinking water. The Environmental Protection Agency, which has listed microplastics as a research priority since 2022, said it would review the findings as part of its ongoing research program. It expects to publish a risk assessment framework by 2027.
+
+"Microplastics are in the water supply more broadly than previous spot surveys suggested," said lead researcher Yolanda Kimura of the National Freshwater Institute. "What we do not yet know is what, if any, health consequence follows from chronic low-level ingestion."
+
+The study found no statistically significant difference in concentrations between water treated by large municipal systems and water from small community wells. The authors described that result as unexpected.
+
+Eleven of the 1,200 households used well water without any municipal treatment. All 11 had detectable microplastic levels.
+
+The highest individual reading, 930 particles per liter, came from a household connected to a large municipal system in the Northeast. The authors said the sample was an outlier and did not indicate that concentrations were systematically higher in that region.
+
+Samples with the highest concentrations came from households with plastic plumbing supply lines installed after 2010. That association did not establish that the lines caused the higher readings. The particles were predominantly polyethylene and polypropylene, consistent with plumbing and packaging sources, according to the study.
+
+Researchers collected samples in spring and autumn between 2022 and 2024. Kimura said the study used infrared spectroscopy to identify plastic polymer types. Earlier studies relied on visual identification, which may have undercounted smaller particles, she said.
+
+Francis Lind, a toxicologist who was not affiliated with the study, said evidence about the health effects of microplastics in drinking water remains inconclusive.
+
+"Animal studies suggest effects at high concentrations, but human epidemiological data is still limited," Lind said. "That gap needs to close before we can establish a standard."
+
+Lind said public health research should prioritize determining whether particles smaller than 1 micrometer in diameter, known as nanoplastics, can cross cellular barriers. Larger particles are likely excreted, Lind said.
+
+In laboratory testing, reverse osmosis filters removed more than 95% of detected particles, while standard carbon-block filters removed approximately 60%. Those findings measure particle removal, not whether filtration reduces a health risk. Bottled water was not included in the study.
+
+The American Water Works Association, a utility trade group, said its members were reviewing the study. Existing treatment processes were designed for known contaminants, not plastic particles, the group said.
+
+Congress has not passed legislation requiring microplastic monitoring or treatment standards. Two bills addressing the issue remain in committee.
+
+The National Freshwater Institute received funding from the EPA and two environmental foundations. No industry funding was disclosed.

@@ -1,0 +1,27 @@
+**Why Scientists Are Chasing a Superconductor That Works at Room Temperature**
+
+Electricity loses power every time it moves. Push current through a copper wire, and some of that energy escapes as heat — the same principle that makes a toaster glow. Physicists have long known a way around this: superconductors, materials that carry electrical current with zero resistance once cooled below a critical temperature.
+
+Inside a superconductor, electrons pair up and move through the material's atomic lattice without scattering — the collision process that generates heat in ordinary conductors like copper. The catch has always been temperature. Most conventional superconductors work only near absolute zero, minus 273 degrees Celsius, requiring liquid helium to operate. A class discovered in the 1980s, called high-temperature superconductors, works at a comparatively balmy minus 196 degrees Celsius, cold enough to use cheaper liquid nitrogen instead.
+
+Neither is room temperature. And that gap is why the search continues.
+
+"Room temperature superconductivity would be one of the most transformative material discoveries in history," said Dr. Elena Saito, a physicist at Lakeside Materials Institute. "Every motor, every transformer, every power line would work on a different physics."
+
+**Where superconductors already work**
+
+Superconducting magnets already power MRI machines, particle accelerators and maglev trains. High-temperature superconducting magnets are also being built into compact fusion reactors under development by private companies, whose stronger magnetic fields allow smaller reactor designs. In Germany and South Korea, superconducting power cables are being piloted in urban electrical grids, carrying five times more current than conventional cables of the same diameter with lower energy losses. Superconducting circuits, cooled near absolute zero, also serve as the qubits inside quantum computers built by Google and IBM. The global superconductor market is valued at roughly $8 billion a year, dominated by medical imaging and scientific instruments.
+
+**The prize — and the pitfalls**
+
+A superconductor that worked at room temperature and ordinary atmospheric pressure, rather than requiring extreme cooling or crushing pressure, could enable low-loss power transmission, faster trains, more powerful medical and scientific magnets, and new kinds of electronics. If scaled to transmission lines worldwide, it could cut global electricity losses by hundreds of terawatt-hours a year.
+
+But the path there has been rocky. In 2023, a research group's claim of a room-temperature, high-pressure superconductor drew intense scrutiny; other laboratories could not reproduce the results, and the paper was retracted. It was not an isolated case — several high-profile room-temperature claims since 2015 have failed independent verification, a pattern researchers describe as a reproducibility crisis in the field.
+
+Part of the difficulty is theoretical. Dr. Saito said scientists still do not fully understand the mechanism that allows some materials to superconduct at liquid-nitrogen temperatures, let alone what might allow it at room temperature. There is also a manufacturing problem: the ceramic materials that superconduct at higher temperatures tend to be brittle, making them difficult to form into flexible wire.
+
+Current research is focused on high-entropy alloys and hydrogen-rich materials known as hydrides. Some hydrides do superconduct at high temperatures, but only under enormous pressures that make them impractical outside a laboratory.
+
+Despite the setbacks, Dr. Saito said the field has genuine theoretical reasons to believe room-temperature superconductivity is physically possible. The challenge, she said, is finding the right material — a search that may require systematically testing millions of compounds.
+
+The National Science Foundation has increased funding for superconductor materials research since the 2023 retraction, saying the episode underscored both the technology's potential importance and the need for rigorous verification protocols before any future claim is accepted.

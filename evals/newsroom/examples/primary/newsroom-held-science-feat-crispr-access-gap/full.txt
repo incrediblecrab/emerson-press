@@ -1,0 +1,31 @@
+**Approved and Out of Reach: A $3.1 Million Gene Therapy Meets Insurance Denials**
+
+Leon Dupont learned three things in quick succession this winter: that a treatment existed for his disease, that regulators had approved it, and that his insurer would not pay for it.
+
+"I found out it exists. I found out it was approved. I found out I can't have it," Dupont, 34, said. "That sequence is its own kind of cruelty."
+
+Dupont has Pelham syndrome, a lysosomal storage disorder that causes progressive neurological deterioration beginning in childhood. He was diagnosed at 22 and is now in decline. In January, the Food and Drug Administration approved Axogene, a CRISPR-based therapy for the disease made by CellForge Biosciences. Its list price is $3.1 million per patient. An estimated 1,800 people in the U.S. are eligible.
+
+Dupont is one of them. His commercial insurer denied coverage in February.
+
+He is not alone. Dr. Reena Singh, a rare disease specialist at Northgate Children's Hospital, said three of her patients are eligible for Axogene. As of March, none have secured coverage.
+
+"Approval is the first door. Insurance is the second," Singh said. "For rare disease therapies at this price point, the second door is harder to open than the first."
+
+CellForge CEO Adrian Walsh said the price reflects more than $900 million in development costs and an expected patient population of fewer than 200 a year. "We cannot price this like a mass-market drug," Walsh said. "The math doesn't work."
+
+The Institute for Clinical and Economic Review, a nonprofit that evaluates drug value, found Axogene cost-effective at prices between $1.8 million and $2.6 million under its standard criteria — not at $3.1 million. Walsh said those thresholds undervalue the therapy's effect on patients and families. "The quality-of-life metrics ICER uses were not built for diseases like this," he said.
+
+CellForge has a patient assistance program offering free therapy to uninsured or Medicaid patients. It has received 14 applications; four have been approved, and the rest are under review. The company is also negotiating outcomes-based contracts with insurers that would provide partial refunds if the therapy fails to halt neurological progression at 18 months. Two insurers have agreed in principle; four have not responded.
+
+Medicaid coverage policies illustrate the uneven landscape: seven states have issued them, 18 are developing them, and 25 have not addressed the therapy at all. CellForge has certified two treatment centers nationwide; Dupont lives 340 miles from the nearest one.
+
+Singh said the pattern reflects a structural gap — payers lack frameworks for one-time gene therapies at this scale and default to denial while policies are worked out. Dr. Marcus Adem, a health policy researcher at Clearview Policy Institute, said the problem will recur. "Every CRISPR therapy approved in the next decade will face the same structural barriers unless payers develop gene therapy-specific coverage frameworks now," he said.
+
+Walsh said he expects most major payers to have coverage policies within 18 months, though he acknowledged that timeline offers no help to current patients.
+
+Dupont has joined four other Pelham patients in an advocacy campaign, meeting with three congressional staffers and writing to their state insurance commissioner. "I'm 34. I don't have a decade," he said. "The system is designed for people who have a decade to fight."
+
+Still, he said, his public fight is not only for himself. "My situation is urgent," Dupont said. "But the reason I'm fighting publicly is for the person who gets diagnosed next year, when the system still isn't ready."
+
+Singh said both halves of the story are true at once. "The disease couldn't be treated. Now it can. That is real," she said. "The access problem is real too. Both things are true."

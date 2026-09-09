@@ -1,0 +1,4002 @@
+{
+  "schema_version": 1,
+  "kind": "registered-primary-writing-summary-not-quality-evidence",
+  "protocol_sha256": "a6701efdddae8cf8f4fd4c6944f5da65c64b2dbfb41b0975b0f9acbad9176574",
+  "planned_writing_calls": 438,
+  "captured_records": 438,
+  "state_counts": {
+    "captured": 438
+  },
+  "eligible_cases": 219,
+  "family_clusters": 212,
+  "complete_case_pairs": 219,
+  "unavailable_job_ids": [],
+  "word_count_convention": "len(complete_response.split()), including headlines, markup tokens, commentary and Unicode whitespace.",
+  "word_counts": [
+    {
+      "case_id": "newsroom-held-business-explain-apprentice-paid-class",
+      "family_id": "business-corven-apprentice-pay",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 590,
+      "response_sha256": "7ca4d53c70800ecd722ee73a0b298417e0f31a392d3d5ce676b96e35e993e37c",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-explain-apprentice-paid-class/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-explain-apprentice-paid-class",
+      "family_id": "business-corven-apprentice-pay",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 579,
+      "response_sha256": "b654af2174f36253f5e191a2815d82cffdd867eac957d59fba9de53f2c426f1d",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-explain-apprentice-paid-class/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-explain-assessment-tax-rate",
+      "family_id": "business-aldercove-assessment-levy",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 541,
+      "response_sha256": "5e25e437d1b314bba09ed249f13bc4fc756ad6386337130f1e2e17ab2b7f6196",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-explain-assessment-tax-rate/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-explain-assessment-tax-rate",
+      "family_id": "business-aldercove-assessment-levy",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 594,
+      "response_sha256": "5f58e01ab4a43df2f8235c58032a3311011c7beda2645a8d0d8b9845c2e17ba7",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-explain-assessment-tax-rate/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-explain-commercial-water-bills",
+      "family_id": "business-ashcombe-water-tariff",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 550,
+      "response_sha256": "cbd732730acd0b2aace3407be8bb24cb21443f4ecdaaa997d9b418bd0b76ff0e",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-explain-commercial-water-bills/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-explain-commercial-water-bills",
+      "family_id": "business-ashcombe-water-tariff",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 588,
+      "response_sha256": "ea3d549a76c6af6ab3cda6834c8d16dc8aa5b50a6671352d1e6d1bd45309a625",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-explain-commercial-water-bills/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-explain-construction-retainage",
+      "family_id": "business-wickmere-roof-retention",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 557,
+      "response_sha256": "0654b254e5a7734b29305e28a3a41842d492131839692501b05f0c7e82f8022f",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-explain-construction-retainage/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-explain-construction-retainage",
+      "family_id": "business-wickmere-roof-retention",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 599,
+      "response_sha256": "83dffec9836d1e34383e6183d15eff5bf588b61008597d99b6c86e6055efaf01",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-explain-construction-retainage/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-explain-crop-cover-market-loss",
+      "family_id": "business-fen-orchard-yield-cover",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 572,
+      "response_sha256": "61e230fb67d0a5a8e419362813d0d9f82d5ae1a4a2fb53c39bf1b3348ea77fbb",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-explain-crop-cover-market-loss/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-explain-crop-cover-market-loss",
+      "family_id": "business-fen-orchard-yield-cover",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 591,
+      "response_sha256": "13764e232f172f51f22153b5ded96d55f40a7d41b3e6ec6492d70b21bb85093b",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-explain-crop-cover-market-loss/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-explain-endowment-operating-gap",
+      "family_id": "business-orlan-endowment-budget",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 585,
+      "response_sha256": "5bec38000447360aa6e213674add14207027e8e1837ebf000a3903972113a146",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-explain-endowment-operating-gap/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-explain-endowment-operating-gap",
+      "family_id": "business-orlan-endowment-budget",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 591,
+      "response_sha256": "69c9bfb0457b4c4df59ea79b93165f37da415adf691f991f8050919dce296854",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-explain-endowment-operating-gap/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-explain-franchise-ownership",
+      "family_id": "business-cormere-franchise-store",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 556,
+      "response_sha256": "19a5322c1d111bbb072a9c39e10513e22479a10b10551b9d854262dc4bfa377d",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-explain-franchise-ownership/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-explain-franchise-ownership",
+      "family_id": "business-cormere-franchise-store",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 546,
+      "response_sha256": "7d5eb6c480a4006198e0c83d5d4775a15b3e1888844571015734a32582be027c",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-explain-franchise-ownership/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-explain-freight-fuel-lag",
+      "family_id": "business-willow-splice-fuel-index",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 530,
+      "response_sha256": "90d9a2a118a4dc8cc0b9dd99ca3284e8788468b4ac2fffc97def158449697c30",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-explain-freight-fuel-lag/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-explain-freight-fuel-lag",
+      "family_id": "business-willow-splice-fuel-index",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 591,
+      "response_sha256": "62ca3945332dab054d284763125b051f976765b63bf2f001d2ef9b28d0d8a637",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-explain-freight-fuel-lag/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-explain-hotel-occupancy-denominator",
+      "family_id": "business-wren-coast-room-inventory",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 548,
+      "response_sha256": "6d7e29e70b41c8959ed8879ae609f0db43977b57394956e937e917d57f2fcf4c",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-explain-hotel-occupancy-denominator/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-explain-hotel-occupancy-denominator",
+      "family_id": "business-wren-coast-room-inventory",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 579,
+      "response_sha256": "115960cd6fe9a898d72c364c839423f2f4e4e1bcc1abbb89a6b5919d5b7b2dc3",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-explain-hotel-occupancy-denominator/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-explain-invoice-factoring",
+      "family_id": "business-hawthorn-receivable-sale",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 561,
+      "response_sha256": "c43aeb814926bce1384df8bfcf3806d1d4055c5199f9ddc340799681a561f9e5",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-explain-invoice-factoring/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-explain-invoice-factoring",
+      "family_id": "business-hawthorn-receivable-sale",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 610,
+      "response_sha256": "8a6512882e2e5f4a73992a85a1f5658642beab9348ae5b1348e836c8318596f1",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-explain-invoice-factoring/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-explain-jobs-and-unemployment",
+      "family_id": "business-bellwether-labor-series",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 544,
+      "response_sha256": "9a8718d3d3b6dee99c5a5e6f7015f7eaade27625e97f55304cfe2e497ea97506",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-explain-jobs-and-unemployment/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-explain-jobs-and-unemployment",
+      "family_id": "business-bellwether-labor-series",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 583,
+      "response_sha256": "6689bfcdb5f9c888572ea957448bc7eaab2a791d7245e644b3acf1af2ae3c0fa",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-explain-jobs-and-unemployment/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-explain-library-digital-queue",
+      "family_id": "business-talver-digital-loan-licenses",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 555,
+      "response_sha256": "df7dd062695647578477e65429eda094d89988c46a81cc168e0ce7113f817a4c",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-explain-library-digital-queue/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-explain-library-digital-queue",
+      "family_id": "business-talver-digital-loan-licenses",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 591,
+      "response_sha256": "09ecafb7cca19cc842415c0079ec66655fc5821fcf61269e3896dadc55dee293",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-explain-library-digital-queue/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-explain-music-membership",
+      "family_id": "business-juniper-membership-redemption",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 531,
+      "response_sha256": "0cd8185a56942a3b1727ba1727356154dd78677ea9f20cccdcf02b7c0cfbe89d",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-explain-music-membership/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-explain-music-membership",
+      "family_id": "business-juniper-membership-redemption",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 561,
+      "response_sha256": "ed478272bd0fdeabf042d6870623d7412c06dbd9c23a5beb6efc6b0f7a6c7a2c",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-explain-music-membership/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-explain-peak-demand-bill",
+      "family_id": "business-arden-demand-metering",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 509,
+      "response_sha256": "c1f06c077e081fe2b7c5ee889690c7ef72c24cf17a3632f3ce5a8607832f3c19",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-explain-peak-demand-bill/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-explain-peak-demand-bill",
+      "family_id": "business-arden-demand-metering",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 584,
+      "response_sha256": "1a273c9f29e5c7d213f73d98db07ab09ec79cbcceb624d76ffcf0675c6b910b3",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-explain-peak-demand-bill/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-explain-profit-share-not-stock",
+      "family_id": "business-elmward-profit-pool",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 492,
+      "response_sha256": "b366d79b01c0ee7f863a5c8c4d8b6973064d4d9bd52c010224b9e3be4fe64c6c",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-explain-profit-share-not-stock/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-explain-profit-share-not-stock",
+      "family_id": "business-elmward-profit-pool",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 576,
+      "response_sha256": "99cad68988670291962494c4a5c11a6f73e369a0be1f19bca1ac31a912724ee7",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-explain-profit-share-not-stock/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-explain-return-shipping-choices",
+      "family_id": "business-vellum-step-return-options",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 609,
+      "response_sha256": "92ce2d2dbeec4e9ae5bfebe2c035901b3e4c7136ae87726e071163d8f87aa87b",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-explain-return-shipping-choices/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-explain-return-shipping-choices",
+      "family_id": "business-vellum-step-return-options",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 611,
+      "response_sha256": "6eb4431dd5d5a6933f3abb9232d1fe0f6af3bb0a9696d13400f6657d022d20e5",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-explain-return-shipping-choices/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-explain-school-laptop-lease",
+      "family_id": "business-south-nacre-device-bids",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 574,
+      "response_sha256": "120cf443a5c92721f2297a2665c8a87a71e952bbaac9e249f601f71186105195",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-explain-school-laptop-lease/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-explain-school-laptop-lease",
+      "family_id": "business-south-nacre-device-bids",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 534,
+      "response_sha256": "af2d6bdf9f3b9198bc33f23cdac61f59d38553f783883a33c479f68dc4dcd968",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-explain-school-laptop-lease/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-explain-service-charge-wages",
+      "family_id": "business-copper-wren-charge-allocation",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 510,
+      "response_sha256": "4199c0264d86c6836bda594da967a2d217168949e7b0df8da8bb432613ed26cc",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-explain-service-charge-wages/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-explain-service-charge-wages",
+      "family_id": "business-copper-wren-charge-allocation",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 571,
+      "response_sha256": "d75a98da14b882e642c8a6b2ab15d72db705c4786adfbdc35e93292e94545df3",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-explain-service-charge-wages/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-explain-smaller-packages",
+      "family_id": "business-marshglen-package-size",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 563,
+      "response_sha256": "67235673ad770bcebd515d57eb3d3446059165f4bc5c21f1a90fe78161262922",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-explain-smaller-packages/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-explain-smaller-packages",
+      "family_id": "business-marshglen-package-size",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 575,
+      "response_sha256": "1de67b632b571558a1d1b697466098e294e859769bda736f99e579a5fe3c72fb",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-explain-smaller-packages/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-explain-textbook-access-code",
+      "family_id": "business-fenwick-course-access",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 605,
+      "response_sha256": "3e4de19c1a12431d6f7691067412752878e2beaee261441bb825909f1ee91fca",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-explain-textbook-access-code/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-explain-textbook-access-code",
+      "family_id": "business-fenwick-course-access",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 602,
+      "response_sha256": "390c1e3a2aee84ee399e52cd70f5569260f40fa0c8de91f4086af7e165251666",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-explain-textbook-access-code/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-explain-ticket-fee-display",
+      "family_id": "business-fernwick-ticket-display",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 582,
+      "response_sha256": "96619cf7ccec9eba26471d4f2d007480806f1b92e5b253661eecd591e6abbd08",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-explain-ticket-fee-display/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-explain-ticket-fee-display",
+      "family_id": "business-fernwick-ticket-display",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 569,
+      "response_sha256": "48ee76a7e75d02f3784f8e27db2c8a805a23904b20712da5efb765196ec2ef03",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-explain-ticket-fee-display/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-explain-tiered-savings-rate",
+      "family_id": "business-moorfin-savings-tiers",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 579,
+      "response_sha256": "aa3b9b6bf1805cc86d33826ed62168dfb96165a8bf155829b71c5c5b462365b8",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-explain-tiered-savings-rate/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-explain-tiered-savings-rate",
+      "family_id": "business-moorfin-savings-tiers",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 589,
+      "response_sha256": "9ab8afbcf4aa5494626fe4bad6b34e7785d85d4e3281f1198ac8136e41c05ab3",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-explain-tiered-savings-rate/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-explain-warehouse-robot-jobs",
+      "family_id": "business-north-loom-role-transition",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 592,
+      "response_sha256": "22439e8c8a835571b4f92bfa41c8ab3b6828c3382500525251a9bda989d1b3ae",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-explain-warehouse-robot-jobs/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-explain-warehouse-robot-jobs",
+      "family_id": "business-north-loom-role-transition",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 628,
+      "response_sha256": "0ba5859a81a2b8289746f733fee8ccd8d80e63b4675df3fafd0385f0efa88816",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-explain-warehouse-robot-jobs/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-explain-wholesale-retail-gap",
+      "family_id": "business-bramble-produce-price-chain",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 576,
+      "response_sha256": "dbe8bc6adeba3cc28b63aef8705c7df2ac356f96adabb1cd1aa0be21ff230202",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-explain-wholesale-retail-gap/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-explain-wholesale-retail-gap",
+      "family_id": "business-bramble-produce-price-chain",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 567,
+      "response_sha256": "a464a8d43d86575e34cca86de4c49d2d5e60f74cd96815c6bd07cb635ed90717",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-explain-wholesale-retail-gap/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-accessible-game-components",
+      "family_id": "business-five-lantern-token-prototype",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 561,
+      "response_sha256": "217eef77b868241c543fffef96fe8e267bf41e48b1401207f8ff2e360b4d7f97",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-accessible-game-components/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-accessible-game-components",
+      "family_id": "business-five-lantern-token-prototype",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 570,
+      "response_sha256": "30c7437297da066b3235dbfb1158c7fd18aca9d23ee581d4c1c926c2f0e587e0",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-accessible-game-components/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-college-instrument-bench",
+      "family_id": "business-nettleford-instrument-workshop",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 565,
+      "response_sha256": "c7d0dcf9307424e89b962e6d70082a0b0998ed0446211c86e13cf9d89b8d4d43",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-college-instrument-bench/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-college-instrument-bench",
+      "family_id": "business-nettleford-instrument-workshop",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 614,
+      "response_sha256": "ff3dcf367a70984223b8a03620d05e7560f65d7ed8060c79dd655f118f1ed06e",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-college-instrument-bench/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-deaf-factory-trainer",
+      "family_id": "business-bracken-spur-training-design",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 540,
+      "response_sha256": "7dfaacba1634bb496f9c9a82b2b58996f674087c14f5c354ea808bd6e8563856",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-deaf-factory-trainer/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-deaf-factory-trainer",
+      "family_id": "business-bracken-spur-training-design",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 573,
+      "response_sha256": "e5499f054571aa0ce663570ba64f475d081ecd2d12ab3303755933209dfd4488",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-deaf-factory-trainer/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-factory-bus-connection",
+      "family_id": "business-rillstone-commute-connection",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 548,
+      "response_sha256": "9f093295ac32e67e4dc95eb0088c2602cd0e84f9f4d3e0a821b930e47ec35b85",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-factory-bus-connection/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-factory-bus-connection",
+      "family_id": "business-rillstone-commute-connection",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 591,
+      "response_sha256": "39f12c0dbe9b110b5c6599cbccbc6e672fe5289d168bedd7299625a04b7befb4",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-factory-bus-connection/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-ferry-food-break",
+      "family_id": "business-selwick-early-food-counter",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 502,
+      "response_sha256": "eea28592f8b78540370ca1bd3513e06b0eda8a5c837118c4fe0aaa5e36e761e3",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-ferry-food-break/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-ferry-food-break",
+      "family_id": "business-selwick-early-food-counter",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 532,
+      "response_sha256": "50688015067a77ad40a0a683fbb07d8b18ea0b270144e9ddb4fc47295aa8f45d",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-ferry-food-break/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-festival-sorting-crew",
+      "family_id": "business-grey-orchard-postevent-sorting",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 607,
+      "response_sha256": "b932ed7f5db2e49040f908769c2bfd5712528054821d3468abb1d3a1ba802dc1",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-festival-sorting-crew/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-festival-sorting-crew",
+      "family_id": "business-grey-orchard-postevent-sorting",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 566,
+      "response_sha256": "c8368d8f08949f76359a880e3dfebd5f0d8e41ab406d95fcae3918d9ba07bd5f",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-festival-sorting-crew/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-fishing-net-rope",
+      "family_id": "business-delo-loop-polymer-batch",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 540,
+      "response_sha256": "4240e17aa0dce50cd7e44c1b7c905bf259876ffc8763fe9de93f82f96ed2f424",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-fishing-net-rope/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-fishing-net-rope",
+      "family_id": "business-delo-loop-polymer-batch",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 571,
+      "response_sha256": "5f7aae867e3e8ffe34d15821480c6416bd26297c9dcee92a6902498a92f0d5fd",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-fishing-net-rope/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-flower-standing-orders",
+      "family_id": "business-plover-reed-flower-channels",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 529,
+      "response_sha256": "78f8843686b2eecd0bd2d50f424740e6c8122bae3eb1e5c35544fcf285d182f9",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-flower-standing-orders/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-flower-standing-orders",
+      "family_id": "business-plover-reed-flower-channels",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 575,
+      "response_sha256": "7ab0abe094dfe3537b00de874e9d954b6f5960e23c32eaade28323050314d35a",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-flower-standing-orders/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-mall-repair-popups",
+      "family_id": "business-ambercourt-temporary-repair-shops",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 532,
+      "response_sha256": "69be37de159aeace22a6f12904195d5336ab365b38255068c81009a1808e5e4c",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-mall-repair-popups/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-mall-repair-popups",
+      "family_id": "business-ambercourt-temporary-repair-shops",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 539,
+      "response_sha256": "be3cd477b3d0c36c02a9bafd17579aa2b222f80d2bd6c6b683fa5c72048bef9c",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-mall-repair-popups/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-memorial-printing",
+      "family_id": "business-plain-bower-memorial-proofs",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 599,
+      "response_sha256": "be0f02718e505443479cbf66dc2415ae29877a24da65b6bf1f048bf180e43514",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-memorial-printing/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-memorial-printing",
+      "family_id": "business-plain-bower-memorial-proofs",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 572,
+      "response_sha256": "3a7b48de39227bbb8f87e991066f43f707272e2352ebfc6ae0642700d792329a",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-memorial-printing/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-mending-time-exchange",
+      "family_id": "business-stitch-hour-labor-exchange",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 529,
+      "response_sha256": "ea5b3c0bfc4a852ea1e1827564ddc78719e3763e6750e5298435d46c75a4fbf9",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-mending-time-exchange/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-mending-time-exchange",
+      "family_id": "business-stitch-hour-labor-exchange",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 553,
+      "response_sha256": "87ea3b23433813b466fb53ad4938f4ebff1f86e70a2a5fe11c80810b4da5a37d",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-mending-time-exchange/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-night-bakery-pickup",
+      "family_id": "business-low-ember-night-production",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 543,
+      "response_sha256": "53863e0b4bed6e68d977eea39c2e9b871fdc6b0b05e469cdd907f260363a98c1",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-night-bakery-pickup/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-night-bakery-pickup",
+      "family_id": "business-low-ember-night-production",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 542,
+      "response_sha256": "65da3edd7511dc2658d432986a6fbd2917715b156d095536a9c21f815cddb833",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-night-bakery-pickup/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-paper-map-updates",
+      "family_id": "business-foldline-seasonal-map-edition",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 541,
+      "response_sha256": "5d758258ba15e79d463430867f1bc9f3515c5ea9d6e990c41c29990e60c5c73f",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-paper-map-updates/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-paper-map-updates",
+      "family_id": "business-foldline-seasonal-map-edition",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 538,
+      "response_sha256": "6887f05189acc4b070f001d7110430dd2b32a77130fbdd51aa2dcb86c291e00a",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-paper-map-updates/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-patternmaker-succession",
+      "family_id": "business-merrin-pattern-handover",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 533,
+      "response_sha256": "25c80bf60a6e6ec5f0b827b15543656d50e04e4fc92d96b5842fa4a502ece3b5",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-patternmaker-succession/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-patternmaker-succession",
+      "family_id": "business-merrin-pattern-handover",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 564,
+      "response_sha256": "38f57d0d0c7172798eb7d9f7b0ffb90594d87cecef2d35ea08e4609f2561e548",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-patternmaker-succession/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-portable-venue-crew",
+      "family_id": "business-foldstage-freelance-bookings",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 493,
+      "response_sha256": "1d0b1a58c81ad21f4582538fdf64f98121692374aa881388ef88b40849f4d627",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-portable-venue-crew/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-portable-venue-crew",
+      "family_id": "business-foldstage-freelance-bookings",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 550,
+      "response_sha256": "bd0a60c6a86dd1f49f8237398b7df7c3b73f29ab9b8198c22c11b1a435cd539f",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-portable-venue-crew/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-rooftop-mushroom-chain",
+      "family_id": "business-flint-roof-cold-chain",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 564,
+      "response_sha256": "c9645ca8e40cb8b8c9616c06bc47817d1df3ff5ae690a6ae505992b27aace7a8",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-rooftop-mushroom-chain/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-rooftop-mushroom-chain",
+      "family_id": "business-flint-roof-cold-chain",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 563,
+      "response_sha256": "417ea6dc954bed55dba9414eb0989065ef5f7f906302551d881268e854d984df",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-rooftop-mushroom-chain/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-salvage-paperwork",
+      "family_id": "business-relay-yard-reuse-records",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 536,
+      "response_sha256": "e066bf2b64fda66a55bdccde74a4b77c4aa78343a8219911a95e4473f546f3bb",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-salvage-paperwork/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-salvage-paperwork",
+      "family_id": "business-relay-yard-reuse-records",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 539,
+      "response_sha256": "0baac6150e6fccb6ba92e34925879d58be42ac7e6cff74ab4e433788b1703cd9",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-salvage-paperwork/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-sensor-calibration-route",
+      "family_id": "business-pellwren-calibration-service",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 553,
+      "response_sha256": "016c3a0f59f6721f31d43f2207704aeda4eb997f7c71149b2fdea5c19f46dc38",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-sensor-calibration-route/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-sensor-calibration-route",
+      "family_id": "business-pellwren-calibration-service",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 607,
+      "response_sha256": "e332e67596a2f6fe32b378f487981d2312dc3c0afbb571c8f31f0e7932ad554e",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-sensor-calibration-route/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-shared-remote-workroom",
+      "family_id": "business-celandine-desk-booth-capacity",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 556,
+      "response_sha256": "040d4ef228fba54bd72c3f421384f79c119c5f781e444bfddb390bc48e861695",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-shared-remote-workroom/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-shared-remote-workroom",
+      "family_id": "business-celandine-desk-booth-capacity",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 587,
+      "response_sha256": "27cba21e32aceff2d101fce04b317c94200a75e63f92f27a5f78031798aafc40",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-shared-remote-workroom/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-small-press-audio",
+      "family_id": "business-loom-lantern-audio-pilot",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 576,
+      "response_sha256": "a792265b017a183499a6e8829411192b3014143a6c1c1e9aef02e573e222c794",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-small-press-audio/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-small-press-audio",
+      "family_id": "business-loom-lantern-audio-pilot",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 563,
+      "response_sha256": "3f04aea056ae9864d19e7bf5d80ad535e1ed64ce67e9cf59a36db8f20ae9a921",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-small-press-audio/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-theater-costume-bank",
+      "family_id": "business-aster-fold-costume-loans",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 536,
+      "response_sha256": "b95e763e2c3a14e6c1b61f54242ab5ca73677d2d48633c80c52fe019c761ede1",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-theater-costume-bank/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-theater-costume-bank",
+      "family_id": "business-aster-fold-costume-loans",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 568,
+      "response_sha256": "482fcda77e60f485379ea5d444edf894200b425894d0f77c907b63e049bac6a5",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-theater-costume-bank/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-thrift-sorting-cost",
+      "family_id": "business-morrow-cupboard-donation-flow",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 567,
+      "response_sha256": "85ac2f23ee6349fea9660dc73e30086c001a24760100a20dfe4ff7a49c3f0866",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-thrift-sorting-cost/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-thrift-sorting-cost",
+      "family_id": "business-morrow-cupboard-donation-flow",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 558,
+      "response_sha256": "495fb1474af2515b17fcf7dc1af81ce686d37f48f042a20243d57c8d7ac3b746",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-thrift-sorting-cost/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-touring-captions",
+      "family_id": "business-ternlight-live-caption-tour",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 512,
+      "response_sha256": "07709d5c14017927907026c471fe33f9b7cb37fbe691e33bf3ec5c3cf100a6af",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-touring-captions/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-touring-captions",
+      "family_id": "business-ternlight-live-caption-tour",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 553,
+      "response_sha256": "5e05a066ab1f7d40240af9c044daff9dd13a35639c47b56d40e313a32f539217",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-touring-captions/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-translation-review-work",
+      "family_id": "business-threadword-review-market",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 537,
+      "response_sha256": "3dfc9f2ef44844de0c39e9c42bfbfa71f4097044fa52b2cc18d06fce5ef394df",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-translation-review-work/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-translation-review-work",
+      "family_id": "business-threadword-review-market",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 587,
+      "response_sha256": "535190312667c024059c9a80ae374ecf3755e89a3e34735a399af310371f7089",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-translation-review-work/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-village-credit-book",
+      "family_id": "business-alder-rill-small-credit",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 513,
+      "response_sha256": "3c71be3085eb166c197aed6280b6c0a0f7d973924921c0dd43e08a3d2fa77beb",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-village-credit-book/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-feature-village-credit-book",
+      "family_id": "business-alder-rill-small-credit",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 574,
+      "response_sha256": "f3d430957ad61a1d01b2c8ce25c1370484f5e6ba57410ca7e3ba54ecc1fb5e7d",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-feature-village-credit-book/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-news-bank-counters",
+      "family_id": "business-alder-span-counter-consolidation",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 534,
+      "response_sha256": "72b9eebc7d8e9db9087ad57b63957c80523f9c4dd2f9eb1696a76115ad58075d",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-news-bank-counters/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-news-bank-counters",
+      "family_id": "business-alder-span-counter-consolidation",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 548,
+      "response_sha256": "d49e0f8e298d1dd0ff812284f7b2afee95b17f4f8b6510ae14eb76956c2fd87d",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-news-bank-counters/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-news-book-order-threshold",
+      "family_id": "business-wrenstack-mixed-book-orders",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 505,
+      "response_sha256": "9c557f92c8d1bd3c3ad3a1220aee6ac9b5853479a29a2825d353dd24b7af39d7",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-news-book-order-threshold/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-news-book-order-threshold",
+      "family_id": "business-wrenstack-mixed-book-orders",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 548,
+      "response_sha256": "c9d4d2670c563a7741c33d0470888a7e8edf9f619d0d7919f444b8199e6de47f",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-news-book-order-threshold/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-news-broadband-bridge",
+      "family_id": "business-moorlace-fiber-crossing",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 532,
+      "response_sha256": "d3c14532c648b3402403c70690663b6d2e5f594ad0f739909a0a44b65271bc76",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-news-broadband-bridge/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-news-broadband-bridge",
+      "family_id": "business-moorlace-fiber-crossing",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 568,
+      "response_sha256": "aeb599f091c3c32c8156789b674fb6a314e9ba83144722d2db40fc03af099283",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-news-broadband-bridge/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-news-campus-bus-pass",
+      "family_id": "business-sable-campus-pass-agreement",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 473,
+      "response_sha256": "d6dd08dfab2fc14de50921ac8414267294d5bc631f0fcad9c254ad02b93d5998",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-news-campus-bus-pass/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-news-campus-bus-pass",
+      "family_id": "business-sable-campus-pass-agreement",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 496,
+      "response_sha256": "f83567d7254639ed2d2d3206cfba3f77a6bd8606c1823a0085f9c3b44172c051",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-news-campus-bus-pass/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-news-coop-price-vote",
+      "family_id": "business-larch-food-rebate-vote",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 484,
+      "response_sha256": "bdbf8f90254fcf85f8b862f01c528aab5a796660e6a2cdb836a871fa7ec223be",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-news-coop-price-vote/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-news-coop-price-vote",
+      "family_id": "business-larch-food-rebate-vote",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 506,
+      "response_sha256": "6dd9287d1f54f8033cdc4b2263ed3dc2908b3c0cef5eb1f4fffbb2ce6e449561",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-news-coop-price-vote/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-news-dairy-powder-line",
+      "family_id": "business-merefold-powder-suspension",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 477,
+      "response_sha256": "e6d4b86b05cea1b678d0925864c9aa2af632a8d86dc69b6aa040c4c6e277d767",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-news-dairy-powder-line/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-news-dairy-powder-line",
+      "family_id": "business-merefold-powder-suspension",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 521,
+      "response_sha256": "3671855c24f9bd3c3960b54f1b2707b55712597ce18815e87e8a67283a2ade8b",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-news-dairy-powder-line/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-news-festival-night-stage",
+      "family_id": "business-marrow-festival-stage-cancellation",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 469,
+      "response_sha256": "cad118ed514d2e5adecb46bdf4359903198b785843f6fcff9f438d36f287c11c",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-news-festival-night-stage/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-news-festival-night-stage",
+      "family_id": "business-marrow-festival-stage-cancellation",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 531,
+      "response_sha256": "f24c5c57d890deb252f79784db444b9dff6770109d3bb329a035640ac3fe70ea",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-news-festival-night-stage/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-news-film-crew-pledge",
+      "family_id": "business-thornhaven-stage-application",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 487,
+      "response_sha256": "3f988028493c2ad21a6aa8c6dae43d7406e18e4131aedae48e1927f562eddf62",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-news-film-crew-pledge/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-news-film-crew-pledge",
+      "family_id": "business-thornhaven-stage-application",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 532,
+      "response_sha256": "99a5bf9e75091e0874b4f208810c3d043f974cc9eae6b7a0b565156fb2a61de3",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-news-film-crew-pledge/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-news-four-day-rota",
+      "family_id": "business-hallow-wholesale-rota",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 446,
+      "response_sha256": "94fff898a68bca933062ce5c13376681dec511f3bfa3740b77b8873e198bf92c",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-news-four-day-rota/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-news-four-day-rota",
+      "family_id": "business-hallow-wholesale-rota",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 531,
+      "response_sha256": "84f03e73b5fb1c87140a4a279f98c0cf8452eede06abf30548270de1b76a11d8",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-news-four-day-rota/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-news-glass-furnace",
+      "family_id": "business-brindle-furnace-transition",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 565,
+      "response_sha256": "bee85d9508eaba61904558f6bc50b281d72fc8ff69bd592dd94d388575a69e40",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-news-glass-furnace/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-news-glass-furnace",
+      "family_id": "business-brindle-furnace-transition",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 555,
+      "response_sha256": "c3d2f8af79aa066f8b4147959be33cc0f16378ae7eb4461dc1b97bbdd5cbce6d",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-news-glass-furnace/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-news-grain-terminal-hours",
+      "family_id": "business-vesper-grain-order-roster",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 472,
+      "response_sha256": "a8ac85de8bcb5356a4abe2975a608f3b7c0b128f2e8d823fd43a7fdb78ff1a82",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-news-grain-terminal-hours/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-news-grain-terminal-hours",
+      "family_id": "business-vesper-grain-order-roster",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 517,
+      "response_sha256": "cf715a4007714dc8bd4af4cc1c9e028d21434c270908b81fb6306e2fc519ccd4",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-news-grain-terminal-hours/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-news-hangar-delay",
+      "family_id": "business-rookmeadow-hangar-drainage",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 478,
+      "response_sha256": "5ca1411479cc2c475a615de9d8471747e921f90611243c0673c271ab853853cd",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-news-hangar-delay/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-news-hangar-delay",
+      "family_id": "business-rookmeadow-hangar-drainage",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 515,
+      "response_sha256": "f31a432a67e362cca828be8afc830dfabb7879f27b1964d4144ad928fb659f28",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-news-hangar-delay/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-news-library-fine-amnesty",
+      "family_id": "business-rivermoth-overdue-policy",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 415,
+      "response_sha256": "8da76e00d0afeb1277267ed27fbedd5fb149d0ebc3b0571d42c585b47cd82cf0",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-news-library-fine-amnesty/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-news-library-fine-amnesty",
+      "family_id": "business-rivermoth-overdue-policy",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 555,
+      "response_sha256": "86ca73eab5307933c37ae99995432929546050829bd5d44531bcc795f0122b6c",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-news-library-fine-amnesty/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-news-market-fees",
+      "family_id": "business-kestrel-market-fee-vote",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 483,
+      "response_sha256": "9ff91cdd23a42f8cbd66f10fa6395d018a7a1d280e7f02e8f1957acb692a7a94",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-news-market-fees/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-news-market-fees",
+      "family_id": "business-kestrel-market-fee-vote",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 545,
+      "response_sha256": "446a19bedc4d6fcadaca0c054fdf52acc03f9abdc63118884f8b481b7268f26e",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-news-market-fees/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-news-mill-water-loop",
+      "family_id": "business-sedge-paper-water-reuse",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 508,
+      "response_sha256": "d68a13600c0e0e5386e2bcb31fde346240ae943bdc4939bd5a12edf4828ed845",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-news-mill-water-loop/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-news-mill-water-loop",
+      "family_id": "business-sedge-paper-water-reuse",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 507,
+      "response_sha256": "0cf8437a84ead6a60c8608860334cd3d0d899bfd99450e6e6b49a9006d81da26",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-news-mill-water-loop/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-news-museum-ticket-reversal",
+      "family_id": "newsroom-museum-admission-policy-template",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 462,
+      "response_sha256": "2f2d4c0a7b70deb14ea6f9c327e2ec742a994a07d160789543cb3b61396d0fd0",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-news-museum-ticket-reversal/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-news-museum-ticket-reversal",
+      "family_id": "newsroom-museum-admission-policy-template",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 504,
+      "response_sha256": "1e14d414db081cf5871c4d4b79063b622ee56f4028a8afb24c27aa2e29997d4d",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-news-museum-ticket-reversal/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-news-night-childcare",
+      "family_id": "business-lantern-shift-care-opening",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 513,
+      "response_sha256": "7cace5c8c0d2b8cb3d182fe105477befc348dbe607da132c99cc8e80134d0311",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-news-night-childcare/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-news-night-childcare",
+      "family_id": "business-lantern-shift-care-opening",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 604,
+      "response_sha256": "cf223837018b532aebcdd52924bb9ccbd9e2bd178374543bee7ed36e78d0dbd4",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-news-night-childcare/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-news-paid-opening-work",
+      "family_id": "business-threadgate-opening-pay",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 486,
+      "response_sha256": "41167acdc7f03d285329bc8e3fb3d3f2ddad474eaded61812f372afefae67197",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-news-paid-opening-work/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-news-paid-opening-work",
+      "family_id": "business-threadgate-opening-pay",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 486,
+      "response_sha256": "d17947f9306d87876f880c919b7a6acc8d9a28f0677cc5caa0615305b9d082db",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-news-paid-opening-work/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-news-printer-deadlines",
+      "family_id": "business-pine-journal-print-contract",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 513,
+      "response_sha256": "32d7eff005b78208fd0d92bc24d89559a595bc655d8dfb45d5c49efe4fdd476b",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-news-printer-deadlines/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-news-printer-deadlines",
+      "family_id": "business-pine-journal-print-contract",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 511,
+      "response_sha256": "79b985940704b3ec809fc26409d6b2dbc43bcac549198cc5f1685dcb98322cb9",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-news-printer-deadlines/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-news-rural-delivery-contracts",
+      "family_id": "business-reedmile-rural-contracting",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 530,
+      "response_sha256": "89984a4d0c4c32bb0b528900cbccb5fa1900cb5dbb7a6d0ff16afcd490ee3112",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-news-rural-delivery-contracts/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-news-rural-delivery-contracts",
+      "family_id": "business-reedmile-rural-contracting",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 540,
+      "response_sha256": "6cd9b7b045196d3726b77b790ea4582392a68e081a6eedb599cc71935f84d831",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-news-rural-delivery-contracts/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-news-studio-program-merger",
+      "family_id": "business-lenwick-studio-merger",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 605,
+      "response_sha256": "0fc55f7f149f9614a580f2071132ad7f2057a95d9523c006537a3d79183e541d",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-news-studio-program-merger/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-news-studio-program-merger",
+      "family_id": "business-lenwick-studio-merger",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 546,
+      "response_sha256": "c1a876aad84b75e51bfd2d11a445ac431f3c30e2de81f4e2957a261e57709939",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-news-studio-program-merger/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-news-transfer-fee-cut",
+      "family_id": "business-wayfern-remittance-price",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 510,
+      "response_sha256": "1a6bf427a9ca8c5f7e73c0dbb338dbaf3ee79a5167d33977e4cf6b2b6a8eb91b",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-news-transfer-fee-cut/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-news-transfer-fee-cut",
+      "family_id": "business-wayfern-remittance-price",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 538,
+      "response_sha256": "6aead214042c96522bb323c6932913bfcb325b8b5e9f1c12e2f90adaf2d1e8a7",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-news-transfer-fee-cut/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-news-warranty-sales-stop",
+      "family_id": "business-hearthline-service-plan-cutoff",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 532,
+      "response_sha256": "98aaa47110f8f7607f61285657f43b6c16a5a402f96cede4292192b43aaee2b1",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-news-warranty-sales-stop/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-news-warranty-sales-stop",
+      "family_id": "business-hearthline-service-plan-cutoff",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 533,
+      "response_sha256": "2578c3c2200f76f4af0d64cc6189f4914b2ca992347e0bc154f9589279acf983",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-news-warranty-sales-stop/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-news-worker-buyout",
+      "family_id": "business-ospen-cooperative-acquisition",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 487,
+      "response_sha256": "f9ecf43e8d709a03f2b59a14eac13dc94c803acf102b5f3a786da0ae64e73f2d",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-news-worker-buyout/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-business-news-worker-buyout",
+      "family_id": "business-ospen-cooperative-acquisition",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 526,
+      "response_sha256": "002de4551261a629b7f87a8b680da29bb6c2eb625369e7edcdc86e06b06d8102",
+      "example": "evals/newsroom/examples/primary/newsroom-held-business-news-worker-buyout/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-address-number-gaps",
+      "family_id": "civic-address-number-gaps",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 566,
+      "response_sha256": "b3f051886d0c2f4418560771e401a08ecc4defba23a500564e8ac82f23d2cb33",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-address-number-gaps/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-address-number-gaps",
+      "family_id": "civic-address-number-gaps",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 609,
+      "response_sha256": "228e34f6763ddac6c54afd0c7824b162c823a9ccd6631f9fcd985e1cd6065604",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-address-number-gaps/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-afterschool-bus-launch",
+      "family_id": "civic-afterschool-bus-launch",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 577,
+      "response_sha256": "eb2aa6393209d3a0a346053f21a6f4d377476473bafbe34bb29b4c10354939a3",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-afterschool-bus-launch/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-afterschool-bus-launch",
+      "family_id": "civic-afterschool-bus-launch",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 521,
+      "response_sha256": "47ad9c69f99a0c87c6399ed461d01a8556c49313dff3fbd2ba9e17ead3df41e2",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-afterschool-bus-launch/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-alley-maintenance-responsibility",
+      "family_id": "civic-alley-maintenance-responsibility",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 559,
+      "response_sha256": "373a65e7dbb1077e1eb06998f04816db86d9d38eb8a6fdfc9169c6458c6652a6",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-alley-maintenance-responsibility/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-alley-maintenance-responsibility",
+      "family_id": "civic-alley-maintenance-responsibility",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 588,
+      "response_sha256": "efaa3b4a3c00d0430990d3283b390c444bd5e85d14de7c36549cc7a2d075e7ff",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-alley-maintenance-responsibility/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-allotment-water-rotation",
+      "family_id": "civic-allotment-water-rotation",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 534,
+      "response_sha256": "bd282b5721356237ac0e715de8cedf7c4b98d75b879e96485cf95ad7fdb0ae5a",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-allotment-water-rotation/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-allotment-water-rotation",
+      "family_id": "civic-allotment-water-rotation",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 577,
+      "response_sha256": "9738e0e07b9d37c0865b49ffd6ef8414baac8f679756812bc7d2625d2d4ba471",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-allotment-water-rotation/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-anonymous-arts-grant-review",
+      "family_id": "civic-anonymous-arts-grant-review",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 583,
+      "response_sha256": "768e261e281f2ec6adb9d0c3d49066151a2f2d7e6bcec066f088bb6902934c98",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-anonymous-arts-grant-review/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-anonymous-arts-grant-review",
+      "family_id": "civic-anonymous-arts-grant-review",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 579,
+      "response_sha256": "0052b2ef3b388be57c87eaa5c50996e5c89fa3ecee461a4c4b06119293042fd7",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-anonymous-arts-grant-review/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-backyard-weather-observers",
+      "family_id": "civic-community-observation-records",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 493,
+      "response_sha256": "537a97c6c69df80148fce7514599abed0195dc8fb9865a3d06065f8fbb21547d",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-backyard-weather-observers/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-backyard-weather-observers",
+      "family_id": "civic-community-observation-records",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 525,
+      "response_sha256": "63d9ea9bd890a891eab66df74db2f8216bb25052d72f94dec30f34b353d82866",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-backyard-weather-observers/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-below-market-housing-definition",
+      "family_id": "civic-below-market-housing-definition",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 527,
+      "response_sha256": "e2c8da5bbc1161cf74ed8bc50bc7f92fb3ae2731c87486647bbf418dc82d874d",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-below-market-housing-definition/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-below-market-housing-definition",
+      "family_id": "civic-below-market-housing-definition",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 585,
+      "response_sha256": "1046a0ff17cc60ee24d65188a52af21ce7a828a6e29cf666d74b78c17861080b",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-below-market-housing-definition/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-broadband-build-status",
+      "family_id": "civic-broadband-build-status",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 574,
+      "response_sha256": "1c59e457df0cd4e15742a803a36cfc332e65916e8b0aded2cb27706828e9834e",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-broadband-build-status/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-broadband-build-status",
+      "family_id": "civic-broadband-build-status",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 597,
+      "response_sha256": "cbab271b2984765983ae43e0e8ca24db857ed23d97119f336fb65479fe69385e",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-broadband-build-status/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-cemetery-map-contract",
+      "family_id": "civic-cemetery-map-contract",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 511,
+      "response_sha256": "8c7d189999f165dded2f93f0aa7d963497899af9f146968449d0a6010682b1f4",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-cemetery-map-contract/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-cemetery-map-contract",
+      "family_id": "civic-cemetery-map-contract",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 491,
+      "response_sha256": "e9b868624a59cddf80e94d68885e31aa8d3d696e1bcc7ce14737e58c441e4936",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-cemetery-map-contract/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-choir-family-rehearsal-space",
+      "family_id": "civic-choir-family-rehearsal-space",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 546,
+      "response_sha256": "df475318c331f46fc164e2832be67e392a9b671eac8bc3b889765f69204d7778",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-choir-family-rehearsal-space/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-choir-family-rehearsal-space",
+      "family_id": "civic-choir-family-rehearsal-space",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 562,
+      "response_sha256": "60a35899c3ee044b55a03e2da58e10a654f492aba90ef77e82413e175bf4cbaf",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-choir-family-rehearsal-space/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-cinema-projection-volunteers",
+      "family_id": "civic-cinema-projection-volunteers",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 533,
+      "response_sha256": "322a7b6b753ccd07f8f0c93654007098a64c661b1be46d41db2881d9914c7c6f",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-cinema-projection-volunteers/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-cinema-projection-volunteers",
+      "family_id": "civic-cinema-projection-volunteers",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 570,
+      "response_sha256": "050992692208a9c6a0be3dc95c93affd8210c502371c2498f77906e91609e572",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-cinema-projection-volunteers/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-city-archive-relocation",
+      "family_id": "civic-city-archive-relocation",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 467,
+      "response_sha256": "d2425f05df1dff00cd85ec3abf00dcc4d6b9d54041ec787b237b726ca5a40189",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-city-archive-relocation/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-city-archive-relocation",
+      "family_id": "civic-city-archive-relocation",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 499,
+      "response_sha256": "416c63af613553c5a888ac1703afbe357f9dc1c2bad90eb3ee845251b0c16548",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-city-archive-relocation/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-community-cookbook-kitchen",
+      "family_id": "civic-community-cookbook-kitchen",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 514,
+      "response_sha256": "f8dcb301950233e6c91c9248ef960a8ebbde015bb24bbe922f11653d72e4f1bb",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-community-cookbook-kitchen/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-community-cookbook-kitchen",
+      "family_id": "civic-community-cookbook-kitchen",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 542,
+      "response_sha256": "b4e7148b2afc4f156b4c67efc9680edbb6f6ac4c015ed650fca3f91533ac1c3b",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-community-cookbook-kitchen/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-community-fridge-replacement",
+      "family_id": "civic-community-fridge-replacement",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 520,
+      "response_sha256": "e0005ba4835fabee68c3aaecfaf9572fe955750ad5fdb16e4e61dea981c8b537",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-community-fridge-replacement/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-community-fridge-replacement",
+      "family_id": "civic-community-fridge-replacement",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 546,
+      "response_sha256": "060a9ed89c940e049bea95b27a7b87a896b1b074d6fb8f4194006598a9fdccd5",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-community-fridge-replacement/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-community-radio-move",
+      "family_id": "civic-community-radio-move",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 468,
+      "response_sha256": "edfb54c517937220d6b9887d989a1ac176f3f00e9231fbf1991fca9d7d11d830",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-community-radio-move/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-community-radio-move",
+      "family_id": "civic-community-radio-move",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 475,
+      "response_sha256": "e37f08aedd42ce822aa1534f6bfe776affc51bdcd81e6676319edde767c4536d",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-community-radio-move/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-community-seed-catalog",
+      "family_id": "civic-community-seed-catalog",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 501,
+      "response_sha256": "21b1d31d2f173802b31057ea70cdb96bd6178cb5ccfec2627d6ce58d53d03e97",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-community-seed-catalog/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-community-seed-catalog",
+      "family_id": "civic-community-seed-catalog",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 549,
+      "response_sha256": "2e1552ae8a643625ec36fe3246e41d8d1ef30b4d2f72d3bac954c5446f825cb7",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-community-seed-catalog/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-compostable-bag-rules",
+      "family_id": "civic-compostable-bag-rules",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 590,
+      "response_sha256": "fa4207dd6e2389c85780a9914c9b9a112666885e04ddd255c0c3b891f85a250c",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-compostable-bag-rules/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-compostable-bag-rules",
+      "family_id": "civic-compostable-bag-rules",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 612,
+      "response_sha256": "5c445f14aad1780f951395fbf59401247645c414d04e2471472a184867bc99ac",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-compostable-bag-rules/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-court-navigation-desk",
+      "family_id": "civic-court-navigation-desk",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 471,
+      "response_sha256": "d8b8bb728809fbc98eb96e3af9f2f8c28e1b10ab0fbbe55f9fdc257189728f8f",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-court-navigation-desk/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-court-navigation-desk",
+      "family_id": "civic-court-navigation-desk",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 479,
+      "response_sha256": "62173ea843544e04fd1191b3b896849cfe6c6a82e2c88f65fd695c525eaf3e20",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-court-navigation-desk/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-curb-ramp-priorities",
+      "family_id": "civic-curb-ramp-priorities",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 545,
+      "response_sha256": "00c4318e10934f3755807747b1f77fd97f0210175b83783e4930a7749f5dae91",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-curb-ramp-priorities/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-curb-ramp-priorities",
+      "family_id": "civic-curb-ramp-priorities",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 586,
+      "response_sha256": "bc7804730d7c55e9e6969d97d6a958a44b8480d9145eaa50a05e7551afcdf40a",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-curb-ramp-priorities/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-depot-evening-class",
+      "family_id": "civic-depot-evening-class",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 523,
+      "response_sha256": "517e4bee7f6599c04c6312bb039dd7d6ff43a48295b8d661abee351ce0a89e7d",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-depot-evening-class/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-depot-evening-class",
+      "family_id": "civic-depot-evening-class",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 506,
+      "response_sha256": "3c1a63b7bd2164b36d01d85318688f40b8550de2979401fe98e048146974ee3b",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-depot-evening-class/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-drain-adoption-neighbors",
+      "family_id": "civic-drain-adoption-neighbors",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 530,
+      "response_sha256": "c409a20ac9e105199d82ac3aa12ef9db1b84d9d2d56845c1339046d72b4d04c0",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-drain-adoption-neighbors/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-drain-adoption-neighbors",
+      "family_id": "civic-drain-adoption-neighbors",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 565,
+      "response_sha256": "8bb33826e2d88b157d6f3386d58d79c37ffae758acc91d8fc54cc813a5b595f1",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-drain-adoption-neighbors/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-drainage-district-merger",
+      "family_id": "civic-drainage-district-merger",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 448,
+      "response_sha256": "dfd22b2e78757077b15bd4060d335bdd21f4706a63da44a58c0e1206bd73cc97",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-drainage-district-merger/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-drainage-district-merger",
+      "family_id": "civic-drainage-district-merger",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 494,
+      "response_sha256": "bbd151dc5b8f5af2218d47bf67ad144bd4e675217bbd7e98438b99d86b20bcda",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-drainage-district-merger/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-electric-bus-charging-sequence",
+      "family_id": "civic-electric-bus-charging-sequence",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 636,
+      "response_sha256": "7aa4607b592bc262c44a40423fd35f35e440a903d98f180cac9bdd4b40dd57a1",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-electric-bus-charging-sequence/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-electric-bus-charging-sequence",
+      "family_id": "civic-electric-bus-charging-sequence",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 618,
+      "response_sha256": "3efafd1a8928d6af60b55b78bbf877146e9c449bed3c58715b516ed2ba0437d9",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-electric-bus-charging-sequence/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-evening-waste-pilot",
+      "family_id": "civic-evening-waste-pilot",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 483,
+      "response_sha256": "3c7cad6f1fc1f0b8e3bf75dabec20fbbae68c122831960d79b729be93380e6b8",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-evening-waste-pilot/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-evening-waste-pilot",
+      "family_id": "civic-evening-waste-pilot",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 470,
+      "response_sha256": "2cb210c436d85ce856213af0a96f2a0f6e8740faa329c7a925d7dd0be096c5d8",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-evening-waste-pilot/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-farm-surplus-dispatch",
+      "family_id": "civic-farm-surplus-dispatch",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 538,
+      "response_sha256": "5ffcff1a86a734ce999b2212ad0ce3639088bfa89b38f635779ac5b8f593c9db",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-farm-surplus-dispatch/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-farm-surplus-dispatch",
+      "family_id": "civic-farm-surplus-dispatch",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 537,
+      "response_sha256": "5eefcf05090ec392430555c9274217996e2153f6ea62556d5a0ecb64fbc9c510",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-farm-surplus-dispatch/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-fenced-ballfield-opening",
+      "family_id": "civic-fenced-ballfield-opening",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 463,
+      "response_sha256": "5c66fbc2c9b818c4b3dac721aba0ae50f59422afd7592a239db37dac2e8a13e8",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-fenced-ballfield-opening/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-fenced-ballfield-opening",
+      "family_id": "civic-fenced-ballfield-opening",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 487,
+      "response_sha256": "81edbb914ab4f50eb581d7b3d97ccddc3c1c85766fb9d5c04a27b72e708068a3",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-fenced-ballfield-opening/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-floodgate-decisions",
+      "family_id": "civic-floodgate-decisions",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 575,
+      "response_sha256": "a0bdcf435b8b8302dec12c715366457c7cc53e381663bbcf9517497000653d2f",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-floodgate-decisions/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-floodgate-decisions",
+      "family_id": "civic-floodgate-decisions",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 550,
+      "response_sha256": "8ef90a9b3e45c95acb7857c6fa489899332df1f433ba7719226d380aaebeb647",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-floodgate-decisions/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-floodplain-parking-purchase",
+      "family_id": "civic-floodplain-parking-purchase",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 467,
+      "response_sha256": "e9aa0361107184f84cbb1e703ac186e013e8f76c7fce3122261c73a377381a60",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-floodplain-parking-purchase/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-floodplain-parking-purchase",
+      "family_id": "civic-floodplain-parking-purchase",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 461,
+      "response_sha256": "8dc8b381f065ce046c4ccac16c4aec8a3fb1bb30a4da9776581f2a90a618a78c",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-floodplain-parking-purchase/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-grandparents-story-hour",
+      "family_id": "civic-grandparents-story-hour",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 484,
+      "response_sha256": "51c63ea18f4dd945011e91457964ee3f44b08054ce17d7d6572637a21160fd01",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-grandparents-story-hour/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-grandparents-story-hour",
+      "family_id": "civic-grandparents-story-hour",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 535,
+      "response_sha256": "d299697e2e001ce46e3738e5e62aed1a36911813560d6a3e9f98a8919c661491",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-grandparents-story-hour/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-grocery-patronage-return",
+      "family_id": "civic-grocery-patronage-return",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 491,
+      "response_sha256": "58d4632f2a0e24278134754ec5d60b730503e73ce73d7704118a20d3724edaf1",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-grocery-patronage-return/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-grocery-patronage-return",
+      "family_id": "civic-grocery-patronage-return",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 563,
+      "response_sha256": "ea7b6d3d7f6f2b2df7c18d813a707a5fb80288b969860c7b156c192b3f1e3bf9",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-grocery-patronage-return/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-grocery-post-counter",
+      "family_id": "civic-grocery-post-counter",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 488,
+      "response_sha256": "1824c03d6a3b2a445c5016b38fdc6fc06667528ce091148af0584fc8607e9a3b",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-grocery-post-counter/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-grocery-post-counter",
+      "family_id": "civic-grocery-post-counter",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 517,
+      "response_sha256": "445a69bf4e564b96d8d4bf04c4a0d34d9ffba045adc004794587f4dd6166a273",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-grocery-post-counter/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-land-trust-resale-formula",
+      "family_id": "civic-land-trust-resale-formula",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 564,
+      "response_sha256": "1474836d40ee00ca484a863613956ff3631ccd422c996105f111dd3611aca009",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-land-trust-resale-formula/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-land-trust-resale-formula",
+      "family_id": "civic-land-trust-resale-formula",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 614,
+      "response_sha256": "640acabd3bb304afb0e3da4f8d8a3e2acb49d67e131c59994dae72239b435540",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-land-trust-resale-formula/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-last-public-payphone",
+      "family_id": "civic-last-public-payphone",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 524,
+      "response_sha256": "d742e3733b9f8d1c5835b08a462cea665c1b6342b752b86d8ade596ba7e0d3cb",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-last-public-payphone/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-last-public-payphone",
+      "family_id": "civic-last-public-payphone",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 564,
+      "response_sha256": "c86c6fd0139d019282e91bc6d91e1b8eb563bec3704020178f4f8a9fab046bfe",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-last-public-payphone/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-laundromat-noticeboard",
+      "family_id": "civic-laundromat-noticeboard",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 518,
+      "response_sha256": "af0602c47ea80e28f4ac0d454082eceb94bd203110acecbe33f6aeb5ebde6b2e",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-laundromat-noticeboard/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-laundromat-noticeboard",
+      "family_id": "civic-laundromat-noticeboard",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 525,
+      "response_sha256": "9f2fcea22ebb65674477b3e7a1f4486c84ab3312bebc3490ce9f1a59110b7b13",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-laundromat-noticeboard/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-library-book-reconsideration",
+      "family_id": "civic-library-book-reconsideration",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 561,
+      "response_sha256": "798be7eab73df38d0435eb2664e73a3477633828fb0afa74bec631a6ab1dd092",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-library-book-reconsideration/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-library-book-reconsideration",
+      "family_id": "civic-library-book-reconsideration",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 568,
+      "response_sha256": "5ebcd3c8c08cb506781f07c97001b97da4eaf6cd5383d1b748d092fe02a495b6",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-library-book-reconsideration/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-library-return-lockers",
+      "family_id": "civic-library-return-lockers",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 483,
+      "response_sha256": "620573f522fb9eb9b2a236549dc0827dfad65bbc5b7a219dfc4af90e26ef0b4e",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-library-return-lockers/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-library-return-lockers",
+      "family_id": "civic-library-return-lockers",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 527,
+      "response_sha256": "449d6ee61644beea31072b03ffacc1fa96c770b22cadd6480b5cb8c28811c244",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-library-return-lockers/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-market-dawn-porters",
+      "family_id": "civic-market-dawn-porters",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 486,
+      "response_sha256": "47175b93fbfbde5410136dbdae6b0d5663bc62384c932482874ea146254b62b4",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-market-dawn-porters/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-market-dawn-porters",
+      "family_id": "civic-market-dawn-porters",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 535,
+      "response_sha256": "e92c1d424af6cc865c01b4afdafbcae3007e95b277d59322b61ea9e199050477",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-market-dawn-porters/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-market-electricity-project",
+      "family_id": "civic-market-electricity-project",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 536,
+      "response_sha256": "3746884b51378f5b0afd7aff6bfe76adc427f5c2b7d354c865490a3a027fdefc",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-market-electricity-project/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-market-electricity-project",
+      "family_id": "civic-market-electricity-project",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 548,
+      "response_sha256": "3aadf2765d660a0ad8eda41b017a89b359e6f53d5278a161b91b0ca57333c73a",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-market-electricity-project/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-market-voucher-launch",
+      "family_id": "civic-market-voucher-launch",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 481,
+      "response_sha256": "c38a8e89f9f26074cfddb16a9b4a745c2a6197ee92ec849a6425a4a41a3762d2",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-market-voucher-launch/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-market-voucher-launch",
+      "family_id": "civic-market-voucher-launch",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 477,
+      "response_sha256": "b50e13434e41c7fc1d2c3cd2b6792c35f0fb88d6ca3607204347a7d3d011d008",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-market-voucher-launch/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-motel-housing-purchase",
+      "family_id": "civic-motel-housing-purchase",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 549,
+      "response_sha256": "1dce362439021f457e401f5c7217043ac3ba162732f5e74e85ceb1b887a09124",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-motel-housing-purchase/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-motel-housing-purchase",
+      "family_id": "civic-motel-housing-purchase",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 527,
+      "response_sha256": "703b82bdbce2f64a93ab6b831322e9c32c8c5c35abb0c456d7447e5aa51c9160",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-motel-housing-purchase/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-multilingual-service-desk",
+      "family_id": "civic-multilingual-service-desk",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 459,
+      "response_sha256": "faa94a7dcf2c8e840a0016ff170807c8fb95c13885762311bae20bedf461c4c2",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-multilingual-service-desk/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-multilingual-service-desk",
+      "family_id": "civic-multilingual-service-desk",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 481,
+      "response_sha256": "6ce9b5effaf017d2dc8d4734ffbf40cc9d66d0988e9eaa6ecfd178012f5ff59d",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-multilingual-service-desk/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-municipal-tree-nursery",
+      "family_id": "civic-municipal-tree-nursery",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 527,
+      "response_sha256": "222fcd3805cd145a0dd53f38c7b669b4d2fb1abe1cdd16c11307a18fae816463",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-municipal-tree-nursery/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-municipal-tree-nursery",
+      "family_id": "civic-municipal-tree-nursery",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 589,
+      "response_sha256": "fbf37bf713ec59838ab147233986cf35499eb63555996ba64529c7181674de84",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-municipal-tree-nursery/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-museum-free-admission",
+      "family_id": "newsroom-museum-admission-policy-template",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 469,
+      "response_sha256": "aa51dfb44020f23fe2e59bb7592808f1041d8a94a433015be2ea68ecfe6cd754",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-museum-free-admission/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-museum-free-admission",
+      "family_id": "newsroom-museum-admission-policy-template",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 476,
+      "response_sha256": "d99f30217e712fc8bd8f02ce5221fb75e90a7f982ae3c0bc01e9cdac1a5c24a3",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-museum-free-admission/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-neighborhood-mural-maintenance",
+      "family_id": "civic-neighborhood-mural-maintenance",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 597,
+      "response_sha256": "368c54ebdeb14aef5c24dae6c5abba106086ebc319fb5bc0df681c9639864b15",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-neighborhood-mural-maintenance/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-neighborhood-mural-maintenance",
+      "family_id": "civic-neighborhood-mural-maintenance",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 566,
+      "response_sha256": "5b9728a98804a0c156b890c946ac4d527bd8671354a31e89dd215a4bdfe46aa7",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-neighborhood-mural-maintenance/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-odor-complaint-investigation",
+      "family_id": "civic-odor-complaint-investigation",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 574,
+      "response_sha256": "0cc0bb09df25d1a562707184cf45cfbc7f46b1764d6005cf7988177e7a175995",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-odor-complaint-investigation/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-odor-complaint-investigation",
+      "family_id": "civic-odor-complaint-investigation",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 599,
+      "response_sha256": "b893b618f9ff937331cf9ba62880943a01bf5ada61db3b3834452cdef10091a9",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-odor-complaint-investigation/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-permit-parking-extension",
+      "family_id": "civic-permit-parking-extension",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 466,
+      "response_sha256": "d4df7f60095601a705062b846fd5be4dd50cd07754a733031e3d48c8cb42ec15",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-permit-parking-extension/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-permit-parking-extension",
+      "family_id": "civic-permit-parking-extension",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 471,
+      "response_sha256": "27b761787e40a895b83d24f6ba26c6dbcd6878330270107d7115619a0a36b077",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-permit-parking-extension/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-playground-surface-choice",
+      "family_id": "civic-playground-surface-choice",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 574,
+      "response_sha256": "2534a5cadff872598bb852c5889667f0b3f848966fc85c7bbf129368da4bc827",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-playground-surface-choice/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-playground-surface-choice",
+      "family_id": "civic-playground-surface-choice",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 559,
+      "response_sha256": "9c2add67fd97f92fac761d762469c3b87c434381003e35bcf6bcbe5dff8b5a52",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-playground-surface-choice/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-pottery-test-shard-archive",
+      "family_id": "civic-pottery-test-shard-archive",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 531,
+      "response_sha256": "0d933a8b7f1506a8aea56860d68b980c5e61d2995e8e265f327181186bb0712f",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-pottery-test-shard-archive/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-pottery-test-shard-archive",
+      "family_id": "civic-pottery-test-shard-archive",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 541,
+      "response_sha256": "f8bfd5e1e35a02a733cb63c7f23388b4c1d8f4ecad560314e06bf1016959a4df",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-pottery-test-shard-archive/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-public-bench-workshop",
+      "family_id": "civic-public-bench-workshop",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 541,
+      "response_sha256": "d34729f777f2995e3d93a8ab9758124ba77c2c9297b78e819667e79bdd85cf95",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-public-bench-workshop/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-public-bench-workshop",
+      "family_id": "civic-public-bench-workshop",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 614,
+      "response_sha256": "e16e31b3fcbb9dcb1ccfe3236382c5ac160c55cafb08067238c84eafd0efefbb",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-public-bench-workshop/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-public-chess-tables",
+      "family_id": "civic-public-chess-tables",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 567,
+      "response_sha256": "6e346b11dd32d267ef1c7c87fcf0abd99f2b6bf48b7e224607bda40342d3e89d",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-public-chess-tables/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-public-chess-tables",
+      "family_id": "civic-public-chess-tables",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 612,
+      "response_sha256": "ad51a35d1c53a71f7333d807167a8a088d6ec6c811afd90cc74e3f85f1e1ca30",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-public-chess-tables/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-public-orchard-harvest",
+      "family_id": "civic-public-orchard-harvest",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 522,
+      "response_sha256": "a051a6f28da71f77123d8d03ddf755536eef6ff9d22da3af3137def469f0d311",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-public-orchard-harvest/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-public-orchard-harvest",
+      "family_id": "civic-public-orchard-harvest",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 555,
+      "response_sha256": "5bf0a9b754d3f4a2a02a8a8a99267c0462ea3b12e30f9677488707eaf0e8dec8",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-public-orchard-harvest/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-public-toilet-caretakers",
+      "family_id": "civic-public-toilet-caretakers",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 510,
+      "response_sha256": "71a36699f30771c360fcfabcfb69325289954bccdc5d262346f2a194353370c1",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-public-toilet-caretakers/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-public-toilet-caretakers",
+      "family_id": "civic-public-toilet-caretakers",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 549,
+      "response_sha256": "102213eb3258bd4571752215c2bdef729fff6d6f275913a70f2e3e39147a1b15",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-public-toilet-caretakers/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-raised-school-crossings",
+      "family_id": "civic-raised-school-crossings",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 485,
+      "response_sha256": "de275b1d33e3e409fad7ea268823aa492b646bd20111487935982c8828aa5b21",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-raised-school-crossings/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-raised-school-crossings",
+      "family_id": "civic-raised-school-crossings",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 489,
+      "response_sha256": "cb2cafdb2691e051f3882714dc51652d47f14138fe834043ad04b9bdf4983d7f",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-raised-school-crossings/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-retrofit-temporary-moves",
+      "family_id": "civic-retrofit-temporary-moves",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 559,
+      "response_sha256": "8a929c6dc6a2d374c0436ef0fa1404b54d13d58dd904f00b7e87b6c9825540ca",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-retrofit-temporary-moves/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-retrofit-temporary-moves",
+      "family_id": "civic-retrofit-temporary-moves",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 567,
+      "response_sha256": "92d4ebe68e13a73d23ba9d8b8d893d4daa454c610cde94f582405d15bc2e1438",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-retrofit-temporary-moves/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-rink-winter-conversion",
+      "family_id": "civic-rink-winter-conversion",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 540,
+      "response_sha256": "e8344139861e66b41965de05a4dabbf9f10206cf6e673aa9d38d2f70d095187a",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-rink-winter-conversion/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-rink-winter-conversion",
+      "family_id": "civic-rink-winter-conversion",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 558,
+      "response_sha256": "6e491a9ddb61f97bc8b31c13d48b9ac42119d01de32ce23fbd7bc6bd1a219795",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-rink-winter-conversion/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-rooftop-clotheslines",
+      "family_id": "civic-rooftop-clotheslines",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 501,
+      "response_sha256": "f0a950ce1efcbc0ae0b0701edaf81d9715139d1d05f3608f447e290333f79f02",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-rooftop-clotheslines/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-rooftop-clotheslines",
+      "family_id": "civic-rooftop-clotheslines",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 554,
+      "response_sha256": "e96518d6e6bb41a61720c9870dec18eaf8b2eb0ecec335fabee31681943fbacc",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-rooftop-clotheslines/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-school-soundwalk-map",
+      "family_id": "civic-school-soundwalk-map",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 557,
+      "response_sha256": "4d16f95d9dd83c56df17b9041842e706e9e07f5541bd8b106a6a4edb471173e2",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-school-soundwalk-map/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-school-soundwalk-map",
+      "family_id": "civic-school-soundwalk-map",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 599,
+      "response_sha256": "ee1767a29cb155ef81b24f5552912a0cbdc4f8e8e652ad6fe7eace22e725b246",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-school-soundwalk-map/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-school-zone-proposal",
+      "family_id": "civic-school-zone-proposal",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 580,
+      "response_sha256": "72be9de198a74748a8548ef0eb42b58d9022771d36e37650f85a4deb7d9f038e",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-school-zone-proposal/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-school-zone-proposal",
+      "family_id": "civic-school-zone-proposal",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 569,
+      "response_sha256": "16fb9f38de299731447cd59fa478f02a826acc4779d9fc785485ff7e25540803",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-school-zone-proposal/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-shared-solar-allocation",
+      "family_id": "civic-shared-solar-allocation",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 593,
+      "response_sha256": "b76239c49cae0043f287513995df86821151e5a369fe7688a4343cb36ed84bf3",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-shared-solar-allocation/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-shared-solar-allocation",
+      "family_id": "civic-shared-solar-allocation",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 588,
+      "response_sha256": "10e3badf1d371c5031e56b83579f77daf7dce3fc6b812903f0de45a8a65afe34",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-shared-solar-allocation/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-siren-test-schedule",
+      "family_id": "civic-siren-test-schedule",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 551,
+      "response_sha256": "03c05efa672ea26bf7d01cc5b21e6f2eea48f63d1b00e2e2cfcc4a0de0a8a056",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-siren-test-schedule/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-siren-test-schedule",
+      "family_id": "civic-siren-test-schedule",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 562,
+      "response_sha256": "b02878fcf6c51b6be0fec9bd275b9968a64adab554caa6ab6e9ed9a39bda7b2c",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-siren-test-schedule/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-small-shops-shared-orders",
+      "family_id": "civic-small-shops-shared-orders",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 539,
+      "response_sha256": "4d96396b3c8ad1dc6e86a225d8c522bf79e2a3b453524756699addb47e03241c",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-small-shops-shared-orders/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-small-shops-shared-orders",
+      "family_id": "civic-small-shops-shared-orders",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 555,
+      "response_sha256": "e3bdb908140589107a07cadebf99ebd20faf618522848ef6615779041e0772e0",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-small-shops-shared-orders/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-snow-clearance-contract",
+      "family_id": "civic-snow-clearance-contract",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 480,
+      "response_sha256": "09920e700e60f3bc9d08eb36c50a1161cbf5d80d87cad0af6f2670e6d99fe2c8",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-snow-clearance-contract/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-snow-clearance-contract",
+      "family_id": "civic-snow-clearance-contract",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 462,
+      "response_sha256": "b3f7d064d92aa09a2320d1d585d3325ca96f3e13d0cd2eb51b9f2146e30c6277",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-snow-clearance-contract/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-station-piano-stewards",
+      "family_id": "civic-station-piano-stewards",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 610,
+      "response_sha256": "5ba5a320481d0353665b51228a82989bc936b53ac68f7ccae8b495aaa2f0df23",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-station-piano-stewards/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-station-piano-stewards",
+      "family_id": "civic-station-piano-stewards",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 616,
+      "response_sha256": "e50e7ae7b389e81ef1d5b959fe9beb9e20bf2b718ae05616b6758d077cf48fa7",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-station-piano-stewards/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-street-tree-review",
+      "family_id": "civic-street-tree-review",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 563,
+      "response_sha256": "b6ee059c7bf8550a69934cf031ccafa6b4644606b0d2353273183d0fdd573d3e",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-street-tree-review/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-street-tree-review",
+      "family_id": "civic-street-tree-review",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 576,
+      "response_sha256": "08c361e7668920899356b182a7cc80eec41b2f2b32154c726755bc014dc51124",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-street-tree-review/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-surplus-furniture-disposal",
+      "family_id": "civic-surplus-furniture-disposal",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 619,
+      "response_sha256": "d68ec608d4fc2394c5af756c3cd271d200e22d83f52574ece2b00f5e16192277",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-surplus-furniture-disposal/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-surplus-furniture-disposal",
+      "family_id": "civic-surplus-furniture-disposal",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 562,
+      "response_sha256": "7fbc3b71f177d9c4cb651fc7b8ef590a839d6c34eed6f49d1d6161d17534a7cd",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-surplus-furniture-disposal/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-temporary-road-repairs",
+      "family_id": "civic-temporary-road-repairs",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 543,
+      "response_sha256": "e2573acca615e9ca5494aecafc072b1d1192ddf72ab10d9794995fcd009ab2fc",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-temporary-road-repairs/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-temporary-road-repairs",
+      "family_id": "civic-temporary-road-repairs",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 615,
+      "response_sha256": "a3e01b3910e3ef13e7a72c486c2b9b6e2870de7008d88582c9654513e395df09",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-temporary-road-repairs/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-temporary-shop-leases",
+      "family_id": "civic-temporary-shop-leases",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 497,
+      "response_sha256": "1aa27774fbbc4ef1fbcea0b913a8a05051112f0f6fde6a7fd5d035ed1caf3eca",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-temporary-shop-leases/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-temporary-shop-leases",
+      "family_id": "civic-temporary-shop-leases",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 540,
+      "response_sha256": "d136665ac3d79efda8f63a869ca21318e083aa2ee789a9aff1688099941eef51",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-temporary-shop-leases/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-unclaimed-bicycle-process",
+      "family_id": "civic-unclaimed-bicycle-process",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 560,
+      "response_sha256": "17d754e18f99b0bdcbd948d1cd6dfcd9ca26a9feacf8649cdf61ee5cb28aadce",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-unclaimed-bicycle-process/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-unclaimed-bicycle-process",
+      "family_id": "civic-unclaimed-bicycle-process",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 604,
+      "response_sha256": "3dedf56f8bef44094d393c2e4a1b3013388f76146922f05f31b41896326d6726",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-unclaimed-bicycle-process/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-volunteer-stream-records",
+      "family_id": "civic-community-observation-records",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 537,
+      "response_sha256": "8f57c33cd3130500f683e8e99260bcb1df9e8b05079e6b16f0f7a041aee22707",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-volunteer-stream-records/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-volunteer-stream-records",
+      "family_id": "civic-community-observation-records",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 562,
+      "response_sha256": "c41f1ca8886c0e0d2a3733aa4821edcd224b2d33e8971ef0ea6629c12d33e7b0",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-volunteer-stream-records/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-water-bill-fixed-charges",
+      "family_id": "civic-water-bill-fixed-charges",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 591,
+      "response_sha256": "716ae3eecce7ef68762d77bbca25ef03f9ecbf67a2f980fbe69c98080f5d2636",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-water-bill-fixed-charges/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-water-bill-fixed-charges",
+      "family_id": "civic-water-bill-fixed-charges",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 617,
+      "response_sha256": "e8c88ff2e83f79c900598fe17c5969f0be3a3cc9b19aa75c384d1f2650d54e62",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-water-bill-fixed-charges/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-water-leak-alerts",
+      "family_id": "civic-water-leak-alerts",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 526,
+      "response_sha256": "83471c0dcabb75a7ab5b4f41c2b080d457cc82d64e20028eaf6cf492ec56573b",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-water-leak-alerts/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-water-leak-alerts",
+      "family_id": "civic-water-leak-alerts",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 568,
+      "response_sha256": "41b55bab9db7691d80fb8936df05fd7230bac85f9787b4a28dc85b808d50d36c",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-water-leak-alerts/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-weekly-paper-delivery-round",
+      "family_id": "civic-weekly-paper-delivery-round",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 506,
+      "response_sha256": "c221adaf6c8b8c0f3d0a572a8a92ce8b106be60b4d19edcc3d24c63b9524ad52",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-weekly-paper-delivery-round/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-weekly-paper-delivery-round",
+      "family_id": "civic-weekly-paper-delivery-round",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 539,
+      "response_sha256": "03b4e8f85fda0fc8336b86d7c445f3341689368c686d81ae88d5c3f923c37876",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-weekly-paper-delivery-round/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-womens-boat-workshop",
+      "family_id": "civic-womens-boat-workshop",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 582,
+      "response_sha256": "38009e4df4cf9841f446b6df117c98ac0ff801f416603fe82b3fa6b67bea89a3",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-womens-boat-workshop/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-womens-boat-workshop",
+      "family_id": "civic-womens-boat-workshop",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 584,
+      "response_sha256": "451f4acb096b9ac33f020d83b6677e1d82a6fee270dac832a32cc8dca5b9cf4a",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-womens-boat-workshop/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-youth-budget-awards",
+      "family_id": "civic-youth-budget-awards",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 482,
+      "response_sha256": "a05a6c6e3f54432a90206e55144eb4fd6d30626c6411e4db3d372211129c3205",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-youth-budget-awards/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-civic-youth-budget-awards",
+      "family_id": "civic-youth-budget-awards",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 498,
+      "response_sha256": "7d21a0fc655235be03f9c48f537546576c8e5f478e49c3f0ed2c271f6e71b249",
+      "example": "evals/newsroom/examples/primary/newsroom-held-civic-youth-budget-awards/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-anesthesia-drug-shortage",
+      "family_id": "fam-propofol-shortage",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 544,
+      "response_sha256": "5bf8bac82fb1defade463544d22dccda20a6e832ed6b32b08421f0b61b94f381",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-anesthesia-drug-shortage/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-anesthesia-drug-shortage",
+      "family_id": "fam-propofol-shortage",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 573,
+      "response_sha256": "1442236e9e07686e374ab7dbd38e7de9c5cb56feb5de215ddb4eedd29b5eb2f2",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-anesthesia-drug-shortage/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-antibiotic-trial-halted",
+      "family_id": "fam-antibiotic-trial",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 472,
+      "response_sha256": "c5f6040047cecf28ac5b04ea42d7c8e36382835d7d33a12821cb03568859b1bd",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-antibiotic-trial-halted/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-antibiotic-trial-halted",
+      "family_id": "fam-antibiotic-trial",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 493,
+      "response_sha256": "5e0985ac56e90c2ff8ddd0b384ba5b674e355abf6327ee542e0de109fd4327fa",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-antibiotic-trial-halted/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-aquifer-depletion-study",
+      "family_id": "fam-meridian-aquifer",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 571,
+      "response_sha256": "2c5b3b003556d05791a2dd2b2961a5499b0cd797b0278636d354cafa8545f153",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-aquifer-depletion-study/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-aquifer-depletion-study",
+      "family_id": "fam-meridian-aquifer",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 548,
+      "response_sha256": "a1e722507024743759255371ec809fd4a56ef0b0dd06891f452dc702cfddd5e3",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-aquifer-depletion-study/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-autonomous-port-fatality",
+      "family_id": "fam-portside-fatality",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 612,
+      "response_sha256": "32d3d8544999c17eb2d31d228f5c4c9035d59dcdeab38e3d3d18fd56e93f4322",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-autonomous-port-fatality/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-autonomous-port-fatality",
+      "family_id": "fam-portside-fatality",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 551,
+      "response_sha256": "c270daf7b87f84ea3183a16db072bb39385076eb04ab583a7ecf77a4b4a68d8e",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-autonomous-port-fatality/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-biosafety-breach",
+      "family_id": "fam-bsl4-breach",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 483,
+      "response_sha256": "35901b59ff5440f6205642e88564736b9ebb3350d92427eea6478efa5a2f88fe",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-biosafety-breach/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-biosafety-breach",
+      "family_id": "fam-bsl4-breach",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 474,
+      "response_sha256": "50ea3957334753da7038e2150573bd59cedaac6374a726581e7c82b6ed1d5bcf",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-biosafety-breach/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-carbon-credit-fraud",
+      "family_id": "science-protected-forest-credit-template",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 466,
+      "response_sha256": "8c9bfac935e2a836f40d49eee842fd3def43b71d924950a89b47428f58708d78",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-carbon-credit-fraud/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-carbon-credit-fraud",
+      "family_id": "science-protected-forest-credit-template",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 525,
+      "response_sha256": "b27a1f93da66a0b3a3d681bfcdc2a07a85d9f1092bb66196acc31984c83a929f",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-carbon-credit-fraud/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-crispr-therapy-approved",
+      "family_id": "science-crispr-approval-access-template",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 516,
+      "response_sha256": "2b5f7801998f035b8840e9128d2b044b6e0a7f22ba8a63b9da0795ed5857bddd",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-crispr-therapy-approved/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-crispr-therapy-approved",
+      "family_id": "science-crispr-approval-access-template",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 543,
+      "response_sha256": "7bc6911edaf7be99f9198ea12b921160453c3df38e161daaa6d18fbb6b51d63f",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-crispr-therapy-approved/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-dam-structural-warning",
+      "family_id": "science-dam-asr-monitoring-template",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 482,
+      "response_sha256": "971f858543d955a5840eff7a90e6d376384a6dfe67d7c715ab19d741f4250f33",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-dam-structural-warning/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-dam-structural-warning",
+      "family_id": "science-dam-asr-monitoring-template",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 559,
+      "response_sha256": "bbc8f297abf638a1560eb0cbf8865cb6f7dc10b8bd548f1f390fccbc9b0bec62",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-dam-structural-warning/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-ev-battery-recall",
+      "family_id": "fam-ev-recall",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 524,
+      "response_sha256": "00081846a624989a3294ae5e6f9ef92e30d558daa852bca10e80c229b45e6b1a",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-ev-battery-recall/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-ev-battery-recall",
+      "family_id": "fam-ev-recall",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 556,
+      "response_sha256": "ad2dfa3bc22382dfcd1ede9ff5c97cff36e7234084a75b25644219f194030d76",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-ev-battery-recall/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-expl-antibiotic-resistance",
+      "family_id": "fam-expl-abx-resist",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 667,
+      "response_sha256": "ed22849f09a9889468f87723729df1eed0220aa1130a800192c6ea1c819824c3",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-expl-antibiotic-resistance/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-expl-antibiotic-resistance",
+      "family_id": "fam-expl-abx-resist",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 653,
+      "response_sha256": "bbc7096a932570f3b9afde1d94f0e6904bae29dbfb19f135f7938df9a3e69d4b",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-expl-antibiotic-resistance/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-expl-carbon-capture",
+      "family_id": "fam-expl-ccs",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 704,
+      "response_sha256": "24dca8c933b95085b7fdf7b01c0671255f7212e727f3e8967e7758bceac84458",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-expl-carbon-capture/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-expl-carbon-capture",
+      "family_id": "fam-expl-ccs",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 649,
+      "response_sha256": "e0397010b7f8e206215ae6d3a40d9c3df4443bcc21f8e15984730d746871ec4f",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-expl-carbon-capture/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-expl-chip-fab",
+      "family_id": "fam-expl-chip-fab",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 591,
+      "response_sha256": "c11f7814b4bb92c692e6203ed106dfff4dbd7c00d5e4d6836d7deb2335d507b8",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-expl-chip-fab/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-expl-chip-fab",
+      "family_id": "fam-expl-chip-fab",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 612,
+      "response_sha256": "bd1ba0eccef4225f697fbd4e92b6c105d46f5ca0b221354739a65571fc9b8bb4",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-expl-chip-fab/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-expl-crispr-editing",
+      "family_id": "fam-expl-crispr",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 567,
+      "response_sha256": "b6d0494ab621f3e549c515435c65c1f03abc8d83a1d6048196a12cbc3fa03b16",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-expl-crispr-editing/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-expl-crispr-editing",
+      "family_id": "fam-expl-crispr",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 619,
+      "response_sha256": "ecad629d8523e52cbd446e3401eb8d755b80b611594be0e7fcafb9103b0416b8",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-expl-crispr-editing/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-expl-dam-inspection",
+      "family_id": "fam-expl-dam",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 684,
+      "response_sha256": "029a50cb9fcd9fada7486584d7b8642fe6b7a9efc64fd3e36983f5e3f6e39dde",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-expl-dam-inspection/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-expl-dam-inspection",
+      "family_id": "fam-expl-dam",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 655,
+      "response_sha256": "860f1a01b1ef3445edd422bae41b7fefb547762e76d857631a316a451127914f",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-expl-dam-inspection/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-expl-dark-matter",
+      "family_id": "science-apex-dark-matter-program",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 680,
+      "response_sha256": "947ba0f911ab8bddd245251a12cc5f289365759fbbf0f00fa95799504734525b",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-expl-dark-matter/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-expl-dark-matter",
+      "family_id": "science-apex-dark-matter-program",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 646,
+      "response_sha256": "22795c6aa09157b6008c681829ebb90bc526233b87dc6e79d216a99e652847e8",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-expl-dark-matter/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-expl-deep-sea-mining",
+      "family_id": "fam-expl-dsm",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 571,
+      "response_sha256": "1f2ae83d8b5b274a1d5f56cd3f9d54bcec232d612c993d66987ff63c5eb81ffb",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-expl-deep-sea-mining/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-expl-deep-sea-mining",
+      "family_id": "fam-expl-dsm",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 609,
+      "response_sha256": "e6468cc151cba905f2e905250707a2984b84b5f17db81ca29637abed8b691795",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-expl-deep-sea-mining/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-expl-enhanced-geothermal",
+      "family_id": "fam-expl-egs",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 572,
+      "response_sha256": "83dcba6e4c1e4ab97d4c483653aab767218a4d66b00ab78b54e6c79eba2d7617",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-expl-enhanced-geothermal/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-expl-enhanced-geothermal",
+      "family_id": "fam-expl-egs",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 607,
+      "response_sha256": "c72effafb1b53536b032850b9427a428f6b3338608b77747ea7bd256170731eb",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-expl-enhanced-geothermal/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-expl-ev-battery-fire",
+      "family_id": "fam-expl-ev-fire",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 590,
+      "response_sha256": "08a53d7e232691ee4aab84f4d65bc99b1d180cc0d2113105659ced354ca7f27f",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-expl-ev-battery-fire/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-expl-ev-battery-fire",
+      "family_id": "fam-expl-ev-fire",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 665,
+      "response_sha256": "be95df0381d112b9d0ddc38a770519b3b2a50e779681669a12c83b34ca5a57ec",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-expl-ev-battery-fire/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-expl-fmri-limits",
+      "family_id": "fam-expl-fmri",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 559,
+      "response_sha256": "0257f735e636115bf396b3c40b38f05aae93e90b972460aa2071977916eeacbb",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-expl-fmri-limits/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-expl-fmri-limits",
+      "family_id": "fam-expl-fmri",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 615,
+      "response_sha256": "6cc7c17f021ac3c21e1f361457d5869a92fe02ba6c4b0ce80acc3bc248e4db2c",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-expl-fmri-limits/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-expl-fusion-basics",
+      "family_id": "fam-expl-fusion",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 628,
+      "response_sha256": "ba29f30a1038530bbb51d4710f067cfab51b97ce3600e575be222188df0d8b36",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-expl-fusion-basics/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-expl-fusion-basics",
+      "family_id": "fam-expl-fusion",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 631,
+      "response_sha256": "9a0658512b84b3ae352076c0a4efca4eb33c579646113d928292a1bdcb803ba5",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-expl-fusion-basics/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-expl-grid-frequency",
+      "family_id": "fam-expl-grid",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 625,
+      "response_sha256": "819d5b5f3162ff1e81c91887c01078a2574cab0ca0a8dd3a90ab80d2daa951e1",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-expl-grid-frequency/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-expl-grid-frequency",
+      "family_id": "fam-expl-grid",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 661,
+      "response_sha256": "12da024a9d2a37263d8f741fed6cce6e193a0bcbb61b86885382227325091b9a",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-expl-grid-frequency/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-expl-hydrogen-colors",
+      "family_id": "fam-expl-h2-colors",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 657,
+      "response_sha256": "79517f7c196126884cb5f3f74c306659f3b2f3adc49812190e63118dfed24c96",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-expl-hydrogen-colors/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-expl-hydrogen-colors",
+      "family_id": "fam-expl-h2-colors",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 738,
+      "response_sha256": "a2117f839f34423c06068205b26a7ec37a9bc91cf638e63c784a6c29227d956d",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-expl-hydrogen-colors/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-expl-mrna-platform",
+      "family_id": "fam-expl-mrna",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 560,
+      "response_sha256": "6c5adfd66f1bdbcd76c9b9ea3d7e5bb4143e4754123bd11e632d644727cd83a7",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-expl-mrna-platform/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-expl-mrna-platform",
+      "family_id": "fam-expl-mrna",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 623,
+      "response_sha256": "557080b382eb553db582aa02e8d02f96ba0cb71771f89067cca5622871be6e11",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-expl-mrna-platform/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-expl-offshore-wind-grid",
+      "family_id": "fam-expl-wind-grid",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 587,
+      "response_sha256": "9e7738d4c6092b8e2dbeb0dea689a303e2698c964c1c877bd346650798a059f5",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-expl-offshore-wind-grid/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-expl-offshore-wind-grid",
+      "family_id": "fam-expl-wind-grid",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 581,
+      "response_sha256": "ba56cb3da7e1bc3ed8a2d3edd9d19168846ecd6046518f3449a39360e406c2a6",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-expl-offshore-wind-grid/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-expl-quake-warning-how",
+      "family_id": "fam-expl-quake",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 586,
+      "response_sha256": "cdf7575c01d78c693909396f746c8e7b057bf2792b61b3c0762e613829beb0a9",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-expl-quake-warning-how/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-expl-quake-warning-how",
+      "family_id": "fam-expl-quake",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 614,
+      "response_sha256": "72f068081b1c4a0ee50a7f6d4bd4df0a9a28d4a4243b0595554ed644a7d91657",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-expl-quake-warning-how/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-expl-rare-earth-critical",
+      "family_id": "fam-expl-rare-earth",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 608,
+      "response_sha256": "734fb8798de2ea0e1062be669c5aff4e79cc241d4030f25e39efa1b28d434c90",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-expl-rare-earth-critical/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-expl-rare-earth-critical",
+      "family_id": "fam-expl-rare-earth",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 619,
+      "response_sha256": "b98c7c9fa093c9655465bf91a26efff17d4b8b3d6a656773da28527a65977561",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-expl-rare-earth-critical/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-expl-sea-level-rise",
+      "family_id": "fam-expl-sea-level",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 616,
+      "response_sha256": "0fce5e26bd2bc9aa7d4e04d627ee71383a493888c855acb39938dada29353f35",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-expl-sea-level-rise/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-expl-sea-level-rise",
+      "family_id": "fam-expl-sea-level",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 619,
+      "response_sha256": "b3c71d304d82d67ef1a3bf621381b33aae9fb2d230ffb456aa696620605adadc",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-expl-sea-level-rise/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-expl-soil-carbon",
+      "family_id": "fam-expl-soil-carbon",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 653,
+      "response_sha256": "c094bc227fe77b0ad7de78d45347a8f3a1e9f3ec1722bea38553564c6d69c4cf",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-expl-soil-carbon/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-expl-soil-carbon",
+      "family_id": "fam-expl-soil-carbon",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 683,
+      "response_sha256": "750e541f7fcfd544328b634158aa89941af1f103952545bedb7c5ddf48c2c6b8",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-expl-soil-carbon/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-expl-space-debris-risk",
+      "family_id": "fam-expl-debris-risk",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 599,
+      "response_sha256": "7486fd829375eda6db847d78bd1d3827877f6599ef5a8593275abd4ede0e2cb7",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-expl-space-debris-risk/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-expl-space-debris-risk",
+      "family_id": "fam-expl-debris-risk",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 613,
+      "response_sha256": "b2d71ca64afd9200b8f7dab396f7051cb26c67b695028256ff2df9f916d1b450",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-expl-space-debris-risk/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-expl-superconductors",
+      "family_id": "fam-expl-superconductors",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 588,
+      "response_sha256": "5cf5be76895de6a21e9c6a19b05cf01fdaa2981c6d887fb90794c010e0aedd6e",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-expl-superconductors/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-expl-superconductors",
+      "family_id": "fam-expl-superconductors",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 604,
+      "response_sha256": "47414982b536ca1492e343d054131e4bce510421cb3f39fe2d568adbd632710a",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-expl-superconductors/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-expl-urban-heat-island",
+      "family_id": "science-riverdale-cooling-program",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 572,
+      "response_sha256": "ef34324903ea561f6b65081db93e7121317777dc19c1b646d4d6ce9eaa1a50ed",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-expl-urban-heat-island/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-expl-urban-heat-island",
+      "family_id": "science-riverdale-cooling-program",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 603,
+      "response_sha256": "7671374e00b1a2fe6fbbc859ad055e52f770612f93a27e475bcc46d27e552004",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-expl-urban-heat-island/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-expl-vaccine-cold-chain",
+      "family_id": "fam-expl-cold-chain",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 671,
+      "response_sha256": "f83b6dda6f3b59fcc204d0fc10ab76c18376f2d9f9751dfab9b0978a669c26d7",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-expl-vaccine-cold-chain/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-expl-vaccine-cold-chain",
+      "family_id": "fam-expl-cold-chain",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 620,
+      "response_sha256": "3eed8055644b1c5647bb8396526626e310d38c01890309013f5c34f48d4913c3",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-expl-vaccine-cold-chain/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-expl-weather-attribution",
+      "family_id": "fam-expl-attribution",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 569,
+      "response_sha256": "b8cb02b3b694ef8037cd6d63e7fa0e8b867d644753520735c0bb4da719c7fe67",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-expl-weather-attribution/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-expl-weather-attribution",
+      "family_id": "fam-expl-attribution",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 630,
+      "response_sha256": "dafe531c47da1cec3085e1156b06a61035e46d7b66479d53cbea359af9f67f9f",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-expl-weather-attribution/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-feat-antibiotic-pipeline",
+      "family_id": "fam-feat-areteia",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 572,
+      "response_sha256": "eb6343890ca24852c9a27894569630bc72838d29b28995688b621fb254a22f15",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-feat-antibiotic-pipeline/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-feat-antibiotic-pipeline",
+      "family_id": "fam-feat-areteia",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 597,
+      "response_sha256": "0fa4d40a16e65e98b9642ce182fa9a8ee2acd3b7590cc1cdf1d71222c63c9039",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-feat-antibiotic-pipeline/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-feat-aquifer-farming",
+      "family_id": "fam-feat-clearwater-aquifer",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 582,
+      "response_sha256": "d7a6ad4b699ea305839a9abd9d9e52ee082413a279b6a13a9a88f8ef5f5deffb",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-feat-aquifer-farming/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-feat-aquifer-farming",
+      "family_id": "fam-feat-clearwater-aquifer",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 589,
+      "response_sha256": "c1672531ef886dda5e2e5962b5d682e6f29656f4b9adc11c660f374672054ff0",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-feat-aquifer-farming/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-feat-aquifer-wells",
+      "family_id": "fam-feat-prairie-wells",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 643,
+      "response_sha256": "7e516e2bc7837c55d70784f3cbd15a79509844ac3a84def2cacaffc589f8cb52",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-feat-aquifer-wells/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-feat-aquifer-wells",
+      "family_id": "fam-feat-prairie-wells",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 629,
+      "response_sha256": "94f361f80d5d9fe5b4ed637a08a6c70af26b97e202dd4cfb391295e32c840766",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-feat-aquifer-wells/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-feat-attribution-legal",
+      "family_id": "fam-feat-eastport-lawsuit",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 605,
+      "response_sha256": "0f0220c2000fa3a0d1aa65205f8fcb8a1a24b4b0b8964b06511347953f3e0b38",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-feat-attribution-legal/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-feat-attribution-legal",
+      "family_id": "fam-feat-eastport-lawsuit",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 689,
+      "response_sha256": "16c9fba0867cc4f3f61a4cad6b6e5602e9d113c978df9684424011a44fd8de65",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-feat-attribution-legal/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-feat-biosafety-whistleblower",
+      "family_id": "fam-feat-northgate-whistle",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 643,
+      "response_sha256": "d155f581c6ba219c6460694b0924a7a99b0ea359dc888568d04a00355dba5492",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-feat-biosafety-whistleblower/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-feat-biosafety-whistleblower",
+      "family_id": "fam-feat-northgate-whistle",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 643,
+      "response_sha256": "acb63bc1fd81a73cf76bb7fe3493647b97596a4823d0611521f8b196879d0de5",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-feat-biosafety-whistleblower/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-feat-carbon-credit-buyers",
+      "family_id": "science-protected-forest-credit-template",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 592,
+      "response_sha256": "c84749b70aa1d40ce71d357c428377fea3a1b723256787937ea203dc663baab0",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-feat-carbon-credit-buyers/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-feat-carbon-credit-buyers",
+      "family_id": "science-protected-forest-credit-template",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 608,
+      "response_sha256": "6fec2c0c5a2428c34e59c45e97f47013d8c291180db89b7e608f36eabb7cd7e0",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-feat-carbon-credit-buyers/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-feat-chip-fab-water",
+      "family_id": "fam-feat-nexus-water",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 594,
+      "response_sha256": "91805ff1424ef0e6223721a3086d3a3f4ffee60565182865d53c9257720cf2c4",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-feat-chip-fab-water/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-feat-chip-fab-water",
+      "family_id": "fam-feat-nexus-water",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 614,
+      "response_sha256": "5a907a64f7aee17d6f2d0d7366b06bb1291db12fd76d2fa3d3be308a8d69c762",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-feat-chip-fab-water/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-feat-crispr-access-gap",
+      "family_id": "science-crispr-approval-access-template",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 619,
+      "response_sha256": "f37d52a8d61eaef24d0aab90a7e9aee2ef0065535e0d354b07092965aace0e39",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-feat-crispr-access-gap/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-feat-crispr-access-gap",
+      "family_id": "science-crispr-approval-access-template",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 638,
+      "response_sha256": "07438247b96e4e2a6d7a7b1101994cad65d123292eb2991e4846d7b6ca036269",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-feat-crispr-access-gap/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-feat-dam-engineers",
+      "family_id": "science-dam-asr-monitoring-template",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 685,
+      "response_sha256": "075873a27f9e2c9a8c2ad7d2ac8383c0e0dd6c9aef29ed3a64f00234789d8624",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-feat-dam-engineers/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-feat-dam-engineers",
+      "family_id": "science-dam-asr-monitoring-template",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 701,
+      "response_sha256": "1c57e3094a1ab570058097f471b8b1765bbdbef839b5bf3c5da03878bac51944",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-feat-dam-engineers/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-feat-dark-matter-lab",
+      "family_id": "science-apex-dark-matter-program",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 678,
+      "response_sha256": "06850fe8c391fc27754cbfdfadb024fa79d7e78d38008704de7c9c92e4bf0cee",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-feat-dark-matter-lab/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-feat-dark-matter-lab",
+      "family_id": "science-apex-dark-matter-program",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 645,
+      "response_sha256": "4b40d89e9982cc17fc133b2d1f349234ea032abbbd73cfb91f0ba0ef42a5a974",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-feat-dark-matter-lab/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-feat-debris-cleanup",
+      "family_id": "fam-feat-orbclear",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 641,
+      "response_sha256": "a053a5b588b06fd1faf3d9ef5a604a27f1559e2808057532e807314b6d746d54",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-feat-debris-cleanup/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-feat-debris-cleanup",
+      "family_id": "fam-feat-orbclear",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 688,
+      "response_sha256": "da2e846ae8bdf48ae3adc970eaadc63dc7a5ec4c7e6511a87033ba244bde8ada",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-feat-debris-cleanup/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-feat-flood-barrier-tradeoff",
+      "family_id": "fam-feat-caldwell-barrier",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 582,
+      "response_sha256": "3728df43670b833fbbdb11f353b086234e1f2c6668315a6d79327e69a16f74c5",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-feat-flood-barrier-tradeoff/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-feat-flood-barrier-tradeoff",
+      "family_id": "fam-feat-caldwell-barrier",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 607,
+      "response_sha256": "714ba24e6a06ce04235fde225a3d7993eedb57f6e9637cd460a86f3475385762",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-feat-flood-barrier-tradeoff/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-feat-fusion-workforce",
+      "family_id": "fam-feat-fusion-workforce",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 554,
+      "response_sha256": "11f2391ea8d86f459bb73274c562bbe459a7b2d8fec407abc264fd27f42287bd",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-feat-fusion-workforce/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-feat-fusion-workforce",
+      "family_id": "fam-feat-fusion-workforce",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 625,
+      "response_sha256": "af71dd6cd0601cecf62c516186a7f53423f70221acc4ad8b05bad2f7161fa8a7",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-feat-fusion-workforce/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-feat-geothermal-drilling",
+      "family_id": "fam-feat-deepheat",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 552,
+      "response_sha256": "4edd240adadff76e2fc18152b0cadcf596b59f2c35165967fb5c30d479f559be",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-feat-geothermal-drilling/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-feat-geothermal-drilling",
+      "family_id": "fam-feat-deepheat",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 572,
+      "response_sha256": "f1c27abc083a5059f41d4211c263ade222c0c848bfad7fb42fa1df5a2c4d1960",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-feat-geothermal-drilling/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-feat-microplastic-watershed",
+      "family_id": "fam-feat-clearwater-river",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 579,
+      "response_sha256": "356365a1a8e55f0cb646f5755ac816257288d6bcd73bfab64ded3cca726ce6f2",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-feat-microplastic-watershed/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-feat-microplastic-watershed",
+      "family_id": "fam-feat-clearwater-river",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 612,
+      "response_sha256": "63083a97243255556695f1a2cd46096e9df43c4241199955ad297c8f31857eeb",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-feat-microplastic-watershed/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-feat-mrna-sovereignty",
+      "family_id": "fam-feat-mariva",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 617,
+      "response_sha256": "8b7ceb24594e93ffc812c30cd5a0ffe5d50247bfcd4e1f70f1b1a4206ea918df",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-feat-mrna-sovereignty/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-feat-mrna-sovereignty",
+      "family_id": "fam-feat-mariva",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 626,
+      "response_sha256": "c1df96190f77b294ed5c9eb917cbd279b2e7782e1115a3a10c559bfb0122a08b",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-feat-mrna-sovereignty/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-feat-neuroimaging-flaw",
+      "family_id": "fam-feat-mctical-flaw",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 617,
+      "response_sha256": "4adb38a35858180d59a04c962cee5cd6716b9c6bf66d414bf3ce181e4746e31a",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-feat-neuroimaging-flaw/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-feat-neuroimaging-flaw",
+      "family_id": "fam-feat-mctical-flaw",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 624,
+      "response_sha256": "7189d49f2fd740203d0261366ac7978f03b2bf7b3bb777a5729c638402c9246d",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-feat-neuroimaging-flaw/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-feat-rare-earth-recycling",
+      "family_id": "fam-feat-westfield-recycling",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 669,
+      "response_sha256": "6ca62cbcdbd9ed6f480709eab17e8b933bf9550330ff6c3f3d896032a0f71e79",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-feat-rare-earth-recycling/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-feat-rare-earth-recycling",
+      "family_id": "fam-feat-westfield-recycling",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 656,
+      "response_sha256": "f7450be61103b7df57160ff651f33ccba51a704ea7678ac2b135eb2b8115ca79",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-feat-rare-earth-recycling/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-feat-soil-carbon-audit",
+      "family_id": "fam-feat-sandover-soil",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 606,
+      "response_sha256": "5c43a9e18dcb2a5209fe7646927b32fcd543b2f5dd1a61ae6c1b4e2734ff9dcb",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-feat-soil-carbon-audit/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-feat-soil-carbon-audit",
+      "family_id": "fam-feat-sandover-soil",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 687,
+      "response_sha256": "2b8ff6027dcf9888fcea8b0c34e74ed52efe3c1112332f34560ead965f7755b3",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-feat-soil-carbon-audit/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-feat-supercomputer-research",
+      "family_id": "fam-feat-prism1",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 582,
+      "response_sha256": "f204c2d762b94e8f0c3670163fb1c714de4b98aa83c19f4389993023b8737895",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-feat-supercomputer-research/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-feat-supercomputer-research",
+      "family_id": "fam-feat-prism1",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 595,
+      "response_sha256": "9021150a880b164814b3589315146deecd9ac8eda794df78139803d2ff62e222",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-feat-supercomputer-research/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-feat-tunnel-decision",
+      "family_id": "fam-feat-redcliff-tunnel",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 718,
+      "response_sha256": "4748f8cfa8b031897f461612e88445e7d3c84f565706c0be11d945f5c7be1a29",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-feat-tunnel-decision/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-feat-tunnel-decision",
+      "family_id": "fam-feat-redcliff-tunnel",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 614,
+      "response_sha256": "7915dd52e2c2cefa3355e83af86205755424c9ecbd5d120fee128a889a1ed93c",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-feat-tunnel-decision/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-feat-urban-cooling",
+      "family_id": "science-riverdale-cooling-program",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 570,
+      "response_sha256": "c949d5fac5e5357199ca9ae2ce270b815426674b8c80268a861306540e794cde",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-feat-urban-cooling/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-feat-urban-cooling",
+      "family_id": "science-riverdale-cooling-program",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 631,
+      "response_sha256": "e8a74a900391db2b82bbfe70aba73bbb30c8094c0e716139c820609da3183815",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-feat-urban-cooling/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-feat-waste-repository-town",
+      "family_id": "fam-feat-ridgemont",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 622,
+      "response_sha256": "82d56432b158d16ea83bc76af28a2aea13c96f3f0cfb14c5f72bac01a356236d",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-feat-waste-repository-town/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-feat-waste-repository-town",
+      "family_id": "fam-feat-ridgemont",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 663,
+      "response_sha256": "a0d55890ce01d639c74c9fa63aae3449d5bcd4ce17385b84995777fffa11e38a",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-feat-waste-repository-town/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-feat-wind-farm-fishing",
+      "family_id": "fam-feat-eastport-fishing",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 600,
+      "response_sha256": "7421c516f34eab7a622e476be2b915bb6bae1347916853fbb9e7d52331977cbd",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-feat-wind-farm-fishing/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-feat-wind-farm-fishing",
+      "family_id": "fam-feat-eastport-fishing",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 609,
+      "response_sha256": "edb5ce57accbbd4fc3f8b1a57bbbedd74d6a808bde940795a94f1d18f00297e7",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-feat-wind-farm-fishing/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-flood-barrier-storm-test",
+      "family_id": "fam-harrington-barrier",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 514,
+      "response_sha256": "37c61e71cfce7dc989e2450e45d3db59e1818c7083ddae29a0954e64bb4b283f",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-flood-barrier-storm-test/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-flood-barrier-storm-test",
+      "family_id": "fam-harrington-barrier",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 593,
+      "response_sha256": "40cf592a345edccfceeee0941cee822dc13e7fb1fbd9dc6f1df9e72911c67c00",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-flood-barrier-storm-test/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-fusion-permit-decision",
+      "family_id": "fam-fusion-permit",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 518,
+      "response_sha256": "0e0c52b2091dac0b29095ae0af27bd26b15acd53548247cf51c61465655ff1ad",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-fusion-permit-decision/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-fusion-permit-decision",
+      "family_id": "fam-fusion-permit",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 559,
+      "response_sha256": "8a43c52e4d7dd548fc8e16357b2911b121bb94fc3936dc2fe09bb9086e3afb01",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-fusion-permit-decision/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-grid-cascade-probe",
+      "family_id": "fam-grid-cascade",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 481,
+      "response_sha256": "440965d15198d6355599896f90860cab17314fd28ca313e16a2dc9ab92452e75",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-grid-cascade-probe/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-grid-cascade-probe",
+      "family_id": "fam-grid-cascade",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 503,
+      "response_sha256": "4f80b4c884ff148ed1dc13f0563bf222439ef8470be417b273e2aeb8b6c8f718",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-grid-cascade-probe/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-hydrogen-pipeline-approved",
+      "family_id": "fam-h2-pipeline",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 504,
+      "response_sha256": "07d306de4b1c045a21c9029f8f45bad3a08d300afc20d2509e5f5721fc85e0d1",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-hydrogen-pipeline-approved/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-hydrogen-pipeline-approved",
+      "family_id": "fam-h2-pipeline",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 530,
+      "response_sha256": "1decd573ac3f33e78e8df7f1cd2201e04b892c405dae65b254f61272ddfbabcc",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-hydrogen-pipeline-approved/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-microplastic-tap-water",
+      "family_id": "fam-tap-microplastic",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 523,
+      "response_sha256": "c9ec1164050c33b96a27ea30ab8123dc116cea478fac22876b3c0a2c9b5a64bc",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-microplastic-tap-water/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-microplastic-tap-water",
+      "family_id": "fam-tap-microplastic",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 536,
+      "response_sha256": "596c911deb06bc1f041c13c930bb345b0e64acf2f4652d42a4857a1695d15e85",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-microplastic-tap-water/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-mrna-factory-certified",
+      "family_id": "fam-mrna-factory",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 484,
+      "response_sha256": "7e2a5301e08e607b888024203a787acf92361f53c03f84879f05b4be4e15b6dc",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-mrna-factory-certified/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-mrna-factory-certified",
+      "family_id": "fam-mrna-factory",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 541,
+      "response_sha256": "b9ec8baa47fdb7b2171f972225911fe8eaf41b3c49b55c4421d5d5e89131dbe9",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-mrna-factory-certified/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-nuclear-waste-approval",
+      "family_id": "fam-nuclear-waste",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 529,
+      "response_sha256": "1ee514e4e8093cf0ceb766790a731c4f6c2a3456726602bbf9ae631212129beb",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-nuclear-waste-approval/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-nuclear-waste-approval",
+      "family_id": "fam-nuclear-waste",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 532,
+      "response_sha256": "ff1702c7d63e8c0eeff4b7356231d4be18a6c9df5aaac890e55370573bce7d6f",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-nuclear-waste-approval/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-offshore-wind-contract",
+      "family_id": "fam-wind-contract",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 477,
+      "response_sha256": "e003bd4375d926d8ba89e3c421c8afca574bab3a0920b7938386f3e095d38ce0",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-offshore-wind-contract/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-offshore-wind-contract",
+      "family_id": "fam-wind-contract",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 555,
+      "response_sha256": "fb4a08a0f92df4b523c277a1aa142eb69f364586e1551682d4604ee70e53b4f4",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-offshore-wind-contract/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-rail-derailment-findings",
+      "family_id": "fam-rail-derail",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 465,
+      "response_sha256": "0a3aea557f3d7ff8c368418319ca7d6bffcf7cc42c193e9a0603470794dbff0a",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-rail-derailment-findings/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-rail-derailment-findings",
+      "family_id": "fam-rail-derail",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 477,
+      "response_sha256": "f5d37e4472b5b5fa43bbebd15fe6d54bf63ca6702c0be2bcb35275e5c89b3a88",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-rail-derailment-findings/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-rare-earth-permit-denied",
+      "family_id": "fam-rare-earth-permit",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 480,
+      "response_sha256": "0899467031b2113fdf81f98db0fd7e5d0ab93f75089fe84d54b8889ce5bd873b",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-rare-earth-permit-denied/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-rare-earth-permit-denied",
+      "family_id": "fam-rare-earth-permit",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 505,
+      "response_sha256": "1cefd50c4b1bf65cfa93f5f9e635e0f0ed6ebee11841f75a417e8dd8f2c0f5f8",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-rare-earth-permit-denied/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-rural-fiber-complete",
+      "family_id": "fam-fiber-rollout",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 485,
+      "response_sha256": "9a11943b2e0601f11bc97d183296c8b413fa52266d5b2ee3cce64aa4073582a2",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-rural-fiber-complete/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-rural-fiber-complete",
+      "family_id": "fam-fiber-rollout",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 510,
+      "response_sha256": "c48db2d52593d59000c1d19422ba49d1a557ff374ca88d7f970539c081c2688b",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-rural-fiber-complete/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-satellite-debris-collision",
+      "family_id": "fam-debris-collision",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 534,
+      "response_sha256": "8a179adfc6bad75f09cebb2827dc948710a375b5f34c0c1d874eaf057ae9daef",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-satellite-debris-collision/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-satellite-debris-collision",
+      "family_id": "fam-debris-collision",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 598,
+      "response_sha256": "202c4c02361641214fe04a874c852984130306dc974df862f37c42729e1a2cf3",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-satellite-debris-collision/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-seismic-warning-activated",
+      "family_id": "fam-seismic-alert",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 488,
+      "response_sha256": "f61f60a2770ff9b6e7ef25840adbd510d564164575845c8a75ef9057eecbe395",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-seismic-warning-activated/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-seismic-warning-activated",
+      "family_id": "fam-seismic-alert",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 577,
+      "response_sha256": "f7bf56a2525ff8b95c4cdad5893009b23c8ef07b709fd89e2406d526351723b2",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-seismic-warning-activated/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-supercomputer-launched",
+      "family_id": "fam-helios2",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "word_count": 476,
+      "response_sha256": "e99ed5457999ccfc8fd2ed4b6e5ea5aefa509183d7cb2dbd7e1406c2ffc53d2d",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-supercomputer-launched/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-supercomputer-launched",
+      "family_id": "fam-helios2",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "word_count": 486,
+      "response_sha256": "c377f2c6d3cb8020a55dc452d1f2d44df61cca41e20c9e22200a268a8ff42c95",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-supercomputer-launched/bare-task.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-tunnel-fault-delay",
+      "family_id": "fam-tunnel-fault",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "word_count": 496,
+      "response_sha256": "fcb51d88d87d1781c7d679be284a08f06502f039bbd929258f4f647837a0f794",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-tunnel-fault-delay/full.txt"
+    },
+    {
+      "case_id": "newsroom-held-science-tunnel-fault-delay",
+      "family_id": "fam-tunnel-fault",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "word_count": 516,
+      "response_sha256": "415293bdc3e1c4852d0ddff029dc7fc873f47462b3b72e79ea9bd6c4cc79061d",
+      "example": "evals/newsroom/examples/primary/newsroom-held-science-tunnel-fault-delay/bare-task.txt"
+    }
+  ],
+  "length_summary": [
+    {
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "captured": 110,
+      "minimum": 448,
+      "median": 532.5,
+      "maximum": 617
+    },
+    {
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "captured": 110,
+      "minimum": 461,
+      "median": 560.5,
+      "maximum": 631
+    },
+    {
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "captured": 109,
+      "minimum": 415,
+      "median": 556,
+      "maximum": 718
+    },
+    {
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "captured": 109,
+      "minimum": 489,
+      "median": 574,
+      "maximum": 738
+    }
+  ],
+  "assessments_in_this_bundle": 0,
+  "human_reviews": 0,
+  "quality_effect_established": false,
+  "limitations": [
+    "Successful capture and word counts do not establish good writing, factual accuracy or a repository advantage.",
+    "Repeated cases and judgments do not add independent families; family independence remains an audited assumption.",
+    "Model identities are runtime aliases, not authenticated immutable weight snapshots.",
+    "These are fictional reporting exercises. The published text is the entire unchanged model response."
+  ]
+}

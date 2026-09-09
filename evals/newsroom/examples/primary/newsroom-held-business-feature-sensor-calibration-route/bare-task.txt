@@ -1,0 +1,23 @@
+**Small calibration shop keeps growers' sensors honest, one degree at a time**
+
+By [Staff Writer]
+
+In a converted veterinary supply office, past a reception area that still smells faintly of old carpet, sits a small room kept at a steady temperature year-round. This is where Pellwren Instruments does its work: taking sensors that tell farmers whether their greenhouses are too hot, too dry or too humid, and checking whether those sensors are telling the truth.
+
+On a bench note from August, technician Ceri Alven logged a routine comparison. A greenhouse temperature sensor read 20.1 degrees Celsius; the workshop's reference instrument read 20 degrees. The difference, one-tenth of a degree, fell comfortably inside the 0.2-degree tolerance the customer had requested. It was an unremarkable result, and that is largely the point of the business.
+
+Pellwren, owned by Neri Warden and staffed also by Alven, serves growers and small food-storage operators who depend on environmental sensors to protect crops and inventory. The shop's most recent annual ledger recorded 340 calibration jobs — 210 for temperature instruments, 80 for humidity and 50 for pressure. Those figures describe instrument jobs, not 340 separate farms, and they say nothing about how many devices were actually found to be faulty.
+
+A calibration certificate from Pellwren covers specified checks between 10 and 30 degrees Celsius — not every temperature or field condition a sensor might encounter — and the paperwork includes no formal uncertainty analysis. Warden is candid about what calibration can and cannot tell a customer. It confirms a sensor's readings against a trusted reference, she said, but it does not confirm where that sensor sits inside a greenhouse.
+
+"A correct number can still be answering the wrong question if the sensor is in the wrong place," Warden said. A unit mounted near a doorway, she explained, might accurately record conditions right at that spot while giving a misleading picture of what plants deeper in the greenhouse are experiencing.
+
+The workshop's standard bench check starts at $75 per instrument, with travel, parts and unusual measurement ranges billed separately. Some older sensors cannot be adjusted at all, Warden said, because manufacturers have stopped supplying the parts or software needed to recalibrate them.
+
+For growers, the logistics matter as much as the price. Omi Velden, who grows produce and relies on several sensors, said he now bundles multiple units together and sends them in during slower production stretches to avoid repeated travel charges. He also keeps a spare sensor on hand, since the workshop's typical turnaround runs about ten working days.
+
+"The instrument is small," Velden said. "Working without its reading for two weeks is not a small decision."
+
+Pellwren's own records distinguish between devices that were simply checked, those that were adjusted, and those returned without any change — a more granular accounting than labeling every visit a "repair." Warden said inquiries have been picking up, though she has not compiled a consistent historical record that would show whether the broader regional market for calibration services is actually expanding. Nor is there, in the shop's files, any measured data linking its work to higher crop yields or water savings; that kind of benefit, if it exists, hasn't been tracked.
+
+Scheduling remains a balancing act, built around growers' own access windows and the upkeep of Pellwren's reference equipment. Warden said she has thought about hiring a third technician, but so far has neither made an offer nor locked in a new long-term customer contract. For now, the business remains what it has been: two people, a temperature-controlled room, and a steady stream of small instruments arriving to be checked against something more trustworthy than themselves.

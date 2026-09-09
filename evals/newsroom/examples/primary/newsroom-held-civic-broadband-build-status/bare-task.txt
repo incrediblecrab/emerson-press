@@ -1,0 +1,43 @@
+# Wrenbar broadband map shows progress, not a connection at every door
+
+Wrenbar’s municipal broadband expansion map separates streets planned for construction, streets where work is complete and addresses ready to order. For residents deciding what to do about their existing internet service, those distinctions matter: A cable passing a property does not mean service is ready inside.
+
+As of Sept. 18, 2026, the current expansion area covers 650 premises, including businesses and multiunit buildings. That is not a count of 650 confirmed new household customers.
+
+The map tracks progress toward service, but individual properties can still need permission, a final connection appointment and activation after street construction ends.
+
+“The map follows the work toward the front door. It does not make every street-level milestone a connection inside the building,” network manager Irena Pell said.
+
+## What do the map’s stages mean?
+
+A planned street is included in the expansion work, not marked as complete. The expansion budget covers the stated build area; it does not authorize automatic service to every neighboring road.
+
+Completed street works mark a construction milestone. They do not establish that each property’s individual connection, equipment and service checks are finished. A block can have completed street construction while access arrangements for one building remain unresolved.
+
+An address marked ready to order has a different status from a street merely planned or passed by cable. Even then, ordering and activation are separate steps. The office records street construction, property permission, the final connection appointment and service activation separately.
+
+Multiunit buildings can involve additional coordination with management over shared routes before individual apartments can be connected. The office has not promised that every apartment in a building passed by cable will become ready to order on the same day.
+
+## What do interest and reservation figures show?
+
+The office has received 430 expressions of interest. Those are neither completed installations nor paid subscriptions. Because the office has not linked or deduplicated them by premise, the total cannot be read as 430 distinct premises committed to service.
+
+Under the published terms, a resident may make a $25 reservation payment. It does not guarantee an installation date. The payment is refundable before a service order is finalized and is credited against the first service bill if the order proceeds.
+
+The network also tells prospective customers not to treat an expression of interest as notice that they can discontinue their current service.
+
+“People are making decisions about their existing service, so the words ready and planned need to mean different things,” resident representative Olan Marr said.
+
+## How will residents receive updates?
+
+The public map is updated weekly. Individual appointment confirmations go directly to customers through the ordering process, rather than through the map.
+
+The office says it will publish changes when a construction dependency affects the schedule, instead of quietly converting a planned date into a completed milestone. Its older map used one color for all included streets, leading to the current distinctions between stages.
+
+Paper map copies are available at the civic center for people with limited internet access. A planned community demonstration will explain ordering and map terminology; it will not serve as an installation appointment.
+
+## What remains outside the map’s promises?
+
+Requests outside the current area are logged for future planning, not given the same construction status as included streets. No decision has been made on the next expansion area.
+
+The supplied information also provides no universal speed result measured in customer homes or comparison with every competing provider. The map’s purpose is to distinguish expansion stages, not establish those performance claims.

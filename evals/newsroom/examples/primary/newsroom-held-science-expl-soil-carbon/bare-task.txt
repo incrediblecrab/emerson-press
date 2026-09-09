@@ -1,0 +1,37 @@
+Dirt's Deep Secret: Why Scientists Can't Agree on Farming's Climate Payoff
+
+Beneath every field, forest and prairie lies the planet's biggest carbon vault — and one of its most stubborn scientific puzzles.
+
+Soil holds roughly 1,500 to 2,400 billion tonnes of carbon, about three times what's in the atmosphere and four times what's stored in all living plants combined, according to soil science estimates. That makes dirt a potential climate ally. But how much farmers can actually add to that stockpile — and how reliably anyone can measure it — remains deeply uncertain.
+
+**How carbon gets into soil**
+
+Carbon enters soil mainly through plant roots and decomposing organic matter. Soil microbes break down that material, releasing some carbon back into the air as carbon dioxide while stabilizing the rest in mineral complexes underground.
+
+How much carbon becomes permanent depends on temperature, moisture, soil mineral makeup and the chemical structure of the original plant matter. Scientists still don't fully understand this process at the molecular level.
+
+Farming practices matter. Tillage — plowing and turning soil — disrupts the structure and fungal networks that help lock carbon in place, releasing CO2. No-till farming reduces those losses. Cover crops planted between growing seasons can add organic matter and curb erosion, though whether they build lasting soil carbon depends heavily on local conditions.
+
+"Farming can be a carbon sink or a carbon source depending on management," said Dr. Benedikt Osei, a soil scientist at the Prairie Soil Research Institute. "The hard part is that the difference shows up over decades, not seasons, and varies enormously across soil types."
+
+**The measurement problem**
+
+Verifying soil carbon typically requires physical sampling and lab analysis. Satellites can detect some proxies but can't directly measure underground carbon with the precision needed for verification, scientists say.
+
+That gap has complicated the voluntary carbon credit market, which pays farmers to adopt soil-storing practices. Methodologies for measuring, reporting and verifying how much carbon is actually stored have been contested.
+
+A related concern is permanence. Carbon banked in soil can be released again by drought, fire, disturbance or a change in management. Because credits are often issued upfront, a later loss of that carbon creates a liability problem, according to researchers.
+
+Osei noted the challenge isn't unique to soil. "All natural carbon sinks — forests, ocean, soil — fluctuate with weather and are difficult to attribute to specific management actions," he said.
+
+**The scale question**
+
+Even under best-practice farming, the math is limited. Osei said the maximum technically achievable increase in soil carbon across all of the world's agricultural land is about 0.9 billion tonnes per year — meaningful, but less than 10% of current annual global emissions.
+
+France's 2015 "4 per Mille" initiative, which proposes raising global soil carbon by 0.4% annually, has drawn similar skepticism; critics say the target is hard to verify and its potential smaller than advertised. Some soils are also nearing saturation, meaning they can't absorb much more carbon regardless of practice, while grassland restoration — converting degraded land to native prairie — appears to store more carbon than most row-crop methods, thanks to deeper root systems.
+
+Meanwhile, warming itself threatens existing soil carbon stores. Rising temperatures increase microbial soil respiration, potentially releasing carbon from northern soils in a feedback loop that could amplify warming. Peatlands, which store about 550 billion tonnes of carbon built up over millennia, release it rapidly when drained for agriculture. And thawing Arctic permafrost could release 50 billion to 250 billion tonnes of ancient carbon by 2100, depending on the warming trajectory.
+
+Newer tools like biochar — charred organic material that can persist for centuries — show promise for locking in carbon more durably, along with improving soil structure.
+
+Osei said much of the public debate blurs a key distinction. "The soil carbon discussion often conflates what is scientifically possible with what is economically feasible at scale," he said, citing the land area, behavioral change and verification infrastructure required. Monitoring networks for soil carbon remain far sparser than those tracking atmospheric CO2, and standardizing global accounting is still a work in progress among international scientific bodies.

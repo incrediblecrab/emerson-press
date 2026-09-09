@@ -1,0 +1,43 @@
+# What is mRNA vaccine technology, and why is it called a platform?
+
+The technology behind mRNA vaccines turns the body’s cells into temporary protein producers, giving the immune system a target to recognize. Its appeal goes beyond any single disease: Researchers can change the genetic instructions inside a vaccine while keeping the same basic delivery system.
+
+That reusable design is why mRNA is described as a platform. As of April 20, 2025, researchers are developing vaccines for influenza, respiratory syncytial virus, HIV and multiple cancers, building on technology that reached widespread use during the COVID-19 pandemic.
+
+## How does it work?
+
+Messenger RNA, or mRNA, normally carries genetic instructions from a cell’s DNA to its ribosomes, where proteins are built.
+
+An mRNA vaccine delivers synthetic versions of those instructions. They direct cells to temporarily make a fragment of a pathogen’s protein, typically a surface protein, which triggers an immune response.
+
+The vaccine’s mRNA does not enter the cell’s nucleus or interact with DNA. Cellular enzymes break it down within days. Synthetic modifications help stabilize the molecule inside cells and prevent it from triggering the immune system prematurely.
+
+Because mRNA is fragile, it needs protection on its way into cells. That protection comes from lipid nanoparticles — tiny fatty spheres that shield the molecule from degradation in the bloodstream and help it enter cells.
+
+## What makes it a platform?
+
+The distinction is between the instructions and their carrier. In the platform model, the lipid nanoparticle delivery system stays constant while the genetic sequence changes to target a different pathogen.
+
+Theoretically, switching targets requires redesigning the mRNA sequence and verifying that it produces the intended protein correctly. That work can take weeks rather than the months or years associated with conventional vaccine development. The rapid redesign step, however, is not the same as completing development of a vaccine.
+
+Manufacturing also lends itself to reuse. Rather than growing virus in eggs or cell cultures, mRNA vaccines are manufactured in bioreactors. That allows rapid scale-up without depending on viral growth rates.
+
+## Why did COVID-19 vaccines arrive so quickly?
+
+Their speed reflected decades of preparation, not a technology invented when the pandemic began.
+
+Researchers worked through major delivery challenges from the 1980s through the 2000s. The technology also has roots in cancer immunotherapy research in the 1980s and 1990s.
+
+“We spent 30 years solving the delivery problem before COVID gave us the disease problem to solve,” said Dr. Priya Acharya, a vaccinologist at Lakeview Medical School. “When both answers were in hand, the vaccines were ready quickly.”
+
+The first emergency use authorizations for mRNA COVID-19 vaccines came in late 2020, roughly 11 months after the virus’s genome was sequenced. Foundational work enabling the vaccines was recognized with the 2023 Nobel Prize in physiology or medicine.
+
+## What are the limitations and next steps?
+
+Cold storage remains a challenge. Most formulations require temperatures between minus 20 and minus 80 degrees Celsius, complicating distribution where reliable refrigerated storage and transportation are unavailable.
+
+Safety monitoring now spans more than four years and hundreds of millions of recipients. A reported side effect of some mRNA vaccines is myocarditis, or inflammation of the heart muscle. Published surveillance data show it is most common in young males after a second dose and is typically mild and resolves on its own. Acharya said it is considerably rarer than myocarditis caused by COVID-19 infection itself.
+
+Personalized cancer vaccines based on individual patients’ tumor mutations are in late-stage trials. Acharya identified another frontier as “self-amplifying mRNA,” which can copy itself inside cells and potentially allow much smaller vaccine doses.
+
+Those possibilities illustrate the platform’s central promise: a reusable way to deliver different biological instructions, rather than a separate technological starting point for every disease.

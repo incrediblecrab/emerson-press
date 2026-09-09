@@ -1,0 +1,27 @@
+FDA Approves Gene-Editing Therapy for Rare Blood Disorder, but $2.4 Million Price Tag Raises Access Concerns
+
+The Food and Drug Administration on Friday approved Korrexin, a CRISPR-based gene editing therapy developed by GenEdit Therapeutics to treat Fanconi anemia type IV, a rare inherited disorder that impairs the body's ability to repair DNA and leads to bone marrow failure.
+
+The approval covers patients age 5 and older with confirmed type IV mutations. An estimated 2,100 eligible patients are alive in the U.S., according to the FDA.
+
+Unlike the CRISPR treatment for sickle cell disease approved in late 2023, which modified cells to compensate for the disease, Korrexin is designed to correct the underlying defective gene itself. CRISPR-Cas9, the editing tool at the center of the therapy, uses a guide RNA to direct a protein to a specific DNA sequence, where it makes a precise cut that the cell's repair machinery can use to fix or disable a gene.
+
+Korrexin is administered once. A patient's own blood-forming stem cells are extracted, edited with CRISPR-Cas9 to correct the defective FANCD2 gene, and reinfused, a process that requires an eight-day hospital stay for collection, processing and monitoring.
+
+In a pivotal trial of 68 patients, 61, or 90%, achieved durable bone marrow function restoration at 24 months of follow-up, with a median follow-up of 31 months. An FDA advisory committee voted unanimously in December to support approval, and the agency said it received 11,400 public comments during the review — more than for any previous gene therapy application.
+
+"Today's approval demonstrates that CRISPR's precision can translate from laboratory promise to regulatory reality in a disease where patients have had few options," FDA Commissioner Dr. Maya Singh said.
+
+Fanconi anemia type IV has no cure through conventional treatment. Current management relies on blood transfusions and, for suitable candidates, bone marrow transplants from a matched donor, a procedure that carries its own risks. Robert Kwan, director of the advocacy group Fanconi Hope, said 45% of children with the disorder die before age 25 without treatment.
+
+GenEdit set Korrexin's list price at $2.4 million per treatment. Kwan said the price would prevent many patients from accessing the therapy without major insurance or policy interventions.
+
+Diane Flores, GenEdit's chief medical officer, said the company would offer major payers an outcomes-based payment arrangement, allowing refunds if functional restoration is not sustained. Three payers covering an estimated 40% of eligible patients have indicated they will cover Korrexin pending outcomes data; three others have not yet issued coverage decisions.
+
+Flores said GenEdit projects treating 80 to 120 patients in the first two years. Treatment must take place at centers certified by the company.
+
+The National Institutes of Health contributed $44 million to early-stage CRISPR research underlying Korrexin's development, according to the agency.
+
+Along with the approval, GenEdit received a rare pediatric disease priority review voucher, which can be sold on the open market, typically for $80 million to $150 million.
+
+The FDA's approval carries a post-market requirement: a registry study tracking all treated patients for at least 15 years to monitor long-term efficacy and detect delayed adverse effects.

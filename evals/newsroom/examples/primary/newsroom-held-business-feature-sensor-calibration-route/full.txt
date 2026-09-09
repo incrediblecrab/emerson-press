@@ -1,0 +1,21 @@
+Small Shop, Precise Numbers: Inside a Calibration Business That Keeps Growers' Sensors Honest
+
+MEDFORD — On a bench in a converted veterinary supply office, technician Ceri Alven held a greenhouse temperature sensor next to the workshop's reference instrument and watched the two readings settle: 20.1 degrees Celsius against 20 degrees exactly.
+
+That 0.1-degree gap, recorded in an August bench note, fell inside the 0.2-degree tolerance the customer had specified. The sensor passed. It is the kind of small, repeatable comparison that makes up most of the work at Pellwren Instruments, a two-person shop owned by Neri Warden that calibrates environmental sensors for growers and small food-storage businesses.
+
+The shop's last annual ledger recorded 340 calibration jobs — 210 for temperature, 80 for humidity and 50 for pressure instruments. That figure counts instruments, not farms, and it says nothing about how many of those devices were found faulty; the workshop logs each job as checked, adjusted or returned without adjustment rather than labeling every visit a repair.
+
+The certificates Pellwren issues cover specified checks from 10 to 30 degrees Celsius. They don't address performance outside that range, and the packet includes no formal uncertainty analysis. Warden said a passing certificate is also not proof a sensor is doing its job in the field.
+
+"A correct number can still be answering the wrong question if the sensor is in the wrong place," Warden said. A sensor mounted near a greenhouse door, she said, can measure that spot correctly while giving growers a poor read on conditions around plants farther inside — a placement problem calibration alone can't catch.
+
+Standard bench checks start at $75 per instrument, with travel, parts and unusual measurement ranges billed separately. Some older units can't be adjusted at all, Warden said, because manufacturers have stopped supplying the parts or software support needed to do it.
+
+Turnaround runs about 10 working days, long enough that grower Omi Velden keeps a spare sensor on hand rather than go without a reading. "The instrument is small," Velden said. "Working without its reading for two weeks is not a small decision." Velden also times shipments to the shop's quieter stretches, sending several sensors at once to avoid paying for repeated travel.
+
+Warden said inquiries have been picking up, though she has not compiled a consistent year-over-year count that would show the broader regional market is expanding — only that her own workload has grown. She has thought about hiring a third employee but has not made an offer or lined up a new long-term contract that would justify it.
+
+The shop's reference equipment lives in a separate temperature-controlled bench room, apart from the main office, and Warden schedules field visits around both her customers' availability and the upkeep that equipment requires to stay trustworthy itself.
+
+What the business does not have is a documented link between its calibration work and any measurable outcome in the field — no recorded crop-yield improvement, no water savings tied to a serviced sensor. What it offers, instead, is a narrower and more verifiable claim: that on the day a device left the bench, its reading matched a known standard within a stated tolerance, at a stated range of temperatures. Whether that number tells a grower what they need to know, Warden said, still depends on where the sensor sits.

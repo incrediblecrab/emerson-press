@@ -1,0 +1,50 @@
+# Why a Marshbar water bill can rise even when a household uses less
+
+Using less water will still cut the metered portion of a Marshbar water bill under the Water Board’s new tariff. But those savings may not offset an increase in the fixed charge that connected residential accounts pay regardless of consumption.
+
+As of Sept. 18, 2026, the change is still ahead: It applies to service periods beginning Jan. 1, 2027. It does not automatically change the rate on every bill printed after that date.
+
+Here is how the two charges interact, why the board is changing them and what households should check.
+
+## What is going up?
+
+The quarterly fixed network charge will rise from $18 to $26, an $8 increase. The usage rate will remain $1.20 per cubic meter.
+
+That distinction matters. The board is not raising the price of each metered unit of water. It is increasing the portion of the bill that does not fall when a household uses less.
+
+The same fixed charge applies to connected residential accounts in the category covered by this explanation. It does not necessarily apply to every commercial or shared-meter account.
+
+## How can lower use produce a higher bill?
+
+The board’s worked example shows the arithmetic:
+
+- **Old service period:** A household uses 15 cubic meters. At $1.20 per cubic meter, its usage charge is $18. Adding the old $18 fixed charge produces a $36 bill before other items.
+- **New service period:** The household uses 10 cubic meters. Its usage charge falls to $12, but the new $26 fixed charge brings the bill to $38 before other items.
+
+Consumption falls by one-third, saving $6 on the metered portion. But the fixed charge rises by $8, leaving the total $2 higher.
+
+This is an invented illustration for the tariff explanation, not a disclosed customer’s account or a prediction of typical household behavior. A real bill may also include a prior balance, an adjustment or another separately identified item.
+
+## Why put more costs into the fixed charge?
+
+The fixed charge supports network readiness, maintenance and financing costs that the board does not allocate solely according to each household’s water use. Its budget identifies a planned pipe-replacement program and higher financing expenses as reasons for the increase.
+
+The board considered recovering more costs through the usage rate but chose the larger fixed-charge change in its recorded decision.
+
+Discussing the specified residential account category, finance director Pella Rane said, “Using less still reduces the metered part, but it cannot remove a charge that is the same for every connected account.”
+
+A renters association argues that a larger fixed share leaves small households less room to reduce bills through their own choices.
+
+“People can change a habit more easily than they can change how the network is financed,” association organizer Mavin Cole said.
+
+The reporting packet contains no estimate of how many households will reduce consumption or of the policy’s eventual conservation effect.
+
+## What should households check?
+
+The new bill layout will show the fixed charge and usage calculation on separate lines. Accounts crossing the tariff start date will show the service periods used in the calculation rather than assume one rate covered the entire quarter.
+
+Households sharing a building meter may receive a landlord’s allocation instead of a direct utility bill under this residential example. The tariff announcement does not set every landlord’s internal allocation method.
+
+Affordability assistance is a separate, application-based program; lower usage does not trigger it automatically. The packet provides neither eligibility thresholds nor assurance that a particular applicant will qualify.
+
+The board will publish a tariff worksheet at its customer desk and on its website before the first affected service period.

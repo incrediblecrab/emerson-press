@@ -1,0 +1,25 @@
+Nuclear Fusion Is Real. A Power Plant Isn't — Yet
+
+Scientists have spent decades chasing the reaction that powers the sun, and after years of incremental progress, the technology is closer than ever to producing usable electricity. But "closer" still doesn't mean soon.
+
+Fusion works by merging two light atomic nuclei into a heavier one, releasing energy in the process — the same reaction that occurs inside the sun. The version most studied for energy production combines deuterium and tritium, two isotopes of hydrogen. When they fuse, the reaction produces a helium nucleus, a high-energy neutron and a burst of energy.
+
+The challenge is getting there. Nuclei naturally repel each other electrically, so bringing them close enough for the strong nuclear force to bind them requires temperatures above 100 million degrees Celsius — hotter than the sun's core. At those temperatures, matter becomes plasma, a diffuse gas of charged particles. Confining plasma without letting it touch any physical wall is one of fusion's central engineering problems.
+
+One solution is the tokamak, a doughnut-shaped device that uses magnetic fields to hold the plasma in place. The word is a Russian acronym meaning "toroidal chamber with magnetic coils." An alternative design, the stellarator, uses complex twisted coils instead of plasma current for confinement. Stellarators are less prone to instability but harder to build.
+
+Researchers track progress using a measure called Q, the ratio of energy produced to energy consumed. A Q above 1 means a reaction generates more energy than it takes to start. In December 2022, the U.S. National Ignition Facility reported a Q above 1 during a brief laser-driven implosion — a method called inertial confinement, distinct from tokamak designs. No facility has yet achieved a sustained Q above 1 in a tokamak for a duration useful to an actual power plant.
+
+"The joke used to be that commercial fusion is 30 years away and always will be," said Dr. Rena Whitfield, a physicist at Lakeshore University. "The honest answer is we're closer than ever, but closer doesn't yet mean soon."
+
+The biggest experimental project underway is ITER, an international tokamak under construction in France since 2013. It's designed to reach a Q of 10 but isn't built to generate electricity — it's a proof-of-concept machine. ITER is scheduled for first plasma in 2025, with full-power deuterium-tritium experiments planned for the mid-2030s. The project has faced cost overruns and delays.
+
+Meanwhile, more than 30 private companies are pursuing their own commercial fusion timelines, with most projecting operational plants sometime between 2035 and 2050. One genuine advance cited by several of these companies: high-temperature superconducting magnets, now commercially available, that generate strong magnetic fields in smaller machines than earlier designs required.
+
+Three engineering problems remain unsolved, according to researchers: sustaining plasma for hours or days instead of seconds; breeding enough tritium inside the reactor itself, using neutrons and lithium, to keep the reaction supplied; and harvesting heat from high-energy neutrons without degrading the reactor's structural materials over time.
+
+Whitfield said the most optimistic credible timeline for commercial fusion requires solving tritium breeding and plasma stability at the same time — something no facility has yet demonstrated at scale.
+
+The payoff, if those problems are solved, would be substantial. Deuterium is abundant in seawater, at roughly one part in 6,400. A pellet of deuterium-tritium fuel the size of a marble contains the energy equivalent of about 45 tons of coal. Fusion produces no carbon dioxide and no long-lived radioactive waste — tritium, the main radioactive byproduct, has a half-life of just 12.3 years.
+
+That combination — abundant fuel, manageable waste — is fusion's core advantage over existing nuclear fission plants. The disadvantage, as decades of research have shown, is that sustaining the reaction long enough to matter remains extraordinarily difficult.

@@ -1,0 +1,37 @@
+# Brain-imaging software fixed, but questions remain for published studies
+
+Hana Park was trying to reproduce a result in her own laboratory when she found an error in the software. Following that failure led the Westfield University neuroimaging methodologist to a problem with how MotiCalc-3 corrects for head movement during brain scans.
+
+“I found this because I was trying to replicate a result in my own lab and couldn't,” Park said. “When I traced why, I found it in the algorithm. Then I found it everywhere.”
+
+Park published her findings in January. The developers acknowledged the error and released corrected software in February. But as of March 6, the fix leaves an unresolved question: What should happen to published research that relied on the affected versions?
+
+MotiCalc-3 has been used in an estimated 2,800 published functional magnetic resonance imaging, or fMRI, studies. Versions 3.4 through 3.7 were the default tool in neuroimaging pipelines between 2017 and 2022. That count does not establish how many studies’ conclusions were affected.
+
+Park’s analysis found that the algorithm overcorrects for head movement when data vary widely between scan sessions. The resulting bias favors finding differences in brain activation between groups where none exist, rather than hiding real differences.
+
+Testing what that means for individual papers has taken months. Clare Finch, a second-year graduate student at Westfield, worked with Park to write scripts for reanalyzing studies. Finch said the work took 11 months and required rerunning data from seven studies whose authors cooperated.
+
+“Seven studies cooperated. They were able to share data,” Finch said. “Most papers from that era didn't archive their raw data. We couldn't test those, even if we wanted to.”
+
+Three of the seven studies maintained their original findings when reanalyzed with corrected software. Two showed smaller estimated effects that fell below statistical significance. Two showed different patterns of brain activation.
+
+Park said she does not know how representative those studies are of the broader 2,800. The cooperating authors selected themselves, and their studies may not reflect the range of possible error severity.
+
+NeuroTools Collaborative, the consortium that develops MotiCalc-3, said in its February statement that it had not known about the issue before Park’s paper. The error entered the software in a 2017 update that was peer-reviewed as part of a methods paper, the consortium said, but the review did not directly test the specific motion correction pathway.
+
+Park said she had no criticism of the developers’ response.
+
+“They fixed it quickly and transparently,” she said. “The problem is the papers that used the broken version are still in the literature.”
+
+The field has no mechanism for systematically flagging papers that used affected software. The journal that published the original MotiCalc-3 paper has issued an editor’s note linking to Park’s correction. Separately, Neuroscience Methods Review has called for a voluntary reanalysis registry where authors can report whether they used affected versions. As of March, 34 authors had registered.
+
+Thomas Brennan, an independent neuroimager at Pacific University, said the finding adds to methodological concerns about motion correction known since a 2016 software bug discovery.
+
+“We have a cumulative knowledge problem,” Brennan said. “Individual corrections are published. The affected papers stay in databases.”
+
+Park said researchers in clinical settings have contacted her about using affected studies as evidence for treatment protocols. She does not know how many and declined to characterize the clinical impact without further analysis.
+
+Her lab hopes to test 20 additional cooperating studies in 2025 and will publish all results, regardless of outcome. Finch cautioned against treating the discovery as a verdict on brain imaging itself.
+
+“It's not that fMRI doesn't work,” she said. “It's that a specific tool had a specific bug. Those are different claims.”

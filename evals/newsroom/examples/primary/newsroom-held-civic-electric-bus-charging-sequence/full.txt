@@ -1,0 +1,31 @@
+Draft an explainer piece from fictional reporting notes, staying within the supplied facts—no invented quotes or events.Why Alderbank's electric-bus depot has fewer chargers than buses
+
+ALDERBANK — Alderbank Transit's first electric-bus depot will open with six charging points for an initial fleet of 12 buses, a ratio that reflects how the operator plans to run charging, not a shortfall in equipment.
+
+The six-to-12 setup works because the buses won't all need power at once. Routes return to the depot at staggered times, so vehicles coming back early can use a charging point before later buses arrive, according to the operator's plan. One charging point can serve more than one bus during a planned overnight sequence, though that sequencing is not guaranteed to hold under every disruption.
+
+How much charging each bus actually gets depends on several factors: the time available before its next assigned route, the amount of energy that route requires, and the electrical capacity of the site itself.
+
+Fleet engineer Orla Marr described the approach as a scheduling exercise rather than a one-to-one allocation. "We are planning a sequence of vehicles, not setting a rule that every bus owns its own plug," Marr said.
+
+The six installed points are a first phase. The depot has physical space reserved for additional charging equipment, but that space is not itself evidence that more chargers are funded or in operation. Any expansion beyond the current six will depend on how the initial phase performs and on a separate funding decision, the operator said.
+
+**Readiness, not just batteries**
+
+The bigger open question heading into the depot's launch may not be charger count but confirmation — whether each bus has actually received the energy it needs before it pulls out for its next route.
+
+A bus parked next to a charger is not, on its own, confirmation that the vehicle has been charged for its next assignment, according to the operator's plan. Depot staff will assign charging positions and monitor completion as part of a vehicle-ready process that happens before each bus departs. The depot's vehicle board will display both a bus's next route assignment and its charging handover status, so staff can check both together.
+
+Driver representative Tera Cole said the first day of operation will test more than the equipment. "The first morning will be about more than the batteries. It will be about who has checked which bus is ready," Cole said.
+
+Drivers and depot staff are currently being trained on new handover records and the reporting responsibilities that go with them, according to the operator.
+
+**What hasn't been tested yet**
+
+The buses have not yet entered regular passenger service, and the operator has not released a completed reliability result for the fleet. It also has not published measured figures for annual emissions reductions or fuel-cost savings expected from operating the electric fleet — those results would come only after a period of regular use.
+
+Two further steps remain before final start arrangements are announced. Commissioning work will test both the installed charging equipment and the proposed vehicle-sequencing plan. Separately, the site's electricity network connection needs its own approval and readiness checks, apart from delivery of the buses themselves. A delivered bus or an installed charging unit does not, by itself, mean the whole depot system is ready to operate.
+
+The operator has built contingency arrangements for equipment outages into its internal operations plan but has not published a promise of uninterrupted service.
+
+The initial routes were chosen for their operating patterns and depot access, not announced as the start of converting the whole transit network to electric buses. Alderbank's existing diesel maintenance bays remain in use for vehicles outside the first electric fleet, and the new charging points are reserved for the transit fleet — they are not being opened as a public car-charging service.

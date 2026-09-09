@@ -1,0 +1,29 @@
+# Overdue rail inspection left crack undetected before Millbrook derailment, NTSB finds
+
+A fatigue crack in a rail joint that was four months overdue for inspection caused the April 2023 passenger train derailment at Millbrook Junction, the National Transportation Safety Board said in its final report released Oct. 2, 2024.
+
+Fourteen passengers were injured in the derailment, though none of the injuries were life-threatening. The engineer and two conductors were uninjured.
+
+The board found that Consolidated Northern Railway had last inspected the affected joint section in June 2021, about 22 months before the April 14, 2023, derailment. The railroad’s track inspection manual calls for inspections of joints at 18-month intervals.
+
+“The crack was detectable with standard ultrasonic testing. It was not found because the test was not performed on schedule,” said NTSB board member Rosa Mbeki, who led the investigation.
+
+The fatigue crack measured about 1.9 inches at its widest point when recovered from the wreckage, according to the findings.
+
+The lead car left the rails at an estimated 73 mph, below the posted speed limit of 79 mph. Investigators determined that the engineer had not exceeded the authorized speed, but that the train’s speed contributed to the severity of the derailment once the rail failed.
+
+The findings distinguish between what caused the train to derail and what made the consequences more severe: The board identified the cracked joint as the cause, while finding that speed was a contributing factor in the severity. Millbrook Junction is a mid-speed corridor with a 79 mph maximum over most of its length.
+
+The missed inspection was not an isolated lapse in the railroad’s records. CNR’s safety records showed 11 missed or delayed joint inspections along the route between 2019 and 2023. The Millbrook Junction joint was the only one that showed a crack.
+
+Federal rail safety inspectors had audited CNR’s track inspection program in 2021 and found it compliant at the time. The final report nevertheless documented the subsequent gap between the railroad’s required inspection schedule and the last inspection of the joint that failed.
+
+The board issued five safety recommendations, including a call for mandatory electronic logging of inspection dates, with records accessible to federal rail safety inspectors in real time.
+
+CNR spokesperson Dale Whitmore said the railroad accepted the findings and had already completed a systemwide inspection of all joints in the affected track class.
+
+The railroad has also installed continuous rail monitoring sensors on about 211 miles of track along the same route. CNR operates approximately 5,717 route-miles of track across 11 states.
+
+The injured passengers reached a settlement with CNR in December 2023. Financial terms were not disclosed.
+
+Nationally, passenger rail injuries from track-related causes averaged 31 a year in the five years before the Millbrook derailment. The April 2023 crash was CNR’s first involving passenger injuries since a 2017 station collision that injured two people.

@@ -1,0 +1,23 @@
+Hydrogen's Rainbow: Why Color Labels Matter for Clean Energy
+
+Hydrogen gas has no color. But the energy industry has adopted a palette of labels — grey, blue, green, pink, turquoise, white — to describe how the fuel is made and, crucially, how much carbon dioxide its production releases. As governments pour subsidies into hydrogen as a climate solution, understanding what those colors actually mean has become essential to judging whether the money is well spent.
+
+Nearly all hydrogen used today — about 95% of U.S. production — is grey hydrogen, made by steam methane reforming, a process that reacts natural gas with steam at high heat. It's cheap, at roughly $1 to $2 per kilogram at current natural gas prices, but it emits CO2 with no capture step.
+
+Blue hydrogen uses the same reforming process but adds carbon capture and storage to keep that CO2 out of the atmosphere. In theory, it's a lower-emission alternative. In practice, its climate benefit is murky. Dr. Fiona Callahan, an energy policy researcher at the Sandover Energy Institute, said the color taxonomy "sounds precise but it can mislead." Blue hydrogen's real-world benefit, she said, "varies enormously depending on methane leakage rates in the gas supply and how well the CCS works." Methane, the primary component of natural gas, is itself a potent greenhouse gas when it leaks upstream, and capture systems don't catch every molecule of CO2.
+
+Green hydrogen sidesteps fossil fuels entirely. It's produced through electrolysis — splitting water molecules using electricity — powered by renewable sources such as wind or solar, producing no CO2 in the process itself. Pink or red hydrogen follows the same electrolysis method but draws its electricity from nuclear power, also yielding near-zero lifecycle emissions. Both are far more expensive than grey hydrogen: green hydrogen runs roughly $4 to $10 per kilogram, and electrolysis generally costs two to three times more per kilogram than reforming without carbon capture. That gap should narrow as renewable electricity gets cheaper.
+
+A newer entrant, turquoise hydrogen, splits methane using heat in a process called pyrolysis, yielding hydrogen and solid carbon instead of CO2 gas — but only if that solid carbon is permanently stored or put to use, rather than eventually released. And white hydrogen, found naturally in certain underground geological formations, remains a wild card; researchers don't yet know how abundant or accessible it is.
+
+Does the color matter? Yes, for two big reasons. First, U.S. policy has tied money to it: the Inflation Reduction Act's production tax credit for clean hydrogen is scaled to lifecycle emissions, meaning cleaner methods earn bigger subsidies. Second, hydrogen isn't an energy source but an energy carrier — it takes energy to make, and some is lost along the way. Round-trip efficiency for green hydrogen, from electricity to hydrogen and back to electricity, runs only about 30% to 40%, compared with 70% to 80% for battery electric vehicles. That's why Callahan argues hydrogen makes little sense for passenger cars: "Using green hydrogen for personal cars makes less sense the more renewables you have, because you could just charge the battery directly."
+
+Where hydrogen does make sense, researchers say, is in sectors with few other options: steel production, chemical feedstocks, aviation fuel synthesis and long-distance shipping. For shipping, ammonia — a nitrogen-hydrogen compound easier to store than pure hydrogen — is emerging as a candidate fuel that can be converted back to hydrogen at its destination.
+
+Callahan said policy incentives are most defensible when aimed at green hydrogen for those hard-to-abate industries, rather than at blue hydrogen, given the uncertainty around methane leakage.
+
+The stakes are large: the global hydrogen market already totals about 90 million tonnes a year, mostly for ammonia fertilizer and oil refining, and countries including Germany, Japan and South Korea are building import infrastructure to bring in hydrogen and ammonia from renewable-rich regions like Australia and Chile. The International Energy Agency projects clean hydrogen could displace 10% of fossil fuel use by 2050 in a net-zero scenario — but only if production scales up tenfold and costs fall substantially.
+
+Separately, engineers are grappling with hydrogen embrittlement, in which hydrogen atoms absorbed into metal weaken pipelines and storage vessels, requiring specialized materials for dedicated hydrogen infrastructure.
+
+The bottom line: color labels aren't just marketing. They're a rough proxy for climate impact, cost and the honesty of emissions accounting — and getting that accounting right will shape which hydrogen bets pay off.

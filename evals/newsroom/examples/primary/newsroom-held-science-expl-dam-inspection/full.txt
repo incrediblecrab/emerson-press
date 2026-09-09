@@ -1,0 +1,29 @@
+Old dams, thin budgets: how America inspects — and struggles to fix — its aging dams
+
+The nation's dams are inspected by a patchwork of state regulators, using engineering standards that vary in how strictly they're applied — and by how much money and staff each state can spare. That patchwork is one reason so many aging dams remain in service without full rehabilitation, according to reporting notes reviewed for this article.
+
+The United States has about 91,000 dams listed in the National Inventory of Dams, and more than 17,000 are classified as "high-hazard-potential" — meaning a failure would likely kill someone downstream, according to the inventory. That classification describes the consequences of failure, not the dam's condition.
+
+Regulation falls mainly to the states. Federal authority covers only dams on federal land or those regulated by the Federal Energy Regulatory Commission. The National Dam Safety Program, established in 1978, funds state programs and coordinates federal efforts, but it has no enforcement authority over non-federal dams.
+
+State capacity varies widely. About a third of states have fewer than two dam safety engineers for every 1,000 regulated dams, according to the Association of State Dam Safety Officials.
+
+Inspectors typically check three things: structural integrity, including the condition of concrete and the stability of earthen embankments; mechanical systems such as gates and valves; and spillway capacity — whether the dam can handle the largest flood it might plausibly face, a benchmark called the Probable Maximum Flood. Many older dams were designed for smaller floods than current standards require and must be reassessed against that higher bar.
+
+Failure can happen several ways. Overtopping occurs when water flows over the dam's crest and erodes the downstream face. Seepage and piping occur when water moves through or beneath the structure; in embankment dams built of earth or rock, piping can start as a small seepage path and progress rapidly. Concrete dams face a different threat: alkali-silica reaction, a slow chemical process in which the concrete's aggregate reacts with the cement's alkaline compounds, expanding and cracking the structure over decades.
+
+"Age is not the primary risk factor," said Dr. Leah Santos, a dam safety engineer at the National Dam Safety Research Center. "A well-maintained 80-year-old dam can be safe. A poorly instrumented or poorly inspected 30-year-old dam may not be."
+
+Instrumentation — piezometers, strain gauges and settlement monitors — allows continuous monitoring between formal inspections. Many older dams have none.
+
+Emergency action plans are supposed to fill part of the gap, spelling out notification chains and evacuation triggers if a dam is at risk of failing. Federal guidelines recommend that every high-hazard dam have a current one. As of this year, about 80% do — meaning roughly one in five high-hazard dams has no current plan on file.
+
+Money is the recurring obstacle. Many high-hazard dams are privately owned by individuals or small companies without the resources to pay for rehabilitation, and state programs typically lack authority to compel repairs without going to court. Santos said the greatest risk comes from dams with no active owner at all — abandoned structures where responsibility has been lost and no one can be ordered to comply with an inspection.
+
+Rehabilitating the nation's deficient high-hazard dams would cost an estimated $75 billion, according to the notes; federal dam safety grants cover only a fraction of that. The American Society of Civil Engineers gave U.S. dam infrastructure a D+ in its most recent report card, citing deferred maintenance and regulatory gaps.
+
+For small dams with limited benefit, removal is often cheaper than repair, and removals have accelerated: more than 2,000 dams have come out nationwide since 2000.
+
+Meanwhile, the standards themselves are shifting. Climate change is pushing up design-flood requirements at some sites as precipitation patterns change, meaning dams adequate for historical conditions may be underdesigned for the future.
+
+Santos said the public tends to treat dam safety as binary — safe or failed — when the reality is a spectrum. Many dams are deteriorating but not yet critical, she said, and the cost of fixing them rises with every year the work is delayed.

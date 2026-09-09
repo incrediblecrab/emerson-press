@@ -87,6 +87,8 @@ The [model-only tuning pilot](evals/synthetic/README.md) retains its actual resp
 
 The modern newsroom tuning result is mixed and judge-dependent; it does not establish an overall gain or slop elimination. A separate [scoped-accuracy revision pilot](evals/newsroom/README.md#source-checking-and-the-scoped-revision) preserved the tested warnings but did not establish better prose than the earlier recipe. Earlier results must not be attributed to the revised payload.
 
+The [registered primary study](evals/newsroom/primary-protocol.json) has captured all 438 planned drafts across 219 cases and 212 family clusters. [Every unchanged draft is available](evals/newsroom/examples/primary/README.md). The fixed 1,314-judgment phase is in progress; complete writing acquisition is not evidence that the instructions improve prose.
+
 No powered or human-reviewed editorial-superiority result is established. A compact default must not be promoted on authoring checks or invented scores.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for source maintenance, generated artifacts and regression checks. Copyrighted working texts in `raw-data/` must remain untracked and out of prompt exports. Existing file-specific attribution and license notices still apply; no blanket license is inferred from them.

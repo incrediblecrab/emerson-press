@@ -1,0 +1,33 @@
+Fusion Power: The Science Is Simple. The Engineering Isn't.
+
+Scientists have understood the basic physics of nuclear fusion for decades — it's the same reaction that powers the sun. Yet, as of this reporting, no facility on Earth has managed to turn that reaction into a practical source of electricity. Here's why the science is simple but the engineering has proven so hard.
+
+**What is fusion?**
+
+Fusion happens when two light atomic nuclei merge into a heavier one, releasing energy in the process. The most promising version for energy production combines deuterium and tritium, two isotopes of hydrogen. When they fuse, they produce a helium nucleus and a high-energy neutron — and a burst of usable energy.
+
+**Why is it so hard to start?**
+
+Atomic nuclei naturally repel each other because they carry the same electrical charge. To overcome that repulsion and get close enough for the strong nuclear force to bind them, the fuel must be heated above 100 million degrees Celsius — hotter than the core of the sun.
+
+At that temperature, matter doesn't behave like a normal gas. It becomes plasma, a diffuse cloud of charged particles. Since no physical container could withstand such heat, scientists must confine the plasma using magnetic fields instead of walls — one of the central engineering challenges of fusion research.
+
+The leading design for doing this is the tokamak, a doughnut-shaped chamber that uses magnetic coils to hold the plasma in place. The name comes from a Russian acronym meaning "toroidal chamber with magnetic coils." An alternative design, the stellarator, uses complex twisted coils instead of plasma current; it's less prone to instability but harder to build.
+
+**How do scientists know if it's working?**
+
+Researchers track a measure called Q — the ratio of energy produced to energy put in. A Q greater than 1 means the reaction generates more energy than it consumes. In December 2022, the U.S. National Ignition Facility reported a Q above 1 in a brief laser-driven experiment, a method called inertial confinement, distinct from tokamaks. No tokamak has yet sustained Q above 1 for a duration useful to a power plant.
+
+**Why has it taken so long?**
+
+"The joke used to be that commercial fusion is 30 years away and always will be," said Dr. Rena Whitfield, a physicist at Lakeshore University. "The honest answer is we're closer than ever, but closer doesn't yet mean soon."
+
+Three engineering problems remain unsolved, Whitfield said: sustaining plasma for hours or days rather than seconds; breeding enough tritium inside the reactor itself, using lithium and the neutrons fusion produces, to keep the reaction supplied; and capturing heat from high-energy neutrons without degrading the reactor's structural materials. The most optimistic credible timelines, she said, require solving tritium breeding and plasma stability at the same time — something no facility has yet done at scale.
+
+**What's being built now?**
+
+ITER, an international experimental tokamak under construction in France since 2013, is designed to reach a Q of 10, though it won't generate electricity itself. It's scheduled for first plasma in 2025 and full-power deuterium-tritium experiments by the mid-2030s, after cost overruns and delays. More than 30 private companies are also chasing commercial fusion, with most projecting operational plants sometime between 2035 and 2050. Newly available high-temperature superconducting magnets, which generate strong fields in smaller machines, are cited by private developers as a genuinely new advantage.
+
+**Why bother?**
+
+Fusion produces no carbon dioxide and no long-lived radioactive waste; its main byproduct, tritium, has a half-life of just 12.3 years. Deuterium is abundant in seawater. A fuel pellet the size of a marble contains energy equivalent to roughly 45 tons of coal. The advantage over fission is abundant fuel and manageable waste; the disadvantage, still unresolved, is that sustaining the reaction is far harder.

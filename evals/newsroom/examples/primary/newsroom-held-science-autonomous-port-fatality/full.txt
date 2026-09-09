@@ -1,0 +1,41 @@
+Worker Killed by Autonomous Carrier in First U.S. Fatality at Automated Port
+
+MEDFORD — A maintenance technician was struck and killed by an autonomous straddle carrier Sunday at the Portside Container Terminal, in what federal investigators say is the first worker death at a fully automated container terminal in the United States.
+
+The victim was identified by family as David Osei, 41. He was performing a scheduled inspection of a carrier guide rail when the vehicle entered the zone, according to reporting notes on the incident.
+
+The carrier's proximity detection system had been operating in a degraded mode for about 90 minutes before the crash, the result of a software update deployed that morning, the notes show. Terminal records show the degraded status was flagged by the facility's central management system but was not escalated to a stop-work decision. Standard protocol allows carriers to keep running in degraded mode at reduced speed.
+
+Portside Terminal director Melissa Ward said the facility has suspended all autonomous vehicle operations pending a full safety review.
+
+"We have suspended all autonomous vehicle operations pending a full safety review," Ward said. "Our deepest condolences go to the family of our colleague."
+
+Ward said the terminal will not resume autonomous operations until an independent safety audit is complete.
+
+The Occupational Safety and Health Administration opened an inspection within hours of the incident and has jurisdiction over the investigation into workplace conditions. OSHA has six months to complete its inspection and issue any citations.
+
+Federal investigators are examining whether the degraded-mode software update should have triggered a mandatory stop-work hold under existing automated equipment regulations. They are also examining whether Osei followed a required zone clearance procedure that technicians must use before entering active carrier areas.
+
+Portside became fully automated in 2022 and operates 28 autonomous straddle carriers, along with automated guided vehicles and remote-operated ship-to-shore cranes, according to the notes. The carrier involved in Sunday's crash weighs about 42 tonnes unladen.
+
+Paul Kimura, director of the federal Maritime Automation Safety Task Force, said the incident marks a first for the industry in the U.S.
+
+"We have not had a fatality at a U.S. automated terminal before," Kimura said. "This event will force a reassessment of degraded-mode operating permissions at facilities across the country."
+
+The task force was established in 2024 but has not yet issued binding standards for automated terminal operations.
+
+A union representing workers at adjacent non-automated berths said it had raised safety concerns about the Portside expansion with OSHA in 2023. Those concerns were addressed in a compliance audit that year, according to the notes.
+
+Automated terminals have operated in Europe and Asia since the 1990s. European industry data cited in the notes shows two prior fatalities at such facilities, both involving temporary workers who entered active zones.
+
+Portside handles about 1.4 million container units per year. The suspension of autonomous operations has halted roughly 70% of the terminal's throughput.
+
+Helix Automation, which manufactures the carrier involved, said it is providing full cooperation to investigators.
+
+An attorney for Osei's family said the family would pursue all available legal remedies.
+
+A trade group representing terminal operators said the industry is committed to working with regulators to update safety standards in light of the incident.
+
+---
+
+A note on sourcing: the reporting notes did not specify whether Ward's and Kimura's quoted remarks were delivered in person, by phone, or in writing, so this draft does not characterize the setting of those statements beyond attributing them directly. Similarly, the notes do not indicate whether investigators have reached any conclusions about the zone clearance procedure or the software update's compliance status; the story reflects that these remain open questions under review.

@@ -1,0 +1,31 @@
+Lab’s Room-Temperature Process Offers New Path for Recycling Rare Earths From EV Motors
+
+Researchers at Westfield University say they have developed a way to pull valuable rare earth metals out of discarded electric vehicle motors without the energy-intensive heat processing that has long defined the industry — a step they hope could ease future strain on a supply chain the U.S. government considers a national security concern.
+
+The Materials Recovery Lab's process recovers neodymium and dysprosium, two rare earth elements used in EV motor magnets, at 78% efficiency, according to lab director Dr. Priya Sundaram. That trails the roughly 90% recovery rate achieved with virgin ore processing, a gap Sundaram called the primary technical barrier still standing in the way of wider adoption.
+
+The method relies on an ionic liquid solvent that selectively dissolves rare earth elements out of the magnet material, Sundaram said, bypassing the high-temperature roasting conventional processing requires.
+
+"The chemistry is not new," Sundaram said. "What we've done is make it scalable at room temperature. That changes the energy economics substantially."
+
+Much of that progress rests on three years of work by graduate student Tomás Vargas, 27, who focused on the solvent regeneration cycle — the process that allows the ionic liquid to be reused rather than discarded after each batch. Early attempts failed because the solvent gradually absorbed impurities from the magnet alloy, degrading its ability to selectively extract the target elements. Vargas said the team tested 14 regeneration approaches before finding one that restored 96% of the solvent's original selectivity.
+
+"Science is the fourteen failures," Vargas said. "The paper is the one success. The fourteen failures took three years."
+
+The lab currently processes about 200 kilograms of magnet material per week in its pilot configuration — far short of the tons-per-day throughput a commercial facility would require. Westfield's technology licensing office is in discussions with two undisclosed industrial partners about investing in a pilot plant, though no agreement has been signed.
+
+Even if the technology scales, Sundaram said, a more fundamental constraint looms: there simply are not enough end-of-life EV motors available in concentrated volumes yet to supply a commercial recycling operation. Most EV motors in service were built after 2017, and with typical vehicle lifetimes of 12 to 15 years, large volumes of retired motors are not expected to enter the waste stream until roughly 2030 to 2032.
+
+A Department of Energy report estimated that recovering half the rare earths in end-of-life EV motors by 2040 could supply 15% of projected U.S. neodymium demand — a meaningful but not transformative contribution, according to the report.
+
+The economics also hinge on volatile commodity prices. Sundaram said she is designing the process to be profitable at the current market price of $65 per kilogram for neodymium oxide, but wants it viable down to $50 a kilogram to ensure commercial durability, since recycling margins can vanish when rare earth prices fall.
+
+Two automotive companies have pledged to send decommissioned test vehicles to the lab to help maintain feedstock during the pilot phase. Sundaram said the field remains dominated by small, undercapitalized startups and that scaling will likely require partnerships with larger companies that already operate chemical processing infrastructure.
+
+She added that the process generates less wastewater and, unlike primary ore processing, produces no radioactive byproduct streams — avoiding the thorium and uranium that must be managed when rare earths are extracted from raw ore.
+
+Sundaram said the lab's broader contribution may be less about its specific process than about proving room-temperature ionic liquid extraction is viable at all, a foundation other researchers could build upon.
+
+Vargas plans to defend his dissertation this year and has accepted a research position at a company focused on urban mining. He said the project reframed how he thinks about the work.
+
+"If rare earths are a national security issue, then recycling them is a national security project," Vargas said. "That's how I think about the three years."

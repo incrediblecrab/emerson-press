@@ -1,0 +1,37 @@
+# Why cities hold heat — and what they can do to cool down
+
+Cities can stay hotter than nearby rural and suburban areas long after the sun goes down. Buildings and pavement absorb and hold heat, dense development limits cooling breezes and vehicles, industry and air conditioners release more heat into the air.
+
+That combination creates the urban heat island effect. City centers are typically 2 to 5 degrees Celsius warmer than nearby rural areas during the day. The difference can exceed 10 degrees Celsius on calm, clear nights.
+
+The consequences go beyond discomfort. During heat waves, rural areas cool more at night than cities do, leaving city residents with less overnight relief.
+
+"Heat islands are not just a comfort issue. They are a mortality issue," said Naomi Wheeler, an urban climatologist at Clearview Urban Institute. "During heat waves, the gap between the city center and the outskirts can be the difference between a dangerous and a survivable heat exposure."
+
+## What keeps cities hot?
+
+Dark surfaces, including asphalt and dark roofing, absorb solar radiation rather than reflect it. That energy is later released as heat. Streets flanked by tall buildings can trap heat and restrict airflow.
+
+Air conditioning creates another complication: It cools indoor spaces while releasing waste heat outdoors. Vehicles and industry also add heat directly to their surroundings.
+
+The burden is uneven. Low-income neighborhoods are disproportionately affected because they have less tree cover, more surfaces that prevent water from soaking into the ground and less access to cooling infrastructure.
+
+## What can cities change?
+
+Trees cool the air through shade and evapotranspiration, the release of water vapor through leaves. A mature tree can cool its surroundings by up to 2 degrees Celsius in its immediate shade.
+
+Wheeler said tree canopy is the most cost-effective single intervention, but it takes 10 to 20 years to mature enough to provide meaningful cooling. Reflective surfaces work immediately.
+
+Cool roofs, painted white or covered with reflective materials, absorb less solar energy. They can reduce roof surface temperatures by up to 30 degrees Celsius and cut building cooling costs by 10% to 30%. The roof temperature reduction is not a measure of how much the surrounding air cools.
+
+Vegetation-covered green roofs reduce heat absorption, improve insulation and slow stormwater runoff, though they require structural reinforcement and regular maintenance. Permeable pavement lets water soak in rather than run off, allowing evaporative cooling while reducing urban flooding risk.
+
+Cities can also redesign streets flanked by tall buildings with building setbacks and street-level vegetation. Those changes can be expensive and often require regulatory changes. Misting stations and fountains provide local relief through evaporation, but they are not a structural solution and cannot function when water is unavailable.
+
+## How much difference can those measures make?
+
+Riverdale planted 18,000 trees and installed cool roofing on 340 municipal buildings between 2019 and 2024. Monitoring found an average temperature reduction of 1.8 degrees Celsius within 200 meters of the intervention sites.
+
+That finding describes cooling near the projects, not across the entire city. Wheeler said the data shows neighborhood-scale interventions work, while citywide effects require sustained investment over multiple decades.
+
+Satellite thermal imaging allows researchers to map heat islands block by block. Several cities use those maps to direct tree planting and cool pavement programs toward the hottest areas. For cities being built or expanded, designing for lower heat absorption from the start offers another opportunity to limit exposure.

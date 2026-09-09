@@ -1,0 +1,51 @@
+# What are rare earths, and why do technology and national security depend on them?
+
+Rare earth elements help power electric vehicles, generate electricity from wind and guide military weapons. Their importance comes from what they can do — and from how difficult it is to build a reliable supply of usable material.
+
+As of June 18, 2025, the central challenge is not simply finding more deposits. It is reducing dependence on a supply chain whose processing capacity is overwhelmingly concentrated in China.
+
+## What are rare earth elements?
+
+Rare earths are a group of 17 metallic elements: the 15 lanthanides, plus scandium and yttrium. Despite their name, most are more abundant in Earth’s crust than gold or platinum.
+
+They are called “rare” because they seldom occur in concentrated deposits that can be mined economically. Instead, they are typically dispersed through rock in small amounts.
+
+The elements also differ in availability. Heavy rare earths, including dysprosium and terbium, are less abundant than light rare earths and are primarily mined in specific regions of China, making their supply especially sensitive strategically.
+
+## Why does technology need them?
+
+Different rare earths serve different purposes.
+
+Neodymium and dysprosium are used in neodymium-iron-boron magnets, the strongest permanent magnets known. These are essential for electric vehicle motors, wind turbine generators and military precision guidance systems.
+
+Europium and terbium are used in phosphors that produce colors in LED displays and fluorescent lighting. Lanthanum is used in catalytic converters for gasoline vehicles and specialized optical glass.
+
+Demand is expected to increase substantially as clean-energy technology expands. Anika Patel, a materials scientist at Ridgeline Institute of Technology, said the scale of the transition — involving hundreds of millions of electric vehicle motors and wind turbines — will put pressure on supply regardless of geopolitics.
+
+## Why are they a national security concern?
+
+The U.S. Department of Defense considers 14 rare earth elements critical to defense applications, including missile guidance, communications and stealth technology.
+
+Yet China mines approximately 60% of the global rare earth supply and processes about 85% of the world’s rare earth oxides. That concentration leaves other countries exposed to supply disruptions.
+
+The U.S. has significant deposits, primarily at Mountain Pass, but most raw ore is still sent overseas for processing. Having deposits is not the same as having an independent supply chain.
+
+“The mining part is solvable. The refining part is where most countries have fallen behind — it took China decades to build that capacity, and it cannot be replicated quickly,” Patel said.
+
+## Why is expanding supply so difficult?
+
+Refining creates environmental and financial challenges. Rare earth ores often contain thorium and uranium, so processing produces radioactive byproducts. Managing that waste is expensive and subject to strict environmental regulation.
+
+Patel said diversifying refining is a 15- to 20-year project even with full government support because of the chemical engineering expertise and environmental permitting required.
+
+Prices are also volatile: Neodymium oxide has ranged from $40 per kilogram to more than $150 per kilogram within a decade.
+
+## Are there alternatives?
+
+Deposits in Australia, Canada and several African nations are being developed with Western government backing. Japan, which has no domestic rare earth deposits, has invested heavily in stockpiling, recycling research and overseas mining partnerships.
+
+Recycling motors, electronics and magnets is possible, but it currently captures less than 1% of global supply, partly because large-scale dismantling and sorting remain expensive.
+
+Some manufacturers are pursuing substitutes. Ferrite magnets can replace neodymium magnets in certain applications, but they are significantly weaker.
+
+These approaches offer ways to reduce dependence, not quick replacements for existing supply. Rare earths are considered critical because they combine important technological uses with a processing system that is difficult, costly and slow to diversify.

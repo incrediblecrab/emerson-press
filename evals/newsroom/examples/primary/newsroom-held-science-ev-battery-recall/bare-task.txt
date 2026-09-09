@@ -1,0 +1,33 @@
+Caldwell Recalls 94,000 Apex EVs Over Battery Fire Risk
+
+Caldwell Motors announced a voluntary recall Wednesday of 94,000 Apex electric vehicles from model years 2022 through 2024 after seven thermal runaway incidents, including two fires, over the past 14 months.
+
+No deaths have been reported, but three people suffered minor injuries in the incidents, the company said.
+
+Caldwell and battery supplier NovaChem Battery Solutions traced the problem to a manufacturing defect in the anode coating used in battery modules produced at NovaChem's Plant 4 facility. The flawed coating reduces the anode's resistance to lithium plating during rapid charging, increasing the risk of thermal runaway, in which an overheating battery cell triggers a chain reaction in neighboring cells that can release enough energy to cause a fire.
+
+Plant 4 supplied battery modules for Apex vehicles assembled between January 2022 and August 2024. Six of the seven thermal incidents occurred during or immediately after high-speed DC fast charging, according to the company.
+
+The recall applies only to Apex vehicles with battery serial numbers in a specific range that Caldwell says it can identify through its production database.
+
+"We identified this issue through our own field data monitoring and brought it to regulators before any agency contacted us," Caldwell CEO Miriam Foster said. "Customer safety is not negotiable."
+
+Raymond Dahl, chair of the National Vehicle Safety Board, confirmed the agency received Caldwell's preliminary findings three weeks before Wednesday's public announcement and has been conducting its own parallel investigation.
+
+Owners of affected vehicles will be notified by mail and can schedule a free battery module inspection at any authorized Caldwell dealer. In the meantime, Caldwell has imposed a software-enforced charging limit of 80% of battery capacity on the affected vehicles until they are inspected. The company said the limit reduces peak stress on the battery but also cuts the vehicles' maximum driving range by roughly 20% in the interim.
+
+If an inspection finds a defective module, Caldwell will replace the entire battery pack at no cost, a process expected to take about four hours, the company said.
+
+NovaChem has halted production at Plant 4 pending a full quality audit. The company declined to comment on the financial impact of the shutdown.
+
+The Apex, Caldwell's electric sedan, accounts for about 18% of the company's global vehicle sales. Caldwell sold roughly 31,000 Apex vehicles in 2022, 38,000 in 2023, and 25,000 in the first eight months of 2024 before the model was updated.
+
+Investors reacted swiftly to the news. Caldwell's stock fell 7.4% in morning trading Wednesday.
+
+Diana Reyes, a consumer safety attorney not affiliated with any pending lawsuit against Caldwell, said the company's decision to launch the recall on its own initiative, along with the proactive charging limit, would likely shape how regulators evaluate its conduct going forward.
+
+"A self-initiated recall paired with an interim safety measure like the charging cap sends a signal to regulators that a company is trying to get ahead of a problem rather than waiting to be forced into action," Reyes said, according to the notes provided.
+
+The National Vehicle Safety Board's parallel investigation is ongoing, and it remains unclear whether the agency will pursue additional enforcement action or require further remedies beyond the recall Caldwell has already announced.
+
+Caldwell said it would provide updates on the inspection and replacement timeline as the process moves forward.

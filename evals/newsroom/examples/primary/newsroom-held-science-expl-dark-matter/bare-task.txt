@@ -1,0 +1,33 @@
+The Invisible Universe: What Scientists Know — and Don't — About Dark Matter
+
+Look up at the night sky, and what you see is a fraction of what's there. Astronomers say roughly 27% of the universe's total energy-mass content is made of "dark matter," an unseen substance whose physical nature has never been established. Adding in the equally mysterious "dark energy" — 68% — and ordinary matter accounts for just 5% of everything that exists, according to precise measurements of the cosmic microwave background, the afterglow radiation left over from the Big Bang.
+
+**How do scientists know it's there?**
+
+Nobody has ever seen dark matter directly. Its existence is inferred entirely from its gravitational effects.
+
+The story began in the 1930s, when astronomers surveying galaxy clusters found that galaxies were moving too fast to be held together by the gravity of visible matter alone. Something invisible had to be supplying extra gravitational pull.
+
+The strongest evidence today comes from galaxy rotation curves. Stars at the outer edges of spiral galaxies orbit at nearly the same speed as stars near the center — a pattern that requires far more mass than telescopes can see.
+
+Gravitational lensing, the bending of light from distant galaxies by intervening mass, offers another line of evidence. Lensing maps of dark matter distribution match predictions made using the standard cosmological model. That model also produces computer simulations that accurately reproduce the large-scale structure of the universe, including the filaments and voids that stretch between galaxy clusters.
+
+"We know dark matter is there with the same confidence we know the floor is there when we step on it," said Dr. Anya Reinholt, a physicist at the Sandover Physics Institute. "We cannot see it. We feel the effect."
+
+A competing idea, known as Modified Newtonian Dynamics, or MOND, tries to explain the same observations by adjusting the rules of gravity rather than adding unseen mass. MOND can fit some galaxy rotation data, but it struggles with cluster measurements. In the Bullet Cluster, a well-known cosmic collision, the mass inferred from gravitational lensing is separated from most of the hot, X-ray-emitting gas — a separation that's difficult to explain without invisible mass.
+
+**Why is it so hard to detect?**
+
+Physicists have proposed several candidate particles. One class, called WIMPs — weakly interacting massive particles — would interact with ordinary matter through gravity and the weak nuclear force, but not through electromagnetism, making them exceptionally difficult to catch.
+
+Experiments such as Xenon-1T and LUX-ZEPLIN use liquid xenon to hunt for WIMPs. A collision with a dark matter particle would, in theory, produce a flash of light and a tiny electrical signal. The detectors sit deep underground, shielded by lead, water and rock, to block cosmic rays that could mimic a genuine signal.
+
+So far, no confirmed detection has emerged from any of these experiments. Each null result narrows the range of possible WIMP masses and interaction rates without ruling out dark matter altogether. Searches for gamma rays that WIMPs might produce if they annihilate on contact have likewise come up empty.
+
+Those repeated null results have pushed theorists toward other candidates: axions, extremely light hypothetical particles; sterile neutrinos, a heavier theoretical sibling of known neutrinos; and primordial black holes dating to the early universe. Reinholt said the null results have also motivated theorists to propose lighter, more weakly interacting particles — sometimes called dark photons or fuzzy dark matter — that standard detectors aren't built to find.
+
+**What comes next?**
+
+The Apex Dark Matter Observatory plans an upgraded xenon detector 40 times as sensitive as its current instrument, with construction slated to begin in 2027 if funding comes through.
+
+Reinholt said the field has reached a turning point: Either dark matter turns up in the next generation of experiments, or physicists will need to fundamentally rethink their detector strategies or the assumptions underlying the standard model itself.

@@ -1,0 +1,47 @@
+# Why offshore wind’s biggest hurdles extend beyond the turbines
+
+An offshore wind farm can generate electricity miles out at sea. But producing power and delivering it to homes and businesses are different challenges.
+
+The connection requires undersea cables, offshore substations and upgrades to the land-based electric grid. Together, that infrastructure can cost as much as the turbines themselves. Delays can leave wind farms waiting years before they can deliver full power, making transmission a central challenge for clean energy.
+
+As of May 28, 2025, the obstacles span engineering, equipment shortages and disagreements over where to build — and who should pay.
+
+## Why is bringing power ashore so expensive?
+
+For long undersea routes, developers use high-voltage direct current, or HVDC, cables. They lose less energy than alternating-current cables over distances greater than about 60 kilometers, or 37 miles.
+
+That efficiency comes with expensive equipment. Converter stations change the turbines’ alternating current into direct current for transmission, then convert it back for the onshore grid. Each station costs hundreds of millions of dollars.
+
+The cables themselves have become more expensive because of rising copper and steel prices and heavy demand. Cable procurement challenges have contributed to delays or cancellations of some offshore projects.
+
+Installation also requires specialized vessels, and demand has outstripped supply as offshore wind development has accelerated globally. Floating turbines, which allow development in deeper water, add another complication: Their cables must flex as the platforms move.
+
+## What happens when the cable reaches land?
+
+Reaching the coast is not the same as reaching customers.
+
+Coastal substations are often designed for existing electricity needs, not large amounts of new offshore generation. They may need upgrades or replacement. New or expanded transmission lines must then carry the electricity from the landing point to places where it can be used.
+
+Those routes may cross populated areas and require rights of way. Permitting can take longer than construction of the offshore project.
+
+“The hardest part is not the cable. It is convincing communities, regulators, and grid operators across multiple jurisdictions to agree on who pays for what and where the cables come ashore,” said Lena Korhonen, a grid integration engineer at Atlantic Grid Institute.
+
+Korhonen said the U.S. interconnection queue — projects awaiting studies to determine how they can connect — is a major bottleneck, with multiyear waits common.
+
+## Can the grid handle changing winds?
+
+A connection must do more than carry electricity when the wind blows.
+
+Offshore output varies with weather conditions. Grid operators need ways to accommodate those changes, including storage, backup generation or connections to larger regions where wind may be available when local conditions are calm.
+
+Wind farms also must meet technical standards for grid reliability. Those include staying connected during electrical disturbances and providing reactive power support to help manage voltage. Meeting those requirements calls for inverter technology that adds cost.
+
+## Would a shared network help?
+
+Shared offshore infrastructure can connect several wind farms before bringing their electricity ashore, reducing the number of cable landings.
+
+Several European countries are developing such a meshed grid in the North Sea. But sharing infrastructure requires international agreements on costs and how transmission capacity is allocated.
+
+In the U.S. Northeast, separate state procurement programs create fragmented demand that makes regional planning difficult, Korhonen said.
+
+The clean energy stakes are straightforward: Building turbines alone is not enough. Without timely grid connections and a system capable of managing variable output, offshore wind cannot deliver its full supply of electricity to customers.

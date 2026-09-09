@@ -1,0 +1,21 @@
+**Aging Dams, Thin Oversight: Why America's Infrastructure Gets a D+**
+
+The United States has about 91,000 dams listed in the National Inventory of Dams, and more than 17,000 of them are classified as "high-hazard-potential" — meaning a failure would likely kill someone downstream. Yet the system meant to catch problems before they become disasters is uneven, underfunded and, in many cases, powerless to force fixes.
+
+Dam safety is regulated mostly by the states. Federal authority kicks in only for dams on federal land or those regulated by the Federal Energy Regulatory Commission. That patchwork means oversight quality varies enormously: About a third of states have fewer than two dam safety engineers for every 1,000 regulated dams, according to the Association of State Dam Safety Officials.
+
+When inspectors do show up, they look at three main things: structural integrity, including the condition of concrete and the stability of earthen embankments; mechanical systems such as gates and valves; and spillway capacity — whether the dam can handle the largest flood it might plausibly face, known as the Probable Maximum Flood. Many older dams were designed for smaller floods than current standards require, and climate change is complicating that math further, as shifting precipitation patterns push design-flood estimates higher in some regions.
+
+Failure itself tends to happen one of three ways: overtopping, where water flows over the crest and erodes the downstream face; seepage and piping, in which water works its way through or beneath the structure; or outright structural failure. Earthen and rock embankment dams are especially vulnerable to piping, a process that can start as a small seep and progress quickly. Concrete dams face a slower threat called alkali-silica reaction, a chemical process that expands and cracks concrete over decades.
+
+Age alone isn't the deciding factor, said Dr. Leah Santos, a dam safety engineer at the National Dam Safety Research Center. "A well-maintained 80-year-old dam can be safe," she said. "A poorly instrumented or poorly inspected 30-year-old dam may not be." Instrumentation — devices such as piezometers, strain gauges and settlement monitors — lets engineers track a dam's condition continuously between formal inspections, but many older dams have none installed.
+
+The federal government's main tool, the National Dam Safety Program, established in 1978, funds state programs and coordinates research but cannot compel repairs at non-federal dams. That leaves enforcement to the states, many of which lack authority to force owners to act without going through a legal process.
+
+Ownership is often the real bottleneck. Many high-hazard dams belong to individuals or small companies without the money to pay for rehabilitation. The estimated cost of fixing the nation's high-hazard "deficient" dams is $75 billion, and federal grants cover only a fraction of that. The American Society of Civil Engineers gave the country's dam infrastructure a D+ in its most recent report card, citing deferred maintenance and regulatory gaps.
+
+Santos said the most dangerous category is dams with no active owner at all — structures where responsibility has effectively disappeared, leaving no one to answer inspection orders. It's part of why, she said, the public tends to think of dam safety in binary terms — safe or failed — when the reality is a spectrum. Many dams sit in a deteriorating but not-yet-critical state, and the cost of intervening rises every year repairs are delayed.
+
+Emergency planning has its own gaps. Federal guidelines call for every high-hazard dam to have a current emergency action plan spelling out notification chains and evacuation triggers if failure looks imminent. As of this year, about 80% of high-hazard dams have one — meaning roughly one in five does not.
+
+For some smaller dams with limited benefits, the cheapest fix is no fix at all: removal. More than 2,000 dams have been removed nationwide since 2000, a pace that has picked up considerably in the past decade, as owners and states conclude that tearing a structure down costs less than shoring it up.

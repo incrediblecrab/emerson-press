@@ -1,0 +1,39 @@
+# What an fMRI scan measures — and why it cannot read minds
+
+A brain region that “lights up” on a scan is not displaying a thought. Functional magnetic resonance imaging, or fMRI, measures changes in blood flow associated with brain activity. It gives researchers a way to map where activity changes, but it does not directly record neurons firing or establish what someone is thinking.
+
+The distinction matters when interpreting claims about behavior, mental illness or differences between groups. Cognitive neuroscientist Yuna Breckinridge of Westfield University describes fMRI as a powerful tool for mapping functional brain organization at the population level, but not a mind-reading technology.
+
+## A signal one step removed
+
+Active neurons need more oxygen and draw increased blood flow. An fMRI scan detects a signal related to blood oxygen levels, known as BOLD, short for blood oxygen level dependent. That signal is a proxy for neural activity rather than a direct measurement of neurons’ electrical signals.
+
+The timing differs considerably. Neurons fire on a scale of milliseconds; the BOLD response unfolds over seconds. Compared with electroencephalography, or EEG, fMRI provides excellent spatial resolution — showing where activity changes — but poorer temporal resolution, meaning it is less precise about when those changes happen.
+
+Even its detailed images cannot show individual neurons. A typical voxel, the smallest imaging unit, covers approximately 1 to 3 cubic millimeters of tissue and contains millions of neurons.
+
+## Activity does not establish cause
+
+“When someone says 'the brain region X lit up,' what they mean is the BOLD signal in that region increased under those conditions. That is not the same as saying X causes or produces the behavior,” Breckinridge said.
+
+A scan can show an association between activity in a region and a task. By itself, it cannot demonstrate that the activity causes the person’s performance.
+
+Nor does observing activity uniquely identify a mental process. Many brain regions are active during multiple tasks. Working backward from a region’s activation to a claim about someone’s thoughts is a problem known as reverse inference.
+
+Other methods can help test cause. Transcranial magnetic stimulation, or TMS, can temporarily disrupt function in specific brain regions, providing causal evidence to complement fMRI’s correlations.
+
+## The study matters as much as the scan
+
+Head movement creates artifacts in scan data. Correction algorithms reduce that problem but cannot eliminate it. Participants also must lie still in a noisy, confined scanner, a setting that may affect the social or emotional behaviors researchers want to understand.
+
+Small samples have been another systematic weakness. Many classic studies tested fewer than 30 participants, leaving results vulnerable to false positives.
+
+Breckinridge said the field has substantially improved since 2016 through larger samples enabled by consortium data sharing, registration of hypotheses before studies begin and replication across research sites.
+
+## Patterns are not individual verdicts
+
+Machine learning tools have identified fMRI patterns that distinguish groups of people. Their reliability for individual clinical decisions remains limited, and they are not generally approved as diagnostic tools.
+
+Comparisons between groups also require careful controls for factors such as education, socioeconomic status and scanner type.
+
+Even when no specific task is assigned, fMRI has identified networks of regions that consistently become active together. What these resting-state networks do is still being established. Mapping a pattern is a useful finding; determining what it means requires further evidence.

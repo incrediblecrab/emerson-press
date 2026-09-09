@@ -1,0 +1,29 @@
+# Pharos halts antibiotic trial after liver enzyme safety signal
+
+Pharos BioClinical halted enrollment and dosing in a Phase 2 trial of its experimental antibiotic Vectirex on Thursday after an independent safety monitoring board identified elevated liver enzymes in eight patients, triggering the study’s stopping rules.
+
+The pause leaves the future of the drug, also known as VCX-421, uncertain. It is designed to fight gram-negative bacteria resistant to existing antibiotics through a mechanism that differs from those of all currently approved antibiotic classes.
+
+Eight of the trial’s 312 enrolled patients developed levels of alanine aminotransferase, a liver enzyme, more than five times the upper limit of normal. The trial protocol designated that threshold as a stopping criterion. The affected patients were enrolled at five trial sites in three countries.
+
+All eight were taken off the drug. Six showed enzyme levels returning toward normal within two weeks, according to Pharos. The halt applies to current dosing and new enrollments, not to patients who have completed the trial regimen.
+
+Dr. Noel Adeyemi, chairman of the data safety monitoring board, said the unanimous decision followed prespecified stopping rules rather than a clinical judgment call. The liver findings required investigation before the trial could continue, he said.
+
+“We are disappointed by this setback, but the DSMB’s recommendation is exactly why independent oversight exists. Patient safety must come first,” said Dr. Amanda Yee, Pharos’ chief medical officer.
+
+Pharos said it does not yet know whether the enzyme elevations are related to the dose, the drug class or a particular patient subgroup. The company will analyze blood samples before deciding whether to modify the trial or abandon the compound.
+
+It has no timeline for deciding whether to resume the study or close the VCX-421 program. Pharos said it would file a full safety report with regulators within 30 days.
+
+Vectirex is a peptide-synthase inhibitor, a class in which no other companies are known to be developing drugs as of the March 27 halt. Pharos says its distinct mechanism offers potential against bacteria resistant to carbapenems and colistin.
+
+The drug had shown activity against 14 drug-resistant bacterial strains in Phase 1 testing. That earlier phase enrolled 80 healthy volunteers and identified no liver safety signal.
+
+Dr. Rina Okafor, an infectious disease specialist who is not affiliated with the trial, said gram-negative antibiotic resistance kills an estimated 700,000 people worldwide each year, making new drug classes critically needed. She said safety signals in this class were not unexpected, however, given the novelty of its mechanism.
+
+The halt interrupts a program that has drawn substantial private and public investment. Pharos has spent about $340 million developing Vectirex over six years. The National Institutes of Health contributed $28 million in preclinical funding before Pharos acquired the compound from a university spin-off.
+
+Regulatory agencies in three countries had granted Vectirex fast-track or priority designation based on the condition it was intended to treat.
+
+Pharos’ stock fell 22% in after-hours trading Thursday following the announcement.

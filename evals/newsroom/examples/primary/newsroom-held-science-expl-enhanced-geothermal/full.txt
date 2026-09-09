@@ -1,0 +1,35 @@
+# Enhanced geothermal taps deep heat for renewable power around the clock
+
+Hot rock deep underground could supply renewable electricity even when the wind drops and the sun goes down. Enhanced geothermal energy aims to capture that heat in places where conventional geothermal plants cannot operate.
+
+The approach is drawing government funding and investment from venture capital firms and oil companies. Advances in oil and gas drilling offer tools for reaching the resource, while geothermal's continuous output could complement weather-dependent wind and solar power. But expensive wells, earthquake risks and uncertainty about how long underground reservoirs will produce heat remain obstacles.
+
+## How does it work?
+
+Conventional geothermal plants tap naturally occurring hot water and steam in underground reservoirs near the surface. That confines them to geologically active areas, such as Iceland, the western United States and the Philippines.
+
+Enhanced geothermal systems, or EGS, create reservoirs where none exist naturally. Developers inject pressurized water to fracture hot, dry rock deep underground, then circulate fluid through those fractures to collect heat.
+
+Earth's temperature increases by approximately 25 to 30 degrees Celsius per kilometer of depth. At depths of 5 to 10 kilometers, or roughly 3 to 6 miles, temperatures in most continental locations are sufficient for electricity generation.
+
+The equipment used to turn that heat into power can vary. Binary cycle plants use geothermal heat to vaporize a separate fluid with a lower boiling point than water, allowing them to generate electricity from lower-temperature resources.
+
+## Why the new interest?
+
+“Enhanced geothermal sits at the intersection of oil and gas drilling technology and renewable energy,” said Tomoko Hara, a geothermal energy researcher at Basin Energy Institute. “The resource is almost everywhere. The challenge is the cost and risk of the exploration well.”
+
+Horizontal drilling and precision directional steering developed for oil and gas wells are directly applicable to geothermal projects. Companies with those skills are entering the sector, and several major oil companies have announced minority investments in EGS startups.
+
+The U.S. Department of Energy is funding demonstrations at multiple sites. Its Utah FORGE project in the Milford Basin has created fracture networks in hot, dry granite at a depth of 3.2 kilometers, about 2 miles.
+
+Geothermal also supplies baseload electricity: power that runs continuously regardless of weather or time of day. The Energy Department's target is to reduce EGS power costs to $45 per megawatt-hour by 2035. That is a goal, not an achieved price.
+
+## What stands in the way?
+
+Drilling a well at least 5 kilometers deep costs $10 million to $30 million. Multiple wells and hydraulic fracturing can push a project's upfront cost to $50 million or more before it generates electricity.
+
+Developers also face uncertainty about how fractured reservoirs will behave. Fluid injection can cause earthquakes, a risk known as induced seismicity. In 2017, an EGS project in an Asian city triggered a magnitude 5.5 earthquake that damaged buildings and halted the program.
+
+Real-time seismic monitoring and control of injection pressure are used to limit earthquake risk. An alternative, closed-loop geothermal, circulates fluid through sealed, U-shaped wellbores without fracturing surrounding rock, but extracts less heat than open fracture reservoirs.
+
+Reservoir longevity remains another unanswered question, Hara said. As heat is extracted, the rock may cool and plant output may decline. Methods for assessing and extending reservoir life are still under development. The heat resource may be extensive, but accessing it economically and sustaining production remain the central tests.

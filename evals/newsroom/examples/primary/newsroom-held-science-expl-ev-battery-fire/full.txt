@@ -1,0 +1,23 @@
+**Why EV batteries catch fire — and how those fires compare to gasoline car fires**
+
+Electric vehicle fires are rarer than gasoline car fires but far harder to put out, according to fire safety researchers and vehicle engineers.
+
+The batteries that power most EVs use lithium-ion chemistry, storing energy in a reaction between a lithium-containing cathode, a graphite anode and a liquid electrolyte, according to the National Automotive Safety Institute. That electrolyte is flammable, and when a single cell overheats, it can trigger a chain reaction called thermal runaway, in which one cell transfers heat to its neighbors, each releasing more heat in turn until the battery pack ignites or ruptures.
+
+Thermal runaway can be triggered by collision damage, a punctured battery, overcharging, a manufacturing defect or extreme external heat, the institute said. Battery management systems are designed to monitor cell voltage, temperature and current to prevent those conditions, and a failure or bypass of that monitoring is the most common pathway to a fire.
+
+"The fire itself is not necessarily more likely in an EV," said Dr. Tomás Lindgren, a vehicle safety engineer at Northview Automotive Institute. "The challenge is the duration and the chemical toxicity of the gases, which are different from a gasoline fire."
+
+Lithium-ion fires can burn above 1,000 degrees Celsius and release toxic gases, including hydrogen fluoride, the institute said. Because neighboring cells can each reach their own thermal threshold at different times, the fires can reignite repeatedly, and firefighters often must cool a damaged battery continuously for hours to keep it from flaring again.
+
+Fire departments in major cities have developed EV-specific protocols that call for applying large volumes of water continuously; some departments use immersion containers to submerge small vehicles, according to the institute.
+
+By the numbers, gasoline vehicle fires in the U.S. run into the hundreds of thousands annually, while EV fires number in the thousands, Lindgren said. Institute data show EVs have a lower fire rate per vehicle-mile traveled than gasoline vehicles, though EV fires take longer to extinguish once they start. Lindgren said the public perception of EV fire risk is disproportionate to that statistical rate.
+
+Some fires have also raised concern about garage safety, since flames can spread to a building's structure before responders arrive; some fire officials recommend not parking a damaged EV in an enclosed garage, the institute said.
+
+The industry's response has centered on containment rather than elimination of the underlying risk. Lindgren said manufacturers have focused on cell-level isolation — design features meant to keep one failing cell from setting off its neighbor. Some manufacturers have also shifted standard-range vehicles toward lithium iron phosphate, or LFP, battery chemistry, which is considered more thermally stable than nickel manganese cobalt chemistry. Researchers are also testing fire-retardant electrolyte additives and ceramic separators meant to slow the chain reaction if a cell does fail.
+
+Regulators require abuse testing — including nail penetration, overcharge and thermal propagation tests — before batteries reach the market, though third-party researchers' access to that data varies by manufacturer. The institute said it is working with federal regulators on standardized post-crash battery inspection protocols for first responders.
+
+Not every electric vehicle carries this risk. Hydrogen fuel cell vehicles do not rely on lithium-ion batteries for propulsion and do not share the thermal runaway risk, though compressed hydrogen storage carries its own separate safety considerations, according to the institute. Solid-state batteries, which replace the liquid electrolyte with a solid material, are considered inherently safer for the same reason but are not yet in commercial mass production.

@@ -1,0 +1,27 @@
+Early-Warning System Passes First Real Test as Quake Rattles Harrington Bay
+
+HARRINGTON BAY — An automated early warning system gave residents here 14 seconds of notice before a magnitude 5.8 earthquake shook downtown Tuesday morning, the first time the network has issued a live public alert during an actual damaging quake rather than a test.
+
+The earthquake struck the Hollister Fault at 7:22 a.m., with an epicenter 41 kilometers east of the city, according to the Western Seismic Alert Network, known as WSAN.
+
+At least 47 people were treated at area hospitals for minor injuries, mostly cuts and bruises from falling objects, officials said. Building damage downtown was limited to cracked facades and broken windows, and the Harrington Bay Office of Emergency Management reported no structural collapses.
+
+The warning was triggered when a WSAN sensor station at Hollow Creek detected the fault slip and calculated how long the strongest shaking would take to reach the city, said Dr. Lena Choi, the network's director. The alert reached the public through cellphone emergency broadcasts, a network of sirens and an integration with the Harrington Bay Metro Authority's internal dispatch software.
+
+"Fourteen seconds is not a lot of time, but it is enough to stop a train, brace yourself, or step away from glass," Choi said. "Today showed that."
+
+The Metro Authority halted three in-service trains and locked elevator banks at four underground stations after receiving the alert, spokesman Tomás Reyes said. Dispatchers triggered the emergency stop sequence before any controller felt the shaking themselves, he said. No derailments or elevator failures were reported, and transit service resumed within 32 minutes.
+
+Engineers plan to review the automated train-stop response to see whether that resumption time can be shortened in less severe earthquakes, according to WSAN.
+
+Federal seismological officials said the alert's magnitude estimate was accurate to within 0.2 units of the final assessment, which they said validated the network's detection algorithm.
+
+Not everyone received warning. Areas within 10 kilometers of the epicenter got no alert because the shaking arrived before any signal could be transmitted — a limitation shared by all current early warning systems, WSAN said.
+
+The alert reached an estimated 1.4 million mobile phones, and a survey response system built into the notification logged 22,000 replies within two hours, the network said.
+
+The quake was felt as far as 180 kilometers away, but no injuries were reported outside Harrington County.
+
+WSAN's sensor network includes 187 seismic stations installed between 2018 and 2022 at a total cost of $94 million. The system, modeled on similar early warning networks already operating in California, Oregon and Washington state, became fully operational in 2022. Choi said the agency plans to add 40 more stations over the next two years using state funding that has already been appropriated.
+
+Tuesday's earthquake was the most significant to strike the Hollister Fault since a magnitude 6.1 quake in 1978 caused widespread damage before early warning technology existed.

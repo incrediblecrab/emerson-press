@@ -1,0 +1,33 @@
+The Race for a Superconductor That Could Change Everything
+
+By staff report
+
+Physicists have spent decades chasing a material that could conduct electricity with zero resistance at ordinary temperatures and pressures. As of Feb. 12, 2025, they still haven't found one — but the search continues to draw major scientific and financial investment, and a few recent stumbles have only sharpened the stakes.
+
+**What is a superconductor?**
+
+Ordinary conductors like copper waste energy as heat whenever current flows through them; that loss equals the current squared multiplied by the material's resistance. Superconductors sidestep this problem entirely. Below a certain "critical temperature," electrons inside them pair up into what physicists call Cooper pairs and glide through the material's atomic lattice without scattering — the very process that causes resistance in normal wires. The result is electrical current that flows without dissipating energy as heat, according to physicist Dr. Elena Saito of the Lakeside Materials Institute.
+
+**Why does temperature matter so much?**
+
+Most conventional superconductors only work near absolute zero, or minus 273 degrees Celsius, requiring expensive liquid helium cooling. A class of materials discovered in the 1980s, known as high-temperature superconductors, can operate using liquid nitrogen instead — cooled to a still-frigid minus 196 degrees Celsius, but far cheaper to maintain. No material has yet been shown to superconduct at room temperature under normal atmospheric pressure.
+
+**Why does this matter?**
+
+"Room temperature superconductivity would be one of the most transformative material discoveries in history," Saito said. "Every motor, every transformer, every power line would work on a different physics."
+
+Superconductors already power MRI machines, particle accelerator magnets and the levitation systems in maglev trains. High-temperature superconducting magnets, thanks to their strong field strength, are enabling private companies to design more compact fusion reactors. Superconducting power cables are being piloted in urban grids in Germany and South Korea, carrying five times more current than conventional cables of the same size with lower losses. Superconducting circuits also serve as the qubits in quantum computers built by Google and IBM.
+
+A material that superconducted at room temperature and normal pressure could extend those benefits dramatically — enabling low-loss power transmission, faster trains, and far more powerful medical and scientific magnets. Researchers say achievable, scalable room-temperature superconducting transmission lines could cut global electricity losses by hundreds of terawatt-hours a year. The global superconductor market, dominated by medical imaging and scientific uses, is already valued at roughly $8 billion annually.
+
+**Why hasn't it happened yet?**
+
+Part of the challenge is theoretical: even the mechanism behind existing high-temperature superconductors isn't fully understood, Saito said. Researchers are exploring materials such as high-entropy alloys and hydrogen-rich compounds called hydrides; some hydrides do superconduct at high temperatures, but only under enormous pressures that make them impractical outside a lab.
+
+Manufacturing is another obstacle. The ceramic materials that superconduct at higher temperatures tend to be brittle, making them difficult to shape into flexible cables.
+
+The field has also been dogged by a reproducibility problem. A widely publicized 2023 claim of a room-temperature, high-pressure superconductor drew intense scrutiny, but other laboratories couldn't replicate the results, and the paper was ultimately retracted. It was one of several high-profile room-temperature claims since 2015 that failed independent verification.
+
+The National Science Foundation has since increased funding for superconductor material discovery, saying the episode underscored both the technology's potential importance and the need for rigorous verification standards.
+
+Saito said she believes room-temperature superconductivity is theoretically possible — the task now is finding the right material, which may require systematically testing millions of compounds. "The challenge is finding the right material," she said, describing a search that remains far from over.

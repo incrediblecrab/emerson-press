@@ -1,0 +1,31 @@
+# TeleLink completes $890 million rural fiber project eight months early
+
+TeleLink Rural Networks said Thursday, Aug. 22, that it had completed fiber-optic broadband connections to 78,000 previously unserved households in Clearwater County, finishing the $890 million project eight months ahead of its contract schedule.
+
+The rollout addresses a broadband gap documented since 2015, after two previous proposals failed because of insufficient funding. Before the project, 74% of the county's rural households had access only to satellite or fixed wireless internet with speeds below 25 megabits per second.
+
+The new service provides upload and download speeds of 1 gigabit per second at a monthly retail price of $65. Federal broadband rules also required TeleLink to offer a $30-a-month low-income plan, which had enrolled 9,200 households as of August.
+
+A $440 million federal broadband equity grant and $450 million in state infrastructure bonds financed the project. The average cost was approximately $11,400 per household served.
+
+TeleLink attributed the accelerated schedule to its installation methods and crew training. The company used aerial cable along existing utility poles for 84% of connections, reducing permitting time and underground excavation costs. In all, crews installed about 1,430 miles of new fiber cable and 140 distribution nodes.
+
+“We finished early because we standardized the aerial installation process and trained crews to achieve 150 connections per day per team rather than the industry standard of 90,” TeleLink CEO Rachel Auer said.
+
+Subscriptions exceeded the contract's projections. Within the first 90 days, 61% of connected households subscribed, compared with a target of 50% within 18 months.
+
+The federal grant includes a provision requiring repayment if fewer than 40% of connected households subscribe within five years. The initial subscription rate is above that threshold, though the five-year requirement remains part of the agreement.
+
+Local education and health officials reported changes following the arrival of home broadband.
+
+The county school district said 4,200 students gained access through the project, eliminating a documented gap in homework completion rates between rural and town students. Health care officials said telehealth visit rates among county residents in newly connected households increased threefold during the first six months of availability.
+
+Clearwater County Board Chair James Moran said two agricultural businesses had relocated operations from neighboring counties in anticipation of the fiber project. He credited the connection with enabling precision agriculture monitoring.
+
+The construction effort also drew on local workers. Workforce development officials said 140 of the 380 installation crew members hired for the project were from Clearwater County. Training was provided through a TeleLink partnership program.
+
+TeleLink built the infrastructure under a 25-year indefeasible right-of-use agreement with the county. Ownership of the fiber network will transfer to the county when the agreement ends.
+
+The project is among the first 40 completions nationally under the broadband equity grant program, which Congress authorized in 2021. Two neighboring counties with similar broadband gaps are expected to begin their own federally funded projects in 2025.
+
+Auer said finishing early will allow TeleLink to move its installation teams to a second project in another state, improving the company's capital efficiency.

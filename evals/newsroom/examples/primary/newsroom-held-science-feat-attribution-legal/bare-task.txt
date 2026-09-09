@@ -1,0 +1,25 @@
+Eastport's Flood Lawsuit Puts Climate Science on Trial in Test of Legal Causation
+
+EASTPORT — Nearly three years after Hurricane Delano's floodwaters swallowed homes, destroyed the town's wastewater treatment plant and killed three people, this town is asking a court to decide a question that scientists and lawyers have been circling for years: Can climate science prove who is legally responsible for a specific storm's damage?
+
+Eastport is suing its state government and three energy companies for $340 million, arguing that emissions from the defendants made Delano's rainfall significantly more severe. The case, now in pre-trial discovery in Eastport County Superior Court, is being watched as a test of whether probabilistic attribution science — which estimates how much climate change intensified a given weather event — can meet the legal standard required to establish liability.
+
+At the center of the dispute is Dr. Mara Vance, an attribution scientist serving as Eastport's expert witness. She said the science can show that climate change increased Delano's 72-hour rainfall total by roughly 18 to 27 percent. But she was careful to distinguish between what her data can prove and what the lawsuit needs.
+
+"We can say the storm was more severe because of cumulative emissions. We can quantify the increase in rainfall with statistical confidence," Vance said. "What the court's legal standard requires us to establish is that specific defendants caused specific harm — a burden the science alone cannot carry. Science and law speak different languages here."
+
+Vance said attribution science has matured considerably since 2010, now relying on peer-reviewed, multi-model studies that quantify uncertainty — qualities courts typically weigh when assessing expert reliability.
+
+But the defendants' expert witness, Dr. Raymond Kline, has filed a declaration countering that attribution studies yield probability ranges, not causal certainty, and that no study ties a specific emitter's output to a specific storm. "A study showing a storm was 20% more intense because of global emissions is not the same as a study showing Company X caused a flood," Kline said. "The leap is legal, not scientific." Kline said he accepts the scientific consensus on climate change broadly and does not dispute attribution science's validity — only its application here.
+
+Eastport's lead attorney, Paulo Ferreira, said the case doesn't hinge on pinpoint causation. He said it requires showing the defendants' emissions contributed materially to the conditions that caused the damage, a standard he said courts have applied in other collective harm cases. Ferreira said the town is prepared to take the case to the state supreme court and that settlement talks have not produced an acceptable offer.
+
+The state government, also named as a defendant, argues it cannot be held liable for private companies' emissions decisions and that attributing a percentage of storm damage to cumulative global emissions does not establish its own liability. The energy company defendants declined to comment on the science; their lawyers called the suit meritless.
+
+Judge Tomás Ibarra has allowed Vance's methodology to proceed to a hearing stage but has not ruled on the defendants' motion to dismiss on causation grounds. A hearing is scheduled for June, and his ruling on admissibility will determine whether the attribution evidence reaches a jury.
+
+Legal scholars say the case exposes an unsettled question. Prof. Sandra Owens of Clearview Law School said courts must decide whether each defendant's contribution counts as a legally recognized cause even when no single defendant's emissions alone would have caused the harm. "Climate liability is going to be decided by courts, not by scientific consensus," Owens said. "The science is the evidence. The legal framework for using that evidence is still being built."
+
+At least 12 other municipalities are watching the case; three have filed similar suits that are stayed pending Eastport's outcome.
+
+The 2022 flooding inundated 1,400 homes; insurance covered $85 million of the damage, leaving the town to pursue the rest. Mayor Cecilia Torres said winning was never the town's only goal. "We sued because someone has to ask the question in a forum that requires an answer," she said. "If we lose, we know where the legal boundary is. If we win, we change the boundary."

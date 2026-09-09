@@ -1,0 +1,47 @@
+# Why Willow Splice’s freight surcharge rose as pump prices fell
+
+Willow Splice Furniture’s August shipping invoice has a higher fuel surcharge even as nearby pump prices have been falling. The apparent contradiction comes down to what the freight contract measures — and when.
+
+Dovetail Freight sets the monthly surcharge using the previous month’s average reading of the North Fen Diesel Index, not the price posted that day at the filling station nearest the furniture factory. August’s surcharge therefore reflects July’s index, while the lower pump prices the furniture maker observed were from August.
+
+That timing difference explains why the surcharge need not move in step with the pump signs. The contract also uses a regional measure, so a decline at one nearby station does not establish how the index has moved.
+
+## What changed on the bill?
+
+The fuel surcharge rose to 8% in August from 5% in July. The underlying freight charge for the compared shipment stayed at $1,200.
+
+At July’s rate, the surcharge was $60, bringing freight plus surcharge to $1,260. At August’s rate, it was $96, for a total of $1,296.
+
+The increase was $36. The surcharge rate rose by three percentage points, applied to the unchanged base freight charge. It was not an 8% increase in the entire previous bill.
+
+Those totals exclude separately agreed unloading or storage services. No prices for those services are included in the example.
+
+## Why use last month’s prices?
+
+Carrier manager Oren Brill says the lag allows Dovetail to publish one surcharge for an entire month rather than change it with each fill-up.
+
+“A monthly rule is easier to quote, but it will not always look like today’s pump sign,” Brill said.
+
+That arrangement gives customers a monthly rate, but it does not eliminate uncertainty for a business that needs to price deliveries before the final surcharge is known.
+
+Furniture maker Teri Quell says she faces that problem when quoting customers. Willow Splice ships assembled furniture on reusable racks and schedules most deliveries in weekly groups.
+
+“My customer wants one delivery price. My carrier’s bill arrives with a moving part,” Quell said.
+
+## Does the surcharge track the carrier’s actual fuel bill?
+
+Not shipment by shipment. The North Fen index covers a defined regional group of diesel outlets. It can move differently from the prices Dovetail pays for fuel or the fuel consumption of a particular truck.
+
+The formula does not separately match a fuel receipt to each customer’s shipment. It is a contractual method for setting a charge, rather than an accounting of the fuel used to deliver that furniture.
+
+Dovetail has not supplied a complete margin analysis showing whether the surcharge exactly offsets its changing fuel costs. The invoice comparison alone therefore does not establish that the carrier’s costs rose by precisely $36 for the shipment, or that the increase represents additional profit.
+
+The base freight rate is reviewed quarterly under a separate part of the contract.
+
+## Will the next surcharge fall?
+
+As of Aug. 17, the next surcharge had not been announced. Under the contract’s timing rule, September’s surcharge would reflect August’s average index reading. The observed August pump decline does not establish that monthly regional average or the exact next surcharge.
+
+The explanation is also specific to Willow Splice’s agreement. Other customers may have fixed-price freight contracts or surcharges tied to different indexes.
+
+For Willow Splice, the key distinction is between today’s local pump price and last month’s regional benchmark. They measure different things at different times — and only one sets the current surcharge.

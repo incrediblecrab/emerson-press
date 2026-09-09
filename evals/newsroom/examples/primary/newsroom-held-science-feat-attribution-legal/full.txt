@@ -1,0 +1,31 @@
+**Eastport's Flood Lawsuit Tests Whether Climate Science Can Prove Legal Blame**
+
+EASTPORT — A lawsuit seeking $340 million from the state government and three energy companies over damage from Hurricane Delano is testing a novel legal question: whether science that measures climate change's fingerprint on a single storm can meet the courtroom standard for causation.
+
+The town sued after Hurricane Delano flooded 1,400 homes, destroyed its wastewater treatment plant and killed three people in 2022. Eastport's insurance covered $85 million of the damage; the town is pursuing the rest from the state and the energy companies, arguing their emissions made the storm's rainfall significantly worse.
+
+The case, in pre-trial discovery in Eastport County Superior Court, turns on attribution science — the field that estimates how much climate change intensified a specific weather event. Dr. Mara Vance, an attribution scientist testifying for Eastport, said her analysis shows climate change increased Hurricane Delano's 72-hour rainfall total by roughly 18% to 27%.
+
+But Vance said the science cannot by itself answer the legal question the case demands.
+
+"We can say the storm was more severe because of cumulative emissions. We can quantify the increase in rainfall with statistical confidence," Vance said. "What the court's legal standard requires us to establish is that specific defendants caused specific harm — a burden the science alone cannot carry. Science and law speak different languages here."
+
+Dr. Raymond Kline, an expert witness for the defendants, said in a court declaration that attribution studies produce probability ranges, not causal certainties, and that no study ties a specific emitter's output to a specific storm. Kline said he does not dispute climate science generally.
+
+"My expert opinion is that attribution science does not do what this lawsuit needs it to do," Kline said. "That's a technical argument, not a denial of climate science."
+
+Eastport's lead attorney, Paulo Ferreira, said the case does not require pinpointing an exact cause. He said it requires showing the defendants' emissions contributed materially to the conditions that caused the damage — a standard he said courts have applied in other collective harm cases.
+
+The state has argued separately that it cannot be held liable for private companies' emissions decisions, and that attributing a percentage of storm damage to cumulative global emissions does not establish the state's own liability. The energy company defendants declined to comment on the attribution science; their legal representatives called the lawsuit meritless.
+
+Judge Tomás Ibarra has allowed Vance's methodology to proceed to a hearing, scheduled for June, on the defendants' motion to dismiss on causation grounds. His ruling on the admissibility of attribution evidence will decide whether it reaches a jury.
+
+Sandra Owens, a law professor at Clearview Law School, said the case forces courts to decide whether each defendant's contribution to a collective harm is legally sufficient to establish causation, even if no single defendant's emissions alone caused the flooding.
+
+"Climate liability is going to be decided by courts, not by scientific consensus," Owens said. "The science is the evidence. The legal framework for using that evidence is still being built."
+
+At least 12 other U.S. municipalities are watching the case, and three have filed similar suits that are stayed pending its outcome. Ferreira said Eastport is prepared to take the case to the state supreme court and that settlement talks have not produced an acceptable offer.
+
+Eastport Mayor Cecilia Torres said the town's goal was never simply to win.
+
+"We sued because someone has to ask the question in a forum that requires an answer," Torres said. "If we lose, we know where the legal boundary is. If we win, we change the boundary."

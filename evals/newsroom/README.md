@@ -89,6 +89,18 @@ independent sample sizes. The [prepared-input archive](artifacts/primary-prepare
 preserves all 438 exact writing requests. No primary writing result is available
 at registration.
 
+All **438 planned writing responses have now been captured**, with 219 complete
+full/bare pairs and no missing writing records. The [writing archive](artifacts/primary-writing-manifest.json)
+and [measured acquisition summary](artifacts/primary-writing-summary.json) preserve
+the source/model bindings and whole-response lengths. [Every unchanged draft is
+readable](examples/primary/README.md). This is complete writing acquisition, not
+an editorial-quality finding.
+
+All 1,314 judgment requests were prepared without missing writing inputs. The
+registered preference and pointwise acquisition is in progress; raw invalid
+judgments are retained, not repaired or selectively requested again. No primary
+effectiveness conclusion is available yet.
+
 Shared programs and conservative template clusters reduce the family count,
 but neither the remaining labels nor the source audits prove independence.
 The [mean-inference component](mean-inference.md) documents a finite-sample

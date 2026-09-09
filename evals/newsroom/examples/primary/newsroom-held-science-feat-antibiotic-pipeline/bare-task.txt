@@ -1,0 +1,37 @@
+# Promising antibiotics, precarious finances: A drug developer races to stay afloat
+
+Areteia Pharma has three antibiotic candidates in clinical development, 34 employees and enough cash to last 14 months. What it does not have is a way to pay for bringing its most advanced drug through the next stage of testing.
+
+The company’s predicament illustrates a central contradiction in antibiotic development: A medicine can be valuable precisely because doctors reserve it for cases when other treatments fail. That restraint helps delay resistance, but it also limits the sales a developer needs to recover its costs.
+
+“We have drugs that work against bacteria that nothing else kills. We cannot raise the Series C to bring them to market,” said Dr. Carlos Fuentes, Areteia’s CEO. “That is not a scientific failure. It is an economic failure.”
+
+Areteia has not launched a commercial product and earns no revenue from drug sales. It depends entirely on grants and investors. The National Institutes of Health provided $14 million in preclinical funding for its lead candidate, while private investors contributed $38 million across two funding rounds.
+
+That investment has produced encouraging, but preliminary, results.
+
+The company’s most advanced candidate targets Acinetobacter baumannii, a bacterium responsible for severe hospital infections that the World Health Organization classifies as a critical priority pathogen, Fuentes said. In a Phase 2 trial, the drug cleared the pathogen in 14 of 18 patients whose infections had not responded to any other antibiotic.
+
+The trial was too small to be statistically definitive. Dr. Josephine Amin, an infectious disease specialist, said the findings are scientifically encouraging but insufficient for Food and Drug Administration approval. Reaching Phase 3 requires $60 million to $90 million — money Fuentes said Areteia cannot raise under current market conditions.
+
+Amin said the company’s situation is representative of a broader funding problem. The WHO’s 2024 pipeline assessment found only 12 antibiotics in Phase 3 trials globally, four of which address priority resistant pathogens.
+
+“The pipeline is not empty. It is not funded. There is a difference,” Amin said. “The science works. The business model doesn’t.”
+
+Even approval does not guarantee survival. Two antibiotic startups that reached Phase 3 trials in the United States between 2018 and 2023 declared bankruptcy after approval. Their drugs remained available, but production nearly ceased.
+
+Large pharmaceutical companies exited antibiotic research in the 2010s because returns did not justify the investment. Several have said they would return if programs rewarding the development and availability of antibiotics were enacted.
+
+One proposed response is the PASTEUR Act, which would compensate developers based on a drug’s availability rather than sales volume. Under the proposal, the government would pay companies up to $3 billion over 10 years to keep an approved antibiotic available, regardless of how many prescriptions are written.
+
+As of March 18, 2025, the legislation has passed committee but has not been enacted.
+
+“It’s been in Congress for four years. We have 14 months,” Fuentes said. “Legislation that hasn’t passed doesn’t pay salaries.”
+
+Areteia is also discussing licensing its Acinetobacter program with two large pharmaceutical companies, Fuentes said. Neither has made a formal offer.
+
+Amin said she has seen three promising antibiotic programs discontinued over the past decade for economic rather than scientific reasons. The gap between scientific readiness and commercial viability has been documented since the early 2000s, she said, without a policy response that has resolved it.
+
+Fuentes nevertheless refuses to call Areteia’s situation hopeless.
+
+“The drugs work. The need is real. We are one policy decision or one partnership away from a different outcome,” he said. “That’s both encouraging and maddening.”

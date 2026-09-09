@@ -1,0 +1,41 @@
+# Moorfin's 4% savings rate applies only to first $2,000
+
+Moorfin Bank's new Step Saver account advertises a 4% annual rate, but a customer keeping $10,000 in the account would earn $96 over a year under the bank's illustration, not $400.
+
+The difference comes from the account's tiers. The 4% rate applies only to the first $2,000, while principal above that amount earns 0.2% annually under the supplied schedule. Customers must also make at least one qualifying payroll deposit each month to receive the top rate.
+
+Introduced in August 2026, the offer pairs a higher rate on a limited amount of savings with a much lower rate on the rest. For customers with larger balances, the question is how much each portion earns and what that adds up to across the account.
+
+## How the $10,000 example works
+
+The bank's illustration assumes a constant $10,000 daily principal balance, qualifying payroll deposits in every month and rates that remain unchanged for a year.
+
+Under those assumptions, the first $2,000 earns $80. The remaining $8,000 earns $16 at 0.2%. Together, those amounts produce $96 in annual interest, equivalent to 0.96% of the starting $10,000.
+
+That 0.96% is the blended result for this example: the total interest divided by the starting balance. It is not another advertised rate, and it does not apply to every customer regardless of balance.
+
+A customer keeping exactly $2,000 throughout the year, meeting the payroll requirement every month and receiving unchanged rates would earn $80, or 4% of that starting balance. As the balance rises above $2,000, more of the money earns the lower rate, reducing the blended percentage under the same assumptions.
+
+Branch manager Tera Quill said the product is intended to attract regular payroll relationships rather than large passive balances alone.
+
+"The four percent has a boundary around it: the first two thousand dollars and the qualifying deposits," Quill said.
+
+## What can change the result
+
+The account calculates interest from daily principal balances within each tier and credits it once a year. The $96 illustration excludes changes in principal, so deposits or withdrawals would change the calculation.
+
+The rates are variable. The example does not promise they will stay unchanged for a year, and the bank's stated process for notifying customers of rate changes is separate from the annual interest-crediting date. Annual crediting does not mean the rate is fixed until interest is paid.
+
+The payroll condition also matters month by month. Without at least one qualifying payroll deposit, that month's calculation uses the 0.1% annual fallback rate on all principal. Transfers from another savings account do not qualify as payroll deposits under the bank's definition.
+
+The supplied schedule lists no monthly maintenance fee.
+
+## Reading beyond the promotional rate
+
+Customer Oren Selt, who keeps a reserve for irregular household repairs, initially multiplied his whole balance by the advertised rate.
+
+"I was comparing the big number on the poster before I understood which part of my money it described," Selt said.
+
+Customers can obtain a printed tier schedule at a branch rather than relying only on the promotional sign. That schedule gives them the rates and conditions needed to distinguish the advertised top tier from the return on their full balance.
+
+The bank's illustration does not compare Step Saver with every competing account or investment. It answers a narrower question: With $10,000 held constant and all conditions met, the advertised 4% applies to $2,000, while the full balance earns $96 under the stated assumptions.

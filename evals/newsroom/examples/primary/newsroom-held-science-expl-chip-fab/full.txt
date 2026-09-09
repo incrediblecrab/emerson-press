@@ -1,0 +1,37 @@
+# Why new chip factories take more than money to build
+
+The world's most advanced semiconductor manufacturing is concentrated in a few hands because building a chip factory requires far more than an expensive building. It takes specialized equipment, reliable water and electricity supplies, global networks of suppliers and expertise that can take a decade or more to develop.
+
+Taiwan Semiconductor Manufacturing Co., known as TSMC, and Samsung together manufacture the vast majority of the world's most advanced chips. TSMC alone produces about 90% of chips below 5 nanometers.
+
+As of March 25, 2025, efforts to expand production in the United States face those same barriers. New factories could spread production across more locations, but they would still depend on equipment, materials and knowledge that no single country supplies.
+
+## What makes a chip factory so difficult to build?
+
+Chips are produced in fabrication plants, called fabs. The most advanced fabs manufacture transistor features measured in nanometers. A nanometer is one-billionth of a meter.
+
+A leading-edge fab costs $15 billion to $25 billion and takes three to five years to construct and commission. Its machinery must work in tightly controlled conditions, with ultra-pure chemicals and water, vibration-controlled floors and exceptionally clean air.
+
+“A leading-edge fab is not a building that makes things. It is a precision instrument at the scale of a city block. It cannot simply be moved or replicated by following a recipe,” said James Ren, a semiconductor engineer at Pacific Technology Institute.
+
+Some equipment has just one supplier. Extreme ultraviolet lithography machines, which print the smallest chip features, are made only by ASML of the Netherlands. Each costs approximately $200 million and weighs 180 metric tons.
+
+The demands extend beyond the factory walls. A large fab uses 10 million to 20 million liters of ultra-pure water daily. A leading-edge fab draws 150 to 300 megawatts of electricity, comparable to a small city. Building in an arid region requires substantial water infrastructure.
+
+## Why does manufacturing stay concentrated?
+
+Money can buy machinery, but developing the people who operate it takes longer.
+
+Ren said the accumulated expertise of thousands of engineers takes a decade or more to develop and cannot be transferred quickly. TSMC reported difficulty finding enough qualified technicians for its Arizona fab and extended training to bring workers up to its standards.
+
+Supplies also cross borders. Chipmaking requires gallium, germanium, neon gas and dozens of specialized chemicals. No country produces all of them. A chip designed in the United States may be manufactured in Taiwan using Dutch machinery and Japanese chemicals, combined with South Korean memory and assembled in Malaysia.
+
+## Can government funding spread production?
+
+The 2022 U.S. CHIPS and Science Act allocated $52 billion to encourage domestic semiconductor manufacturing, and several companies announced new fab projects using the funding.
+
+Ren said those investments address capital costs, but not workforce and supply chain challenges. New U.S. fabs will still need imported chemicals and equipment.
+
+Expanding production could reduce exposure to disruptions in Taiwan, where military, seismic or operational problems could affect supplies for electronics, vehicles, medical devices and defense systems. TSMC's fabs have seismic isolation systems and have maintained operations through major earthquakes, but geographic concentration remains a supply risk.
+
+Not every factory needs the most advanced technology. Fabs making chips at 28 nanometers or larger cost $3 billion to $5 billion and are more broadly buildable. Those chips serve automobiles and industrial equipment. The 2021 shortage affected these older production technologies as much as leading-edge ones: securing chip supplies means building capacity beyond the smallest chips.

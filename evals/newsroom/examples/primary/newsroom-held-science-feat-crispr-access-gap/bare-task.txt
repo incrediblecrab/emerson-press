@@ -1,0 +1,31 @@
+New Gene Therapy Offers Hope for Rare Disease, But Insurance Hurdles Block Patients
+
+A CRISPR-based therapy approved in January to treat a rare, fatal neurological disorder is running into a wall of insurance denials, leaving eligible patients unable to obtain a treatment that already exists on the market.
+
+Axogene, developed by CellForge Biosciences, received Food and Drug Administration approval in January 2025 for Pelham syndrome, a lysosomal storage disorder that causes progressive neurological deterioration beginning in childhood. The therapy carries a list price of $3.1 million per patient. An estimated 1,800 patients in the United States are eligible.
+
+Leon Dupont, 34, was diagnosed with Pelham syndrome at 22 and is now in progressive decline. He is eligible for Axogene, but his commercial insurer denied coverage in February.
+
+"I found out it exists. I found out it was approved. I found out I can't have it," Dupont said. "That sequence is its own kind of cruelty."
+
+CellForge CEO Adrian Walsh said the price reflects more than $900 million in development costs and an expected patient population of fewer than 200 per year. "We cannot price this like a mass-market drug," Walsh said. "The math doesn't work."
+
+Dr. Reena Singh, a rare disease specialist at Northgate Children's Hospital, said three of her patients are eligible for Axogene. As of March, none had secured coverage.
+
+"Approval is the first door. Insurance is the second," Singh said. "For rare disease therapies at this price point, the second door is harder to open than the first."
+
+CellForge operates a patient assistance program offering free therapy to uninsured or Medicaid patients. The program has received 14 applications; four have been approved, and the rest remain under review. Walsh said the company is also pursuing outcomes-based contracts with insurers, under which CellForge would issue partial refunds if the therapy fails to halt neurological progression after 18 months. Two insurers have agreed in principle; four others have not responded.
+
+The Institute for Clinical and Economic Review, a nonprofit that evaluates drug value, found Axogene cost-effective at prices between $1.8 million and $2.6 million, but not at $3.1 million under its standard criteria. Walsh disputed that assessment. "The quality-of-life metrics ICER uses were not built for diseases like this," he said.
+
+Singh said the pattern reflects a broader structural problem: insurers lack frameworks for one-time gene therapies at this scale and default to denial while developing policy. Medicaid programs in seven states have issued coverage policies for Axogene; 18 states are still developing them, and 25 have not addressed the therapy at all. CellForge has established two certified treatment centers nationwide; Dupont lives 340 miles from the nearest one.
+
+Walsh said he expects most major payers to have coverage policies in place within 18 months — a timeline he acknowledged offers no help to patients seeking treatment now.
+
+Dr. Marcus Adem, a health policy researcher at Clearview Policy Institute, said the access gap facing Axogene patients is not an isolated case. Every CRISPR therapy approved over the next decade will face similar structural barriers, he said, unless insurers develop coverage frameworks specific to gene therapies now.
+
+Dupont has launched an advocacy campaign with four other Pelham patients. The group has met with three congressional staffers and written to their state insurance commissioner.
+
+"I'm thirty-four. I don't have a decade," Dupont said. "The system is designed for people who have a decade to fight." He said he has not given up on obtaining treatment for himself. "My situation is urgent," he said. "But the reason I'm fighting publicly is for the person who gets diagnosed next year, when the system still isn't ready."
+
+Singh said both the promise and the problem of Axogene are real. "The disease couldn't be treated. Now it can. That is real," she said. "The access problem is real too. Both things are true."

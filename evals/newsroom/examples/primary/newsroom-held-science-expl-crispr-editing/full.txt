@@ -1,0 +1,39 @@
+# What CRISPR can change — and what still limits gene editing
+
+CRISPR gene editing lets researchers target a particular stretch of DNA and change it. The tool has applications in medicine, agriculture and basic research, but its reach depends on more than making a cut: Researchers must get it into the right cells and manage what happens afterward.
+
+As of Feb. 14, 2025, CRISPR-based treatments have reached patients with blood disorders, while many other uses remain experimental. Understanding that gap starts with how the tool works.
+
+## How does it edit DNA?
+
+CRISPR-Cas9 was adapted from a bacterial immune system that cuts and destroys invading viral DNA. Researchers customize a molecule called guide RNA to locate a specific DNA sequence. Cas9, an enzyme, then cuts both strands of DNA at that location.
+
+The cell does the next part. It attempts to repair the break, and different repair processes can produce different results. One can disable a gene. Another can insert new genetic information when researchers supply a template.
+
+“CRISPR is not magic and it is not science fiction. It is a very precise molecular scissors, and like scissors, it cuts where you point it — and can cut off-target if you point badly,” said Yusuf Abebe, a geneticist at Clearview Research Institute.
+
+Those unintended cuts are a documented limitation. Their frequency depends on the guide RNA’s design, how the tool is delivered and how distinct the target sequence is from other sequences in the genome.
+
+## How does it reach a patient’s cells?
+
+CRISPR therapies approved or in advanced trials take two broad approaches: editing cells inside the patient or removing cells, editing them in a laboratory and returning them.
+
+Editing outside the body, called ex vivo editing, gives researchers more control because they can verify the edit before returning the cells. This approach is used in blood disorder therapies.
+
+Editing inside the body, called in vivo editing, requires a carrier to bring the machinery into target cells. Typically, that carrier is a lipid nanoparticle or a modified virus.
+
+Abebe said the main limit on expanding CRISPR therapies is delivering the tool safely and efficiently to tissues beyond the liver and blood, rather than the editing technology itself.
+
+Cost is another constraint. Manufacturing a personalized treatment from a patient’s cells costs substantially more than manufacturing a mass-produced drug, contributing to high list prices.
+
+## What can it actually do?
+
+The same guide RNA can target different species if they have a compatible DNA sequence. That helps explain why CRISPR has uses beyond medicine.
+
+Researchers have used it to engineer crops resistant to fungal disease, cattle with more muscle mass and mosquitoes unable to transmit malaria. None of those applications has been fully released into the environment in the United States.
+
+Medical possibilities also need to be distinguished from established treatments. Animal experiments aimed at eliminating latent HIV from infected cells have shown preliminary success, but human trials are in early stages.
+
+Abebe said CRISPR is most effective when one gene or a small number of genes is the causal target. He said it is not useful for conditions controlled by dozens or hundreds of genes, including most common diseases.
+
+Editing sperm, eggs or embryos raises a separate issue: Changes can pass to future generations. This germline editing is banned in most countries. It is distinct from therapies that edit a patient’s cells to treat that patient.

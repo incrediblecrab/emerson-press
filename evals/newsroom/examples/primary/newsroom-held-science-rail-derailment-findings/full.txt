@@ -1,0 +1,29 @@
+# Overdue rail joint inspection preceded Millbrook derailment, NTSB finds
+
+A fatigue crack in a rail joint four months overdue for inspection caused the Millbrook Junction passenger train derailment that injured 14 passengers, the National Transportation Safety Board concluded Wednesday.
+
+The board's final report, released Oct. 2, examined the April 14, 2023, derailment and found that Consolidated Northern Railway had not inspected the affected joint section since June 2021. The railroad's manual required inspections at 18-month intervals, but 22 months had passed before the derailment.
+
+The investigation found that the engineer was traveling within the authorized speed limit. The lead car left the rails at an estimated 73 mph, below the posted limit of 79 mph, though investigators determined that speed contributed to the derailment's severity once the rail failed.
+
+"The crack was detectable with standard ultrasonic testing. It was not found because the test was not performed on schedule," said NTSB board member Rosa Mbeki, who led the investigation.
+
+None of the passengers' injuries were life-threatening. The engineer and two conductors were uninjured.
+
+The board issued five safety recommendations, including a requirement for electronic logs of inspection dates that federal rail safety inspectors could access in real time. That recommendation would make inspection schedules and completion dates available to inspectors as they are recorded.
+
+CNR spokesperson Dale Whitmore said the railroad accepted the findings and had already completed a systemwide inspection of all joints in the affected track class.
+
+The railroad has also installed continuous rail monitoring sensors on 340 kilometers of track along the same route. CNR operates 9,200 route-kilometers of track across 11 states.
+
+The missed inspection at Millbrook Junction was one of several lapses documented on the route. CNR's safety records showed 11 missed or delayed joint inspections between 2019 and 2023. The Millbrook Junction joint was the only one that showed a crack.
+
+When recovered from the wreckage, the fatigue crack measured 4.7 centimeters at its widest point. The board's conclusion linked the rail failure to that crack and identified the overdue inspection as the missed opportunity to detect it.
+
+Federal rail safety inspectors had audited CNR's track inspection program in 2021 and found it compliant at the time. That finding preceded the overdue inspection identified in the derailment investigation. The affected joint section was last inspected in June of that year.
+
+Millbrook Junction is a mid-speed corridor where trains are authorized to travel at up to 79 mph over most of its length. Investigators distinguished between the cause of the derailment — the cracked joint — and the role speed played in making it more severe.
+
+The injured passengers reached a settlement with CNR in December 2023. Financial terms were not disclosed.
+
+The derailment was CNR's first involving passenger injuries since a 2017 station collision that injured two people.

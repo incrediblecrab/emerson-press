@@ -1,0 +1,31 @@
+# Audit finds 4.2 million fraudulent forest carbon credits sold for $126 million
+
+An audit of the Boreal Shield Forest Carbon Program found that 4.2 million fraudulently issued carbon credits were sold to 23 corporations that used them to claim carbon neutrality, the Voluntary Carbon Markets Integrity Office announced Wednesday.
+
+The credits sold between 2019 and 2024 at an average price of $30 each, generating approximately $126 million in revenue. But the forests the program claimed to protect were never at risk of deforestation, the office said, meaning the purchases preserved no carbon sequestration that would otherwise have been lost.
+
+“These credits were sold as protecting forests that were already legally protected,” said Allen Park, the office’s director. “The corporations that bought them were paying for a service that was never delivered.”
+
+The findings call into question carbon neutrality claims made in the buyers’ annual sustainability reports. The office said all 23 companies must either restate their emissions disclosures or obtain replacement credits from verified sources.
+
+The Department of Justice confirmed it is reviewing the audit findings to determine whether criminal referrals are appropriate.
+
+Arboreal Carbon Solutions, the program’s developer, is accused of misrepresenting satellite imagery to show pressure from deforestation in areas where logging had not occurred for decades. The company did not respond to requests for comment as of July 23.
+
+The 14-month audit used high-resolution satellite imagery and historical land tenure records to check the program’s claims. It also identified failures in the certification process: GreenVerify International certified the Boreal Shield credits, but its auditors did not independently verify the modeling used to establish the program’s deforestation baseline, the office found.
+
+That baseline is central to the findings. The credits were sold on the premise that protecting the forests would prevent a loss of stored carbon. According to the audit, the forests already had legal protection and faced no deforestation risk.
+
+Sophie Renaud, a GreenVerify spokesperson, said the company was cooperating with the investigation and had suspended certification of all new Arboreal Carbon Solutions projects.
+
+Two of the 23 corporate buyers voluntarily disclosed their purchases before the audit became public, after commissioning internal reviews.
+
+Carbon credits trade in voluntary markets where companies buy offsets for emissions they cannot yet eliminate from their operations. The market is not governed by a binding international treaty.
+
+The fraudulent Boreal Shield credits represented approximately 0.8% of all voluntary carbon credits issued in North America between 2019 and 2024, according to market data cited in the audit. The global voluntary carbon market was estimated at $1.2 billion in 2024.
+
+Critics have argued that lax verification standards are a systemic problem across the sector. At least four academic research groups published papers between 2020 and 2023 questioning forest carbon programs’ baseline methodology, although none specifically examined Boreal Shield.
+
+Park said all forest carbon programs overseen by the office will be required to resubmit their deforestation baseline documentation for independent verification.
+
+The office was created by executive order in 2023 in response to earlier controversies over voluntary carbon market integrity. Arboreal Carbon Solutions was founded in 2016 and received a $400,000 federal small-business grant for technology development in 2018.

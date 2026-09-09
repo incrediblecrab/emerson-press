@@ -1,0 +1,45 @@
+# Brain imaging software fix leaves researchers confronting years of findings
+
+A software error that can make brain scans appear to show differences between groups where none exist has been corrected. But researchers are still confronting a harder problem: determining what the flaw means for years of published findings.
+
+Hana Park, a neuroimaging methodologist at Westfield University, identified the error in a January paper examining MotiCalc-3, a widely distributed tool used to process functional magnetic resonance imaging, or fMRI, data.
+
+The software is used in an estimated 2,800 published studies. Affected versions, 3.4 through 3.7, were the default tool in neuroimaging pipelines between 2017 and 2022. That does not mean all 2,800 studies produced incorrect findings, and the extent of the problem remains unknown.
+
+“I found this because I was trying to replicate a result in my own lab and couldn't,” Park said. “When I traced why, I found it in the algorithm. Then I found it everywhere.”
+
+The error involves the software’s adjustment for head movement during scans. In datasets with high variability between scan sessions, the algorithm overcorrects for movement, systematically biasing estimates of differences in brain activation between groups. Park’s analysis found that the bias favors detecting differences where none exist, rather than hiding real ones.
+
+An initial reanalysis illustrates both the potential consequences and the limits of what researchers can establish so far.
+
+Clare Finch, a second-year graduate student at Westfield, worked with Park to write scripts for reanalyzing data. The work took 11 months and involved rerunning data from seven studies whose authors cooperated.
+
+Three studies maintained their original findings. Two showed smaller effects that fell below statistical significance. Two showed different patterns of brain activation.
+
+Park cautioned that the seven studies may not represent the broader body of research. Their authors volunteered, and the sample may not reflect the range of potential error severity.
+
+Access to data presents another obstacle.
+
+“Seven studies cooperated. They were able to share data,” Finch said. “Most papers from that era didn't archive their raw data. We couldn't test those, even if we wanted to.”
+
+NeuroTools Collaborative, the consortium that developed MotiCalc-3, acknowledged the error in February and released a corrected version. It said it had not known about the problem before Park’s paper.
+
+According to the consortium, the error originated in a 2017 update that underwent peer review as part of a methods paper. The specific motion correction pathway, however, was not directly tested in that review.
+
+Park said she had no criticism of the developers’ response.
+
+“They fixed it quickly and transparently,” she said. “The problem is the papers that used the broken version are still in the literature.”
+
+The field has no mechanism for systematically flagging papers that used affected software. The journal that published the original MotiCalc-3 paper has issued an editor’s note linking to Park’s correction.
+
+Thomas Brennan, an independent neuroimager at Pacific University, said the finding adds to methodological concerns about motion correction known since a 2016 software bug discovery.
+
+“We have a cumulative knowledge problem,” Brennan said. “Individual corrections are published. The affected papers stay in databases.”
+
+Park said researchers in clinical settings have contacted her after using affected studies as evidence for treatment protocols. She declined to characterize any clinical impact without further analysis.
+
+The journal Neuroscience Methods Review has called for a voluntary reanalysis registry where authors can report whether they used affected versions. As of March 6, 34 authors had registered. Park’s lab hopes to test 20 additional cooperating studies in 2025 and publish every result.
+
+Finch emphasized the distinction between a software flaw and a judgment about an entire research method.
+
+“It's not that fMRI doesn't work,” she said. “It's that a specific tool had a specific bug. Those are different claims.”

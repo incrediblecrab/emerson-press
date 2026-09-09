@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "kind": "registered-primary-writing-attempts",
+  "protocol_sha256": "a6701efdddae8cf8f4fd4c6944f5da65c64b2dbfb41b0975b0f9acbad9176574",
+  "planned_writing_calls": 438,
+  "captured_records": 438,
+  "eligible_cases": 219,
+  "family_clusters": 212,
+  "assessments_in_this_bundle": 0,
+  "limitation": "Raw ungraded model output; capture success is not writing-quality or human-review evidence.",
+  "records": 438,
+  "artifact": "evals/newsroom/artifacts/primary-writing.jsonl.xz",
+  "artifact_sha256": "c12639b944f49d0eee12c4a15333eecb188e6c1c955435f1ce7ddf0c27f30898",
+  "payload_sha256": "cf105fce9bc7f95aa5402436c7eecfad33ec2840fb28c5eb0b390ed77af5ad17",
+  "human_reviews": 0
+}

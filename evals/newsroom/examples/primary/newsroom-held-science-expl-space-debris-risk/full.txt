@@ -1,0 +1,43 @@
+# Space debris threatens satellites, while cleanup efforts remain limited
+
+Space debris is dangerous enough that a fragment just 1 centimeter across can disable a satellite. The problem is already forcing spacecraft to maneuver out of harm's way, while efforts to remove orbiting junk remain at an early stage.
+
+As of June 18, 2024, the response relies largely on tracking larger objects, avoiding predicted close approaches and requiring satellites to leave orbit after their missions. Those measures have limits: Small fragments cannot be tracked individually from the ground, and some debris can remain in orbit for centuries.
+
+"We are in a race between the debris generation rate and our ability to develop norms and technology to control it," said Amara Solis, a space policy researcher at Westfield Space Policy Center. "Right now, the debris is winning."
+
+## How much debris is there?
+
+Low Earth orbit, roughly 200 to 2,000 kilometers above Earth, contains approximately 27,000 tracked pieces of debris larger than 10 centimeters and an estimated 100 million pieces smaller than 1 centimeter.
+
+Much of it consists of defunct satellites, spent rocket stages and fragments from breakups and collisions. Several antisatellite weapons tests over the past two decades have each produced thousands of tracked fragments.
+
+Large satellite constellations, including those operated by Orbitex, have also added thousands of satellites since 2019. These satellites are not themselves debris while operating, but they add to the surface area exposed to collisions.
+
+## What makes it so dangerous?
+
+At orbital speed, even small objects carry destructive energy. A 10-centimeter piece can destroy a satellite entirely.
+
+Collisions between large objects pose a further threat because they generate thousands of fragments. Debris researchers described the resulting cascade risk in the 1970s: Within a particular band of orbital altitude, collisions could produce enough fragments to cause further collisions, potentially making that altitude unusable. That is a risk, not a description of all low Earth orbit today.
+
+Altitude affects how long the danger lasts. Atmospheric drag brings debris below 600 kilometers back into the atmosphere within years. Above 800 kilometers, debris can persist for centuries.
+
+## How do spacecraft protect themselves?
+
+The International Space Station maneuvers about three times a year to avoid tracked debris. Astronauts have also sheltered in attached spacecraft during several predicted close approaches.
+
+Tracking remains dominated by the U.S. military's Space Surveillance Network. Thousands of close-approach warnings are issued each year; satellite operators typically respond when the predicted collision probability exceeds 1 in 10,000.
+
+But debris smaller than 10 centimeters cannot currently be tracked individually from the ground. For that size range, spacecraft rely on statistical assessments of collision risk rather than tracking each object.
+
+The ISS and some military satellites also use Whipple shields, double-hull structures that fragment incoming small debris before it reaches the main hull. Those shields add mass and cost.
+
+## Can the debris be removed?
+
+Astroscale, a Japanese company, has demonstrated active debris removal at small scale, but no commercial large-object removal has been completed. Another proposed method, ion beam shepherding, would slow debris into a lower orbit without touching it. It has been tested in laboratory simulations, not in orbit.
+
+The Federal Communications Commission and some international bodies now require satellites in low Earth orbit to deorbit within five years of mission end. Compliance and enforcement remain inconsistent.
+
+Proposals also include requiring satellite operators to pay into a removal fund through liability frameworks. No country has adopted such a system.
+
+Solis said the window for enforceable international norms may be closing as activity expands: "Every new actor in space makes the governance problem harder to solve."

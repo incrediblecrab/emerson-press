@@ -1,0 +1,37 @@
+**Startup Aims to Grab a Dead Satellite From Orbit — If the Law Will Let It**
+
+By a Staff Reporter
+
+OrbClear Technologies, a 28-person startup founded in 2020, is building a spacecraft designed to grapple defunct satellites and nudge them toward a fiery reentry — part of a growing push by private companies to tackle the problem of orbital debris.
+
+But as the company races toward a planned 2027 demonstration mission, it is discovering that the legal hurdles may prove tougher than the engineering ones.
+
+CEO Diana Leung said OrbClear has raised $34 million in seed and Series A funding and is targeting a specific object: a 400-kilogram satellite that has been derelict in an 820-kilometer orbit since 2009. The goal, she said, is narrow and deliberate.
+
+"We are not talking about cleaning up all of space," Leung said. "We are talking about proving that one capture is possible, on budget, on schedule. Everything else follows from that."
+
+The company's approach relies on a net-and-tether system. The grappling spacecraft would deploy a resistive net around the target satellite, then fire a small thruster package to begin lowering both vehicles toward the atmosphere, where they would burn up.
+
+The technical concept has drawn attention, but Prof. Kwame Asante, a space law expert at Pacific Ocean University, said the harder problem may be legal. International law treats defunct satellites as the property of the nation that registered them, meaning OrbClear cannot remove the object without that nation's consent.
+
+Complicating matters further, the 2009 satellite OrbClear is targeting was registered to a country that no longer exists as a political entity.
+
+"Getting consent from a successor state for an orbital operation is not a solved legal question," Asante said.
+
+Leung said OrbClear has worked with international space law attorneys for 18 months and believes a workable consent pathway exists, though she acknowledged consent must be secured before launch. "We are not asking forgiveness," she said.
+
+A rival startup, TerraClear Inc., backed by a larger aerospace investor, is pursuing a different method: an ion beam that would redirect a debris object's orbit from a distance, without physical contact. Leung said that approach sidesteps some consent issues tied to physically moving an object to a lower orbit, but leaves less control over the timing and trajectory of the eventual reentry. TerraClear has completed ground testing and is targeting a demonstration mission in 2026.
+
+Asante said both approaches expose the same underlying gap: the technology is moving faster than the international agreements needed to govern it, including basic questions of liability if a removal spacecraft damages a satellite during capture.
+
+OrbClear has submitted a proposal to the United Nations Committee on the Peaceful Uses of Outer Space to develop a "removal consent certificate" framework, though it has not yet been scheduled for review. Asante said the most optimistic realistic outcome over the next decade would be an agreement among major spacefaring nations on consent procedures for debris they can no longer use — a framework that does not currently exist.
+
+For revenue, OrbClear points to letters of interest from three satellite operators willing to pay an annual monitoring fee for their own defunct objects. Leung called it the company's most likely early path to income, alongside the European Space Agency's government-backed ClearSpace-1 mission, which is attempting a similar capture. Leung said private demonstrations are still necessary to prove commercial viability.
+
+She said the company's biggest risk is not technical failure but financial exhaustion if a launch delay or failed demonstration drains its capital.
+
+Leung, who came to the space industry from ocean cleanup engineering, said the parallels are direct. "Large, diffuse, transboundary problem," she said. "No one entity owns the harm. Everyone owns the risk."
+
+Despite competing for the same market, Leung said she views TerraClear as a fellow traveler rather than a rival. "If they succeed, it helps us," she said. "The market is the debris field, and there is plenty for everyone to work on."
+
+She said she is betting that success in orbit will move the legal debate. "Lawyers find solutions," Leung said, "when the engineering shows the solution is real."

@@ -1,0 +1,43 @@
+# What are rare earths, and why do technology and defense depend on them?
+
+Rare earth elements help power electric vehicle motors, produce colors in displays and guide military weapons. Their importance comes from what they can do — and from the difficulty of securing supplies when much of the world's processing capacity is concentrated in China.
+
+As of June 18, 2025, the challenge for countries seeking alternatives is not simply finding deposits. Turning rare earth ores into usable materials requires refining capacity that is expensive, environmentally demanding and slow to build.
+
+## What makes them “rare”?
+
+Rare earths are a group of 17 metallic elements: the 15 lanthanides, plus scandium and yttrium. Despite their name, most are more abundant in Earth's crust than gold or platinum.
+
+They are called rare because they seldom occur in concentrated deposits that can be mined economically. Instead, they are typically dispersed through rock in small amounts.
+
+The elements also differ in availability. Heavy rare earths, including dysprosium and terbium, are less abundant than light rare earths and are primarily mined in specific regions of China. That makes their supply especially sensitive for countries that depend on imports.
+
+## Where are they used?
+
+Neodymium and dysprosium are used in neodymium-iron-boron magnets, the strongest permanent magnets known. Those magnets are essential for electric vehicle motors, wind turbine generators and military precision guidance systems.
+
+Other rare earths have different jobs. Europium and terbium are used in phosphors, materials that produce colors in LED displays and fluorescent lighting. Lanthanum is used in catalytic converters for gasoline vehicles and specialized optical glass.
+
+Their military uses extend beyond magnets. The U.S. Department of Defense considers 14 rare earth elements critical to defense applications, including missile guidance, communications and stealth technology. Reliable supplies therefore matter both to civilian manufacturers and to national security.
+
+## Why is processing a concern?
+
+China mines approximately 60% of global rare earth supply and processes approximately 85% of the world's rare earth oxides. That concentration leaves other countries exposed to disruptions in access to refined materials.
+
+The United States has significant deposits, primarily at Mountain Pass, but most raw ore is still sent overseas for processing. A domestic mine does not by itself provide an independent supply chain.
+
+“The mining part is solvable. The refining part is where most countries have fallen behind — it took China decades to build that capacity, and it cannot be replicated quickly,” said Anika Patel, a materials scientist at Ridgeline Institute of Technology.
+
+Refining also produces radioactive byproducts because rare earth ores often contain thorium and uranium. Managing that waste is expensive and subject to strict environmental regulation.
+
+Patel said diversifying refining capacity is a 15- to 20-year project even with full government support, given the chemical engineering expertise required and environmental permitting timelines.
+
+## Can countries reduce their dependence?
+
+Deposits in Australia, Canada and several African nations are being developed with Western government backing as alternatives to Chinese supply. Japan, which has no domestic rare earth deposits, has invested heavily in stockpiling, recycling research and overseas mining partnerships.
+
+Recycling motors, electronics and magnets is possible, but it currently captures less than 1% of global rare earth supply. Dismantling and sorting products at scale remains expensive.
+
+Some manufacturers are pursuing substitutes. Ferrite magnets can replace neodymium magnets in some applications, but they are significantly weaker.
+
+Those options also face growing demand. Patel said the scale of the clean-energy transition, involving hundreds of millions of EV motors and wind turbines, will require rare earth supply to grow substantially regardless of geopolitics. Securing that supply means expanding the ability to process materials as well as finding more of them.

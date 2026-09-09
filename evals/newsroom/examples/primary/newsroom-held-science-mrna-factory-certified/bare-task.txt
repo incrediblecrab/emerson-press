@@ -1,0 +1,33 @@
+# FDA clears NovaBio plant as first domestically owned commercial-scale mRNA site
+
+The Food and Drug Administration on Monday certified NovaBio Therapeutics’ manufacturing plant in Westbrook, South Carolina, to produce mRNA drug substances for commercial use, making it the first domestically owned U.S. facility cleared to manufacture them at commercial scale.
+
+The April 14 certification gives the United States a domestic-owned production option for a technology used in vaccines and being developed for therapies. During the COVID-19 pandemic, all mRNA vaccine doses distributed in the U.S. were manufactured at foreign-owned plants or under foreign licensing arrangements.
+
+“This certification means that the next mRNA vaccine or therapy approved in the U.S. can be made here, at scale, without depending on foreign manufacturing partners,” said Dr. Claudia Ferreira, NovaBio’s president.
+
+The plant has the capacity to produce 600 million mRNA doses annually at its current stage of development. The certification covers four manufacturing suites. Two more are under construction and are expected to receive certification by 2027.
+
+The FDA’s Good Manufacturing Practice certification means the facility’s quality systems, environmental controls and manufacturing records meet federal standards for producing drugs that may be sold in the U.S. It is distinct from approval of an individual vaccine or therapy.
+
+That distinction matters for the plant’s first scheduled commercial production run, set for June. The run will be for an mRNA-based influenza vaccine candidate that has not yet received market approval. The facility’s certification does not change that candidate’s approval status.
+
+NovaBio is a contract manufacturer, not a drug developer. It will initially produce drug substance for three pharmaceutical companies that hold their own FDA product approvals. Its clients include two U.S.-based firms and one European company with FDA-approved mRNA products.
+
+The Westbrook facility received $480 million in federal grants and loan guarantees through the Biomanufacturing Resilience Initiative. James Obi, assistant secretary for manufacturing resilience at the Department of Health and Human Services, said its certification addressed a strategic gap identified in the government’s 2023 biomanufacturing security review.
+
+Federal biodefense planners said the plant’s surge capacity — its ability to increase production rapidly during a pandemic — is the primary strategic rationale for the government investment.
+
+Obi said the government plans to exercise a reserve capacity clause in its agreement with NovaBio. The clause requires the facility to be available for government mRNA production within 60 days of a declared public health emergency.
+
+Manufacturing mRNA drugs requires specialized equipment to enclose the material in lipid nanoparticles, along with filling and finishing lines capable of maintaining cold conditions. Those requirements differ substantially from conventional pharmaceutical production.
+
+Because mRNA molecules are highly sensitive to temperature and degradation by enzymes, the Westbrook plant includes dedicated storage at minus 80 degrees Celsius.
+
+The FDA inspection preceding certification lasted nine days. Inspectors reviewed raw material traceability, batch record systems and environmental monitoring in clean rooms.
+
+Ferreira said the plant’s 340 full-time employees were trained in part through a partnership with two community colleges that developed mRNA technician programs.
+
+The mRNA platform was originally developed for cancer immunotherapy before being adapted for infectious disease vaccines, which received emergency use authorization during the COVID-19 pandemic.
+
+Two other mRNA facilities are under construction in the United States. Neither has received Good Manufacturing Practice certification.

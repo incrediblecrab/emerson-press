@@ -1,0 +1,37 @@
+# How mRNA vaccines work, and why the technology is called a platform
+
+An mRNA vaccine gives the body's cells a temporary set of instructions: Make a piece of a pathogen's protein so the immune system can respond to it. Researchers describe the technology as a platform because those instructions can change while the delivery system stays the same.
+
+That distinction helps explain both the speed of mRNA vaccine development during the COVID-19 pandemic and efforts to use the technology against other diseases. As of April 20, 2025, researchers are developing mRNA vaccines for influenza, respiratory syncytial virus, HIV and multiple cancers. The ability to redesign instructions quickly, however, is not the same as having a finished vaccine.
+
+## Instructions, not changes to DNA
+
+Messenger RNA, or mRNA, already has a job in the body. It carries genetic instructions from a cell's DNA to its ribosomes, where proteins are built.
+
+Vaccines use synthetic mRNA to instruct cells to temporarily produce a fragment of a pathogen's protein, typically one found on its surface. That protein fragment triggers an immune response.
+
+The vaccine's mRNA does not enter the cell's nucleus or interact with DNA. Cellular enzymes break it down within days. Synthetic modifications help make the molecule more stable inside cells and reduce premature triggering of the immune system.
+
+Getting those fragile instructions into cells took decades of research. The solution was to package them in lipid nanoparticles: tiny fatty spheres that protect mRNA from breaking down in the bloodstream and help it enter cells.
+
+"We spent 30 years solving the delivery problem before COVID gave us the disease problem to solve," said Dr. Priya Acharya, a vaccinologist at Lakeview Medical School. "When both answers were in hand, the vaccines were ready quickly."
+
+## What makes it a platform?
+
+The platform is the reusable delivery system. To target a different pathogen, researchers change the genetic instructions inside the lipid nanoparticle shell rather than replace the delivery system itself.
+
+In theory, redesigning the mRNA sequence and verifying that it produces the intended protein can take weeks, compared with the months or years required for conventional vaccine development. That comparison concerns changing the target, not the entire path to authorization.
+
+The first emergency use authorizations for mRNA COVID-19 vaccines came in late 2020, roughly 11 months after the virus's genome was sequenced.
+
+Manufacturing also offers a potential speed advantage. Conventional vaccine methods that grow viruses in eggs or cell cultures depend on biological growth rates. mRNA vaccines are manufactured in bioreactors without that virus-growing step, allowing rapid scale-up.
+
+## What are the limits and next uses?
+
+Storage remains a practical obstacle. Most mRNA vaccine formulations require temperatures of minus 20 to minus 80 degrees Celsius. Maintaining that cold storage through distribution is difficult in places without reliable refrigeration infrastructure.
+
+The technology's potential uses extend beyond infectious diseases. Personalized cancer vaccines, designed using the mutation profiles of individual patients' tumors, are in late-stage trials. Researchers are also studying lipid nanoparticles as vehicles for delivering chemotherapy or gene-editing tools directly into tumor cells.
+
+Acharya said another frontier is "self-amplifying mRNA," which allows the molecule to copy itself inside cells and could enable effective vaccines with much smaller doses.
+
+Those projects use the same basic idea that makes mRNA a platform: Keep a way to deliver instructions, then change the instructions to address a different medical target.

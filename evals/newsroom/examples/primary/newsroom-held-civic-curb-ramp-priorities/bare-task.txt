@@ -1,0 +1,45 @@
+# How Fenwick Reach chooses which curb ramps to rebuild first
+
+Fenwick Reach chooses curb ramps for rebuilding by looking at the routes they serve and the barriers inspectors find, rather than simply counting complaints. The aim is to connect access to public buildings, transport stops and frequently used services — not just repair isolated corners.
+
+As of Sept. 18, 2026, the current capital program funds work at 16 locations, selected from resident reports and city inspections. Other identified needs await assessment or later budgets. Here is how the choices are made and what the available information can — and cannot — tell residents.
+
+## Why not start with the most-reported ramps?
+
+The access office received 48 reports concerning 28 distinct curb-ramp locations during its latest review period. Several reports described the same location, so 48 reports does not mean 48 separate ramps need work.
+
+Complaint totals are not the city's ranking system. Instead, it prioritizes connected routes. The office also does not treat the absence of a complaint as evidence that a ramp is usable.
+
+“A usable ramp on one corner does not complete a journey if the next corner still stops you,” access engineer Rina Voss said.
+
+The office has not supplied the overlap between the 28 reported locations and the 16 funded locations, which also draw on inspections. That means readers cannot subtract 16 from 28 to determine how many reported locations remain unfunded.
+
+Some older entries also use intersection names that changed after two streets were combined, requiring staff to reconcile duplicate records.
+
+## What do inspectors look for?
+
+Inspectors record slope, available turning space, drainage and obstructions such as utility covers. A ramp may be listed because its approach or landing presents a problem, even if the sloping surface looks intact.
+
+The city's current design guide supplies the criteria for these projects. The reporting packet does not provide a legal compliance determination for every existing ramp, so inclusion on the list should not be read as such a finding.
+
+The work required also varies. Locations needing drainage changes or utility relocation require coordination beyond a simple surface replacement.
+
+## How does the budget fit in?
+
+The $365,000 program budget covers design and associated street work as well as ramp work. It is not an equal cash allowance assigned to each of the 16 locations.
+
+The city has not published a final construction cost for every location. Dividing the total budget by 16 therefore would not establish what any particular ramp will cost.
+
+## How can residents see the reasoning?
+
+A mobility advisory group has asked the city to show the route connections behind its choices, rather than provide only a list of selected corners.
+
+“We want to see the path that becomes possible, not just sixteen completed entries on a spreadsheet,” group member Pera Linn said.
+
+The city will publish a map linking selected locations to their intended routes before work begins. Residents can provide information during the review about destinations and recurring access barriers without disclosing a medical diagnosis.
+
+## What happens during and after construction?
+
+Temporary arrangements during construction will be announced separately for each site. After construction, the advisory group will review completed routes with staff rather than certify them in advance from drawings alone.
+
+Completing the 16 projects will not establish that the entire street network is accessible. Nor does the packet predict increased pedestrian counts or quantify a benefit for all users. The program's stated focus is narrower: addressing selected barriers as part of connected routes.
