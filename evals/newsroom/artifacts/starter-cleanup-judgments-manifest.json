@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "kind": "unadjudicated-controlled-cleanup-preferences",
+  "assessor": "model",
+  "distinct_source_families": 1,
+  "model_specific_input_cases": 2,
+  "held_out_cases": 0,
+  "limitation": "Repo editing versus ordinary editing of the same raw draft. One source family, not independent cases or a powered result. Preserve negative findings and all model flags.",
+  "records": 6,
+  "artifact": "evals/newsroom/artifacts/starter-cleanup-judgments.jsonl.xz",
+  "artifact_sha256": "3bb972e32bd0ac94753f8bef40557ed02c97e4534fbbf73677cc486b6d332b27",
+  "payload_sha256": "11eeb4b6678eb3f2b7995f464bf9b3e3d4377a5d07e33e042533911427e155aa",
+  "human_reviews": 0
+}

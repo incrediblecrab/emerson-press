@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "kind": "ungraded-newsroom-tuning-captures",
+  "distinct_tuning_cases": 1,
+  "held_out_cases": 0,
+  "variants": [
+    "bare-task",
+    "task-only",
+    "full",
+    "compact"
+  ],
+  "limitation": "One source-constrained transit explainer, two writers, four recipes. Not a primary efficacy estimate.",
+  "records": 8,
+  "artifact": "evals/newsroom/artifacts/starter-writing.jsonl.xz",
+  "artifact_sha256": "03dd391764e89547169bc2a5f3ea6254dec5566d45bc52c33beb607cada4fd7e",
+  "payload_sha256": "c034f41f8337ca6850eab2f972bc0490ae3959969492496c68c37c39d7a06c72",
+  "human_reviews": 0
+}

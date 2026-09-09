@@ -8,7 +8,7 @@ import unittest
 from scripts.baseline import capture
 from scripts.build import assemble, task_contract
 from scripts.modules import (
-    CORE, ROOT, DocumentError, Module, digest, local_path, read_yaml,
+    CORE, ROOT, DocumentError, Module, digest, local_path, module_names, read_yaml,
     section_ranges, token_count,
 )
 
@@ -102,6 +102,25 @@ class ParsingTests(unittest.TestCase):
         self.assertIn("Not an example", examples["first-case"])
         self.assertIn("Synthetic scenario.", module.render_examples(["second-case"]))
         self.assertNotIn("First case", module.render_examples(["second-case"]))
+
+    def test_focused_omits_only_real_detect_sections(self):
+        content = (
+            "# Synthetic module\n\nIntro scope.\n\n## Mechanics\n\nKeep dates.\n\n"
+            "## Detect\n\nA diagnostic checklist.\n\n## Write\n\nKeep facts.\n\n"
+            "```md\n## Detect\nThis is quoted code.\n```\n\n"
+            "## Boundaries\n\nDo not change meaning.\n\n## Examples\n\nExample data."
+        )
+        module = Module("domain/example.md", {"layer": "domain"}, content, content, section_ranges(content))
+        focused = module.render("focused")
+        self.assertNotIn("Detect", section_ranges(focused))
+        self.assertIn("## Detect\nThis is quoted code.", focused)
+        self.assertIn(module.section("Mechanics"), focused)
+        self.assertIn(module.section("Write"), focused)
+        self.assertIn(module.section("Boundaries"), focused)
+        self.assertIn("Intro scope.", focused)
+        self.assertNotIn("A diagnostic checklist.", focused)
+        self.assertNotIn("Example data.", focused)
+        self.assertIn("Example data.", module.render("focused", examples=True))
 
     def test_empty_module_path_is_rejected(self):
         with self.assertRaises(DocumentError):
@@ -208,6 +227,28 @@ class AssemblyTests(unittest.TestCase):
         self.assertNotIn("\n## Examples\n", text)
         for name in CORE:
             self.assertIn(f'path="{name}"', text)
+
+    def test_focused_preserves_all_other_sections_across_the_catalog(self):
+        for path in module_names(ROOT):
+            module = Module.load(ROOT, path)
+            focused = module.render("focused")
+            with self.subTest(path=path):
+                self.assertNotIn("Detect", section_ranges(focused))
+                for name in module.sections:
+                    if name not in ("Detect", "Examples"):
+                        self.assertIn(module.section(name), focused)
+
+    def test_focused_keeps_mixed_domain_safeguards_and_is_not_a_review_recipe(self):
+        text, manifest = assemble(
+            ROOT, ["domain/marketing.md"], operation="edit", variant="focused",
+            safeguards=["medical", "legal"],
+        )
+        self.assertNotIn("\n## Detect\n", text)
+        self.assertEqual(manifest["excluded_sections"], ["Detect"])
+        for domain in ("medical", "legal"):
+            self.assertIn(Module.load(ROOT, f"domain/{domain}.md").section("Safeguards"), text)
+        with self.assertRaisesRegex(DocumentError, "draft/edit"):
+            assemble(ROOT, [], operation="review", variant="focused")
 
     def test_frozen_baseline_is_reproducible(self):
         baseline = json.loads((ROOT / "evals/baseline.json").read_text())

@@ -1,0 +1,15 @@
+{
+  "kind": "diagnostic-checklist-ablation-tuning",
+  "variants": [
+    "full",
+    "focused"
+  ],
+  "planned_responses": 32,
+  "contract_and_module_sources_matched": true,
+  "purpose": "Test whether omitting Detect checklists reduces unsolicited process narration without dropping operational guidance.",
+  "limitations": [
+    "Tuning only, including repeated source families and model-specific cleanup inputs.",
+    "Not a powered editorial-superiority result and not a new default.",
+    "Medical, legal, fiction and interface cases are safeguard/output-contract regressions, not newsroom quality observations."
+  ]
+}

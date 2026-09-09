@@ -11,7 +11,7 @@ from urllib.parse import urlsplit
 
 from scripts.build import assemble, quick_guide
 from scripts.modules import (
-    CORE, ROOT, DocumentError, Module, iso_date, load_profile, module_names,
+    CORE, PACK_VARIANTS, ROOT, DocumentError, Module, iso_date, load_profile, module_names,
     required_string, source_text, string_list, token_count, unfenced_lines,
 )
 
@@ -130,7 +130,7 @@ def check_catalog(
         for path in paths:
             try:
                 profile = load_profile(root, path.stem)
-                for variant in ("full", "compact"):
+                for variant in PACK_VARIANTS:
                     assemble(root, profile["modules"], operation="edit", variant=variant, safeguards=profile.get("safeguards", []))
             except DocumentError as error:
                 issues.append(f"{path.name}: {error}")

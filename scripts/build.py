@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 
 from scripts.modules import (
-    CORE, OPERATIONS, ROOT, DocumentError, Module, digest, load_profile,
+    CORE, OPERATIONS, PACK_VARIANTS, ROOT, DocumentError, Module, digest, load_profile,
     section_ranges, source_text, string_list, token_count, validate_selection,
 )
 
@@ -35,8 +35,10 @@ def assemble(
     safeguards: list[str] | None = None,
     examples: list[str] | None = None,
 ) -> tuple[str, dict]:
-    if variant not in ("full", "compact"):
+    if variant not in PACK_VARIANTS:
         raise DocumentError(f"unknown variant: {variant!r}")
+    if variant == "focused" and operation not in ("draft", "edit"):
+        raise DocumentError("focused is an experimental draft/edit recipe; use full or compact for review")
     string_list(selections, "module selection")
     safeguards = string_list([] if safeguards is None else safeguards, "safeguards")
     examples = string_list([] if examples is None else examples, "examples")
@@ -97,6 +99,8 @@ def assemble(
         "tokens": token_count(text),
         "sha256": digest(text),
     }
+    if variant == "focused":
+        manifest["excluded_sections"] = ["Detect"]
     return text, manifest
 
 
@@ -120,7 +124,7 @@ def main() -> None:
     selection.add_argument("--profile")
     selection.add_argument("--module", action="append")
     parser.add_argument("--mode", choices=OPERATIONS, default="edit")
-    parser.add_argument("--variant", choices=("full", "compact"), default="full")
+    parser.add_argument("--variant", choices=PACK_VARIANTS, default="full")
     parser.add_argument("--safeguard", action="append", default=[])
     parser.add_argument("--example", action="append", default=[])
     parser.add_argument("--output", type=Path)
@@ -129,6 +133,7 @@ def main() -> None:
     args = parser.parse_args()
     if args.write_quick_guide and any((
         args.profile, args.module, args.safeguard, args.example, args.output, args.manifest,
+        args.variant == "focused",
     )):
         parser.error("--write-quick-guide cannot be combined with pack selections or output paths")
     try:

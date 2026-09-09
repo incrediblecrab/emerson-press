@@ -23,6 +23,7 @@ CORE = tuple(
     for name in ("accuracy", "restraint", "voice", "anti-slop", "formatting", "rhythm")
 )
 OPERATIONS = ("draft", "edit", "review")
+PACK_VARIANTS = ("full", "compact", "focused")
 
 
 class DocumentError(ValueError):
@@ -207,7 +208,7 @@ class Module:
         return self.content[start:end].strip()
 
     def render(self, variant: str, examples: bool = False) -> str:
-        if variant not in ("full", "compact"):
+        if variant not in PACK_VARIANTS:
             raise DocumentError(f"unknown variant: {variant}")
         if self.path.startswith("sources/"):
             raise DocumentError(f"{self.path}: source dossiers are not prompt modules")
@@ -215,6 +216,9 @@ class Module:
             result = f"# {self.title}\n\n{self.section('Write')}"
         else:
             result = self.body
+            if variant == "focused" and "Detect" in self.sections:
+                start, end = self.sections["Detect"]
+                result = (result[:start] + result[end:]).strip()
         if examples:
             result += f"\n\n{self.section('Examples')}"
         return result

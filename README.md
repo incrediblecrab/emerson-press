@@ -64,6 +64,8 @@ Build a full-reference press pack and its manifest:
 
 Try the same selection with `--variant compact`, using a different output path. Exports refuse to overwrite existing artifacts. The manifest records actual assembled token counts, source hashes and selected examples; it is not a quality score.
 
+`--variant focused` is an experimental draft/edit recipe that omits `## Detect` checklists from every selected module while retaining the other guidance, mechanics, boundaries and safeguards. Its first source-matched tuning pass did not improve literal artifact compliance. Full remains the default; focused is not a review recipe or a demonstrated quality improvement.
+
 Profiles also cover general writing, technical documentation, marketing websites, healthcare marketing, patient handouts, Apple applications and explicitly requested graduate research papers. For a custom selection, use repeated `--module` arguments instead of `--profile`:
 
 ```sh
@@ -81,7 +83,7 @@ Source dossiers identify their evidence type, version, checked date and verifica
 
 The [evaluation workflow](evals/README.md) uses original supplied-fact cases, frozen original instructions and real response records. The [rubric](evals/rubric.md) requires fidelity, useful content and respect for intentional voice. It includes no-op cases and treats human preference separately from prompt size.
 
-The [model-only tuning pilot](evals/synthetic/README.md) retains its actual responses, failed judgments and negative findings. Its full-versus-task-contract comparison used repository instructions in both conditions; it did not test repository use against an untreated draft. The primary newsroom study therefore needs a `bare-task` control and explicit assessment of noticeable generic prose, not factuality alone.
+The [model-only tuning pilot](evals/synthetic/README.md) retains its actual responses, failed judgments and negative findings. Its full-versus-task-contract comparison used repository instructions in both conditions; it did not test repository use against an untreated draft. The [newsroom study](evals/newsroom/README.md) uses a `bare-task` control and explicit assessment of noticeable generic prose, not factuality alone.
 
 No powered or human-reviewed editorial-superiority result is established. A compact default must not be promoted on authoring checks or invented scores.
 

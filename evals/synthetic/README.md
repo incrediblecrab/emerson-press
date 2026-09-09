@@ -89,7 +89,7 @@ Setup probes are not benchmark observations. A new prospectively separated corpu
 and automated-assessment protocol are being prepared; no powered result or
 editorial-superiority claim is established by the tuning work.
 
-The archives retain **152 writing responses**, all from repeated use of the same
+The original pilot archives here retain **152 writing responses**, all from repeated use of the same
 16 original tuning cases: 64 under the runtime foundation, 64 under the neutral
 role, 16 after an output-contract clarification and eight final-contract smoke
 responses. No held-out writing has been generated. These are not 152 independent
@@ -100,7 +100,8 @@ capture receipts. Judgment archives instead contain the blinded pair key, writer
 result hashes, judge request/capture, raw assessment or failure, and any selected
 line ranges. Adjacent manifests record compressed and uncompressed hashes.
 Python's standard-library `lzma` reads the JSONL payload. Runtime state remains
-private; no archive contains human ratings.
+private; no archive contains human ratings. The refocused newsroom work and its
+separate article outputs are documented in [the newsroom study](../newsroom/README.md).
 
 ## What the tuning actually found
 

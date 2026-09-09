@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "kind": "unedited-synthetic-model-output-examples",
+  "case_id": "public-press-transit-recommendation",
+  "distinct_cases": 1,
+  "human_reviews": 0,
+  "records": [
+    {
+      "path": "evals/newsroom/examples/transit/claude-haiku-4-5-bare-task.txt",
+      "model": "claude-haiku-4.5",
+      "variant": "bare-task",
+      "result_sha256": "7a2a09aad24b466521b1d4f7d340a8c91f344f36c3e093eb7fc89eef5c556c8e",
+      "response_sha256": "f5ddbe713426af7ef52bdcd7e9294191f073d1236ac58169f20b55d37095182f"
+    },
+    {
+      "path": "evals/newsroom/examples/transit/gpt-5-4-mini-bare-task.txt",
+      "model": "gpt-5.4-mini",
+      "variant": "bare-task",
+      "result_sha256": "2ce1bdbc5c809b53e78752bc82d2dc1347fbb757f06900112c3fd7948db38cde",
+      "response_sha256": "0cf5fc4c18870ef8c88bb7862b5e91a343bf2f07c6bddffabf2f51e927c9504e"
+    },
+    {
+      "path": "evals/newsroom/examples/transit/claude-haiku-4-5-compact.txt",
+      "model": "claude-haiku-4.5",
+      "variant": "compact",
+      "result_sha256": "2d7572b67144510a94a131018470ca1549dd5fb6b9fc4124539c5959338afbab",
+      "response_sha256": "268f4ed798101de577496199a885920ca76cd2bfb23e6d70ed6ef2a4dc3558c6"
+    },
+    {
+      "path": "evals/newsroom/examples/transit/gpt-5-4-mini-compact.txt",
+      "model": "gpt-5.4-mini",
+      "variant": "compact",
+      "result_sha256": "5c113ab54bb2489bd43642b2db70d341c64020880d89403376a75b40eb34081e",
+      "response_sha256": "eb2b60dd903a4863e548cb3cf17ee2bede9f20cf3a8c61e14529502cef0156f2"
+    },
+    {
+      "path": "evals/newsroom/examples/transit/claude-haiku-4-5-full.txt",
+      "model": "claude-haiku-4.5",
+      "variant": "full",
+      "result_sha256": "5fa68dce668c24861675d29c25dbe9ff6ca60bef16742ead2f6238630eae21e2",
+      "response_sha256": "7a723e9ff01417de081744d0203280d380caf10eb022b863db857e38f6cf5cb6"
+    },
+    {
+      "path": "evals/newsroom/examples/transit/gpt-5-4-mini-full.txt",
+      "model": "gpt-5.4-mini",
+      "variant": "full",
+      "result_sha256": "75014e452f32cdcc458d31c1b251e1e1d02479cf7e0633d2ec36e6a8445a9a7d",
+      "response_sha256": "36e317779b2daf678c07ff7a6efb6d70593256f4028eeb2139fbb62db6f0ba24"
+    },
+    {
+      "path": "evals/newsroom/examples/transit/claude-haiku-4-5-task-only.txt",
+      "model": "claude-haiku-4.5",
+      "variant": "task-only",
+      "result_sha256": "6c1d5f819e27001bf1a74ba829e18a27724cafe9de556993eb765ad53c4a453b",
+      "response_sha256": "187d10e5f3a9b87491bb0ee4ef19483d65491ac99b151b1fc7ffe49b9ebf4c56"
+    },
+    {
+      "path": "evals/newsroom/examples/transit/gpt-5-4-mini-task-only.txt",
+      "model": "gpt-5.4-mini",
+      "variant": "task-only",
+      "result_sha256": "5c39e5761998be7149e3e723ef9495ff5cf48a09a74309df8bd4dd498786b3c6",
+      "response_sha256": "7f4d1cea825d78445392ce3c38a982117b3bdf4ef89aa03294f9dc04745b10a4"
+    }
+  ]
+}

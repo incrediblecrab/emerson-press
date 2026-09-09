@@ -1,0 +1,216 @@
+{
+  "kind": "pointwise-validation-reanalysis",
+  "new_model_calls": 0,
+  "valid_assessments": 8,
+  "original_valid_assessments": 7,
+  "change": "Accept distinct valid paragraph IDs in any order; evidence order is not a prose-quality requirement. Unknown and duplicated IDs still fail. All original responses, decisions and the original failure remain unchanged.",
+  "validator_sha256": "c95d4e3eb1334ba97f764ebcdc999ac49da93178ecb7d7ce7ed63890519161b5",
+  "rows": [
+    {
+      "item": "item-0001",
+      "assessor": "model",
+      "records": [
+        {
+          "path": "evals/runs/newsroom-starter/captures/public-press-transit-recommendation-bare-task-claude-haiku-4-5/record.json",
+          "result_sha256": "7a2a09aad24b466521b1d4f7d340a8c91f344f36c3e093eb7fc89eef5c556c8e",
+          "case_id": "public-press-transit-recommendation",
+          "writer": "claude-haiku-4.5",
+          "variant": "bare-task"
+        }
+      ],
+      "assessment": {
+        "level": "minor",
+        "reason": "The opening is reporting-led and the explainer provides concrete timetable comparisons and useful passenger instructions. The closing status section partly repeats the opening and approval section rather than advancing the explanation, but this is an isolated weakness, not pervasive generic writing.",
+        "evidence": [
+          "text-p013"
+        ],
+        "fidelity": "flag",
+        "fidelity_reason": "The ending invents an operating-team approval requirement: the packet requires that team to supply a staffing plan, with approval resting with the funding committee. It also understates the board's recommendation as support for studying the change. Required information is missing: the absence of boarding counts or savings estimates, and the station origin and return. The opening leaves an unresolved '[date from minutes]' placeholder and uses 'departures each day' despite the explicit requirement to preserve departures per Saturday."
+      },
+      "exact_evidence_context": {
+        "text-p013": "As the board chair noted in the meeting minutes, \"This is a recommendation, not a timetable.\" The advisory board's vote supports studying the change, but no implementation date has been announced, and approval from both the operating team and funding committee remains pending."
+      },
+      "raw_response_sha256": "dcaa892e9d34cb66978e5873d273dd9151872748a42e2a3f404e74788ae96fb9",
+      "source_capture": "evals/runs/newsroom-starter/pointwise/item-0001/capture.json"
+    },
+    {
+      "item": "item-0002",
+      "assessor": "model",
+      "records": [
+        {
+          "path": "evals/runs/newsroom-starter/captures/public-press-transit-recommendation-bare-task-gpt-5-4-mini/record.json",
+          "result_sha256": "2ce1bdbc5c809b53e78752bc82d2dc1347fbb757f06900112c3fd7948db38cde",
+          "case_id": "public-press-transit-recommendation",
+          "writer": "gpt-5.4-mini",
+          "variant": "bare-task"
+        }
+      ],
+      "assessment": {
+        "level": "absent",
+        "reason": "The piece opens with concrete reporting (a specific recommendation, vote status, and no-implementation-yet framing) and proceeds through a clear, non-repetitive structure: current vs. proposed schedule, approval chain, stated rationale, access concern, and notice requirement. It avoids generic scaffolding, hedges rather than overclaims, and correctly separates the departure-interval gap from journey duration. No boilerplate phrasing or padded conclusion is present.",
+        "evidence": [],
+        "fidelity": "no_flag",
+        "fidelity_reason": "All required facts (f1-f21) are represented accurately: six-to-four departure cut, 5-3 vote, funding committee approval still needed, existing timetable in force, no start date, chair's exact quote, route/stops/fares unchanged, driver-availability rationale kept separate from missing boarding/savings data, access group's exact quote and request, staffing-plan and 22 May committee timing, 15 May comment deadline and URL, comments framed as non-binding, 14-day notice rule, and stop panels retaining current schedule. No forbidden additions (implementation date, savings, ridership numbers, alternative shuttle, or reporter activity) appear."
+      },
+      "exact_evidence_context": {},
+      "raw_response_sha256": "0f35eaadb3fea36f7e4e9aef0b3aa18f9372e77cb7e53346decd3450405de47e",
+      "source_capture": "evals/runs/newsroom-starter/pointwise/item-0002/capture.json"
+    },
+    {
+      "item": "item-0003",
+      "assessor": "model",
+      "records": [
+        {
+          "path": "evals/runs/newsroom-starter/captures/public-press-transit-recommendation-compact-claude-haiku-4-5/record.json",
+          "result_sha256": "2d7572b67144510a94a131018470ca1549dd5fb6b9fc4124539c5959338afbab",
+          "case_id": "public-press-transit-recommendation",
+          "writer": "claude-haiku-4.5",
+          "variant": "compact"
+        }
+      ],
+      "assessment": {
+        "level": "minor",
+        "reason": "The opening is reporting-led and the sections supply useful passenger information in a sensible order. Isolated padding weakens the rhythm: the staffing-plan requirement is immediately restated, and the ending repeats the full current schedule rather than adding much practical value.",
+        "evidence": [
+          "text-p011",
+          "text-p015"
+        ],
+        "fidelity": "flag",
+        "fidelity_reason": "The article omits the required 5-3 advisory vote, the explicit exclusion of weekday and Sunday service, and the absence of boarding counts. It uses the chair's exact statement without the required attribution. The promised website and service-notification announcements are not supplied in the packet. Calling the departure gap 'six hours with no service' also overstates what station departure times establish about service elsewhere on the loop."
+      },
+      "exact_evidence_context": {
+        "text-p011": "The funding committee is scheduled to consider the proposal on May 22, 2026. Before that vote, the operating team must supply a staffing plan. That plan is required information for the committee's decision.\n\n",
+        "text-p015": "For now, plan travel using the existing schedule: departures at 8 a.m., 10 a.m., 12 p.m., 2 p.m., 4 p.m., and 6 p.m. Bay Cross Transit will announce any changes through its website and service notifications once approval is complete."
+      },
+      "raw_response_sha256": "b3e2c9ee8d431a09900be58ca198bec9e1149a7c29dd772eed711d0c96984d54",
+      "source_capture": "evals/runs/newsroom-starter/pointwise/item-0003/capture.json"
+    },
+    {
+      "item": "item-0004",
+      "assessor": "model",
+      "records": [
+        {
+          "path": "evals/runs/newsroom-starter/captures/public-press-transit-recommendation-compact-gpt-5-4-mini/record.json",
+          "result_sha256": "5c113ab54bb2489bd43642b2db70d341c64020880d89403376a75b40eb34081e",
+          "case_id": "public-press-transit-recommendation",
+          "writer": "gpt-5.4-mini",
+          "variant": "compact"
+        }
+      ],
+      "assessment": {
+        "level": "absent",
+        "reason": "The piece is a clear, sequential explainer that moves from the proposal, to its rationale, to the chair's caveat, to the approval/notice process, to the access group's concern, and finally to acknowledged gaps in the data. Each paragraph adds distinct, specific information (exact times, vote count, dates, URL, named actors) rather than repeating a generic announcement. The gap is explicitly disambiguated from journey time as required. There is no vague praise, no mechanical scaffolding, and no unsupported grand conclusion; the ending appropriately notes missing ridership/savings data rather than manufacturing a false sense of resolution.",
+        "evidence": [],
+        "fidelity": "no_flag",
+        "fidelity_reason": "All required facts (f1-f21) appear accurately: six-to-four departure change, 5-3 vote, unapproved status, route/fare stability, chair quote and attribution, funding committee and staffing-plan prerequisites, May 22 meeting date, 14-day notice rule, comment deadline and URL framed as non-binding, access group's exact quote and its substance, and the explicit absence of boarding counts or savings estimates. No forbidden additions (invented dates, savings, ridership figures, alternative shuttle, or reporter activity) are present, and the six-hour interval is correctly described as departure spacing rather than travel time."
+      },
+      "exact_evidence_context": {},
+      "raw_response_sha256": "065e7b048ab43ab02ec4041764dc5911fd4eca3485cfbee1339f9502506609ee",
+      "source_capture": "evals/runs/newsroom-starter/pointwise/item-0004/capture.json"
+    },
+    {
+      "item": "item-0005",
+      "assessor": "model",
+      "records": [
+        {
+          "path": "evals/runs/newsroom-starter/captures/public-press-transit-recommendation-full-claude-haiku-4-5/record.json",
+          "result_sha256": "5fa68dce668c24861675d29c25dbe9ff6ca60bef16742ead2f6238630eae21e2",
+          "case_id": "public-press-transit-recommendation",
+          "writer": "claude-haiku-4.5",
+          "variant": "full"
+        }
+      ],
+      "assessment": {
+        "level": "absent",
+        "reason": "The opening leads with the proposed cut and its status, and the article develops concrete timetable consequences, access concerns and practical approval steps. Headings and qualifications serve passengers rather than creating conspicuous templating or repetition.",
+        "evidence": [],
+        "fidelity": "flag",
+        "fidelity_reason": "The article omits required information: no implementation date has been announced, the route returns to the station, and the packet contains no estimate of financial savings. It also attributes an explanation about subsequent approval steps to the chair that the supplied minutes quotation does not establish. The main timetable comparison, quotations and unapproved status otherwise match the packet."
+      },
+      "exact_evidence_context": {},
+      "raw_response_sha256": "3e883a41fdb1874c9265792ea88a5bc730729e438e2362e24785bb6fa916859c",
+      "source_capture": "evals/runs/newsroom-starter/pointwise/item-0005/capture.json"
+    },
+    {
+      "item": "item-0006",
+      "assessor": "model",
+      "records": [
+        {
+          "path": "evals/runs/newsroom-starter/captures/public-press-transit-recommendation-full-gpt-5-4-mini/record.json",
+          "result_sha256": "75014e452f32cdcc458d31c1b251e1e1d02479cf7e0633d2ec36e6a8445a9a7d",
+          "case_id": "public-press-transit-recommendation",
+          "writer": "gpt-5.4-mini",
+          "variant": "full"
+        }
+      ],
+      "assessment": {
+        "level": "minor",
+        "reason": "The piece is largely reporting-led, specific and well-sequenced, with clear separation of stated reason, access concern and process steps. Minor generic touches appear in the closing 'practical bottom line is simple' framing (p010), a mild rhetorical flourish that restates prior points rather than adding information, and 'Board chair said' without a name feels like a slight scaffolding gap rather than natural attribution.",
+        "evidence": [
+          "text-p010",
+          "text-p005"
+        ],
+        "fidelity": "no_flag",
+        "fidelity_reason": "All required facts (f1-f21) are represented accurately: vote count, departure comparison, gap explained as spacing not journey time, stated reason isolated from missing evidence, access group quote and ask, approval chain (funding committee, staffing plan, 22 May date), notice requirement, and comment deadline are all preserved without invented data, dates, savings, or reactions."
+      },
+      "exact_evidence_context": {
+        "text-p010": "For passengers, the practical bottom line is simple: nothing has changed yet. The current six-departure Saturday schedule remains in force unless and until the proposal clears the remaining approvals, notice requirements and any final authorization.",
+        "text-p005": "Board chair said in the minutes: “This is a recommendation, not a timetable.”\n\n"
+      },
+      "raw_response_sha256": "b11c225a6d28411982260fd9a91e7b8b140e89d4e7ce0dceed1f3d8d39b602c7",
+      "source_capture": "evals/runs/newsroom-starter/pointwise/item-0006/capture.json"
+    },
+    {
+      "item": "item-0007",
+      "assessor": "model",
+      "records": [
+        {
+          "path": "evals/runs/newsroom-starter/captures/public-press-transit-recommendation-task-only-claude-haiku-4-5/record.json",
+          "result_sha256": "6c1d5f819e27001bf1a74ba829e18a27724cafe9de556993eb765ad53c4a453b",
+          "case_id": "public-press-transit-recommendation",
+          "writer": "claude-haiku-4.5",
+          "variant": "task-only"
+        }
+      ],
+      "assessment": {
+        "level": "absent",
+        "reason": "The explainer opens with a specific recommendation, compares departure times, attributes the scheduling constraint and access concern, and ends with useful current-service information. Its headings and procedural list aid navigation rather than substitute generic framing for reporting.",
+        "evidence": [],
+        "fidelity": "flag",
+        "fidelity_reason": "The opening says departures 'each day,' violating the explicit requirement to preserve departures per Saturday. Required facts are omitted: weekday and Sunday services are outside the recommendation (f10), no route, stop or fare changes are proposed (f11), and the packet supplies no boarding counts or savings estimate (f13). The gap explanation also misleadingly equates the six-hour departure interval with how long passengers arriving between 10:00 and 16:00 would wait; their waits depend on arrival time."
+      },
+      "exact_evidence_context": {},
+      "raw_response_sha256": "2d803ee1cb22231752be6b71e051e1df05ad9b309376cf3723dde05542936892",
+      "source_capture": "evals/runs/newsroom-starter/pointwise/item-0007/capture.json"
+    },
+    {
+      "item": "item-0008",
+      "assessor": "model",
+      "records": [
+        {
+          "path": "evals/runs/newsroom-starter/captures/public-press-transit-recommendation-task-only-gpt-5-4-mini/record.json",
+          "result_sha256": "5c39e5761998be7149e3e723ef9495ff5cf48a09a74309df8bd4dd498786b3c6",
+          "case_id": "public-press-transit-recommendation",
+          "writer": "gpt-5.4-mini",
+          "variant": "task-only"
+        }
+      ],
+      "assessment": {
+        "level": "minor",
+        "reason": "The explainer is largely reporting-led, specific, and well-sequenced, correctly separating the advisory recommendation from operational authority and distinguishing departure spacing from journey time. The one soft spot is the near-verbatim bookending between the opening ('a proposal, not a new timetable') and the closing chair quote ('a recommendation, not a timetable'), which slightly overplays the same point rather than closing with new information, though the repetition is largely justified by the brief's requirement to preserve unapproved status throughout.",
+        "evidence": [
+          "text-p001",
+          "text-p008"
+        ],
+        "fidelity": "no_flag",
+        "fidelity_reason": "All required facts (f1-f21) are present and accurately rendered, including the vote count, departure comparison, stated reason, approval chain, notice process, and access-group quote with attribution. The phrase in p003 asserting 'no change to ... weekday and Sunday service' is a reasonable paraphrase of f10's 'does not address weekday or Sunday services' rather than a consequential escalation, since a proposal limited to Saturday departures implies no change to other days; no invented ridership, savings, dates, or reactions were introduced."
+      },
+      "exact_evidence_context": {
+        "text-p001": "Bay Cross Transit passengers are being told to treat a proposed Saturday service change as exactly that: a proposal, not a new timetable.\n\n",
+        "text-p008": "As the board chair said in the supplied minutes: “This is a recommendation, not a timetable.”"
+      },
+      "raw_response_sha256": "ceac557617dbbb004047f46e7c8585f23dbffe41f5f77c9f184929221a0a44d4",
+      "source_capture": "evals/runs/newsroom-starter/pointwise/item-0008/capture.json"
+    }
+  ]
+}

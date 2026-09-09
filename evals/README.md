@@ -79,6 +79,13 @@ Replace `CASE.json` with an actual case path, including any split subdirectory.
 | `legacy-quick` | Exact original `quick-guide.md` at the frozen revision; optional modules are not appended |
 | `full` | Current assembler's operation contract, full core and selected modules/safeguards |
 | `compact` | Same assembler/selections, with compact core operating sections |
+| `focused` | Experimental draft/edit ablation: omit `## Detect` from all modules, retaining all other default content and safeguards |
+
+Focused is not supported for review tasks. Its manifest declares the omitted
+section, and the importer rejects diagnostic sections even if a record's hashes
+are recomputed. It is not a matched full/compact compression comparison or a
+new default. Some diagnostic cues may be useful; do not assume removing them
+improves prose before measuring the effect.
 
 Legacy variants verify the loaded file/body hashes against `baseline.json` and
 require its original Git object to be available. They **reject any standalone

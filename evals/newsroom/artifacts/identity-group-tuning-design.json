@@ -1,0 +1,38 @@
+{
+  "kind": "runtime-identity-group-calibration",
+  "planned_responses": 12,
+  "system_message": {
+    "mode": "customize",
+    "sections": {
+      "identity": {
+        "action": "remove"
+      },
+      "safety": {
+        "action": "preserve"
+      },
+      "custom_instructions": {
+        "action": "preserve"
+      },
+      "runtime_instructions": {
+        "action": "preserve"
+      },
+      "tool_instructions": {
+        "action": "remove"
+      },
+      "last_instructions": {
+        "action": "remove"
+      }
+    },
+    "content": "You are a text-only writing assistant. Carry out the supplied drafting, editing, or reviewing task. Tools, browsing, persistent memory and other agents are unavailable. Do not narrate or invent calls to them. Return the requested output."
+  },
+  "protected_sections_preserved": [
+    "safety",
+    "custom_instructions",
+    "runtime_instructions"
+  ],
+  "limitations": [
+    "Same prepared prompts, different explicitly recorded runtime identity customization.",
+    "No full system-message replacement, permission relaxation or available tools.",
+    "Do not pool with prior runtime profiles or treat a harness change as a library efficacy result."
+  ]
+}

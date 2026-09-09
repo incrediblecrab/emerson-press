@@ -1,0 +1,177 @@
+{
+  "kind": "unadjudicated-newsroom-tuning",
+  "assessor": "model",
+  "human_reviews": 0,
+  "planned_pairs": 8,
+  "valid_assessments": 8,
+  "distinct_cases": 1,
+  "writer_case_groups": 2,
+  "template_sha256": "98ee3c206136cf62c8aa5645c7b93d9ed458b587250fc06a30fcc6856bd66363",
+  "by_contrast": {
+    "full-versus-bare-task": {
+      "full": 2
+    },
+    "full-versus-compact": {
+      "full": 1,
+      "compact": 1
+    },
+    "compact-versus-bare-task": {
+      "compact": 2
+    },
+    "task-only-versus-bare-task": {
+      "task-only": 1,
+      "tie": 1
+    }
+  },
+  "results": [
+    {
+      "pair": "pair-0002",
+      "case_id": "public-press-transit-recommendation",
+      "writer": "claude-haiku-4.5",
+      "judge": "gpt-6-astra",
+      "candidate": "full",
+      "baseline": "bare-task",
+      "valid_assessment": true,
+      "preferred_variant": "full",
+      "slop": {
+        "full": "minor",
+        "bare-task": "salient"
+      },
+      "hard_failure_flags": {
+        "full": 2,
+        "bare-task": 3
+      }
+    },
+    {
+      "pair": "pair-0004",
+      "case_id": "public-press-transit-recommendation",
+      "writer": "claude-haiku-4.5",
+      "judge": "gpt-6-astra",
+      "candidate": "full",
+      "baseline": "compact",
+      "valid_assessment": true,
+      "preferred_variant": "full",
+      "slop": {
+        "compact": "salient",
+        "full": "minor"
+      },
+      "hard_failure_flags": {
+        "compact": 5,
+        "full": 3
+      }
+    },
+    {
+      "pair": "pair-0003",
+      "case_id": "public-press-transit-recommendation",
+      "writer": "claude-haiku-4.5",
+      "judge": "gpt-6-astra",
+      "candidate": "compact",
+      "baseline": "bare-task",
+      "valid_assessment": true,
+      "preferred_variant": "compact",
+      "slop": {
+        "compact": "minor",
+        "bare-task": "minor"
+      },
+      "hard_failure_flags": {
+        "compact": 4,
+        "bare-task": 4
+      }
+    },
+    {
+      "pair": "pair-0001",
+      "case_id": "public-press-transit-recommendation",
+      "writer": "claude-haiku-4.5",
+      "judge": "gpt-6-astra",
+      "candidate": "task-only",
+      "baseline": "bare-task",
+      "valid_assessment": true,
+      "preferred_variant": "task-only",
+      "slop": {
+        "bare-task": "minor",
+        "task-only": "minor"
+      },
+      "hard_failure_flags": {
+        "bare-task": 3,
+        "task-only": 4
+      }
+    },
+    {
+      "pair": "pair-0008",
+      "case_id": "public-press-transit-recommendation",
+      "writer": "gpt-5.4-mini",
+      "judge": "claude-sonnet-5",
+      "candidate": "full",
+      "baseline": "compact",
+      "valid_assessment": true,
+      "preferred_variant": "compact",
+      "slop": {
+        "full": "minor",
+        "compact": "absent"
+      },
+      "hard_failure_flags": {
+        "full": 0,
+        "compact": 0
+      }
+    },
+    {
+      "pair": "pair-0005",
+      "case_id": "public-press-transit-recommendation",
+      "writer": "gpt-5.4-mini",
+      "judge": "claude-sonnet-5",
+      "candidate": "task-only",
+      "baseline": "bare-task",
+      "valid_assessment": true,
+      "preferred_variant": "tie",
+      "slop": {
+        "bare-task": "minor",
+        "task-only": "minor"
+      },
+      "hard_failure_flags": {
+        "bare-task": 0,
+        "task-only": 0
+      }
+    },
+    {
+      "pair": "pair-0006",
+      "case_id": "public-press-transit-recommendation",
+      "writer": "gpt-5.4-mini",
+      "judge": "claude-sonnet-5",
+      "candidate": "full",
+      "baseline": "bare-task",
+      "valid_assessment": true,
+      "preferred_variant": "full",
+      "slop": {
+        "full": "minor",
+        "bare-task": "minor"
+      },
+      "hard_failure_flags": {
+        "full": 0,
+        "bare-task": 0
+      }
+    },
+    {
+      "pair": "pair-0007",
+      "case_id": "public-press-transit-recommendation",
+      "writer": "gpt-5.4-mini",
+      "judge": "claude-sonnet-5",
+      "candidate": "compact",
+      "baseline": "bare-task",
+      "valid_assessment": true,
+      "preferred_variant": "compact",
+      "slop": {
+        "compact": "absent",
+        "bare-task": "minor"
+      },
+      "hard_failure_flags": {
+        "compact": 0,
+        "bare-task": 0
+      }
+    }
+  ],
+  "limitations": [
+    "Tuning-only model opinions, not human or statistically powered editorial superiority.",
+    "Repeated comparisons of one response are correlated and are not independent slop-rate observations.",
+    "All raw judgments, failures and evidence selections remain available for arbitration."
+  ]
+}

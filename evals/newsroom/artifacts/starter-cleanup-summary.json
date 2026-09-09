@@ -1,0 +1,143 @@
+{
+  "kind": "unadjudicated-newsroom-tuning",
+  "assessor": "model",
+  "human_reviews": 0,
+  "planned_pairs": 6,
+  "valid_assessments": 6,
+  "declared_variants": [
+    "bare-task",
+    "full",
+    "compact"
+  ],
+  "distinct_cases": 2,
+  "writer_case_groups": 2,
+  "template_sha256": "98ee3c206136cf62c8aa5645c7b93d9ed458b587250fc06a30fcc6856bd66363",
+  "by_contrast": {
+    "full-versus-bare-task": {
+      "tie": 1,
+      "bare-task": 1
+    },
+    "full-versus-compact": {
+      "compact": 1,
+      "tie": 1
+    },
+    "compact-versus-bare-task": {
+      "bare-task": 2
+    }
+  },
+  "results": [
+    {
+      "pair": "pair-0004",
+      "case_id": "newsroom-cleanup-starter-gpt-5-4-mini",
+      "writer": "gpt-5.4-mini",
+      "judge": "claude-sonnet-5",
+      "candidate": "full",
+      "baseline": "bare-task",
+      "valid_assessment": true,
+      "preferred_variant": "tie",
+      "slop": {
+        "bare-task": "absent",
+        "full": "absent"
+      },
+      "hard_failure_flags": {
+        "bare-task": 0,
+        "full": 0
+      }
+    },
+    {
+      "pair": "pair-0001",
+      "case_id": "newsroom-cleanup-starter-claude-haiku-4-5",
+      "writer": "claude-haiku-4.5",
+      "judge": "gpt-6-astra",
+      "candidate": "full",
+      "baseline": "bare-task",
+      "valid_assessment": true,
+      "preferred_variant": "bare-task",
+      "slop": {
+        "full": "salient",
+        "bare-task": "minor"
+      },
+      "hard_failure_flags": {
+        "full": 3,
+        "bare-task": 3
+      }
+    },
+    {
+      "pair": "pair-0003",
+      "case_id": "newsroom-cleanup-starter-claude-haiku-4-5",
+      "writer": "claude-haiku-4.5",
+      "judge": "gpt-6-astra",
+      "candidate": "full",
+      "baseline": "compact",
+      "valid_assessment": true,
+      "preferred_variant": "compact",
+      "slop": {
+        "compact": "minor",
+        "full": "salient"
+      },
+      "hard_failure_flags": {
+        "compact": 4,
+        "full": 3
+      }
+    },
+    {
+      "pair": "pair-0002",
+      "case_id": "newsroom-cleanup-starter-claude-haiku-4-5",
+      "writer": "claude-haiku-4.5",
+      "judge": "gpt-6-astra",
+      "candidate": "compact",
+      "baseline": "bare-task",
+      "valid_assessment": true,
+      "preferred_variant": "bare-task",
+      "slop": {
+        "compact": "minor",
+        "bare-task": "minor"
+      },
+      "hard_failure_flags": {
+        "compact": 4,
+        "bare-task": 3
+      }
+    },
+    {
+      "pair": "pair-0005",
+      "case_id": "newsroom-cleanup-starter-gpt-5-4-mini",
+      "writer": "gpt-5.4-mini",
+      "judge": "claude-sonnet-5",
+      "candidate": "compact",
+      "baseline": "bare-task",
+      "valid_assessment": true,
+      "preferred_variant": "bare-task",
+      "slop": {
+        "bare-task": "minor",
+        "compact": "minor"
+      },
+      "hard_failure_flags": {
+        "bare-task": 0,
+        "compact": 0
+      }
+    },
+    {
+      "pair": "pair-0006",
+      "case_id": "newsroom-cleanup-starter-gpt-5-4-mini",
+      "writer": "gpt-5.4-mini",
+      "judge": "claude-sonnet-5",
+      "candidate": "full",
+      "baseline": "compact",
+      "valid_assessment": true,
+      "preferred_variant": "tie",
+      "slop": {
+        "full": "absent",
+        "compact": "absent"
+      },
+      "hard_failure_flags": {
+        "full": 0,
+        "compact": 0
+      }
+    }
+  ],
+  "limitations": [
+    "Tuning-only model opinions, not human or statistically powered editorial superiority.",
+    "Repeated comparisons of one response are correlated and are not independent slop-rate observations.",
+    "All raw judgments, failures and evidence selections remain available for arbitration."
+  ]
+}

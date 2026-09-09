@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "kind": "ungraded-model-cleanup-tuning",
+  "distinct_source_families": 1,
+  "model_specific_input_cases": 2,
+  "held_out_cases": 0,
+  "variants": [
+    "bare-task",
+    "full",
+    "compact"
+  ],
+  "limitation": "Each model edits its own exact captured bare draft. Compare repo-guided editing with ordinary editing to separate the library effect from another pass. One source packet, not a powered result.",
+  "records": 6,
+  "artifact": "evals/newsroom/artifacts/starter-cleanup-writing.jsonl.xz",
+  "artifact_sha256": "bb8538cfc3d9f89db2ed24940c5cbdcf0ec6b8d5a11e105d44b3f13cce7f6374",
+  "payload_sha256": "088313203bb3b9fb96db6a54eacb584fb316033f4272a263b24c55d9dead447d",
+  "human_reviews": 0
+}

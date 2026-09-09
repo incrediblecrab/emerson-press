@@ -1,0 +1,26 @@
+{
+  "kind": "paired-cleanup-tuning",
+  "sources": [
+    {
+      "case_id": "newsroom-cleanup-starter-claude-haiku-4-5",
+      "family_id": "public-press-transit-recommendation",
+      "source_record": "evals/runs/newsroom-starter/captures/public-press-transit-recommendation-bare-task-claude-haiku-4-5/record.json",
+      "source_result_sha256": "7a2a09aad24b466521b1d4f7d340a8c91f344f36c3e093eb7fc89eef5c556c8e",
+      "editor_model": "claude-haiku-4.5"
+    },
+    {
+      "case_id": "newsroom-cleanup-starter-gpt-5-4-mini",
+      "family_id": "public-press-transit-recommendation",
+      "source_record": "evals/runs/newsroom-starter/captures/public-press-transit-recommendation-bare-task-gpt-5-4-mini/record.json",
+      "source_result_sha256": "2ce1bdbc5c809b53e78752bc82d2dc1347fbb757f06900112c3fd7948db38cde",
+      "editor_model": "gpt-5.4-mini"
+    }
+  ],
+  "variants": [
+    "bare-task",
+    "full",
+    "compact"
+  ],
+  "distinct_reporting_families": 1,
+  "limitation": "All editing conditions receive the same model-specific raw draft. Compare repo editing with ordinary editing, not only with the unedited text; the extra pass is itself an intervention. These are not two independent source families."
+}

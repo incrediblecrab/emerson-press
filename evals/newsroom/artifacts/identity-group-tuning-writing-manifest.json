@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "kind": "runtime-identity-customization-tuning",
+  "matched_prepared_prompts": 12,
+  "held_out_cases": 0,
+  "prior_advisor_mentions": 3,
+  "new_advisor_mentions": 1,
+  "limitation": "A small runtime-profile probe with unchanged prompts. Workflow narration persists; this does not establish causal improvement, full neutrality or repository efficacy. Safety, organization and runtime sections are explicitly configured to be preserved.",
+  "records": 12,
+  "artifact": "evals/newsroom/artifacts/identity-group-tuning-writing.jsonl.xz",
+  "artifact_sha256": "623197f0bf2d25353354ee1d40ca51b070ff18505fb70583e0e629f8f1f1591b",
+  "payload_sha256": "74d240f7ffcbcec962716b2eaeb984f512831e7acb48b3f4594e1d83a15e887d",
+  "human_reviews": 0
+}

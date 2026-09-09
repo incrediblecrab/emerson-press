@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "kind": "ungraded-diagnostic-ablation-tuning",
+  "distinct_case_ids": 9,
+  "reporting_family_caveat": "Two model-specific cleanup cases share the transit source family. Other cases are safety/output-contract regressions, not newsroom-quality samples.",
+  "held_out_cases": 0,
+  "literal_matches": {
+    "focused": 6,
+    "full": 6
+  },
+  "literal_checks_per_variant": {
+    "focused": 8,
+    "full": 8
+  },
+  "limitation": "No shape improvement established: both variants match 6/8 expected artifacts. Focused Haiku still narrates unavailable advisor calls. No quality superiority or default promotion.",
+  "records": 32,
+  "artifact": "evals/newsroom/artifacts/focused-tuning-writing.jsonl.xz",
+  "artifact_sha256": "b71282c4c301cffe7ace7a52cff9d58856083dee29d2cec5b484439f578e90cd",
+  "payload_sha256": "f93038fd49ace992c09c295284b0aa38ee84eeda08eb02793168915900b8a47b",
+  "human_reviews": 0
+}

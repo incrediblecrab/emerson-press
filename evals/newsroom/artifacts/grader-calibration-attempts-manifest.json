@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "kind": "multi-protocol-model-grader-calibration",
+  "attempts": {
+    "v2": {
+      "planned_calls": 16,
+      "valid_assessments": 14,
+      "passed_controls": 14
+    },
+    "v3": {
+      "planned_calls": 16,
+      "valid_assessments": 13,
+      "passed_controls": 13
+    },
+    "v5": {
+      "planned_calls": 16,
+      "valid_assessments": 14,
+      "passed_controls": 13
+    }
+  },
+  "limitation": "Four parent-authored controls repeated across protocols, models and orientations. Do not pool as independent cases or treat these as human reference articles.",
+  "records": 48,
+  "artifact": "evals/newsroom/artifacts/grader-calibration-attempts.jsonl.xz",
+  "artifact_sha256": "588711f94e214516dd433e7a1b3996538c5aae95c26724e10c34e2cc2c2dcf09",
+  "payload_sha256": "95fdaa94fc7a75ef74f6e06528209bd7c3c59f1b80a4b18207fc46b23355d2a3",
+  "human_reviews": 0
+}

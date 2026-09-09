@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "kind": "pointwise-model-opinions-with-validator-reanalysis",
+  "assessor": "model",
+  "model_calls": 8,
+  "reanalysis_model_calls": 0,
+  "original_valid_assessments": 7,
+  "revalidated_assessments": 8,
+  "distinct_tuning_cases": 1,
+  "held_out_cases": 0,
+  "limitation": "Evidence IDs may appear in the order the judge discusses them. All original model decisions, valid citations and the original rejection are retained. Labels are model opinions, not human evaluations or an efficacy estimate.",
+  "records": 8,
+  "artifact": "evals/newsroom/artifacts/starter-pointwise.jsonl.xz",
+  "artifact_sha256": "399899e20d63238cc48187075da6cf848247950a2956b8f9a29fb31f738c2fc4",
+  "payload_sha256": "7c6a444987c955a19a206909b8a9134db3d697d485bee47637107b041ef8f95b",
+  "human_reviews": 0
+}

@@ -14,12 +14,12 @@ import sys
 from typing import Any
 
 from scripts.modules import (
-    CORE, OPERATIONS, ROOT, DocumentError, Module, digest, module_names,
+    CORE, OPERATIONS, PACK_VARIANTS, ROOT, DocumentError, Module, digest, module_names,
     section_ranges, source_text, token_count, validate_selection,
 )
 
 
-VARIANTS = ("bare-task", "task-only", "legacy-modules", "legacy-quick", "full", "compact")
+VARIANTS = ("bare-task", "task-only", "legacy-modules", "legacy-quick", *PACK_VARIANTS)
 FAILURES = (
     "unsupported_claim", "changed_meaning", "source_identity",
     "invented_verification", "disclosure_or_privacy", "unsafe_action",
@@ -230,7 +230,7 @@ def coverage(root: Path, cases: list[dict]) -> dict:
 def instructions_for(root: Path, case: dict, variant: str) -> tuple[str, dict]:
     require(variant in VARIANTS, "unknown instruction variant")
     operation = case["operation"]
-    if variant in ("full", "compact"):
+    if variant in PACK_VARIANTS:
         from scripts.build import assemble
 
         return assemble(root, case["modules"], operation=operation, variant=variant,
@@ -322,7 +322,7 @@ def compression_evidence(request: dict) -> dict:
     manifest, case = request["manifest"], request["case"]
     contract = manifest.get("contract_sha256")
     require(isinstance(contract, str) and HASH.fullmatch(contract) is not None,
-            "full/compact manifest requires a contract hash")
+            "assembled manifest requires a contract hash")
     safeguards = strings(manifest.get("safeguards"), "manifest safeguards")
     require(sorted(safeguards) == sorted(case["safeguards"]),
             "manifest safeguards do not match the case selection")
@@ -375,6 +375,10 @@ def validate_rendered_pack(text: str, manifest: dict) -> None:
                 break
             start = remaining.rfind(opening, 0, start)
         require(start >= 0, f"{path}: rendered payload does not match its module hash")
+        if manifest["variant"] == "focused":
+            rendered = remaining[start + len(opening):end]
+            require("Detect" not in section_ranges(rendered),
+                    f"{path}: focused payload contains ## Detect")
         remaining = remaining[:start]
     require(digest(remaining) == manifest["contract_sha256"],
             "rendered payload does not match its contract hash")
@@ -423,7 +427,11 @@ def validate_request(root: Path, request: Any) -> dict:
         for name in ("source_sha256", "rendered_sha256"):
             require(isinstance(module.get(name), str) and HASH.fullmatch(module[name]) is not None,
                     f"manifest {name}: invalid hash")
-    if request["variant"] in ("full", "compact"):
+    if request["variant"] == "focused":
+        require(request["operation"] in ("draft", "edit"), "focused supports draft/edit only")
+        require(manifest.get("excluded_sections") == ["Detect"],
+                "focused manifest must declare the omitted Detect sections")
+    if request["variant"] in PACK_VARIANTS:
         compression_evidence(request)
         validate_rendered_pack(request["instructions"], manifest)
     return request

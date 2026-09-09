@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "kind": "unadjudicated-model-newsroom-preferences",
+  "assessor": "model",
+  "distinct_tuning_cases": 1,
+  "held_out_cases": 0,
+  "limitation": "One case, two writer models and four correlated contrasts. Not a powered or human result. The same text received different slop/factual flags in different comparisons; do not pool those as per-article incidence.",
+  "records": 8,
+  "artifact": "evals/newsroom/artifacts/starter-paired-judgments.jsonl.xz",
+  "artifact_sha256": "ceb5d3bee83133635c48ef9017c75bbd8114449d9d6b1a15803c2bc82cda1b75",
+  "payload_sha256": "7b16ba73ba55975f357e4599cc0006b69ee628705da2a53177a07f01c530a290",
+  "human_reviews": 0
+}
