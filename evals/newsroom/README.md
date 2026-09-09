@@ -62,6 +62,9 @@ external verification of every scientific, financial or legal claim.
 The final cross-shard/tuning-family review and power plan remain unfinished.
 Shared programs and conservative template clusters reduce the family count;
 neither the remaining labels nor the source audits prove independence.
+The [mean-inference component](mean-inference.md) documents a finite-sample
+candidate method and its randomization, missingness and independence limits.
+It is not a primary-study registration or a writing result.
 
 The [civic source-review bundle](artifacts/civic-source-review-manifest.json)
 retains the exact before/after packets and index, the unchanged model audit and
