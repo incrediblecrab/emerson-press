@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "kind": "independent-primary-arithmetic-verification",
+  "protocol_sha256": "a6701efdddae8cf8f4fd4c6944f5da65c64b2dbfb41b0975b0f9acbad9176574",
+  "report_sha256": "586902ab1c59ed4b0cb32efb32570bd84081728983f865fc3aa62e10b61472b9",
+  "raw_assessments_reparsed": 1202,
+  "word_counts_checked": 438,
+  "families": 212,
+  "mean_bound_fractions": [
+    "869/1696",
+    "889/1696"
+  ],
+  "auxiliary_success_bounds": [
+    101,
+    103
+  ],
+  "independently_inverted_ci95": [
+    0.4075743774851446,
+    0.555272141568997
+  ],
+  "statistical_signal": false,
+  "human_reviews": 0,
+  "qualification": "Independent arithmetic and raw-value checks, not independent human opinions or proof of source truth."
+}

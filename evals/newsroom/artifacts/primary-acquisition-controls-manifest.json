@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "kind": "primary-acquisition-control-files-not-model-responses",
+  "protocol_sha256": "a6701efdddae8cf8f4fd4c6944f5da65c64b2dbfb41b0975b0f9acbad9176574",
+  "report_sha256": "586902ab1c59ed4b0cb32efb32570bd84081728983f865fc3aa62e10b61472b9",
+  "model_responses_in_this_bundle": 0,
+  "limitation": "Execution plans, initial summaries, continuation history and disclosed deviations; not extra observations.",
+  "records": 9,
+  "artifact": "evals/newsroom/artifacts/primary-acquisition-controls.jsonl.xz",
+  "artifact_sha256": "802f7169fcd3cb7bf015dd75b2ad86de22ad82fca08673abc6d48d25af4471f1",
+  "payload_sha256": "f3f60c7c28588f033f9edb9bc27ef65aa7d0a2f20ce5e6860f1361a7bd784a49",
+  "human_reviews": 0
+}

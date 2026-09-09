@@ -5,6 +5,21 @@ AI-style prose and improves the specificity, progression and natural voice of
 a newspaper story. AP supplies mechanics. Factual fidelity is a separate guardrail,
 not the entire definition of good writing.
 
+## Completed primary finding
+
+The [registered primary result](primary-results.md) **did not establish a mean
+preference gain or removal of noticeable generic prose**. Full won 167 judgments,
+bare won 152, 114 tied and five preferences were missing. The frozen
+family-weighted analysis gave a randomized 95% interval of [0.4076, 0.5553],
+including the neutral score of 0.5.
+
+The judges agreed exactly on 73 of 214 completely assessed pairs (34.1%).
+Pointwise ratings included 11 salient labels for full and six for bare, with
+60 and 47 missing ratings respectively; none of the articles with both ratings
+was called salient by both judges. Missingness bounds do not establish either
+a slop reduction or a worsening. All outputs, failed judgments and the
+operational continuation are retained, with no human-review claim.
+
 ## Comparison and evidence
 
 `bare-task` supplies the same ordinary brief and reporting packet without any
@@ -12,8 +27,9 @@ repository writing contract or modules. `task-only` adds the repository contract
 `full` and `compact` add their corresponding press recipes. A comparison against
 `task-only` alone cannot establish the effect of using the repository.
 
-The new corpus includes [12 tuning stories](tuning-index.json) and a planned
-220-case primary collection whose independent-family count is still under review.
+The corpus includes [12 tuning stories](tuning-index.json) and 220 candidate
+primary packets. The completed source/family review selected
+[219 primary cases in 212 clusters](primary-selection.json).
 These are substantial news updates, explainers and reported features, not UI
 labels or citation exercises. A rich
 packet should support the requested length without padding; nonessential facts
@@ -46,7 +62,8 @@ Complete transport coverage is not a quality result.
 Case count is not independent sample size. Reused events and templates must stay
 in the same family and split. Freeze the actual family map, candidate recipe,
 model settings, primary contrast, grading protocol and statistical plan before
-any primary held-out generation. No such held-out writing result is available yet.
+any primary held-out generation. The completed primary result is reported
+separately; these earlier tuning outputs are not additional primary observations.
 
 All 220 input packets have received bounded within-shard model source reviews
 and parent checks of coverage, source bindings and recorded changes. This is not
@@ -78,16 +95,15 @@ independent findings. The bounded audit did not fully compare every pair.
 Earlier within-shard archives retain their historical index hashes unchanged.
 
 Source eligibility and the [primary execution protocol](primary-protocol.json)
-are now frozen, before primary writing. Each family has one assigned writer:
+were frozen before primary writing. Each family had one assigned writer:
 106 families per model, comprising 110 cases for GPT-6 Astra and 109 for Claude
 Sonnet 5. Both models judge every available pair and each article. The sole
 primary contrast is full versus genuine `bare-task`.
 
-The fixed plan calls for **438 writing responses, 438 paired judgments and 876
-pointwise judgments**. These are planned calls, not completed outputs or
-independent sample sizes. The [prepared-input archive](artifacts/primary-prepared-writing-manifest.json)
-preserves all 438 exact writing requests. No primary writing result is available
-at registration.
+The fixed plan specified **438 writing calls, 438 paired-judgment calls and 876
+pointwise-judgment calls**, all now attempted once. These are not independent
+sample sizes. The [prepared-input archive](artifacts/primary-prepared-writing-manifest.json)
+preserves all 438 exact writing requests, published before model outcomes.
 
 All **438 planned writing responses have now been captured**, with 219 complete
 full/bare pairs and no missing writing records. The [writing archive](artifacts/primary-writing-manifest.json)
@@ -96,16 +112,17 @@ the source/model bindings and whole-response lengths. [Every unchanged draft is
 readable](examples/primary/README.md). This is complete writing acquisition, not
 an editorial-quality finding.
 
-All 1,314 judgment requests were prepared without missing writing inputs. The
-registered preference and pointwise acquisition is in progress; raw invalid
-judgments are retained, not repaired or selectively requested again. No primary
-effectiveness conclusion is available yet.
+All 1,314 judgment requests were prepared without missing writing inputs.
+Acquisition finished with 1,202 valid assessments, 109 format failures and three
+provider-filter failures. No jobs remained untouched; failed ratings were not
+repaired or selectively requested again. The [full report](primary-results.md)
+separates preference, pointwise slop, fidelity allegations and measured lengths.
 
 The first judging pass stopped at its three-failure circuit breaker after
 provider content filters blocked three Claude assessments of one biosafety
 packet. It retained 689 valid assessments and 61 format failures, leaving 561
 jobs untouched. The [recorded operational deviation](artifacts/primary-continuation-01.json)
-permits first attempts for those original untouched jobs, without retrying
+permitted first attempts for those original untouched jobs, without retrying
 filtered/failed jobs, changing models or prompts, replacing ratings or
 renormalizing missing weights. No efficacy result informed that decision.
 

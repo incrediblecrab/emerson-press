@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "kind": "registered-primary-model-judgment-slots",
+  "assessment_kind": "preference",
+  "protocol_sha256": "a6701efdddae8cf8f4fd4c6944f5da65c64b2dbfb41b0975b0f9acbad9176574",
+  "report_sha256": "586902ab1c59ed4b0cb32efb32570bd84081728983f865fc3aa62e10b61472b9",
+  "planned_slots": 438,
+  "valid_assessments": 433,
+  "file_encoding": "Exact UTF-8 JSON artifact text; parse files[name].source_text to recover values.",
+  "limitation": "Raw model opinions, including all missing/failed slots; not human verification or an authorship detector.",
+  "records": 438,
+  "artifact": "evals/newsroom/artifacts/primary-preference.jsonl.xz",
+  "artifact_sha256": "bddbc991b7979afc086a9d6caee984eaeabc79593d03b69b2c004a896e90ff00",
+  "payload_sha256": "06767a3b86c15445fd9b07abd2fdac2c13e309788ffe78c5b064724f5d1b6ee6",
+  "human_reviews": 0
+}

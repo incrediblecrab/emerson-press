@@ -6,6 +6,8 @@ The newsroom target is the specificity, editorial judgment and unforced voice as
 
 A fluent fabrication fails. A good existing passage may need no change. Familiar words, formal language, em dashes and three-item lists are not defects by themselves.
 
+Use these as task-specific editorial guidance, not an automatic quality upgrade.
+
 ## Use the instructions
 
 The Markdown files are the product. You do not need to install anything to use them.
@@ -87,8 +89,8 @@ The [model-only tuning pilot](evals/synthetic/README.md) retains its actual resp
 
 The modern newsroom tuning result is mixed and judge-dependent; it does not establish an overall gain or slop elimination. A separate [scoped-accuracy revision pilot](evals/newsroom/README.md#source-checking-and-the-scoped-revision) preserved the tested warnings but did not establish better prose than the earlier recipe. Earlier results must not be attributed to the revised payload.
 
-The [registered primary study](evals/newsroom/primary-protocol.json) has captured all 438 planned drafts across 219 cases and 212 family clusters. [Every unchanged draft is available](evals/newsroom/examples/primary/README.md). The fixed 1,314-judgment phase is in progress; complete writing acquisition is not evidence that the instructions improve prose.
+The [completed primary backtest](evals/newsroom/primary-results.md) covered 438 drafts across 219 cases and 212 family clusters. Full won 167 judgments, bare won 152, 114 tied and five preferences were missing. The preregistered randomized 95% mean-preference interval, [0.4076, 0.5553], included the neutral score of 0.5. Judges agreed on only 73/214 completely assessed pairs. The study did not establish a preference gain or elimination of noticeable slop; [every unchanged draft](evals/newsroom/examples/primary/README.md) and all failed judgments remain available.
 
-No powered or human-reviewed editorial-superiority result is established. A compact default must not be promoted on authoring checks or invented scores.
+Full remains the assembler's existing default, not an empirically established best recipe. Compact was not the primary contrast and is not promoted by this result. No human-reviewed editorial-superiority claim is established.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for source maintenance, generated artifacts and regression checks. Copyrighted working texts in `raw-data/` must remain untracked and out of prompt exports. Existing file-specific attribution and license notices still apply; no blanket license is inferred from them.
