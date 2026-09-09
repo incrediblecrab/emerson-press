@@ -50,6 +50,20 @@ Each case has exactly these fields:
 `required_facts` references fact IDs; `forbidden_additions` and `preserve` are
 lists of human-readable requirements. `expected_action` can match the operation,
 or be `flag_missing_evidence`; `no_change` is permitted for edit/review only.
+
+Make mandatory inclusions explicit in the writer's actual `task`, not only in
+grader metadata. In a drafting case, a source quotation's wording is protected
+when quoted; listing it does not by itself require the entire quotation to appear.
+Faithful partial quotation and open paraphrase are valid unless the brief
+explicitly requires verbatim inclusion. Distinguish task coverage from invented
+facts or changed meaning. For editing cases, preserve the information and wording
+that the requested scope actually protects.
+
+A synthetic reporting packet may still be a fixed source record. Say so in the
+common task brief when additional reported events, scenes, quotations or reporting
+activity are not permitted. This is a source boundary shared by every condition,
+not treatment-specific anti-slop guidance. Preserve earlier captures and disclose
+any later change to a brief or grading interpretation rather than rewriting results.
 Unknown fields, wrong types, duplicate JSON keys/IDs, missing fact references,
 bad paths and incompatible genre/citation/reader/interface selections are errors.
 Safeguards must exist and cannot redundantly select the primary domain.

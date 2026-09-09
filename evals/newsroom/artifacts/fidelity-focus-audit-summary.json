@@ -1,0 +1,409 @@
+{
+  "schema_version": 1,
+  "kind": "parent-adjudicated-diagnostic-fidelity-subset",
+  "assessor": "model",
+  "human_reviews": 0,
+  "agent_model": "claude-sonnet-4.6",
+  "parent_model": "gpt-6-astra",
+  "scope": "All existing flags in the first two lexicographic tuning cases; a diagnostic subset, not a full-cohort factual audit.",
+  "input_seal_sha256": "5d8b3f80b83d0e8a094f0e5f8dcb1259d07abc312bb9f7b94354d226a9a3526a",
+  "input_file_sha256": "b37a3e3eb1621f6f474fde6f0cf8d9eda4db8fae5893603ea7942d669ec294c7",
+  "agent_report_file_sha256": "32c98fc0084cfca74b2346d66ff185d094a8cb4cfbb0b871c8d94e2aed4d7941",
+  "articles": 7,
+  "case_families": 2,
+  "flags": 32,
+  "grouped_findings": 20,
+  "agent_flag_counts": {
+    "supported": 28,
+    "coverage_only": 4
+  },
+  "parent_flag_counts": {
+    "supported": 27,
+    "coverage_only": 4,
+    "unsupported": 1
+  },
+  "parent_grouped_counts": {
+    "supported": 17,
+    "coverage_only": 2,
+    "unsupported": 1
+  },
+  "corrections": [
+    {
+      "flag_ids": [
+        "pair-0008-a-02",
+        "pair-0009-b-03"
+      ],
+      "kind": "restore_literal_context",
+      "reason": "The agent joined literal fragments with [...]. Parent evidence includes the complete intervening source text instead."
+    },
+    {
+      "flag_ids": [
+        "pair-0008-a-03"
+      ],
+      "kind": "restore_original_whitespace",
+      "reason": "The agent flattened a paragraph break. Parent evidence retains the original whitespace."
+    },
+    {
+      "flag_ids": [
+        "pair-0008-a-03"
+      ],
+      "kind": "reject_partial_quote_failure",
+      "agent_verdict": "supported",
+      "parent_verdict": "unsupported",
+      "reason": "The article openly paraphrases the speaker's age and quotes the two remaining sentences faithfully. The visible brief does not require the complete three-sentence quotation. Selecting a faithful partial quote is not a fidelity failure merely because the full source quote appears in hidden preservation metadata."
+    },
+    {
+      "flag_ids": [
+        "pair-0010-a-01",
+        "pair-0012-a-01"
+      ],
+      "kind": "restore_literal_context",
+      "reason": "The agent joined literal fragments with [...]. Parent evidence includes the complete intervening source text instead."
+    }
+  ],
+  "findings": [
+    {
+      "article_id": "f08055964ac3783ec97c981990d79842c36eca914344ed9f2d0dd09af8e9c58a",
+      "flag_ids": [
+        "pair-0001-a-01",
+        "pair-0002-b-03"
+      ],
+      "agent_verdict": "supported",
+      "parent_verdict": "supported",
+      "literal_article_excerpt": "\"These cases often turn on how you define the relevant market and whether the conduct actually excluded rivals, as opposed to reflecting legitimate business terms,\" Trent said in an interview, characterizing the general challenge such claims face rather than commenting on the specifics of this complaint.",
+      "source_evidence": [
+        {
+          "fact_id": "f14",
+          "excerpt": "Daniel Trent, an antitrust professor at fictional Fairhaven Law School who is not involved in the case, described the legal theory as plausible but said exclusive dealing claims in digital markets can be difficult to prove."
+        }
+      ],
+      "parent_reason": "f14 provides only a paraphrase of Trent's assessment; the article invents a specific direct quotation about market definition and legitimate business terms and claims it came from an interview. Neither the quoted language nor any interview is in the packet."
+    },
+    {
+      "article_id": "f08055964ac3783ec97c981990d79842c36eca914344ed9f2d0dd09af8e9c58a",
+      "flag_ids": [
+        "pair-0001-a-02",
+        "pair-0002-b-04"
+      ],
+      "agent_verdict": "supported",
+      "parent_verdict": "supported",
+      "literal_article_excerpt": "The lawsuit is the latest in a series of state and federal challenges to dominant technology and payments companies over the structure of digital marketplace contracts. Legal experts said the outcome could influence how other states approach similar investigations into exclusive dealing arrangements between payment processors and app stores.",
+      "source_evidence": [],
+      "parent_reason": "No fact in f1–f20 establishes a series of related enforcement challenges or attributes a forecast about this case's influence to legal experts. Both claims are fabricated context with no packet basis."
+    },
+    {
+      "article_id": "f08055964ac3783ec97c981990d79842c36eca914344ed9f2d0dd09af8e9c58a",
+      "flag_ids": [
+        "pair-0001-a-03",
+        "pair-0002-b-05"
+      ],
+      "agent_verdict": "supported",
+      "parent_verdict": "supported",
+      "literal_article_excerpt": "Nexum has not yet filed a formal response in court. A scheduling conference before Judge Fontaine has not been set, according to court records.",
+      "source_evidence": [
+        {
+          "fact_id": "f16",
+          "excerpt": "The case is assigned to U.S. District Judge Harriet Fontaine."
+        }
+      ],
+      "parent_reason": "f16 supplies only the judge assignment. The packet provides no docket review, response status, or scheduling information. 'According to court records' invents a verification source; both procedural assertions are unsupported."
+    },
+    {
+      "article_id": "f08055964ac3783ec97c981990d79842c36eca914344ed9f2d0dd09af8e9c58a",
+      "flag_ids": [
+        "pair-0002-b-01"
+      ],
+      "agent_verdict": "supported",
+      "parent_verdict": "supported",
+      "literal_article_excerpt": "\"We lost five signed partnership agreements after Nexum applied pressure on our distribution partners,\" Jin said.",
+      "source_evidence": [
+        {
+          "fact_id": "f8",
+          "excerpt": "ClearPay CEO Amanda Jin said her company had \"lost five signed partnership agreements after Nexum applied pressure on our distribution partners.\""
+        }
+      ],
+      "parent_reason": "The packet quotes a fragment beginning 'lost five signed partnership agreements'; the article adds 'We' inside the quotation marks. The preserve substring is present and the factual meaning is unchanged, but the verbatim record is altered by a word not in the supplied quoted fragment. Narrow verbatim issue with no meaning change."
+    },
+    {
+      "article_id": "f08055964ac3783ec97c981990d79842c36eca914344ed9f2d0dd09af8e9c58a",
+      "flag_ids": [
+        "pair-0002-b-02"
+      ],
+      "agent_verdict": "supported",
+      "parent_verdict": "supported",
+      "literal_article_excerpt": "though that closure did not include any finding that the conduct was lawful.",
+      "source_evidence": [
+        {
+          "fact_id": "f10",
+          "excerpt": "The Federal Trade Commission closed a 2022 investigation into Nexum's app store practices without bringing an enforcement action; the packet supplies no finding that the conduct was lawful."
+        }
+      ],
+      "parent_reason": "f10's second clause is an authorial packet-availability note ('the packet supplies no finding'); the article converts this into a categorical assertion about the historical FTC closure itself ('did not include any finding'). The packet's absence of a finding does not warrant that stronger claim about the agency's action. Narrow technical issue; practical significance is low."
+    },
+    {
+      "article_id": "6c299f2ddd52732f0b5ba5d971a271276088f3b771d2d5ff59a2f4044ef11577",
+      "flag_ids": [
+        "pair-0001-b-01"
+      ],
+      "agent_verdict": "supported",
+      "parent_verdict": "supported",
+      "literal_article_excerpt": "\"The claims misread our contracts and misunderstand how competitive payment markets actually work,\" he said, adding that the company would defend the case vigorously.",
+      "source_evidence": [
+        {
+          "fact_id": "f4",
+          "excerpt": "Nexum spokesperson Paul Sterling said the claims \"misread our contracts and misunderstand how competitive payment markets actually work\" and said the company would defend the case vigorously."
+        }
+      ],
+      "parent_reason": "In f4, 'The claims' is narrative framing outside the quoted fragment; the article moves it inside the quotation marks, extending the verbatim string with words not in the supplied quote. The preserve requirement substring is met and meaning is unchanged, but the quoted text is widened beyond the packet's quoted fragment. Narrow verbatim issue."
+    },
+    {
+      "article_id": "6c299f2ddd52732f0b5ba5d971a271276088f3b771d2d5ff59a2f4044ef11577",
+      "flag_ids": [
+        "pair-0001-b-02"
+      ],
+      "agent_verdict": "supported",
+      "parent_verdict": "supported",
+      "literal_article_excerpt": "The Federal Trade Commission closed a separate investigation into Nexum's app store practices in 2022 without taking enforcement action.",
+      "source_evidence": [
+        {
+          "fact_id": "f10",
+          "excerpt": "The Federal Trade Commission closed a 2022 investigation into Nexum's app store practices without bringing an enforcement action; the packet supplies no finding that the conduct was lawful."
+        }
+      ],
+      "parent_reason": "f10's 'a 2022 investigation' places the year as a modifier on 'investigation' (when it occurred), not on 'closed' (when it was resolved). The article's 'closed...in 2022' makes a temporal assertion about the closure date that the packet does not supply. Narrow technical distinction; practical significance is low."
+    },
+    {
+      "article_id": "6c299f2ddd52732f0b5ba5d971a271276088f3b771d2d5ff59a2f4044ef11577",
+      "flag_ids": [
+        "pair-0003-a-01"
+      ],
+      "agent_verdict": "supported",
+      "parent_verdict": "supported",
+      "literal_article_excerpt": "\"We lost five signed partnership agreements after Nexum applied pressure on our distribution partners,\" she said.",
+      "source_evidence": [
+        {
+          "fact_id": "f8",
+          "excerpt": "ClearPay CEO Amanda Jin said her company had \"lost five signed partnership agreements after Nexum applied pressure on our distribution partners.\""
+        }
+      ],
+      "parent_reason": "Same verbatim issue as pair-0002-b-01 on a different article. The packet's quoted fragment begins 'lost five signed partnership agreements'; the article adds 'We' inside the quotation marks. Meaning and preserve substring are preserved, but the verbatim record is altered."
+    },
+    {
+      "article_id": "7006892c3f95138f4a45a0d08c666f8ce3259ae629f35fa288d317d86620caeb",
+      "flag_ids": [
+        "pair-0002-a-01",
+        "pair-0003-b-01"
+      ],
+      "agent_verdict": "supported",
+      "parent_verdict": "supported",
+      "literal_article_excerpt": "MEDFORD, Harwick — Harwick State Attorney General Carla Muñoz filed an antitrust lawsuit Monday against Nexum Technologies",
+      "source_evidence": [],
+      "parent_reason": "No fact in f1–f20 supplies a city name within Harwick State. 'MEDFORD' is an invented dateline location. The article's editorial note acknowledges the invention; disclosure does not make the location supported by the reporting record."
+    },
+    {
+      "article_id": "7006892c3f95138f4a45a0d08c666f8ce3259ae629f35fa288d317d86620caeb",
+      "flag_ids": [
+        "pair-0002-a-02",
+        "pair-0003-b-02"
+      ],
+      "agent_verdict": "supported",
+      "parent_verdict": "supported",
+      "literal_article_excerpt": "the agency did not state at the time that the conduct was lawful.",
+      "source_evidence": [
+        {
+          "fact_id": "f10",
+          "excerpt": "The Federal Trade Commission closed a 2022 investigation into Nexum's app store practices without bringing an enforcement action; the packet supplies no finding that the conduct was lawful."
+        }
+      ],
+      "parent_reason": "Same structural issue as pair-0002-b-02 on article f08055964. The packet-level note ('the packet supplies no finding') is converted into a categorical assertion about what the FTC said or did not say ('the agency did not state'). The packet does not warrant that claim about the agency's own historical record. Narrow technical issue."
+    },
+    {
+      "article_id": "b93e63e3ec9fa6d39cacf87fa3f60da6be58cca14faebcf9295de8d44fc3ae96",
+      "flag_ids": [
+        "pair-0007-a-01",
+        "pair-0009-a-01"
+      ],
+      "agent_verdict": "supported",
+      "parent_verdict": "supported",
+      "literal_article_excerpt": "More than three years later, a city-backed retraining program meant to answer that loss has moved roughly two-thirds of its graduates into new jobs — at wages that mostly fall well short of what the plant paid.",
+      "source_evidence": [
+        {
+          "fact_id": "f8",
+          "excerpt": "The average hourly wage in jobs obtained by Hartwell Works completers is $22.50; the average hourly wage at Keystone Motors before closure was $28.40 — a difference of $5.90 per hour."
+        }
+      ],
+      "parent_reason": "f8 supplies aggregate averages only. 'Mostly fall well short' asserts a majority distributional pattern among individual graduates' wages that the two averages cannot establish; some completers may earn at or above the Keystone average wage."
+    },
+    {
+      "article_id": "b93e63e3ec9fa6d39cacf87fa3f60da6be58cca14faebcf9295de8d44fc3ae96",
+      "flag_ids": [
+        "pair-0007-a-02",
+        "pair-0009-a-02"
+      ],
+      "agent_verdict": "supported",
+      "parent_verdict": "supported",
+      "literal_article_excerpt": "The $14.2 million effort, funded through Michigan Department of Labor and federal Workforce Innovation and Opportunity Act grants, has drawn interest from other communities.",
+      "source_evidence": [
+        {
+          "fact_id": "f19",
+          "excerpt": "The Michigan Department of Labor said Hartwell Works had the highest per-enrollee completion rate of any plant-closure response program it had funded in the past decade."
+        },
+        {
+          "fact_id": "f20",
+          "excerpt": "Alvarado said the city had applied for a federal Economic Adjustment Assistance grant to fund a three-year study of the Hartwell Works model and publish a replication guide for other communities."
+        }
+      ],
+      "parent_reason": "f19 is a state comparison metric; f20 establishes the city's own outbound grant application to fund a future guide. Neither fact establishes that other communities have already expressed inbound interest in the program. 'Has drawn interest' is an unsupported added claim."
+    },
+    {
+      "article_id": "9587add90ecfff28f97dd5abbfd74e4fe3278fd6cefc77fa3f18bee35bc1c83c",
+      "flag_ids": [
+        "pair-0007-b-01",
+        "pair-0008-b-01"
+      ],
+      "agent_verdict": "supported",
+      "parent_verdict": "supported",
+      "literal_article_excerpt": "the city's flagship response to that shock, a retraining program called Hartwell Works, is finishing its run with the best completion rate of any plant-closure program the state has funded in a decade.",
+      "source_evidence": [
+        {
+          "fact_id": "f22",
+          "excerpt": "The Hartwell Works program has been renewed for an additional two years with continued state funding; program director Carmen Ruiz expects to enroll an additional 200 workers from other industries facing layoffs."
+        }
+      ],
+      "parent_reason": "f22 explicitly states the program was renewed for two more years. 'Is finishing its run' directly contradicts this renewal and misstates the program's status at the April 9, 2025 snapshot. The same article later correctly reports the renewal, creating an internal contradiction that confirms the opening is factually wrong."
+    },
+    {
+      "article_id": "9587add90ecfff28f97dd5abbfd74e4fe3278fd6cefc77fa3f18bee35bc1c83c",
+      "flag_ids": [
+        "pair-0007-b-02"
+      ],
+      "agent_verdict": "supported",
+      "parent_verdict": "supported",
+      "literal_article_excerpt": "It has also left many graduates earning nearly $6 less an hour than they did on the assembly line.",
+      "source_evidence": [
+        {
+          "fact_id": "f8",
+          "excerpt": "The average hourly wage in jobs obtained by Hartwell Works completers is $22.50; the average hourly wage at Keystone Motors before closure was $28.40 — a difference of $5.90 per hour."
+        },
+        {
+          "fact_id": "f10",
+          "excerpt": "James Petrov, 52, worked at Keystone for 19 years, earning $31 an hour; he completed the Hartwell Works CNC operator track in 2023 and was hired at Clearline Manufacturing at $23 an hour."
+        }
+      ],
+      "parent_reason": "f8 compares aggregate averages ($22.50 program average vs $28.40 Keystone average). 'Than they did on the assembly line' asserts a comparison between each individual graduate's new wage and their own prior Keystone wage — individual-level data the packet does not supply. f10 gives Petrov's individual gap ($23 vs $31) but a single case cannot establish the distributional claim 'many graduates.'"
+    },
+    {
+      "article_id": "9587add90ecfff28f97dd5abbfd74e4fe3278fd6cefc77fa3f18bee35bc1c83c",
+      "flag_ids": [
+        "pair-0007-b-03",
+        "pair-0008-b-02"
+      ],
+      "agent_verdict": "supported",
+      "parent_verdict": "supported",
+      "literal_article_excerpt": "For Alvarado, the program remains a qualified success. \"We kept people working,\" she said. \"We did not keep them whole.\"",
+      "source_evidence": [
+        {
+          "fact_id": "f9",
+          "excerpt": "Hartwell Mayor Sandra Alvarado said: \"Sixty-four percent would be a good graduation rate at a lot of colleges. For a workforce-crisis response, I do not know if it is enough.\""
+        },
+        {
+          "fact_id": "f20",
+          "excerpt": "Alvarado said the city had applied for a federal Economic Adjustment Assistance grant to fund a three-year study of the Hartwell Works model and publish a replication guide for other communities."
+        }
+      ],
+      "parent_reason": "Neither f9 nor f20 contains 'We kept people working' or 'We did not keep them whole.' Both quotations are invented and attributed to Alvarado. The framing that Alvarado declared the program 'a qualified success' is likewise not in the packet."
+    },
+    {
+      "article_id": "975da29d192467779d40d33c36fff66c17137ea38920b71be71fc2f5949c9b8d",
+      "flag_ids": [
+        "pair-0008-a-01",
+        "pair-0009-b-02"
+      ],
+      "agent_verdict": "supported",
+      "parent_verdict": "supported",
+      "literal_article_excerpt": "the 1,400 additional supplier and service jobs economists estimate the closure cost this city of about 43,000",
+      "source_evidence": [
+        {
+          "fact_id": "f2",
+          "excerpt": "Keystone Motors closed the Hartwell plant on December 31, 2021, eliminating 2,800 direct jobs; economists estimated the closure cost the region an additional 1,400 supplier and service jobs."
+        }
+      ],
+      "parent_reason": "f2 assigns the 1,400 job estimate to 'the region'; the article substitutes 'this city,' narrowing the geographic scope of the estimate from a multi-municipality region to the city of Hartwell alone. This is a material factual change, not a harmless paraphrase."
+    },
+    {
+      "article_id": "975da29d192467779d40d33c36fff66c17137ea38920b71be71fc2f5949c9b8d",
+      "flag_ids": [
+        "pair-0008-a-02",
+        "pair-0009-b-03"
+      ],
+      "agent_verdict": "coverage_only",
+      "parent_verdict": "coverage_only",
+      "literal_article_excerpt": "James Petrov spent 19 years running machines at the Keystone Motors plant here, earning $31 an hour before the assembly line went dark for good on Dec. 31, 2021. Now he runs a CNC machine at Clearline Manufacturing for $23 an hour.\n\n\"I am working. My house is paid for,\" Petrov, 52, said. \"But I will not make what I made at Keystone again.\"\n\nHis experience captures the mixed record of Hartwell Works, the city-backed retraining program built to catch the roughly 2,800 workers Keystone laid off",
+      "source_evidence": [
+        {
+          "fact_id": "f10",
+          "excerpt": "James Petrov, 52, worked at Keystone for 19 years, earning $31 an hour; he completed the Hartwell Works CNC operator track in 2023 and was hired at Clearline Manufacturing at $23 an hour."
+        }
+      ],
+      "parent_reason": "f10 is a required fact; the article presents Petrov's employment history without explicitly stating he completed the Hartwell Works CNC operator track in 2023. The article implies his connection through story context ('His experience captures the mixed record of Hartwell Works') but does not assert a false fact about him. This is a required-fact omission, not a changed or invented claim. The judge's 'changed_meaning' category overstates the issue; the correct characterization is a coverage failure."
+    },
+    {
+      "article_id": "975da29d192467779d40d33c36fff66c17137ea38920b71be71fc2f5949c9b8d",
+      "flag_ids": [
+        "pair-0008-a-03"
+      ],
+      "agent_verdict": "supported",
+      "parent_verdict": "unsupported",
+      "literal_article_excerpt": "One, he said, was 58.\n\n\"He told me the math didn't work,\" Petrov said. \"I don't think he was wrong.\"",
+      "source_evidence": [
+        {
+          "fact_id": "f21",
+          "excerpt": "He said of one: \"He was 58. He told me the math didn't work. I don't think he was wrong.\""
+        }
+      ],
+      "parent_reason": "The article openly paraphrases the speaker's age and quotes the two remaining sentences faithfully. The visible brief does not require the complete three-sentence quotation. Selecting a faithful partial quote is not a fidelity failure merely because the full source quote appears in hidden preservation metadata."
+    },
+    {
+      "article_id": "975da29d192467779d40d33c36fff66c17137ea38920b71be71fc2f5949c9b8d",
+      "flag_ids": [
+        "pair-0009-b-01"
+      ],
+      "agent_verdict": "supported",
+      "parent_verdict": "supported",
+      "literal_article_excerpt": "James Petrov spent 19 years running machines at the Keystone Motors plant here, earning $31 an hour before the assembly line went dark for good on Dec. 31, 2021. Now he runs a CNC machine at Clearline Manufacturing for $23 an hour.",
+      "source_evidence": [
+        {
+          "fact_id": "f10",
+          "excerpt": "James Petrov, 52, worked at Keystone for 19 years, earning $31 an hour; he completed the Hartwell Works CNC operator track in 2023 and was hired at Clearline Manufacturing at $23 an hour."
+        }
+      ],
+      "parent_reason": "f10 says Petrov 'worked at Keystone for 19 years' but does not specify his role; 'running machines' invents a job description. 'Runs a CNC machine at Clearline' is a plausible inference from his CNC operator track completion and Clearline hiring but is not stated in the packet and is presented as established fact. The Keystone role description is clearly unsupported; the Clearline role description is an unsupported inference."
+    },
+    {
+      "article_id": "923fb9c339151dcba29a04c5e39ff51f04ae457e1cdf098ae4b7145623bf1d25",
+      "flag_ids": [
+        "pair-0010-a-01",
+        "pair-0012-a-01"
+      ],
+      "agent_verdict": "coverage_only",
+      "parent_verdict": "coverage_only",
+      "literal_article_excerpt": "James Petrov spent 19 years at Keystone Motors, earning $31 an hour before the assembly plant closed. He completed a machining certification in 2023 and found work at Clearline Manufacturing. His new wage was $23 an hour.\n\n“I am working. My house is paid for. But I will not make what I made at Keystone again,” said Petrov, 52.\n\nHis experience captures both the gains and limits of Hartwell Works",
+      "source_evidence": [
+        {
+          "fact_id": "f9",
+          "excerpt": "Hartwell Mayor Sandra Alvarado said: \"Sixty-four percent would be a good graduation rate at a lot of colleges. For a workforce-crisis response, I do not know if it is enough.\""
+        }
+      ],
+      "parent_reason": "Mayor Alvarado's verbatim quotation (f9) is both a required fact and a preservation requirement; the article never introduces the mayor or includes her quote at any point in the piece. This is a required-fact omission, not a fabrication or a privacy issue. The judge's category 'disclosure_or_privacy' (pair-0010-a-01) is inapplicable; 'unsupported_claim' (pair-0012-a-01) also does not fit an omission. The underlying observation — the quote is absent — is correct."
+    }
+  ],
+  "limitations": [
+    "Two-case diagnostic subset of existing model flags, not an exhaustive search or whole-cohort error rate.",
+    "Repeated flags can refer to the same passage; supported flag counts are not distinct factual-error counts.",
+    "Supported concerns range from invented reporting to narrow quote, time and scope issues; their severity is not uniform.",
+    "The original fictional briefs did not explicitly close the reporting record. This audit applies record fidelity, not an unambiguous finding about every writer's interpretation of creative license.",
+    "Both audit and arbitration are automated opinions, not human or independent external verification.",
+    "The agent compared a pretty-printed whole-file hash with the canonical content seal. Those intentionally differ; the parent verified both separately and found no seal mismatch.",
+    "Original agent output, elisions and verdicts remain retained; parent corrections are separate and do not rewrite raw judge opinions."
+  ]
+}

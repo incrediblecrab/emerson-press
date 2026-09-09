@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "kind": "automated-fidelity-audit-bundle",
+  "articles": 7,
+  "case_families": 2,
+  "flag_records": 32,
+  "record_shape": "One bundle containing input, raw agent report and separate parent arbitration.",
+  "limitation": "Thirty-two repeated flag records on seven articles from two tuning cases; not a full-cohort factual accuracy estimate or human review.",
+  "records": 1,
+  "artifact": "evals/newsroom/artifacts/fidelity-focus-audit.jsonl.xz",
+  "artifact_sha256": "54a761253b0a8456b37d2352a748b79b2c0add514675b9edca936d6b9c77d5c2",
+  "payload_sha256": "c267db4479629c19158f08f8727ca5ca4640ea2df27e0661cf77148f7ef73b5c",
+  "human_reviews": 0
+}

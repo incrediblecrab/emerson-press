@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "kind": "fixed-text-tuning-rater-crossover",
+  "design_sha256": "422e46e4978859e563d58645f317b95ab99fe28357166476ea60d4315daf5dc5",
+  "planned_judgments": 72,
+  "valid_paired": 20,
+  "invalid_paired": 4,
+  "valid_pointwise": 48,
+  "distinct_tuning_cases": 12,
+  "new_writing_responses": 0,
+  "limitation": "All new judge opinions and failures retained. This is a measurement diagnostic on repeated tuning text, not powered efficacy or human review.",
+  "records": 72,
+  "artifact": "evals/newsroom/artifacts/rater-crossover.jsonl.xz",
+  "artifact_sha256": "c3f174dd5b0e3bec30b02321f35010e04310a7852c99c4c088f8d140172f5d58",
+  "payload_sha256": "b986bf330229c7cbf9f8842a14df5cb59d553fcc5da8b43c9620999ac1d9615f",
+  "human_reviews": 0
+}

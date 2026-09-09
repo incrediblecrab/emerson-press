@@ -1,0 +1,356 @@
+{
+  "schema_version": 1,
+  "kind": "prospective-instruction-scope-clarification-tuning",
+  "registered_at": "2026-09-09T07:05:45.340627+00:00",
+  "freeze_sha256": "83cf0ee9e608755beb45660608f64e1056df3ced0966a751bf94fe96280259cf",
+  "changed_sources": {
+    "core/accuracy.md": {
+      "before": "6ffe158fd9409998ed722104e5c6c7e5bafd9cd0fdf2f982cc48aa81df3b4699",
+      "after": "64108ef30354114a376f3bbb3717ace2636da7f5c50db0f22de96503bc5c1a1c"
+    },
+    "prompts/task.md": {
+      "before": "716cadd63dc2ed81c3dadd17b660a1768abef97db0331d5ea02f585a53b3e3ec",
+      "after": "149d6475f9c16a3d67dfafffe3a96b18fa25b8611fb2833f8c35309b2e7a4c39"
+    }
+  },
+  "conditions": {
+    "reference-full": "Exact full requests frozen before the source-use and caveat clarification.",
+    "scoped-full": "Full recipe with revised task contract and accuracy guidance.",
+    "bare-task": "Zero repository instructions; shared fixed-record brief, newsroom cases only."
+  },
+  "model_settings": {
+    "claude-sonnet-5": {
+      "client_mode": "empty",
+      "generation_seed": "service-default-uncontrolled",
+      "model_selection": "claude-sonnet-5",
+      "reasoning_effort": "low",
+      "runtime_version": "1.0.84-3",
+      "sdk_version": "1.0.13",
+      "session_options": {
+        "available_tools": [],
+        "enable_config_discovery": false,
+        "enable_file_hooks": false,
+        "enable_host_git_operations": false,
+        "enable_managed_settings": true,
+        "enable_session_store": false,
+        "enable_skills": false,
+        "excluded_tools": [
+          "builtin:*",
+          "mcp:*",
+          "custom:*"
+        ],
+        "infinite_sessions": {
+          "enabled": false
+        },
+        "memory": {
+          "enabled": false
+        },
+        "skip_custom_instructions": true,
+        "system_message": {
+          "content": "You are a text-only writing assistant. Carry out the supplied drafting, editing, or reviewing task. Tools, browsing, persistent memory and other agents are unavailable. Do not narrate or invent calls to them. Return the requested output.",
+          "mode": "customize",
+          "sections": {
+            "code_change_rules": {
+              "action": "remove"
+            },
+            "guidelines": {
+              "action": "remove"
+            },
+            "last_instructions": {
+              "action": "remove"
+            },
+            "preamble": {
+              "action": "remove"
+            },
+            "tone": {
+              "action": "remove"
+            },
+            "tool_efficiency": {
+              "action": "remove"
+            },
+            "tool_instructions": {
+              "action": "remove"
+            }
+          }
+        }
+      },
+      "system_message_config_sha256": "f11aacb9c176d02e2238aca236fc1fa3809c9c2d445fb96f8c4ff5d47188fe7f",
+      "system_prompt": "neutral writing role; runtime safety and policy sections retained",
+      "temperature": "service-default-uncontrolled",
+      "transport": "github-copilot-sdk",
+      "user_message_wrapper": "runtime current_datetime; effective message captured separately"
+    },
+    "gpt-6-astra": {
+      "client_mode": "empty",
+      "generation_seed": "service-default-uncontrolled",
+      "model_selection": "gpt-6-astra",
+      "reasoning_effort": "low",
+      "runtime_version": "1.0.84-3",
+      "sdk_version": "1.0.13",
+      "session_options": {
+        "available_tools": [],
+        "enable_config_discovery": false,
+        "enable_file_hooks": false,
+        "enable_host_git_operations": false,
+        "enable_managed_settings": true,
+        "enable_session_store": false,
+        "enable_skills": false,
+        "excluded_tools": [
+          "builtin:*",
+          "mcp:*",
+          "custom:*"
+        ],
+        "infinite_sessions": {
+          "enabled": false
+        },
+        "memory": {
+          "enabled": false
+        },
+        "skip_custom_instructions": true,
+        "system_message": {
+          "content": "You are a text-only writing assistant. Carry out the supplied drafting, editing, or reviewing task. Tools, browsing, persistent memory and other agents are unavailable. Do not narrate or invent calls to them. Return the requested output.",
+          "mode": "customize",
+          "sections": {
+            "code_change_rules": {
+              "action": "remove"
+            },
+            "guidelines": {
+              "action": "remove"
+            },
+            "last_instructions": {
+              "action": "remove"
+            },
+            "preamble": {
+              "action": "remove"
+            },
+            "tone": {
+              "action": "remove"
+            },
+            "tool_efficiency": {
+              "action": "remove"
+            },
+            "tool_instructions": {
+              "action": "remove"
+            }
+          }
+        }
+      },
+      "system_message_config_sha256": "f11aacb9c176d02e2238aca236fc1fa3809c9c2d445fb96f8c4ff5d47188fe7f",
+      "system_prompt": "neutral writing role; runtime safety and policy sections retained",
+      "temperature": "service-default-uncontrolled",
+      "transport": "github-copilot-sdk",
+      "user_message_wrapper": "runtime current_datetime; effective message captured separately"
+    }
+  },
+  "writers": {
+    "gpt-6-astra": "openai-gpt",
+    "claude-sonnet-5": "anthropic-claude"
+  },
+  "cases": [
+    {
+      "case_id": "newsroom-tuning-council-rezone",
+      "case_sha256": "b4d1f85bc9590f24eca55e9a46365f05c54426a74e036410ee7cce17ead51461",
+      "source_case_sha256": "04f55f7ce470a8143f8c752806ed06b2d6f0e060f017da56d61ed728255c2ff6",
+      "source_path": "evals/newsroom/cases/newsroom-tuning-council-rezone.json",
+      "family_id": "fam-meridian-rezone",
+      "role": "newsroom",
+      "common_brief_change": "Explicitly closes the fictional reporting record for every condition; no anti-slop directions.",
+      "requests": {
+        "reference-full": {
+          "path": "requests/newsroom-tuning-council-rezone-reference-full.json",
+          "request_sha256": "8fdf8819487576509cd0d999981fba362fb1eab4abcd01ff3a0b61c6b8a755e6"
+        },
+        "bare-task": {
+          "path": "requests/newsroom-tuning-council-rezone-bare-task.json",
+          "request_sha256": "c2b1692664e9f2d6017419fe76bcf12972254db810f554fbdb842ea74c211315"
+        },
+        "scoped-full": {
+          "path": "requests/newsroom-tuning-council-rezone-scoped-full.json",
+          "request_sha256": "5317b8dfc3f32681c947ba68e7dcb36d2441e509e06786f032397c9c7c546464"
+        }
+      }
+    },
+    {
+      "case_id": "newsroom-tuning-grocery-closures",
+      "case_sha256": "4bff0375cdbd4935729bb4e02341b6a64d3a603b5aca27e9fdf6039c21a51b2d",
+      "source_case_sha256": "1331f264915a0dc19e02af36462eaac2de53f72ee1805836bb18816b822583d1",
+      "source_path": "evals/newsroom/cases/newsroom-tuning-grocery-closures.json",
+      "family_id": "fam-vantage-closures",
+      "role": "newsroom",
+      "common_brief_change": "Explicitly closes the fictional reporting record for every condition; no anti-slop directions.",
+      "requests": {
+        "reference-full": {
+          "path": "requests/newsroom-tuning-grocery-closures-reference-full.json",
+          "request_sha256": "d8fbae4a43418765f7e4b9f68875ded25219cb8003256f89cdec31a7aa80b390"
+        },
+        "bare-task": {
+          "path": "requests/newsroom-tuning-grocery-closures-bare-task.json",
+          "request_sha256": "410b5262a6bab87feb4dc2eee71414b5a5443f95692ca4ebf16537747a3cd7a9"
+        },
+        "scoped-full": {
+          "path": "requests/newsroom-tuning-grocery-closures-scoped-full.json",
+          "request_sha256": "5986909a3b4e125572171aec8c756e48064d72464329a83015b372c8fa41f60f"
+        }
+      }
+    },
+    {
+      "case_id": "newsroom-tuning-municipal-bonds",
+      "case_sha256": "242e6849d5907c424264279b5b0fde987923c980455f21af08be3fc5c7e93073",
+      "source_case_sha256": "2b41d11566da0d29ae169f27cc1ec52e7bcc0ddda32c1cb1d4e078914b5eff6c",
+      "source_path": "evals/newsroom/cases/newsroom-tuning-municipal-bonds.json",
+      "family_id": "fam-portfield-muni-bonds",
+      "role": "newsroom",
+      "common_brief_change": "Explicitly closes the fictional reporting record for every condition; no anti-slop directions.",
+      "requests": {
+        "reference-full": {
+          "path": "requests/newsroom-tuning-municipal-bonds-reference-full.json",
+          "request_sha256": "56ec5b92499b327a611a6d3dd51239bc3e49f21182f5f51e65bda2de8f76bb5f"
+        },
+        "bare-task": {
+          "path": "requests/newsroom-tuning-municipal-bonds-bare-task.json",
+          "request_sha256": "f1e68ca51fe30514b841917c86eac5145b7946944b479e8bd15ae4ebe0b16541"
+        },
+        "scoped-full": {
+          "path": "requests/newsroom-tuning-municipal-bonds-scoped-full.json",
+          "request_sha256": "40a51244f617431583aeb18883b8fc01736a73ca19f85db19fb4108de1126b96"
+        }
+      }
+    },
+    {
+      "case_id": "newsroom-tuning-managed-retreat",
+      "case_sha256": "24ff7775762df1f36db31b3dc5c663105e86c9490eb8c5e38ff31ca265f5e83d",
+      "source_case_sha256": "0ca834df74f0b27a6bfebfb9ea08d62990e3318753369771c9a7ac4fb01ed5a8",
+      "source_path": "evals/newsroom/cases/newsroom-tuning-managed-retreat.json",
+      "family_id": "fam-lowland-retreat",
+      "role": "newsroom",
+      "common_brief_change": "Explicitly closes the fictional reporting record for every condition; no anti-slop directions.",
+      "requests": {
+        "reference-full": {
+          "path": "requests/newsroom-tuning-managed-retreat-reference-full.json",
+          "request_sha256": "06dccf63d2edeeed73560143c26713af15f8c94cea452b64a012d7e5ceea0e85"
+        },
+        "bare-task": {
+          "path": "requests/newsroom-tuning-managed-retreat-bare-task.json",
+          "request_sha256": "fb9b36a7b7a9bacde68bc10bbad854b94f9f0d06c6b694fdaefecbbd2fbcb1b4"
+        },
+        "scoped-full": {
+          "path": "requests/newsroom-tuning-managed-retreat-scoped-full.json",
+          "request_sha256": "335f5d2278c5c5844f4ead3a169eb9f49e648e6072827e696b2b7475235fd434"
+        }
+      }
+    },
+    {
+      "case_id": "medical-attributed-uncertainty",
+      "case_sha256": "7a23baba3427daa91806e43c8aa79475e42a49c24f6b3ddbc927212c799031aa",
+      "source_case_sha256": "7a23baba3427daa91806e43c8aa79475e42a49c24f6b3ddbc927212c799031aa",
+      "source_path": "evals/cases/medical-attributed-uncertainty.json",
+      "family_id": "medical-attributed-uncertainty",
+      "role": "regression",
+      "common_brief_change": "none",
+      "requests": {
+        "reference-full": {
+          "path": "requests/medical-attributed-uncertainty-reference-full.json",
+          "request_sha256": "2d53f235dfb7519ca98731d7bd9cc7551f1914a226bc77f3f3a09785b4714ee9"
+        },
+        "scoped-full": {
+          "path": "requests/medical-attributed-uncertainty-scoped-full.json",
+          "request_sha256": "8c5c045ac5c442a3714a0ae2c7f90aff57ffcff230787f20699afcc5d945f653"
+        }
+      }
+    },
+    {
+      "case_id": "legal-staffing-grammar-only",
+      "case_sha256": "8596aff8aa28e105dd70413311297f58cc7798ad52a03b9e72ee934d10cfb6ca",
+      "source_case_sha256": "8596aff8aa28e105dd70413311297f58cc7798ad52a03b9e72ee934d10cfb6ca",
+      "source_path": "evals/cases/legal-staffing-grammar-only.json",
+      "family_id": "legal-staffing-grammar-only",
+      "role": "regression",
+      "common_brief_change": "none",
+      "requests": {
+        "reference-full": {
+          "path": "requests/legal-staffing-grammar-only-reference-full.json",
+          "request_sha256": "a2ba4d59cc5ba3e0402a169bbb289b8cd5fefee20aa6b7c84689aa74179b9486"
+        },
+        "scoped-full": {
+          "path": "requests/legal-staffing-grammar-only-scoped-full.json",
+          "request_sha256": "53834c91c6f4930ad743da9c80fa74e4d3a74525e2fa5ef871736dabb7c0da44"
+        }
+      }
+    },
+    {
+      "case_id": "fiction-stairwell-triad",
+      "case_sha256": "e66d39b13a63766c626f42c94adf017aec94c4fedf2a5f42923746aa9bc7f542",
+      "source_case_sha256": "e66d39b13a63766c626f42c94adf017aec94c4fedf2a5f42923746aa9bc7f542",
+      "source_path": "evals/cases/fiction-stairwell-triad.json",
+      "family_id": "fiction-stairwell-triad",
+      "role": "regression",
+      "common_brief_change": "none",
+      "requests": {
+        "reference-full": {
+          "path": "requests/fiction-stairwell-triad-reference-full.json",
+          "request_sha256": "f33f04bccee839a558df38c5e0853875e21d8d74799acd2286200bb90c8dbe75"
+        },
+        "scoped-full": {
+          "path": "requests/fiction-stairwell-triad-scoped-full.json",
+          "request_sha256": "324e9aa117f802db0035f5ceccdef00b274e11cceb20511d204b4849928f6d99"
+        }
+      }
+    },
+    {
+      "case_id": "press-supported-quote",
+      "case_sha256": "61dd687393e96b377f11126bf69d1d07f81c265d11958580e58b22240bb9dbb3",
+      "source_case_sha256": "61dd687393e96b377f11126bf69d1d07f81c265d11958580e58b22240bb9dbb3",
+      "source_path": "evals/cases/press-supported-quote.json",
+      "family_id": "press-supported-quote",
+      "role": "regression",
+      "common_brief_change": "none",
+      "requests": {
+        "reference-full": {
+          "path": "requests/press-supported-quote-reference-full.json",
+          "request_sha256": "08aa16f094107f8d29aa48caf05075873d918717d10c4d64dac733a158c90c22"
+        },
+        "scoped-full": {
+          "path": "requests/press-supported-quote-scoped-full.json",
+          "request_sha256": "86b8deadd9b6a6b506aecd1c5b0babf5a50d6c6f9ec43b284980be20b5ecd2a2"
+        }
+      }
+    }
+  ],
+  "planned_writing_responses": 40,
+  "newsroom_responses": 24,
+  "regression_responses": 16,
+  "order_seed": 27491,
+  "concurrency": 4,
+  "timeout_seconds": 300,
+  "plan_sha256": "70934aa59131f6e2693fccad19089a4d39d9cdb7d049856c797c07e817033b32",
+  "implementation_sha256": "af5ccb0991f2e0dfe6667bd3a67f6af79d2bf68d6afc69472c0ad1f589f23bd3",
+  "evaluation": {
+    "newsroom": "Both GPT-6 Astra and Claude Sonnet 5 assess scoped-full versus reference-full and scoped-full versus bare, with separate single-article slop/fidelity judgments.",
+    "scope": "No hidden inclusion obligations: assess the visible brief, source meaning and material qualifications; an unused quotation is not automatically a fidelity failure.",
+    "regressions": "Exact requested no-op/grammar artifacts and substantive warning/meaning preservation; not newsroom quality observations.",
+    "opinions": "Paired overall preference and pointwise slop are separate endpoints. Retain disagreements and failures.",
+    "sample": "Four repeated newsroom families; no efficacy p-value, default promotion or human quality claim."
+  },
+  "grading_templates": {
+    "preference": {
+      "path": "evals/newsroom/preference-prompt.md",
+      "sha256": "5e84ce6f056195a09c591986233f617408841f8fde0d33dfe6655e7488b9d5f3"
+    },
+    "pointwise": {
+      "path": "evals/newsroom/source-aware-pointwise-prompt.md",
+      "sha256": "2c4634ede497b270ceed8157eb6defbf6bf72ec50ff6b21801d113d1329eeaed"
+    }
+  },
+  "planned_paired_assessments": 32,
+  "planned_pointwise_assessments": 48,
+  "limitations": [
+    "Four already-seen newsroom families and four older regression scenarios; no independent new efficacy sample.",
+    "Closed-record brief is shared across all newsroom conditions; do not pool these with the earlier ordinary-brief cohort.",
+    "Two recipe conditions share variant=full; external study-condition IDs distinguish instruction revisions without relabeling captured requests.",
+    "The ordinary-brief and closed-record cohorts must not be pooled as if only the library changed.",
+    "This is one bounded revision pilot before the untouched primary corpus; it cannot establish general effectiveness."
+  ],
+  "human_reviews": 0,
+  "held_out_generation": false,
+  "design_sha256": "64ada18f6aa5d0243f11c0d27f31ba43202bf335fa59138ef9e5baa008fbe935"
+}

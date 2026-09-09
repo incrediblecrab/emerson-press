@@ -82,9 +82,9 @@ first recipe in each contrast. Every cell represents the same 12 tuning packets.
 
 That striking difference cannot yet be assigned to the writers: each writer had
 only one judging model, so writer and judge preferences are confounded.
-[A prospective rater crossover](rater-crossover-design.json) therefore reuses all
+[A preregistered rater crossover](rater-crossover-design.json) therefore reused all
 24 full-versus-bare pairs and their 48 individual articles with the other judge.
-It changes no writing, facts or A/B orientation and selects no favorable cases.
+It changed no writing, facts or A/B orientation and selected no favorable cases.
 The added judgments are a measurement diagnostic, not extra independent stories
 or a search for a judge that will endorse the repository.
 
@@ -121,6 +121,73 @@ assessed against the actual brief and protected meaning.
 The sample is 12 tuning reporting packets, not 72 independent stories or human
 reader reviews. No efficacy p-value, default promotion, NYT/WSJ-equivalent quality
 or independently verified factual-cleanliness claim follows from these results.
+
+### What changing the judge revealed
+
+The crossover captured all 72 new judgments. Twenty of 24 paired assessments and
+all 48 pointwise assessments passed their original parsers. The four additional
+paired failures are retained in the [archive](artifacts/rater-crossover.jsonl.xz)
+and [full report](artifacts/rater-crossover-summary.json).
+
+These are the original and crossover **full-versus-bare** preferences together:
+
+| Writer | Judge | Full wins | Bare wins | Ties | Invalid |
+|---|---|---:|---:|---:|---:|
+| Claude Sonnet 5 | GPT-6 Astra | 10 | 2 | 0 | 0 |
+| Claude Sonnet 5 | Claude Sonnet 5 | 2 | 4 | 2 | 4 |
+| GPT-6 Astra | Claude Sonnet 5 | 1 | 9 | 1 | 1 |
+| GPT-6 Astra | GPT-6 Astra | 6 | 6 | 0 | 0 |
+
+Only 19 of the 24 pairs had valid assessments from both judges. On those, the
+judges agreed on the preference in **8/19**, or about 42%; eight pairs switched
+directly between full and bare, with the remaining disagreements involving ties.
+The five pairs missing a usable judgment remain listed, not imputed as wins or
+discarded from the coverage account.
+
+This limits any claim of stable editorial superiority. It does not prove that
+every disagreement is a grader error: differences can be subtle or subjective,
+and each new response also adds stochastic variation. Neither judge rated any
+untreated article salient. More calls on the same stories would not turn these
+results into independent evidence of slop elimination.
+
+The original writers were told that their reporting notes were fictional, while
+judging treated those notes as a fixed record. That can leave the permitted scope
+of invention less clear than it should be. The next bounded revision pilot uses
+an explicit fixed-record brief in **every** newsroom condition and distinguishes
+mandatory inclusions from a mere list of source quotations. Its comparisons must
+remain separate from the earlier ordinary-brief cohort.
+
+### Source checking and the scoped revision
+
+[The bounded fidelity audit](artifacts/fidelity-focus-audit-summary.json) covers
+32 existing flag records on seven articles from two cases, not the whole cohort.
+After checking the source text, the parent retained 27 record-fidelity concerns,
+kept four as coverage questions rather than fabricated assertions, and rejected
+one flag about a faithful partial quotation. Repeated flags can concern the same
+passage; these are not 27 independent errors or an error rate. The supported
+concerns include invented interviews, quotations and court-record claims, as well
+as narrower wording, time and scope issues.
+
+The [audit bundle](artifacts/fidelity-focus-audit.jsonl.xz) retains the raw agent
+report and separate parent corrections. Two elided excerpts and one flattened
+paragraph break were replaced with literal source context in the parent record.
+Both stages are automated source checking, not human or outside verification.
+
+The current task contract and accuracy guidance clarify three things: a fictional
+reporting packet does not grant permission to invent reporting; drafting can
+select source material without reproducing every quotation; and material scope
+can often be expressed in the claim rather than in a repeated disclaimer.
+Necessary uncertainty, warnings and disclosures remain protected. New examples
+contrast an unnecessary disclaimer with a limitation that answers the reader's
+actual question.
+
+[The revision pilot](scope-revision-design.json) freezes the earlier full recipe
+against this scoped revision and a bare control. It plans 24 drafts from four
+already-seen newsroom families, plus 16 warning, quotation, voice and grammar
+regression responses. Both judges assess the newsroom writing. The current full
+recipe is therefore **not the same payload** as the earlier full-recipe archives;
+the revision has no measured improvement yet and is not a default-promotion or
+powered-efficacy result.
 
 ## Grading the prose, not its supposed author
 

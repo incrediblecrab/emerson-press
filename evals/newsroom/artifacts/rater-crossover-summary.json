@@ -1,0 +1,856 @@
+{
+  "kind": "verified-captures-unadjudicated-rater-crossover",
+  "assessor": "model",
+  "human_reviews": 0,
+  "design_sha256": "422e46e4978859e563d58645f317b95ab99fe28357166476ea60d4315daf5dc5",
+  "new_captured_judgments": 72,
+  "new_valid_paired": 20,
+  "new_invalid_paired": 4,
+  "new_pointwise_strict_validation": {
+    "valid": 48
+  },
+  "new_valid_pointwise_after_declared_normalization": 48,
+  "new_writing_responses": 0,
+  "distinct_tuning_cases": 12,
+  "full_versus_bare_by_writer_and_judge": [
+    {
+      "writer": "claude-sonnet-5",
+      "judge": "claude-sonnet-5",
+      "planned_pairs": 12,
+      "bare-task": 4,
+      "tie": 2,
+      "invalid": 4,
+      "full": 2
+    },
+    {
+      "writer": "claude-sonnet-5",
+      "judge": "gpt-6-astra",
+      "planned_pairs": 12,
+      "full": 10,
+      "bare-task": 2
+    },
+    {
+      "writer": "gpt-6-astra",
+      "judge": "claude-sonnet-5",
+      "planned_pairs": 12,
+      "invalid": 1,
+      "bare-task": 9,
+      "full": 1,
+      "tie": 1
+    },
+    {
+      "writer": "gpt-6-astra",
+      "judge": "gpt-6-astra",
+      "planned_pairs": 12,
+      "bare-task": 6,
+      "full": 6
+    }
+  ],
+  "pointwise_by_writer_and_judge": [
+    {
+      "writer": "claude-sonnet-5",
+      "judge": "claude-sonnet-5",
+      "variant": "bare-task",
+      "articles": 12,
+      "levels": {
+        "minor": 8,
+        "absent": 4
+      }
+    },
+    {
+      "writer": "claude-sonnet-5",
+      "judge": "claude-sonnet-5",
+      "variant": "full",
+      "articles": 12,
+      "levels": {
+        "minor": 4,
+        "absent": 8
+      }
+    },
+    {
+      "writer": "claude-sonnet-5",
+      "judge": "gpt-6-astra",
+      "variant": "bare-task",
+      "articles": 12,
+      "levels": {
+        "minor": 11,
+        "absent": 1
+      }
+    },
+    {
+      "writer": "claude-sonnet-5",
+      "judge": "gpt-6-astra",
+      "variant": "full",
+      "articles": 12,
+      "levels": {
+        "minor": 6,
+        "absent": 6
+      }
+    },
+    {
+      "writer": "gpt-6-astra",
+      "judge": "claude-sonnet-5",
+      "variant": "bare-task",
+      "articles": 12,
+      "levels": {
+        "absent": 6,
+        "minor": 6
+      }
+    },
+    {
+      "writer": "gpt-6-astra",
+      "judge": "claude-sonnet-5",
+      "variant": "full",
+      "articles": 12,
+      "levels": {
+        "minor": 10,
+        "absent": 1,
+        "salient": 1
+      }
+    },
+    {
+      "writer": "gpt-6-astra",
+      "judge": "gpt-6-astra",
+      "variant": "bare-task",
+      "articles": 12,
+      "levels": {
+        "absent": 7,
+        "minor": 5
+      }
+    },
+    {
+      "writer": "gpt-6-astra",
+      "judge": "gpt-6-astra",
+      "variant": "full",
+      "articles": 12,
+      "levels": {
+        "minor": 7,
+        "absent": 5
+      }
+    }
+  ],
+  "preference_agreement": {
+    "planned_pairs": 24,
+    "valid_under_both_judges": 19,
+    "same_preference": 8,
+    "same_preference_fraction": 0.42105263157894735,
+    "opposite_full_bare_preferences": 8,
+    "matched_pairs": [
+      {
+        "case_id": "newsroom-tuning-antitrust-suit",
+        "writer": "claude-sonnet-5",
+        "original": "full",
+        "crossover": "bare-task",
+        "original_judge": "gpt-6-astra",
+        "crossover_judge": "claude-sonnet-5"
+      },
+      {
+        "case_id": "newsroom-tuning-auto-retraining",
+        "writer": "claude-sonnet-5",
+        "original": "full",
+        "crossover": "bare-task",
+        "original_judge": "gpt-6-astra",
+        "crossover_judge": "claude-sonnet-5"
+      },
+      {
+        "case_id": "newsroom-tuning-auto-retraining",
+        "writer": "gpt-6-astra",
+        "original": "bare-task",
+        "crossover": "bare-task",
+        "original_judge": "claude-sonnet-5",
+        "crossover_judge": "gpt-6-astra"
+      },
+      {
+        "case_id": "newsroom-tuning-blood-supply",
+        "writer": "claude-sonnet-5",
+        "original": "full",
+        "crossover": "tie",
+        "original_judge": "gpt-6-astra",
+        "crossover_judge": "claude-sonnet-5"
+      },
+      {
+        "case_id": "newsroom-tuning-blood-supply",
+        "writer": "gpt-6-astra",
+        "original": "bare-task",
+        "crossover": "full",
+        "original_judge": "claude-sonnet-5",
+        "crossover_judge": "gpt-6-astra"
+      },
+      {
+        "case_id": "newsroom-tuning-carbon-rules",
+        "writer": "gpt-6-astra",
+        "original": "full",
+        "crossover": "full",
+        "original_judge": "claude-sonnet-5",
+        "crossover_judge": "gpt-6-astra"
+      },
+      {
+        "case_id": "newsroom-tuning-council-rezone",
+        "writer": "gpt-6-astra",
+        "original": "bare-task",
+        "crossover": "full",
+        "original_judge": "claude-sonnet-5",
+        "crossover_judge": "gpt-6-astra"
+      },
+      {
+        "case_id": "newsroom-tuning-drone-corridors",
+        "writer": "claude-sonnet-5",
+        "original": "full",
+        "crossover": "tie",
+        "original_judge": "gpt-6-astra",
+        "crossover_judge": "claude-sonnet-5"
+      },
+      {
+        "case_id": "newsroom-tuning-drone-corridors",
+        "writer": "gpt-6-astra",
+        "original": "bare-task",
+        "crossover": "full",
+        "original_judge": "claude-sonnet-5",
+        "crossover_judge": "gpt-6-astra"
+      },
+      {
+        "case_id": "newsroom-tuning-foster-shortage",
+        "writer": "claude-sonnet-5",
+        "original": "bare-task",
+        "crossover": "bare-task",
+        "original_judge": "gpt-6-astra",
+        "crossover_judge": "claude-sonnet-5"
+      },
+      {
+        "case_id": "newsroom-tuning-foster-shortage",
+        "writer": "gpt-6-astra",
+        "original": "tie",
+        "crossover": "bare-task",
+        "original_judge": "claude-sonnet-5",
+        "crossover_judge": "gpt-6-astra"
+      },
+      {
+        "case_id": "newsroom-tuning-grocery-closures",
+        "writer": "claude-sonnet-5",
+        "original": "full",
+        "crossover": "full",
+        "original_judge": "gpt-6-astra",
+        "crossover_judge": "claude-sonnet-5"
+      },
+      {
+        "case_id": "newsroom-tuning-grocery-closures",
+        "writer": "gpt-6-astra",
+        "original": "bare-task",
+        "crossover": "bare-task",
+        "original_judge": "claude-sonnet-5",
+        "crossover_judge": "gpt-6-astra"
+      },
+      {
+        "case_id": "newsroom-tuning-managed-retreat",
+        "writer": "claude-sonnet-5",
+        "original": "full",
+        "crossover": "full",
+        "original_judge": "gpt-6-astra",
+        "crossover_judge": "claude-sonnet-5"
+      },
+      {
+        "case_id": "newsroom-tuning-managed-retreat",
+        "writer": "gpt-6-astra",
+        "original": "bare-task",
+        "crossover": "bare-task",
+        "original_judge": "claude-sonnet-5",
+        "crossover_judge": "gpt-6-astra"
+      },
+      {
+        "case_id": "newsroom-tuning-municipal-bonds",
+        "writer": "claude-sonnet-5",
+        "original": "full",
+        "crossover": "bare-task",
+        "original_judge": "gpt-6-astra",
+        "crossover_judge": "claude-sonnet-5"
+      },
+      {
+        "case_id": "newsroom-tuning-municipal-bonds",
+        "writer": "gpt-6-astra",
+        "original": "bare-task",
+        "crossover": "full",
+        "original_judge": "claude-sonnet-5",
+        "crossover_judge": "gpt-6-astra"
+      },
+      {
+        "case_id": "newsroom-tuning-newspaper-acquisition",
+        "writer": "gpt-6-astra",
+        "original": "bare-task",
+        "crossover": "full",
+        "original_judge": "claude-sonnet-5",
+        "crossover_judge": "gpt-6-astra"
+      },
+      {
+        "case_id": "newsroom-tuning-port-strike",
+        "writer": "gpt-6-astra",
+        "original": "bare-task",
+        "crossover": "bare-task",
+        "original_judge": "claude-sonnet-5",
+        "crossover_judge": "gpt-6-astra"
+      }
+    ],
+    "missing_pairs": [
+      {
+        "case_id": "newsroom-tuning-antitrust-suit",
+        "writer": "gpt-6-astra",
+        "original": "invalid",
+        "crossover": "bare-task",
+        "original_judge": "claude-sonnet-5",
+        "crossover_judge": "gpt-6-astra"
+      },
+      {
+        "case_id": "newsroom-tuning-carbon-rules",
+        "writer": "claude-sonnet-5",
+        "original": "bare-task",
+        "crossover": "invalid",
+        "original_judge": "gpt-6-astra",
+        "crossover_judge": "claude-sonnet-5"
+      },
+      {
+        "case_id": "newsroom-tuning-council-rezone",
+        "writer": "claude-sonnet-5",
+        "original": "full",
+        "crossover": "invalid",
+        "original_judge": "gpt-6-astra",
+        "crossover_judge": "claude-sonnet-5"
+      },
+      {
+        "case_id": "newsroom-tuning-newspaper-acquisition",
+        "writer": "claude-sonnet-5",
+        "original": "full",
+        "crossover": "invalid",
+        "original_judge": "gpt-6-astra",
+        "crossover_judge": "claude-sonnet-5"
+      },
+      {
+        "case_id": "newsroom-tuning-port-strike",
+        "writer": "claude-sonnet-5",
+        "original": "full",
+        "crossover": "invalid",
+        "original_judge": "gpt-6-astra",
+        "crossover_judge": "claude-sonnet-5"
+      }
+    ]
+  },
+  "pointwise_same_article_ratings": [
+    {
+      "case_id": "newsroom-tuning-antitrust-suit",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "original": "minor",
+      "crossover": "minor",
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5"
+    },
+    {
+      "case_id": "newsroom-tuning-antitrust-suit",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "original": "absent",
+      "crossover": "absent",
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra"
+    },
+    {
+      "case_id": "newsroom-tuning-antitrust-suit",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "original": "minor",
+      "crossover": "minor",
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5"
+    },
+    {
+      "case_id": "newsroom-tuning-antitrust-suit",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "original": "minor",
+      "crossover": "minor",
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra"
+    },
+    {
+      "case_id": "newsroom-tuning-auto-retraining",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "original": "minor",
+      "crossover": "absent",
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5"
+    },
+    {
+      "case_id": "newsroom-tuning-auto-retraining",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "original": "minor",
+      "crossover": "absent",
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra"
+    },
+    {
+      "case_id": "newsroom-tuning-auto-retraining",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "original": "absent",
+      "crossover": "absent",
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5"
+    },
+    {
+      "case_id": "newsroom-tuning-auto-retraining",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "original": "minor",
+      "crossover": "absent",
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra"
+    },
+    {
+      "case_id": "newsroom-tuning-blood-supply",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "original": "absent",
+      "crossover": "minor",
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5"
+    },
+    {
+      "case_id": "newsroom-tuning-blood-supply",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "original": "minor",
+      "crossover": "minor",
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra"
+    },
+    {
+      "case_id": "newsroom-tuning-blood-supply",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "original": "absent",
+      "crossover": "absent",
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5"
+    },
+    {
+      "case_id": "newsroom-tuning-blood-supply",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "original": "minor",
+      "crossover": "minor",
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra"
+    },
+    {
+      "case_id": "newsroom-tuning-carbon-rules",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "original": "minor",
+      "crossover": "absent",
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5"
+    },
+    {
+      "case_id": "newsroom-tuning-carbon-rules",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "original": "minor",
+      "crossover": "absent",
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra"
+    },
+    {
+      "case_id": "newsroom-tuning-carbon-rules",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "original": "minor",
+      "crossover": "absent",
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5"
+    },
+    {
+      "case_id": "newsroom-tuning-carbon-rules",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "original": "minor",
+      "crossover": "absent",
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra"
+    },
+    {
+      "case_id": "newsroom-tuning-council-rezone",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "original": "minor",
+      "crossover": "absent",
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5"
+    },
+    {
+      "case_id": "newsroom-tuning-council-rezone",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "original": "absent",
+      "crossover": "minor",
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra"
+    },
+    {
+      "case_id": "newsroom-tuning-council-rezone",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "original": "absent",
+      "crossover": "absent",
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5"
+    },
+    {
+      "case_id": "newsroom-tuning-council-rezone",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "original": "minor",
+      "crossover": "minor",
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra"
+    },
+    {
+      "case_id": "newsroom-tuning-drone-corridors",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "original": "minor",
+      "crossover": "minor",
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5"
+    },
+    {
+      "case_id": "newsroom-tuning-drone-corridors",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "original": "minor",
+      "crossover": "minor",
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra"
+    },
+    {
+      "case_id": "newsroom-tuning-drone-corridors",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "original": "absent",
+      "crossover": "minor",
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5"
+    },
+    {
+      "case_id": "newsroom-tuning-drone-corridors",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "original": "minor",
+      "crossover": "minor",
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra"
+    },
+    {
+      "case_id": "newsroom-tuning-foster-shortage",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "original": "minor",
+      "crossover": "minor",
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5"
+    },
+    {
+      "case_id": "newsroom-tuning-foster-shortage",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "original": "absent",
+      "crossover": "minor",
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra"
+    },
+    {
+      "case_id": "newsroom-tuning-foster-shortage",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "original": "absent",
+      "crossover": "absent",
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5"
+    },
+    {
+      "case_id": "newsroom-tuning-foster-shortage",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "original": "minor",
+      "crossover": "minor",
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra"
+    },
+    {
+      "case_id": "newsroom-tuning-grocery-closures",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "original": "minor",
+      "crossover": "minor",
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5"
+    },
+    {
+      "case_id": "newsroom-tuning-grocery-closures",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "original": "absent",
+      "crossover": "absent",
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra"
+    },
+    {
+      "case_id": "newsroom-tuning-grocery-closures",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "original": "absent",
+      "crossover": "absent",
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5"
+    },
+    {
+      "case_id": "newsroom-tuning-grocery-closures",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "original": "absent",
+      "crossover": "absent",
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra"
+    },
+    {
+      "case_id": "newsroom-tuning-managed-retreat",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "original": "minor",
+      "crossover": "minor",
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5"
+    },
+    {
+      "case_id": "newsroom-tuning-managed-retreat",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "original": "minor",
+      "crossover": "absent",
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra"
+    },
+    {
+      "case_id": "newsroom-tuning-managed-retreat",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "original": "minor",
+      "crossover": "absent",
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5"
+    },
+    {
+      "case_id": "newsroom-tuning-managed-retreat",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "original": "minor",
+      "crossover": "minor",
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra"
+    },
+    {
+      "case_id": "newsroom-tuning-municipal-bonds",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "original": "minor",
+      "crossover": "minor",
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5"
+    },
+    {
+      "case_id": "newsroom-tuning-municipal-bonds",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "original": "minor",
+      "crossover": "minor",
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra"
+    },
+    {
+      "case_id": "newsroom-tuning-municipal-bonds",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "original": "minor",
+      "crossover": "minor",
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5"
+    },
+    {
+      "case_id": "newsroom-tuning-municipal-bonds",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "original": "salient",
+      "crossover": "minor",
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra"
+    },
+    {
+      "case_id": "newsroom-tuning-newspaper-acquisition",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "original": "minor",
+      "crossover": "minor",
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5"
+    },
+    {
+      "case_id": "newsroom-tuning-newspaper-acquisition",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "original": "absent",
+      "crossover": "absent",
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra"
+    },
+    {
+      "case_id": "newsroom-tuning-newspaper-acquisition",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "original": "minor",
+      "crossover": "absent",
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5"
+    },
+    {
+      "case_id": "newsroom-tuning-newspaper-acquisition",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "original": "minor",
+      "crossover": "absent",
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra"
+    },
+    {
+      "case_id": "newsroom-tuning-port-strike",
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "original": "minor",
+      "crossover": "absent",
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5"
+    },
+    {
+      "case_id": "newsroom-tuning-port-strike",
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "original": "absent",
+      "crossover": "absent",
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra"
+    },
+    {
+      "case_id": "newsroom-tuning-port-strike",
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "original": "minor",
+      "crossover": "minor",
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5"
+    },
+    {
+      "case_id": "newsroom-tuning-port-strike",
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "original": "minor",
+      "crossover": "absent",
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra"
+    }
+  ],
+  "failures": [
+    {
+      "id": "paired-pair-0019",
+      "kind": "paired",
+      "case_id": "newsroom-tuning-carbon-rules",
+      "writer": "claude-sonnet-5",
+      "variants": [
+        "bare-task",
+        "full"
+      ],
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5",
+      "source_request": "evals/runs/newsroom-tuning-modern/paired/pair-0019/judge-request.json",
+      "source_request_sha256": "54bc8d1b841033bf9eefd2d809c9b8316c6469d2940e3ce36bb842a1fd5fa134",
+      "source_key": "evals/runs/newsroom-tuning-modern/paired/pair-0019/key.json",
+      "source_key_sha256": "a1f962356a5815bf7a016e5853ea4225f41276d1610e1139b323cba9f83d68d6",
+      "prompt_sha256": "aa820df195787569d6296f6c510f05be8bf9da6f97255306d5c971c461395df3",
+      "error": "slop: missing fields []; unknown fields ['reason']",
+      "error_type": "DocumentError"
+    },
+    {
+      "id": "paired-pair-0025",
+      "kind": "paired",
+      "case_id": "newsroom-tuning-council-rezone",
+      "writer": "claude-sonnet-5",
+      "variants": [
+        "bare-task",
+        "full"
+      ],
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5",
+      "source_request": "evals/runs/newsroom-tuning-modern/paired/pair-0025/judge-request.json",
+      "source_request_sha256": "35b3a5bf1e11213ab178fd7c7d003184c7c957527764765b968fc5d351e5e9de",
+      "source_key": "evals/runs/newsroom-tuning-modern/paired/pair-0025/key.json",
+      "source_key_sha256": "de0d44db854c822c4c650adb2e5e1b4a37b060ce1c024e1a08d974f9f97f0c2c",
+      "prompt_sha256": "1509c91b61bb3fef7684b95cd2b5b36c6fc2e22d92bf30bd4b5c25cbc031da20",
+      "error": "unknown slop finding kind",
+      "error_type": "DocumentError"
+    },
+    {
+      "id": "paired-pair-0061",
+      "kind": "paired",
+      "case_id": "newsroom-tuning-newspaper-acquisition",
+      "writer": "claude-sonnet-5",
+      "variants": [
+        "bare-task",
+        "full"
+      ],
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5",
+      "source_request": "evals/runs/newsroom-tuning-modern/paired/pair-0061/judge-request.json",
+      "source_request_sha256": "21dfc45ea112abbc47bcf83b630dcfb9e2c23e7a4562d3522d28060b4193f4ae",
+      "source_key": "evals/runs/newsroom-tuning-modern/paired/pair-0061/key.json",
+      "source_key_sha256": "15c102d646a96a27296c6e66f702ff99b4704f91d052a0c539632010f4f5bd2e",
+      "prompt_sha256": "5cdad1e903082fb96773139926b04e31adae1cfac9f6f4cecdb032deefb86bf3",
+      "error": "invalid JSON: Extra data: line 1 column 611 (char 610)",
+      "error_type": "DocumentError"
+    },
+    {
+      "id": "paired-pair-0067",
+      "kind": "paired",
+      "case_id": "newsroom-tuning-port-strike",
+      "writer": "claude-sonnet-5",
+      "variants": [
+        "bare-task",
+        "full"
+      ],
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5",
+      "source_request": "evals/runs/newsroom-tuning-modern/paired/pair-0067/judge-request.json",
+      "source_request_sha256": "8cf71c2c0491b71796785dc4e812737f38d1b3db05cc23064cd1f056d4bb6e41",
+      "source_key": "evals/runs/newsroom-tuning-modern/paired/pair-0067/key.json",
+      "source_key_sha256": "92d5a24245874587e4122396c62af17fe08577bb0215c2e0729008a0134bc04a",
+      "prompt_sha256": "13ff232448fcb5c093faaf90fdf5795c3ffe67de90aef817227bb471da70cc3a",
+      "error": "evidence selection must contain supplied paragraph IDs",
+      "error_type": "DocumentError"
+    }
+  ],
+  "limitations": [
+    "The same 12 source packets recur; judges and writer/variant combinations are not independent new cases.",
+    "Agreement uses only pairs valid under both judges; all excluded pairs and raw failures remain listed.",
+    "A model's preference is not human editorial truth; low agreement can also reflect small or subjective differences.",
+    "Changing the judge also introduces another stochastic response; there is no immutable model-weight or seed control.",
+    "No writer model, preferred judge or default is selected from these results.",
+    "Neither judge rated an untreated article salient; the diagnostic does not establish slop elimination.",
+    "Pointwise no_flag is not an independently verified factual-cleanliness judgment."
+  ]
+}
