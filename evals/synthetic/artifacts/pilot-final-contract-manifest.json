@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "kind": "ungraded-contract-tuning-captures",
+  "distinct_tuning_cases": 2,
+  "assessor": "none",
+  "limitation": "Repeated tuning observations, not independent replications, a powered comparison or human reviews.",
+  "artifact": "evals/synthetic/artifacts/pilot-final-contract.jsonl.xz",
+  "artifact_sha256": "158057d1670bbcf0af7638b9fd6eea36059129e4c2c7b211854496769549c110",
+  "payload_sha256": "b6d9a759af6777f118a5ec0e27237984987d6d8d182d6c0772f97304f66bcff6",
+  "records": 8,
+  "held_out_cases": 0,
+  "human_reviews": 0
+}

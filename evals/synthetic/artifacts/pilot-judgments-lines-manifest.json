@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "kind": "unadjudicated-model-pilot-judgments",
+  "distinct_tuning_cases": 16,
+  "assessor": "model",
+  "valid_assessments": 32,
+  "invalid_assessments": 0,
+  "evidence_format": "model-selected line ranges",
+  "writer_archive": "evals/synthetic/artifacts/pilot-neutral.jsonl.xz",
+  "limitation": "Automated tuning opinions, including errors. Traceable evidence is not proof that a judgment is correct.",
+  "artifact": "evals/synthetic/artifacts/pilot-judgments-lines.jsonl.xz",
+  "artifact_sha256": "6b7d9ec35170648bda880f562ae867741e6b4a8812f141f29d101b948e5a93ac",
+  "payload_sha256": "bd435d6259b3eb326bd23e94cbe03ddf8c836287a6ded256a0895dbd474cc643",
+  "records": 32,
+  "held_out_cases": 0,
+  "human_reviews": 0
+}

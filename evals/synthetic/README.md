@@ -60,14 +60,65 @@ from held-out results.
 
 Setup probes are not benchmark observations. A new prospectively separated corpus
 and automated-assessment protocol are being prepared; no powered result or
-editorial-superiority claim is established by this setup.
+editorial-superiority claim is established by the tuning work.
 
-Both completed pilots are retained in `artifacts/`: 64 responses under the runtime
-foundation and 64 under the neutral role, each covering the **same 16 tuning cases**.
-These are not 128 independent cases. Each `.jsonl.xz` archive contains exact
-response records and sanitized capture receipts; its adjacent manifest records
-compressed and uncompressed hashes. Python's standard-library `lzma` can read the
-JSONL payload. Neither pilot has human ratings or a published preference score.
+The archives retain **152 writing responses**, all from repeated use of the same
+16 original tuning cases: 64 under the runtime foundation, 64 under the neutral
+role, 16 after an output-contract clarification and eight final-contract smoke
+responses. No held-out writing has been generated. These are not 152 independent
+cases; family independence has not been established for this old fixture set.
+
+Each writing `.jsonl.xz` archive contains exact response records and sanitized
+capture receipts. Judgment archives instead contain the blinded pair key, writer
+result hashes, judge request/capture, raw assessment or failure, and any selected
+line ranges. Adjacent manifests record compressed and uncompressed hashes.
+Python's standard-library `lzma` reads the JSONL payload. Runtime state remains
+private; no archive contains human ratings.
+
+## What the tuning actually found
+
+The first complete automated judging pass did **not establish an advantage for
+the full pack**. Opposite-family judges marked the neutral pilot as follows:
+
+| Writer | Full preferred | Task contract preferred | Tie |
+|---|---:|---:|---:|
+| Claude Haiku 4.5 | 5 | 6 | 5 |
+| GPT-5.4 mini | 3 | 5 | 8 |
+| Total | 8 | 11 | 13 |
+
+These are 32 unadjudicated model opinions about 16 tuning cases, not 32 independent
+trials or human preferences. The captured full prompts averaged 10,451.6
+`o200k_base` tokens versus 750 for the shared contract alone: about 13.9 times the
+prompt payload, without an established quality gain. This is not a billable-cost
+ratio; it excludes runtime context, caching and provider pricing.
+
+The judge itself needed debugging. The original quoted-excerpt format produced
+21 valid judgments and 11 invalid attempts. All 32 pairs were reassessed, not just
+the failures, using model-selected line ranges and programmatically extracted
+exact excerpts. That produced 32 valid records. Traceability improved; judgment
+correctness was not thereby established. Both entire attempts are retained.
+
+Parent-AI inspection confirmed two failures to return the requested artifact:
+a no-op news edit and a dialog edit that stopped despite an authoritative record
+resolving the draft's error. Two citation-rule flags were not confirmed as hard
+failures: absence of a formatting rule from a bibliographic fact packet does not
+prove the rule wrong, and both sides made similar metadata assertions.
+[The arbitration record](artifacts/pilot-arbitration.json) preserves these limits
+without rewriting the raw model judgments.
+
+The task contract now explicitly requires the edited document even for a no-op,
+keeps completion checks out of the requested artifact, and distinguishes a
+resolved draft/source difference from genuinely missing information. In three
+repeated tuning tasks, literal expected-artifact matches rose from 6/12 to 10/12
+across both instruction conditions. This is a small descriptive shape check, not
+a causal or statistical quality estimate. Requested arithmetic-correction notes
+were retained in all four corresponding responses.
+
+The clarification is **not a reliability guarantee**. Final-contract news edits
+returned the item in all four responses, but one still added a long assessment.
+The four dialog responses also returned an edit, but extra process narration and
+unsupported keyboard-detail inferences still occurred. No compact-mode promotion,
+powered superiority claim or human-release decision follows from these pilots.
 
 Ten-minute checkpoints use ordinary Git commits and pushes. They do not dispatch
 GitHub Actions; the authoring workflow is manual-only.

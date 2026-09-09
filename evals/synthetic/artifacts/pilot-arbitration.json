@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "kind": "qualitative-tuning-arbitration",
+  "assessor": "parent-ai",
+  "model": "gpt-6-astra",
+  "blinded": false,
+  "human_reviews": 0,
+  "overwrites_raw_judgments": false,
+  "judgment_archive": "evals/synthetic/artifacts/pilot-judgments-lines.jsonl.xz",
+  "decisions": [
+    {
+      "case_id": "press-supported-quote",
+      "writer": "claude-haiku-4.5",
+      "variant": "full",
+      "judge_pair": 27,
+      "decision": "confirmed-task-fulfillment-failure",
+      "reason": "The task requests the unchanged news item if no meaningful correction is needed. The response gives an assessment ending 'Return unchanged.' but does not return the item. This establishes a missing requested artifact, not a general factual-error rate."
+    },
+    {
+      "case_id": "ui-destructive-dialog-behavior",
+      "writer": "claude-haiku-4.5",
+      "variant": "full",
+      "judge_pair": 29,
+      "decision": "confirmed-task-fulfillment-failure",
+      "reason": "The task explicitly asks for a dialog matching the supplied implementation, whose facts state that deletion has no restore route. The response asks which version to use and never returns the dialog, although the designated source already resolves the draft's restoration claim."
+    },
+    {
+      "case_id": "citation-apa-incomplete-journal",
+      "writer": "claude-haiku-4.5",
+      "variant": "full",
+      "judge_pair": 1,
+      "decision": "hard-failure-not-established",
+      "reason": "The judge treats citation-format requirements absent from the bibliographic facts as unsupported factual claims, although the task requests APA formatting and both responses make similar missing-metadata assertions. No supplied author, date, title, journal or URL value was invented in the full response. This review does not certify either response's detailed manual-rule claims."
+    },
+    {
+      "case_id": "citation-ieee-preserve-article",
+      "writer": "claude-haiku-4.5",
+      "variant": "full",
+      "judge_pair": 3,
+      "decision": "hard-failure-not-established",
+      "reason": "Ordinary title capitalization and an online-availability wrapper do not themselves establish changed source identity. Both responses retain the supplied corporate author, title identity, year and URL and flag missing metadata. The asserted access-date and other manual requirements remain unverified; the bibliographic fact packet alone cannot settle them."
+    }
+  ],
+  "scope_limit": "This is a nonblind parent-AI examination of selected consequential flags, not a complete independent adjudication, human review, or replacement preference score.",
+  "contract_regressions": {
+    "artifact_contract_archive": "evals/synthetic/artifacts/pilot-artifact-contract.jsonl.xz",
+    "final_contract_archive": "evals/synthetic/artifacts/pilot-final-contract.jsonl.xz",
+    "literal_shape": {
+      "case_ids": [
+        "fiction-stairwell-triad",
+        "legal-staffing-grammar-only",
+        "medical-attributed-uncertainty"
+      ],
+      "before_matches": 6,
+      "after_matches": 10,
+      "responses_per_phase": 12,
+      "definition": "Exact expected artifact after stripping outer whitespace; punctuation changes count as nonmatches. The legal target corrects 'assign' to 'assigns' and 'changes' to 'change' without changing the three clauses.",
+      "limitation": "Both instruction conditions receive the contract change. Three repeated tuning cases and uncontrolled generation randomness do not support an independent or causal quality estimate."
+    },
+    "requested_correction_notes": {
+      "case_id": "cross-source-correction-note",
+      "responses": 4,
+      "observation": "All four return the corrected 24-card total and disclose the supplied 4-trays-times-6-cards basis."
+    },
+    "final_contract_observations": [
+      {
+        "case_id": "press-supported-quote",
+        "responses": 4,
+        "observation": "All four return the news item. Three match it literally; the Haiku full response still adds a long assessment."
+      },
+      {
+        "case_id": "ui-destructive-dialog-behavior",
+        "responses": 4,
+        "observation": "All four return an edited dialog rather than stopping. Extra process narration persists. The Haiku task-only reply infers Tab navigation and Return activation of a focused button, details the supplied implementation does not specify. This is not an all-constraints pass."
+      }
+    ]
+  }
+}

@@ -5,7 +5,7 @@
   "artifact_sha256": "b1e2792def204bed98f69e0812f9f883bfd47283f58bb85ba4c1a4a4904c945f",
   "payload_sha256": "3fa8c48331fbd764eeeff62f04e5235767f59fc434cd7bb98c03c164afba32e8",
   "records": 64,
-  "independent_tuning_cases": 16,
+  "distinct_tuning_cases": 16,
   "paired_model_case_comparisons": 32,
   "held_out_cases": 0,
   "assessor": "none",
