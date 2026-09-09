@@ -77,12 +77,27 @@ occurrences checked against the input. Those are traceability checks, not
 independent findings. The bounded audit did not fully compare every pair.
 Earlier within-shard archives retain their historical index hashes unchanged.
 
-Source eligibility is complete; the execution protocol is not yet registered.
+Source eligibility and the [primary execution protocol](primary-protocol.json)
+are now frozen, before primary writing. Each family has one assigned writer:
+106 families per model, comprising 110 cases for GPT-6 Astra and 109 for Claude
+Sonnet 5. Both models judge every available pair and each article. The sole
+primary contrast is full versus genuine `bare-task`.
+
+The fixed plan calls for **438 writing responses, 438 paired judgments and 876
+pointwise judgments**. These are planned calls, not completed outputs or
+independent sample sizes. The [prepared-input archive](artifacts/primary-prepared-writing-manifest.json)
+preserves all 438 exact writing requests. No primary writing result is available
+at registration.
+
 Shared programs and conservative template clusters reduce the family count,
 but neither the remaining labels nor the source audits prove independence.
 The [mean-inference component](mean-inference.md) documents a finite-sample
-candidate method and its randomization, missingness and independence limits.
-It is not a primary-study registration or a writing result.
+method and its randomization, missingness and independence limits. Its fixed
+auxiliary table is part of the registration, not evaluator votes; missing
+components retain their planned weights. The conditional joint-power lower
+bound is 0.8119 at mean preference 0.60 under complete independent family scores,
+not an unconditional completion or efficacy guarantee. A preference signal is
+not itself evidence that noticeable slop was present or eliminated.
 The [source-aware acquisition API](acquisition.md) preserves raw judgments,
 checks source/evidence bindings and distinguishes verification-only resume from
 explicit continuation of never-started jobs.

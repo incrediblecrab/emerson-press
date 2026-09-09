@@ -1,9 +1,9 @@
 # Mean-preference inference
 
-`scripts.newsroom_stats` supplies a candidate inferential component, not a frozen
-primary protocol or an experimental result. The family bank, writer allocation,
-judge weights, score grids, randomization table and full acquisition plan must be
-registered before primary outcomes. The original source-aware judgments remain
+`scripts.newsroom_stats` supplies an inferential component, not an experimental
+result. The [primary protocol](primary-protocol.json) freezes the family bank,
+writer allocation, judge weights, score grids, randomization table and full
+acquisition plan before primary outcomes. The original source-aware judgments remain
 separate from the older `scripts.simulate` acquisition schema.
 
 ## Target and randomization

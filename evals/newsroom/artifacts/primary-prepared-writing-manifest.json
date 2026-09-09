@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "kind": "prepared-primary-writing-inputs-not-model-outputs",
+  "protocol_sha256": "a6701efdddae8cf8f4fd4c6944f5da65c64b2dbfb41b0975b0f9acbad9176574",
+  "planned_requests": 438,
+  "eligible_cases": 219,
+  "family_clusters": 212,
+  "writing_outputs": 0,
+  "limitation": "Prospective prepared prompts. Family independence is assumed, not proven.",
+  "records": 438,
+  "artifact": "evals/newsroom/artifacts/primary-prepared-writing.jsonl.xz",
+  "artifact_sha256": "9f53c8ea680829f863461dc32b493af3b781870f62a4fa87568a18c1d00d746d",
+  "payload_sha256": "55ccb97e4894ab77ef0ae0c72a7b761e19efa201170b502300fe8655c4ee15f9",
+  "human_reviews": 0
+}
