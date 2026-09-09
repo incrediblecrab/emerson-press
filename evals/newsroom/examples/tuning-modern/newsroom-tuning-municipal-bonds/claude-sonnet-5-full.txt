@@ -1,0 +1,25 @@
+Municipal Bond Defaults Test a Market Built on Trust
+
+PORTFIELD, Ill. — Two local governments have defaulted on general obligation bonds since February, drawing new scrutiny to a corner of the financial markets that most Americans encounter only indirectly — through the roads, schools and water systems it finances.
+
+Municipal bonds are debt securities issued by cities, counties, states and other local government entities to pay for capital projects. Investors buy them partly because interest is typically exempt from federal income tax, and often from state income tax for in-state buyers. That tax treatment makes municipal bonds attractive to investors in higher tax brackets, according to a background sheet from the Meridian Credit Rating Agency, which estimates roughly $4 trillion in municipal debt was outstanding as of December 2024.
+
+The market includes two common types of bonds. General obligation bonds are backed by a government's general credit and taxing authority. Revenue bonds are backed by specific revenue streams, such as toll or utility fees. The exact repayment pledge varies by issue.
+
+Portfield, a city of roughly 71,000 people, missed an $18.4 million interest payment on its general obligation bonds on March 3, triggering a default. The city, which carries $340 million in general obligation debt, filed for Chapter 9 bankruptcy protection on April 1. Chapter 9 provides a federal court process for adjusting eligible municipal debts; no ruling has been issued on Portfield's eligibility, and no repayment plan has been approved.
+
+Meridian downgraded Portfield's bonds from an A rating to below investment grade in March. The city's population has declined from 94,000 in 2010 to about 71,000 in 2024, according to U.S. Census estimates, and it carries approximately $1.2 billion in unfunded pension obligations against annual revenues of about $280 million.
+
+Separately, Galena County, Texas, defaulted on $87 million in general obligation bonds in February after its commissioners court declined to raise property tax rates. Combined, the two governments' general obligation debt totals $427 million — a figure that reflects outstanding principal across both issuers, not Portfield's missed payment.
+
+Part of Portfield's exposure is insured: the National Municipal Guarantee Corp. covered 40 percent of the outstanding bond principal. A company spokeswoman declined to discuss the specifics of the Portfield policy but said the firm's exposure to below-investment-grade municipal bonds was "within our risk management parameters."
+
+Linda Chai, who teaches municipal finance at Harwick University, said defaults remain uncommon industrywide but obscure sharp differences between issuers. "The headline default rate is low, but it masks enormous variation between large, stable issuers and small cities running structural deficits," she said. Meridian's data show a 0.1 percent issuer-default rate in its rated municipal cohort for 2024, compared with 0.4 percent among comparably rated corporate issuers — figures the agency describes as one-year cohort results, not a historical average or a prediction for any individual bond.
+
+Chai said Portfield's troubles warrant scrutiny of pension obligations, tax revenue shortfalls and population loss, without ranking which factor mattered most. She said bond buyers in smaller cities should read pension disclosures closely. "The official statement tells you the debt, but the pension is what kills a city," she said.
+
+About a quarter of outstanding municipal debt is held by mutual funds and money market funds, according to Meridian's estimate; the underlying records do not include a survey of those funds' investors or their understanding of the risks involved.
+
+No federal guarantee or rescue has been announced for either Portfield's or Galena County's bonds, though that absence does not establish a general rule for how the federal government treats municipal borrowers in distress.
+
+The Senate Finance Subcommittee on State and Local Finance has scheduled hearings on municipal debt distress for May.

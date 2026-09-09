@@ -1,0 +1,31 @@
+**Two Cities' Bond Defaults Raise Questions About Municipal Debt Risks**
+
+When the City of Portfield, Illinois, missed an $18.4 million interest payment on its general obligation bonds March 3, it sent a warning to investors who typically view municipal debt as one of the safer corners of the financial markets.
+
+Portfield's default, followed by a Chapter 9 bankruptcy filing April 1, comes months after Galena County, Texas, defaulted on $87 million in similar bonds. Together, the two governments carry $427 million in general obligation debt, a small fraction of the roughly $4 trillion in municipal bonds outstanding nationwide, according to a background sheet from the Meridian Credit Rating Agency.
+
+Still, the cases are drawing attention because municipal bonds — used by cities, counties and states to pay for roads, schools and water systems — are widely held by individual investors, in part because the interest they pay is typically exempt from federal income tax and often from state taxes for in-state residents. That tax break makes municipal bonds appealing to people in higher tax brackets, according to Meridian's materials.
+
+Roughly a quarter of all outstanding municipal debt is held through mutual funds and money market funds, per Meridian's scenario estimate, meaning many investors may hold such bonds indirectly without closely tracking individual issuers' finances.
+
+**What went wrong in Portfield**
+
+Meridian downgraded Portfield's bonds from an A rating to below investment grade in March, shortly after the missed payment. The city carries $340 million in general obligation debt — bonds backed by its general credit and taxing power, as opposed to revenue bonds, which are repaid from specific revenue streams such as tolls or utility fees.
+
+Portfield's troubles run deeper than the missed interest payment. The city has about $1.2 billion in unfunded pension obligations against annual revenues of roughly $280 million. Its population has also declined sharply, from 94,000 residents in 2010 to about 71,000 in 2024, according to U.S. Census estimates.
+
+Linda Chai, who teaches municipal finance at Harwick University, said pension shortfalls, tax revenue declines and population loss are all issues worth scrutinizing in Portfield's case, though she did not rank which mattered most or suggest they explain every municipal default. "The headline default rate is low, but it masks enormous variation between large, stable issuers and small cities running structural deficits," Chai said.
+
+She added that bond documents don't always tell the full story. "The official statement tells you the debt, but the pension is what kills a city," Chai said.
+
+**What happens next**
+
+Portfield's Chapter 9 filing opens a federal court process for restructuring its debts, though the packet reviewed for this story includes no ruling yet on whether the city qualifies for that protection, and no approved repayment plan exists. How much bondholders eventually recover will depend on that plan and on creditors' legal rights.
+
+Some Portfield bondholders have a partial cushion: the National Municipal Guarantee Corp. insured 40 percent of the outstanding bond principal. A company spokeswoman declined to discuss the Portfield policy specifically but said the insurer's exposure to below-investment-grade municipal bonds remains "within our risk management parameters."
+
+No federal guarantee or rescue has been announced for either Portfield or Galena County.
+
+Despite the two defaults, Meridian's data show municipal bonds still default far less often than corporate debt. The agency's 2024 comparison found a 0.1 percent issuer-default rate among its rated municipal bonds, versus 0.4 percent for comparably rated corporate bonds — figures describing a single year's rated pool, not a guarantee for any individual bond or a long-term average.
+
+The cases have caught Washington's attention. The Senate Finance Subcommittee on State and Local Finance has scheduled hearings on municipal debt distress for May.

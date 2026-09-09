@@ -1,0 +1,33 @@
+# Agency orders 40% emissions cut for coal, gas plants by 2029
+
+Federal regulators on Wednesday ordered coal- and natural gas-fired power plants to cut their carbon dioxide emissions 40% by 2029, one of the most aggressive federal moves yet to curb greenhouse gases from the electric power sector.
+
+The Environmental Compliance Agency's Interim Clean Generation Standard requires roughly 340 coal and natural gas facilities with at least 100 megawatts of capacity to reduce emissions 40% by May 9, 2029, measured against each plant's 2024 output. The rule takes effect May 9, 30 days after its Wednesday publication.
+
+"The climate math is simple: we have run out of time for voluntary measures," agency Administrator Thomas Beckwith said in announcing the rule.
+
+Plants have four ways to comply: reduce emissions directly, buy carbon offset credits, retire the facility, or apply for an 18-month extension by demonstrating financial hardship. The agency set an initial offset price of $45 per metric ton, subject to annual revision, for emissions above the 40% threshold.
+
+But the list of third-party certifiers plants would need to buy approved offsets from has not been published. The agency said that list will appear in a supplemental Federal Register notice before the rule takes effect May 9 — leaving facilities that intend to rely on offsets without a mechanism to do so as the deadline approaches. A separate notice addressing enforcement is expected by July.
+
+The agency reached the rule through an expedited process, invoking emergency authority to shorten its consultation timeline and hold a 45-day public comment period instead of its standard 180 days. It received about 12,000 written comments during that window.
+
+The new standard replaces a 2018 rule that required an 18% emissions reduction from 2014 levels by 2030. The two rules use different baseline years, and the agency did not say how compliance under the old standard translates to the new one.
+
+The agency projects the rule would cut annual carbon emissions from covered plants by about 280 million metric tons if facilities fully comply. Independent analysts at the Meridian Policy Institute estimated the industry's compliance costs at $18 billion to $31 billion over four years, with the total depending on how offset credit prices move.
+
+The rule does not apply to nuclear, solar or wind generation.
+
+The American Power Producers Alliance, an industry group, said it plans to challenge the rule in the U.S. Fifth Circuit Court of Appeals, arguing the agency exceeded its statutory authority.
+
+"This rule bypasses congressional intent and will raise electricity rates for millions of families," Alliance President Roger Holt said.
+
+The rule is already facing a separate legal fight. Three states — Harwick, Dunmore and Selby — sued in February over the agency's use of emergency rulemaking authority to develop the standard. That case remains pending.
+
+Reaction split along familiar lines. The Clean Energy Now coalition, which represents 34 environmental organizations, called the rule "a necessary and overdue first step." Critics in Congress were more pointed; a joint statement from lawmakers representing coal-producing states described the rule as "procedurally flawed and economically reckless," though the statement did not specify what procedural defect the lawmakers had in mind.
+
+The rule's fate now depends in part on the courts. If the Fifth Circuit or the pending state case blocks or delays enforcement, compliance deadlines and the offset program could shift before the May 9 effective date arrives.
+
+---
+
+*Editorial note: This is a synthetic exercise built entirely from the supplied fictional reporting notes. The Environmental Compliance Agency, the Interim Clean Generation Standard, all named officials, organizations, and the states of Harwick, Dunmore and Selby are invented for this exercise and do not refer to real entities. No dateline is included because the notes do not specify a reporting location.*

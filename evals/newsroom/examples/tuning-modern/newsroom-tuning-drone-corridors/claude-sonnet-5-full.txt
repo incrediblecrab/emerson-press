@@ -1,0 +1,33 @@
+**New Federal Rule Opens U.S. City Skies to Delivery Drones Starting in September**
+
+WASHINGTON — Commercial drones will be allowed to fly beyond their operators' sight lines over 12 major U.S. cities starting Sept. 1, under a new federal rule that creates the country's first permanent framework for urban drone deliveries.
+
+The Federal Airspace Safety Commission issued the measure, known as Airspace Corridor Rule 14-CR-2025, this month. It establishes designated altitude corridors — airspace lanes set aside for commercial drone traffic — in cities with populations exceeding 1 million.
+
+Until now, commercial drone operators seeking to fly beyond visual line of sight in U.S. cities have relied on limited temporary waivers, and such operations have been tested in fewer than a dozen U.S. locations. The new rule replaces that patchwork with a lasting legal framework, though additional cities cannot apply for corridor designation until January.
+
+**How it will work**
+
+Drones operating under the rule must stay within their assigned corridors at altitudes of 200 to 400 feet above ground level. Operators need a Remote Operator Certificate plus a corridor-specific permit, which costs $500 per year. Flights are limited to 6 a.m. to 9 p.m. local time, and drones cannot carry more than five pounds — a limit that would exclude many appliances and larger grocery orders but not smaller ones.
+
+The rule also bars flights within one mile of hospitals, schools, prisons or emergency response facilities, regardless of corridor boundaries. Operators who fly outside their designated corridors or permitted hours face civil penalties of up to $25,000 per violation, the commission said.
+
+Corridor boundaries are set by the commission in consultation with local aviation authorities. Cities have 30 days to object before a designation is finalized.
+
+Commission Chair Janet Ortega said the corridors "create a predictable, safe operating environment that protects both the public and emerging commercial operators."
+
+**Industry response**
+
+Three companies — Skyward Logistics, QuickDeliver and AirRoute — have already filed for corridor operating permits. The Commercial Drone Alliance, an industry group, said the rule would "unlock hundreds of millions of dollars in investment in same-day delivery infrastructure."
+
+The commission estimates that widespread adoption of corridor drone deliveries could cut short-haul delivery truck trips in the covered cities by 5% to 12%.
+
+**Unresolved questions**
+
+The rule permits drones to use cameras and sensors needed for navigation but does not require operators to delete footage captured during deliveries. Alan Thorpe, research director at Digital Rights Watch, an advocacy group, said that gap matters. "A drone at 300 feet with a package is also a drone with a camera, and the rule says almost nothing about what operators can record," he said.
+
+Local air traffic controllers' unions have also raised concerns that the rule does not spell out how drone traffic in the corridors will be tracked and kept separate from low-altitude manned aircraft.
+
+Noise standards are not addressed in the new rule. The commission said it plans a separate rulemaking on noise limits in 2026.
+
+The commission said it reviewed 3,400 public comments during the rulemaking process, most from residents of the 12 cities set to get corridors first. The commission has not released the list of cities.

@@ -1,0 +1,43 @@
+# Municipal bond defaults show why tax advantages are not a safety guarantee
+
+Municipal bonds help pay for roads, schools and water systems, often offering investors interest exempt from federal income tax. But recent defaults by two local governments illustrate an important distinction: Tax advantages do not guarantee repayment.
+
+Portfield, Illinois, missed an $18.4 million interest payment on its general obligation bonds March 3, triggering a default. The city, which has $340 million in general obligation debt, filed a Chapter 9 bankruptcy petition April 1. As of April 3, no ruling on its eligibility for municipal bankruptcy protection was available in the supplied records.
+
+Separately, Galena County, Texas, defaulted on $87 million in general obligation bonds in February after its commissioners court declined to raise property tax rates.
+
+Here is how municipal bonds work — and what those cases mean for investors.
+
+## What are investors buying?
+
+Municipal bonds are debt issued by states, cities, counties and other local government entities to finance capital projects. Meridian Credit Rating Agency’s background sheet puts outstanding U.S. municipal debt at approximately $4 trillion in a scenario estimate as of December 2024.
+
+Two common types carry different repayment promises. General obligation bonds are backed by a government’s general credit and applicable taxing authority. Revenue bonds are backed by specified revenue streams. The exact pledge depends on the individual issue.
+
+Interest on most municipal bonds is exempt from federal income tax and, often, state income tax for investors who live in the issuing state. That can make the interest competitive after taxes, particularly for people in higher income-tax brackets. The benefit depends on the investor’s tax status and the bond’s terms.
+
+## How unusual are defaults?
+
+Meridian reported a 0.1% issuer-default rate for its rated municipal cohort in 2024, compared with 0.4% for its comparably rated corporate cohort. Those are one-year figures for those groups, not universal historical averages or predictions for a particular bond.
+
+“The headline default rate is low, but it masks enormous variation between large, stable issuers and small cities running structural deficits,” said Linda Chai, a municipal finance professor at Harwick University.
+
+Portfield and Galena County together have $427 million in outstanding general obligation principal. That total covers two separate borrowers; it is not the amount of Portfield’s missed interest payment.
+
+## What should investors examine?
+
+Portfield has approximately $1.2 billion in unfunded pension obligations, compared with annual revenues of approximately $280 million. Its population declined from 94,000 in 2010 to approximately 71,000 in 2024, according to U.S. Census estimates.
+
+Chai identified pension obligations, tax revenue shortfalls and population changes as issues to examine in the city’s finances. Those factors do not, by themselves, establish how much each contributed to the default.
+
+Meridian downgraded Portfield’s bonds from A to below investment grade in March.
+
+## Do insurance or bankruptcy ensure repayment?
+
+Neither establishes full repayment in this case.
+
+National Municipal Guarantee Corp. partially insured Portfield’s bonds, with a policy covering 40% of outstanding principal. That does not establish protection for all principal or the missed interest payment. A company spokeswoman declined to discuss policy specifics but said its exposure to below-investment-grade municipal bonds was “within our risk management parameters.”
+
+Chapter 9 provides a federal court process for adjusting eligible municipal debts. Creditor recoveries depend on their rights and the resulting plan. No approved plan or recovery estimate for Portfield was available in the supplied records.
+
+Those records announce no federal guarantee or rescue for either borrower. The Senate Finance Subcommittee on State and Local Finance has scheduled hearings on municipal debt distress for May, but the announcement itself offers bondholders no repayment protection.

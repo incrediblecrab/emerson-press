@@ -1,0 +1,53 @@
+# New drone delivery rule opens urban flight corridors, leaves privacy questions
+
+Commercial delivery drones will gain a permanent route to fly beyond their operators’ sight in designated urban corridors under a federal rule taking effect Sept. 1. The framework sets limits on altitude, package weight and operating hours, but leaves questions about privacy, noise and air traffic oversight.
+
+The Federal Airspace Safety Commission issued Airspace Corridor Rule 14-CR-2025 this month. It initially covers 12 U.S. cities with populations exceeding 1 million. Additional cities may apply for corridor designation beginning in January 2026.
+
+Here is what the rule will allow — and what remains unresolved.
+
+## What changes?
+
+Until now, commercial drone delivery has operated on a limited experimental basis in fewer than a dozen U.S. locations under temporary waivers. Outside those exceptions, operators had to keep drones within their visual line of sight.
+
+The new rule creates the first permanent framework permitting commercial drones to fly beyond an operator’s line of sight in urban airspace. That permission applies within designated corridors, not throughout a covered city.
+
+“These corridors create a predictable, safe operating environment that protects both the public and emerging commercial operators,” commission Chair Janet Ortega said.
+
+## Where and when can drones fly?
+
+Drones may operate between 200 and 400 feet above ground level inside designated corridors. Commercial flights are limited to 6 a.m. to 9 p.m. local time.
+
+Even within a corridor, drones cannot operate within one mile of hospitals, schools, prisons or emergency response facilities.
+
+The commission determines corridor boundaries in consultation with local aviation authorities. Municipalities have 30 days to object before a designation becomes final.
+
+Operators that fly outside designated corridors or permitted hours face civil penalties of up to $25,000 per violation, according to the commission.
+
+## What can they carry, and who can operate them?
+
+The maximum payload is 5 pounds. That rules out larger grocery orders and many appliances, but not a grocery order weighing 5 pounds or less.
+
+Operators must hold a Remote Operator Certificate and a corridor-specific operating permit. The permit costs $500 a year per operator.
+
+As of March 20, Skyward Logistics, QuickDeliver and AirRoute have filed applications for corridor operating permits. Those filings are applications, not approvals.
+
+The Commercial Drone Alliance said the rule would “unlock hundreds of millions of dollars in investment in same-day delivery infrastructure.”
+
+The commission estimates drone deliveries could reduce short-haul delivery truck trips in covered cities by 5% to 12% if widely adopted. That is a conditional projection, not a guaranteed reduction.
+
+## What about privacy and noise?
+
+The rule permits cameras and sensors necessary for navigation, but does not require operators to delete footage captured during deliveries.
+
+“A drone at 300 feet with a package is also a drone with a camera, and the rule says almost nothing about what operators can record,” said Alan Thorpe, research director at the advocacy organization Digital Rights Watch.
+
+Noise standards are also outside the rule’s scope. The commission said noise limits would be addressed in a separate rulemaking expected in 2026, after the corridor framework takes effect.
+
+## What safety concerns remain?
+
+Local air traffic controllers’ unions have raised concerns that the rule does not address how corridor drone traffic will be monitored and separated from low-altitude manned aircraft.
+
+The commission processed 3,400 public comments during the rulemaking period, with a majority coming from residents of the initial 12 cities.
+
+For residents and operators, the September start establishes a permanent legal framework with defined flight restrictions. It does not settle every question about how expanded drone deliveries will affect city life.

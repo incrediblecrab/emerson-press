@@ -1,0 +1,55 @@
+# New drone delivery rule sets urban flight corridors, leaves privacy questions open
+
+*Fictional newspaper explainer based on a reporting snapshot as of March 20, 2025.*
+
+Commercial delivery drones will be allowed to fly beyond an operator's line of sight in designated urban corridors beginning Sept. 1 under a new Federal Airspace Safety Commission rule.
+
+Airspace Corridor Rule 14-CR-2025, issued in March, creates the first permanent framework for those flights in urban airspace. It initially covers 12 U.S. cities with populations exceeding 1 million, with other cities able to apply for corridor designation beginning in January 2026.
+
+The rule sets limits on altitude, cargo weight and operating hours. But it leaves questions about recorded footage, noise and air traffic monitoring unresolved.
+
+## What changes?
+
+Outside limited temporary waivers, the previous framework required operators to keep drones within visual line of sight. Commercial drone delivery has operated experimentally in fewer than a dozen U.S. locations under those waivers.
+
+The new rule provides a permanent route to flights beyond visual line of sight, but only within designated corridors. It does not open all urban airspace to commercial deliveries.
+
+“These corridors create a predictable, safe operating environment that protects both the public and emerging commercial operators,” commission Chair Janet Ortega said.
+
+## Where and when can drones fly?
+
+Drones may operate between 200 and 400 feet above ground level within the corridors, from 6 a.m. to 9 p.m. local time.
+
+They may not fly within one mile of hospitals, schools, prisons or emergency response facilities, even if a designated corridor falls within that distance.
+
+The commission determines corridor boundaries in consultation with local aviation authorities. Municipalities have 30 days to object before a designation becomes final.
+
+According to the commission, operators flying outside designated corridors or permitted hours face civil penalties of up to $25,000 per violation.
+
+## What can they carry, and who can operate them?
+
+The maximum payload is 5 pounds. That excludes larger grocery orders and many appliances, but a grocery order weighing 5 pounds or less is not categorically excluded.
+
+Operators must hold a Remote Operator Certificate and a corridor-specific operating permit. The permit costs $500 per year per operator.
+
+Three companies — Skyward Logistics, QuickDeliver and AirRoute — have filed applications for corridor operating permits. Those filings do not establish that the companies have received approval.
+
+## What happens to camera footage?
+
+The rule allows cameras and sensors needed for navigation but does not require operators to delete footage captured during deliveries.
+
+That omission has drawn criticism from Digital Rights Watch, an advocacy organization.
+
+“A drone at 300 feet with a package is also a drone with a camera, and the rule says almost nothing about what operators can record,” said Alan Thorpe, the organization's research director.
+
+The rule also does not set noise standards. The commission said noise limits would be addressed in a separate rulemaking expected in 2026.
+
+Local air traffic controllers' unions have raised another concern: The rule does not address how corridor drone traffic will be monitored and separated from low-altitude manned aircraft.
+
+## What benefits are projected?
+
+The commission estimates that corridor deliveries could reduce short-haul delivery truck trips in covered cities by 5% to 12% if widely adopted. That is a conditional projection, not a measured reduction in traffic.
+
+The Commercial Drone Alliance said the rule would “unlock hundreds of millions of dollars in investment in same-day delivery infrastructure.” That figure is the alliance's forecast, not investment already secured.
+
+The commission processed 3,400 public comments during rulemaking, most from residents of the initial 12 cities. The permanent framework is now set to take effect in September, while noise standards remain for a later proceeding.

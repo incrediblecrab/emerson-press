@@ -1,0 +1,35 @@
+Harwick sues Nexum Technologies over app payment rules, seeking $500 million
+
+HARWICK — Harwick State Attorney General Carla Muñoz sued Nexum Technologies on Monday, accusing the mobile payment processor of illegally forcing app stores to route all in-app purchases exclusively through its own payment system.
+
+The lawsuit, filed in U.S. District Court for the District of Harwick, alleges Nexum violated Sections 1 and 2 of the Sherman Antitrust Act. It seeks a court order voiding Nexum's exclusive dealing contracts with app store operators and $500 million in monetary relief for consumers. No court has ruled on either request.
+
+"Our investigation found a deliberate strategy to block smaller processors from competing on the merits," Muñoz said.
+
+Nexum spokesperson Paul Sterling disputed the allegations. "The claims misread our contracts and misunderstand how competitive payment markets actually work," he said, adding that the company would defend the case vigorously.
+
+According to the complaint, Nexum holds about 67% of the mobile payment processing market in Harwick State and processed roughly $4.1 billion in transactions there in 2024. The state's expert economist calculated that Nexum collected about $380 million in what the complaint calls "supracompetitive" processing fees between 2020 and 2024.
+
+The complaint identifies six app store operators, a mix of large national platforms and regional companies, as parties to the exclusive contracts. Muñoz's office declined to name them, and none is named as a defendant in the case.
+
+Muñoz's office said the lawsuit followed an 18-month investigation that included review of more than 400,000 pages of internal Nexum documents obtained through civil investigative demand. The inquiry was triggered in part by a complaint from ClearPay Inc., a small Harwick-based payment processor.
+
+ClearPay CEO Amanda Jin said her company lost business because of Nexum's conduct. "We lost five signed partnership agreements after Nexum applied pressure on our distribution partners," she said.
+
+Harwick is pursuing the case on its own. A U.S. Department of Justice spokesperson said the department is "monitoring the litigation" but has not joined the suit. The Federal Trade Commission closed a separate investigation into Nexum's app store practices in 2022 without taking enforcement action.
+
+Daniel Trent, an antitrust professor at Fairhaven Law School who is not involved in the case, said the state's legal theory is plausible but cautioned that exclusive dealing claims can be difficult to prove in digital markets.
+
+Nexum's stock fell 3.8% Monday following news of the lawsuit.
+
+The case has been assigned to U.S. District Judge Harriet Fontaine.
+
+Nexum employs about 2,400 people worldwide, including roughly 300 at its Harwick State office.
+
+---
+
+Editorial notes (not part of the story):
+
+- This is a fully fictional exercise, as instructed; all names (Harwick, Nexum, Muñoz, Sterling, ClearPay, Jin, Trent, Fontaine, Fairhaven Law School) are invented per the reporting packet and should not be read as referring to real people, companies or jurisdictions.
+- I did not include f10's FTC detail beyond stating the 2022 investigation closed without enforcement action; per the packet, there is no finding that the underlying conduct was lawful, so I avoided implying exoneration.
+- Word count target (450–650) is met; current draft is approximately 470 words.

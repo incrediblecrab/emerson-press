@@ -1,0 +1,36 @@
+**Harwick sues Nexum Technologies, alleging payment-system monopoly**
+
+MEDFORD, Harwick — Harwick State Attorney General Carla Muñoz filed an antitrust lawsuit Monday against Nexum Technologies, accusing the company of forcing app stores to route all in-app purchases through its own payment system.
+
+The complaint, filed in U.S. District Court for the District of Harwick, alleges Nexum violated Sections 1 and 2 of the Sherman Antitrust Act through exclusive dealing contracts that blocked competitors from the mobile payment processing market.
+
+"Our investigation found a deliberate strategy to block smaller processors from competing on the merits," Muñoz said.
+
+Nexum spokesperson Paul Sterling said the claims "misread our contracts and misunderstand how competitive payment markets actually work." He said the company would defend the case vigorously.
+
+The lawsuit seeks injunctive relief to void the exclusive contracts and $500 million in monetary relief for affected consumers. No court has ruled on the requested remedies. The case is assigned to U.S. District Judge Harriet Fontaine.
+
+According to the complaint's market-share analysis, Nexum controls approximately 67% of mobile payment processing in Harwick State and processed about $4.1 billion in transactions there in 2024. The state's expert economist calculated roughly $380 million in what the complaint calls "supracompetitive" payment-processing fees between 2020 and 2024.
+
+Muñoz's office said the case followed an 18-month investigation that included review of more than 400,000 pages of internal company documents obtained through civil investigative demand.
+
+The complaint identifies six app store operators, including both large national platforms and regional operators, as parties to the exclusive contracts. None are named as defendants, and Muñoz's office declined to identify them.
+
+The investigation was prompted in part by a complaint from ClearPay Inc., a small Harwick-based payment processor. ClearPay CEO Amanda Jin said her company had "lost five signed partnership agreements after Nexum applied pressure on our distribution partners."
+
+Harwick is pursuing the case alone. The U.S. Department of Justice said through a spokesperson it is "monitoring the litigation" but has not joined the lawsuit. The Federal Trade Commission closed a separate investigation into Nexum's app store practices in 2022 without bringing an enforcement action; the agency did not state at the time that the conduct was lawful.
+
+Daniel Trent, an antitrust professor at Fairhaven Law School who is not involved in the case, said the legal theory behind the lawsuit is plausible but cautioned that exclusive dealing claims in digital markets can be difficult to prove.
+
+Nexum's stock fell 3.8% Monday after the lawsuit was announced.
+
+Nexum employs about 2,400 people worldwide, including roughly 300 at its Harwick State office.
+
+---
+
+*Editorial notes (not part of the story):*
+
+- *AP style used throughout: numerals for percentages and money, "%" closed up, spelled-out state name in the dateline placeholder (fictional "Harwick" has no real AP state abbreviation, so the full name is used in the dateline as a substitute for a real jurisdiction).*
+- *The dateline city ("Medford, Harwick") is invented only insofar as the fictional exercise requires a bylined location; no real reporting presence is claimed. If this is to run as a real-world exercise, a genuine city consistent with the fictional state should be substituted or the dateline omitted.*
+- *Facts f13 and f20 were reconciled: the complaint names six app store operators as contract parties, but Muñoz's office declined to identify them publicly and none are named as defendants — this is stated plainly rather than presented as a contradiction.*
+- *No outside verification, additional reporting, or document review occurred beyond the supplied packet; all attributions track the facts as given.*

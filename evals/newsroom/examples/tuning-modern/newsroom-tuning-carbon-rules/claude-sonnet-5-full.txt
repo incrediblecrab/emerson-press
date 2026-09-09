@@ -1,0 +1,33 @@
+Headline: Agency Orders 40% Emissions Cut for Coal, Gas Plants by 2029
+
+WASHINGTON — The Environmental Compliance Agency issued a rule Wednesday requiring coal and natural gas power plants to cut carbon dioxide emissions 40% by 2029, using an expedited process that bypassed the agency's usual monthslong consultation period.
+
+The Interim Clean Generation Standard takes effect May 9, 30 days after publication. It applies to roughly 340 coal and gas facilities with generating capacity of 100 megawatts or more, and requires those plants to reduce emissions 40% by May 9, 2029, compared with their 2024 levels.
+
+Agency Administrator Thomas Beckwith defended the rule's speed. "The climate math is simple: we have run out of time for voluntary measures," he said.
+
+Plants have four ways to comply: reduce emissions directly, purchase carbon offset credits, retire the facility, or apply for an 18-month extension by demonstrating financial hardship. Offset credits will initially be priced at $45 per metric ton, subject to annual revision. The agency said the list of approved third-party certifiers needed to validate offset purchases has not yet been published but will appear in a supplemental Federal Register notice before the rule takes effect.
+
+The agency projects the rule will cut annual carbon emissions from covered plants by about 280 million metric tons if facilities fully comply. Independent analysts at the Meridian Policy Institute estimated compliance costs at $18 billion to $31 billion over four years, depending on offset prices.
+
+The rule replaces a 2018 standard that required an 18% emissions reduction from 2014 levels by 2030. The agency did not provide a way to directly compare the two standards, which use different baseline years.
+
+To move quickly, the agency invoked emergency authority allowing it to shorten its typical 180-day consultation schedule. It held a 45-day public comment period earlier this year, receiving about 12,000 written comments, before finalizing the rule.
+
+The American Power Producers Alliance, an industry group, said it would challenge the rule in the U.S. Fifth Circuit Court of Appeals, arguing the agency exceeded its statutory authority. "This rule bypasses congressional intent and will raise electricity rates for millions of families," said Roger Holt, the alliance's president.
+
+The rule is also facing an earlier legal challenge. Three states — Harwick, Dunmore and Selby — sued in February over the agency's use of emergency rulemaking authority to develop the standard. That case remains pending.
+
+Reaction in Congress split along familiar lines. Two Democratic senators from coal-producing states issued a joint statement calling the rule "procedurally flawed and economically reckless." The senators were not identified by name in agency materials released Wednesday.
+
+Environmental advocates welcomed the rule. The Clean Energy Now coalition, which represents 34 environmental organizations, called it "a necessary and overdue first step."
+
+The rule does not apply to nuclear, solar or wind generation facilities.
+
+The agency said enforcement details, including how it will monitor compliance and penalize violations, will be spelled out in a supplemental notice expected by July.
+
+The rule's fate now rests partly with the courts. The Fifth Circuit challenge from the power producers alliance has not yet been filed, and it was not immediately clear when the pending states' lawsuit might be decided.
+
+---
+
+Editorial note: Two facts in the source notes appear to sit in tension — f6 states the certifier list "has not yet been published," while f20 states it "will be published... before the May 9 effective date." I treated these as complementary rather than contradictory (not yet published as of April 9, with publication expected before the effective date) and phrased the story accordingly. If that reading doesn't match your intent, let me know and I'll adjust. I also did not name the two senators referenced in f18, since no names were supplied in the notes.

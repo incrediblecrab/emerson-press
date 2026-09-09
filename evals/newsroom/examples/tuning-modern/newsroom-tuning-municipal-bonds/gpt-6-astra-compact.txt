@@ -1,0 +1,49 @@
+# Municipal bonds offer tax benefits, but defaults expose repayment risks
+
+Portfield, Illinois, filed for municipal bankruptcy protection April 1 after missing a bond interest payment, a reminder that lending to local governments carries risk even when the debt is backed by their general credit.
+
+The city failed to make a scheduled $18.4 million interest payment March 3 on its general obligation bonds, triggering a default. It has $340 million in outstanding general obligation debt. As of April 3, no ruling on its eligibility for bankruptcy protection was available in the reporting records.
+
+A separate default in Galena County, Texas, raises similar questions about repayment promises. Here is how municipal bonds work and what the two cases do — and do not — tell investors.
+
+## What are municipal bonds?
+
+Municipal bonds are debt securities that states, cities, counties and other government entities issue to finance projects such as roads, schools and water systems. Investors lend money in exchange for a promise of repayment and interest.
+
+Interest on most municipal bonds is exempt from federal income tax and, in many cases, state income tax for investors who live in the issuing state.
+
+That makes individuals in higher income-tax brackets an important buyer group, according to a background sheet from the Meridian Credit Rating Agency. Tax-exempt interest can compete with taxable investments after taxes, depending on the investor’s tax status and the bond’s terms.
+
+Meridian’s scenario estimate puts outstanding U.S. municipal debt at approximately $4 trillion as of December 2024.
+
+## What backs the promise to repay?
+
+Two common categories have different repayment pledges. General obligation bonds are backed by a government’s general credit and applicable taxing authority. Revenue bonds are backed by specified revenue streams. The exact pledge depends on the issue.
+
+Taxing authority does not ensure that officials will raise taxes. Galena County defaulted on $87 million in general obligation bonds in February after its commissioners court declined to raise property tax rates.
+
+The two issuers’ outstanding general obligation principal totals $427 million. That is not the amount of Portfield’s missed interest payment.
+
+## How common are defaults?
+
+Meridian reports a 2024 issuer-default rate of 0.1% in its rated municipal cohort, compared with 0.4% in its comparably rated corporate cohort. Those figures describe one year in the agency’s database, not a universal historical average or the likelihood that any particular bond will default.
+
+“The headline default rate is low, but it masks enormous variation between large, stable issuers and small cities running structural deficits,” said Linda Chai, a municipal finance professor at Harwick University.
+
+Meridian downgraded Portfield’s bonds from A to below investment grade in March.
+
+## What should investors examine?
+
+Chai identified pension obligations, tax revenue shortfalls and population changes as issues to examine in Portfield. She did not assign each factor a share of responsibility for the default.
+
+The city has approximately $1.2 billion in unfunded pension obligations, compared with annual revenues of approximately $280 million. Those figures compare an accumulated obligation with one year’s revenue, not bills all due at once. Its population fell from 94,000 in 2010 to approximately 71,000 in 2024, according to U.S. Census estimates.
+
+## Will insurance or bankruptcy make investors whole?
+
+The available records do not establish that.
+
+National Municipal Guarantee Corp. insured 40% of Portfield’s outstanding bond principal. That does not establish coverage for the missed interest payment. A spokeswoman declined to discuss policy specifics.
+
+Chapter 9 provides a federal court process for adjusting eligible municipal debts. Recoveries depend on the plan and creditors’ rights; no approved Portfield plan or recovery estimate was supplied.
+
+The records announce no federal guarantee or rescue for either issuer. The Senate Finance Subcommittee on State and Local Finance has scheduled hearings on municipal debt distress for May.

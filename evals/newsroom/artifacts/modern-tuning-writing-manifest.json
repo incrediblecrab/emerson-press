@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "kind": "ungraded-preregistered-newsroom-tuning-captures",
+  "design": "evals/newsroom/tuning-design.json",
+  "design_sha256": "c990c6cd7b1d5d1c375105a562f342706a2ad991deb3547597021825578dfea1",
+  "planned_responses": 72,
+  "distinct_tuning_cases": 12,
+  "declared_family_ids": 12,
+  "held_out_cases": 0,
+  "variants": [
+    "bare-task",
+    "full",
+    "compact"
+  ],
+  "writers": [
+    "gpt-6-astra",
+    "claude-sonnet-5"
+  ],
+  "verified_receipts": 72,
+  "cell_counts": [
+    {
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "responses": 12
+    },
+    {
+      "writer": "claude-sonnet-5",
+      "variant": "compact",
+      "responses": 12
+    },
+    {
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "responses": 12
+    },
+    {
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "responses": 12
+    },
+    {
+      "writer": "gpt-6-astra",
+      "variant": "compact",
+      "responses": 12
+    },
+    {
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "responses": 12
+    }
+  ],
+  "raw_response_whitespace_words": [
+    {
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "minimum": 541,
+      "maximum": 661,
+      "mean": 600.8333333333334
+    },
+    {
+      "writer": "claude-sonnet-5",
+      "variant": "compact",
+      "minimum": 479,
+      "maximum": 637,
+      "mean": 575.3333333333334
+    },
+    {
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "minimum": 471,
+      "maximum": 655,
+      "mean": 565.75
+    },
+    {
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "minimum": 473,
+      "maximum": 619,
+      "mean": 550.8333333333334
+    },
+    {
+      "writer": "gpt-6-astra",
+      "variant": "compact",
+      "minimum": 477,
+      "maximum": 623,
+      "mean": 547.5833333333334
+    },
+    {
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "minimum": 478,
+      "maximum": 618,
+      "mean": 545.25
+    }
+  ],
+  "word_count_scope": "Whole unchanged response, including headline, markup or commentary; not an article-only length or quality score.",
+  "limitation": "Twelve tuning source packets repeated across two writers and three variants, not 72 independent cases or a powered efficacy result.",
+  "records": 72,
+  "artifact": "evals/newsroom/artifacts/modern-tuning-writing.jsonl.xz",
+  "artifact_sha256": "a313deee25dcd429d5dfadd6e2f8aa5539ee8b31424a3882dde7e773ec6be560",
+  "payload_sha256": "4af1b8d6a326c3be850b6585aa82cae94082986bcce68792173cfbfdbfa8190d",
+  "human_reviews": 0
+}

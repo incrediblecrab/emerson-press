@@ -37,6 +37,11 @@ selected before treatment outcomes; earlier mini/Haiku stress trials remain
 separate. This registration contains no results and does not authorize a
 held-out run or establish a statistically powered sample.
 
+All 72 planned drafts have now been captured and checked against that registration,
+with matching model/settings and zero observed tool calls. They are retained in
+`artifacts/modern-tuning-writing.jsonl.xz`, and [every unchanged draft is readable](examples/tuning-modern/README.md).
+Editorial judging is pending; complete transport coverage is not a quality result.
+
 Case count is not independent sample size. Reused events and templates must stay
 in the same family and split. Freeze the actual family map, candidate recipe,
 model settings, primary contrast, grading protocol and statistical plan before

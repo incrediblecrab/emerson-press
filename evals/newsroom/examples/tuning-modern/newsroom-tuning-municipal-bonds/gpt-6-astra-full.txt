@@ -1,0 +1,45 @@
+# Municipal bond defaults put repayment promises in focus
+
+*Fictional news explainer | April 3, 2025*
+
+Portfield, Illinois, has defaulted on its municipal bonds and filed for bankruptcy protection, raising a question for investors in debt used to build roads, schools and water systems: What stands behind the promise to repay?
+
+The city missed an $18.4 million interest payment on March 3 and filed a Chapter 9 petition April 1. It has $340 million in general obligation bond debt. No ruling on its eligibility for municipal bankruptcy protection is included in the available records.
+
+A separate default in Galena County, Texas, in February involved $87 million in general obligation bonds after its commissioners court declined to raise property tax rates. Together, the two issuers have $427 million in outstanding principal. That is not the amount of Portfield's missed payment.
+
+## What are municipal bonds?
+
+Municipal bonds are debt securities issued by states, cities, counties and other local government entities to finance capital projects. Investors lend money in exchange for a promise of repayment under the bond's terms.
+
+Interest on most municipal bonds is exempt from federal income tax and, in many cases, state income tax for investors who live in the issuing state. Meridian Credit Rating Agency identifies people in higher income-tax brackets as an important buyer group because tax-exempt interest can be competitive after taxes, depending on the investor and the bond.
+
+Meridian's background sheet puts outstanding U.S. municipal debt at approximately $4 trillion in a December 2024 scenario estimate. It assigns 25% to mutual funds and money market funds combined.
+
+## What backs repayment?
+
+Two common categories have different repayment promises. General obligation bonds rely on a government's general credit and applicable taxing authority. Revenue bonds rely on specified revenue streams. The precise pledge depends on the issue.
+
+A general obligation pledge does not eliminate default risk, as the Portfield and Galena County cases show.
+
+Portfield also has approximately $1.2 billion in unfunded pension obligations, compared with annual revenues of approximately $280 million. Those figures measure different things: an accumulated obligation and one year's revenue.
+
+The city's population fell from 94,000 in 2010 to approximately 71,000 in 2024, according to U.S. Census estimates. Linda Chai, a municipal finance professor at Harwick University, identified pension obligations, tax revenue shortfalls and population changes as issues to examine. She did not assign a share of responsibility to each.
+
+Meridian downgraded Portfield's bonds from A to below investment grade in March.
+
+## How common are defaults?
+
+Meridian reports a 2024 issuer-default rate of 0.1% in its rated municipal cohort, compared with 0.4% in its comparably rated corporate cohort. These are one-year rates for those groups, not universal historical averages or predictions for a particular bond.
+
+"The headline default rate is low, but it masks enormous variation between large, stable issuers and small cities running structural deficits," Chai said.
+
+## What happens after a default?
+
+Chapter 9 provides a federal court process for adjusting eligible municipal debts. Portfield's filing does not establish eligibility or tell bondholders how much they will recover. No approved plan or recovery estimate is available in the reporting records.
+
+Portfield's bonds were partially insured by National Municipal Guarantee Corp., with coverage for 40% of outstanding principal. That figure alone does not establish what the insurer will pay toward the missed interest payment.
+
+A company spokeswoman declined to discuss policy specifics but said its exposure to below-investment-grade municipal bonds was "within our risk management parameters."
+
+The Senate Finance Subcommittee on State and Local Finance has announced hearings for May on municipal debt distress. The available records announce no federal guarantee or rescue for either issuer's bonds.
