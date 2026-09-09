@@ -1,0 +1,126 @@
+{
+  "kind": "unadjudicated-preregistered-newsroom-tuning",
+  "assessor": "model",
+  "human_reviews": 0,
+  "design_sha256": "c990c6cd7b1d5d1c375105a562f342706a2ad991deb3547597021825578dfea1",
+  "planned_pairs": 72,
+  "captured_judgments": 72,
+  "valid_assessments": 68,
+  "invalid_assessments": 4,
+  "distinct_tuning_cases": 12,
+  "by_contrast": {
+    "full-versus-compact": {
+      "full": 11,
+      "compact": 9,
+      "tie": 3,
+      "invalid": 1
+    },
+    "full-versus-bare-task": {
+      "full": 11,
+      "invalid": 1,
+      "bare-task": 11,
+      "tie": 1
+    },
+    "compact-versus-bare-task": {
+      "tie": 1,
+      "compact": 11,
+      "bare-task": 10,
+      "invalid": 2
+    }
+  },
+  "by_writer": [
+    {
+      "writer": "claude-sonnet-5",
+      "contrast": "compact-versus-bare-task",
+      "planned_pairs": 12,
+      "compact": 8,
+      "bare-task": 4
+    },
+    {
+      "writer": "claude-sonnet-5",
+      "contrast": "full-versus-bare-task",
+      "planned_pairs": 12,
+      "full": 10,
+      "bare-task": 2
+    },
+    {
+      "writer": "claude-sonnet-5",
+      "contrast": "full-versus-compact",
+      "planned_pairs": 12,
+      "full": 9,
+      "compact": 3
+    },
+    {
+      "writer": "gpt-6-astra",
+      "contrast": "compact-versus-bare-task",
+      "planned_pairs": 12,
+      "tie": 1,
+      "compact": 3,
+      "bare-task": 6,
+      "invalid": 2
+    },
+    {
+      "writer": "gpt-6-astra",
+      "contrast": "full-versus-bare-task",
+      "planned_pairs": 12,
+      "invalid": 1,
+      "bare-task": 9,
+      "full": 1,
+      "tie": 1
+    },
+    {
+      "writer": "gpt-6-astra",
+      "contrast": "full-versus-compact",
+      "planned_pairs": 12,
+      "compact": 6,
+      "tie": 3,
+      "full": 2,
+      "invalid": 1
+    }
+  ],
+  "failures": [
+    {
+      "pair": "pair-0004",
+      "case_id": "newsroom-tuning-antitrust-suit",
+      "writer": "gpt-6-astra",
+      "judge": "claude-sonnet-5",
+      "contrast": "full-versus-bare-task",
+      "error_type": "DocumentError",
+      "error": "slop: missing fields []; unknown fields ['reason']"
+    },
+    {
+      "pair": "pair-0047",
+      "case_id": "newsroom-tuning-grocery-closures",
+      "writer": "gpt-6-astra",
+      "judge": "claude-sonnet-5",
+      "contrast": "compact-versus-bare-task",
+      "error_type": "DocumentError",
+      "error": "slop finding: missing fields ['reason']; unknown fields []"
+    },
+    {
+      "pair": "pair-0065",
+      "case_id": "newsroom-tuning-newspaper-acquisition",
+      "writer": "gpt-6-astra",
+      "judge": "claude-sonnet-5",
+      "contrast": "compact-versus-bare-task",
+      "error_type": "DocumentError",
+      "error": "evidence IDs must be unique and ordered"
+    },
+    {
+      "pair": "pair-0072",
+      "case_id": "newsroom-tuning-port-strike",
+      "writer": "gpt-6-astra",
+      "judge": "claude-sonnet-5",
+      "contrast": "full-versus-compact",
+      "error_type": "DocumentError",
+      "error": "evidence IDs must be unique and ordered"
+    }
+  ],
+  "limitations": [
+    "Frozen original parser; invalid assessments are retained, not silently repaired or retried.",
+    "Each writer is paired with only one opposite-family judge, so apparent writer differences can also reflect judge preferences.",
+    "Repeated paired slop labels and failure flags are not stable article-level incidence.",
+    "Twelve source packets, not 72 independent comparisons; no efficacy p-value or human approval.",
+    "Near-balanced aggregate preferences do not establish that the repository improves prose or eliminates slop."
+  ]
+}

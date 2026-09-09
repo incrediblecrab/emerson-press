@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "kind": "unadjudicated-preregistered-newsroom-paired-assessments",
+  "design_sha256": "c990c6cd7b1d5d1c375105a562f342706a2ad991deb3547597021825578dfea1",
+  "writer_archive": "evals/newsroom/artifacts/modern-tuning-writing.jsonl.xz",
+  "planned_pairs": 72,
+  "valid_assessments": 68,
+  "invalid_assessments": 4,
+  "distinct_tuning_cases": 12,
+  "limitation": "All 72 raw opinions retained, including schema failures. Model-rated tuning evidence, not human judgments or independent fact verification.",
+  "records": 72,
+  "artifact": "evals/newsroom/artifacts/modern-tuning-paired.jsonl.xz",
+  "artifact_sha256": "ff51f6017e263ff8a2524baed431e7547ce672581f4701d17180936fd752c97f",
+  "payload_sha256": "fb8c5af23f27a1f2f6f02d34835144c96e5ea3d25d807d6243786cff2b8bf5cf",
+  "human_reviews": 0
+}

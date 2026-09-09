@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "kind": "model-pointwise-tuning-with-retained-original-failures",
+  "design_sha256": "c990c6cd7b1d5d1c375105a562f342706a2ad991deb3547597021825578dfea1",
+  "writer_archive": "evals/newsroom/artifacts/modern-tuning-writing.jsonl.xz",
+  "planned_inputs": 72,
+  "original_valid_assessments": 70,
+  "original_invalid_assessments": 2,
+  "revalidated_assessments": 72,
+  "new_inference_calls_for_revalidation": 0,
+  "distinct_tuning_cases": 12,
+  "limitation": "Two omitted text- prefixes recovered in a separately labeled all-response reanalysis. Raw judgments, failures and decisions are unchanged; no efficacy or human-review claim.",
+  "records": 72,
+  "artifact": "evals/newsroom/artifacts/modern-tuning-pointwise.jsonl.xz",
+  "artifact_sha256": "ffed6e9d261f956c857a2f3a5bffdd7162522ff202af8d384430d6ecc31fc5c6",
+  "payload_sha256": "6353c92b1525fe497379954eb2b604da191b0bd33e8a46f1a1f895ba307ba0ae",
+  "human_reviews": 0
+}

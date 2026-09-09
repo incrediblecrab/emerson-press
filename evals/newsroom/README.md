@@ -40,7 +40,7 @@ held-out run or establish a statistically powered sample.
 All 72 planned drafts have now been captured and checked against that registration,
 with matching model/settings and zero observed tool calls. They are retained in
 `artifacts/modern-tuning-writing.jsonl.xz`, and [every unchanged draft is readable](examples/tuning-modern/README.md).
-Editorial judging is pending; complete transport coverage is not a quality result.
+Complete transport coverage is not a quality result.
 
 Case count is not independent sample size. Reused events and templates must stay
 in the same family and split. Freeze the actual family map, candidate recipe,
@@ -59,6 +59,68 @@ On this one case, the blinded pairwise judges preferred both full and compact
 over `bare-task` for both writer models. Full versus compact split by writer.
 This is a small positive preference signal, not four independent wins or evidence
 that the repository eliminates slop.
+
+## The 12-packet tuning result
+
+**This automated pilot does not establish an overall writing improvement or
+elimination of noticeable slop.** Full instructions won 11 comparisons against
+bare prompts, lost 11 and tied one; one assessment was invalid. Compact won 11,
+lost 10 and tied one against bare prompts, with two invalid assessments.
+
+All 72 paired judgments were captured; 68 passed the frozen parser. The four
+failures remain in the [paired archive](artifacts/modern-tuning-paired.jsonl.xz)
+and [summary](artifacts/modern-tuning-paired-summary.json). They were not silently
+retried or removed from the planned denominator.
+
+The table shows **wins / ties / losses / invalid**, from the perspective of the
+first recipe in each contrast. Every cell represents the same 12 tuning packets.
+
+| Writer; judge | Full vs. bare | Compact vs. bare | Full vs. compact |
+|---|---|---|---|
+| Claude Sonnet 5; GPT-6 Astra | 10 / 0 / 2 / 0 | 8 / 0 / 4 / 0 | 9 / 0 / 3 / 0 |
+| GPT-6 Astra; Claude Sonnet 5 | 1 / 1 / 9 / 1 | 3 / 1 / 6 / 2 | 2 / 3 / 6 / 1 |
+
+That striking difference cannot yet be assigned to the writers: each writer had
+only one judging model, so writer and judge preferences are confounded.
+[A prospective rater crossover](rater-crossover-design.json) therefore reuses all
+24 full-versus-bare pairs and their 48 individual articles with the other judge.
+It changes no writing, facts or A/B orientation and selects no favorable cases.
+The added judgments are a measurement diagnostic, not extra independent stories
+or a search for a judge that will endorse the repository.
+
+The separate pointwise pass also captured all 72 responses. Its original parser
+accepted 70. Two responses omitted `text-` from otherwise valid paragraph IDs;
+an explicitly labeled reanalysis of **all 72 unchanged responses** restores that
+prefix only when the exact paragraph exists. Unknown paragraphs and duplicate
+IDs still fail. This required no new model calls and changed no level, reason or
+factual judgment. Both original failures remain in the
+[pointwise archive](artifacts/modern-tuning-pointwise.jsonl.xz) and
+[summary](artifacts/modern-tuning-pointwise-summary.json).
+
+These cells show **absent / minor / salient** after that mechanical ID recovery:
+
+| Writer; judge | Bare | Full | Compact |
+|---|---|---|---|
+| Claude Sonnet 5; GPT-6 Astra | 1 / 11 / 0 | 6 / 6 / 0 | 4 / 8 / 0 |
+| GPT-6 Astra; Claude Sonnet 5 | 6 / 6 / 0 | 1 / 10 / 1 | 6 / 6 / 0 |
+
+No untreated article was rated salient. This cohort therefore cannot demonstrate
+that a recipe eliminates conspicuous slop. The one salient full-instruction
+rating is not a powered estimate of harm either. Paired slop ratings often differ
+from these single-article judgments and must not be substituted for them.
+
+One concrete issue worth testing is repeated source-limit language. The full
+GPT municipal-bond draft repeatedly states what a number or record does *not*
+establish, even where the claim is already narrowly framed. This suggests testing
+whether scope can be expressed more naturally without repeating disclaimers.
+It does not justify removing material uncertainty, safety warnings or useful
+fiction labels. Factual flags remain model concerns, not a verified error count.
+A flagged quotation omission is not automatically fabrication; it must be
+assessed against the actual brief and protected meaning.
+
+The sample is 12 tuning reporting packets, not 72 independent stories or human
+reader reviews. No efficacy p-value, default promotion, NYT/WSJ-equivalent quality
+or independently verified factual-cleanliness claim follows from these results.
 
 ## Grading the prose, not its supposed author
 

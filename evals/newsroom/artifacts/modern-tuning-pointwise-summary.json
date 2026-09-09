@@ -1,0 +1,1384 @@
+{
+  "kind": "pointwise-newsroom-tuning-with-explicit-id-reanalysis",
+  "assessor": "model",
+  "human_reviews": 0,
+  "design_sha256": "c990c6cd7b1d5d1c375105a562f342706a2ad991deb3547597021825578dfea1",
+  "planned_inputs": 72,
+  "captured_assessments": 72,
+  "original_valid_assessments": 70,
+  "original_invalid_assessments": 2,
+  "original_by_writer": [
+    {
+      "writer": "claude-sonnet-5",
+      "variant": "bare-task",
+      "articles": 12,
+      "slop": {
+        "minor": 11,
+        "absent": 1
+      },
+      "fidelity": {
+        "flag": 12
+      }
+    },
+    {
+      "writer": "claude-sonnet-5",
+      "variant": "compact",
+      "articles": 12,
+      "slop": {
+        "minor": 8,
+        "absent": 4
+      },
+      "fidelity": {
+        "flag": 10,
+        "no_flag": 2
+      }
+    },
+    {
+      "writer": "claude-sonnet-5",
+      "variant": "full",
+      "articles": 12,
+      "slop": {
+        "minor": 6,
+        "absent": 6
+      },
+      "fidelity": {
+        "no_flag": 3,
+        "flag": 9
+      }
+    },
+    {
+      "writer": "gpt-6-astra",
+      "variant": "bare-task",
+      "articles": 12,
+      "slop": {
+        "absent": 6,
+        "invalid": 1,
+        "minor": 5
+      },
+      "fidelity": {
+        "no_flag": 10,
+        "invalid": 1,
+        "flag": 1
+      }
+    },
+    {
+      "writer": "gpt-6-astra",
+      "variant": "compact",
+      "articles": 12,
+      "slop": {
+        "absent": 6,
+        "minor": 6
+      },
+      "fidelity": {
+        "no_flag": 10,
+        "flag": 2
+      }
+    },
+    {
+      "writer": "gpt-6-astra",
+      "variant": "full",
+      "articles": 12,
+      "slop": {
+        "minor": 9,
+        "invalid": 1,
+        "absent": 1,
+        "salient": 1
+      },
+      "fidelity": {
+        "no_flag": 9,
+        "invalid": 1,
+        "flag": 2
+      }
+    }
+  ],
+  "original_failures": [
+    {
+      "item": "item-0008",
+      "records": [
+        {
+          "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-auto-retraining-bare-task-gpt-6-astra/record.json",
+          "result_sha256": "0c7b1f50a8d65d11b5837956e6bd02fa08a1b9dae5d55d1c3be203b0589ab0d5",
+          "case_id": "newsroom-tuning-auto-retraining",
+          "writer": "gpt-6-astra",
+          "variant": "bare-task"
+        }
+      ],
+      "valid_assessment": false,
+      "error_type": "DocumentError",
+      "error": "unknown evidence paragraph ID"
+    },
+    {
+      "item": "item-0012",
+      "records": [
+        {
+          "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-auto-retraining-full-gpt-6-astra/record.json",
+          "result_sha256": "923fb9c339151dcba29a04c5e39ff51f04ae457e1cdf098ae4b7145623bf1d25",
+          "case_id": "newsroom-tuning-auto-retraining",
+          "writer": "gpt-6-astra",
+          "variant": "full"
+        }
+      ],
+      "valid_assessment": false,
+      "error_type": "DocumentError",
+      "error": "unknown evidence paragraph ID"
+    }
+  ],
+  "revalidation": {
+    "method": "single-article-prefix-normalization-v1",
+    "implementation_sha256": "bf147feda5ade891318ece3a6f62f9694fb66b0d43135670b34d2ad43e0fdc13",
+    "rule": "Only map a bare pNNN to text-pNNN when that exact supplied paragraph exists. Preserve already valid IDs; reject unknown paragraphs and post-mapping duplicates.",
+    "scope": "All 72 unchanged model responses, not just the failed ones.",
+    "valid_assessments": 72,
+    "new_inference_calls": 0,
+    "changed_model_decisions": 0,
+    "by_writer": [
+      {
+        "writer": "claude-sonnet-5",
+        "variant": "bare-task",
+        "articles": 12,
+        "slop": {
+          "minor": 11,
+          "absent": 1
+        },
+        "fidelity": {
+          "flag": 12
+        }
+      },
+      {
+        "writer": "claude-sonnet-5",
+        "variant": "compact",
+        "articles": 12,
+        "slop": {
+          "minor": 8,
+          "absent": 4
+        },
+        "fidelity": {
+          "flag": 10,
+          "no_flag": 2
+        }
+      },
+      {
+        "writer": "claude-sonnet-5",
+        "variant": "full",
+        "articles": 12,
+        "slop": {
+          "minor": 6,
+          "absent": 6
+        },
+        "fidelity": {
+          "no_flag": 3,
+          "flag": 9
+        }
+      },
+      {
+        "writer": "gpt-6-astra",
+        "variant": "bare-task",
+        "articles": 12,
+        "slop": {
+          "absent": 6,
+          "minor": 6
+        },
+        "fidelity": {
+          "no_flag": 11,
+          "flag": 1
+        }
+      },
+      {
+        "writer": "gpt-6-astra",
+        "variant": "compact",
+        "articles": 12,
+        "slop": {
+          "absent": 6,
+          "minor": 6
+        },
+        "fidelity": {
+          "no_flag": 10,
+          "flag": 2
+        }
+      },
+      {
+        "writer": "gpt-6-astra",
+        "variant": "full",
+        "articles": 12,
+        "slop": {
+          "minor": 10,
+          "absent": 1,
+          "salient": 1
+        },
+        "fidelity": {
+          "no_flag": 9,
+          "flag": 3
+        }
+      }
+    ],
+    "results": [
+      {
+        "item": "item-0001",
+        "original_valid": true,
+        "level": "minor",
+        "fidelity": "flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-antitrust-suit-bare-task-claude-sonnet-5/record.json",
+            "result_sha256": "f08055964ac3783ec97c981990d79842c36eca914344ed9f2d0dd09af8e9c58a",
+            "case_id": "newsroom-tuning-antitrust-suit",
+            "writer": "claude-sonnet-5",
+            "variant": "bare-task"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0002",
+        "original_valid": true,
+        "level": "absent",
+        "fidelity": "no_flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-antitrust-suit-bare-task-gpt-6-astra/record.json",
+            "result_sha256": "17fb20ce0907e2c6f42d5e51b827c3177264e56956fac725d9185dcff61df26f",
+            "case_id": "newsroom-tuning-antitrust-suit",
+            "writer": "gpt-6-astra",
+            "variant": "bare-task"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0003",
+        "original_valid": true,
+        "level": "minor",
+        "fidelity": "flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-antitrust-suit-compact-claude-sonnet-5/record.json",
+            "result_sha256": "7006892c3f95138f4a45a0d08c666f8ce3259ae629f35fa288d317d86620caeb",
+            "case_id": "newsroom-tuning-antitrust-suit",
+            "writer": "claude-sonnet-5",
+            "variant": "compact"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0004",
+        "original_valid": true,
+        "level": "absent",
+        "fidelity": "no_flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-antitrust-suit-compact-gpt-6-astra/record.json",
+            "result_sha256": "3dfb8cb0f1fda6359085778b86091b34c7f33d7d9af079f1d904a5d02c2a8a63",
+            "case_id": "newsroom-tuning-antitrust-suit",
+            "writer": "gpt-6-astra",
+            "variant": "compact"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0005",
+        "original_valid": true,
+        "level": "minor",
+        "fidelity": "no_flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-antitrust-suit-full-claude-sonnet-5/record.json",
+            "result_sha256": "6c299f2ddd52732f0b5ba5d971a271276088f3b771d2d5ff59a2f4044ef11577",
+            "case_id": "newsroom-tuning-antitrust-suit",
+            "writer": "claude-sonnet-5",
+            "variant": "full"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0006",
+        "original_valid": true,
+        "level": "minor",
+        "fidelity": "no_flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-antitrust-suit-full-gpt-6-astra/record.json",
+            "result_sha256": "fb822ccc45d5e01d45589c796bedd8f39514e727c211fa129e66c399011ef809",
+            "case_id": "newsroom-tuning-antitrust-suit",
+            "writer": "gpt-6-astra",
+            "variant": "full"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0007",
+        "original_valid": true,
+        "level": "minor",
+        "fidelity": "flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-auto-retraining-bare-task-claude-sonnet-5/record.json",
+            "result_sha256": "9587add90ecfff28f97dd5abbfd74e4fe3278fd6cefc77fa3f18bee35bc1c83c",
+            "case_id": "newsroom-tuning-auto-retraining",
+            "writer": "claude-sonnet-5",
+            "variant": "bare-task"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0008",
+        "original_valid": false,
+        "level": "minor",
+        "fidelity": "no_flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-auto-retraining-bare-task-gpt-6-astra/record.json",
+            "result_sha256": "0c7b1f50a8d65d11b5837956e6bd02fa08a1b9dae5d55d1c3be203b0589ab0d5",
+            "case_id": "newsroom-tuning-auto-retraining",
+            "writer": "gpt-6-astra",
+            "variant": "bare-task"
+          }
+        ],
+        "id_replacements": {
+          "p008": "text-p008",
+          "p012": "text-p012"
+        }
+      },
+      {
+        "item": "item-0009",
+        "original_valid": true,
+        "level": "absent",
+        "fidelity": "flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-auto-retraining-compact-claude-sonnet-5/record.json",
+            "result_sha256": "975da29d192467779d40d33c36fff66c17137ea38920b71be71fc2f5949c9b8d",
+            "case_id": "newsroom-tuning-auto-retraining",
+            "writer": "claude-sonnet-5",
+            "variant": "compact"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0010",
+        "original_valid": true,
+        "level": "minor",
+        "fidelity": "no_flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-auto-retraining-compact-gpt-6-astra/record.json",
+            "result_sha256": "b7429e500f12c44df6006018e388ecc9e331d1cc51722a9e8c72102a022ab651",
+            "case_id": "newsroom-tuning-auto-retraining",
+            "writer": "gpt-6-astra",
+            "variant": "compact"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0011",
+        "original_valid": true,
+        "level": "absent",
+        "fidelity": "flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-auto-retraining-full-claude-sonnet-5/record.json",
+            "result_sha256": "b93e63e3ec9fa6d39cacf87fa3f60da6be58cca14faebcf9295de8d44fc3ae96",
+            "case_id": "newsroom-tuning-auto-retraining",
+            "writer": "claude-sonnet-5",
+            "variant": "full"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0012",
+        "original_valid": false,
+        "level": "minor",
+        "fidelity": "flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-auto-retraining-full-gpt-6-astra/record.json",
+            "result_sha256": "923fb9c339151dcba29a04c5e39ff51f04ae457e1cdf098ae4b7145623bf1d25",
+            "case_id": "newsroom-tuning-auto-retraining",
+            "writer": "gpt-6-astra",
+            "variant": "full"
+          }
+        ],
+        "id_replacements": {
+          "p008": "text-p008",
+          "p011": "text-p011"
+        }
+      },
+      {
+        "item": "item-0013",
+        "original_valid": true,
+        "level": "absent",
+        "fidelity": "flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-blood-supply-bare-task-claude-sonnet-5/record.json",
+            "result_sha256": "0fecfe8fad31b43a0c75bbae4695fdbc5069d38efec4955723d755afc74a99dc",
+            "case_id": "newsroom-tuning-blood-supply",
+            "writer": "claude-sonnet-5",
+            "variant": "bare-task"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0014",
+        "original_valid": true,
+        "level": "minor",
+        "fidelity": "no_flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-blood-supply-bare-task-gpt-6-astra/record.json",
+            "result_sha256": "11cb7c226c4bc2c4bf1a65b284d19b971f2cc7c698b97f753b247c80ca09923d",
+            "case_id": "newsroom-tuning-blood-supply",
+            "writer": "gpt-6-astra",
+            "variant": "bare-task"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0015",
+        "original_valid": true,
+        "level": "absent",
+        "fidelity": "flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-blood-supply-compact-claude-sonnet-5/record.json",
+            "result_sha256": "63c4aa15721792ed64038587577f45dccdd50a417a0c8153ef60c78f0eeb3052",
+            "case_id": "newsroom-tuning-blood-supply",
+            "writer": "claude-sonnet-5",
+            "variant": "compact"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0016",
+        "original_valid": true,
+        "level": "minor",
+        "fidelity": "no_flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-blood-supply-compact-gpt-6-astra/record.json",
+            "result_sha256": "da06995d97a2d108bbc0a323f7d12b9843d88560ebad2f22d5cc66d8b116aff2",
+            "case_id": "newsroom-tuning-blood-supply",
+            "writer": "gpt-6-astra",
+            "variant": "compact"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0017",
+        "original_valid": true,
+        "level": "absent",
+        "fidelity": "flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-blood-supply-full-claude-sonnet-5/record.json",
+            "result_sha256": "56e0bfa25bb090408eebe4909beca8576557ca9b4d25465f63a883e8b859142d",
+            "case_id": "newsroom-tuning-blood-supply",
+            "writer": "claude-sonnet-5",
+            "variant": "full"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0018",
+        "original_valid": true,
+        "level": "minor",
+        "fidelity": "no_flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-blood-supply-full-gpt-6-astra/record.json",
+            "result_sha256": "8dcedda7fc41b1f53ad5b0df22af427e4a1fe6ecbc66492bb7eb83dafe8c8ee8",
+            "case_id": "newsroom-tuning-blood-supply",
+            "writer": "gpt-6-astra",
+            "variant": "full"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0019",
+        "original_valid": true,
+        "level": "minor",
+        "fidelity": "flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-carbon-rules-bare-task-claude-sonnet-5/record.json",
+            "result_sha256": "9a257915c47e21d87ebafbc970c1d74fcf0b83fb0e2a9fcc746ea11109914b72",
+            "case_id": "newsroom-tuning-carbon-rules",
+            "writer": "claude-sonnet-5",
+            "variant": "bare-task"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0020",
+        "original_valid": true,
+        "level": "minor",
+        "fidelity": "no_flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-carbon-rules-bare-task-gpt-6-astra/record.json",
+            "result_sha256": "997a3ed5e88096998f0e19683122674e0d2ea9c24313c5113a1cb5c4c07e10a3",
+            "case_id": "newsroom-tuning-carbon-rules",
+            "writer": "gpt-6-astra",
+            "variant": "bare-task"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0021",
+        "original_valid": true,
+        "level": "minor",
+        "fidelity": "flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-carbon-rules-compact-claude-sonnet-5/record.json",
+            "result_sha256": "f6a39efa978ce0046d9c886afcacee7f773fd7758c613a3891a7f6680ab3fee6",
+            "case_id": "newsroom-tuning-carbon-rules",
+            "writer": "claude-sonnet-5",
+            "variant": "compact"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0022",
+        "original_valid": true,
+        "level": "absent",
+        "fidelity": "no_flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-carbon-rules-compact-gpt-6-astra/record.json",
+            "result_sha256": "43e7955b076924d994d55c3487d8535395f0d007eb38d9f33c328d686df26f24",
+            "case_id": "newsroom-tuning-carbon-rules",
+            "writer": "gpt-6-astra",
+            "variant": "compact"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0023",
+        "original_valid": true,
+        "level": "minor",
+        "fidelity": "flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-carbon-rules-full-claude-sonnet-5/record.json",
+            "result_sha256": "d78dd1fa7c79ac195d10372ce2cd4d485844cb3251a4c87d7effdf62b2414253",
+            "case_id": "newsroom-tuning-carbon-rules",
+            "writer": "claude-sonnet-5",
+            "variant": "full"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0024",
+        "original_valid": true,
+        "level": "minor",
+        "fidelity": "no_flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-carbon-rules-full-gpt-6-astra/record.json",
+            "result_sha256": "14c56626a30af5b46ae5e41d8f6a8676663fb89b9bc92418e54c3cef975a4a0a",
+            "case_id": "newsroom-tuning-carbon-rules",
+            "writer": "gpt-6-astra",
+            "variant": "full"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0025",
+        "original_valid": true,
+        "level": "minor",
+        "fidelity": "flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-council-rezone-bare-task-claude-sonnet-5/record.json",
+            "result_sha256": "df821521a466ebc452e27ef1bf859d266394a46b958c4e8aa45070a94510089a",
+            "case_id": "newsroom-tuning-council-rezone",
+            "writer": "claude-sonnet-5",
+            "variant": "bare-task"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0026",
+        "original_valid": true,
+        "level": "absent",
+        "fidelity": "no_flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-council-rezone-bare-task-gpt-6-astra/record.json",
+            "result_sha256": "5477706f200645ea90015edba12a36913a0a863122348bb3a2d25c5e76fa6145",
+            "case_id": "newsroom-tuning-council-rezone",
+            "writer": "gpt-6-astra",
+            "variant": "bare-task"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0027",
+        "original_valid": true,
+        "level": "minor",
+        "fidelity": "flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-council-rezone-compact-claude-sonnet-5/record.json",
+            "result_sha256": "ce36fc598d3845507edee9fcbaa497ab2025bf474135d5d999be825d29ec2a21",
+            "case_id": "newsroom-tuning-council-rezone",
+            "writer": "claude-sonnet-5",
+            "variant": "compact"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0028",
+        "original_valid": true,
+        "level": "absent",
+        "fidelity": "no_flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-council-rezone-compact-gpt-6-astra/record.json",
+            "result_sha256": "169ae7bb533a7f95530f531ea3a39826d44c6551f43736636c0abf3d892814b7",
+            "case_id": "newsroom-tuning-council-rezone",
+            "writer": "gpt-6-astra",
+            "variant": "compact"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0029",
+        "original_valid": true,
+        "level": "absent",
+        "fidelity": "flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-council-rezone-full-claude-sonnet-5/record.json",
+            "result_sha256": "b0fdc13fcd7078567419451d9c86255b41b3ca22c036b55f5578c999ef0ef8c2",
+            "case_id": "newsroom-tuning-council-rezone",
+            "writer": "claude-sonnet-5",
+            "variant": "full"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0030",
+        "original_valid": true,
+        "level": "minor",
+        "fidelity": "no_flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-council-rezone-full-gpt-6-astra/record.json",
+            "result_sha256": "2ffd2f536cc6edd35a3e25d0b89850d20a28ebee2092ada00dab1829df3e6f2f",
+            "case_id": "newsroom-tuning-council-rezone",
+            "writer": "gpt-6-astra",
+            "variant": "full"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0031",
+        "original_valid": true,
+        "level": "minor",
+        "fidelity": "flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-drone-corridors-bare-task-claude-sonnet-5/record.json",
+            "result_sha256": "d5b5121ae9978f8875eda9d70fd7a5f42162c8ca1475c57f9ee65ef57e36f0f6",
+            "case_id": "newsroom-tuning-drone-corridors",
+            "writer": "claude-sonnet-5",
+            "variant": "bare-task"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0032",
+        "original_valid": true,
+        "level": "minor",
+        "fidelity": "no_flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-drone-corridors-bare-task-gpt-6-astra/record.json",
+            "result_sha256": "aa5ff086501f36c0fca06335cf82b62a7a7043fdfec868a867112836dfcc9910",
+            "case_id": "newsroom-tuning-drone-corridors",
+            "writer": "gpt-6-astra",
+            "variant": "bare-task"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0033",
+        "original_valid": true,
+        "level": "minor",
+        "fidelity": "flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-drone-corridors-compact-claude-sonnet-5/record.json",
+            "result_sha256": "0b8610bc9bcb2520c65e17321d9c89d5374057a902fc85a28222bdf468dd85cf",
+            "case_id": "newsroom-tuning-drone-corridors",
+            "writer": "claude-sonnet-5",
+            "variant": "compact"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0034",
+        "original_valid": true,
+        "level": "absent",
+        "fidelity": "no_flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-drone-corridors-compact-gpt-6-astra/record.json",
+            "result_sha256": "43fddcc80aada0ace945f2a2e141cb9e631dedfaff36a49bdfa4dfa371df1e3b",
+            "case_id": "newsroom-tuning-drone-corridors",
+            "writer": "gpt-6-astra",
+            "variant": "compact"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0035",
+        "original_valid": true,
+        "level": "absent",
+        "fidelity": "flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-drone-corridors-full-claude-sonnet-5/record.json",
+            "result_sha256": "224edb57cf44e82cab9bd32acb7ed3b0422d4a1bd1ded1587caed9b15c2e8928",
+            "case_id": "newsroom-tuning-drone-corridors",
+            "writer": "claude-sonnet-5",
+            "variant": "full"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0036",
+        "original_valid": true,
+        "level": "minor",
+        "fidelity": "no_flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-drone-corridors-full-gpt-6-astra/record.json",
+            "result_sha256": "df57a02d9ab0ac248bb64fab12acc0972bfab129ffb96c29e493b15255af6103",
+            "case_id": "newsroom-tuning-drone-corridors",
+            "writer": "gpt-6-astra",
+            "variant": "full"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0037",
+        "original_valid": true,
+        "level": "minor",
+        "fidelity": "flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-foster-shortage-bare-task-claude-sonnet-5/record.json",
+            "result_sha256": "682038133ba3ead9227e9dbff435cd58d03044d9d64fe5f81a6bd78a460528cc",
+            "case_id": "newsroom-tuning-foster-shortage",
+            "writer": "claude-sonnet-5",
+            "variant": "bare-task"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0038",
+        "original_valid": true,
+        "level": "absent",
+        "fidelity": "no_flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-foster-shortage-bare-task-gpt-6-astra/record.json",
+            "result_sha256": "d9366df35a6ca60fa87856c3aa34101a51ea81bd90f14d2cc0330d6891d0a4f0",
+            "case_id": "newsroom-tuning-foster-shortage",
+            "writer": "gpt-6-astra",
+            "variant": "bare-task"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0039",
+        "original_valid": true,
+        "level": "minor",
+        "fidelity": "flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-foster-shortage-compact-claude-sonnet-5/record.json",
+            "result_sha256": "31892d4133b4045a3dadf733d4439268f4fc137e90a61a3ee1ba44674d34d8e2",
+            "case_id": "newsroom-tuning-foster-shortage",
+            "writer": "claude-sonnet-5",
+            "variant": "compact"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0040",
+        "original_valid": true,
+        "level": "minor",
+        "fidelity": "no_flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-foster-shortage-compact-gpt-6-astra/record.json",
+            "result_sha256": "31540945e1e50958bbd535f63c78e1a1a3eb20e1d3d039367acbacbbeb38a2b9",
+            "case_id": "newsroom-tuning-foster-shortage",
+            "writer": "gpt-6-astra",
+            "variant": "compact"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0041",
+        "original_valid": true,
+        "level": "absent",
+        "fidelity": "no_flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-foster-shortage-full-claude-sonnet-5/record.json",
+            "result_sha256": "01c106ccc77935068f31659fc337a70c5d3c5f5c5d1a2a546d7b4e3ada2140d2",
+            "case_id": "newsroom-tuning-foster-shortage",
+            "writer": "claude-sonnet-5",
+            "variant": "full"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0042",
+        "original_valid": true,
+        "level": "minor",
+        "fidelity": "no_flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-foster-shortage-full-gpt-6-astra/record.json",
+            "result_sha256": "cf70156a18656c114b5e4c7390d6a49509030245330cac3f779dd8e745b15d42",
+            "case_id": "newsroom-tuning-foster-shortage",
+            "writer": "gpt-6-astra",
+            "variant": "full"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0043",
+        "original_valid": true,
+        "level": "minor",
+        "fidelity": "flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-grocery-closures-bare-task-claude-sonnet-5/record.json",
+            "result_sha256": "2e5095e7d8e0903f8c2faa6485383b9f6ea23ba62b35241257a0281784cdcd0c",
+            "case_id": "newsroom-tuning-grocery-closures",
+            "writer": "claude-sonnet-5",
+            "variant": "bare-task"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0044",
+        "original_valid": true,
+        "level": "absent",
+        "fidelity": "no_flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-grocery-closures-bare-task-gpt-6-astra/record.json",
+            "result_sha256": "ca00882afe37a2094ab6c43f16470122e96d52da4ea060aa39b282476ef9b2d2",
+            "case_id": "newsroom-tuning-grocery-closures",
+            "writer": "gpt-6-astra",
+            "variant": "bare-task"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0045",
+        "original_valid": true,
+        "level": "minor",
+        "fidelity": "no_flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-grocery-closures-compact-claude-sonnet-5/record.json",
+            "result_sha256": "bb5571679d2289d7532b43793dfe516949316402b38a84a46d3c27adab39a0d1",
+            "case_id": "newsroom-tuning-grocery-closures",
+            "writer": "claude-sonnet-5",
+            "variant": "compact"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0046",
+        "original_valid": true,
+        "level": "absent",
+        "fidelity": "no_flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-grocery-closures-compact-gpt-6-astra/record.json",
+            "result_sha256": "bd527990148ca97586d1fd9e1aeac06abda570436baebc18a8a1c2d5163de503",
+            "case_id": "newsroom-tuning-grocery-closures",
+            "writer": "gpt-6-astra",
+            "variant": "compact"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0047",
+        "original_valid": true,
+        "level": "absent",
+        "fidelity": "no_flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-grocery-closures-full-claude-sonnet-5/record.json",
+            "result_sha256": "34abbfe1d73f26611f27787b6dca8850391b72296707451629a670803265d52a",
+            "case_id": "newsroom-tuning-grocery-closures",
+            "writer": "claude-sonnet-5",
+            "variant": "full"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0048",
+        "original_valid": true,
+        "level": "absent",
+        "fidelity": "no_flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-grocery-closures-full-gpt-6-astra/record.json",
+            "result_sha256": "32c4a625ce35b88460acd7ec7e0fff800a2c50a2ca8af4e47a4abe7f89f2d92b",
+            "case_id": "newsroom-tuning-grocery-closures",
+            "writer": "gpt-6-astra",
+            "variant": "full"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0049",
+        "original_valid": true,
+        "level": "minor",
+        "fidelity": "flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-managed-retreat-bare-task-claude-sonnet-5/record.json",
+            "result_sha256": "e1524f4c4a09d4c5c0e13f89177604d406b8fb1937b8eafc504ae40f28b4a9ca",
+            "case_id": "newsroom-tuning-managed-retreat",
+            "writer": "claude-sonnet-5",
+            "variant": "bare-task"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0050",
+        "original_valid": true,
+        "level": "minor",
+        "fidelity": "no_flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-managed-retreat-bare-task-gpt-6-astra/record.json",
+            "result_sha256": "85d87fd9db446e4c9fdc43badfe6222adf735fa14d47d87ba00bc0f0e939be94",
+            "case_id": "newsroom-tuning-managed-retreat",
+            "writer": "gpt-6-astra",
+            "variant": "bare-task"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0051",
+        "original_valid": true,
+        "level": "absent",
+        "fidelity": "flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-managed-retreat-compact-claude-sonnet-5/record.json",
+            "result_sha256": "892c798c5252e9813e39449a2e441b18f97023523ccf08ed68103a88dcf10f57",
+            "case_id": "newsroom-tuning-managed-retreat",
+            "writer": "claude-sonnet-5",
+            "variant": "compact"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0052",
+        "original_valid": true,
+        "level": "absent",
+        "fidelity": "flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-managed-retreat-compact-gpt-6-astra/record.json",
+            "result_sha256": "f5590288f7f0900232eb9e34a1bb83a5e30b33b2b14c81f17f3597b9f4b85e4e",
+            "case_id": "newsroom-tuning-managed-retreat",
+            "writer": "gpt-6-astra",
+            "variant": "compact"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0053",
+        "original_valid": true,
+        "level": "minor",
+        "fidelity": "flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-managed-retreat-full-claude-sonnet-5/record.json",
+            "result_sha256": "456633560fbd0b5fc2fbf1f2846fe1e61a8b51fea306f8547c659d840db7ac44",
+            "case_id": "newsroom-tuning-managed-retreat",
+            "writer": "claude-sonnet-5",
+            "variant": "full"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0054",
+        "original_valid": true,
+        "level": "minor",
+        "fidelity": "flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-managed-retreat-full-gpt-6-astra/record.json",
+            "result_sha256": "e6d12efe557a8762f231edfdd4ac4ceda1fbf8dbda134f243bd4f554455c6527",
+            "case_id": "newsroom-tuning-managed-retreat",
+            "writer": "gpt-6-astra",
+            "variant": "full"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0055",
+        "original_valid": true,
+        "level": "minor",
+        "fidelity": "flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-municipal-bonds-bare-task-claude-sonnet-5/record.json",
+            "result_sha256": "0a6f66a299bda11258ebfe7f0086a17aa077b8dad1b79645a1ca0139fa7a2ad5",
+            "case_id": "newsroom-tuning-municipal-bonds",
+            "writer": "claude-sonnet-5",
+            "variant": "bare-task"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0056",
+        "original_valid": true,
+        "level": "minor",
+        "fidelity": "flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-municipal-bonds-bare-task-gpt-6-astra/record.json",
+            "result_sha256": "de5ad1b6b470ba537b94ab1cfd36508339c468aa2a96a4013e5bdc3d9ef822e1",
+            "case_id": "newsroom-tuning-municipal-bonds",
+            "writer": "gpt-6-astra",
+            "variant": "bare-task"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0057",
+        "original_valid": true,
+        "level": "minor",
+        "fidelity": "no_flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-municipal-bonds-compact-claude-sonnet-5/record.json",
+            "result_sha256": "8bd9d1a0ca77625d595da738b378148afea63fa08993101da7de348592a8015c",
+            "case_id": "newsroom-tuning-municipal-bonds",
+            "writer": "claude-sonnet-5",
+            "variant": "compact"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0058",
+        "original_valid": true,
+        "level": "minor",
+        "fidelity": "flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-municipal-bonds-compact-gpt-6-astra/record.json",
+            "result_sha256": "1b59625fac129423a7092e63ac86686db51101fb2ccc449ed8df065b6873db7c",
+            "case_id": "newsroom-tuning-municipal-bonds",
+            "writer": "gpt-6-astra",
+            "variant": "compact"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0059",
+        "original_valid": true,
+        "level": "minor",
+        "fidelity": "flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-municipal-bonds-full-claude-sonnet-5/record.json",
+            "result_sha256": "665823b49fb2f8a358e9f9d874d8410991ca5716d0e53900fca04b5bba786330",
+            "case_id": "newsroom-tuning-municipal-bonds",
+            "writer": "claude-sonnet-5",
+            "variant": "full"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0060",
+        "original_valid": true,
+        "level": "salient",
+        "fidelity": "flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-municipal-bonds-full-gpt-6-astra/record.json",
+            "result_sha256": "8f44b9a977fcb29b7b1093f4305b97b28512ebd86d3f6dc9cc9c44d45f4b1fb8",
+            "case_id": "newsroom-tuning-municipal-bonds",
+            "writer": "gpt-6-astra",
+            "variant": "full"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0061",
+        "original_valid": true,
+        "level": "minor",
+        "fidelity": "flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-newspaper-acquisition-bare-task-claude-sonnet-5/record.json",
+            "result_sha256": "2b81a12a06c79ad78d1972adbbe4d4d06fb284e8c9fd90c7013475ac8a9fcfa1",
+            "case_id": "newsroom-tuning-newspaper-acquisition",
+            "writer": "claude-sonnet-5",
+            "variant": "bare-task"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0062",
+        "original_valid": true,
+        "level": "absent",
+        "fidelity": "no_flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-newspaper-acquisition-bare-task-gpt-6-astra/record.json",
+            "result_sha256": "aedc923136ddb90222923c3e19cb1c6f25ba8b1f68f650cf665b06509cd55a86",
+            "case_id": "newsroom-tuning-newspaper-acquisition",
+            "writer": "gpt-6-astra",
+            "variant": "bare-task"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0063",
+        "original_valid": true,
+        "level": "minor",
+        "fidelity": "flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-newspaper-acquisition-compact-claude-sonnet-5/record.json",
+            "result_sha256": "866c1e8ac3b7d96670c30224b51c6389107a61336a3394bce1d522be7e5d4f92",
+            "case_id": "newsroom-tuning-newspaper-acquisition",
+            "writer": "claude-sonnet-5",
+            "variant": "compact"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0064",
+        "original_valid": true,
+        "level": "minor",
+        "fidelity": "no_flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-newspaper-acquisition-compact-gpt-6-astra/record.json",
+            "result_sha256": "711660d3dfa5e0949792178f83a7c22fef0527855b24b06964b9f0754e47ae4f",
+            "case_id": "newsroom-tuning-newspaper-acquisition",
+            "writer": "gpt-6-astra",
+            "variant": "compact"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0065",
+        "original_valid": true,
+        "level": "minor",
+        "fidelity": "flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-newspaper-acquisition-full-claude-sonnet-5/record.json",
+            "result_sha256": "9c3225ac47ef2833f6eab17887aaf489c0fba37d1323180aca4cf7b286487e08",
+            "case_id": "newsroom-tuning-newspaper-acquisition",
+            "writer": "claude-sonnet-5",
+            "variant": "full"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0066",
+        "original_valid": true,
+        "level": "minor",
+        "fidelity": "no_flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-newspaper-acquisition-full-gpt-6-astra/record.json",
+            "result_sha256": "cb9adc34a4092ae791cad03d947985f76bd50c13d995cc8026b81888d7747379",
+            "case_id": "newsroom-tuning-newspaper-acquisition",
+            "writer": "gpt-6-astra",
+            "variant": "full"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0067",
+        "original_valid": true,
+        "level": "minor",
+        "fidelity": "flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-port-strike-bare-task-claude-sonnet-5/record.json",
+            "result_sha256": "def8f714d026affc4d1f0c5ba7ed16243de2fa008357d797d010a584e58f54fa",
+            "case_id": "newsroom-tuning-port-strike",
+            "writer": "claude-sonnet-5",
+            "variant": "bare-task"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0068",
+        "original_valid": true,
+        "level": "absent",
+        "fidelity": "no_flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-port-strike-bare-task-gpt-6-astra/record.json",
+            "result_sha256": "0ca12f38742f62cde008bdbf03a4b86606442464f59232b0b4cd323ce672bb67",
+            "case_id": "newsroom-tuning-port-strike",
+            "writer": "gpt-6-astra",
+            "variant": "bare-task"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0069",
+        "original_valid": true,
+        "level": "absent",
+        "fidelity": "flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-port-strike-compact-claude-sonnet-5/record.json",
+            "result_sha256": "65d6d35f45dfee1696a882e16dcf43ab000d503e1f624b784629b5d0f1a1e155",
+            "case_id": "newsroom-tuning-port-strike",
+            "writer": "claude-sonnet-5",
+            "variant": "compact"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0070",
+        "original_valid": true,
+        "level": "minor",
+        "fidelity": "no_flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-port-strike-compact-gpt-6-astra/record.json",
+            "result_sha256": "ac451815abbc412ca4574e51db965bdf7f458ec11950ce5a31ece958554c0aaf",
+            "case_id": "newsroom-tuning-port-strike",
+            "writer": "gpt-6-astra",
+            "variant": "compact"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0071",
+        "original_valid": true,
+        "level": "minor",
+        "fidelity": "flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-port-strike-full-claude-sonnet-5/record.json",
+            "result_sha256": "134d4b3dd6ac5b2bc128d064336215074cd4563e4a6c8cd4429e8b2f2c6a91af",
+            "case_id": "newsroom-tuning-port-strike",
+            "writer": "claude-sonnet-5",
+            "variant": "full"
+          }
+        ],
+        "id_replacements": {}
+      },
+      {
+        "item": "item-0072",
+        "original_valid": true,
+        "level": "minor",
+        "fidelity": "no_flag",
+        "records": [
+          {
+            "path": "evals/runs/newsroom-tuning-modern/captures/newsroom-tuning-port-strike-full-gpt-6-astra/record.json",
+            "result_sha256": "ce9a75f1e5f8f5e9cdea8881a9ae2760905a12a96cf7c6aa090abe7e0bb8ac40",
+            "case_id": "newsroom-tuning-port-strike",
+            "writer": "gpt-6-astra",
+            "variant": "full"
+          }
+        ],
+        "id_replacements": {}
+      }
+    ]
+  },
+  "limitations": [
+    "Original strict-parser failures remain part of the registered attempt.",
+    "All levels and reasons are original model opinions; ID recovery does not improve grader accuracy.",
+    "No untreated article was rated salient, so this cohort does not demonstrate elimination of conspicuous slop.",
+    "One full-instruction article was rated salient; that single label is not a powered harm estimate.",
+    "Judge and writer identities are confounded in the original cross-family arrangement.",
+    "Factual flags are unadjudicated concerns, not verified counts of errors; no_flag is not proof of truth.",
+    "Repeated tuning stories and two model families are not independent human reader observations."
+  ]
+}

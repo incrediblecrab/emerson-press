@@ -1,0 +1,1367 @@
+{
+  "schema_version": 1,
+  "kind": "prospective-tuning-rater-crossover",
+  "registered_at": "2026-09-09T06:30:42.711306+00:00",
+  "original_design_sha256": "c990c6cd7b1d5d1c375105a562f342706a2ad991deb3547597021825578dfea1",
+  "purpose": "Diagnose whether the opposite apparent treatment effects reflect writer behavior, judge preferences, or both; not search for a favorable evaluator.",
+  "motivation": {
+    "original_paired_report_sha256": "28db27d18277f839231bce290a61bfa8e45b5182120edf94a36d20eda5f2af14",
+    "original_full_vs_bare_by_writer": [
+      {
+        "writer": "claude-sonnet-5",
+        "contrast": "full-versus-bare-task",
+        "planned_pairs": 12,
+        "full": 10,
+        "bare-task": 2,
+        "judge": "gpt-6-astra"
+      },
+      {
+        "writer": "gpt-6-astra",
+        "contrast": "full-versus-bare-task",
+        "planned_pairs": 12,
+        "invalid": 1,
+        "bare-task": 9,
+        "full": 1,
+        "tie": 1,
+        "judge": "claude-sonnet-5"
+      }
+    ],
+    "pointwise_limit": "No original untreated article was rated salient; the original cohort does not demonstrate slop elimination."
+  },
+  "new_writing_responses": 0,
+  "planned_paired_assessments": 24,
+  "planned_pointwise_assessments": 48,
+  "distinct_tuning_cases": 12,
+  "held_out_cases": 0,
+  "selection": "Every original full-versus-bare pair and every corresponding single article, regardless of previous opinion or schema validity. Compact is not part of this primary-contrast diagnostic.",
+  "presentation": "Reuse each exact original judge prompt, including unchanged A/B orientation and evidence IDs. Only the judging model changes; the runtime date wrapper is separately captured.",
+  "model_settings": {
+    "claude-sonnet-5": {
+      "client_mode": "empty",
+      "generation_seed": "service-default-uncontrolled",
+      "model_selection": "claude-sonnet-5",
+      "reasoning_effort": "low",
+      "runtime_version": "1.0.84-3",
+      "sdk_version": "1.0.13",
+      "session_options": {
+        "available_tools": [],
+        "enable_config_discovery": false,
+        "enable_file_hooks": false,
+        "enable_host_git_operations": false,
+        "enable_managed_settings": true,
+        "enable_session_store": false,
+        "enable_skills": false,
+        "excluded_tools": [
+          "builtin:*",
+          "mcp:*",
+          "custom:*"
+        ],
+        "infinite_sessions": {
+          "enabled": false
+        },
+        "memory": {
+          "enabled": false
+        },
+        "skip_custom_instructions": true,
+        "system_message": {
+          "content": "You are a text-only writing assistant. Carry out the supplied drafting, editing, or reviewing task. Tools, browsing, persistent memory and other agents are unavailable. Do not narrate or invent calls to them. Return the requested output.",
+          "mode": "customize",
+          "sections": {
+            "code_change_rules": {
+              "action": "remove"
+            },
+            "guidelines": {
+              "action": "remove"
+            },
+            "last_instructions": {
+              "action": "remove"
+            },
+            "preamble": {
+              "action": "remove"
+            },
+            "tone": {
+              "action": "remove"
+            },
+            "tool_efficiency": {
+              "action": "remove"
+            },
+            "tool_instructions": {
+              "action": "remove"
+            }
+          }
+        }
+      },
+      "system_message_config_sha256": "f11aacb9c176d02e2238aca236fc1fa3809c9c2d445fb96f8c4ff5d47188fe7f",
+      "system_prompt": "neutral writing role; runtime safety and policy sections retained",
+      "temperature": "service-default-uncontrolled",
+      "transport": "github-copilot-sdk",
+      "user_message_wrapper": "runtime current_datetime; effective message captured separately"
+    },
+    "gpt-6-astra": {
+      "client_mode": "empty",
+      "generation_seed": "service-default-uncontrolled",
+      "model_selection": "gpt-6-astra",
+      "reasoning_effort": "low",
+      "runtime_version": "1.0.84-3",
+      "sdk_version": "1.0.13",
+      "session_options": {
+        "available_tools": [],
+        "enable_config_discovery": false,
+        "enable_file_hooks": false,
+        "enable_host_git_operations": false,
+        "enable_managed_settings": true,
+        "enable_session_store": false,
+        "enable_skills": false,
+        "excluded_tools": [
+          "builtin:*",
+          "mcp:*",
+          "custom:*"
+        ],
+        "infinite_sessions": {
+          "enabled": false
+        },
+        "memory": {
+          "enabled": false
+        },
+        "skip_custom_instructions": true,
+        "system_message": {
+          "content": "You are a text-only writing assistant. Carry out the supplied drafting, editing, or reviewing task. Tools, browsing, persistent memory and other agents are unavailable. Do not narrate or invent calls to them. Return the requested output.",
+          "mode": "customize",
+          "sections": {
+            "code_change_rules": {
+              "action": "remove"
+            },
+            "guidelines": {
+              "action": "remove"
+            },
+            "last_instructions": {
+              "action": "remove"
+            },
+            "preamble": {
+              "action": "remove"
+            },
+            "tone": {
+              "action": "remove"
+            },
+            "tool_efficiency": {
+              "action": "remove"
+            },
+            "tool_instructions": {
+              "action": "remove"
+            }
+          }
+        }
+      },
+      "system_message_config_sha256": "f11aacb9c176d02e2238aca236fc1fa3809c9c2d445fb96f8c4ff5d47188fe7f",
+      "system_prompt": "neutral writing role; runtime safety and policy sections retained",
+      "temperature": "service-default-uncontrolled",
+      "transport": "github-copilot-sdk",
+      "user_message_wrapper": "runtime current_datetime; effective message captured separately"
+    }
+  },
+  "concurrency": 4,
+  "order_seed": 19381,
+  "timeout_seconds": 300,
+  "implementation_sha256": {
+    "runner": "3c0b5b018ad1be27f6c820beedb667e27dd0b1fa6dc867d55de61d5fc77aa78e",
+    "paired_parser": "63b4af08679222e05ad05c0384ebe3cf644abfe932241f39e07b9ccbcf705eff",
+    "pointwise_parser": "c95d4e3eb1334ba97f764ebcdc999ac49da93178ecb7d7ce7ed63890519161b5",
+    "pointwise_id_normalizer": "bf147feda5ade891318ece3a6f62f9694fb66b0d43135670b34d2ad43e0fdc13",
+    "transport": "132697045cb71c727331bce03562ae1ce2163b46376973b2ba3dac7c2d46c704"
+  },
+  "analysis_rules": [
+    "Retain all requests, raw opinions, receipts and failures; do not retry until a preferred result appears.",
+    "Keep the original strict-parser verdict and a separate pointwise prefix-normalization verdict.",
+    "Pointwise normalization may only map pNNN to an existing text-pNNN; no decision or reason changes.",
+    "Report both judges, disagreement and all four writer/judge cells, not only the more favorable evaluator.",
+    "Report missing assessments and matched-pair coverage before agreement calculations.",
+    "Repeated writers, judges, variants and observations do not increase the twelve reporting-packet families.",
+    "No p-value, powered efficacy, human reader validation or default promotion from this diagnostic."
+  ],
+  "limitations": [
+    "New judges share a model family with the writer; they may favor familiar prose.",
+    "Fresh isolated sessions prevent shared conversation, not common training or stylistic preferences.",
+    "Single judgments include stochastic variation; this is not a clean decomposition of every cause of disagreement.",
+    "The fixed fictional corpus and two model families do not represent all writing tasks or human editors."
+  ],
+  "jobs": [
+    {
+      "id": "paired-pair-0001",
+      "kind": "paired",
+      "case_id": "newsroom-tuning-antitrust-suit",
+      "writer": "claude-sonnet-5",
+      "variants": [
+        "bare-task",
+        "full"
+      ],
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5",
+      "source_request": "evals/runs/newsroom-tuning-modern/paired/pair-0001/judge-request.json",
+      "source_request_sha256": "65743bc39e98525b35f44ad2b8d8a450349e4d5cf3f6fa7b32141d4af51ab528",
+      "source_key": "evals/runs/newsroom-tuning-modern/paired/pair-0001/key.json",
+      "source_key_sha256": "e4a94e318f194b24dabaca3ea96ff921b94032b8a227e202884224bba06caaa8",
+      "prompt_sha256": "8fb15c44b392c54b8cf2c6995a41fceaf63fe2314cedf5d8f37f163e861a8263"
+    },
+    {
+      "id": "paired-pair-0004",
+      "kind": "paired",
+      "case_id": "newsroom-tuning-antitrust-suit",
+      "writer": "gpt-6-astra",
+      "variants": [
+        "bare-task",
+        "full"
+      ],
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra",
+      "source_request": "evals/runs/newsroom-tuning-modern/paired/pair-0004/judge-request.json",
+      "source_request_sha256": "b4282d57bdb1b87613dcfb77ced44accbbddd14cd997e3250e15aa4e7f68d801",
+      "source_key": "evals/runs/newsroom-tuning-modern/paired/pair-0004/key.json",
+      "source_key_sha256": "83f695b496f253da3e64aad0d95e804448e5de9fa21d2e2f11567fddd1a43208",
+      "prompt_sha256": "eff1822394f207284dd845ec29de067793ac4208b4c1947211a1c21389dbbd70"
+    },
+    {
+      "id": "paired-pair-0007",
+      "kind": "paired",
+      "case_id": "newsroom-tuning-auto-retraining",
+      "writer": "claude-sonnet-5",
+      "variants": [
+        "bare-task",
+        "full"
+      ],
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5",
+      "source_request": "evals/runs/newsroom-tuning-modern/paired/pair-0007/judge-request.json",
+      "source_request_sha256": "a8b123761215fdc4f60f91501ffd416970b16c3a529da424174eec78f4c7022b",
+      "source_key": "evals/runs/newsroom-tuning-modern/paired/pair-0007/key.json",
+      "source_key_sha256": "227f32b30781df3a698531323f802208223ad136a590f9bae5d41350a81586d7",
+      "prompt_sha256": "25227c85fb5d67a936ce62a63ab07ffd1130d80cf6d5e4d75ad6bdca2b4786e1"
+    },
+    {
+      "id": "paired-pair-0010",
+      "kind": "paired",
+      "case_id": "newsroom-tuning-auto-retraining",
+      "writer": "gpt-6-astra",
+      "variants": [
+        "bare-task",
+        "full"
+      ],
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra",
+      "source_request": "evals/runs/newsroom-tuning-modern/paired/pair-0010/judge-request.json",
+      "source_request_sha256": "8da3706ba030fedddd9e342c569af729a77e100c35f7c23280387ede4c157e18",
+      "source_key": "evals/runs/newsroom-tuning-modern/paired/pair-0010/key.json",
+      "source_key_sha256": "634881a573e52d8a2fb381cc109a76f213fe686a6fac1cf24e2d1bb25e2792ab",
+      "prompt_sha256": "25a5b3adda699d63e5e41cb68d6cec54f56af500b2ea664900bf33e365d57b3b"
+    },
+    {
+      "id": "paired-pair-0013",
+      "kind": "paired",
+      "case_id": "newsroom-tuning-blood-supply",
+      "writer": "claude-sonnet-5",
+      "variants": [
+        "bare-task",
+        "full"
+      ],
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5",
+      "source_request": "evals/runs/newsroom-tuning-modern/paired/pair-0013/judge-request.json",
+      "source_request_sha256": "fa5b809893202a62b4447681083ad07fbef4cb291391062c9d1cebc8edadca34",
+      "source_key": "evals/runs/newsroom-tuning-modern/paired/pair-0013/key.json",
+      "source_key_sha256": "265baa7975e03109daab03cdab5f7c60b3a5a87db6112f25a4615132eb38257e",
+      "prompt_sha256": "10d8c031a253c5cc79b1a742422b7a4a58fab5242de8000d2e588a2602a1b393"
+    },
+    {
+      "id": "paired-pair-0016",
+      "kind": "paired",
+      "case_id": "newsroom-tuning-blood-supply",
+      "writer": "gpt-6-astra",
+      "variants": [
+        "bare-task",
+        "full"
+      ],
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra",
+      "source_request": "evals/runs/newsroom-tuning-modern/paired/pair-0016/judge-request.json",
+      "source_request_sha256": "dba93c0082219e16e288972008c7a7cde32816da3b807519560a470032acb36c",
+      "source_key": "evals/runs/newsroom-tuning-modern/paired/pair-0016/key.json",
+      "source_key_sha256": "2d4fe3a770317192e70a1445bf57e85ac161d6383bd635a100e10a58d9abb8a1",
+      "prompt_sha256": "914100a47e6ccea7bfeaf98ead266792652c0b0654ede3d419c2e449ea404db1"
+    },
+    {
+      "id": "paired-pair-0019",
+      "kind": "paired",
+      "case_id": "newsroom-tuning-carbon-rules",
+      "writer": "claude-sonnet-5",
+      "variants": [
+        "bare-task",
+        "full"
+      ],
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5",
+      "source_request": "evals/runs/newsroom-tuning-modern/paired/pair-0019/judge-request.json",
+      "source_request_sha256": "54bc8d1b841033bf9eefd2d809c9b8316c6469d2940e3ce36bb842a1fd5fa134",
+      "source_key": "evals/runs/newsroom-tuning-modern/paired/pair-0019/key.json",
+      "source_key_sha256": "a1f962356a5815bf7a016e5853ea4225f41276d1610e1139b323cba9f83d68d6",
+      "prompt_sha256": "aa820df195787569d6296f6c510f05be8bf9da6f97255306d5c971c461395df3"
+    },
+    {
+      "id": "paired-pair-0022",
+      "kind": "paired",
+      "case_id": "newsroom-tuning-carbon-rules",
+      "writer": "gpt-6-astra",
+      "variants": [
+        "bare-task",
+        "full"
+      ],
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra",
+      "source_request": "evals/runs/newsroom-tuning-modern/paired/pair-0022/judge-request.json",
+      "source_request_sha256": "8c84b91f6d8953ede5aa1680f09441e09c9d68808adaac419d2f997ba5ee533a",
+      "source_key": "evals/runs/newsroom-tuning-modern/paired/pair-0022/key.json",
+      "source_key_sha256": "ccd0d7f794bb7b31ef7b50dd7d1253e36ff4aa5c67f43ea64705c1fc764828bf",
+      "prompt_sha256": "18bc5fad17388a94b47918b892f92e1bbe10954444b0c71d7e73529d5215729f"
+    },
+    {
+      "id": "paired-pair-0025",
+      "kind": "paired",
+      "case_id": "newsroom-tuning-council-rezone",
+      "writer": "claude-sonnet-5",
+      "variants": [
+        "bare-task",
+        "full"
+      ],
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5",
+      "source_request": "evals/runs/newsroom-tuning-modern/paired/pair-0025/judge-request.json",
+      "source_request_sha256": "35b3a5bf1e11213ab178fd7c7d003184c7c957527764765b968fc5d351e5e9de",
+      "source_key": "evals/runs/newsroom-tuning-modern/paired/pair-0025/key.json",
+      "source_key_sha256": "de0d44db854c822c4c650adb2e5e1b4a37b060ce1c024e1a08d974f9f97f0c2c",
+      "prompt_sha256": "1509c91b61bb3fef7684b95cd2b5b36c6fc2e22d92bf30bd4b5c25cbc031da20"
+    },
+    {
+      "id": "paired-pair-0028",
+      "kind": "paired",
+      "case_id": "newsroom-tuning-council-rezone",
+      "writer": "gpt-6-astra",
+      "variants": [
+        "bare-task",
+        "full"
+      ],
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra",
+      "source_request": "evals/runs/newsroom-tuning-modern/paired/pair-0028/judge-request.json",
+      "source_request_sha256": "e00d800487cc3fdbe5709bc8a5d17a4949a519a7d3be1fc8a1dd8a1687d84f43",
+      "source_key": "evals/runs/newsroom-tuning-modern/paired/pair-0028/key.json",
+      "source_key_sha256": "0f5f642806e4976ee72ab95fa4423f2491699e0eb2a55c3a0f1551ade36b58b1",
+      "prompt_sha256": "7167e92b98f99a7293684f260dd8fc84daac5c1c6e78a299a1e5280b17208512"
+    },
+    {
+      "id": "paired-pair-0031",
+      "kind": "paired",
+      "case_id": "newsroom-tuning-drone-corridors",
+      "writer": "claude-sonnet-5",
+      "variants": [
+        "bare-task",
+        "full"
+      ],
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5",
+      "source_request": "evals/runs/newsroom-tuning-modern/paired/pair-0031/judge-request.json",
+      "source_request_sha256": "6c6bd28a407ff04afd61ad799db2fe5c948afa72c99e36b65181b8b6bebb51ed",
+      "source_key": "evals/runs/newsroom-tuning-modern/paired/pair-0031/key.json",
+      "source_key_sha256": "77a7787d211463bc5e0703d03f3eb932022685e528fdb6673e7b6594da66b327",
+      "prompt_sha256": "f970a0a04863772cc055c0e7c7f7e89d344271016e71444aa6ea46f592718570"
+    },
+    {
+      "id": "paired-pair-0034",
+      "kind": "paired",
+      "case_id": "newsroom-tuning-drone-corridors",
+      "writer": "gpt-6-astra",
+      "variants": [
+        "bare-task",
+        "full"
+      ],
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra",
+      "source_request": "evals/runs/newsroom-tuning-modern/paired/pair-0034/judge-request.json",
+      "source_request_sha256": "9c2395053da9c20d23c1a7b20d158baaa7f1ea9f054fd0b0653a4652132e8759",
+      "source_key": "evals/runs/newsroom-tuning-modern/paired/pair-0034/key.json",
+      "source_key_sha256": "4c0139b1efaf873b0a98431e6ff4ccf8e5a4edfc560ec85ed9eb70d2d6b161bc",
+      "prompt_sha256": "482592d5698d4c07900cb12ec7297ce878d34ea9a5361d6611e6ff9b2d012be4"
+    },
+    {
+      "id": "paired-pair-0037",
+      "kind": "paired",
+      "case_id": "newsroom-tuning-foster-shortage",
+      "writer": "claude-sonnet-5",
+      "variants": [
+        "bare-task",
+        "full"
+      ],
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5",
+      "source_request": "evals/runs/newsroom-tuning-modern/paired/pair-0037/judge-request.json",
+      "source_request_sha256": "79aa914148c2a8c5f7db4c45c04fc3aad7b1d8104f08d128710490a1e28fa161",
+      "source_key": "evals/runs/newsroom-tuning-modern/paired/pair-0037/key.json",
+      "source_key_sha256": "e43f73dc3d24027897e970d59cd9fc2be2453d7049ff83ee783e3fd7c038f889",
+      "prompt_sha256": "a04b629efa9b770be7d5231b8c3bc55befe1233404eb9492e582b0698832a834"
+    },
+    {
+      "id": "paired-pair-0040",
+      "kind": "paired",
+      "case_id": "newsroom-tuning-foster-shortage",
+      "writer": "gpt-6-astra",
+      "variants": [
+        "bare-task",
+        "full"
+      ],
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra",
+      "source_request": "evals/runs/newsroom-tuning-modern/paired/pair-0040/judge-request.json",
+      "source_request_sha256": "4506ad57d82c65a8e0b99cab84b85cf8bfe51e701ed9e3e48e9a3f854a5a5ad1",
+      "source_key": "evals/runs/newsroom-tuning-modern/paired/pair-0040/key.json",
+      "source_key_sha256": "1b5cc4631658f8df665b75a5490455d3655cb473fac459701922069bf0dc6434",
+      "prompt_sha256": "a968653817bc3f51464d2805b1821b74705d81860aeda0cb8a9d6470f11c508b"
+    },
+    {
+      "id": "paired-pair-0043",
+      "kind": "paired",
+      "case_id": "newsroom-tuning-grocery-closures",
+      "writer": "claude-sonnet-5",
+      "variants": [
+        "bare-task",
+        "full"
+      ],
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5",
+      "source_request": "evals/runs/newsroom-tuning-modern/paired/pair-0043/judge-request.json",
+      "source_request_sha256": "7eed9e00175564b96d25563e45fabee4c38b23f4447556c4bca5749478dfad5b",
+      "source_key": "evals/runs/newsroom-tuning-modern/paired/pair-0043/key.json",
+      "source_key_sha256": "c84d6587459cb53ec6eb3d5b8c35d292bb1a0452ba0f9cc36c97cc0e37f12bc1",
+      "prompt_sha256": "23404b1f55a74d789d9feb059dceee0bfe2e6692e6bde0a7da0f34caf24be059"
+    },
+    {
+      "id": "paired-pair-0046",
+      "kind": "paired",
+      "case_id": "newsroom-tuning-grocery-closures",
+      "writer": "gpt-6-astra",
+      "variants": [
+        "bare-task",
+        "full"
+      ],
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra",
+      "source_request": "evals/runs/newsroom-tuning-modern/paired/pair-0046/judge-request.json",
+      "source_request_sha256": "c5f86bb0a9e78b6270b9cb5b34dd41d4ae8df732e813139f7c20dd52d8009d2c",
+      "source_key": "evals/runs/newsroom-tuning-modern/paired/pair-0046/key.json",
+      "source_key_sha256": "4164f168234e3c4acdb157f498d2ade969b56a2d516b56351578642f5305712f",
+      "prompt_sha256": "772fd4390d0c442d58f2e64b99cb8d4e51d7f4800036b46eaf5f07ef070e9cf7"
+    },
+    {
+      "id": "paired-pair-0049",
+      "kind": "paired",
+      "case_id": "newsroom-tuning-managed-retreat",
+      "writer": "claude-sonnet-5",
+      "variants": [
+        "bare-task",
+        "full"
+      ],
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5",
+      "source_request": "evals/runs/newsroom-tuning-modern/paired/pair-0049/judge-request.json",
+      "source_request_sha256": "bc726d8e5276affde3b8eb70e42556485101de40dd40d23a3902106e5585953a",
+      "source_key": "evals/runs/newsroom-tuning-modern/paired/pair-0049/key.json",
+      "source_key_sha256": "b220fd277fe9ca5d641da5a818e6b8a110c4610c457e4f0d702a21fb79f77fdb",
+      "prompt_sha256": "a8410af374e422992737075050cca6b84052af005b8346be48558907b985f9ea"
+    },
+    {
+      "id": "paired-pair-0052",
+      "kind": "paired",
+      "case_id": "newsroom-tuning-managed-retreat",
+      "writer": "gpt-6-astra",
+      "variants": [
+        "bare-task",
+        "full"
+      ],
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra",
+      "source_request": "evals/runs/newsroom-tuning-modern/paired/pair-0052/judge-request.json",
+      "source_request_sha256": "d1332f2530f22d32b64038163aff00d7172f7c4d348866ab701af588aae4c7ee",
+      "source_key": "evals/runs/newsroom-tuning-modern/paired/pair-0052/key.json",
+      "source_key_sha256": "cea059cca9ba6874e3f91e1c82c0a1d8845bb61d890da1c344019bda69edfe0f",
+      "prompt_sha256": "7df39b5e71499099cb1ef2a950e5f20e7e5943a9113c296e93a1b376c02a662d"
+    },
+    {
+      "id": "paired-pair-0055",
+      "kind": "paired",
+      "case_id": "newsroom-tuning-municipal-bonds",
+      "writer": "claude-sonnet-5",
+      "variants": [
+        "bare-task",
+        "full"
+      ],
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5",
+      "source_request": "evals/runs/newsroom-tuning-modern/paired/pair-0055/judge-request.json",
+      "source_request_sha256": "0eb278c02509498e2cd50e7f29ff22808a5fd2d62df86f8b436c5214e6b8e3a1",
+      "source_key": "evals/runs/newsroom-tuning-modern/paired/pair-0055/key.json",
+      "source_key_sha256": "cdd0d618f23bc7044e0f679fe48c2d42219eb57eaf2773ce9286481315c33ffa",
+      "prompt_sha256": "11fc6d77a02f95b55e46376dee18fa7a1a1d57ca89de5b0493aa77f61be7a46a"
+    },
+    {
+      "id": "paired-pair-0058",
+      "kind": "paired",
+      "case_id": "newsroom-tuning-municipal-bonds",
+      "writer": "gpt-6-astra",
+      "variants": [
+        "bare-task",
+        "full"
+      ],
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra",
+      "source_request": "evals/runs/newsroom-tuning-modern/paired/pair-0058/judge-request.json",
+      "source_request_sha256": "bede1dd192b32b1aa79689fe0d21fdd3bcc56110a543d83413e95bc308d77997",
+      "source_key": "evals/runs/newsroom-tuning-modern/paired/pair-0058/key.json",
+      "source_key_sha256": "2c8b8783b41595ae1a48a869ab27727bb82329bd44b2ea5fcf4d7388a7a904f0",
+      "prompt_sha256": "9374aad4b231cf2683bf9dfc111e201e78bb76fa1dfddedfd290053a140d74ec"
+    },
+    {
+      "id": "paired-pair-0061",
+      "kind": "paired",
+      "case_id": "newsroom-tuning-newspaper-acquisition",
+      "writer": "claude-sonnet-5",
+      "variants": [
+        "bare-task",
+        "full"
+      ],
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5",
+      "source_request": "evals/runs/newsroom-tuning-modern/paired/pair-0061/judge-request.json",
+      "source_request_sha256": "21dfc45ea112abbc47bcf83b630dcfb9e2c23e7a4562d3522d28060b4193f4ae",
+      "source_key": "evals/runs/newsroom-tuning-modern/paired/pair-0061/key.json",
+      "source_key_sha256": "15c102d646a96a27296c6e66f702ff99b4704f91d052a0c539632010f4f5bd2e",
+      "prompt_sha256": "5cdad1e903082fb96773139926b04e31adae1cfac9f6f4cecdb032deefb86bf3"
+    },
+    {
+      "id": "paired-pair-0064",
+      "kind": "paired",
+      "case_id": "newsroom-tuning-newspaper-acquisition",
+      "writer": "gpt-6-astra",
+      "variants": [
+        "bare-task",
+        "full"
+      ],
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra",
+      "source_request": "evals/runs/newsroom-tuning-modern/paired/pair-0064/judge-request.json",
+      "source_request_sha256": "77ae0cbb00790b7132141d801b91083f71b90b1d3a5d1a2cfcf930930c0d10b5",
+      "source_key": "evals/runs/newsroom-tuning-modern/paired/pair-0064/key.json",
+      "source_key_sha256": "47dd83bea326fdde243b826ea5f79297d5b298cde13c6bf6c49759162d16c2c2",
+      "prompt_sha256": "95db2535cb1c323c8f956dd35a79a243fc37f369d75563b37e70df61824b4607"
+    },
+    {
+      "id": "paired-pair-0067",
+      "kind": "paired",
+      "case_id": "newsroom-tuning-port-strike",
+      "writer": "claude-sonnet-5",
+      "variants": [
+        "bare-task",
+        "full"
+      ],
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5",
+      "source_request": "evals/runs/newsroom-tuning-modern/paired/pair-0067/judge-request.json",
+      "source_request_sha256": "8cf71c2c0491b71796785dc4e812737f38d1b3db05cc23064cd1f056d4bb6e41",
+      "source_key": "evals/runs/newsroom-tuning-modern/paired/pair-0067/key.json",
+      "source_key_sha256": "92d5a24245874587e4122396c62af17fe08577bb0215c2e0729008a0134bc04a",
+      "prompt_sha256": "13ff232448fcb5c093faaf90fdf5795c3ffe67de90aef817227bb471da70cc3a"
+    },
+    {
+      "id": "paired-pair-0070",
+      "kind": "paired",
+      "case_id": "newsroom-tuning-port-strike",
+      "writer": "gpt-6-astra",
+      "variants": [
+        "bare-task",
+        "full"
+      ],
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra",
+      "source_request": "evals/runs/newsroom-tuning-modern/paired/pair-0070/judge-request.json",
+      "source_request_sha256": "dffbf5f2f511c8cfbfbe9cddf27d3a5c8bf8b9cc3f842bdf07fe63621df78ffc",
+      "source_key": "evals/runs/newsroom-tuning-modern/paired/pair-0070/key.json",
+      "source_key_sha256": "78c67665f5f97a348e5e3f96540a39cb18d9aa063cf7ea6abc10ef9615a1d5b0",
+      "prompt_sha256": "510c73130c91a39e3bdd4e6558db016458e82865fda81450734e076c076d3885"
+    },
+    {
+      "id": "pointwise-item-0001",
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-antitrust-suit",
+      "writer": "claude-sonnet-5",
+      "variants": [
+        "bare-task"
+      ],
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5",
+      "source_request": "evals/runs/newsroom-tuning-modern/pointwise/item-0001/request.json",
+      "source_request_sha256": "67092b33b78160f937a4902073836bf2178b07c1579be5c2e6d3264bc7008fd9",
+      "source_key": "evals/runs/newsroom-tuning-modern/pointwise/item-0001/private-key.json",
+      "source_key_sha256": "e6672496537e42027267a7b2f69bd1e615e7a402506f5d73347c342f84fc4eea",
+      "prompt_sha256": "e7afde48add076bba056b0649f79c43752f38bcfd64d5ac43c39e083bdd2314d"
+    },
+    {
+      "id": "pointwise-item-0002",
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-antitrust-suit",
+      "writer": "gpt-6-astra",
+      "variants": [
+        "bare-task"
+      ],
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra",
+      "source_request": "evals/runs/newsroom-tuning-modern/pointwise/item-0002/request.json",
+      "source_request_sha256": "c9e0b23435ea1a221c58f888bd5211be0ebe4a62ec98772309345fef85cb913e",
+      "source_key": "evals/runs/newsroom-tuning-modern/pointwise/item-0002/private-key.json",
+      "source_key_sha256": "09120f57c41718b6fcc64625027ca66973112a47b1104d827fd63308fd85b151",
+      "prompt_sha256": "aab81d495731efbfabc3054dec8dc9935cec60adce818e5789ecdc98d87a80af"
+    },
+    {
+      "id": "pointwise-item-0005",
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-antitrust-suit",
+      "writer": "claude-sonnet-5",
+      "variants": [
+        "full"
+      ],
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5",
+      "source_request": "evals/runs/newsroom-tuning-modern/pointwise/item-0005/request.json",
+      "source_request_sha256": "60007f15e49d7ae004edbcd8a9f1f8eed1aff25704031de4f750eba8b769f2d1",
+      "source_key": "evals/runs/newsroom-tuning-modern/pointwise/item-0005/private-key.json",
+      "source_key_sha256": "698e9dab0b947dc8a40015597f054bee63ace40bd75710528d3bb21b7032923c",
+      "prompt_sha256": "f85c2bfe3145a550982afd83d6b7a6336eca678749b906232c67fe1d4bfa088a"
+    },
+    {
+      "id": "pointwise-item-0006",
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-antitrust-suit",
+      "writer": "gpt-6-astra",
+      "variants": [
+        "full"
+      ],
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra",
+      "source_request": "evals/runs/newsroom-tuning-modern/pointwise/item-0006/request.json",
+      "source_request_sha256": "58cbb3671eedca362901145a334cb8bb5176ac8b4f0a5d45267ead2bf039e75e",
+      "source_key": "evals/runs/newsroom-tuning-modern/pointwise/item-0006/private-key.json",
+      "source_key_sha256": "14f97114afce1cf6bb581828d308df77b55be0fe7cd66e7686f9c9a4786742fe",
+      "prompt_sha256": "eeffc08e6b5b624342587fb4d98acf164dcab7b237fe050b20940798b5c141c9"
+    },
+    {
+      "id": "pointwise-item-0007",
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-auto-retraining",
+      "writer": "claude-sonnet-5",
+      "variants": [
+        "bare-task"
+      ],
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5",
+      "source_request": "evals/runs/newsroom-tuning-modern/pointwise/item-0007/request.json",
+      "source_request_sha256": "1f5256fe4ee3616cad3fdc2057cdf7be47d507dd14f97659db4b78aba8764ed9",
+      "source_key": "evals/runs/newsroom-tuning-modern/pointwise/item-0007/private-key.json",
+      "source_key_sha256": "db3fdd3b0cf9806aceffc192fcb31703a260c2bfff148e92de5656c4b94b495f",
+      "prompt_sha256": "be6f11e77b0bf464219059666ed7c1f92f259272cc8215eb0ffa647d0318a95a"
+    },
+    {
+      "id": "pointwise-item-0008",
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-auto-retraining",
+      "writer": "gpt-6-astra",
+      "variants": [
+        "bare-task"
+      ],
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra",
+      "source_request": "evals/runs/newsroom-tuning-modern/pointwise/item-0008/request.json",
+      "source_request_sha256": "a500d5e60854a20e1ac66169d8c0c8e70db454a536df3fdb5a5be8bab28cfa57",
+      "source_key": "evals/runs/newsroom-tuning-modern/pointwise/item-0008/private-key.json",
+      "source_key_sha256": "830fbe4463c7afaa8e854ab617af0f0761dbd04a6bff4c67a06910d57a5f99e7",
+      "prompt_sha256": "91e334d6ef2e44dadef4c6bb92a1cfcb7769c3dff562828863bf23f50946223f"
+    },
+    {
+      "id": "pointwise-item-0011",
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-auto-retraining",
+      "writer": "claude-sonnet-5",
+      "variants": [
+        "full"
+      ],
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5",
+      "source_request": "evals/runs/newsroom-tuning-modern/pointwise/item-0011/request.json",
+      "source_request_sha256": "060c43c514c4fa957e4495373ac569c7b23ca3d051b2f24bc139a12118d58341",
+      "source_key": "evals/runs/newsroom-tuning-modern/pointwise/item-0011/private-key.json",
+      "source_key_sha256": "1fc0d54aeaa0d171def30a25aae4d047bb392f24adb43f3d988b60aa38aafc63",
+      "prompt_sha256": "610d045736d0d5448b2bbff0b74ddb71e2e9d0a1c27b7a69470a65e4bea170fe"
+    },
+    {
+      "id": "pointwise-item-0012",
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-auto-retraining",
+      "writer": "gpt-6-astra",
+      "variants": [
+        "full"
+      ],
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra",
+      "source_request": "evals/runs/newsroom-tuning-modern/pointwise/item-0012/request.json",
+      "source_request_sha256": "c2a54c616fdc78780876d714c5fcdafee61efb6eb97d2423defcea04b83d727b",
+      "source_key": "evals/runs/newsroom-tuning-modern/pointwise/item-0012/private-key.json",
+      "source_key_sha256": "2063d3c76dd73b3e28a7900588b87f6a88ac89666b2445c2c8b49eee12c585fa",
+      "prompt_sha256": "6a166474bd86822e2254e78eb6c7bdeac6e265921c788c8d10dfcfee0c2a21d7"
+    },
+    {
+      "id": "pointwise-item-0013",
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-blood-supply",
+      "writer": "claude-sonnet-5",
+      "variants": [
+        "bare-task"
+      ],
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5",
+      "source_request": "evals/runs/newsroom-tuning-modern/pointwise/item-0013/request.json",
+      "source_request_sha256": "547b670e6b9b9212d48e07ed67d333855f1c33dcb431eafc107c057cd32eb6c5",
+      "source_key": "evals/runs/newsroom-tuning-modern/pointwise/item-0013/private-key.json",
+      "source_key_sha256": "96e81834f0a7aae26d72c01622d94dd9a61539bf5657294f2418103ccf6d47d3",
+      "prompt_sha256": "a810760bcc85463dfe1787d58f9dcefb64af361b14594ae007205a22c29610d0"
+    },
+    {
+      "id": "pointwise-item-0014",
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-blood-supply",
+      "writer": "gpt-6-astra",
+      "variants": [
+        "bare-task"
+      ],
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra",
+      "source_request": "evals/runs/newsroom-tuning-modern/pointwise/item-0014/request.json",
+      "source_request_sha256": "84f0435ea627157f4e62768729c385b251f77995e450f150d4089d8e06df0be6",
+      "source_key": "evals/runs/newsroom-tuning-modern/pointwise/item-0014/private-key.json",
+      "source_key_sha256": "714ea3bfa167ce5187524ed51a240685555d65dab1dd4d46112c01d89fbb7fe8",
+      "prompt_sha256": "879573c59d6b4fe419549f9c749f7d43d4f69d195b8276b351e0f898964e41e1"
+    },
+    {
+      "id": "pointwise-item-0017",
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-blood-supply",
+      "writer": "claude-sonnet-5",
+      "variants": [
+        "full"
+      ],
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5",
+      "source_request": "evals/runs/newsroom-tuning-modern/pointwise/item-0017/request.json",
+      "source_request_sha256": "5708ca2f99409761eae724d6c34d624efa2e145961d553e7b7dca6ae278ed3ad",
+      "source_key": "evals/runs/newsroom-tuning-modern/pointwise/item-0017/private-key.json",
+      "source_key_sha256": "c00ee83bab340c9f34291bae30d5f4b13de6965718ca9382b85eb0c402dbc0f7",
+      "prompt_sha256": "fdf547cf75f3d0f195a19e089b1b4a8d26f8b6e070204ca97fb9e833457b4486"
+    },
+    {
+      "id": "pointwise-item-0018",
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-blood-supply",
+      "writer": "gpt-6-astra",
+      "variants": [
+        "full"
+      ],
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra",
+      "source_request": "evals/runs/newsroom-tuning-modern/pointwise/item-0018/request.json",
+      "source_request_sha256": "6bc0e80efd88ddc99e6503c573c8f6e24d94b48ebdfd6038c840d915cdfbfc01",
+      "source_key": "evals/runs/newsroom-tuning-modern/pointwise/item-0018/private-key.json",
+      "source_key_sha256": "b867a44b0b70b3807f191ab2cca23353b79f2ee31b5d5283adafac582d3079ad",
+      "prompt_sha256": "3534ed08379c436affb9f36ac19cd285d490aefe2404fc03d53b4d11f0178e8c"
+    },
+    {
+      "id": "pointwise-item-0019",
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-carbon-rules",
+      "writer": "claude-sonnet-5",
+      "variants": [
+        "bare-task"
+      ],
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5",
+      "source_request": "evals/runs/newsroom-tuning-modern/pointwise/item-0019/request.json",
+      "source_request_sha256": "4664973bc37b79aff3878f004095ff282d519ce30dbea37102a254d78acb5106",
+      "source_key": "evals/runs/newsroom-tuning-modern/pointwise/item-0019/private-key.json",
+      "source_key_sha256": "f1a167e63a69b9903fd8d9f79ba3eab8f395f155c367325080ad128459017025",
+      "prompt_sha256": "35d1dc6ac1e9a5733e7852205a1a71bc8cf051a5a31bb431db8fa1038df94252"
+    },
+    {
+      "id": "pointwise-item-0020",
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-carbon-rules",
+      "writer": "gpt-6-astra",
+      "variants": [
+        "bare-task"
+      ],
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra",
+      "source_request": "evals/runs/newsroom-tuning-modern/pointwise/item-0020/request.json",
+      "source_request_sha256": "e6eb8ad74c0565b2bdeb9cecb59b6e9926e266823f10077930613b75c694b1a7",
+      "source_key": "evals/runs/newsroom-tuning-modern/pointwise/item-0020/private-key.json",
+      "source_key_sha256": "d94e9b3274f2e5dd3571e0c2ee7ab6d8f24a6a89eeffaf05da10d08ac6c4f898",
+      "prompt_sha256": "2e9d3df4395221ceb620b1191e9e70fe201cddd052c3041db4babbefac36e0fe"
+    },
+    {
+      "id": "pointwise-item-0023",
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-carbon-rules",
+      "writer": "claude-sonnet-5",
+      "variants": [
+        "full"
+      ],
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5",
+      "source_request": "evals/runs/newsroom-tuning-modern/pointwise/item-0023/request.json",
+      "source_request_sha256": "58a70beddfb99a89c6c76f85de701ad372d09e614ef10bdc01b2103fa45d4dd2",
+      "source_key": "evals/runs/newsroom-tuning-modern/pointwise/item-0023/private-key.json",
+      "source_key_sha256": "4f60d89fab321e59f9780e330423525757977ab69f70139f1494fe020977f85b",
+      "prompt_sha256": "0851c363d8f433c0a7b3a2978b1b3881a8d2fe62f48c8fefbf7a77ce522a3c66"
+    },
+    {
+      "id": "pointwise-item-0024",
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-carbon-rules",
+      "writer": "gpt-6-astra",
+      "variants": [
+        "full"
+      ],
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra",
+      "source_request": "evals/runs/newsroom-tuning-modern/pointwise/item-0024/request.json",
+      "source_request_sha256": "cbcc060a529ad778dda1c41865d7b3738af71d3cad6906417a0404ccc911526e",
+      "source_key": "evals/runs/newsroom-tuning-modern/pointwise/item-0024/private-key.json",
+      "source_key_sha256": "357e9476b76361ee255cfd70a63316768e5563305064ca93a3e66eb0f5aaf0e4",
+      "prompt_sha256": "5c4950fc56dfbb2944925a535c7681f3b922e35116a81e416455e06da701e862"
+    },
+    {
+      "id": "pointwise-item-0025",
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-council-rezone",
+      "writer": "claude-sonnet-5",
+      "variants": [
+        "bare-task"
+      ],
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5",
+      "source_request": "evals/runs/newsroom-tuning-modern/pointwise/item-0025/request.json",
+      "source_request_sha256": "9b6a3c1c46e6efa4e14d235bb1641e262cd2051a9caeaf3ec24a9e8a85bd939d",
+      "source_key": "evals/runs/newsroom-tuning-modern/pointwise/item-0025/private-key.json",
+      "source_key_sha256": "eb8da8f0e9880c9a2ed9d3c8cbbb5bf86c4a08458cf76ab37f46ccc366b27622",
+      "prompt_sha256": "e5b21e695138975a20d01ede51e6778a0a0436a3e1dd9235a9012aca30174a55"
+    },
+    {
+      "id": "pointwise-item-0026",
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-council-rezone",
+      "writer": "gpt-6-astra",
+      "variants": [
+        "bare-task"
+      ],
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra",
+      "source_request": "evals/runs/newsroom-tuning-modern/pointwise/item-0026/request.json",
+      "source_request_sha256": "2d7b17e53498b73b66f8ffb367e5be102af023ff12f47ecdf9b42943380da9e8",
+      "source_key": "evals/runs/newsroom-tuning-modern/pointwise/item-0026/private-key.json",
+      "source_key_sha256": "57053639e0da1f4b6d8d24d0d4d9d11a5b4d06d50678604a39d13d44e1c9f8d3",
+      "prompt_sha256": "df8bcf8b7aad7bbb9eedc3541ea9e1fdec44f951b9df0d344853e2191450c282"
+    },
+    {
+      "id": "pointwise-item-0029",
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-council-rezone",
+      "writer": "claude-sonnet-5",
+      "variants": [
+        "full"
+      ],
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5",
+      "source_request": "evals/runs/newsroom-tuning-modern/pointwise/item-0029/request.json",
+      "source_request_sha256": "010b74d0a118a2673226ced39edc5d2b64ae18fe2e7460f469740864d2bdbcb6",
+      "source_key": "evals/runs/newsroom-tuning-modern/pointwise/item-0029/private-key.json",
+      "source_key_sha256": "7fd5c4fb644838f30f4a3dc3edcb819787fd71833a5ed544bbb0da2bdf24c273",
+      "prompt_sha256": "3c0329ed3f80fc2f6d5827458eaf90336936165cb540726c259e16214196f93d"
+    },
+    {
+      "id": "pointwise-item-0030",
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-council-rezone",
+      "writer": "gpt-6-astra",
+      "variants": [
+        "full"
+      ],
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra",
+      "source_request": "evals/runs/newsroom-tuning-modern/pointwise/item-0030/request.json",
+      "source_request_sha256": "c838121a0cd9c4161835fc94545bae9e39aa36e610f95f72fa62eeac6ade39ba",
+      "source_key": "evals/runs/newsroom-tuning-modern/pointwise/item-0030/private-key.json",
+      "source_key_sha256": "53154ca366e41efd15274768b1c7e3b13bbd5fb3296fa8d7a2bcf70f997e7111",
+      "prompt_sha256": "353c3c7074eecdcbd0da7624cf4766243c3d8e1476cf2929615a5fc232425294"
+    },
+    {
+      "id": "pointwise-item-0031",
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-drone-corridors",
+      "writer": "claude-sonnet-5",
+      "variants": [
+        "bare-task"
+      ],
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5",
+      "source_request": "evals/runs/newsroom-tuning-modern/pointwise/item-0031/request.json",
+      "source_request_sha256": "7bfe3cb3ed318fb618f46f1b77275d0d7c856148bedde4b9d7974f8756714b9e",
+      "source_key": "evals/runs/newsroom-tuning-modern/pointwise/item-0031/private-key.json",
+      "source_key_sha256": "8cff18bd1cd5162f00d1e32200e4dc9fc3545938770f364e8d85503ac5657443",
+      "prompt_sha256": "35b2681e9e43f722a85774729d966814819ff40b8d317c1462e07313976b60db"
+    },
+    {
+      "id": "pointwise-item-0032",
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-drone-corridors",
+      "writer": "gpt-6-astra",
+      "variants": [
+        "bare-task"
+      ],
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra",
+      "source_request": "evals/runs/newsroom-tuning-modern/pointwise/item-0032/request.json",
+      "source_request_sha256": "d8b6ed8e2ccf677c7825c03664ec333151333e97d6880398f4e2c49d4f71989d",
+      "source_key": "evals/runs/newsroom-tuning-modern/pointwise/item-0032/private-key.json",
+      "source_key_sha256": "e5885c6bf25f1a8f03740fc4598a25d8dc602e83930bc2a0d5173a59d0ba6482",
+      "prompt_sha256": "a7793ea7465b47aaca9467b9fc35175e12dd2a5d0b82f43f12a1100a4468149b"
+    },
+    {
+      "id": "pointwise-item-0035",
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-drone-corridors",
+      "writer": "claude-sonnet-5",
+      "variants": [
+        "full"
+      ],
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5",
+      "source_request": "evals/runs/newsroom-tuning-modern/pointwise/item-0035/request.json",
+      "source_request_sha256": "284c128e9f5b7eb8f907498516b202edc929e178fe3c6e94ec05a75d783ee1bd",
+      "source_key": "evals/runs/newsroom-tuning-modern/pointwise/item-0035/private-key.json",
+      "source_key_sha256": "201b1afc2cfe59da3ffa6643c1f60f21609183a16fa0c20e42391f21e3b6af43",
+      "prompt_sha256": "ca62abc5f6d79ca18d88ca94d8b8f6d461f428bc8ade487102b810f1cafa867d"
+    },
+    {
+      "id": "pointwise-item-0036",
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-drone-corridors",
+      "writer": "gpt-6-astra",
+      "variants": [
+        "full"
+      ],
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra",
+      "source_request": "evals/runs/newsroom-tuning-modern/pointwise/item-0036/request.json",
+      "source_request_sha256": "eabb11022cc695c93233ddd310dbf96b765aa0ea60d0bca1ee23ab05018a0e20",
+      "source_key": "evals/runs/newsroom-tuning-modern/pointwise/item-0036/private-key.json",
+      "source_key_sha256": "854f5340e5aa5d2787524ddfdd1cde503bb0a43981a6d67e5570eb94b87b63c9",
+      "prompt_sha256": "4127d0c6e1a7210bc0d13769a60fd76f072f5d91815775dbceaad661a581812a"
+    },
+    {
+      "id": "pointwise-item-0037",
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-foster-shortage",
+      "writer": "claude-sonnet-5",
+      "variants": [
+        "bare-task"
+      ],
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5",
+      "source_request": "evals/runs/newsroom-tuning-modern/pointwise/item-0037/request.json",
+      "source_request_sha256": "02b3288530abf00954efa38430bb06c1db747a2c4f6b91286ffca2ceeef8df9c",
+      "source_key": "evals/runs/newsroom-tuning-modern/pointwise/item-0037/private-key.json",
+      "source_key_sha256": "2f62289e2c8aaa745b2bc90cb6446b771040e17bb0bca2a700740cb4b4cc3659",
+      "prompt_sha256": "9e4b65280bbec355e436bc3234a406428cf41fdc16d47faf6e3355d283b31a33"
+    },
+    {
+      "id": "pointwise-item-0038",
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-foster-shortage",
+      "writer": "gpt-6-astra",
+      "variants": [
+        "bare-task"
+      ],
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra",
+      "source_request": "evals/runs/newsroom-tuning-modern/pointwise/item-0038/request.json",
+      "source_request_sha256": "dee9f64782cc95783a450d5eaa4f80dad920a371bcb7f73d5d163b2c5a1ce51d",
+      "source_key": "evals/runs/newsroom-tuning-modern/pointwise/item-0038/private-key.json",
+      "source_key_sha256": "b3cf138ba0ae3714fabb540d203ff618a180d676a8daaf0983e64ead378cd0b5",
+      "prompt_sha256": "4d71e352d9da794afd94d1b7630a336bc503e157102fb83303f1f56fdc7f5cbe"
+    },
+    {
+      "id": "pointwise-item-0041",
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-foster-shortage",
+      "writer": "claude-sonnet-5",
+      "variants": [
+        "full"
+      ],
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5",
+      "source_request": "evals/runs/newsroom-tuning-modern/pointwise/item-0041/request.json",
+      "source_request_sha256": "61b72eb9fc16bfe0d1e0cce58597e3213ca75e7fffb45d83514aa777d22a0ce8",
+      "source_key": "evals/runs/newsroom-tuning-modern/pointwise/item-0041/private-key.json",
+      "source_key_sha256": "0920e26e95962a70c4f009d61075cc0f65099e5d88fadaa71eb318ba964f4b07",
+      "prompt_sha256": "66735e595cf2e906ba1e40a12650890de0e56a71fe30f773eb9094e54d479bde"
+    },
+    {
+      "id": "pointwise-item-0042",
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-foster-shortage",
+      "writer": "gpt-6-astra",
+      "variants": [
+        "full"
+      ],
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra",
+      "source_request": "evals/runs/newsroom-tuning-modern/pointwise/item-0042/request.json",
+      "source_request_sha256": "56e2de5378eb1448ec7dbde5d8d793611b34b7581ac9793b9a002890e853d57b",
+      "source_key": "evals/runs/newsroom-tuning-modern/pointwise/item-0042/private-key.json",
+      "source_key_sha256": "b6d3d5b4d44bffebed9985bf3f0bd2b8917c4e36fa64f250dc1978cdd4981f4a",
+      "prompt_sha256": "61c5d61d9a919e7730588ddf223a674a4023b6de0a5cb378fd38b68e1e3911b8"
+    },
+    {
+      "id": "pointwise-item-0043",
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-grocery-closures",
+      "writer": "claude-sonnet-5",
+      "variants": [
+        "bare-task"
+      ],
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5",
+      "source_request": "evals/runs/newsroom-tuning-modern/pointwise/item-0043/request.json",
+      "source_request_sha256": "8bde94eaab547ea55f7ef858715869e7c4c1c201a288064469bd450c16623b45",
+      "source_key": "evals/runs/newsroom-tuning-modern/pointwise/item-0043/private-key.json",
+      "source_key_sha256": "3eb2940408e4c7eb70527a0e4d352fc2fd9586c83b85c07618abcc4d023e32e0",
+      "prompt_sha256": "24aa2ebb727b0c966322dbb2450e4062e00362ca1f7d5d2dee6b7fbfc79db8dd"
+    },
+    {
+      "id": "pointwise-item-0044",
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-grocery-closures",
+      "writer": "gpt-6-astra",
+      "variants": [
+        "bare-task"
+      ],
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra",
+      "source_request": "evals/runs/newsroom-tuning-modern/pointwise/item-0044/request.json",
+      "source_request_sha256": "7697159c16c428939a49f060fea6dbc38830b27c40e9efe23f0378cf09764631",
+      "source_key": "evals/runs/newsroom-tuning-modern/pointwise/item-0044/private-key.json",
+      "source_key_sha256": "a492e6b5e8fd4f97b2bfced9b27339e28e196f98a75311021d3bca42f6aa0c9b",
+      "prompt_sha256": "3ea3af06cd9b49ef2a00fae77906596f231eb69e7f52749a0ded8add3572f76d"
+    },
+    {
+      "id": "pointwise-item-0047",
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-grocery-closures",
+      "writer": "claude-sonnet-5",
+      "variants": [
+        "full"
+      ],
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5",
+      "source_request": "evals/runs/newsroom-tuning-modern/pointwise/item-0047/request.json",
+      "source_request_sha256": "90a887eb8228c8ab087ee46b88cd3648527abb9fe13368e95cbad7fd74d9504f",
+      "source_key": "evals/runs/newsroom-tuning-modern/pointwise/item-0047/private-key.json",
+      "source_key_sha256": "826a188809c09961a2b370141999cf24ba0a310f84020b5ad285784a861c9de4",
+      "prompt_sha256": "4bac82b41bf3e8712cc3f0e5b19bb98ec2ad913c91a7e42493abaa94141f233f"
+    },
+    {
+      "id": "pointwise-item-0048",
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-grocery-closures",
+      "writer": "gpt-6-astra",
+      "variants": [
+        "full"
+      ],
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra",
+      "source_request": "evals/runs/newsroom-tuning-modern/pointwise/item-0048/request.json",
+      "source_request_sha256": "a1f280faf76ddfb2616edbb566a9f389173a581c9275349041bc3f34ca5d4b09",
+      "source_key": "evals/runs/newsroom-tuning-modern/pointwise/item-0048/private-key.json",
+      "source_key_sha256": "840a7ba77830266ea3e9d40e80869ea00132709169fd98ba839b6c84451ce917",
+      "prompt_sha256": "120fdc7fe478759b93b7c4f4b7b9e00227f2d10d6361ed4adb857b71f3b20f90"
+    },
+    {
+      "id": "pointwise-item-0049",
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-managed-retreat",
+      "writer": "claude-sonnet-5",
+      "variants": [
+        "bare-task"
+      ],
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5",
+      "source_request": "evals/runs/newsroom-tuning-modern/pointwise/item-0049/request.json",
+      "source_request_sha256": "a467036205afef80e3223dd3aa7772d66dfa5a571c266dbc0ac31134d302e0bc",
+      "source_key": "evals/runs/newsroom-tuning-modern/pointwise/item-0049/private-key.json",
+      "source_key_sha256": "7649960d9acf5e40bf1484797f90b96117bc8c0fe4b080f5ec5692ad9fc4105d",
+      "prompt_sha256": "df31f03faee3893f9dfb29d016d85b85c5eb075d7f12cc8b1f3c0b22007feda7"
+    },
+    {
+      "id": "pointwise-item-0050",
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-managed-retreat",
+      "writer": "gpt-6-astra",
+      "variants": [
+        "bare-task"
+      ],
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra",
+      "source_request": "evals/runs/newsroom-tuning-modern/pointwise/item-0050/request.json",
+      "source_request_sha256": "4a93b8361f0324a47e03acb0499440b83a83ae6a81bcb2dd4f15277853093454",
+      "source_key": "evals/runs/newsroom-tuning-modern/pointwise/item-0050/private-key.json",
+      "source_key_sha256": "05cc5679db27da5e090326a1dd3aef57b6dbe2b29266618dbbb79b033b56dcea",
+      "prompt_sha256": "0c0b481c6a3f96617927176a5d832883147198015e94745e9781dd03c79e1cb2"
+    },
+    {
+      "id": "pointwise-item-0053",
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-managed-retreat",
+      "writer": "claude-sonnet-5",
+      "variants": [
+        "full"
+      ],
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5",
+      "source_request": "evals/runs/newsroom-tuning-modern/pointwise/item-0053/request.json",
+      "source_request_sha256": "d305dd501a597867cdd4bf0c8ba07facce83a0fbe79b8481b964833841ea8475",
+      "source_key": "evals/runs/newsroom-tuning-modern/pointwise/item-0053/private-key.json",
+      "source_key_sha256": "17c88b9a193c357cf906f922b694581a87eb4a7fe9d8778e20e0761168c00c2d",
+      "prompt_sha256": "7ee4bb13276f704f2d3ef5020ddf255db6a2a08acdf1cb429be28e57c223057e"
+    },
+    {
+      "id": "pointwise-item-0054",
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-managed-retreat",
+      "writer": "gpt-6-astra",
+      "variants": [
+        "full"
+      ],
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra",
+      "source_request": "evals/runs/newsroom-tuning-modern/pointwise/item-0054/request.json",
+      "source_request_sha256": "a5d150140caa397ed094d5178c18bffedba4135de75fc91d0b5a44482ca3070a",
+      "source_key": "evals/runs/newsroom-tuning-modern/pointwise/item-0054/private-key.json",
+      "source_key_sha256": "cc74b5070ddab25ad520e4163554b9cd40b168063ba0e1a33263d3c9e6ea1c17",
+      "prompt_sha256": "79f9413571933ea2df1ee4df95c032323291ef432f6ecf6e34cbd8182b934959"
+    },
+    {
+      "id": "pointwise-item-0055",
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-municipal-bonds",
+      "writer": "claude-sonnet-5",
+      "variants": [
+        "bare-task"
+      ],
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5",
+      "source_request": "evals/runs/newsroom-tuning-modern/pointwise/item-0055/request.json",
+      "source_request_sha256": "3d3a2793149c5489d77a9e3c1d86dabfb155e786fe2e3ed1293ff31dd68404bd",
+      "source_key": "evals/runs/newsroom-tuning-modern/pointwise/item-0055/private-key.json",
+      "source_key_sha256": "69dc34db9a8d726cd2cc37b4b2a270bd56782eafc18f16ddec8e39ac7ac53600",
+      "prompt_sha256": "8c0d91527367ba95347d24e14c1259453f6588d820629b4452c332e4f0ad755d"
+    },
+    {
+      "id": "pointwise-item-0056",
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-municipal-bonds",
+      "writer": "gpt-6-astra",
+      "variants": [
+        "bare-task"
+      ],
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra",
+      "source_request": "evals/runs/newsroom-tuning-modern/pointwise/item-0056/request.json",
+      "source_request_sha256": "cdb4b9290e6bf31f655c03766d677b5a88a11ad46809ced49988df3516b609ec",
+      "source_key": "evals/runs/newsroom-tuning-modern/pointwise/item-0056/private-key.json",
+      "source_key_sha256": "f852b1c52a8f58886bd3a5ce4afb70b6c5984b77032565a04b8067fcf2d4653c",
+      "prompt_sha256": "400c51ab2b4e9868c066e88852564003fcc819157bc8837512465f9da279ba91"
+    },
+    {
+      "id": "pointwise-item-0059",
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-municipal-bonds",
+      "writer": "claude-sonnet-5",
+      "variants": [
+        "full"
+      ],
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5",
+      "source_request": "evals/runs/newsroom-tuning-modern/pointwise/item-0059/request.json",
+      "source_request_sha256": "6da999ebd2821f8a2f0ba6168c7109a18a2956320f2056943fe714092a498904",
+      "source_key": "evals/runs/newsroom-tuning-modern/pointwise/item-0059/private-key.json",
+      "source_key_sha256": "3e772b1a53f870871e9145e23a4011f9eaa16e4c74855f85ea193b8b25f32c40",
+      "prompt_sha256": "618fc0c95235dc0502fd995813a074eda18a51c5256af7da1ba1673594d3e3fe"
+    },
+    {
+      "id": "pointwise-item-0060",
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-municipal-bonds",
+      "writer": "gpt-6-astra",
+      "variants": [
+        "full"
+      ],
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra",
+      "source_request": "evals/runs/newsroom-tuning-modern/pointwise/item-0060/request.json",
+      "source_request_sha256": "fbdcccb193a6a256db28c59d8afa39c4645aba732c6165e7409395b4d222b706",
+      "source_key": "evals/runs/newsroom-tuning-modern/pointwise/item-0060/private-key.json",
+      "source_key_sha256": "46ef4bbadfe11002b4d22566622d11cb39386b7f67f0a856194056af86e6f634",
+      "prompt_sha256": "514cedbcd011f90b966bd137699a870ee06908ed54e1409c847c11c4d4b7bdd1"
+    },
+    {
+      "id": "pointwise-item-0061",
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-newspaper-acquisition",
+      "writer": "claude-sonnet-5",
+      "variants": [
+        "bare-task"
+      ],
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5",
+      "source_request": "evals/runs/newsroom-tuning-modern/pointwise/item-0061/request.json",
+      "source_request_sha256": "9adc6af26f6b5067085c76ec2422040d772a29cd841b8a6ca11d28678b919bc9",
+      "source_key": "evals/runs/newsroom-tuning-modern/pointwise/item-0061/private-key.json",
+      "source_key_sha256": "65752d45ee225813419c37f399e3e7a89904b52c695a27f9043ab606aac2497d",
+      "prompt_sha256": "632e96ddc0e1dd5e6893848d431bffa4a4b64c8a6b6aadd8d4a412f7c8a36efb"
+    },
+    {
+      "id": "pointwise-item-0062",
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-newspaper-acquisition",
+      "writer": "gpt-6-astra",
+      "variants": [
+        "bare-task"
+      ],
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra",
+      "source_request": "evals/runs/newsroom-tuning-modern/pointwise/item-0062/request.json",
+      "source_request_sha256": "d808f39a4c642617de0ba52e8e40a61426dbab73face32d0341e7b0d6e704165",
+      "source_key": "evals/runs/newsroom-tuning-modern/pointwise/item-0062/private-key.json",
+      "source_key_sha256": "6d5b1372137b8cb9eea73a65fa30114796f9818677a55b01d784333e6f64fd97",
+      "prompt_sha256": "2f244286485ffff4133bfed354a2e32ff451f8ea60cfd192a33a1eed33eecf29"
+    },
+    {
+      "id": "pointwise-item-0065",
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-newspaper-acquisition",
+      "writer": "claude-sonnet-5",
+      "variants": [
+        "full"
+      ],
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5",
+      "source_request": "evals/runs/newsroom-tuning-modern/pointwise/item-0065/request.json",
+      "source_request_sha256": "99ce495cf2716dfde60e9a790cd73187c5d3eec6827ad78b196855c4b232ae54",
+      "source_key": "evals/runs/newsroom-tuning-modern/pointwise/item-0065/private-key.json",
+      "source_key_sha256": "6d796f224cd49e0c8f0c7785c09be66d7785d0ffb07919be476fadba98389803",
+      "prompt_sha256": "2950f7fc6c80e18569b1a7266e4e1d51ad33cce39f69cd21787be3c7e5d71f46"
+    },
+    {
+      "id": "pointwise-item-0066",
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-newspaper-acquisition",
+      "writer": "gpt-6-astra",
+      "variants": [
+        "full"
+      ],
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra",
+      "source_request": "evals/runs/newsroom-tuning-modern/pointwise/item-0066/request.json",
+      "source_request_sha256": "e10783fb75fff4f5ecf884aa75bfecbc46b0c15097763db7e8032d37b0b3a0db",
+      "source_key": "evals/runs/newsroom-tuning-modern/pointwise/item-0066/private-key.json",
+      "source_key_sha256": "9cb2e41f168a5b10e0cda46587a65b67d970ce9c4350a3b191fc055030f62f45",
+      "prompt_sha256": "c81e4dedef4ac08a11d6a9f41461b8befa4cc4c50014be57dd016de32452c10d"
+    },
+    {
+      "id": "pointwise-item-0067",
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-port-strike",
+      "writer": "claude-sonnet-5",
+      "variants": [
+        "bare-task"
+      ],
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5",
+      "source_request": "evals/runs/newsroom-tuning-modern/pointwise/item-0067/request.json",
+      "source_request_sha256": "7f43d24c9fa1f5fd69e738133372f9cb6a6c9b95ebef15cee689508f10f6391d",
+      "source_key": "evals/runs/newsroom-tuning-modern/pointwise/item-0067/private-key.json",
+      "source_key_sha256": "583af2bc28d06adb42feed310c8d71a84b1b061c86e377e7541b4c1dd4cdf949",
+      "prompt_sha256": "485e550e631e41578f47d94c4b6743e3fc53c6ddb066b10ee017b6f11e73396b"
+    },
+    {
+      "id": "pointwise-item-0068",
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-port-strike",
+      "writer": "gpt-6-astra",
+      "variants": [
+        "bare-task"
+      ],
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra",
+      "source_request": "evals/runs/newsroom-tuning-modern/pointwise/item-0068/request.json",
+      "source_request_sha256": "79e3e82a48deb3919a4d7b6863ec9d50fa47fe9d843733942b7cbe41600cf9b2",
+      "source_key": "evals/runs/newsroom-tuning-modern/pointwise/item-0068/private-key.json",
+      "source_key_sha256": "98493c440932c4e5e487364e32b465117ef4d4ff8f01b85fc179090fb7006eb0",
+      "prompt_sha256": "b190cf9184d76fb6cf39b5355ceedfbc0bc851636f2ddc225751d281c43ac5dd"
+    },
+    {
+      "id": "pointwise-item-0071",
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-port-strike",
+      "writer": "claude-sonnet-5",
+      "variants": [
+        "full"
+      ],
+      "original_judge": "gpt-6-astra",
+      "crossover_judge": "claude-sonnet-5",
+      "source_request": "evals/runs/newsroom-tuning-modern/pointwise/item-0071/request.json",
+      "source_request_sha256": "8705f270556ca4734d4fe194fe759c720b774fada07013ad007f9d20628c23e2",
+      "source_key": "evals/runs/newsroom-tuning-modern/pointwise/item-0071/private-key.json",
+      "source_key_sha256": "b3825a061ad1f231158a7223a81bba9b57ac7894e0c80883dd84da56d80b3d78",
+      "prompt_sha256": "d87db3efc8f850d0185182c165b083c252ea72485829272f82eeb5096a30cc3d"
+    },
+    {
+      "id": "pointwise-item-0072",
+      "kind": "pointwise",
+      "case_id": "newsroom-tuning-port-strike",
+      "writer": "gpt-6-astra",
+      "variants": [
+        "full"
+      ],
+      "original_judge": "claude-sonnet-5",
+      "crossover_judge": "gpt-6-astra",
+      "source_request": "evals/runs/newsroom-tuning-modern/pointwise/item-0072/request.json",
+      "source_request_sha256": "ecb1aa104e521d2365269b8504d1286a399f5c60f9c6291f205eda5cee8a0726",
+      "source_key": "evals/runs/newsroom-tuning-modern/pointwise/item-0072/private-key.json",
+      "source_key_sha256": "7f72134f076b7f424b84ae6f2f3f7ba1e40f53aad136c61fa83bd80e0b4dcf9a",
+      "prompt_sha256": "32c16e6e03ce46ce019506cf37484609a129cb65e836c598847d11a410bd3915"
+    }
+  ],
+  "human_reviews": 0,
+  "design_sha256": "422e46e4978859e563d58645f317b95ab99fe28357166476ea60d4315daf5dc5"
+}
