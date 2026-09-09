@@ -106,8 +106,9 @@ def evidence_from_events(events: list[dict], prompt: str, model: str) -> dict:
                 messages.append(data["content"])
         elif kind == "assistant.usage":
             evaluate.require(data.get("model") == model, "observed model differs from requested model")
-            evaluate.require(data.get("numToolCalls", 0) == 0, "observed tool calls are not permitted")
-            evaluate.require(data.get("availableToolCount", 0) == 0, "session exposed tools")
+            for field in ("numToolCalls", "availableToolCount"):
+                evaluate.require(type(data.get(field)) is int and data[field] == 0,
+                                 f"runtime must explicitly report zero {field}")
             evaluate.require(not data.get("contentFilterTriggered", False), "provider reported a content filter")
             item = {key: data[key] for key in USAGE_FIELDS if key in data}
             observed_cost = data.get("copilotUsage", {})
@@ -136,15 +137,18 @@ class LiveTransport:
         self.client: Any = None
         self.settings: dict[str, dict] = {}
         self.reject_permission: Any = None
+        self.capture_errors: tuple[type[Exception], ...] = ()
 
     async def __aenter__(self):
         try:
             from copilot import CopilotClient, RuntimeConnection
             from copilot.generated.rpc import PermissionDecisionReject
+            from copilot._jsonrpc import JsonRpcError, ProcessExitedError
         except ModuleNotFoundError as error:
             raise DocumentError("install optional requirements-simulation.txt before live execution") from error
         evaluate.require(importlib.metadata.version("github-copilot-sdk") == SDK_VERSION,
                          f"live runner requires github-copilot-sdk=={SDK_VERSION}")
+        self.capture_errors = (JsonRpcError, ProcessExitedError)
         executable = shutil.which("copilot")
         evaluate.require(executable is not None, "Copilot CLI is not installed")
         runtime = runtime_version(executable)
@@ -198,7 +202,16 @@ class LiveTransport:
                     events.append(event.to_dict())
 
             session.on(collect)
-            response = await session.send_and_wait(prompt, timeout=self.timeout)
+            response, = await asyncio.gather(
+                session.send_and_wait(prompt, timeout=self.timeout), return_exceptions=True,
+            )
+            if isinstance(response, BaseException):
+                # The pinned SDK uses bare Exception for observed session errors.
+                reported = [event for event in events if event["type"] == "session.error"]
+                if reported:
+                    kind = reported[0]["data"].get("errorType", "unknown")
+                    raise DocumentError(f"runtime reported a session error: {kind}") from response
+                raise response
             evaluate.require(response is not None, "session ended without an assistant response")
             evidence = evidence_from_events(events, prompt, model)
             evaluate.require(response.data.content == evidence["response"], "final response disagrees with event record")
@@ -227,11 +240,24 @@ def load_jobs(root: Path, path: Path) -> tuple[dict, list[dict]]:
     return plan, jobs
 
 
+def transport_errors(transport: Any) -> tuple[type[Exception], ...]:
+    extra = getattr(transport, "capture_errors", ())
+    evaluate.require(
+        isinstance(extra, tuple) and all(
+            isinstance(error, type) and issubclass(error, Exception) and error is not Exception
+            for error in extra
+        ),
+        "capture_errors must contain specific exception classes",
+    )
+    return (DocumentError, OSError, RuntimeError, TimeoutError, ValueError, *extra)
+
+
 async def run_jobs(
     root: Path, plan: dict, jobs: list[dict], output: Path, transport: Any, *,
     concurrency: int = 4, order_seed: int = 731, resume: bool = False,
 ) -> dict:
     evaluate.require(concurrency > 0, "concurrency must be positive")
+    errors = transport_errors(transport)
     signature = {
         "schema_version": 1, "kind": "live-generation-plan",
         "plan_sha256": digest(evaluate.canonical(plan)),
@@ -283,7 +309,7 @@ async def run_jobs(
                 )
                 evaluate.write_json(record_path, record)
                 results[name] = {"status": "captured", "record_sha256": record["result_sha256"]}
-            except Exception as error:
+            except errors as error:
                 failures += 1
                 failure = {"status": "failed", "error_type": type(error).__name__, "error": str(error)}
                 evaluate.write_json(target / "failure.json", failure)

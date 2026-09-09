@@ -83,6 +83,9 @@ but neither the remaining labels nor the source audits prove independence.
 The [mean-inference component](mean-inference.md) documents a finite-sample
 candidate method and its randomization, missingness and independence limits.
 It is not a primary-study registration or a writing result.
+The [source-aware acquisition API](acquisition.md) preserves raw judgments,
+checks source/evidence bindings and distinguishes verification-only resume from
+explicit continuation of never-started jobs.
 
 The [civic source-review bundle](artifacts/civic-source-review-manifest.json)
 retains the exact before/after packets and index, the unchanged model audit and

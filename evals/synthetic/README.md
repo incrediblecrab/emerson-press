@@ -79,6 +79,10 @@ nor the number of outputs says whether the writing is good.
 A returned capture is saved before response-record validation. If that later
 validation rejects the response, its returned data remain beside `failure.json`;
 the attempt is not regenerated. A transport failure may have no complete capture.
+Observed tool counters must be explicitly present and zero, not missing or
+boolean stand-ins. Known runtime/RPC failures are retained; custom transports
+can declare specific additional exception classes through `capture_errors`,
+not a blanket `Exception` catch.
 
 ## Current experiment boundary
 

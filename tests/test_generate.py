@@ -6,6 +6,7 @@ from copy import deepcopy
 import io
 from pathlib import Path
 import tempfile
+from types import SimpleNamespace
 import unittest
 
 from scripts import evaluate, generate
@@ -99,6 +100,9 @@ class GenerationTests(unittest.TestCase):
             lambda events: events[2]["data"].update(model="other-model"),
             lambda events: events[2]["data"].update(numToolCalls=1),
             lambda events: events[2]["data"].update(availableToolCount=1),
+            lambda events: events[2]["data"].pop("numToolCalls"),
+            lambda events: events[2]["data"].pop("availableToolCount"),
+            lambda events: events[2]["data"].update(numToolCalls=False),
             lambda events: events[2]["data"].update(contentFilterTriggered=True),
             lambda events: events[1]["data"].update(toolRequests=[{"name": "fixture-tool"}]),
             lambda events: events.append({"type": "tool.execution_start", "data": {}}),
@@ -174,6 +178,66 @@ class GenerationTests(unittest.TestCase):
         self.assertTrue((output / "fixture-job/capture.json").exists())
         self.assertEqual(evaluate.load_json(output / "fixture-job/capture.json"), {"response": " \n"})
         self.assertFalse((output / "fixture-job/record.json").exists())
+
+    def test_specific_transport_errors_are_retained_and_broad_registration_rejected(self):
+        class SyntheticRpcError(Exception):
+            pass
+
+        class RpcTransport(FakeTransport):
+            capture_errors = (SyntheticRpcError,)
+
+            async def capture(self, model, prompt):
+                self.calls += 1
+                raise SyntheticRpcError("Synthetic RPC fixture; no actual model request.")
+
+        plan, jobs = generate.load_jobs(self.root, self.root / "jobs.json")
+        transport = RpcTransport()
+        with redirect_stdout(io.StringIO()):
+            result = asyncio.run(generate.run_jobs(self.root, plan, jobs, self.root / "rpc-run", transport))
+        self.assertEqual(result["jobs"]["fixture-job"]["error_type"], "SyntheticRpcError")
+        self.assertEqual(transport.calls, 1)
+        transport.capture_errors = (Exception,)
+        with self.assertRaisesRegex(DocumentError, "specific exception classes"):
+            asyncio.run(generate.run_jobs(self.root, plan, jobs, self.root / "broad-run", transport))
+        self.assertFalse((self.root / "broad-run").exists())
+
+    def test_observed_sdk_session_error_is_normalized_but_unrelated_errors_propagate(self):
+        class Session:
+            def __init__(self, error, observed):
+                self.error, self.observed = error, observed
+
+            async def __aenter__(self):
+                return self
+
+            async def __aexit__(self, kind, value, traceback):
+                return None
+
+            def on(self, handler):
+                self.handler = handler
+
+            async def send_and_wait(self, prompt, timeout):
+                if self.observed:
+                    value = {"type": "session.error", "data": {"errorType": "synthetic-runtime-error"}}
+                    self.handler(SimpleNamespace(type=SimpleNamespace(value="session.error"), to_dict=lambda: value))
+                raise self.error
+
+        class Client:
+            def __init__(self, session):
+                self.session = session
+
+            async def create_session(self, **kwargs):
+                return self.session
+
+        for error, observed, expected in (
+            (Exception("Synthetic SDK error"), True, DocumentError),
+            (ValueError("Synthetic unrelated error"), False, ValueError),
+            (asyncio.CancelledError(), False, asyncio.CancelledError),
+        ):
+            transport = generate.LiveTransport(self.root, {"fixture-model"})
+            transport.settings = {"fixture-model": {"reasoning_effort": "service-default"}}
+            transport.client = Client(Session(error, observed))
+            with self.subTest(observed=observed, expected=expected), self.assertRaises(expected):
+                asyncio.run(transport.capture("fixture-model", "Synthetic prompt; no model call."))
 
 
 if __name__ == "__main__":
