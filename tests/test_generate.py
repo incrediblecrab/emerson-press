@@ -80,6 +80,18 @@ class GenerationTests(unittest.TestCase):
         self.assertNotIn("account-private", evaluate.canonical(receipt))
         self.assertEqual(receipt["usage"][0]["nano_ai_credits"], 10)
 
+    def test_neutral_role_does_not_remove_runtime_safety_or_policy_sections(self):
+        removed = generate.WRITING_SYSTEM["sections"]
+        self.assertNotIn("safety", removed)
+        self.assertNotIn("runtime_instructions", removed)
+        self.assertNotIn("custom_instructions", removed)
+        self.assertEqual(generate.WRITING_SYSTEM["mode"], "customize")
+        settings = generate.settings_for("fixture-model", "1.0.0", False)
+        evaluate.validate_settings(settings)
+        self.assertEqual(settings["system_message_config_sha256"],
+                         evaluate.digest(evaluate.canonical(generate.WRITING_SYSTEM)))
+        self.assertTrue(settings["session_options"]["enable_managed_settings"])
+
     def test_missing_usage_wrong_model_and_tools_are_explicit_errors(self):
         mutations = [
             lambda events: events.pop(),

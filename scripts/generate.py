@@ -20,6 +20,21 @@ from scripts.modules import ROOT, DocumentError, digest
 
 
 SDK_VERSION = "1.0.13"
+WRITING_SYSTEM = {
+    "mode": "customize",
+    "sections": {
+        name: {"action": "remove"}
+        for name in (
+            "preamble", "tone", "tool_efficiency", "code_change_rules", "guidelines",
+            "tool_instructions", "last_instructions",
+        )
+    },
+    "content": (
+        "You are a text-only writing assistant. Carry out the supplied drafting, editing, "
+        "or reviewing task. Tools, browsing, persistent memory and other agents are "
+        "unavailable. Do not narrate or invent calls to them. Return the requested output."
+    ),
+}
 USAGE_FIELDS = (
     "model", "inputTokens", "outputTokens", "cacheReadTokens", "cacheWriteTokens",
     "reasoningTokens", "duration", "finishReason", "contentFilterTriggered",
@@ -37,6 +52,7 @@ SESSION_OPTIONS = {
     "enable_managed_settings": True,
     "memory": {"enabled": False},
     "infinite_sessions": {"enabled": False},
+    "system_message": WRITING_SYSTEM,
 }
 
 
@@ -64,7 +80,8 @@ def settings_for(model: str, runtime: str, low_reasoning: bool) -> dict:
         "reasoning_effort": "low" if low_reasoning else "service-default",
         "temperature": "service-default-uncontrolled",
         "generation_seed": "service-default-uncontrolled",
-        "system_prompt": "runtime foundation retained; SDK removes environment_context",
+        "system_prompt": "neutral writing role; runtime safety and policy sections retained",
+        "system_message_config_sha256": digest(evaluate.canonical(WRITING_SYSTEM)),
         "user_message_wrapper": "runtime current_datetime; effective message captured separately",
     }
 
@@ -149,8 +166,8 @@ class LiveTransport:
             mode="empty",
             log_level="error",
         )
-        await self.client.start()
         try:
+            await self.client.start()
             available = {model.id: model for model in await self.client.list_models()}
             for name in sorted(self.models):
                 evaluate.require(name in available, f"model is unavailable: {name}")

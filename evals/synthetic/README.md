@@ -27,9 +27,12 @@ the case's evaluation checks as part of the writing prompt.
 
 The runner creates a fresh SDK session per response. Tools, persistent memory,
 custom instructions, skills, configuration discovery, file hooks and host Git
-operations are disabled. Managed settings remain enabled. The runtime's remaining
-foundation is retained; this is a Copilot-hosted experiment, not a bare-model API
-test. Its added date wrapper is captured separately from the requested prompt.
+operations are disabled. Managed settings remain enabled. A fixed text-only role
+replaces irrelevant coding, tool-routing and tone sections through the SDK's
+targeted customization API; runtime safety and policy sections are retained.
+The exact configuration and its hash are recorded. This is still a Copilot-hosted
+experiment, not a bare-model API test. Its added date wrapper is captured separately
+from the requested prompt.
 Reasoning effort is set to low where the model supports it; temperature and
 generation seed remain service defaults, not controlled parameters.
 
@@ -48,8 +51,23 @@ nor the number of outputs says whether the writing is good.
 
 ## Current experiment boundary
 
-The initial pilot uses only the original 16 tuning cases with GPT-5.4 mini and
-Claude Haiku 4.5, under both instruction conditions. Setup probes are not benchmark
-observations. A new prospectively separated corpus and automated-assessment
-protocol are being prepared; no powered result or editorial-superiority claim is
-established by this setup.
+The first pilot captured 64 responses using only the original 16 tuning cases with
+GPT-5.4 mini and Claude Haiku 4.5, under both instruction conditions. It exposed
+irrelevant agent-workflow narration even with zero available tools. Those records
+are retained as a runtime-foundation pilot, not pooled with the neutral-role rerun
+or a powered comparison. This harness correction is not an anti-slop rule learned
+from held-out results.
+
+Setup probes are not benchmark observations. A new prospectively separated corpus
+and automated-assessment protocol are being prepared; no powered result or
+editorial-superiority claim is established by this setup.
+
+Both completed pilots are retained in `artifacts/`: 64 responses under the runtime
+foundation and 64 under the neutral role, each covering the **same 16 tuning cases**.
+These are not 128 independent cases. Each `.jsonl.xz` archive contains exact
+response records and sanitized capture receipts; its adjacent manifest records
+compressed and uncompressed hashes. Python's standard-library `lzma` can read the
+JSONL payload. Neither pilot has human ratings or a published preference score.
+
+Ten-minute checkpoints use ordinary Git commits and pushes. They do not dispatch
+GitHub Actions; the authoring workflow is manual-only.
